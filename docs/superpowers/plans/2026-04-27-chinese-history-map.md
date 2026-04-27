@@ -4,10 +4,10 @@
 
 ## Status
 
-- **Phase:** Not started
-- **Last completed:** None
-- **Next up:** Phase A, Task 1, Step 1 (create branch `build/v1` and target folders)
-- **Last commit on `main`:** `bb59bcc docs: add v1 implementation plan (27 tasks, 113 steps)`
+- **Phase:** Phase B complete (Tasks 1–9 done), starting Phase C next
+- **Last completed:** Task 9 — Search (`9198f09 feat: substring search over the entity index, capped at 30 results`)
+- **Next up:** Phase C, Task 10 — Port prototype stylesheet
+- **Last commit on `build/v1`:** `9198f09 feat: substring search over the entity index, capped at 30 results`
 - **Updated:** 2026-04-27
 
 > **Convention for keeping this current:**
@@ -37,6 +37,7 @@
 - Move: `china_history_v9.json` → `public/china-history.json` (with `meta.version` added)
 - Move: `china_history_v9.xlsx` → `archive/china_history_v9.xlsx`
 - Move: `china_history_v9_errors.json` → `archive/china_history_v9_errors.json`
+
 - Move: `china_history_v9_validation_summary.txt` → `archive/china_history_v9_validation_summary.txt`
 - Move: `History of China-handoff.zip` → `archive/History of China-handoff.zip`
 - Keep in place: `CLAUDE.md`, `PRD.md`, `.gitignore`, `docs/`, `handoff-extracted/`, `.claude/`
