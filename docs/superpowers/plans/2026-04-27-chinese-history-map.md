@@ -4,16 +4,20 @@
 
 ## Status
 
-- **Phase:** Phase B complete (Tasks 1–9 done), starting Phase C next
-- **Last completed:** Task 9 — Search (`9198f09 feat: substring search over the entity index, capped at 30 results`)
-- **Next up:** Phase C, Task 10 — Port prototype stylesheet
-- **Last commit on `build/v1`:** `9198f09 feat: substring search over the entity index, capped at 30 results`
+- **Phase:** Phase C–D in progress (Tasks 10–12 done), next batch starts at Task 13
+- **Last completed:** Task 12 — TopBar (`740ffc2 feat: TopBar with title, mode toggle, zoom controls, reset view`)
+- **Next up:** Phase D, Task 13 — Sidebar
+- **Last commit on `build/v1`:** `740ffc2 feat: TopBar with title, mode toggle, zoom controls, reset view`
 - **Updated:** 2026-04-27
 
 > **Convention for keeping this current:**
 > Update the four fields above whenever the active session is about to clear context (manual `/checkpoint`, hitting context limits, or finishing a phase).
 > Checkbox state in the tasks below stays the source of truth for what is done; this block is the fast-pickup pointer for the next session.
 > When in doubt about state, run `git log --oneline` to see which task commits have landed.
+
+> **Checkpoint cadence (Wei's instruction):**
+> Do 2–3 tasks at a time, then stop and wait for Wei to run `/checkpoint` before continuing.
+> Do not queue up all remaining tasks in one shot — context fills up.
 
 ---
 
