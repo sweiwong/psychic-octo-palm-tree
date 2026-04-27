@@ -1,0 +1,110 @@
+{
+  "systems": [
+    {
+      "id": "S_QH",
+      "type": "macro_system",
+      "systemId": "qin_han",
+      "name": "Qin-Han system",
+      "startYear": -221,
+      "endYear": 220,
+      "year": null,
+      "parentId": null,
+      "lane": "main",
+      "importance": 5,
+      "summary": "Imperial system",
+      "isPoint": false,
+      "duration": 441
+    }
+  ],
+  "regimes": [
+    {
+      "id": "R_ZHOU",
+      "type": "regime",
+      "systemId": "zhou_order",
+      "name": "Zhou",
+      "startYear": -1046,
+      "endYear": -256,
+      "year": null,
+      "parentId": null,
+      "lane": "main",
+      "importance": 5,
+      "summary": "Mandate of Heaven",
+      "isPoint": false,
+      "duration": 790
+    },
+    {
+      "id": "SR_ZHOU_W",
+      "type": "regime",
+      "systemId": "zhou_order",
+      "name": "Western Zhou",
+      "startYear": -1046,
+      "endYear": -771,
+      "year": null,
+      "parentId": "R_ZHOU",
+      "lane": "main",
+      "importance": 5,
+      "summary": "Feudal order",
+      "isPoint": false,
+      "duration": 275
+    },
+    {
+      "id": "R_QIN",
+      "type": "regime",
+      "systemId": "qin_han",
+      "name": "Qin",
+      "startYear": -221,
+      "endYear": -206,
+      "year": null,
+      "parentId": null,
+      "lane": "main",
+      "importance": 5,
+      "summary": "First empire",
+      "isPoint": false,
+      "duration": 15
+    },
+    {
+      "id": "R_LIAO",
+      "type": "regime",
+      "systemId": "song_system",
+      "name": "Liao (Khitan)",
+      "startYear": 907,
+      "endYear": 1125,
+      "year": null,
+      "parentId": null,
+      "lane": "north",
+      "importance": 5,
+      "summary": "Steppe empire controlling north China",
+      "isPoint": false,
+      "duration": 218
+    }
+  ],
+  "events": [
+    {
+      "id": "E_QIN_1",
+      "type": "event",
+      "systemId": "qin_han",
+      "name": "Qin unification",
+      "startYear": null,
+      "endYear": null,
+      "year": -221,
+      "parentId": "R_QIN",
+      "lane": "event",
+      "importance": 5,
+      "summary": "Unifies China",
+      "isPoint": true,
+      "duration": 0
+    }
+  ],
+  "figures": [],
+  "culturalAnchors": [],
+  "culturalWorks": [],
+  "innovations": [],
+  "globalContext": [],
+  "all": [],
+  "meta": {
+    "sourceWorkbook": "tiny.xlsx",
+    "recordCount": 6,
+    "errorCount": 0,
+    "version": 9
+  }
+}
