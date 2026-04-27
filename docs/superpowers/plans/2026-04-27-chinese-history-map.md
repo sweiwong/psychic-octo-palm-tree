@@ -2,6 +2,21 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
+## Status
+
+- **Phase:** Not started
+- **Last completed:** None
+- **Next up:** Phase A, Task 1, Step 1 (create branch `build/v1` and target folders)
+- **Last commit on `main`:** `bb59bcc docs: add v1 implementation plan (27 tasks, 113 steps)`
+- **Updated:** 2026-04-27
+
+> **Convention for keeping this current:**
+> Update the four fields above whenever the active session is about to clear context (manual `/checkpoint`, hitting context limits, or finishing a phase).
+> Checkbox state in the tasks below stays the source of truth for what is done; this block is the fast-pickup pointer for the next session.
+> When in doubt about state, run `git log --oneline` to see which task commits have landed.
+
+---
+
 **Goal:** Build a polished, deployable React + TypeScript implementation of the wrapped multi-row Chinese history timeline, matching the Claude Design prototype faithfully, ready to share as a public Vercel link.
 
 **Architecture:** Single-page React 18 app built with Vite. State lives in `App.tsx` via `useState`. Data loads once at startup from a static JSON file, validated with Zod, and normalized into typed collections. Rendering uses inline SVG with the wrapped multi-row layout math ported from the prototype's `layout.js`. No backend, no auth, no database. The detail panel includes a v2 plug-in seam so markdown notes can plug in later without architectural changes.
