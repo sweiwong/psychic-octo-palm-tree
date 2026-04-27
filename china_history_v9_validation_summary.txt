@@ -1,0 +1,14 @@
+Source workbook: china_history_v9.xlsx
+Records: 77
+Errors: 0
+
+Row type counts:
+- cultural_anchor: 4
+- event: 36
+- figure: 3
+- global_context: 2
+- macro_system: 5
+- regime: 27
+
+Error counts:
+- none
