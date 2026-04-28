@@ -2418,6 +2418,7 @@
   "meta": {
     "sourceWorkbook": "china_history_v9.xlsx",
     "recordCount": 80,
-    "errorCount": 0
+    "errorCount": 0,
+    "version": 9
   }
 }
