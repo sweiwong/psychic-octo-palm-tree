@@ -3,6 +3,8 @@ import { computeGeometry } from '../../lib/snake-path';
 import { COLOR } from '../../lib/colors';
 import type { LayerToggles, NormalizedData, SelectedItem } from '../../data/types';
 import { SnakeBackbone } from './SnakeBackbone';
+import { DynastySegment } from './DynastySegment';
+import { dynastyStripeFill } from '../../lib/colors';
 
 const PADDING = 40;
 const ROW_COUNT = 4;
@@ -28,6 +30,7 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
   const { onClearSelection } = props;
   const containerRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(660);
+  const [tooltip, setTooltip] = useState<{ x: number; y: number; title: string; sub: string } | null>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -50,6 +53,11 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
     yearMax: YEAR_MAX,
   }), [width]);
 
+  const sortedPrimary = useMemo(
+    () => [...props.data.primary].sort((a, b) => a.start - b.start),
+    [props.data.primary],
+  );
+
   return (
     <div className="canvas-wrap" ref={containerRef}>
       <svg
@@ -67,7 +75,24 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
           </linearGradient>
         </defs>
         <SnakeBackbone geometry={geometry} />
+        {props.layers.dynasties && sortedPrimary.map((d, idx) => (
+          <DynastySegment
+            key={d.id}
+            dynasty={d}
+            geometry={geometry}
+            fill={dynastyStripeFill(d.id, idx)}
+            highlighted={props.highlightId === d.id}
+            onPick={props.onPick}
+            onTooltip={setTooltip}
+          />
+        ))}
       </svg>
+      {tooltip && (
+        <div className="tooltip" style={{ left: tooltip.x + 14, top: tooltip.y + 14 }}>
+          <div className="tip-title">{tooltip.title}</div>
+          <div className="tip-sub">{tooltip.sub}</div>
+        </div>
+      )}
     </div>
   );
 }
