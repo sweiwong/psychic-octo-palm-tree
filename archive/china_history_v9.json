@@ -291,16 +291,16 @@
       "id": "R_JIN_W",
       "type": "regime",
       "systemId": "disunion_1",
-      "name": "Western Jin",
-      "startYear": 266,
-      "endYear": 316,
+      "name": "Jin",
+      "startYear": 280,
+      "endYear": 420,
       "year": null,
       "parentId": null,
       "lane": "main",
       "importance": 4,
-      "summary": "Short reunification",
+      "summary": "Reunified rule under the Sima clan after Three Kingdoms, fragmenting into Eastern Jin after losing the north",
       "isPoint": false,
-      "duration": 50
+      "duration": 140
     },
     {
       "id": "R_SUI",
@@ -1683,16 +1683,16 @@
       "id": "R_JIN_W",
       "type": "regime",
       "systemId": "disunion_1",
-      "name": "Western Jin",
-      "startYear": 266,
-      "endYear": 316,
+      "name": "Jin",
+      "startYear": 280,
+      "endYear": 420,
       "year": null,
       "parentId": null,
       "lane": "main",
       "importance": 4,
-      "summary": "Short reunification",
+      "summary": "Reunified rule under the Sima clan after Three Kingdoms, fragmenting into Eastern Jin after losing the north",
       "isPoint": false,
-      "duration": 50
+      "duration": 140
     },
     {
       "id": "E_JIN_1",

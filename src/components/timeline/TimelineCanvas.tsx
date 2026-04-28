@@ -84,6 +84,7 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
             highlighted={props.highlightId === d.id}
             onPick={props.onPick}
             onTooltip={setTooltip}
+            calloutBelow={d.id === 'R_PRC'}
           />
         ))}
       </svg>

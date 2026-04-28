@@ -23,10 +23,11 @@ interface DynastySegmentProps {
   highlighted: boolean;
   onPick: (id: string, kind: SelectedItem['kind']) => void;
   onTooltip: (payload: TooltipPayload | null) => void;
+  calloutBelow?: boolean;
 }
 
 export function DynastySegment(props: DynastySegmentProps) {
-  const { dynasty, geometry, fill, highlighted, onPick, onTooltip } = props;
+  const { dynasty, geometry, fill, highlighted, onPick, onTooltip, calloutBelow = false } = props;
   const d = segmentPath(dynasty.start, dynasty.end, geometry);
   if (!d) return null;
 
@@ -42,8 +43,10 @@ export function DynastySegment(props: DynastySegmentProps) {
   const midYear = (dynasty.start + dynasty.end) / 2;
   const mid = yearToPoint(midYear, geometry);
   const barHalfThickness = BAR_THICKNESS / 2;
-  const leaderTopY = mid.y - barHalfThickness - LEADER_LENGTH;
-  const labelY = leaderTopY - CALLOUT_GAP;
+  const direction = calloutBelow ? 1 : -1;
+  const leaderStartY = mid.y + direction * barHalfThickness;
+  const leaderEndY = mid.y + direction * (barHalfThickness + LEADER_LENGTH);
+  const labelY = leaderEndY + direction * CALLOUT_GAP;
 
   const tooltipBody = `${fmtRange(dynasty.start, dynasty.end)}${dynasty.summary ? ` — ${dynasty.summary}` : ''}`;
 
@@ -99,9 +102,9 @@ export function DynastySegment(props: DynastySegmentProps) {
         <g pointerEvents="none">
           <line
             x1={mid.x}
-            y1={mid.y - barHalfThickness}
+            y1={leaderStartY}
             x2={mid.x}
-            y2={leaderTopY}
+            y2={leaderEndY}
             stroke={COLOR.ink2}
             strokeWidth={1}
           />
@@ -110,6 +113,7 @@ export function DynastySegment(props: DynastySegmentProps) {
             x={mid.x}
             y={labelY}
             textAnchor="middle"
+            dominantBaseline={calloutBelow ? 'hanging' : 'auto'}
             fill={COLOR.ink}
             fontFamily="'Spectral', 'Cormorant Garamond', serif"
             fontSize={CALLOUT_FONT_SIZE}
