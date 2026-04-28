@@ -48,7 +48,7 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
     rowCount: ROW_COUNT,
     yearMin: YEAR_MIN,
     yearMax: YEAR_MAX,
-  }), [size]);
+  }), [size.width, size.height]);
 
   return (
     <div className="canvas-wrap" ref={containerRef}>
