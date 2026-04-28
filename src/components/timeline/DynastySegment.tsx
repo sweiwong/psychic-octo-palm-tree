@@ -25,10 +25,11 @@ interface DynastySegmentProps {
   onTooltip: (payload: TooltipPayload | null) => void;
   calloutBelow?: boolean;
   calloutXOffset?: number;
+  calloutSide?: 'above' | 'below' | 'right';
 }
 
 export function DynastySegment(props: DynastySegmentProps) {
-  const { dynasty, geometry, fill, highlighted, onPick, onTooltip, calloutBelow = false, calloutXOffset = 0 } = props;
+  const { dynasty, geometry, fill, highlighted, onPick, onTooltip, calloutBelow = false, calloutXOffset = 0, calloutSide } = props;
   const d = segmentPath(dynasty.start, dynasty.end, geometry);
   if (!d) return null;
 
@@ -44,10 +45,19 @@ export function DynastySegment(props: DynastySegmentProps) {
   const midYear = (dynasty.start + dynasty.end) / 2;
   const mid = yearToPoint(midYear, geometry);
   const barHalfThickness = BAR_THICKNESS / 2;
-  const direction = calloutBelow ? 1 : -1;
-  const leaderStartY = mid.y + direction * barHalfThickness;
-  const leaderEndY = mid.y + direction * (barHalfThickness + LEADER_LENGTH);
-  const labelY = leaderEndY + direction * CALLOUT_GAP;
+  const side = calloutSide ?? (calloutBelow ? 'below' : 'above');
+  const verticalDirection = side === 'below' ? 1 : -1;
+  const leaderBottom = side === 'right'
+    ? { x: mid.x + barHalfThickness, y: mid.y }
+    : { x: mid.x, y: mid.y + verticalDirection * barHalfThickness };
+  const leaderTop = side === 'right'
+    ? { x: mid.x + barHalfThickness + LEADER_LENGTH, y: mid.y }
+    : { x: mid.x + calloutXOffset, y: mid.y + verticalDirection * (barHalfThickness + LEADER_LENGTH) };
+  const labelPos = side === 'right'
+    ? { x: leaderTop.x + CALLOUT_GAP, y: mid.y }
+    : { x: mid.x + calloutXOffset, y: leaderTop.y + verticalDirection * CALLOUT_GAP };
+  const labelAnchor: 'start' | 'middle' = side === 'right' ? 'start' : 'middle';
+  const labelBaseline: 'auto' | 'middle' | 'hanging' = side === 'right' ? 'middle' : side === 'below' ? 'hanging' : 'auto';
 
   const tooltipBody = `${fmtRange(dynasty.start, dynasty.end)}${dynasty.summary ? ` — ${dynasty.summary}` : ''}`;
 
@@ -102,19 +112,19 @@ export function DynastySegment(props: DynastySegmentProps) {
       {!fitsCarved && (
         <g pointerEvents="none">
           <line
-            x1={mid.x}
-            y1={leaderStartY}
-            x2={mid.x + calloutXOffset}
-            y2={leaderEndY}
+            x1={leaderBottom.x}
+            y1={leaderBottom.y}
+            x2={leaderTop.x}
+            y2={leaderTop.y}
             stroke={COLOR.ink2}
             strokeWidth={1}
           />
           <text
             aria-hidden="true"
-            x={mid.x + calloutXOffset}
-            y={labelY}
-            textAnchor="middle"
-            dominantBaseline={calloutBelow ? 'hanging' : 'auto'}
+            x={labelPos.x}
+            y={labelPos.y}
+            textAnchor={labelAnchor}
+            dominantBaseline={labelBaseline}
             fill={COLOR.ink}
             fontFamily="'Spectral', 'Cormorant Garamond', serif"
             fontSize={CALLOUT_FONT_SIZE}

@@ -85,7 +85,7 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
             onPick={props.onPick}
             onTooltip={setTooltip}
             calloutBelow={d.id === 'R_PRC'}
-            calloutXOffset={d.id === 'R_XIN' ? 40 : 0}
+            calloutSide={d.id === 'R_XIN' ? 'right' : undefined}
           />
         ))}
       </svg>

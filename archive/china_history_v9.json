@@ -232,15 +232,15 @@
       "type": "regime",
       "systemId": "qin_han",
       "name": "Eastern Han",
-      "startYear": 25,
+      "startYear": 23,
       "endYear": 220,
       "year": null,
       "parentId": null,
       "lane": "main",
       "importance": 5,
-      "summary": "Restoration",
+      "summary": "Restored Han rule under Liu Xiu after Wang Mang Xin collapse, including the Gengshi interregnum",
       "isPoint": false,
-      "duration": 195
+      "duration": 197
     },
     {
       "id": "R_WEI",
@@ -1489,15 +1489,15 @@
       "type": "regime",
       "systemId": "qin_han",
       "name": "Eastern Han",
-      "startYear": 25,
+      "startYear": 23,
       "endYear": 220,
       "year": null,
       "parentId": null,
       "lane": "main",
       "importance": 5,
-      "summary": "Restoration",
+      "summary": "Restored Han rule under Liu Xiu after Wang Mang Xin collapse, including the Gengshi interregnum",
       "isPoint": false,
-      "duration": 195
+      "duration": 197
     },
     {
       "id": "E_QIN_1",
