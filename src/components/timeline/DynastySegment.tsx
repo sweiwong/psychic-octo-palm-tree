@@ -1,8 +1,9 @@
-import { segmentPath, type SnakeGeometry } from '../../lib/snake-path';
+import { segmentPath, yearToDistance, type SnakeGeometry } from '../../lib/snake-path';
 import { fmtRange } from '../../lib/format';
 import type { NormalizedSpanItem, SelectedItem } from '../../data/types';
 
 const BAR_THICKNESS = 28;
+const LABEL_MIN_WIDTH = 50; // px on path
 
 interface TooltipPayload {
   x: number;
@@ -24,6 +25,12 @@ export function DynastySegment(props: DynastySegmentProps) {
   const { dynasty, geometry, fill, highlighted, onPick, onTooltip } = props;
   const d = segmentPath(dynasty.start, dynasty.end, geometry);
   if (!d) return null;
+
+  const barLengthPx = Math.abs(
+    yearToDistance(dynasty.end, geometry) - yearToDistance(dynasty.start, geometry)
+  );
+  const showLabel = barLengthPx >= LABEL_MIN_WIDTH;
+  const pathId = `dynasty-path-${dynasty.id}`;
 
   const tooltipBody = `${fmtRange(dynasty.start, dynasty.end)}${dynasty.summary ? ` — ${dynasty.summary}` : ''}`;
 
@@ -49,6 +56,7 @@ export function DynastySegment(props: DynastySegmentProps) {
       onMouseLeave={() => onTooltip(null)}
     >
       <path
+        id={pathId}
         d={d}
         fill="none"
         stroke={fill}
@@ -56,6 +64,20 @@ export function DynastySegment(props: DynastySegmentProps) {
         strokeLinecap="butt"
         strokeLinejoin="round"
       />
+      {showLabel && (
+        <text
+          fill="white"
+          fontFamily="'Spectral', 'Cormorant Garamond', serif"
+          fontSize={14}
+          fontWeight={600}
+          letterSpacing={1.4}
+          style={{ textTransform: 'uppercase', pointerEvents: 'none' }}
+        >
+          <textPath href={`#${pathId}`} startOffset="50%" textAnchor="middle">
+            {dynasty.name}
+          </textPath>
+        </text>
+      )}
       {highlighted && (
         <path
           d={d}
