@@ -541,3 +541,40 @@ html, body {
   line-height: 1.5;
 }
 .kb-add:hover { color: var(--ink); border-color: var(--ink-3); }
+
+/* ---------- Error screen ---------- */
+.app-error {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--parchment);
+  color: var(--ink);
+  text-align: center;
+}
+.app-error h1 {
+  font-family: "Spectral", serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+.app-error p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--ink-2);
+  margin: 0 0 20px 0;
+  max-width: 480px;
+}
+.app-error button {
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 13px;
+  background: var(--ink);
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.app-error button:hover {
+  background: oklch(0.30 0.015 60);
+}
