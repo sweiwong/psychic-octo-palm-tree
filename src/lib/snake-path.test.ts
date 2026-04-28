@@ -172,3 +172,46 @@ describe('backbonePath', () => {
     expect(d.trimEnd().endsWith('L 117.5 582.5')).toBe(true);
   });
 });
+
+import { segmentPath } from './snake-path';
+
+describe('segmentPath', () => {
+  const g = computeGeometry({
+    width: 660, height: 700, padding: 40,
+    rowCount: 4, yearMin: -2070, yearMax: 2026,
+  });
+
+  it('produces a single line for a year range entirely within row 0', () => {
+    const d = segmentPath(-2070, -1500, g);
+    expect(d).toMatch(/^M /);
+    expect((d.match(/\bL\b/g) ?? []).length).toBe(1);
+    expect((d.match(/\bA\b/g) ?? []).length).toBe(0);
+  });
+
+  it('produces line + arc + line for a range spanning bend 0', () => {
+    // Han: -202 to 220 spans bend 1 (around year 0).
+    // Pick a range crossing bend 0 instead: row 0 ends near year -1354.
+    const d = segmentPath(-1500, -800, g);
+    expect((d.match(/\bL\b/g) ?? []).length).toBeGreaterThanOrEqual(2);
+    expect((d.match(/\bA\b/g) ?? []).length).toBeGreaterThanOrEqual(1);
+  });
+
+  it('produces an offset path when yOffset is provided', () => {
+    const main = segmentPath(-2070, -1500, g);
+    const offset = segmentPath(-2070, -1500, g, 20);
+    // Offset path's y values should be shifted by +20 vs main.
+    // Both start with M, extract first y from each.
+    const mainY = parseFloat(main.match(/^M [\d.-]+ ([\d.-]+)/)![1]);
+    const offsetY = parseFloat(offset.match(/^M [\d.-]+ ([\d.-]+)/)![1]);
+    expect(offsetY).toBeCloseTo(mainY + 20, 4);
+  });
+
+  it('starts at the start year position', () => {
+    const d = segmentPath(-2000, -1500, g);
+    const startMatch = d.match(/^M ([\d.-]+) ([\d.-]+)/);
+    expect(startMatch).not.toBeNull();
+    const expected = yearToPoint(-2000, g);
+    expect(parseFloat(startMatch![1])).toBeCloseTo(expected.x, 2);
+    expect(parseFloat(startMatch![2])).toBeCloseTo(expected.y, 2);
+  });
+});

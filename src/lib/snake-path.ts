@@ -204,3 +204,80 @@ export function backbonePath(g: SnakeGeometry): string {
 
   return parts.join(' ');
 }
+
+export function segmentPath(
+  yearStart: number,
+  yearEnd: number,
+  g: SnakeGeometry,
+  yOffset: number = 0,
+): string {
+  const startDist = yearToDistance(yearStart, g);
+  const endDist = yearToDistance(yearEnd, g);
+  const r = g.cornerRadius;
+
+  // Build segment list with cumulative distances.
+  // Segment kinds: 'row' (horizontal) or 'arc' (bend).
+  type Segment =
+    | { kind: 'row'; row: number; startDist: number; endDist: number }
+    | { kind: 'arc'; bend: number; startDist: number; endDist: number };
+  const segments: Segment[] = [];
+  let cursor = 0;
+  for (let row = 0; row < g.rowCount; row++) {
+    segments.push({ kind: 'row', row, startDist: cursor, endDist: cursor + g.trackWidth });
+    cursor += g.trackWidth;
+    if (row < g.rowCount - 1) {
+      segments.push({ kind: 'arc', bend: row, startDist: cursor, endDist: cursor + g.arcLength });
+      cursor += g.arcLength;
+    }
+  }
+
+  const parts: string[] = [];
+  let started = false;
+
+  for (const seg of segments) {
+    if (seg.endDist <= startDist) continue;
+    if (seg.startDist >= endDist) break;
+
+    const localStart = Math.max(seg.startDist, startDist);
+    const localEnd = Math.min(seg.endDist, endDist);
+
+    if (seg.kind === 'row') {
+      const goingRight = seg.row % 2 === 0;
+      const direction = goingRight ? 1 : -1;
+      const rowStartX = goingRight
+        ? g.padding + r
+        : g.width - g.padding - r;
+      const localStartX = rowStartX + direction * (localStart - seg.startDist);
+      const localEndX = rowStartX + direction * (localEnd - seg.startDist);
+      const y = g.rowCenterlines[seg.row] + yOffset;
+      if (!started) {
+        parts.push(`M ${localStartX} ${y}`);
+        started = true;
+      }
+      parts.push(`L ${localEndX} ${y}`);
+    } else {
+      // Arc segment.
+      const center = g.bendCenters[seg.bend];
+      const offsetCenterY = center.y + yOffset;
+      const t0 = (localStart - seg.startDist) / g.arcLength;
+      const t1 = (localEnd - seg.startDist) / g.arcLength;
+      const startAngle = -Math.PI / 2;
+      const endAngle = Math.PI / 2;
+      const a0 = startAngle + t0 * (endAngle - startAngle);
+      const a1 = startAngle + t1 * (endAngle - startAngle);
+      const radialSign = center.side === 'right' ? 1 : -1;
+      const x0 = center.x + radialSign * r * Math.cos(a0);
+      const y0 = offsetCenterY + r * Math.sin(a0);
+      const x1 = center.x + radialSign * r * Math.cos(a1);
+      const y1 = offsetCenterY + r * Math.sin(a1);
+      if (!started) {
+        parts.push(`M ${x0} ${y0}`);
+        started = true;
+      }
+      // Arc length covered <= 180°, so large-arc-flag = 0.
+      parts.push(`A ${r} ${r} 0 0 1 ${x1} ${y1}`);
+    }
+  }
+
+  return parts.join(' ');
+}
