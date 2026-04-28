@@ -713,6 +713,39 @@ git commit -m "feat: add segmentPath for partial year ranges with offset"
 
 ---
 
+## STOP: Phase 1 break
+
+Before starting Phase 2, clear context and restart fresh. Phase 1 is self-contained (no React, no UI), and the next phase brings in new files and concerns.
+
+- [ ] **Verify Phase 1 is healthy**
+
+Run: `npm test && npm run typecheck`
+
+Expected: PASS for both. Snake-path test count should be 21+. No type errors.
+
+- [ ] **Checkpoint the phase**
+
+Append a line to `.claude/checkpoints.log`:
+
+```
+2026-04-27-<HH:MM> | snake-phase-1-complete | <commit-sha> | snake-path.ts pure-function geometry module done. 21+ unit tests passing.
+```
+
+Commit:
+
+```bash
+git add .claude/checkpoints.log
+git commit -m "chore: checkpoint snake phase 1 complete"
+```
+
+- [ ] **Clear context and resume at Phase 2**
+
+In Claude Code, run `/clear`. Then dispatch a new subagent with this context:
+
+> Resume the snake timeline implementation plan at Phase 2 (Task 6: Add vermillion3 token). The plan lives at `docs/superpowers/plans/2026-04-27-snake-timeline.md`. The spec lives at `docs/superpowers/specs/2026-04-27-snake-timeline-design.md`. Phase 1 (geometry foundation) is complete and committed. Continue from Task 6.
+
+---
+
 ## Phase 2: Visual scaffold
 
 Replace the wrapped-row canvas with a snake skeleton. By the end of this phase, the page renders a single faint snake outline with no dynasty bars yet.
@@ -931,6 +964,39 @@ Open the browser at the URL Vite prints. Expected:
 git add src/components/timeline/TimelineCanvas.tsx src/components/timeline/SnakeBackbone.tsx
 git commit -m "feat: render snake backbone in TimelineCanvas"
 ```
+
+---
+
+## STOP: Phase 2 break
+
+Phase 2 swapped out the canvas. The page should now render the snake outline alone. This is a natural stopping point because Phase 3 introduces the first dynasty bars and a different concern.
+
+- [ ] **Verify Phase 2 is healthy**
+
+Run: `npm test && npm run typecheck`
+
+Expected: PASS. Then run `npm run dev` and confirm the snake outline renders on screen with no errors in the browser console.
+
+- [ ] **Checkpoint the phase**
+
+Append to `.claude/checkpoints.log`:
+
+```
+2026-04-27-<HH:MM> | snake-phase-2-complete | <commit-sha> | snake backbone rendering. TimelineCanvas swapped to snake orchestrator. Old wrapped-row code still on disk but unused.
+```
+
+Commit:
+
+```bash
+git add .claude/checkpoints.log
+git commit -m "chore: checkpoint snake phase 2 complete"
+```
+
+- [ ] **Clear context and resume at Phase 3**
+
+In Claude Code, run `/clear`. Then dispatch a new subagent with this context:
+
+> Resume the snake timeline implementation plan at Phase 3 (Task 8: Create DynastySegment component). The plan lives at `docs/superpowers/plans/2026-04-27-snake-timeline.md`. Phases 1 and 2 are complete: snake-path.ts is built and the page renders the faint backbone. Continue from Task 8.
 
 ---
 
@@ -1213,6 +1279,44 @@ git commit -m "feat: add textPath labels for dynasty segments"
 
 ---
 
+## STOP: Phase 3 break
+
+Phase 3 brought in all the primary dynasty bars with color and labels. The page should now look close to the final design without the concurrent ribbon and date ticks. Worth pausing here because what's left is additive layers, not core structure.
+
+- [ ] **Verify Phase 3 is healthy**
+
+Run: `npm test && npm run typecheck`
+
+Expected: PASS. Then `npm run dev` and confirm:
+- All primary dynasty bars render along the snake
+- Adjacent bars alternate between two shades of vermillion
+- Yuan and Qing render in the distinct purple-vermillion
+- Labels appear on bars wider than 50px
+- Hover and click work for primary dynasties
+
+- [ ] **Checkpoint the phase**
+
+Append to `.claude/checkpoints.log`:
+
+```
+2026-04-27-<HH:MM> | snake-phase-3-complete | <commit-sha> | primary dynasty bars rendering with alternating color and textPath labels. Hover and click wired.
+```
+
+Commit:
+
+```bash
+git add .claude/checkpoints.log
+git commit -m "chore: checkpoint snake phase 3 complete"
+```
+
+- [ ] **Clear context and resume at Phase 4**
+
+Run `/clear`. Then dispatch a new subagent with:
+
+> Resume the snake timeline plan at Phase 4 (Task 11: Create ConcurrentSegment component). Plan: `docs/superpowers/plans/2026-04-27-snake-timeline.md`. Phases 1 through 3 are complete: snake renders all primary dynasty bars with labels. Continue from Task 11.
+
+---
+
 ## Phase 4: Concurrent ribbon
 
 ### Task 11: Create ConcurrentSegment component
@@ -1406,6 +1510,43 @@ git commit -m "feat: wire concurrent dynasty ribbon"
 
 ---
 
+## STOP: Phase 4 break
+
+Phase 4 added the concurrent state ribbon. The Song multi-state period should now show Khitan Liao, Jurchen Jin, Western Xia as a sub-band. This is the most visually complex piece in v1.
+
+- [ ] **Verify Phase 4 is healthy**
+
+Run: `npm test && npm run typecheck`
+
+Expected: PASS. Then `npm run dev` and confirm:
+- Khitan Liao, Jurchen Jin, Western Xia render as thinner sepia ribbons offset below the main bar
+- Sixteen Kingdoms renders during the disunity period
+- The ribbon follows snake bends correctly (no breaks at corners)
+- Hover and click work for concurrent ribbons
+
+- [ ] **Checkpoint the phase**
+
+Append to `.claude/checkpoints.log`:
+
+```
+2026-04-27-<HH:MM> | snake-phase-4-complete | <commit-sha> | concurrent ribbon rendering. Liao, Jin, Xia, Sixteen Kingdoms visible as sepia sub-band.
+```
+
+Commit:
+
+```bash
+git add .claude/checkpoints.log
+git commit -m "chore: checkpoint snake phase 4 complete"
+```
+
+- [ ] **Clear context and resume at Phase 5**
+
+Run `/clear`. Then dispatch a new subagent with:
+
+> Resume the snake timeline plan at Phase 5 (Task 13: Create DateTick component). Plan: `docs/superpowers/plans/2026-04-27-snake-timeline.md`. Phases 1 through 4 are complete: snake with primary bars, labels, and concurrent ribbon all rendering. Continue from Task 13.
+
+---
+
 ## Phase 5: Date ticks
 
 ### Task 13: Create DateTick component
@@ -1530,6 +1671,43 @@ git commit -m "feat: render date ticks at dynasty boundaries"
 
 ---
 
+## STOP: Phase 5 break
+
+Phase 5 added date ticks at every dynasty start. The chart should now have the visual completeness called for in the spec.
+
+- [ ] **Verify Phase 5 is healthy**
+
+Run: `npm test && npm run typecheck`
+
+Expected: PASS. Then `npm run dev` and confirm:
+- A small yellow pill appears above each dynasty start
+- Pills don't overlap dynasty labels
+- Pills follow the snake path through bends
+- Pills read like "2070 BCE", "1600 BCE", "1046 BCE", "221 BCE", "206 BCE", and so on
+
+- [ ] **Checkpoint the phase**
+
+Append to `.claude/checkpoints.log`:
+
+```
+2026-04-27-<HH:MM> | snake-phase-5-complete | <commit-sha> | date ticks at every dynasty boundary. Visual structure complete.
+```
+
+Commit:
+
+```bash
+git add .claude/checkpoints.log
+git commit -m "chore: checkpoint snake phase 5 complete"
+```
+
+- [ ] **Clear context and resume at Phase 6**
+
+Run `/clear`. Then dispatch a new subagent with:
+
+> Resume the snake timeline plan at Phase 6 (Task 15: verify interactions). Plan: `docs/superpowers/plans/2026-04-27-snake-timeline.md`. Phases 1 through 5 are complete: full visual structure rendering (snake, primary bars with labels, concurrent ribbon, date ticks). Continue from Task 15.
+
+---
+
 ## Phase 6: Interactions
 
 The hover tooltip and click selection were already wired into `DynastySegment` and `ConcurrentSegment` in Tasks 8 and 11. This phase verifies they work end to end.
@@ -1572,6 +1750,39 @@ git commit -m "fix: <what was broken>"
 ```
 
 If everything works, there is nothing to commit and the task is done.
+
+---
+
+## STOP: Phase 6 break
+
+Phase 6 was a verification-only phase. If anything was off and you fixed it, commit. Otherwise skip the commit. Either way, this is a clean stopping point before the cleanup phase.
+
+- [ ] **Verify Phase 6 is healthy**
+
+Run: `npm test && npm run typecheck`
+
+Expected: PASS. Then `npm run dev` and confirm hover tooltips and click selection work for both primary dynasties and concurrent ribbons.
+
+- [ ] **Checkpoint the phase**
+
+Append to `.claude/checkpoints.log`:
+
+```
+2026-04-27-<HH:MM> | snake-phase-6-complete | <commit-sha> | interactions verified. All hover and click flows work end to end.
+```
+
+Commit:
+
+```bash
+git add .claude/checkpoints.log
+git commit -m "chore: checkpoint snake phase 6 complete"
+```
+
+- [ ] **Clear context and resume at Phase 7**
+
+Run `/clear`. Then dispatch a new subagent with:
+
+> Resume the snake timeline plan at Phase 7 (Task 16: disable non-dynasty layer toggles). Plan: `docs/superpowers/plans/2026-04-27-snake-timeline.md`. Phases 1 through 6 are complete: full visual + interaction layer working. Phase 7 is cleanup: disable other layer toggles, simplify App.tsx, delete dead files. Continue from Task 16.
 
 ---
 
@@ -1824,6 +2035,43 @@ Expected: PASS. The test count drops because `layout.test.ts` is gone, but all r
 git add -A
 git commit -m "chore: delete dead files from old wrapped-row design"
 ```
+
+---
+
+## STOP: Phase 7 break
+
+Phase 7 was the codebase cleanup. App.tsx is simplified, dead files are gone, sidebar toggles are gated. Phase 8 is the final verification pass plus E2E test.
+
+- [ ] **Verify Phase 7 is healthy**
+
+Run: `npm test && npm run typecheck`
+
+Expected: PASS. Then `npm run dev` and confirm:
+- Page still renders correctly with all dynasties, ribbons, ticks
+- Sidebar shows only Dynasties as enabled, others greyed out with "Coming in a later update" tooltip
+- Reset View clears search and selection (zoom buttons may now be no-ops, that is expected)
+- Old layout files are gone (`grep -RlE "lib/layout|RowFrame|SystemBand|Markers|DynastyBar" src/` returns nothing)
+
+- [ ] **Checkpoint the phase**
+
+Append to `.claude/checkpoints.log`:
+
+```
+2026-04-27-<HH:MM> | snake-phase-7-complete | <commit-sha> | codebase cleanup done. Dead files removed. Sidebar gated. App.tsx simplified.
+```
+
+Commit:
+
+```bash
+git add .claude/checkpoints.log
+git commit -m "chore: checkpoint snake phase 7 complete"
+```
+
+- [ ] **Clear context and resume at Phase 8**
+
+Run `/clear`. Then dispatch a new subagent with:
+
+> Resume the snake timeline plan at Phase 8 (Task 19: E2E smoke test). Plan: `docs/superpowers/plans/2026-04-27-snake-timeline.md`. Phases 1 through 7 are complete: snake timeline fully built, codebase cleaned up. Phase 8 is the final verification pass: write the Playwright smoke test, walk the acceptance criteria, ship it.
 
 ---
 
