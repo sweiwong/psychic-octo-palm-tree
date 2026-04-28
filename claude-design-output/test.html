@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Claude Design — snake geometry test</title>
+  <style>
+    :root {
+      --ink: oklch(0.22 0.015 60);
+      --ink-2: oklch(0.42 0.012 60);
+      --ink-3: oklch(0.62 0.010 60);
+      --rule: oklch(0.86 0.015 70);
+      --gold: oklch(0.72 0.110 80);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: #fff;
+      color: var(--ink);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 14px;
+      min-height: 100vh;
+    }
+    .header {
+      padding: 16px 32px 8px;
+      border-bottom: 1px solid var(--rule);
+      display: flex; align-items: baseline; gap: 24px;
+    }
+    .header h1 {
+      font-family: 'Spectral', serif;
+      font-size: 18px; font-weight: 600; margin: 0;
+    }
+    .header .sub {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+    .legend {
+      margin-left: auto;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 10.5px;
+      color: var(--ink-2);
+    }
+    main { padding: 24px 0; }
+    svg.snake { display: block; margin: 0 auto; }
+    .bar-label {
+      font-family: 'Spectral', 'Cormorant Garamond', serif;
+      fill: white;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
+    .date-pill {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 10.5px;
+      font-weight: 600;
+      fill: var(--ink);
+    }
+    .conc-label {
+      font-family: 'Spectral', serif;
+      font-size: 11px;
+      font-style: italic;
+      fill: var(--ink-2);
+      pointer-events: none;
+    }
+    .event-label {
+      font-family: 'Spectral', serif;
+      font-size: 11px;
+      fill: var(--ink);
+      pointer-events: none;
+    }
+    .event-leader { stroke: var(--ink-3); stroke-width: 0.6; fill: none; }
+    .event-box {
+      fill: white;
+      stroke: var(--rule);
+      stroke-width: 0.6;
+    }
+  </style>
+  <script src="snake-geometry.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Claude Design — snake geometry test</h1>
+    <span class="sub">Standalone preview · not the live app</span>
+    <span class="legend">window.SnakeGeometry from Claude Design · dataset from /china-history.json</span>
+  </div>
+  <main>
+    <svg class="snake" id="canvas" width="1700" height="1180" viewBox="0 0 1700 1180" aria-hidden="true"></svg>
+  </main>
+
+<script>
+const PALETTE = [
+  '#3b6ea5', '#d97757', '#3b6ea5', '#d97757', '#3b6ea5', '#d97757',
+  '#3b6ea5', '#d97757', '#3b6ea5', '#d97757', '#3b6ea5', '#d97757',
+  '#3b6ea5', '#d97757', '#3b6ea5', '#d97757', '#3b6ea5', '#d97757',
+  '#3b6ea5', '#d97757', '#3b6ea5', '#d97757', '#3b6ea5', '#d97757',
+];
+const NON_HAN = new Set(['R_YUAN', 'R_QING']);
+const NON_HAN_FILL = '#7d4f6d';
+
+async function main() {
+  const res = await fetch('/china-history.json');
+  if (!res.ok) {
+    document.querySelector('main').innerHTML = '<p style="padding:32px;color:#a33;">Could not fetch /china-history.json — make sure the dev server is running on this origin.</p>';
+    return;
+  }
+  const data = await res.json();
+  const svg = document.getElementById('canvas');
+
+  // Build geometry covering the full year range
+  const startYear = -2070;
+  const endYear = 2026;
+  const geo = window.SnakeGeometry.build({
+    width: 1700,
+    marginX: 160,
+    marginY: 160,
+    startYear, endYear,
+    rows: 4,
+    barHeight: 56,
+    bendRadiusX: 90,
+    rowGap: 240,   // generous vertical breathing room for events above/below each bar
+  });
+
+  // Filter primary dynasties (lane === 'main') with no main-lane children (umbrella check)
+  const childMainCount = new Map();
+  for (const r of data.regimes) {
+    if (r.lane === 'main' && r.parentId) {
+      childMainCount.set(r.parentId, (childMainCount.get(r.parentId) || 0) + 1);
+    }
+  }
+  const primaries = data.regimes
+    .filter(r => r.lane === 'main' && !childMainCount.has(r.id))
+    .sort((a, b) => a.startYear - b.startYear);
+
+  const concurrent = data.regimes.filter(r => r.lane !== 'main');
+
+  // Render dynasty bars (filled polygon ribbons via geo.ribbonPath)
+  const halfH = window.SnakeGeometry.build ? geo.BAR_HEIGHT / 2 : 32;
+  primaries.forEach((r, idx) => {
+    const fill = NON_HAN.has(r.id) ? NON_HAN_FILL : PALETTE[idx % PALETTE.length];
+    const d = window.SnakeGeometry.ribbonPath(geo, r.startYear, r.endYear, halfH);
+    if (!d) return;
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', d);
+    path.setAttribute('fill', fill);
+    svg.appendChild(path);
+
+    // Centered label at midyear
+    const midYear = (r.startYear + r.endYear) / 2;
+    const mid = geo.yearToPoint(midYear);
+    if (!mid) return;
+    const barLengthPx = (r.endYear - r.startYear) * (geo.totalLen / geo.totalYears);
+    const charBudget = Math.floor(barLengthPx / 11);
+    if (r.name.length > charBudget) return; // skip if doesn't fit
+    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    text.setAttribute('x', mid.x);
+    text.setAttribute('y', mid.y + 5);
+    text.setAttribute('text-anchor', 'middle');
+    text.setAttribute('class', 'bar-label');
+    text.setAttribute('font-size', '14');
+    text.textContent = r.name.toUpperCase();
+    svg.appendChild(text);
+
+    // Date pill at start year
+    const startPt = geo.yearToPoint(r.startYear);
+    if (startPt && Math.abs(startPt.tangent[0]) > 0.5) {
+      const yearText = r.startYear < 0 ? `${Math.abs(r.startYear)} BCE` : `${r.startYear} CE`;
+      const pillW = yearText.length * 6.2 + 10;
+      const pillY = startPt.y + halfH + 6;
+      const pillG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      rect.setAttribute('x', startPt.x - pillW / 2);
+      rect.setAttribute('y', pillY);
+      rect.setAttribute('width', pillW);
+      rect.setAttribute('height', 16);
+      rect.setAttribute('rx', 2);
+      rect.setAttribute('fill', '#e7c46f');
+      rect.setAttribute('stroke', '#8c7a45');
+      rect.setAttribute('stroke-width', 0.5);
+      pillG.appendChild(rect);
+      const tt = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      tt.setAttribute('x', startPt.x);
+      tt.setAttribute('y', pillY + 11);
+      tt.setAttribute('text-anchor', 'middle');
+      tt.setAttribute('class', 'date-pill');
+      tt.textContent = yearText;
+      pillG.appendChild(tt);
+      svg.appendChild(pillG);
+    }
+  });
+
+  // Render concurrent states (Wei/Shu/Wu, Liao/Xixia/Jin) as thinner offset bars below the main snake
+  const CONC_OFFSETS = { north: halfH + 18, west: halfH + 36, south: halfH + 54 };
+  concurrent.forEach(r => {
+    const offset = CONC_OFFSETS[r.lane] || halfH + 18;
+    const d = window.SnakeGeometry.ribbonPath(geo, r.startYear, r.endYear, 6, { offset });
+    if (!d) return;
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', d);
+    path.setAttribute('fill', '#a6906a');
+    path.setAttribute('opacity', '0.85');
+    svg.appendChild(path);
+
+    const midYear = (r.startYear + r.endYear) / 2;
+    const mid = geo.yearToPoint(midYear);
+    if (mid) {
+      const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      text.setAttribute('x', mid.x);
+      text.setAttribute('y', mid.y + offset + 3);
+      text.setAttribute('text-anchor', 'middle');
+      text.setAttribute('class', 'conc-label');
+      text.textContent = r.name;
+      svg.appendChild(text);
+    }
+  });
+
+  // Render events as small labeled boxes above the snake.
+  // Stagger across three vertical bands to reduce horizontal collisions in dense periods.
+  const BANDS = [44, 70, 96];
+  data.events.forEach((e, i) => {
+    const pt = geo.yearToPoint(e.year);
+    if (!pt) return;
+    if (Math.abs(pt.tangent[0]) < 0.5) return; // skip if on a curve
+    const bandLen = BANDS[i % BANDS.length];
+    const yLeader1 = pt.y - halfH - 4;
+    const yLeader2 = pt.y - halfH - bandLen;
+    const labelText = e.name.length > 26 ? e.name.slice(0, 24) + '…' : e.name;
+    const boxW = labelText.length * 6 + 10;
+    const boxX = pt.x - boxW / 2;
+    const boxY = yLeader2 - 14;
+
+    const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', pt.x); line.setAttribute('x2', pt.x);
+    line.setAttribute('y1', yLeader1); line.setAttribute('y2', yLeader2);
+    line.setAttribute('class', 'event-leader');
+    g.appendChild(line);
+
+    const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    rect.setAttribute('x', boxX); rect.setAttribute('y', boxY);
+    rect.setAttribute('width', boxW); rect.setAttribute('height', 14);
+    rect.setAttribute('rx', 2);
+    rect.setAttribute('class', 'event-box');
+    g.appendChild(rect);
+
+    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    text.setAttribute('x', pt.x);
+    text.setAttribute('y', boxY + 10);
+    text.setAttribute('text-anchor', 'middle');
+    text.setAttribute('class', 'event-label');
+    text.textContent = labelText;
+    g.appendChild(text);
+
+    svg.appendChild(g);
+  });
+}
+
+main();
+</script>
+</body>
+</html>
