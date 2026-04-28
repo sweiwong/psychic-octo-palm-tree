@@ -66,6 +66,7 @@ export function DynastySegment(props: DynastySegmentProps) {
       />
       {showLabel && (
         <text
+          aria-hidden="true"
           fill="white"
           fontFamily="'Spectral', 'Cormorant Garamond', serif"
           fontSize={14}
