@@ -1,9 +1,13 @@
-import { labelPath, segmentPath, yearToDistance, type SnakeGeometry } from '../../lib/snake-path';
+import { labelPath, segmentPath, yearToDistance, yearToPoint, type SnakeGeometry } from '../../lib/snake-path';
 import { fmtRange } from '../../lib/format';
+import { COLOR } from '../../lib/colors';
 import type { NormalizedSpanItem, SelectedItem } from '../../data/types';
 
 const BAR_THICKNESS = 28;
-const LABEL_MIN_WIDTH = 50; // px on path
+const AVG_CHAR_WIDTH = 9.5;   // px per uppercase char at fontSize 14, letterSpacing 1.4
+const LEADER_LENGTH = 14;     // px — vertical leader line from bar to label
+const CALLOUT_FONT_SIZE = 11; // px — smaller than carved label for visual hierarchy
+const CALLOUT_GAP = 4;        // px between leader end and label baseline
 
 interface TooltipPayload {
   x: number;
@@ -29,10 +33,17 @@ export function DynastySegment(props: DynastySegmentProps) {
   const barLengthPx = Math.abs(
     yearToDistance(dynasty.end, geometry) - yearToDistance(dynasty.start, geometry)
   );
-  const showLabel = barLengthPx >= LABEL_MIN_WIDTH;
+  const estimatedNameWidth = dynasty.name.length * AVG_CHAR_WIDTH;
+  const fitsCarved = barLengthPx >= estimatedNameWidth;
   const pathId = `dynasty-path-${dynasty.id}`;
   const labelD = labelPath(dynasty.start, dynasty.end, geometry);
   const labelPathId = `dynasty-label-path-${dynasty.id}`;
+
+  const midYear = (dynasty.start + dynasty.end) / 2;
+  const mid = yearToPoint(midYear, geometry);
+  const barHalfThickness = BAR_THICKNESS / 2;
+  const leaderTopY = mid.y - barHalfThickness - LEADER_LENGTH;
+  const labelY = leaderTopY - CALLOUT_GAP;
 
   const tooltipBody = `${fmtRange(dynasty.start, dynasty.end)}${dynasty.summary ? ` — ${dynasty.summary}` : ''}`;
 
@@ -66,7 +77,7 @@ export function DynastySegment(props: DynastySegmentProps) {
         strokeLinecap="butt"
         strokeLinejoin="round"
       />
-      {showLabel && (
+      {fitsCarved && (
         <>
           <path id={labelPathId} d={labelD} fill="none" stroke="none" />
           <text
@@ -83,6 +94,32 @@ export function DynastySegment(props: DynastySegmentProps) {
             </textPath>
           </text>
         </>
+      )}
+      {!fitsCarved && (
+        <g pointerEvents="none">
+          <line
+            x1={mid.x}
+            y1={mid.y - barHalfThickness}
+            x2={mid.x}
+            y2={leaderTopY}
+            stroke={COLOR.ink2}
+            strokeWidth={1}
+          />
+          <text
+            aria-hidden="true"
+            x={mid.x}
+            y={labelY}
+            textAnchor="middle"
+            fill={COLOR.ink}
+            fontFamily="'Spectral', 'Cormorant Garamond', serif"
+            fontSize={CALLOUT_FONT_SIZE}
+            fontWeight={600}
+            letterSpacing={1.0}
+            style={{ textTransform: 'uppercase' }}
+          >
+            {dynasty.name}
+          </text>
+        </g>
       )}
       {highlighted && (
         <path
