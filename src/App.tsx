@@ -196,7 +196,7 @@ function AppInner({ data }: { data: NormalizedData }) {
           setSearch('');
         }}
       />
-      <div className="app-body">
+      <div className={`app-body ${selected ? '' : 'idle'}`}>
         <Sidebar
           search={search}
           onSearchChange={setSearch}

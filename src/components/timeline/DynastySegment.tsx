@@ -3,10 +3,11 @@ import { fmtRange } from '../../lib/format';
 import { COLOR } from '../../lib/colors';
 import type { NormalizedSpanItem, SelectedItem } from '../../data/types';
 
-const BAR_THICKNESS = 28;
-const AVG_CHAR_WIDTH = 9.5;   // px per uppercase char at fontSize 14, letterSpacing 1.4
-const LEADER_LENGTH = 14;     // px — vertical leader line from bar to label
-const CALLOUT_FONT_SIZE = 11; // px — smaller than carved label for visual hierarchy
+const BAR_THICKNESS = 60;
+const INLINE_LABEL_FONT_SIZE = 26;
+const AVG_CHAR_WIDTH = 17.5;  // px per uppercase char at INLINE_LABEL_FONT_SIZE, letterSpacing 1.4
+const LEADER_LENGTH = 22;     // px — vertical leader line from bar to label
+const CALLOUT_FONT_SIZE = 16; // px — smaller than carved label for visual hierarchy
 const CALLOUT_GAP = 4;        // px between leader end and label baseline
 
 interface TooltipPayload {
@@ -98,7 +99,7 @@ export function DynastySegment(props: DynastySegmentProps) {
             aria-hidden="true"
             fill="white"
             fontFamily="'Spectral', 'Cormorant Garamond', serif"
-            fontSize={14}
+            fontSize={INLINE_LABEL_FONT_SIZE}
             fontWeight={600}
             letterSpacing={1.4}
             style={{ textTransform: 'uppercase', pointerEvents: 'none' }}

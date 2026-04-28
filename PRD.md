@@ -1,5 +1,16 @@
 # PRD
 
+> **NOTE: This is the original brief. Do not treat it as the current spec.**
+>
+> Visual layout, palette, row count, and rendering decisions have moved on. The current sources of truth are:
+>
+> - `DECISIONS.md` — every locked-in choice with date and rationale
+> - `docs/superpowers/specs/2026-04-27-snake-timeline-design.md` — the snake redesign spec that supersedes the wrapped-multi-row description below
+>
+> Read those two before this one. The wording below ("WRAPPED MULTI-ROW TIMELINE", multiple horizontal lanes, etc.) describes the original prototype. The shipped product is a continuous snake path.
+
+---
+
 Design a desktop-first web application UI for exploring Chinese history from ~2000 BCE to present.
 
 Core requirement:

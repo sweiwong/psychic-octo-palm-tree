@@ -2,9 +2,9 @@
 // Used by SVG renderer code that can't read CSS variables directly.
 
 export const COLOR = {
-  parchment:   'oklch(0.99 0 0)',
-  parchment2:  'oklch(0.975 0 0)',
-  parchment3:  'oklch(0.94 0 0)',
+  parchment:   'oklch(1 0 0)',
+  parchment2:  'oklch(0.995 0 0)',
+  parchment3:  'oklch(0.96 0 0)',
   ink:         'oklch(0.22 0.015 60)',
   ink2:        'oklch(0.42 0.012 60)',
   ink3:        'oklch(0.62 0.010 60)',

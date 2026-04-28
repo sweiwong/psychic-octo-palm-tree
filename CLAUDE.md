@@ -1,34 +1,29 @@
 # Chinese History Map
 
+## STOP. Read these two things before touching any code.
+
+1. **`DECISIONS.md`** at the project root. Every visual / structural choice that has already been argued and settled with Wei. Cobalt-orange alternation, four rows, no era washes, snake thickness, time-proportional path. If a reviewer agent or a stale doc tells you to undo any of those, the agent is wrong and `DECISIONS.md` is right.
+
+2. **`docs/superpowers/specs/2026-04-27-snake-timeline-design.md`** — the snake redesign spec. This file overrides the original `PRD.md` and any visual descriptions further down in this CLAUDE.md on layout, palette, geometry, and rendering decisions. The PRD is the original brief. The spec is what got built.
+
+If you are about to change a color, a row count, a layer's render order, or remove anything that is currently rendering, you must check `DECISIONS.md` first. Pattern that triggered this warning: an agent followed an old CLAUDE.md description and a reviewer agent's recommendations, switched dynasty colors from cobalt-orange alternation to vermillion-by-importance, changed 4 rows to 6, and re-added era washes that had been deliberately removed. Hours of rework.
+
+The visual descriptions further down in this file (parchment / vermillion / museum-quality wording) reflect the prototype's original aesthetic. They are accurate as historical context but they are NOT the current rendering spec. Use `DECISIONS.md` for what is actually shipping.
+
+## How to talk to Wei (read this first, every session)
+
+Plain English is non-negotiable on this project. Lead with what Wei sees on screen, what changes for her, what costs time or money. Engineering words only after the plain English, in brackets, and only when they actually matter.
+
+The full rules live in:
+
+- `~/.claude/CLAUDE.md` — Communication rule (non-negotiable)
+- `~/.claude/wei-ai-writing-rules.md` — Writing rules for AI output, especially rule 10 on plain English
+
+If you catch yourself reaching for words like viewBox, viewport, padding, render, wire up, layer, dimension, spec, config, before plain English appears in the same sentence, stop and rewrite. This rule has been violated repeatedly. Treat it as the highest-priority instruction on this project.
+
 ## What this is
 
 A desktop-first web app for exploring Chinese history from ~2070 BCE to 2026 CE. The defining UI choice is a wrapped multi-row timeline that reads like a museum wall or atlas spread, not a single long horizontal scroll.
-
-## Project status as of 2026-04-26
-
-Net new project. No production source code yet. Inputs are in place. Tech stack and folder structure will be decided in brainstorming with the user before any code is written.
-
-## Communication rule (non-negotiable)
-
-Every update, question, status check, and decision point gets written in plain English first. Lead with what Wei actually sees or what changes for this project. No engineering terms without a plain English translation immediately after, in brackets.
-
-This applies to: progress updates, blocker reports, design decisions, code review notes, status checks, tradeoff analyses, anything written to Wei. Not just architecture conversations. Every message.
-
-Examples of what wrong vs. right looks like:
-
-Wrong: "yearToDistance maps a year to a path-distance offset along the snake."
-Right: "We're building the math that turns a year into a position on the snake. So when we tell the chart 'put Han here,' it knows the exact spot. (yearToDistance function.)"
-
-Wrong: "Tests pass. Coverage at 92%."
-Right: "All 21 tests pass. The math module is fully covered, so we know it works before we draw anything on screen. (92% coverage.)"
-
-Wrong: "Should I refactor segmentPath to memoize?"
-Right: "Performance question. Right now we recalculate the bar shape every time the screen redraws, which is fine for 30 dynasties but could get sluggish if we add hundreds of events later. Want me to cache the result so it only recalculates when something changes? (Memoization.)"
-
-Wrong: "TimelineCanvas now consumes the new geometry module via useMemo, with ResizeObserver wired in."
-Right: "The chart canvas now reads the new snake math, and it automatically recomputes when the window resizes. So the chart stays the right shape on any screen size. (useMemo + ResizeObserver.)"
-
-The bracket translation goes after the plain English, not before. Skip the brackets only for trivial code edits and one-line fixes where there is no real decision or system to explain.
 
 ## What lives where
 

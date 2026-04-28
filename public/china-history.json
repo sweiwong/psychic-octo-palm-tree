@@ -1,81 +1,5 @@
 {
-  "systems": [
-    {
-      "id": "S_QH",
-      "type": "macro_system",
-      "systemId": "qin_han",
-      "name": "Qin-Han system",
-      "startYear": -221,
-      "endYear": 220,
-      "year": null,
-      "parentId": null,
-      "lane": "main",
-      "importance": 5,
-      "summary": "Imperial system",
-      "isPoint": false,
-      "duration": 441
-    },
-    {
-      "id": "S_3K",
-      "type": "macro_system",
-      "systemId": "disunion_1",
-      "name": "Three Kingdoms",
-      "startYear": 220,
-      "endYear": 280,
-      "year": null,
-      "parentId": null,
-      "lane": "main",
-      "importance": 5,
-      "summary": "Fragmentation",
-      "isPoint": false,
-      "duration": 60
-    },
-    {
-      "id": "S_ST",
-      "type": "macro_system",
-      "systemId": "sui_tang",
-      "name": "Sui-Tang",
-      "startYear": 581,
-      "endYear": 907,
-      "year": null,
-      "parentId": null,
-      "lane": "main",
-      "importance": 5,
-      "summary": "Reunification",
-      "isPoint": false,
-      "duration": 326
-    },
-    {
-      "id": "S_MODERN",
-      "type": "macro_system",
-      "systemId": "modern_china",
-      "name": "Modern China",
-      "startYear": 1912,
-      "endYear": 2026,
-      "year": null,
-      "parentId": null,
-      "lane": "main",
-      "importance": 5,
-      "summary": "Republican, revolutionary, and state-building era",
-      "isPoint": false,
-      "duration": 114
-    },
-    {
-      "id": "S_SONG",
-      "type": "macro_system",
-      "systemId": "song_system",
-      "name": "Song multi-state system",
-      "startYear": 960,
-      "endYear": 1279,
-      "year": null,
-      "parentId": null,
-      "lane": "main",
-      "importance": 5,
-      "summary": "Multi-state balance between Song, Liao, Jin, and Western Xia",
-      "isPoint": false,
-      "duration": 319
-    }
-  ],
+  "systems": [],
   "regimes": [
     {
       "id": "R_XIA",
@@ -530,21 +454,6 @@
   ],
   "events": [
     {
-      "id": "E_XIA_1",
-      "type": "event",
-      "systemId": "zhou_order",
-      "name": "Yu the Great founding",
-      "startYear": null,
-      "endYear": null,
-      "year": -2070,
-      "parentId": "R_XIA",
-      "lane": "event",
-      "importance": 3,
-      "summary": "Legendary founding",
-      "isPoint": true,
-      "duration": 0
-    },
-    {
       "id": "E_SHANG_1",
       "type": "event",
       "systemId": "zhou_order",
@@ -586,21 +495,6 @@
       "lane": "event",
       "importance": 5,
       "summary": "Unifies China",
-      "isPoint": true,
-      "duration": 0
-    },
-    {
-      "id": "E_QIN_2",
-      "type": "event",
-      "systemId": "qin_han",
-      "name": "Standardization",
-      "startYear": null,
-      "endYear": null,
-      "year": -220,
-      "parentId": "R_QIN",
-      "lane": "event",
-      "importance": 5,
-      "summary": "Unified systems",
       "isPoint": true,
       "duration": 0
     },
@@ -710,21 +604,6 @@
       "duration": 0
     },
     {
-      "id": "E_SUI_1",
-      "type": "event",
-      "systemId": "sui_tang",
-      "name": "Reunification",
-      "startYear": null,
-      "endYear": null,
-      "year": 589,
-      "parentId": "R_SUI",
-      "lane": "event",
-      "importance": 5,
-      "summary": "Ends division",
-      "isPoint": true,
-      "duration": 0
-    },
-    {
       "id": "E_TANG_1",
       "type": "event",
       "systemId": "sui_tang",
@@ -741,21 +620,6 @@
     },
     {
       "id": "E_MING_EUNUCH_1",
-      "type": "event",
-      "systemId": "conquest_cycle",
-      "name": "Expansion of eunuch power in Ming government",
-      "startYear": null,
-      "endYear": null,
-      "year": 1400,
-      "parentId": "R_MING",
-      "lane": "event",
-      "importance": 4,
-      "summary": "Eunuchs become major agents of imperial authority",
-      "isPoint": true,
-      "duration": 0
-    },
-    {
-      "id": "E_MING_EUNUCH_2",
       "type": "event",
       "systemId": "conquest_cycle",
       "name": "Wei Zhongxian dominance",
@@ -1152,7 +1016,7 @@
       "id": "C_BEIJING_MING",
       "type": "cultural_anchor",
       "systemId": "conquest_cycle",
-      "name": "Beijing confirmed as capital (Yongle)",
+      "name": "Forbidden City (Yongle)",
       "startYear": null,
       "endYear": null,
       "year": 1420,
@@ -1160,21 +1024,6 @@
       "lane": "main",
       "importance": 5,
       "summary": "Becomes permanent imperial capital",
-      "isPoint": true,
-      "duration": 0
-    },
-    {
-      "id": "C_BEIJING_QING",
-      "type": "cultural_anchor",
-      "systemId": "conquest_cycle",
-      "name": "Beijing as Qing capital",
-      "startYear": null,
-      "endYear": null,
-      "year": 1644,
-      "parentId": "R_QING",
-      "lane": "main",
-      "importance": 5,
-      "summary": "Continues as imperial center",
       "isPoint": true,
       "duration": 0
     }
@@ -1228,21 +1077,6 @@
       "summary": "Traditional earliest dynasty",
       "isPoint": false,
       "duration": 470
-    },
-    {
-      "id": "E_XIA_1",
-      "type": "event",
-      "systemId": "zhou_order",
-      "name": "Yu the Great founding",
-      "startYear": null,
-      "endYear": null,
-      "year": -2070,
-      "parentId": "R_XIA",
-      "lane": "event",
-      "importance": 3,
-      "summary": "Legendary founding",
-      "isPoint": true,
-      "duration": 0
     },
     {
       "id": "F_XIA_1",
@@ -1425,21 +1259,6 @@
       "duration": 0
     },
     {
-      "id": "S_QH",
-      "type": "macro_system",
-      "systemId": "qin_han",
-      "name": "Qin-Han system",
-      "startYear": -221,
-      "endYear": 220,
-      "year": null,
-      "parentId": null,
-      "lane": "main",
-      "importance": 5,
-      "summary": "Imperial system",
-      "isPoint": false,
-      "duration": 441
-    },
-    {
       "id": "R_QIN",
       "type": "regime",
       "systemId": "qin_han",
@@ -1515,21 +1334,6 @@
       "duration": 0
     },
     {
-      "id": "E_QIN_2",
-      "type": "event",
-      "systemId": "qin_han",
-      "name": "Standardization",
-      "startYear": null,
-      "endYear": null,
-      "year": -220,
-      "parentId": "R_QIN",
-      "lane": "event",
-      "importance": 5,
-      "summary": "Unified systems",
-      "isPoint": true,
-      "duration": 0
-    },
-    {
       "id": "E_HAN_1",
       "type": "event",
       "systemId": "qin_han",
@@ -1588,21 +1392,6 @@
       "summary": "Imperial symbol",
       "isPoint": true,
       "duration": 0
-    },
-    {
-      "id": "S_3K",
-      "type": "macro_system",
-      "systemId": "disunion_1",
-      "name": "Three Kingdoms",
-      "startYear": 220,
-      "endYear": 280,
-      "year": null,
-      "parentId": null,
-      "lane": "main",
-      "importance": 5,
-      "summary": "Fragmentation",
-      "isPoint": false,
-      "duration": 60
     },
     {
       "id": "R_WEI",
@@ -1725,21 +1514,6 @@
       "duration": 0
     },
     {
-      "id": "S_ST",
-      "type": "macro_system",
-      "systemId": "sui_tang",
-      "name": "Sui-Tang",
-      "startYear": 581,
-      "endYear": 907,
-      "year": null,
-      "parentId": null,
-      "lane": "main",
-      "importance": 5,
-      "summary": "Reunification",
-      "isPoint": false,
-      "duration": 326
-    },
-    {
       "id": "R_SUI",
       "type": "regime",
       "systemId": "sui_tang",
@@ -1768,21 +1542,6 @@
       "summary": "Imperial peak",
       "isPoint": false,
       "duration": 289
-    },
-    {
-      "id": "E_SUI_1",
-      "type": "event",
-      "systemId": "sui_tang",
-      "name": "Reunification",
-      "startYear": null,
-      "endYear": null,
-      "year": 589,
-      "parentId": "R_SUI",
-      "lane": "event",
-      "importance": 5,
-      "summary": "Ends division",
-      "isPoint": true,
-      "duration": 0
     },
     {
       "id": "E_TANG_1",
@@ -1833,7 +1592,7 @@
       "id": "C_BEIJING_MING",
       "type": "cultural_anchor",
       "systemId": "conquest_cycle",
-      "name": "Beijing confirmed as capital (Yongle)",
+      "name": "Forbidden City (Yongle)",
       "startYear": null,
       "endYear": null,
       "year": 1420,
@@ -1845,37 +1604,7 @@
       "duration": 0
     },
     {
-      "id": "C_BEIJING_QING",
-      "type": "cultural_anchor",
-      "systemId": "conquest_cycle",
-      "name": "Beijing as Qing capital",
-      "startYear": null,
-      "endYear": null,
-      "year": 1644,
-      "parentId": "R_QING",
-      "lane": "main",
-      "importance": 5,
-      "summary": "Continues as imperial center",
-      "isPoint": true,
-      "duration": 0
-    },
-    {
       "id": "E_MING_EUNUCH_1",
-      "type": "event",
-      "systemId": "conquest_cycle",
-      "name": "Expansion of eunuch power in Ming government",
-      "startYear": null,
-      "endYear": null,
-      "year": 1400,
-      "parentId": "R_MING",
-      "lane": "event",
-      "importance": 4,
-      "summary": "Eunuchs become major agents of imperial authority",
-      "isPoint": true,
-      "duration": 0
-    },
-    {
-      "id": "E_MING_EUNUCH_2",
       "type": "event",
       "systemId": "conquest_cycle",
       "name": "Wei Zhongxian dominance",
@@ -2055,21 +1784,6 @@
       "duration": 0
     },
     {
-      "id": "S_MODERN",
-      "type": "macro_system",
-      "systemId": "modern_china",
-      "name": "Modern China",
-      "startYear": 1912,
-      "endYear": 2026,
-      "year": null,
-      "parentId": null,
-      "lane": "main",
-      "importance": 5,
-      "summary": "Republican, revolutionary, and state-building era",
-      "isPoint": false,
-      "duration": 114
-    },
-    {
       "id": "R_ROC",
       "type": "regime",
       "systemId": "modern_china",
@@ -2188,21 +1902,6 @@
       "summary": "Shenzhou 5 makes China the third country to send a human into orbit independently",
       "isPoint": true,
       "duration": 0
-    },
-    {
-      "id": "S_SONG",
-      "type": "macro_system",
-      "systemId": "song_system",
-      "name": "Song multi-state system",
-      "startYear": 960,
-      "endYear": 1279,
-      "year": null,
-      "parentId": null,
-      "lane": "main",
-      "importance": 5,
-      "summary": "Multi-state balance between Song, Liao, Jin, and Western Xia",
-      "isPoint": false,
-      "duration": 319
     },
     {
       "id": "R_NSONG",
@@ -2417,7 +2116,7 @@
   ],
   "meta": {
     "sourceWorkbook": "china_history_v9.xlsx",
-    "recordCount": 80,
+    "recordCount": 70,
     "errorCount": 0,
     "version": 9
   }

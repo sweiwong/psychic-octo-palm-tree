@@ -1,9 +1,9 @@
 /* Chinese History Map — museum / atlas styling */
 
 :root {
-  --parchment: oklch(0.99 0 0);
-  --parchment-2: oklch(0.975 0 0);
-  --parchment-3: oklch(0.94 0 0);
+  --parchment: oklch(1 0 0);
+  --parchment-2: oklch(0.995 0 0);
+  --parchment-3: oklch(0.96 0 0);
   --ink: oklch(0.22 0.015 60);
   --ink-2: oklch(0.42 0.012 60);
   --ink-3: oklch(0.62 0.010 60);
@@ -118,9 +118,12 @@ html, body {
 /* ---------- Main grid ---------- */
 .app-body {
   display: grid;
-  grid-template-columns: 280px 1fr 340px;
+  grid-template-columns: 240px 1fr 340px;
   height: 100%;
   min-height: 0;
+}
+.app-body.idle {
+  grid-template-columns: 240px 1fr 0;
 }
 
 /* ---------- Sidebar ---------- */
@@ -259,16 +262,19 @@ html, body {
 
 /* ---------- Canvas ---------- */
 .canvas-shell {
-  background:
-    radial-gradient(ellipse at top, oklch(0.99 0 0), oklch(0.975 0 0) 70%);
-  overflow: auto;
+  background: oklch(1 0 0);
+  overflow: hidden;
   position: relative;
   min-height: 0;
+  display: flex;
 }
 .canvas-wrap {
+  flex: 1;
   width: 100%;
-  padding: 16px 16px 28px 16px;
+  height: 100%;
+  padding: 0;
   position: relative;
+  overflow: hidden;
 }
 .timeline-svg {
   display: block;
@@ -320,6 +326,9 @@ html, body {
   border-left: 1px solid var(--rule-strong);
   padding: 18px 18px 24px 18px;
   overflow-y: auto;
+}
+.detail.collapsed {
+  display: none;
 }
 .detail.empty {
   display: flex; flex-direction: column; align-items: center; justify-content: center;

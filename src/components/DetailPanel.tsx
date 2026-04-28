@@ -1,4 +1,3 @@
-import { COLOR } from '../lib/colors';
 import { fmtRange, fmtYear } from '../lib/format';
 import type { SelectedItem } from '../data/types';
 import { KnowledgeBaseStubs } from './KnowledgeBaseStubs';
@@ -42,22 +41,7 @@ const KIND_DOT_CLASS: Record<SelectedItem['kind'], string> = {
 
 export function DetailPanel({ item, related, onClose }: DetailPanelProps) {
   if (!item) {
-    return (
-      <aside className="detail empty">
-        <div className="detail-empty-art">
-          <svg viewBox="0 0 100 100" width="80" height="80" aria-hidden>
-            <circle cx="50" cy="50" r="38" fill="none" stroke={COLOR.ruleStrong} strokeWidth="1" />
-            <circle cx="50" cy="50" r="3" fill={COLOR.vermillion} />
-            <text x="50" y="92" fontFamily="Spectral, serif" fontSize="9" fill={COLOR.ink2} textAnchor="middle">
-              select an item
-            </text>
-          </svg>
-        </div>
-        <div className="detail-empty-msg">
-          Click any dynasty bar, event dot, or marker on the timeline to read its entry here.
-        </div>
-      </aside>
-    );
+    return <aside className="detail collapsed" aria-hidden="true" />;
   }
 
   const yearStr =
