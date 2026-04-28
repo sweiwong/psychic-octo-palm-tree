@@ -171,6 +171,15 @@ describe('backbonePath', () => {
     const d = backbonePath(g);
     expect(d.trimEnd().endsWith('L 117.5 582.5')).toBe(true);
   });
+
+  it('alternates arc sweep flag so right bends bulge right and left bends bulge left', () => {
+    const d = backbonePath(g);
+    // Each arc command has the form: A r r 0 0 <sweep> x y
+    const arcMatches = [...d.matchAll(/A\s+\S+\s+\S+\s+\S+\s+\S+\s+(\S+)\s+\S+\s+\S+/g)];
+    const sweepFlags = arcMatches.map(m => m[1]);
+    // Bends 0,1,2 are right, left, right (4 rows: right, left, right, left).
+    expect(sweepFlags).toEqual(['1', '0', '1']);
+  });
 });
 
 import { segmentPath } from './snake-path';

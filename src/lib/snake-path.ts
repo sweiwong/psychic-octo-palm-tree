@@ -195,10 +195,13 @@ export function backbonePath(g: SnakeGeometry): string {
     if (row < g.rowCount - 1) {
       // Arc into next row. The bend's start and end points share the same x
       // (rowEndX) because the half-circle goes vertically by 2*cornerRadius.
-      // Sweep flag 1 = positive direction in SVG, which appears visually
-      // clockwise with the y-axis pointing down.
+      // Right-side bends sweep clockwise (flag 1) so the curve bulges right
+      // off the canvas edge. Left-side bends sweep counter-clockwise (flag 0)
+      // so the curve bulges left off the canvas edge. Same-flag-everywhere
+      // makes the left bends loop back into the canvas — wrong shape.
       const nextY = g.rowCenterlines[row + 1];
-      parts.push(`A ${r} ${r} 0 0 1 ${rowEndX} ${nextY}`);
+      const sweepFlag = goingRight ? 1 : 0;
+      parts.push(`A ${r} ${r} 0 0 ${sweepFlag} ${rowEndX} ${nextY}`);
     }
   }
 
@@ -275,7 +278,10 @@ export function segmentPath(
         started = true;
       }
       // Arc length covered <= 180°, so large-arc-flag = 0.
-      parts.push(`A ${r} ${r} 0 0 1 ${x1} ${y1}`);
+      // Sweep direction follows bend side: right bends are clockwise (1),
+      // left bends are counter-clockwise (0) under SVG y-down.
+      const sweepFlag = center.side === 'right' ? 1 : 0;
+      parts.push(`A ${r} ${r} 0 0 ${sweepFlag} ${x1} ${y1}`);
     }
   }
 
