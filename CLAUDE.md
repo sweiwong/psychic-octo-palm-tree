@@ -8,13 +8,27 @@ A desktop-first web app for exploring Chinese history from ~2070 BCE to 2026 CE.
 
 Net new project. No production source code yet. Inputs are in place. Tech stack and folder structure will be decided in brainstorming with the user before any code is written.
 
-## How to explain technical decisions to Wei
+## Communication rule (non-negotiable)
 
-Always explain engineering and system design decisions in plain English, focused on the outcome. What does a user see, what gets faster or slower, what costs more or less, what becomes possible, what becomes risky. Then put the developer term in brackets so Wei builds vocabulary as the project moves.
+Every update, question, status check, and decision point gets written in plain English first. Lead with what Wei actually sees or what changes for this project. No engineering terms without a plain English translation immediately after, in brackets.
 
-Example shape: "We load the dataset once when the page opens and keep it in memory (client-side caching). First load is slightly slower, every click after is instant."
+This applies to: progress updates, blocker reports, design decisions, code review notes, status checks, tradeoff analyses, anything written to Wei. Not just architecture conversations. Every message.
 
-This applies to architecture choices, library picks, performance discussions, build decisions, and any tradeoff conversation. Skip the bracket-translation for trivial code edits and one-line fixes where there is no real decision to explain.
+Examples of what wrong vs. right looks like:
+
+Wrong: "yearToDistance maps a year to a path-distance offset along the snake."
+Right: "We're building the math that turns a year into a position on the snake. So when we tell the chart 'put Han here,' it knows the exact spot. (yearToDistance function.)"
+
+Wrong: "Tests pass. Coverage at 92%."
+Right: "All 21 tests pass. The math module is fully covered, so we know it works before we draw anything on screen. (92% coverage.)"
+
+Wrong: "Should I refactor segmentPath to memoize?"
+Right: "Performance question. Right now we recalculate the bar shape every time the screen redraws, which is fine for 30 dynasties but could get sluggish if we add hundreds of events later. Want me to cache the result so it only recalculates when something changes? (Memoization.)"
+
+Wrong: "TimelineCanvas now consumes the new geometry module via useMemo, with ResizeObserver wired in."
+Right: "The chart canvas now reads the new snake math, and it automatically recomputes when the window resizes. So the chart stays the right shape on any screen size. (useMemo + ResizeObserver.)"
+
+The bracket translation goes after the plain English, not before. Skip the brackets only for trivial code edits and one-line fixes where there is no real decision or system to explain.
 
 ## What lives where
 
