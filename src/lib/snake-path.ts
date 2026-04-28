@@ -177,3 +177,30 @@ export function yearToPoint(year: number, g: SnakeGeometry): PathFrame {
     normal: { x: 0, y: 1 },
   };
 }
+
+export function backbonePath(g: SnakeGeometry): string {
+  const r = g.cornerRadius;
+  const parts: string[] = [];
+
+  // Start at row 0 left endpoint
+  parts.push(`M ${g.padding + r} ${g.rowCenterlines[0]}`);
+
+  for (let row = 0; row < g.rowCount; row++) {
+    const goingRight = row % 2 === 0;
+    const rowEndX = goingRight
+      ? g.width - g.padding - r
+      : g.padding + r;
+    parts.push(`L ${rowEndX} ${g.rowCenterlines[row]}`);
+
+    if (row < g.rowCount - 1) {
+      // Arc into next row. The bend's start and end points share the same x
+      // (rowEndX) because the half-circle goes vertically by 2*cornerRadius.
+      // Sweep flag 1 = positive direction in SVG, which appears visually
+      // clockwise with the y-axis pointing down.
+      const nextY = g.rowCenterlines[row + 1];
+      parts.push(`A ${r} ${r} 0 0 1 ${rowEndX} ${nextY}`);
+    }
+  }
+
+  return parts.join(' ');
+}

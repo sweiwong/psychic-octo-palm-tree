@@ -145,3 +145,30 @@ describe('yearToPoint', () => {
     expect(p.normal.y).toBeCloseTo(1, 4);
   });
 });
+
+import { backbonePath } from './snake-path';
+
+describe('backbonePath', () => {
+  const g = computeGeometry({
+    width: 660, height: 700, padding: 40,
+    rowCount: 4, yearMin: -2070, yearMax: 2026,
+  });
+
+  it('starts with M at row 0 left endpoint', () => {
+    const d = backbonePath(g);
+    expect(d.startsWith('M 117.5 117.5')).toBe(true);
+  });
+
+  it('contains 4 line segments and 3 arc segments', () => {
+    const d = backbonePath(g);
+    const lineCount = (d.match(/\bL\b/g) ?? []).length;
+    const arcCount = (d.match(/\bA\b/g) ?? []).length;
+    expect(lineCount).toBe(4);
+    expect(arcCount).toBe(3);
+  });
+
+  it('ends at row 3 left endpoint', () => {
+    const d = backbonePath(g);
+    expect(d.trimEnd().endsWith('L 117.5 582.5')).toBe(true);
+  });
+});
