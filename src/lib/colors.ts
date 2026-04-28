@@ -18,6 +18,8 @@ export const COLOR = {
   jade:        'oklch(0.58 0.060 165)',
   indigo:      'oklch(0.45 0.060 250)',
   gold:        'oklch(0.72 0.110 80)',
+  cobalt:      'oklch(0.55 0.18 260)',
+  orange:      'oklch(0.66 0.18 40)',
 } as const;
 
 export type ImportanceLevel = 1 | 2 | 3 | 4 | 5;
@@ -32,7 +34,7 @@ const NON_HAN_DYNASTY_IDS = new Set(['R_YUAN', 'R_QING']);
 
 export function dynastyStripeFill(id: string, indexInSortedPrimary: number): string {
   if (NON_HAN_DYNASTY_IDS.has(id)) return COLOR.vermillion3;
-  return indexInSortedPrimary % 2 === 0 ? COLOR.vermillion : COLOR.vermillion2;
+  return indexInSortedPrimary % 2 === 0 ? COLOR.cobalt : COLOR.orange;
 }
 
 export const SYSTEM_BAND_PALETTE = [

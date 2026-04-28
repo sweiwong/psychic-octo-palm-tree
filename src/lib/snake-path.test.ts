@@ -182,7 +182,7 @@ describe('backbonePath', () => {
   });
 });
 
-import { segmentPath } from './snake-path';
+import { segmentPath, labelPath } from './snake-path';
 
 describe('segmentPath', () => {
   const g = computeGeometry({
@@ -222,5 +222,80 @@ describe('segmentPath', () => {
     const expected = yearToPoint(-2000, g);
     expect(parseFloat(startMatch![1])).toBeCloseTo(expected.x, 2);
     expect(parseFloat(startMatch![2])).toBeCloseTo(expected.y, 2);
+  });
+});
+
+describe('labelPath', () => {
+  // Use a 4-row geometry with a 200px row height (matches production layout).
+  // With these inputs: trackWidth = 380, arcLength = π*100, pxPerYear ≈ 0.6012.
+  // Row 0 carries roughly years -2070 to -1438 (LTR).
+  // Row 1 carries roughly years -915 to -283 (RTL).
+  // Row 2 carries roughly years 240 to 872 (LTR).
+  // Row 3 carries roughly years 1395 to 2026 (RTL).
+  const g = computeGeometry({
+    width: 660, height: 880, padding: 40,
+    rowCount: 4, yearMin: -2070, yearMax: 2026,
+  });
+
+  function firstM(d: string): { x: number; y: number } {
+    const m = d.match(/^M ([\d.-]+) ([\d.-]+)/);
+    if (!m) throw new Error('no M command in path');
+    return { x: parseFloat(m[1]), y: parseFloat(m[2]) };
+  }
+
+  it('returns the same path as segmentPath when midpoint is on a left-to-right row (row 0)', () => {
+    const yearStart = -2000;
+    const yearEnd = -1500;
+    const seg = segmentPath(yearStart, yearEnd, g);
+    const lab = labelPath(yearStart, yearEnd, g);
+    expect(lab).toBe(seg);
+  });
+
+  it('reverses the path when midpoint is on a right-to-left row (row 1)', () => {
+    const yearStart = -800;
+    const yearEnd = -200;
+    const seg = segmentPath(yearStart, yearEnd, g);
+    const lab = labelPath(yearStart, yearEnd, g);
+    expect(lab).not.toBe(seg);
+    // Forward path starts at the dynasty's startYear, which is screen-right on
+    // an RTL row; reversed label rail starts at endYear, which is screen-left.
+    const segStart = firstM(seg);
+    const labStart = firstM(lab);
+    expect(labStart.x).toBeLessThan(segStart.x);
+  });
+
+  it('reverses the path when midpoint is on a right-to-left row (row 3)', () => {
+    const yearStart = 1500;
+    const yearEnd = 1800;
+    const seg = segmentPath(yearStart, yearEnd, g);
+    const lab = labelPath(yearStart, yearEnd, g);
+    expect(lab).not.toBe(seg);
+    const segStart = firstM(seg);
+    const labStart = firstM(lab);
+    expect(labStart.x).toBeLessThan(segStart.x);
+  });
+
+  it('matches segmentPath for an empty (zero-length) year range', () => {
+    // segmentPath returns a degenerate "M x y L x y" for yearStart === yearEnd.
+    // labelPath has no direction to reverse, so it should return the same string.
+    const seg = segmentPath(1500, 1500, g);
+    const lab = labelPath(1500, 1500, g);
+    expect(lab).toBe(seg);
+  });
+
+  it("reversed path's start point matches forward path's end point", () => {
+    // Pick a row-1 dynasty so labelPath actually reverses.
+    const yearStart = -800;
+    const yearEnd = -200;
+    const seg = segmentPath(yearStart, yearEnd, g);
+    const lab = labelPath(yearStart, yearEnd, g);
+    // Forward path's last point: parse the trailing coordinate pair from
+    // either the final L or A command.
+    const tokens = seg.split(/\s+/).filter((t) => t.length > 0);
+    const lastY = parseFloat(tokens[tokens.length - 1]);
+    const lastX = parseFloat(tokens[tokens.length - 2]);
+    const labStart = firstM(lab);
+    expect(labStart.x).toBeCloseTo(lastX, 4);
+    expect(labStart.y).toBeCloseTo(lastY, 4);
   });
 });

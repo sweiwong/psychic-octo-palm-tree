@@ -1,4 +1,4 @@
-import { segmentPath, yearToDistance, type SnakeGeometry } from '../../lib/snake-path';
+import { labelPath, segmentPath, yearToDistance, type SnakeGeometry } from '../../lib/snake-path';
 import { fmtRange } from '../../lib/format';
 import type { NormalizedSpanItem, SelectedItem } from '../../data/types';
 
@@ -31,6 +31,8 @@ export function DynastySegment(props: DynastySegmentProps) {
   );
   const showLabel = barLengthPx >= LABEL_MIN_WIDTH;
   const pathId = `dynasty-path-${dynasty.id}`;
+  const labelD = labelPath(dynasty.start, dynasty.end, geometry);
+  const labelPathId = `dynasty-label-path-${dynasty.id}`;
 
   const tooltipBody = `${fmtRange(dynasty.start, dynasty.end)}${dynasty.summary ? ` — ${dynasty.summary}` : ''}`;
 
@@ -65,19 +67,22 @@ export function DynastySegment(props: DynastySegmentProps) {
         strokeLinejoin="round"
       />
       {showLabel && (
-        <text
-          aria-hidden="true"
-          fill="white"
-          fontFamily="'Spectral', 'Cormorant Garamond', serif"
-          fontSize={14}
-          fontWeight={600}
-          letterSpacing={1.4}
-          style={{ textTransform: 'uppercase', pointerEvents: 'none' }}
-        >
-          <textPath href={`#${pathId}`} startOffset="50%" textAnchor="middle">
-            {dynasty.name}
-          </textPath>
-        </text>
+        <>
+          <path id={labelPathId} d={labelD} fill="none" stroke="none" />
+          <text
+            aria-hidden="true"
+            fill="white"
+            fontFamily="'Spectral', 'Cormorant Garamond', serif"
+            fontSize={14}
+            fontWeight={600}
+            letterSpacing={1.4}
+            style={{ textTransform: 'uppercase', pointerEvents: 'none' }}
+          >
+            <textPath href={`#${labelPathId}`} startOffset="50%" textAnchor="middle">
+              {dynasty.name}
+            </textPath>
+          </text>
+        </>
       )}
       {highlighted && (
         <path

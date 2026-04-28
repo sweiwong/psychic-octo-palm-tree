@@ -287,3 +287,74 @@ export function segmentPath(
 
   return parts.join(' ');
 }
+
+function reversePath(d: string): string {
+  const tokens = d.split(/\s+/).filter((t) => t.length > 0);
+  type Cmd =
+    | { kind: 'M' | 'L'; x: number; y: number }
+    | {
+        kind: 'A';
+        rx: number;
+        ry: number;
+        xRot: number;
+        largeArc: number;
+        sweep: number;
+        x: number;
+        y: number;
+      };
+  const cmds: Cmd[] = [];
+  let i = 0;
+  while (i < tokens.length) {
+    const t = tokens[i];
+    if (t === 'M' || t === 'L') {
+      cmds.push({
+        kind: t,
+        x: parseFloat(tokens[i + 1]),
+        y: parseFloat(tokens[i + 2]),
+      });
+      i += 3;
+    } else if (t === 'A') {
+      cmds.push({
+        kind: 'A',
+        rx: parseFloat(tokens[i + 1]),
+        ry: parseFloat(tokens[i + 2]),
+        xRot: parseFloat(tokens[i + 3]),
+        largeArc: parseInt(tokens[i + 4], 10),
+        sweep: parseInt(tokens[i + 5], 10),
+        x: parseFloat(tokens[i + 6]),
+        y: parseFloat(tokens[i + 7]),
+      });
+      i += 8;
+    } else {
+      i += 1;
+    }
+  }
+  if (cmds.length === 0) return '';
+
+  const out: string[] = [];
+  const last = cmds[cmds.length - 1];
+  out.push(`M ${last.x} ${last.y}`);
+  for (let j = cmds.length - 1; j >= 1; j--) {
+    const c = cmds[j];
+    const prev = cmds[j - 1];
+    if (c.kind === 'L') {
+      out.push(`L ${prev.x} ${prev.y}`);
+    } else if (c.kind === 'A') {
+      out.push(`A ${c.rx} ${c.ry} ${c.xRot} ${c.largeArc} ${1 - c.sweep} ${prev.x} ${prev.y}`);
+    }
+  }
+  return out.join(' ');
+}
+
+export function labelPath(
+  yearStart: number,
+  yearEnd: number,
+  g: SnakeGeometry,
+): string {
+  const forward = segmentPath(yearStart, yearEnd, g);
+  if (!forward) return forward;
+  const midYear = (yearStart + yearEnd) / 2;
+  const frame = yearToPoint(midYear, g);
+  if (frame.tangent.x >= 0) return forward;
+  return reversePath(forward);
+}
