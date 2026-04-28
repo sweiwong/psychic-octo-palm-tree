@@ -54,3 +54,62 @@ export function computeGeometry(input: GeometryInput): SnakeGeometry {
     totalPathLength, pxPerYear, rowCenterlines, bendCenters,
   };
 }
+
+export interface PathPoint {
+  x: number;
+  y: number;
+}
+
+export function yearToDistance(year: number, g: SnakeGeometry): number {
+  return (year - g.yearMin) * g.pxPerYear;
+}
+
+export function distanceToPoint(distance: number, g: SnakeGeometry): PathPoint {
+  let remaining = distance;
+  for (let row = 0; row < g.rowCount; row++) {
+    const goingRight = row % 2 === 0;
+    const rowStartX = goingRight
+      ? g.padding + g.cornerRadius
+      : g.width - g.padding - g.cornerRadius;
+    const direction = goingRight ? 1 : -1;
+
+    if (remaining <= g.trackWidth) {
+      return {
+        x: rowStartX + direction * remaining,
+        y: g.rowCenterlines[row],
+      };
+    }
+    remaining -= g.trackWidth;
+
+    if (row === g.rowCount - 1) {
+      // Past the end. Clamp to row end.
+      const endX = goingRight
+        ? g.width - g.padding - g.cornerRadius
+        : g.padding + g.cornerRadius;
+      return { x: endX, y: g.rowCenterlines[row] };
+    }
+
+    if (remaining <= g.arcLength) {
+      const t = remaining / g.arcLength; // 0..1 along the arc
+      const center = g.bendCenters[row];
+      // Arc spans from "row centerline above" to "row centerline below",
+      // starting at angle -π/2 (top) and ending at +π/2 (bottom).
+      // For a right-side bend, sweep is +x (clockwise visually).
+      // For a left-side bend, sweep is -x (counter-clockwise visually).
+      const startAngle = -Math.PI / 2;
+      const endAngle = Math.PI / 2;
+      const angle = startAngle + t * (endAngle - startAngle);
+      const radialSign = center.side === 'right' ? 1 : -1;
+      return {
+        x: center.x + radialSign * g.cornerRadius * Math.cos(angle),
+        y: center.y + g.cornerRadius * Math.sin(angle),
+      };
+    }
+    remaining -= g.arcLength;
+  }
+  // Should never reach here; clamp to end of last row.
+  return {
+    x: g.padding + g.cornerRadius,
+    y: g.rowCenterlines[g.rowCount - 1],
+  };
+}
