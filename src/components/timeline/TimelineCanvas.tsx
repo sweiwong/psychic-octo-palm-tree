@@ -4,7 +4,6 @@ import { COLOR } from '../../lib/colors';
 import type { LayerToggles, NormalizedData, SelectedItem } from '../../data/types';
 import { SnakeBackbone } from './SnakeBackbone';
 import { DynastySegment } from './DynastySegment';
-import { ConcurrentSegment } from './ConcurrentSegment';
 import { dynastyStripeFill } from '../../lib/colors';
 
 const PADDING = 40;
@@ -59,11 +58,6 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
     [props.data.primary],
   );
 
-  const sortedConcurrent = useMemo(
-    () => [...props.data.concurrent].sort((a, b) => a.start - b.start),
-    [props.data.concurrent],
-  );
-
   return (
     <div className="canvas-wrap" ref={containerRef}>
       <svg
@@ -88,16 +82,6 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
             geometry={geometry}
             fill={dynastyStripeFill(d.id, idx)}
             highlighted={props.highlightId === d.id}
-            onPick={props.onPick}
-            onTooltip={setTooltip}
-          />
-        ))}
-        {props.layers.dynasties && sortedConcurrent.map((c) => (
-          <ConcurrentSegment
-            key={c.id}
-            regime={c}
-            geometry={geometry}
-            highlighted={props.highlightId === c.id}
             onPick={props.onPick}
             onTooltip={setTooltip}
           />
