@@ -12,6 +12,7 @@ export const COLOR = {
   ruleStrong:  'oklch(0.78 0.020 70)',
   vermillion:  'oklch(0.55 0.155 32)',
   vermillion2: 'oklch(0.62 0.135 32)',
+  vermillion3: 'oklch(0.50 0.115 350)',
   sepia:       'oklch(0.55 0.080 65)',
   sepia2:      'oklch(0.72 0.060 70)',
   jade:        'oklch(0.58 0.060 165)',
@@ -25,6 +26,13 @@ export function dynastyFill(importance: ImportanceLevel): string {
   if (importance >= 5) return COLOR.vermillion;
   if (importance >= 4) return COLOR.vermillion2;
   return COLOR.sepia;
+}
+
+const NON_HAN_DYNASTY_IDS = new Set(['R_YUAN', 'R_QING']);
+
+export function dynastyStripeFill(id: string, indexInSortedPrimary: number): string {
+  if (NON_HAN_DYNASTY_IDS.has(id)) return COLOR.vermillion3;
+  return indexInSortedPrimary % 2 === 0 ? COLOR.vermillion : COLOR.vermillion2;
 }
 
 export const SYSTEM_BAND_PALETTE = [
