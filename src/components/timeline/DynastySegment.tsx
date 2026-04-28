@@ -24,10 +24,11 @@ interface DynastySegmentProps {
   onPick: (id: string, kind: SelectedItem['kind']) => void;
   onTooltip: (payload: TooltipPayload | null) => void;
   calloutBelow?: boolean;
+  calloutXOffset?: number;
 }
 
 export function DynastySegment(props: DynastySegmentProps) {
-  const { dynasty, geometry, fill, highlighted, onPick, onTooltip, calloutBelow = false } = props;
+  const { dynasty, geometry, fill, highlighted, onPick, onTooltip, calloutBelow = false, calloutXOffset = 0 } = props;
   const d = segmentPath(dynasty.start, dynasty.end, geometry);
   if (!d) return null;
 
@@ -103,14 +104,14 @@ export function DynastySegment(props: DynastySegmentProps) {
           <line
             x1={mid.x}
             y1={leaderStartY}
-            x2={mid.x}
+            x2={mid.x + calloutXOffset}
             y2={leaderEndY}
             stroke={COLOR.ink2}
             strokeWidth={1}
           />
           <text
             aria-hidden="true"
-            x={mid.x}
+            x={mid.x + calloutXOffset}
             y={labelY}
             textAnchor="middle"
             dominantBaseline={calloutBelow ? 'hanging' : 'auto'}
