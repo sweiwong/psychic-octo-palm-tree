@@ -113,3 +113,67 @@ export function distanceToPoint(distance: number, g: SnakeGeometry): PathPoint {
     y: g.rowCenterlines[g.rowCount - 1],
   };
 }
+
+export interface PathFrame {
+  x: number;
+  y: number;
+  tangent: { x: number; y: number };
+  normal: { x: number; y: number };
+}
+
+export function yearToPoint(year: number, g: SnakeGeometry): PathFrame {
+  const distance = yearToDistance(year, g);
+  let remaining = distance;
+
+  for (let row = 0; row < g.rowCount; row++) {
+    const goingRight = row % 2 === 0;
+    const direction = goingRight ? 1 : -1;
+    const rowStartX = goingRight
+      ? g.padding + g.cornerRadius
+      : g.width - g.padding - g.cornerRadius;
+
+    if (remaining <= g.trackWidth) {
+      return {
+        x: rowStartX + direction * remaining,
+        y: g.rowCenterlines[row],
+        tangent: { x: direction, y: 0 },
+        normal: { x: 0, y: 1 },
+      };
+    }
+    remaining -= g.trackWidth;
+
+    if (row === g.rowCount - 1) break;
+
+    if (remaining <= g.arcLength) {
+      const t = remaining / g.arcLength;
+      const center = g.bendCenters[row];
+      const startAngle = -Math.PI / 2;
+      const endAngle = Math.PI / 2;
+      const angle = startAngle + t * (endAngle - startAngle);
+      const radialSign = center.side === 'right' ? 1 : -1;
+      const x = center.x + radialSign * g.cornerRadius * Math.cos(angle);
+      const y = center.y + g.cornerRadius * Math.sin(angle);
+      // Tangent direction: derivative of position with respect to t.
+      // Position = (center.x + radialSign * R * cos(angle), center.y + R * sin(angle))
+      // Derivative w.r.t. angle = (-radialSign * R * sin, R * cos), then normalized.
+      const tx = -radialSign * Math.sin(angle);
+      const ty = Math.cos(angle);
+      // Normal always points to greater y so the concurrent ribbon offset is
+      // a constant (0, +d) translation across all rows and bends. This works
+      // because the ribbon arc is the main arc translated down, not a tighter
+      // concentric arc.
+      return {
+        x, y,
+        tangent: { x: tx, y: ty },
+        normal: { x: 0, y: 1 },
+      };
+    }
+    remaining -= g.arcLength;
+  }
+  // Should not reach here
+  return {
+    x: 0, y: 0,
+    tangent: { x: 1, y: 0 },
+    normal: { x: 0, y: 1 },
+  };
+}

@@ -109,3 +109,39 @@ describe('distanceToPoint', () => {
     expect(p.y).toBeCloseTo(582.5, 4);
   });
 });
+
+import { yearToPoint } from './snake-path';
+
+describe('yearToPoint', () => {
+  const g = computeGeometry({
+    width: 660, height: 700, padding: 40,
+    rowCount: 4, yearMin: -2070, yearMax: 2026,
+  });
+
+  it('returns rightward tangent on row 0', () => {
+    const p = yearToPoint(-2000, g);
+    expect(p.tangent.x).toBeCloseTo(1, 4);
+    expect(p.tangent.y).toBeCloseTo(0, 4);
+  });
+
+  it('returns leftward tangent on row 1', () => {
+    const yearAtRow1Mid = -2070 + (1.5 * g.trackWidth + g.arcLength) / g.pxPerYear;
+    const p = yearToPoint(yearAtRow1Mid, g);
+    expect(p.tangent.x).toBeCloseTo(-1, 3);
+    expect(p.tangent.y).toBeCloseTo(0, 3);
+  });
+
+  it('returns downward tangent at rightmost point of bend 0', () => {
+    const yearAtBend0Mid = -2070 + (g.trackWidth + g.arcLength / 2) / g.pxPerYear;
+    const p = yearToPoint(yearAtBend0Mid, g);
+    expect(p.tangent.x).toBeCloseTo(0, 3);
+    expect(p.tangent.y).toBeCloseTo(1, 3);
+  });
+
+  it('normal is perpendicular to tangent and points to greater y on horizontal segments', () => {
+    const p = yearToPoint(-2000, g);
+    // tangent (1, 0), normal toward greater y = (0, 1)
+    expect(p.normal.x).toBeCloseTo(0, 4);
+    expect(p.normal.y).toBeCloseTo(1, 4);
+  });
+});
