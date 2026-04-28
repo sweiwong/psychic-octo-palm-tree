@@ -18,8 +18,8 @@ export const COLOR = {
   jade:        'oklch(0.58 0.060 165)',
   indigo:      'oklch(0.45 0.060 250)',
   gold:        'oklch(0.72 0.110 80)',
-  cobalt:      'oklch(0.55 0.18 260)',
-  orange:      'oklch(0.66 0.18 40)',
+  cobalt:      'oklch(0.62 0.11 252)',
+  orange:      'oklch(0.72 0.13 42)',
 } as const;
 
 export type ImportanceLevel = 1 | 2 | 3 | 4 | 5;
