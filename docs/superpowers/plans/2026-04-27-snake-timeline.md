@@ -1128,7 +1128,7 @@ import { dynastyStripeFill } from '../../lib/colors';
   );
 ```
 
-3. Add a tooltip state hook. Below `const [size, setSize] = useState(...)`:
+3. Add a tooltip state hook. Below `const [width, setWidth] = useState(...)`:
 
 ```typescript
   const [tooltip, setTooltip] = useState<{ x: number; y: number; title: string; sub: string } | null>(null);
@@ -2133,18 +2133,19 @@ test.describe('snake timeline v1', () => {
     // Backbone is present
     await expect(page.locator('[data-testid="snake-backbone"]')).toBeVisible();
 
-    // Major dynasties render
-    await expect(page.locator('[data-testid="dynasty-regime-han"]')).toBeVisible();
-    await expect(page.locator('[data-testid="dynasty-regime-tang"]')).toBeVisible();
-    await expect(page.locator('[data-testid="dynasty-regime-qing"]')).toBeVisible();
+    // Major dynasties render. Note: dataset ids use R_ prefix; Han is split
+    // into Western (R_HAN_W) and Eastern (R_HAN_E) — there is no plain R_HAN.
+    await expect(page.locator('[data-testid="dynasty-R_HAN_W"]')).toBeVisible();
+    await expect(page.locator('[data-testid="dynasty-R_TANG"]')).toBeVisible();
+    await expect(page.locator('[data-testid="dynasty-R_QING"]')).toBeVisible();
   });
 
   test('zhou bar is visibly longer than prc bar', async ({ page }) => {
     await page.goto('/');
     await page.waitForSelector('[data-testid="timeline-svg"]');
 
-    const zhou = page.locator('[data-testid="dynasty-regime-zhou"] path').first();
-    const prc = page.locator('[data-testid^="dynasty-regime-prc"]').first();
+    const zhou = page.locator('[data-testid="dynasty-R_ZHOU"] path').first();
+    const prc = page.locator('[data-testid="dynasty-R_PRC"] path').first();
 
     const zhouBox = await zhou.boundingBox();
     const prcBox = await prc.boundingBox();
@@ -2162,7 +2163,7 @@ test.describe('snake timeline v1', () => {
     await page.goto('/');
     await page.waitForSelector('[data-testid="timeline-svg"]');
 
-    await page.locator('[data-testid="dynasty-regime-tang"]').click();
+    await page.locator('[data-testid="dynasty-R_TANG"]').click();
 
     // Detail panel should show Tang
     await expect(page.getByText(/Tang/)).toBeVisible();
@@ -2185,7 +2186,7 @@ Run: `npm run test:e2e`
 Expected: PASS, 4 green tests.
 
 If a test fails:
-- Inspect the actual `data-testid` attribute used. The plan assumes ids like `regime-han`, `regime-tang`, `regime-qing`, `regime-zhou`, `regime-prc`. If the dataset uses different ids, update the test selectors accordingly.
+- Inspect the actual `data-testid` attribute used. The dataset uses R_ prefixed ids (R_HAN_W, R_HAN_E, R_TANG, R_QING, R_ZHOU, R_PRC, etc.) which feed straight into the `dynasty-${dynasty.id}` testid. If a test selector ever drifts from the dataset, fix the selector, not the data.
 - The Zhou-vs-PRC bounding box test is approximate. Curves can make bounding boxes less informative than path length. If it fails by a small margin, loosen the multiplier, but if Zhou's bounding box is not at least 3x PRC's, the proportional time mapping is broken.
 
 - [ ] **Step 4: Commit**
@@ -2280,9 +2281,9 @@ git commit -m "chore: checkpoint snake timeline v1 complete"
 
 ## Notes for the implementer
 
-- The geometry tests use real default dimensions (660 × 700 with padding 40). Floating-point assertions use `toBeCloseTo` with appropriate decimal places.
-- The arc sweep direction in SVG path commands is the trickiest piece. If a bend renders inside-out, flip the sweep flag from `1` to `0` in `backbonePath` and `segmentPath`.
-- The `data-testid` attributes on dynasty segments use the dynasty's `id` field directly. If the id format in the source dataset differs from the assumed `regime-<name>` format, update the E2E test selectors accordingly.
+- The geometry unit tests still pass `width: 660, height: 700, padding: 40` directly into `computeGeometry`. Those values exercise the function generically; the live canvas now uses a fixed 880px height (4 rows × 200px row height + 80px padding) at runtime. The function works for either set of inputs; the tests are not coupled to the canvas.
+- The arc sweep flag alternates: right-side bends use sweep `1` (clockwise, bulging right off the canvas), left-side bends use sweep `0` (counter-clockwise, bulging left). Both `backbonePath` and `segmentPath` already implement this. There is a regression test in `snake-path.test.ts` that locks the pattern to `['1', '0', '1']` for a 4-row snake.
+- The `data-testid` attributes on dynasty segments use the dynasty's `id` field directly. The dataset uses `R_` prefixed ids (`R_HAN_W`, `R_HAN_E`, `R_TANG`, `R_QING`, `R_ZHOU`, `R_PRC`, etc.). The Phase 8 E2E tests select on those exact ids — no `regime-<name>` translation.
 - The concurrent ribbon offset is positive (below the main bar) for all rows. The offset path uses the same arc geometry centered at the bend center plus the y offset, not a smaller-radius concentric arc.
 - The label width threshold is 50px for primary, 60px for concurrent. These are tunable. Adjust upward if labels collide, downward to label more short dynasties.
 - After Task 7, the page renders only the backbone. After Task 9, dynasties appear. Each task should produce a working visual snapshot.

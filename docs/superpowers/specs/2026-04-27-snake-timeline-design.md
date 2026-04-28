@@ -93,7 +93,7 @@ Each half-circle bend has diameter equal to `rowHeight`, so its endpoints land e
 
 Bend 0 (between row 0 and row 1) is centered at x = width - padding - cornerRadius, y = (rowHeight) / 2 + padding + cornerRadius. The arc goes from (width - padding - cornerRadius, row 0 y) clockwise 180 degrees to (width - padding - cornerRadius, row 1 y).
 
-Bend 1 (between row 1 and row 2) is centered at x = padding + cornerRadius. Arc goes from row 1 y clockwise 180 to row 2 y, passing through (padding, midY).
+Bend 1 (between row 1 and row 2) is centered at x = padding + cornerRadius. Arc goes from row 1 y counter-clockwise 180 to row 2 y, passing through (padding, midY). The sweep is the mirror of bend 0 — left-side bends bulge left off the canvas edge.
 
 Bend 2 (between row 2 and row 3) on the right side, mirroring bend 0.
 
@@ -128,9 +128,9 @@ The concurrent ribbon sits at a constant perpendicular offset from the main path
 For a perpendicular offset `d` (positive = below the main bar in screen coordinates):
 
 - For horizontal segments in any row: shift the path's y by `+d`. Direction of travel does not change this.
-- For bends: use radius `cornerRadius - d` instead of `cornerRadius`. The offset path is concentric with the main arc but tighter, riding on the inside of the curve.
+- For bends: translate the bend center down by `d` (same radius `cornerRadius`, same sweep direction). The offset arc is the main arc translated by (0, +d), not a tighter concentric arc.
 
-This works because the inside of every bend in a 4-row snake points toward the greater-y side of the path. The math is consistent across all four rows and all three bends.
+This works because (0, +d) shifts the entire arc downward in screen coordinates, which keeps the ribbon visually below the main bar throughout the bend regardless of which side the bend is on. The math is consistent across all four rows and all three bends.
 
 ## Files to add, replace, delete
 
@@ -178,28 +178,28 @@ The `TimelineCanvas` props change in two places:
 
 ## Coordinate sanity
 
-At 1280px viewport width, the canvas shell is roughly 660 wide (after 280 sidebar and 340 detail panel). At 800px viewport height, the canvas is roughly 700 tall (after 64 topbar and some chrome).
+The canvas height is locked at 880px (4 rows × 200px row height + 80px padding). The canvas shell scrolls vertically if the viewport is shorter than that. Width tracks the container — at a 1280px viewport with 280px sidebar and 340px detail panel, the canvas is roughly 660 wide.
 
 With those numbers:
 
-- rowHeight ≈ 155px
-- cornerRadius ≈ 77.5px
-- trackWidth ≈ 425px
-- arcLength ≈ 244px
-- totalPathLength ≈ 4 × 425 + 3 × 244 ≈ 2432px
-- pxPerYear ≈ 0.594 px/year
+- rowHeight = 200px (fixed by design for vertical breathing room)
+- cornerRadius = 100px (rowHeight / 2)
+- trackWidth ≈ 380px (660 − 80 padding − 200 corner diameter)
+- arcLength ≈ 314px (π × 100)
+- totalPathLength ≈ 4 × 380 + 3 × 314 ≈ 2462px
+- pxPerYear ≈ 0.601 px/year
 
 Dynasty widths:
 
-- Zhou (825 years) ≈ 490px (longer than one row, so wraps a bend)
-- Han (404 years) ≈ 240px (over half a row)
-- Tang (290 years) ≈ 172px
-- Ming (276 years) ≈ 164px
-- Qing (267 years) ≈ 159px
-- Song (319 years total, split into Northern and Southern) ≈ 190px
+- Zhou (825 years) ≈ 496px (longer than one row, so wraps a bend)
+- Han (404 years) ≈ 243px (over half a row)
+- Tang (290 years) ≈ 174px
+- Ming (276 years) ≈ 166px
+- Qing (267 years) ≈ 161px
+- Song (319 years total, split into Northern and Southern) ≈ 192px
 - PRC (77 years) ≈ 46px (label fits, just barely)
 - Yuan (97 years) ≈ 58px
-- Five Dynasties (53 years) ≈ 31px (no label)
+- Five Dynasties (53 years) ≈ 32px (no label)
 - Sui (37 years) ≈ 22px (no label)
 - Qin (15 years) ≈ 9px (no label, just a thin sliver)
 - Xin (17 years) ≈ 10px (no label)
