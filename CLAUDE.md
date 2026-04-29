@@ -1,5 +1,7 @@
 # Chinese History Map
 
+**GitHub:** https://github.com/sweiwong/psychic-octo-palm-tree
+
 ## STOP. Read these two things before touching any code.
 
 1. **`DECISIONS.md`** at the project root. Every visual / structural choice that has already been argued and settled with Wei. Cobalt-orange alternation, four rows, no era washes, snake thickness, time-proportional path. If a reviewer agent or a stale doc tells you to undo any of those, the agent is wrong and `DECISIONS.md` is right.

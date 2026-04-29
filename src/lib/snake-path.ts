@@ -1,10 +1,26 @@
 export interface GeometryInput {
   width: number;
   height: number;
+  /** Horizontal margin on left and right. Used for trackWidth calculations. */
   padding: number;
   rowCount: number;
   yearMin: number;
   yearMax: number;
+  /**
+   * Extra distance in pixels added to the LEFT free endpoints (row 0 start
+   * and last row end) so they reach the same x as the left bend's outer
+   * edge. Default 0 leaves the snake's free endpoints flush with the bend
+   * chord, which makes the bend appear to bulge LEFT of the row endpoints.
+   * Set to (cornerRadius + barHalfThickness) to align the snake's left
+   * outline at x = padding - barHalfThickness.
+   */
+  endExtension?: number;
+  /**
+   * Vertical margin on top and bottom. Defaults to `padding`. Pass a smaller
+   * value (e.g. 40) to give the snake more vertical room — bigger row gaps
+   * for labels above/below each bar.
+   */
+  paddingY?: number;
 }
 
 export interface BendCenter {
@@ -18,6 +34,7 @@ export interface SnakeGeometry extends GeometryInput {
   cornerRadius: number;
   trackWidth: number;
   arcLength: number;
+  endExtension: number;
   totalPathLength: number;
   pxPerYear: number;
   rowCenterlines: number[];
@@ -26,16 +43,20 @@ export interface SnakeGeometry extends GeometryInput {
 
 export function computeGeometry(input: GeometryInput): SnakeGeometry {
   const { width, height, padding, rowCount, yearMin, yearMax } = input;
-  const rowHeight = (height - 2 * padding) / rowCount;
+  const endExtension = input.endExtension ?? 0;
+  const paddingY = input.paddingY ?? padding;
+  const rowHeight = (height - 2 * paddingY) / rowCount;
   const cornerRadius = rowHeight / 2;
   const trackWidth = width - 2 * padding - 2 * cornerRadius;
   const arcLength = Math.PI * cornerRadius;
-  const totalPathLength = rowCount * trackWidth + (rowCount - 1) * arcLength;
+  // Rows 0 and (rowCount-1) extend by endExtension on their LEFT side, so
+  // the snake's free endpoints align with the left bend's outer edge.
+  const totalPathLength = rowCount * trackWidth + 2 * endExtension + (rowCount - 1) * arcLength;
   const pxPerYear = totalPathLength / (yearMax - yearMin);
 
   const rowCenterlines: number[] = [];
   for (let i = 0; i < rowCount; i++) {
-    rowCenterlines.push(padding + cornerRadius + i * rowHeight);
+    rowCenterlines.push(paddingY + cornerRadius + i * rowHeight);
   }
 
   const bendCenters: BendCenter[] = [];
@@ -50,9 +71,37 @@ export function computeGeometry(input: GeometryInput): SnakeGeometry {
 
   return {
     ...input,
+    endExtension,
     rowHeight, cornerRadius, trackWidth, arcLength,
     totalPathLength, pxPerYear, rowCenterlines, bendCenters,
   };
+}
+
+/**
+ * Effective track width for a given row. Rows 0 and (rowCount - 1) get
+ * `endExtension` extra pixels on their LEFT side so the snake's free
+ * endpoints align with the left bend's outer edge.
+ */
+function rowTrackWidth(row: number, g: SnakeGeometry): number {
+  const isEndRow = row === 0 || row === g.rowCount - 1;
+  return g.trackWidth + (isEndRow ? g.endExtension : 0);
+}
+
+/**
+ * Starting x for a row's path traversal. For LTR rows, this is the leftmost
+ * x. For RTL rows, this is the rightmost x. Rows 0 and (rowCount - 1) use
+ * the extended left endpoint when applicable.
+ */
+function rowStartX(row: number, g: SnakeGeometry): number {
+  const goingRight = row % 2 === 0;
+  if (goingRight) {
+    // Row 0 starts at the extended left endpoint; other LTR rows start at the bend chord.
+    return row === 0
+      ? g.padding + g.cornerRadius - g.endExtension
+      : g.padding + g.cornerRadius;
+  }
+  // RTL row: starts at right edge.
+  return g.width - g.padding - g.cornerRadius;
 }
 
 export interface PathPoint {
@@ -68,24 +117,21 @@ export function distanceToPoint(distance: number, g: SnakeGeometry): PathPoint {
   let remaining = distance;
   for (let row = 0; row < g.rowCount; row++) {
     const goingRight = row % 2 === 0;
-    const rowStartX = goingRight
-      ? g.padding + g.cornerRadius
-      : g.width - g.padding - g.cornerRadius;
+    const startX = rowStartX(row, g);
+    const trackLen = rowTrackWidth(row, g);
     const direction = goingRight ? 1 : -1;
 
-    if (remaining <= g.trackWidth) {
+    if (remaining <= trackLen) {
       return {
-        x: rowStartX + direction * remaining,
+        x: startX + direction * remaining,
         y: g.rowCenterlines[row],
       };
     }
-    remaining -= g.trackWidth;
+    remaining -= trackLen;
 
     if (row === g.rowCount - 1) {
       // Past the end. Clamp to row end.
-      const endX = goingRight
-        ? g.width - g.padding - g.cornerRadius
-        : g.padding + g.cornerRadius;
+      const endX = startX + direction * trackLen;
       return { x: endX, y: g.rowCenterlines[row] };
     }
 
@@ -128,19 +174,18 @@ export function yearToPoint(year: number, g: SnakeGeometry): PathFrame {
   for (let row = 0; row < g.rowCount; row++) {
     const goingRight = row % 2 === 0;
     const direction = goingRight ? 1 : -1;
-    const rowStartX = goingRight
-      ? g.padding + g.cornerRadius
-      : g.width - g.padding - g.cornerRadius;
+    const startX = rowStartX(row, g);
+    const trackLen = rowTrackWidth(row, g);
 
-    if (remaining <= g.trackWidth) {
+    if (remaining <= trackLen) {
       return {
-        x: rowStartX + direction * remaining,
+        x: startX + direction * remaining,
         y: g.rowCenterlines[row],
         tangent: { x: direction, y: 0 },
         normal: { x: 0, y: 1 },
       };
     }
-    remaining -= g.trackWidth;
+    remaining -= trackLen;
 
     if (row === g.rowCount - 1) break;
 
@@ -182,14 +227,14 @@ export function backbonePath(g: SnakeGeometry): string {
   const r = g.cornerRadius;
   const parts: string[] = [];
 
-  // Start at row 0 left endpoint
-  parts.push(`M ${g.padding + r} ${g.rowCenterlines[0]}`);
+  // Start at row 0 left endpoint (extended leftward by endExtension if any)
+  const startX = rowStartX(0, g);
+  parts.push(`M ${startX} ${g.rowCenterlines[0]}`);
 
   for (let row = 0; row < g.rowCount; row++) {
     const goingRight = row % 2 === 0;
-    const rowEndX = goingRight
-      ? g.width - g.padding - r
-      : g.padding + r;
+    const direction = goingRight ? 1 : -1;
+    const rowEndX = rowStartX(row, g) + direction * rowTrackWidth(row, g);
     parts.push(`L ${rowEndX} ${g.rowCenterlines[row]}`);
 
     if (row < g.rowCount - 1) {
@@ -226,8 +271,9 @@ export function segmentPath(
   const segments: Segment[] = [];
   let cursor = 0;
   for (let row = 0; row < g.rowCount; row++) {
-    segments.push({ kind: 'row', row, startDist: cursor, endDist: cursor + g.trackWidth });
-    cursor += g.trackWidth;
+    const trackLen = rowTrackWidth(row, g);
+    segments.push({ kind: 'row', row, startDist: cursor, endDist: cursor + trackLen });
+    cursor += trackLen;
     if (row < g.rowCount - 1) {
       segments.push({ kind: 'arc', bend: row, startDist: cursor, endDist: cursor + g.arcLength });
       cursor += g.arcLength;
@@ -247,11 +293,9 @@ export function segmentPath(
     if (seg.kind === 'row') {
       const goingRight = seg.row % 2 === 0;
       const direction = goingRight ? 1 : -1;
-      const rowStartX = goingRight
-        ? g.padding + r
-        : g.width - g.padding - r;
-      const localStartX = rowStartX + direction * (localStart - seg.startDist);
-      const localEndX = rowStartX + direction * (localEnd - seg.startDist);
+      const segStartX = rowStartX(seg.row, g);
+      const localStartX = segStartX + direction * (localStart - seg.startDist);
+      const localEndX = segStartX + direction * (localEnd - seg.startDist);
       const y = g.rowCenterlines[seg.row] + yOffset;
       if (!started) {
         parts.push(`M ${localStartX} ${y}`);

@@ -82,6 +82,14 @@ export type RenderLane =
   | 'main' | 'above' | 'above2' | 'below' | 'below2'
   | 'event' | 'figure' | 'anchor' | 'global';
 
+export interface SubPeriod {
+  id: string;
+  name: string;
+  start: number;
+  end: number;
+  summary: string;
+}
+
 export interface NormalizedSpanItem {
   id: string;
   type: EntityType;
@@ -95,6 +103,9 @@ export interface NormalizedSpanItem {
   sourceLane: SourceLane;
   renderLane: RenderLane;
   summary: string;
+  // Optional sub-periods rendered as italic labels along the bar.
+  // E.g. Eastern Zhou contains Spring & Autumn and Warring States.
+  subPeriods?: SubPeriod[];
 }
 
 export interface NormalizedPointItem {
@@ -167,10 +178,12 @@ export interface LayerToggles {
 
 export const defaultLayers: LayerToggles = {
   dynasties: true,
-  events: true,
-  figures: true,
-  culture: true,
-  inventions: true,
-  global: true,
-  sources: true,
+  // Everything below is OFF by default until we figure out non-cluttered
+  // placement. The user can re-enable any layer from the sidebar.
+  events: false,
+  figures: false,
+  culture: false,
+  inventions: false,
+  global: false,
+  sources: false,
 };

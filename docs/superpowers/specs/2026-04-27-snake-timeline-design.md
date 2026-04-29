@@ -71,15 +71,18 @@ The geometry module owns one job: given a year and an optional perpendicular off
 - `rowCount`: 4
 - `yearMin`: -2070
 - `yearMax`: 2026
+- `endExtension` (px, optional, default 0): extra horizontal length added to the LEFT side of row 0 and the LEFT side of the final row. Production passes `cornerRadius + barHalfThickness` so the snake's free endpoints reach the same x as the left bend's outer edge. See "Left bend alignment" below.
 
 **Derived values:**
 
 - `rowHeight` = (height - 2 * padding) / rowCount
 - `cornerRadius` = rowHeight / 2
-- `trackWidth` = width - 2 * padding - 2 * cornerRadius
+- `trackWidth` = width - 2 * padding - 2 * cornerRadius     (interior rows; rows 1, 2)
 - `arcLength` = π * cornerRadius
-- `totalPathLength` = rowCount * trackWidth + (rowCount - 1) * arcLength
+- `totalPathLength` = rowCount * trackWidth + 2 * endExtension + (rowCount - 1) * arcLength
 - `pxPerYear` = totalPathLength / (yearMax - yearMin)
+
+Note that rows 0 and (rowCount - 1) have an effective track width of `trackWidth + endExtension` because they extend leftward by `endExtension`. Interior rows (1, 2) use the base `trackWidth`. Total path length accounts for both end extensions.
 
 **Per-row centerline y:**
 
@@ -97,6 +100,21 @@ Bend 1 (between row 1 and row 2) is centered at x = padding + cornerRadius. Arc 
 
 Bend 2 (between row 2 and row 3) on the right side, mirroring bend 0.
 
+**Left bend alignment (added 2026-04-28):**
+
+By construction, the left bend's leftmost extent (centerline at x = padding, outer edge at x = padding − barHalfThickness) sits further left than where rows 0 and (rowCount − 1) would naturally start (x = padding + cornerRadius). Without correction, the bend visibly bulges left of the rows above and below — Wei flagged this as the snake "jutting out" on the left.
+
+The fix is `endExtension`. Set `endExtension = cornerRadius + barHalfThickness` and the start row + final row each pick up that extra length on their LEFT side. Their free endpoints now sit at:
+
+- Row 0 left start: x = padding + cornerRadius − endExtension = padding − barHalfThickness
+- Row (rowCount − 1) left end: x = padding − barHalfThickness
+
+Both equal the left bend's leftmost outer edge. The snake now has a single continuous vertical left outline at x = padding − barHalfThickness. Interior rows (1, 2) still terminate at the bend chord (x = padding + cornerRadius) — the bend itself fills the visual space between the chord and the outline.
+
+The right bends still bulge to x = width − padding + barHalfThickness; we did not extend rows 0 / final row on the right because the right side did not visually need it (the canvas has more breathing room on the right).
+
+Time proportionality is preserved end-to-end: `pxPerYear` is recomputed against the longer total path length, so every year still consumes the same number of pixels along the path.
+
 **Year to path-distance:**
 
 - distance(y) = (y - yearMin) * pxPerYear
@@ -105,9 +123,9 @@ Bend 2 (between row 2 and row 3) on the right side, mirroring bend 0.
 
 Walk the snake from path start, consuming `distance` along the way:
 
-- Segment lengths in order: [trackWidth, arcLength, trackWidth, arcLength, trackWidth, arcLength, trackWidth]
+- Segment lengths in order: [trackWidth + endExtension, arcLength, trackWidth, arcLength, trackWidth, arcLength, trackWidth + endExtension]
 - For a given total distance, find which segment it lands in by subtracting prior segment lengths
-- For a horizontal segment in row i: x is computed by walking left or right from the row start by the remaining distance, y is the row centerline
+- For a horizontal segment in row i: x is computed by walking left or right from the row start by the remaining distance, y is the row centerline. Row 0 starts at `padding + cornerRadius − endExtension` (going right). The final row ends at `padding + cornerRadius − endExtension` (since it is going left). Interior rows start at `padding + cornerRadius` (LTR) or `width − padding − cornerRadius` (RTL).
 - For an arc, parametrize by angle: angle = (remaining distance / arcLength) * π, position = arc center + cornerRadius * (cos angle, sin angle), tangent = perpendicular to radial direction
 
 **Year to (x, y, tangent, side normal):**
@@ -184,25 +202,28 @@ With those numbers:
 
 - rowHeight = 200px (fixed by design for vertical breathing room)
 - cornerRadius = 100px (rowHeight / 2)
-- trackWidth ≈ 380px (660 − 80 padding − 200 corner diameter)
+- barHalfThickness = 30px (BAR_THICKNESS / 2 from `DynastySegment.tsx`)
+- endExtension = cornerRadius + barHalfThickness = 130px (production setting; aligns the snake's left outline with the left bend's outer edge)
+- trackWidth ≈ 380px (660 − 80 padding − 200 corner diameter); applies to interior rows 1, 2
+- effective length of rows 0 and 3 ≈ trackWidth + endExtension = 510px
 - arcLength ≈ 314px (π × 100)
-- totalPathLength ≈ 4 × 380 + 3 × 314 ≈ 2462px
-- pxPerYear ≈ 0.601 px/year
+- totalPathLength ≈ 2 × 510 + 2 × 380 + 3 × 314 ≈ 2722px
+- pxPerYear ≈ 0.665 px/year
 
-Dynasty widths:
+Dynasty widths (computed against pxPerYear ≈ 0.665):
 
-- Zhou (825 years) ≈ 496px (longer than one row, so wraps a bend)
-- Han (404 years) ≈ 243px (over half a row)
-- Tang (290 years) ≈ 174px
-- Ming (276 years) ≈ 166px
-- Qing (267 years) ≈ 161px
-- Song (319 years total, split into Northern and Southern) ≈ 192px
-- PRC (77 years) ≈ 46px (label fits, just barely)
-- Yuan (97 years) ≈ 58px
-- Five Dynasties (53 years) ≈ 32px (no label)
-- Sui (37 years) ≈ 22px (no label)
-- Qin (15 years) ≈ 9px (no label, just a thin sliver)
-- Xin (17 years) ≈ 10px (no label)
+- Zhou (825 years) ≈ 549px (longer than one row, so wraps a bend)
+- Han (404 years) ≈ 269px (over half a row)
+- Tang (290 years) ≈ 193px
+- Ming (276 years) ≈ 184px
+- Qing (267 years) ≈ 178px
+- Song (319 years total, split into Northern and Southern) ≈ 212px
+- PRC (77 years) ≈ 51px (label fits, just barely)
+- Yuan (97 years) ≈ 65px
+- Five Dynasties (53 years) ≈ 35px (no label)
+- Sui (37 years) ≈ 25px (no label)
+- Qin (15 years) ≈ 10px (no label, just a thin sliver)
+- Xin (17 years) ≈ 11px (no label)
 
 Label visibility threshold: 50px. Below that, no label is drawn. Hover tooltip handles those.
 

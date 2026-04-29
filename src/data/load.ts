@@ -10,6 +10,7 @@ import {
   type SearchEntry,
   type SourceSpanEntity,
   type SourcePointEntity,
+  type SubPeriod,
 } from './types';
 
 const SOURCE_TO_RENDER_LANE: Record<SourceLane, RenderLane> = {
@@ -79,12 +80,33 @@ function pointSearchEntry(p: SourcePointEntity): SearchEntry {
 }
 
 export function normalize(raw: RawDataset): NormalizedData {
-  // Find umbrella regimes that have main-lane children, so we can hide them.
-  const childMainCount = new Map<string, number>();
+  // Index main-lane parent → children so we can detect umbrella regimes.
+  const mainChildrenByParent = new Map<string, SourceSpanEntity[]>();
   for (const r of raw.regimes) {
     if (r.lane === 'main' && r.parentId) {
-      childMainCount.set(r.parentId, (childMainCount.get(r.parentId) ?? 0) + 1);
+      const arr = mainChildrenByParent.get(r.parentId) ?? [];
+      arr.push(r);
+      mainChildrenByParent.set(r.parentId, arr);
     }
+  }
+  const regimeById = new Map<string, SourceSpanEntity>();
+  for (const r of raw.regimes) regimeById.set(r.id, r);
+
+  // A regime is a TOP-LEVEL umbrella if it has no parent and has main-lane
+  // children. Top-level umbrellas (e.g. Zhou) are skipped; their children
+  // (Western Zhou, Eastern Zhou) render in their place.
+  // Sub-period regimes (e.g. Spring and Autumn nested under Eastern Zhou) are
+  // also skipped — they only render as italic sub-period labels along their
+  // parent's bar.
+  function isTopLevelUmbrella(r: SourceSpanEntity): boolean {
+    return r.parentId === null && mainChildrenByParent.has(r.id);
+  }
+  function isSubPeriodOfRendered(r: SourceSpanEntity): boolean {
+    if (!r.parentId) return false;
+    const parent = regimeById.get(r.parentId);
+    if (!parent) return false;             // parent is a system (e.g. S_SONG); render the regime
+    if (parent.lane !== 'main') return false;
+    return !isTopLevelUmbrella(parent);
   }
 
   const primary: NormalizedSpanItem[] = [];
@@ -92,8 +114,24 @@ export function normalize(raw: RawDataset): NormalizedData {
 
   for (const r of raw.regimes) {
     if (r.lane === 'main') {
-      if (childMainCount.has(r.id)) continue;  // umbrella with main-lane children, skip
-      primary.push(spanToRenderable(r, 'main'));
+      if (isTopLevelUmbrella(r)) continue;        // skip Zhou; render its children
+      if (isSubPeriodOfRendered(r)) continue;     // skip Spring/Autumn, Warring States
+      const item = spanToRenderable(r, 'main');
+      // Attach any sub-periods (children of this regime that we just skipped).
+      const kids = mainChildrenByParent.get(r.id);
+      if (kids && kids.length) {
+        item.subPeriods = kids
+          .slice()
+          .sort((a, b) => a.startYear - b.startYear)
+          .map<SubPeriod>(k => ({
+            id: k.id,
+            name: k.name,
+            start: k.startYear,
+            end: k.endYear,
+            summary: k.summary,
+          }));
+      }
+      primary.push(item);
     } else {
       const renderLane = SOURCE_TO_RENDER_LANE[r.lane];
       concurrent.push(spanToRenderable(r, renderLane));
@@ -124,9 +162,19 @@ export function normalize(raw: RawDataset): NormalizedData {
     childrenByParent.set(child.parentId, arr);
   }
 
-  // Flat search index across every kind we want to search.
+  // Search index includes regimes that render as bars + sub-period children
+  // (so users can still search "Spring and Autumn" and see it highlighted on
+  // its parent's bar).
+  const renderedIds = new Set<string>([
+    ...primary.map(p => p.id),
+    ...concurrent.map(c => c.id),
+  ]);
+  const subPeriodRegimes = raw.regimes.filter(r =>
+    r.lane === 'main' && isSubPeriodOfRendered(r)
+  );
   const searchIndex: SearchEntry[] = [
-    ...raw.regimes.filter(r => !childMainCount.has(r.id)).map(spanSearchEntry),
+    ...raw.regimes.filter(r => renderedIds.has(r.id)).map(spanSearchEntry),
+    ...subPeriodRegimes.map(spanSearchEntry),
     ...raw.events.map(pointSearchEntry),
     ...raw.figures.map(pointSearchEntry),
     ...raw.culturalAnchors.map(pointSearchEntry),

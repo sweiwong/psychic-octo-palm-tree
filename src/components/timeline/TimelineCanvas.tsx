@@ -18,13 +18,21 @@ import type {
 import { SnakeBackbone } from './SnakeBackbone';
 import { DynastySegment } from './DynastySegment';
 
-const PADDING = 160;
-const ROW_COUNT = 4;
+const PADDING = 200;
+// Vertical padding is intentionally smaller than horizontal — we want lots
+// of room between rows (more breathing space for labels above/below each
+// bar), but plenty of side margin so bend year-pills don't clip.
+const PADDING_Y = 70;
+const ROW_COUNT = 5;
 const YEAR_MIN = -2070;
 const YEAR_MAX = 2026;
 
 const MIN_CANVAS_WIDTH = 760;
 const MIN_CANVAS_HEIGHT = 520;
+
+// Bar half-thickness used to align rows 0/N-1 free endpoints with the left
+// bend's outer edge. Must match BAR_THICKNESS / 2 in DynastySegment.tsx.
+const BAR_HALF_THICKNESS = 30;
 
 const CONC_BAR_THICKNESS = 14;
 const CONC_LANE_OFFSETS: Record<'north' | 'west' | 'south', number> = {
@@ -35,9 +43,14 @@ const CONC_LANE_OFFSETS: Record<'north' | 'west' | 'south', number> = {
 
 const EVENT_LABEL_OFFSET_ABOVE = 44;
 const EVENT_LABEL_OFFSET_BELOW = 44;
+// How much each successive event-label level is pushed away from the bar.
+const EVENT_LABEL_LEVEL_STEP = 26;
+// Padding added between adjacent labels at the same level when checking for collision.
+const EVENT_LABEL_X_PADDING = 6;
+const EVENT_LABEL_MAX_LEVELS = 4;
 
 const FIGURE_OFFSET_ABOVE = 70;
-const ANCHOR_OFFSET_ABOVE = 92;
+const ANCHOR_OFFSET_BELOW = 76;
 const GLOBAL_OFFSET_BELOW = 110;
 
 interface TooltipPayload {
@@ -79,14 +92,24 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
     return () => ro.disconnect();
   }, []);
 
-  const geometry = useMemo(() => computeGeometry({
-    width: size.w,
-    height: size.h,
-    padding: PADDING,
-    rowCount: ROW_COUNT,
-    yearMin: YEAR_MIN,
-    yearMax: YEAR_MAX,
-  }), [size.w, size.h]);
+  const geometry = useMemo(() => {
+    // Extend the snake's free endpoints (row 0 start, last row end) leftward
+    // so they align with the left bend's outer edge instead of stopping at the
+    // bend chord. Without this, the bend visibly bulges left of the rows.
+    const rowHeight = (size.h - 2 * PADDING_Y) / ROW_COUNT;
+    const cornerRadius = rowHeight / 2;
+    const endExtension = cornerRadius + BAR_HALF_THICKNESS;
+    return computeGeometry({
+      width: size.w,
+      height: size.h,
+      padding: PADDING,
+      paddingY: PADDING_Y,
+      rowCount: ROW_COUNT,
+      yearMin: YEAR_MIN,
+      yearMax: YEAR_MAX,
+      endExtension,
+    });
+  }, [size.w, size.h]);
 
   const sortedPrimary = useMemo(
     () => [...props.data.primary].sort((a, b) => a.start - b.start),
@@ -99,6 +122,22 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
     return m;
   }, [sortedPrimary]);
 
+  // Find year ranges where no primary dynasty rules. These render as grey
+  // "interregnum" bars so the gap between, e.g., Eastern Zhou (ends -256) and
+  // Qin (starts -221) reads as "no central authority" instead of an empty
+  // background.
+  const interregnums = useMemo(() => {
+    const gaps: Array<{ start: number; end: number }> = [];
+    for (let i = 0; i < sortedPrimary.length - 1; i++) {
+      const cur = sortedPrimary[i];
+      const next = sortedPrimary[i + 1];
+      if (next.start > cur.end) {
+        gaps.push({ start: cur.end, end: next.start });
+      }
+    }
+    return gaps;
+  }, [sortedPrimary]);
+
   // Years to label at every row break (start year of every row except row 0).
   const rowBreakYears = useMemo(() => {
     const yearsPerRow = (YEAR_MAX - YEAR_MIN) / ROW_COUNT;
@@ -108,6 +147,14 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
     }
     return out;
   }, []);
+
+  // Plan event label placement so labels don't overlap. Each label gets
+  // assigned a side (above/below) and a level (how far from the bar).
+  // Without this, modern-era clusters on the bottom row collide.
+  const eventPlacements = useMemo(
+    () => planEventLabels(props.data.events, geometry),
+    [props.data.events, geometry],
+  );
 
   return (
     <div className="canvas-wrap" ref={containerRef}>
@@ -128,6 +175,11 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
 
         {/* Snake guide line */}
         <SnakeBackbone geometry={geometry} />
+
+        {/* Interregnum bars — grey segments where no dynasty rules */}
+        {props.layers.dynasties && interregnums.map((gap, i) => (
+          <InterregnumBar key={`gap-${i}`} gap={gap} geometry={geometry} />
+        ))}
 
         {/* Concurrent state bars BELOW the main snake */}
         {props.layers.dynasties && props.data.concurrent.map(c => (
@@ -206,18 +258,23 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
           />
         ))}
 
-        {/* Events (alternating above/below to reduce collisions) */}
-        {props.layers.events && props.data.events.map((e, i) => (
-          <EventLabel
-            key={e.id}
-            item={e}
-            geometry={geometry}
-            placeAbove={i % 2 === 0}
-            highlighted={props.highlightId === e.id}
-            onPick={props.onPick}
-            onTooltip={setTooltip}
-          />
-        ))}
+        {/* Events (placed via collision-avoidance, multiple levels per side) */}
+        {props.layers.events && props.data.events.map(e => {
+          const placement = eventPlacements.get(e.id);
+          if (!placement) return null; // event sits on a bend, skip
+          return (
+            <EventLabel
+              key={e.id}
+              item={e}
+              geometry={geometry}
+              placeAbove={placement.above}
+              level={placement.level}
+              highlighted={props.highlightId === e.id}
+              onPick={props.onPick}
+              onTooltip={setTooltip}
+            />
+          );
+        })}
       </svg>
       {tooltip && (
         <div className="tooltip" style={{ left: tooltip.x + 14, top: tooltip.y + 14 }}>
@@ -226,6 +283,36 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
         </div>
       )}
     </div>
+  );
+}
+
+// ---------------- Interregnum bar (no central authority) ----------------
+
+const INTERREGNUM_BAR_THICKNESS = 60; // matches BAR_THICKNESS in DynastySegment.tsx
+
+function InterregnumBar({ gap, geometry }: { gap: { start: number; end: number }; geometry: SnakeGeometry }) {
+  const d = segmentPath(gap.start, gap.end, geometry);
+  if (!d) return null;
+  return (
+    <g pointerEvents="none" data-testid={`interregnum-${gap.start}-${gap.end}`}>
+      <path
+        d={d}
+        fill="none"
+        stroke={COLOR.ruleStrong}
+        strokeWidth={INTERREGNUM_BAR_THICKNESS}
+        strokeLinecap="butt"
+        opacity={0.55}
+      />
+      <path
+        d={d}
+        fill="none"
+        stroke={COLOR.ink3}
+        strokeWidth={INTERREGNUM_BAR_THICKNESS}
+        strokeLinecap="butt"
+        strokeDasharray="3 4"
+        opacity={0.18}
+      />
+    </g>
   );
 }
 
@@ -310,15 +397,34 @@ function ConcurrentBar({ item, geometry, highlighted, onPick, onTooltip }: Concu
 
 // ---------------- Dynasty start-year date pill ----------------
 
-function DynastyDatePill({ year, geometry }: { year: number; geometry: SnakeGeometry }) {
+// Pivotal unification / regime-change years that get visual emphasis: bigger,
+// vermillion-on-white, with a label underneath. Empty for now — the previous
+// 221 BCE callout sat on top of the QIN bar (Qin is short and lands on the
+// left bend, so there's no clean place for a callout above it). Re-enable
+// once we have a non-blocking placement (e.g. side-pinned, or only when zoom
+// is high enough that the bend region is large).
+const HIGHLIGHTED_YEARS: Record<number, string> = {};
+
+interface DatePillProps {
+  year: number;
+  geometry: SnakeGeometry;
+}
+
+function DynastyDatePill({ year, geometry }: DatePillProps) {
   const point = yearToPoint(year, geometry);
-  // Skip points that fall on a bend; the row-bend marker handles those.
-  if (Math.abs(point.tangent.x) < 0.5) return null;
+  const onCurve = Math.abs(point.tangent.x) < 0.5;
+  const isHighlighted = HIGHLIGHTED_YEARS[year] !== undefined;
+  // Highlighted pills render even on bends (we'll callout them with a leader).
+  if (onCurve && !isHighlighted) return null;
 
   const yearText = year < 0 ? `${Math.abs(year)} BCE` : `${year} CE`;
+
+  if (isHighlighted) {
+    return <HighlightedDatePill year={year} point={point} text={yearText} label={HIGHLIGHTED_YEARS[year]} />;
+  }
+
   const pillWidth = yearText.length * 6.2 + 10;
   const pillHeight = 16;
-  // Sit just below the bar (bar is 60px thick, centered on row centerline)
   const yTop = point.y + 34;
 
   return (
@@ -350,6 +456,69 @@ function DynastyDatePill({ year, geometry }: { year: number; geometry: SnakeGeom
   );
 }
 
+interface HighlightedDatePillProps {
+  year: number;
+  point: { x: number; y: number; tangent: { x: number; y: number } };
+  text: string;
+  label: string;
+}
+
+function HighlightedDatePill({ point, text, label }: HighlightedDatePillProps) {
+  // Sit ABOVE the bar with a short leader so the highlight stands above the
+  // regular gold pills (which sit below). Bigger, vermillion-on-white,
+  // two lines (year on top, plain-English label underneath).
+  const pillWidth = Math.max(text.length, label.length) * 7.2 + 16;
+  const pillHeight = 36;
+  const yTop = point.y - 32 - 24 - pillHeight;  // 32 (bar half) + 24 (leader) + pill
+  const leaderTopY = yTop + pillHeight;
+  const leaderBottomY = point.y - 32;
+
+  return (
+    <g pointerEvents="none">
+      <line
+        x1={point.x}
+        y1={leaderBottomY}
+        x2={point.x}
+        y2={leaderTopY}
+        stroke={COLOR.vermillion}
+        strokeWidth={1.2}
+      />
+      <rect
+        x={point.x - pillWidth / 2}
+        y={yTop}
+        width={pillWidth}
+        height={pillHeight}
+        rx={3}
+        fill="white"
+        stroke={COLOR.vermillion}
+        strokeWidth={1.4}
+      />
+      <text
+        x={point.x}
+        y={yTop + 14}
+        fill={COLOR.vermillion}
+        fontFamily="'JetBrains Mono', ui-monospace, monospace"
+        fontSize={13}
+        fontWeight={700}
+        textAnchor="middle"
+      >
+        {text}
+      </text>
+      <text
+        x={point.x}
+        y={yTop + 28}
+        fill={COLOR.ink}
+        fontFamily="'Spectral', serif"
+        fontSize={11}
+        fontStyle="italic"
+        textAnchor="middle"
+      >
+        {label}
+      </text>
+    </g>
+  );
+}
+
 // ---------------- Bend year marker ----------------
 
 function BendYearMarker({ year, geometry }: { year: number; geometry: SnakeGeometry }) {
@@ -359,16 +528,21 @@ function BendYearMarker({ year, geometry }: { year: number; geometry: SnakeGeome
   if (!isOnCurve) return null;
 
   const onRightSide = point.x > geometry.width / 2;
-  const labelX = onRightSide ? point.x + 8 : point.x - 8;
+  // Push the pill outside the bar at the bend's tip (bar half-thickness = 30
+  // plus a small gap), so the gold rect doesn't sit on top of the dynasty bar.
+  const barClearance = 36;
+  const rectWidth = 68;
+  const rectX = onRightSide ? point.x + barClearance : point.x - barClearance - rectWidth;
+  const labelX = onRightSide ? point.x + barClearance + 4 : point.x - barClearance - 4;
   const labelAnchor: 'start' | 'end' = onRightSide ? 'start' : 'end';
   const yearText = year < 0 ? `${Math.abs(year)} BCE` : `${year} CE`;
 
   return (
     <g pointerEvents="none">
       <rect
-        x={onRightSide ? point.x + 4 : point.x - 72}
+        x={rectX}
         y={point.y - 12}
-        width={68}
+        width={rectWidth}
         height={24}
         rx={2}
         fill={COLOR.gold}
@@ -398,18 +572,20 @@ interface EventLabelProps {
   item: NormalizedPointItem;
   geometry: SnakeGeometry;
   placeAbove: boolean;
+  level: number;
   highlighted: boolean;
   onPick: (id: string, kind: SelectedItem['kind']) => void;
   onTooltip: (payload: TooltipPayload | null) => void;
 }
 
-function EventLabel({ item, geometry, placeAbove, highlighted, onPick, onTooltip }: EventLabelProps) {
+function EventLabel({ item, geometry, placeAbove, level, highlighted, onPick, onTooltip }: EventLabelProps) {
   const point = yearToPoint(item.year, geometry);
   // Skip events that fall on a curve — they're hard to place cleanly.
   if (Math.abs(point.tangent.x) < 0.5) return null;
 
   const dir = placeAbove ? -1 : 1;
-  const leaderEndY = point.y + dir * (placeAbove ? EVENT_LABEL_OFFSET_ABOVE : EVENT_LABEL_OFFSET_BELOW);
+  const baseOffset = placeAbove ? EVENT_LABEL_OFFSET_ABOVE : EVENT_LABEL_OFFSET_BELOW;
+  const leaderEndY = point.y + dir * (baseOffset + level * EVENT_LABEL_LEVEL_STEP);
   const labelY = leaderEndY + dir * 4;
   const labelText = item.name.length > 28 ? `${item.name.slice(0, 26)}…` : item.name;
   const labelWidth = Math.min(220, labelText.length * 7.2 + 14);
@@ -475,7 +651,12 @@ interface MarkerProps {
 }
 
 function FigureMarker({ item, geometry, highlighted, onPick, onTooltip }: MarkerProps) {
-  const point = yearToPoint(item.year, geometry);
+  // Some figures (e.g. Yu the Great, year -2100) sit before the snake's
+  // year range. Clamp to the snake bounds for VISUAL placement so the
+  // marker sits at the start of its parent dynasty instead of floating off
+  // the canvas edge. The tooltip still shows the actual legendary date.
+  const clampedYear = Math.max(geometry.yearMin, Math.min(geometry.yearMax, item.year));
+  const point = yearToPoint(clampedYear, geometry);
   if (Math.abs(point.tangent.x) < 0.5) return null;
 
   const y = point.y - FIGURE_OFFSET_ABOVE;
@@ -520,13 +701,13 @@ function FigureMarker({ item, geometry, highlighted, onPick, onTooltip }: Marker
   );
 }
 
-// ---------------- Cultural anchor (above the snake, square marker) ----------------
+// ---------------- Cultural anchor (below the snake, square marker) ----------------
 
 function AnchorMarker({ item, geometry, highlighted, onPick, onTooltip }: MarkerProps) {
   const point = yearToPoint(item.year, geometry);
   if (Math.abs(point.tangent.x) < 0.5) return null;
 
-  const y = point.y - ANCHOR_OFFSET_ABOVE;
+  const y = point.y + ANCHOR_OFFSET_BELOW;
   const tooltipBody = `${fmtYear(item.year)}${item.summary ? ` — ${item.summary}` : ''}`;
 
   return (
@@ -540,9 +721,9 @@ function AnchorMarker({ item, geometry, highlighted, onPick, onTooltip }: Marker
     >
       <line
         x1={point.x}
-        y1={point.y - 32}
+        y1={point.y + 32}
         x2={point.x}
-        y2={y + 6}
+        y2={y - 6}
         stroke={COLOR.gold}
         strokeWidth={0.6}
         strokeDasharray="2 2"
@@ -622,4 +803,72 @@ function GlobalMarker({ item, geometry, highlighted, onPick, onTooltip }: Marker
       </text>
     </g>
   );
+}
+
+// ---------------- Event label placement planner ----------------
+
+interface EventPlacement {
+  above: boolean;
+  level: number;
+}
+
+/**
+ * Assign each event to a (side, level) so labels don't overlap. Walks the
+ * events in path order and tries side/level combinations from closest to the
+ * bar outward, alternating sides at each level. Events on a bend are skipped
+ * (no clean perpendicular space).
+ */
+function planEventLabels(
+  events: NormalizedPointItem[],
+  geometry: SnakeGeometry,
+): Map<string, EventPlacement> {
+  const placements = new Map<string, EventPlacement>();
+  const items = events
+    .map(e => {
+      const point = yearToPoint(e.year, geometry);
+      if (Math.abs(point.tangent.x) < 0.5) return null;
+      const labelText = e.name.length > 28 ? `${e.name.slice(0, 26)}…` : e.name;
+      const labelWidth = Math.min(220, labelText.length * 7.2 + 14);
+      return { id: e.id, x: point.x, w: labelWidth };
+    })
+    .filter((x): x is { id: string; x: number; w: number } => x !== null)
+    .sort((a, b) => a.x - b.x);
+
+  const occupiedAbove: Array<Array<[number, number]>> = [];
+  const occupiedBelow: Array<Array<[number, number]>> = [];
+  for (let i = 0; i < EVENT_LABEL_MAX_LEVELS; i++) {
+    occupiedAbove.push([]);
+    occupiedBelow.push([]);
+  }
+
+  function fits(intervals: Array<[number, number]>, x1: number, x2: number): boolean {
+    for (const [a, b] of intervals) {
+      if (!(b + EVENT_LABEL_X_PADDING < x1 || a > x2 + EVENT_LABEL_X_PADDING)) return false;
+    }
+    return true;
+  }
+
+  for (const item of items) {
+    const x1 = item.x - item.w / 2;
+    const x2 = item.x + item.w / 2;
+    let placed = false;
+    for (let level = 0; level < EVENT_LABEL_MAX_LEVELS && !placed; level++) {
+      for (const above of [true, false]) {
+        const list = above ? occupiedAbove[level] : occupiedBelow[level];
+        if (fits(list, x1, x2)) {
+          list.push([x1, x2]);
+          placements.set(item.id, { above, level });
+          placed = true;
+          break;
+        }
+      }
+    }
+    if (!placed) {
+      const lvl = EVENT_LABEL_MAX_LEVELS - 1;
+      occupiedBelow[lvl].push([x1, x2]);
+      placements.set(item.id, { above: false, level: lvl });
+    }
+  }
+
+  return placements;
 }

@@ -4,10 +4,10 @@ import { COLOR } from '../../lib/colors';
 import type { NormalizedSpanItem, SelectedItem } from '../../data/types';
 
 const BAR_THICKNESS = 60;
-const INLINE_LABEL_FONT_SIZE = 26;
-const AVG_CHAR_WIDTH = 17.5;  // px per uppercase char at INLINE_LABEL_FONT_SIZE, letterSpacing 1.4
+const INLINE_LABEL_FONT_SIZE = 22;
+const AVG_CHAR_WIDTH = 14.8;  // px per uppercase char at INLINE_LABEL_FONT_SIZE 22, letterSpacing 1.4
 const LEADER_LENGTH = 22;     // px — vertical leader line from bar to label
-const CALLOUT_FONT_SIZE = 16; // px — smaller than carved label for visual hierarchy
+const CALLOUT_FONT_SIZE = 12; // px — smaller than carved label for visual hierarchy
 const CALLOUT_GAP = 4;        // px between leader end and label baseline
 
 interface TooltipPayload {
@@ -137,6 +137,40 @@ export function DynastySegment(props: DynastySegmentProps) {
           </text>
         </g>
       )}
+      {dynasty.subPeriods?.map((sub) => {
+        const overlapStart = Math.max(sub.start, dynasty.start);
+        const overlapEnd = Math.min(sub.end, dynasty.end);
+        if (overlapEnd <= overlapStart) return null;
+        const subMidYear = (overlapStart + overlapEnd) / 2;
+        const subPos = yearToPoint(subMidYear, geometry);
+        if (Math.abs(subPos.tangent.x) < 0.5) return null; // skip if on a bend
+        const overlapPx = Math.abs(
+          yearToDistance(overlapEnd, geometry) - yearToDistance(overlapStart, geometry)
+        );
+        const charWidth = 8.2; // approximate at fontSize 12 + letterSpacing 0.6
+        const subFits = sub.name.length * charWidth + 18 < overlapPx;
+        if (!subFits) return null;
+        const subBaselineY = subPos.y - barHalfThickness + 14;
+        return (
+          <text
+            key={sub.id}
+            x={subPos.x}
+            y={subBaselineY}
+            aria-hidden="true"
+            fill="white"
+            fontFamily="'Spectral', 'Cormorant Garamond', serif"
+            fontSize={12}
+            fontStyle="italic"
+            fontWeight={500}
+            letterSpacing={0.6}
+            opacity={0.85}
+            textAnchor="middle"
+            style={{ textTransform: 'uppercase', pointerEvents: 'none' }}
+          >
+            {sub.name}
+          </text>
+        );
+      })}
       {highlighted && (
         <path
           d={d}

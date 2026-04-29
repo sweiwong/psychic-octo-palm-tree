@@ -4,7 +4,7 @@
     {
       "id": "R_XIA",
       "type": "regime",
-      "systemId": "zhou_order",
+      "systemId": "shang_xia",
       "name": "Xia",
       "startYear": -2070,
       "endYear": -1600,
@@ -19,7 +19,7 @@
     {
       "id": "R_SHANG",
       "type": "regime",
-      "systemId": "zhou_order",
+      "systemId": "shang_xia",
       "name": "Shang",
       "startYear": -1600,
       "endYear": -1046,
@@ -456,7 +456,7 @@
     {
       "id": "E_SHANG_1",
       "type": "event",
-      "systemId": "zhou_order",
+      "systemId": "shang_xia",
       "name": "Oracle bone script",
       "startYear": null,
       "endYear": null,
@@ -471,7 +471,7 @@
     {
       "id": "E_SHANG_2",
       "type": "event",
-      "systemId": "zhou_order",
+      "systemId": "shang_xia",
       "name": "Zhou conquest of Shang",
       "startYear": null,
       "endYear": null,
@@ -938,7 +938,7 @@
     {
       "id": "F_XIA_1",
       "type": "figure",
-      "systemId": "zhou_order",
+      "systemId": "shang_xia",
       "name": "Yu the Great",
       "startYear": null,
       "endYear": null,
@@ -1066,7 +1066,7 @@
     {
       "id": "R_XIA",
       "type": "regime",
-      "systemId": "zhou_order",
+      "systemId": "shang_xia",
       "name": "Xia",
       "startYear": -2070,
       "endYear": -1600,
@@ -1081,7 +1081,7 @@
     {
       "id": "F_XIA_1",
       "type": "figure",
-      "systemId": "zhou_order",
+      "systemId": "shang_xia",
       "name": "Yu the Great",
       "startYear": null,
       "endYear": null,
@@ -1096,7 +1096,7 @@
     {
       "id": "R_SHANG",
       "type": "regime",
-      "systemId": "zhou_order",
+      "systemId": "shang_xia",
       "name": "Shang",
       "startYear": -1600,
       "endYear": -1046,
@@ -1111,7 +1111,7 @@
     {
       "id": "E_SHANG_1",
       "type": "event",
-      "systemId": "zhou_order",
+      "systemId": "shang_xia",
       "name": "Oracle bone script",
       "startYear": null,
       "endYear": null,
@@ -1126,7 +1126,7 @@
     {
       "id": "E_SHANG_2",
       "type": "event",
-      "systemId": "zhou_order",
+      "systemId": "shang_xia",
       "name": "Zhou conquest of Shang",
       "startYear": null,
       "endYear": null,

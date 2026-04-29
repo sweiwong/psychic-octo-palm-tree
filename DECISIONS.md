@@ -25,6 +25,11 @@ Why: At 4 rows, dynasty bars stay wide enough that names fit inside without need
 Date locked: 2026-04-27
 Do not change without: Wei explicitly asking for more rows because of label collision in a specific row.
 
+**Reversed 2026-04-28: five rows, not four.**
+Why: At 4 rows, the modern era (last ~200 years on row 3) was crammed and the bend year-markers (e.g. "22 BCE" at the row 1 → row 2 transition) clipped against the canvas edge. Wei asked for 5 rows. With 5 rows, each year takes more pixels of horizontal space, so the modern cluster spreads out and the bend labels have room. Trade-off: rows are vertically thinner so bends are smaller; dynasty bars are wider per year so most short dynasties (Sui, Qin) gain a couple more pixels — still not enough to fit a label inline.
+Date locked: 2026-04-28
+Do not change without: Wei asking to go back to 4 (or to try another count).
+
 **Time is strictly proportional across the entire snake.**
 Year-to-position is linear: every year takes the same number of pixels of path length. PRC (77 years) appears as a tiny segment. Zhou (~825 years) appears as a long segment. Curves count toward total path length, so a dynasty that crosses a bend does not get extra space.
 Date locked: 2026-04-27
@@ -74,6 +79,11 @@ Date locked: 2026-04-28
 Up from the original 28. This was set to make dynasty names readable from a normal viewing distance.
 Date locked: 2026-04-28
 Do not change without: Wei asking for thicker or thinner.
+
+**Left bend's outer edge aligns with the rows above and below.**
+The first row (Xia, Shang) and the last row (PRC, ROC, Qing, …) extend leftward by `cornerRadius + barHalfThickness` so their left caps sit at the same x as the leftmost extent of the left bend (Western Han → Xin → Eastern Han). Without this extension, the bend visibly bulges further left than the row endpoints — Wei flagged this as "jutting out". Implementation: `endExtension` parameter on `computeGeometry` in `src/lib/snake-path.ts`. Default 0 (preserves the original behavior for tests). Production canvas passes `cornerRadius + 30` so the snake's left outline is one continuous vertical at `x = padding − barHalfThickness`. Proportional time mapping is preserved: pxPerYear is recomputed against the longer total path length, so every year still takes the same number of pixels.
+Date locked: 2026-04-28
+Do not change without: Wei asking for the bend back to its bulged form, or for a different alignment target.
 
 ---
 
