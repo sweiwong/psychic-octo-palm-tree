@@ -1,10 +1,12 @@
 # Snake geometry — what makes it readable
 
+> **Status note (2026-05-03):** The Claude Design geometry described below was rejected and the test harness was deleted. Source files were archived to `archive/claude-design/output/`. The live app continues to use our own TypeScript geometry at `src/lib/snake-path.ts`, which renders bars as stroked SVG paths rather than filled polygons. The kink and squish problems described here never affected the live app because they are specific to the polygon-based approach. Notes are kept because the geometry insights (right-of-tangent normals at joins, decoupled row gap from bend radius) may inform future work even if we don't adopt Claude Design's specific module.
+
 Notes from the 2026-04-28 session evaluating Claude Design's `snake-geometry.js`. Save here because memory files don't survive across machines or across someone else opening this repo.
 
 ## What we did
 
-Claude Design produced a `snake-geometry.js` file (the math for the snake path: 4 rows, time-proportional, half-circle U-bends). We saved it to `claude-design-output/snake-geometry.js` and built a standalone test harness at `claude-design-output/test.html` (also served from `public/claude-design-test/test.html`) so we could evaluate the geometry without touching the live React app.
+Claude Design produced a `snake-geometry.js` file (the math for the snake path: 4 rows, time-proportional, half-circle U-bends). We saved it to `archive/claude-design/output/snake-geometry.js` (originally at `claude-design-output/snake-geometry.js`) and built a standalone test harness (originally at `public/claude-design-test/test.html`) so we could evaluate the geometry without touching the live React app.
 
 The first render had two visible problems:
 
@@ -40,36 +42,28 @@ This let us set `rowGap = 240` with `bendRadiusX = 90`. Each bar gets about 90 p
 
 If a future session reports "the snake looks broken" or "events stack on top of each other":
 
-1. **X-kinks at bends?** Open `claude-design-output/snake-geometry.js`, find `pointAt`, check both branches (straight and bend) return normals that match at the boundary. Specifically: the LTR bend's normal should be `-cos(theta), -sin(theta)`, NOT `cos(theta), sin(theta)`. The RTL straight's normal should be `(0, -1)` for an RTL row, NOT `(0, 1)`.
+1. **X-kinks at bends?** This problem was specific to the rejected polygon-based geometry. The live app uses stroked SVG paths and doesn't have this failure mode. If you ever re-evaluate the polygon approach, open `archive/claude-design/output/snake-geometry.js`, find `pointAt`, check both branches (straight and bend) return normals that match at the boundary. Specifically: the LTR bend's normal should be `-cos(theta), -sin(theta)`, NOT `cos(theta), sin(theta)`. The RTL straight's normal should be `(0, -1)` for an RTL row, NOT `(0, 1)`.
 
 2. **Squished vertical layout?** Check that `build()` accepts a `rowGap` parameter and that bends are computed as half-ellipses, not half-circles tied to the bend radius. The bend segment in `segments[]` should have separate `a` (horizontal radius) and `b` (vertical radius = rowGap / 2).
 
 ## Files
 
-- `claude-design-output/snake-geometry.js` — the corrected geometry module (canonical copy)
-- `claude-design-output/test.html` — standalone test harness rendering the snake from the real dataset
-- `public/claude-design-test/snake-geometry.js` — same as above but served by Vite at runtime
-- `public/claude-design-test/test.html` — same as above but served by Vite at runtime
-- The live app (`src/lib/snake-path.ts`) does NOT use this geometry yet. It still uses our prior TypeScript implementation, which doesn't have the kink bug because it renders bars as stroked paths instead of filled polygons.
+- `archive/claude-design/output/snake-geometry.js` — the corrected geometry module (archived, no longer wired up anywhere)
+- `archive/claude-design/output/test.html` — the standalone test harness (archived; the served copy under `public/claude-design-test/` was deleted on 2026-05-03)
+- The live app (`src/lib/snake-path.ts`) renders bars as stroked SVG paths and never used the Claude Design geometry. It doesn't have the kink bug because it doesn't build polygons.
 
 ## Test page URL
 
-`http://localhost:5180/claude-design-test/test.html` when the dev server is running. Standalone preview, separate from the live app.
+The test harness is no longer served. The files live under `archive/claude-design/output/`. To inspect them locally, open `archive/claude-design/output/test.html` directly in a browser, or temporarily copy back into `public/` (and remember to remove again).
 
-## What's still open
+## What's still open in the live app (relevant beyond the geometry pass)
 
-Three things were flagged as remaining when Wei said "much better now":
+These items were flagged in the harness, but they show up in the live app too. They're tracked in `docs/decisions-pending.md` now, alongside the rest of the open visual / UX questions.
 
-- **PRC event density** — six events crammed into a 77-year span on the bottom-left of the snake. Time-proportional + dense events = pile-up. Fix is either curating events down or rotating labels 90° / using horizontal compaction.
-- **"WESTERN HAN" clipping into the left bend** — needs a placement rule that suppresses inline labels when the bar's center falls too close to a curve.
-- **ROC unlabeled** — the bar is too narrow for an inline label. Needs a callout-above treatment like the live app does for tiny dynasties.
+- **PRC event density** — six events in a 77-year span. Time-proportional plus dense events makes them pile up. Fix options live in `decisions-pending.md`.
+- **Bar labels colliding with bends** — needs a placement rule that suppresses inline labels when the bar's center sits too close to a curve.
+- **Tiny dynasties unlabeled** — the bar is too narrow for an inline label. Live app uses callout-above treatment for some cases (Xin, ROC); needs to be applied consistently.
 
-These are rendering bugs in the test harness's drawing code, not in the geometry math. They'll need solving when porting into the live React app, regardless.
+## Resolved decision
 
-## Three next-step options Wei was deciding between
-
-1. **Keep iterating on the test page.** Fix remaining test-page issues before touching the live app. Lowest risk, slowest path to integration.
-2. **Port the new geometry into TypeScript** and replace `src/lib/snake-path.ts` behind a feature flag. The math is sound; porting is mechanical. Once ported, the live app gets the cleaner bends, generous row gap, half-ellipse curves.
-3. **Wait for Claude Design's full design pass.** Geometry is only one deliverable. Palette, typography, full visual treatment may come when usage resets.
-
-If a future session resumes here without context, the answer to "what's the right next step?" is: ask Wei. As of 2026-04-28 she hadn't picked one yet.
+**2026-05-03:** Wei rejected the Claude Design pass overall. The next-step decision is no longer "port the harness or wait for more design output". The live app's existing geometry is what we ship and iterate on. See `docs/decisions-pending.md` for the current open list.

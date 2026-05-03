@@ -2,6 +2,8 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
+> **Update 2026-05-03 — paths and references in this plan are stale.** The folder originally referenced as `handoff-extracted/` has been moved to `archive/claude-design/prototype/` (still the same files inside). The Claude Design pass that this plan was built around was later rejected as slop; see `archive/claude-design/README.md`. Several decisions made during implementation (row count, palette, era washes) reverse choices from this plan and are recorded in `DECISIONS.md`. When in conflict, `DECISIONS.md` wins. This plan is preserved as a historical record of the original phased build, not as a current source of truth.
+
 ## Status
 
 - **Phase:** Phase C–D in progress (Tasks 10–12 done), next batch starts at Task 13

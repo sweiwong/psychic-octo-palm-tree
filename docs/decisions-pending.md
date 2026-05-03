@@ -1,80 +1,98 @@
 # Decisions pending — pick these up next session
 
-Captured at 2026-04-28 checkpoint. Wei needs to make calls on these before more code work makes sense. Listed in roughly the order they'd unblock the next chunk of work.
+Last updated 2026-05-03. Wei needs to make calls on these before more code work makes sense. Listed in roughly the order they'd unblock the next chunk of work.
 
-## 1. Which integration path?
+> **Resolved 2026-05-03:** items 1 (which integration path), 2 (filled polygons vs stroked paths), 6 (what to do with the test harness), and 7 (when to update DECISIONS.md after the port). The Claude Design pass was rejected as slop. The live app keeps its existing TypeScript geometry (`src/lib/snake-path.ts`) and stroked-path rendering. The test harness has been deleted; the rest of Claude Design's output has been archived under `archive/claude-design/`. `DECISIONS.md` was updated to reflect that the palette is no longer waiting on Claude Design. See the cleanup commit on 2026-05-03 for details.
 
-The new snake geometry from Claude Design (with the two fixes applied) lives at `claude-design-output/snake-geometry.js` and renders cleanly in the test page at `public/claude-design-test/test.html`. The live app at `src/components/timeline/TimelineCanvas.tsx` still uses our older TypeScript geometry from `src/lib/snake-path.ts`. Three options:
+The remaining open items below all came out of the senior-frontend / UX review of the live app on 2026-05-03.
 
-- **A. Port the new geometry into TypeScript and replace `src/lib/snake-path.ts`** behind a feature flag. The math is solid. Remaining work would be mechanical translation, then wiring up the existing event / figure / anchor / concurrent renderers to the new ribbon-path approach. Fastest path to the live app actually looking like the test page.
-- **B. Keep iterating on the test page first.** Fix the test-page rendering bugs (PRC event density, Western Han clipping, ROC unlabeled) before porting. Lower risk but slower, and most of those bugs need solving in the live app anyway.
-- **C. Wait for Claude Design's full pass.** Geometry is one deliverable. Palette, typography, top bar, sidebar, detail panel may all come when Wei's usage resets and she pushes Claude Design again. Then port everything in one shot.
+## 1. Right-edge clipping on the bottom row
 
-**Default if nothing's said:** A. The geometry is the load-bearing piece; everything else is rendering style we already have.
+The PRC bar at the bottom-right runs off the canvas. The callout label hangs off the page. This is a layout bug, not a design choice. Likely the same root cause as the empty trailing space on row 1: bends consume time, but the renderer isn't extending the right-most bar through the bend.
 
-## 2. Filled-polygon ribbons or stroked paths for the bars?
+**Decision:** Fix as a bug or rethink how end-of-row bends are handled at the snake's far ends.
 
-Our existing app uses SVG **stroked paths** (one path per bar with `stroke-width = bar thickness`, rounded line joins). The new Claude Design geometry uses **filled polygons** (compute outer and inner edges by sampling along the path, build a closed polygon).
+## 2. Empty trailing space at the end of row 1
 
-Tradeoffs:
+Xia and Shang occupy about half of row 1, then the snake curves around to row 2 with a long bare segment that has no fill. The bend marker reads "1251 BCE", but Shang ends 1046 BCE and Western Zhou starts 1046 BCE. The ~205 years from 1251 BCE through the bend are unfilled.
 
-- Stroked paths: simpler code, smooth bends "for free" via SVG line joins, but can't easily taper the bar or use different styling on top vs bottom edges.
-- Filled polygons: more code, needs careful normal handling at joins (the bug we just fixed), but allows future tapered or differently-styled edges.
+**Decision:** Either fill the bend with the active dynasty's color through its true end year, or compress the bend so it consumes less timeline.
 
-**Decision:** Pick one as the rendering model when porting. They're not compatible — code lives in different shapes.
+## 3. Concurrent state visual treatment
 
-## 3. PRC event density
+Currently rendered as thin sepia ribbons below the main snake. Visible under Three Kingdoms (Wei / Shu / Wu) and under Northern Song (Liao / Western Xia / Jin Jurchen). Reads as footnotes, not as parallel kingdoms.
 
-Six events fall in the 1949–2026 range (Mao death, Tiananmen, Hong Kong return, First crewed space, Xi consolidation, Belt and Road). At time-proportional scale, that's six labels in roughly 30–40 pixels of bar width. They pile horizontally in the test page.
+The PRD calls "coexistence has to be visually obvious" the canonical test, and right now it isn't.
 
 Options:
 
-- **Curate down** to two or three modern events. The dataset is already curated; this would just be pickier curation.
-- **Rotate labels 90°** so they read vertically and don't compete for horizontal space.
-- **Compact callouts** — short tags with arrow lines pointing to the year, fanned out further from the bar.
-- **Click-to-reveal** — show only the most important modern events at default zoom, full set on click.
+- Keep sepia thin ribbons but bump weight and add labels inline.
+- Make them equal visual weight to the main bar, offset below, with a different fill.
+- Treat as a parallel mini-snake — full bar weight, distinct color family.
+
+**Decision:** How distinct should concurrent kingdoms feel from main-lane dynasties?
+
+## 4. PRC event density
+
+Six events fall in the 1949–2026 range (Mao death, Tiananmen, Hong Kong return, First crewed space, Xi consolidation, Belt and Road). At time-proportional scale, that's six labels in roughly 30–40 pixels of bar width.
+
+Options:
+
+- **Curate down** to two or three modern events.
+- **Rotate labels 90°** so they read vertically.
+- **Compact callouts** with leader lines fanned out from the bar.
+- **Click-to-reveal** — show only the most important modern events at default zoom.
 
 **Decision:** Pick how dense modern events should feel. Affects PRC, Qing, and Tang rows specifically.
 
-## 4. Layer toggle defaults
+## 5. Layer toggle defaults
 
-Right now all layer toggles default to ON (Dynasties, Events, Figures, Cultural anchors, Global context). With 32 events visible, some rows feel busy.
+Right now all layer toggles default to ON (Dynasties, Events, Figures, Cultural anchors, Global context). With 32 events visible, some rows could feel busy once the Events layer is on.
 
 Options:
 
 - All on by default (current state).
-- Dynasties + Figures + Cultural anchors on, Events off by default. User opts in.
-- All on, but each layer dims to 30% opacity until hovered.
+- Dynasties + Figures + Cultural anchors on, Events off by default.
+- All on, but each non-dynasty layer dims to ~30% opacity until hovered.
 
 **Decision:** What does the first-load view look like? Dense or curated?
 
-## 5. Concurrent state visual treatment
+## 6. Inconsistent label placement
 
-Currently rendered as thin sepia ribbons below the main snake during their period. Visible in the test page below Three Kingdoms (Wei / Shu / Wu) and below Northern Song (Liao / Western Xia / Jin Jurchen).
+Some dynasty names sit inside the bar (Western Han, Tang, Ming). Some are called out above (Three Kingdoms, Five Dynasties, Northern and Southern, Republic of China). Some called out below (People's Republic of China). Some run vertically inside curves (Eastern Zhou, Southern Song, Jin).
 
-Options for the eventual ported version:
+**Decision:** One rule per situation, applied consistently. Worth a short style guide note.
 
-- Keep sepia thin ribbons, add labels inline.
-- Make them the same visual weight as the main bar but offset below, with a different fill.
-- Treat them as a totally different visual class (parallel kingdoms is the canonical Song multi-state test case from the original PRD).
+## 7. Year-marker styling
 
-**Decision:** How distinct should concurrent kingdoms feel from main-lane dynasties?
+The yellow pills at every bend look like Post-it notes against the museum-style palette. Also: "9 C 23 CE" at the Xin dynasty reads like a typo (it's two markers, 9 CE and 23 CE, crammed together).
 
-## 6. Once ported, what happens to `claude-design-output/` and `public/claude-design-test/`?
+**Decision:** New marker style (sepia? cream-on-charcoal?) and a special-case rule for short interregnum periods.
 
-Two options:
+## 8. Warring States stripe block
 
-- **Delete after porting.** Test page was scaffolding, no longer needed once the live app uses the new geometry.
-- **Keep as a reference.** Lets a future session compare live app behavior against the standalone harness if regressions show up.
+The gray vertical-stripe block at the start of row 3 looks like a glitch. Same chart, different visual language.
 
-**Decision:** Trash or keep the test page after the port lands.
+**Decision:** Replace with something that belongs to the same palette as the rest of the snake, or accept the stripe as the convention for "fragmented period" and apply it consistently elsewhere.
 
-## 7. Update DECISIONS.md after the port?
+## 9. Sidebar legend weight
 
-`DECISIONS.md` currently says the palette is OPEN pending Claude Design pass. Once we port the geometry and the rest of the design language is settled (whether by Claude Design or by us), the new locked choices need to go into `DECISIONS.md`. Specifically: row count, row gap, bend radius, bar thickness, color palette, layer defaults, etc.
+The left sidebar legend is doing a lot of explaining ("Major dynasty / Concurrent state / Discrete event / Cultural anchor / Global context"). Strong charts barely need legends. Either make the visual language self-evident, or hide the legend behind a "?" toggle.
 
-**Decision:** When does this update happen — incrementally as choices land, or in one batch at the end?
+**Decision:** Trim, or move to a collapsible section.
+
+## 10. Interaction affordances
+
+Nothing on screen tells a first-time viewer that the chart is interactive. No hover preview, no obvious click affordance.
+
+**Decision:** Add at minimum a hover-lift on dynasty bars. Possibly a subtle "click any bar for details" hint on first load.
+
+## 11. Overview / Detailed toggle in the top-right
+
+Hard to tell at a glance which mode is currently active. Selected state needs more contrast.
+
+**Decision:** Restyle the toggle so the active state is obviously active.
 
 ---
 
-**How to use this doc next session:** open it before writing any code. Either resolve the open decisions in conversation with Wei (preferred) or pick the most defensible default and call it out so Wei can override. Don't silently make these calls.
+**How to use this doc next session:** open it before writing any code. Either resolve the open items in conversation with Wei (preferred) or pick the most defensible default and call it out so Wei can override. Don't silently make these calls.

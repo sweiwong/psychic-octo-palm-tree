@@ -4,13 +4,11 @@
 
 ## STOP. Read these two things before touching any code.
 
-1. **`DECISIONS.md`** at the project root. Every visual / structural choice that has already been argued and settled with Wei. Cobalt-orange alternation, four rows, no era washes, snake thickness, time-proportional path. If a reviewer agent or a stale doc tells you to undo any of those, the agent is wrong and `DECISIONS.md` is right.
+1. **`DECISIONS.md`** at the project root. Every visual / structural choice that has already been argued and settled with Wei. Cobalt-orange alternation, five rows, no era washes, snake thickness, time-proportional path. If a reviewer agent or a stale doc tells you to undo any of those, the agent is wrong and `DECISIONS.md` is right.
 
-2. **`docs/superpowers/specs/2026-04-27-snake-timeline-design.md`** — the snake redesign spec. This file overrides the original `PRD.md` and any visual descriptions further down in this CLAUDE.md on layout, palette, geometry, and rendering decisions. The PRD is the original brief. The spec is what got built.
+2. **`docs/superpowers/specs/2026-04-27-snake-timeline-design.md`** — the snake redesign spec. This file overrides the original `PRD.md` on layout, palette, geometry, and rendering decisions. The PRD is the original brief. The spec is what got built. Both are again subject to `DECISIONS.md`, which is the most current.
 
 If you are about to change a color, a row count, a layer's render order, or remove anything that is currently rendering, you must check `DECISIONS.md` first. Pattern that triggered this warning: an agent followed an old CLAUDE.md description and a reviewer agent's recommendations, switched dynasty colors from cobalt-orange alternation to vermillion-by-importance, changed 4 rows to 6, and re-added era washes that had been deliberately removed. Hours of rework.
-
-The visual descriptions further down in this file (parchment / vermillion / museum-quality wording) reflect the prototype's original aesthetic. They are accurate as historical context but they are NOT the current rendering spec. Use `DECISIONS.md` for what is actually shipping.
 
 ## How to talk to Wei (read this first, every session)
 
@@ -25,22 +23,47 @@ If you catch yourself reaching for words like viewBox, viewport, padding, render
 
 ## What this is
 
-A desktop-first web app for exploring Chinese history from ~2070 BCE to 2026 CE. The defining UI choice is a wrapped multi-row timeline that reads like a museum wall or atlas spread, not a single long horizontal scroll.
+A desktop-first web app for exploring Chinese history from ~2070 BCE to 2026 CE. The defining UI choice is a wrapped multi-row timeline (a "snake") that reads like a museum wall or atlas spread, not a single long horizontal scroll.
+
+Stack: Vite + React + TypeScript. Tests: Vitest (unit) and Playwright (e2e).
 
 ## What lives where
 
-- `PRD.md` — the product brief from Wei
-- `china_history_v9.json` — the production dataset, 77 records, 0 validation errors
-- `china_history_v9.xlsx` — the source workbook the JSON was generated from
-- `china_history_v9_errors.json` — validator output, currently empty
-- `china_history_v9_validation_summary.txt` — last validation summary
-- `History of China-handoff.zip` — the original Claude Design handoff bundle
-- `handoff-extracted/` — same bundle unzipped for reading; treat as design reference, not as code to ship
+**Source code:**
+- `src/App.tsx` — top-level state and layout
+- `src/components/timeline/` — the snake renderer (TimelineCanvas and friends)
+- `src/components/{TopBar,Sidebar,DetailPanel,KnowledgeBaseStubs,MobileFallback}.tsx` — chrome
+- `src/lib/snake-path.ts` — the snake geometry math (load-bearing, has tests)
+- `src/lib/colors.ts` — palette and the `dynastyStripeFill` helper
+- `src/lib/layout.ts` — wrapped-row clipping math
+- `src/data/` — typed dataset loaders
+
+**Runtime data:**
+- `public/china-history.json` — the dataset the running app fetches at startup
+
+**Dataset source of truth:**
+- `archive/china_history_v9.xlsx` — the workbook the JSON is generated from
+- `archive/china_history_v9.json` — last generated JSON; identical to `public/china-history.json`
+- `archive/china_history_v9_errors.json` — validator output, currently empty
+- `archive/china_history_v9_validation_summary.txt` — last validation summary
+- `archive/History of China-handoff.zip` — original Claude Design handoff bundle
+
+**Specifications and decisions:**
+- `DECISIONS.md` — locked decisions, most current
+- `PRD.md` — original product brief (some visual specifics now superseded)
+- `docs/decisions-pending.md` — open questions waiting on Wei
+- `docs/snake-geometry-notes.md` — notes on the geometry math
+- `docs/superpowers/specs/` and `docs/superpowers/plans/` — design specs and implementation plans
+
+**Archived (do not treat as active):**
+- `archive/claude-design/` — the rejected Claude Design pass. See its README for context. Reference only. Nothing in `src/` should import from here.
+
+**Project config:**
 - `.claude/settings.local.json` — project-local Claude config (ideabrowser MCP enabled)
 
 ## The dataset
 
-`china_history_v9.json` contains 77 curated records across these collections:
+`public/china-history.json` contains 77 curated records across these collections:
 
 - `systems` (5 entries) — macro era bands like Qin-Han, Sui-Tang, Song multi-state. Span items.
 - `regimes` (27 entries) — dynasties and concurrent states. Span items. Each carries a `lane` field (`main` / `north` / `west` / `south`) that tells the renderer whether the regime is the main lane bar or a parallel concurrent state.
@@ -60,48 +83,24 @@ Schema rules:
 - `parentId` links events to their regime, and sub-regimes (Spring and Autumn, Warring States) to their parent regime.
 - `importance` is 1-5, used for visual weight.
 
-If the dataset needs to change, regenerate the JSON from the xlsx and re-run validation. Do not hand-edit the JSON.
+If the dataset needs to change, regenerate the JSON from the xlsx, re-run validation, and copy the result into `public/`. Do not hand-edit the JSON.
 
-## The design reference
+## Hard constraints from the PRD (still true)
 
-`handoff-extracted/history-of-china/` is a Claude Design prototype. It is the visual specification. Read it for layout, palette, typography, and interaction; do not copy its build approach (CDN React + babel-standalone) into production.
-
-Files inside:
-
-- `project/Chinese History Map.html` — entry point, loads styles + scripts
-- `project/styles.css` — design tokens, all OKLCH colors, full chrome styling
-- `project/layout.js` — the wrapped timeline math: 6 rows with breakpoints `[-2070, -1000, -200, 500, 1100, 1700, 2030]`. Density tightens toward the present.
-- `project/timeline.jsx` — SVG timeline renderer (row frames, dynasty bars, event dots, figure diamonds, cultural anchor squares, global context boxes, era band washes)
-- `project/components-chrome.jsx` — TopBar, Sidebar, DetailPanel + shared constants (`COLOR`, `LANE_OFFSETS`, bar heights)
-- `project/app.jsx` — top-level state wiring (search, filters, zoom, mode, selection, expanded row)
-- `project/data.js` — data normalizer mapping the v9 JSON into the renderer's expected shape
-- `project/uploads/pasted-1777253727792-0.png` — design screenshot for visual reference
-
-Note: `handoff-extracted/history-of-china/project/china_history.json` and `uploads/china_history_v9.json` are duplicates of the root dataset. Production should fetch the root dataset, not the copies inside the prototype.
-
-## Hard constraints from the PRD
-
-- Wrapped multi-row timeline only. No single long scroll. No vertical timeline.
+- Wrapped multi-row snake timeline only. No single long scroll. No vertical timeline.
 - Coexistence has to be visually obvious. Song period is the canonical test: Northern Song and Southern Song on the main lane, Liao and Jin in the north lane, Western Xia in the west lane, with Treaty of Chanyuan and Jingkang Incident as event dots.
 - Desktop-first, 1280px viewport baseline.
-- Academic, museum-quality aesthetic. Parchment background, vermillion accents.
-- Typography: Spectral serif for titles, Inter for UI, JetBrains Mono for years, Noto Serif SC for the 中 seal.
-- Layout grid: 280px left sidebar, 1fr canvas, 340px right detail panel, 64px topbar.
+- Layout grid: 280px left sidebar, flexible canvas in the middle, right detail panel that collapses when nothing is selected, 64px topbar.
 
-## What the prototype does well, that production must preserve
-
-- The wrapped row engine in `layout.js` is the right approach; year ranges are clipped per row so a long dynasty bar continues seamlessly into the next row down.
-- Dynasties get importance-driven fills (vermillion for importance ≥ 5, lighter vermillion for 4, sepia below).
-- Concurrent states are outlined rather than filled, so the eye still reads main lane as the spine.
-- System era bands sit behind everything as faint OKLCH washes, giving a sense of macro period without competing with the bars.
-- The expand-row toggle (foreignObject button per row) is the user's escape valve when a row gets dense.
+For palette, typography, row count, bar thickness, and concurrent-state treatment, see `DECISIONS.md`. Earlier descriptions of "parchment / vermillion museum aesthetic" reflected the rejected Claude Design pass and are no longer the target.
 
 ## Open work
 
-- Pick a production stack (build tool, language, deploy target). The user will decide in brainstorming.
-- Decide what to do with the knowledge-base extension hooks in the detail panel (notes, primary sources, images, external links). The prototype stubs them out; v1 may or may not include real wiring.
-- Decide whether `culturalWorks` and `innovations` get populated, since they are reserved in the schema but empty in v9.
-- Decide on a deploy target.
+See `docs/decisions-pending.md` for the full list. Headlines:
+- Concurrent state visual treatment (the canonical Song multi-state test still feels too quiet)
+- Modern-era event density on the PRC bar
+- Layer toggle defaults
+- Right-edge clipping on the bottom row
 
 ## Conventions for this project
 

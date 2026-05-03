@@ -50,6 +50,9 @@ Date locked: 2026-04-27 (commits `d4ff4b0`, `53e599e`, `dd2dd9a`)
 **Update 2026-04-28: palette is OPEN, not locked.**
 Wei has clarified that the cobalt / orange / purple-vermillion scheme was a stop-gap, not a final palette. It exists because the all-vermillion version was indecipherable. The palette is now the responsibility of the Claude Design pass to redesign. The only requirements that survive: (1) adjacent dynasties never share the same fill, (2) Yuan and Qing read as visually distinct from Han-Chinese dynasties because they were non-Han ruling houses, (3) the palette is colorful and engaging, not monotone. Whatever Claude Design returns becomes the new locked palette and this entry should be replaced with the specifics at that point.
 
+**Reversed 2026-05-03: palette is OPEN, but no longer waiting on Claude Design.**
+Wei evaluated Claude Design's pass and rejected it as slop. The Claude Design output is now archived under `archive/claude-design/`. Palette stays OPEN, with the same surviving requirements (adjacent dynasties differ; Yuan and Qing visually distinct as non-Han ruling houses; colorful, not monotone). Next palette iteration is a project-internal design choice, not a Claude Design deliverable. The existing cobalt / orange / purple-vermillion is what the live app ships at `localhost:5173` until that next pass.
+
 **Yuan and Qing render in `vermillion3` (purple-shifted).**
 This is the only place where color carries meaning beyond decoration. Yuan and Qing were non-Han ruling houses (Mongol and Manchu). The purple shift signals that. Do not extend this rule to other regimes.
 Date locked: 2026-04-27

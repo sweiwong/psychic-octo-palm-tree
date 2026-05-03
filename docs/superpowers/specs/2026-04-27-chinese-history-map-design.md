@@ -4,6 +4,8 @@ Date: 2026-04-27
 Author: Wei Wong, with Claude
 Status: Approved for implementation planning
 
+> **Update 2026-05-03 — paths and references in this spec are stale.** The folder originally referenced as `handoff-extracted/` has been moved to `archive/claude-design/prototype/` (still the same files inside). The Claude Design pass that this spec was built around was later rejected as slop; see `archive/claude-design/README.md` for the full story. Several locked decisions in `DECISIONS.md` now reverse choices from this spec (row count, palette, era washes). When these documents conflict, `DECISIONS.md` wins. This spec is preserved as a historical record of the original plan, not as a current source of truth.
+
 ## 1. Summary
 
 A desktop-first React web app for exploring Chinese history from approximately 2070 BCE to 2026 CE. The defining UI choice is a wrapped multi-row timeline that reads like a museum wall or atlas spread, not a single long horizontal scroll. The project is a 70% portfolio piece (a polished, shareable public link) and 30% a personal Zettelkasten-style knowledge tool that will accumulate Wei's own notes on Chinese history over time.
