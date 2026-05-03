@@ -100,6 +100,10 @@ Date locked: 2026-04-28 (overrides the v1-disabled-layers note in `docs/superpow
 Small yellow date pills at every curve so a first-time viewer does not lose their place when the snake bends back.
 Date locked: 2026-04-28
 
+**Reversed 2026-05-03: bend year markers removed.**
+Why: The pills displayed years computed as evenly-spaced row breaks (1251 BCE, 432 BCE, 388 CE, 1207 CE), not real dynasty boundaries. They were an artifact of dividing the total year span by row count, not anything tied to the dataset. Wei flagged that this contradicts the locked rule that the snake is strictly time-proportional: showing a meaningless milestone year invites the viewer to reason about it as if it were significant. Dynasty start-year pills (1600 BCE, 1046 BCE, 770 BCE, 432 BCE, 221 BCE, etc.) carry orientation on their own. The bend pills were noise. Implementation: deleted `BendYearMarker` component and the `rowBreakYears` computation in `src/components/timeline/TimelineCanvas.tsx`.
+Do not re-add without: a different anchoring scheme that ties pills to real dataset boundaries.
+
 ---
 
 ## Communication

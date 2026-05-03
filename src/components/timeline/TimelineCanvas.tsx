@@ -138,16 +138,6 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
     return gaps;
   }, [sortedPrimary]);
 
-  // Years to label at every row break (start year of every row except row 0).
-  const rowBreakYears = useMemo(() => {
-    const yearsPerRow = (YEAR_MAX - YEAR_MIN) / ROW_COUNT;
-    const out: number[] = [];
-    for (let i = 1; i < ROW_COUNT; i++) {
-      out.push(Math.round(YEAR_MIN + i * yearsPerRow));
-    }
-    return out;
-  }, []);
-
   // Plan event label placement so labels don't overlap. Each label gets
   // assigned a side (above/below) and a level (how far from the bar).
   // Without this, modern-era clusters on the bottom row collide.
@@ -190,15 +180,6 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
             highlighted={props.highlightId === c.id}
             onPick={props.onPick}
             onTooltip={setTooltip}
-          />
-        ))}
-
-        {/* Year markers at row bends */}
-        {rowBreakYears.map((year, i) => (
-          <BendYearMarker
-            key={`bend-year-${i}`}
-            year={year}
-            geometry={geometry}
           />
         ))}
 
@@ -514,53 +495,6 @@ function HighlightedDatePill({ point, text, label }: HighlightedDatePillProps) {
         textAnchor="middle"
       >
         {label}
-      </text>
-    </g>
-  );
-}
-
-// ---------------- Bend year marker ----------------
-
-function BendYearMarker({ year, geometry }: { year: number; geometry: SnakeGeometry }) {
-  const point = yearToPoint(year, geometry);
-  // Tangent.x near 0 means we're on the curve — show the year tag tucked at row end.
-  const isOnCurve = Math.abs(point.tangent.x) < 0.5;
-  if (!isOnCurve) return null;
-
-  const onRightSide = point.x > geometry.width / 2;
-  // Push the pill outside the bar at the bend's tip (bar half-thickness = 30
-  // plus a small gap), so the gold rect doesn't sit on top of the dynasty bar.
-  const barClearance = 36;
-  const rectWidth = 68;
-  const rectX = onRightSide ? point.x + barClearance : point.x - barClearance - rectWidth;
-  const labelX = onRightSide ? point.x + barClearance + 4 : point.x - barClearance - 4;
-  const labelAnchor: 'start' | 'end' = onRightSide ? 'start' : 'end';
-  const yearText = year < 0 ? `${Math.abs(year)} BCE` : `${year} CE`;
-
-  return (
-    <g pointerEvents="none">
-      <rect
-        x={rectX}
-        y={point.y - 12}
-        width={rectWidth}
-        height={24}
-        rx={2}
-        fill={COLOR.gold}
-        opacity={0.85}
-        stroke={COLOR.ink2}
-        strokeWidth={0.5}
-      />
-      <text
-        x={labelX}
-        y={point.y + 1}
-        fill={COLOR.ink}
-        fontFamily="'JetBrains Mono', ui-monospace, monospace"
-        fontSize={13}
-        textAnchor={labelAnchor}
-        dominantBaseline="middle"
-        fontWeight={600}
-      >
-        {yearText}
       </text>
     </g>
   );
