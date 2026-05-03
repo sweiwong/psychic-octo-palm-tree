@@ -15,7 +15,7 @@ export function TopBar({ zoom, onZoom, mode, onMode, onResetView }: TopBarProps)
         <div className="seal" aria-hidden>中</div>
         <div className="title-block">
           <div className="title-main">Chinese History Map</div>
-          <div className="title-sub">A wrapped timeline atlas · 2070 BCE – 2026 CE</div>
+          <div className="title-sub">A wrapped timeline atlas · 2070 BCE – 2026</div>
         </div>
       </div>
       <div className="topbar-right">

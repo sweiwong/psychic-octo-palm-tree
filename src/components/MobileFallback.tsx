@@ -30,7 +30,7 @@ export function MobileFallback({ children }: MobileFallbackProps) {
       <div className="mobile-fallback-inner">
         <div className="seal" aria-hidden>中</div>
         <h1>Chinese History Map</h1>
-        <p className="mobile-fallback-sub">A wrapped timeline atlas, 2070 BCE – 2026 CE</p>
+        <p className="mobile-fallback-sub">A wrapped timeline atlas, 2070 BCE – 2026</p>
         <img
           src="/desktop-preview.png"
           alt="Preview of the desktop timeline"

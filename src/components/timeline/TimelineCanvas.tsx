@@ -138,6 +138,15 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
     return gaps;
   }, [sortedPrimary]);
 
+  // Stack date pills vertically when adjacent ones would horizontally overlap.
+  // Tiny dynasties (Xin: 14 years) sit so close to their neighbour that two
+  // pills crash into each other on a time-proportional snake; this assigns
+  // each pill a level so the second one drops below the first.
+  const pillLayouts = useMemo(
+    () => assignPillLevels(sortedPrimary, geometry),
+    [sortedPrimary, geometry],
+  );
+
   // Plan event label placement so labels don't overlap. Each label gets
   // assigned a side (above/below) and a level (how far from the bar).
   // Without this, modern-era clusters on the bottom row collide.
@@ -198,9 +207,12 @@ export function TimelineCanvas(props: TimelineCanvasProps) {
           />
         ))}
 
+        {/* BCE/CE reference line at year 0. Modern reference, not historical. */}
+        <YearZeroMarker geometry={geometry} />
+
         {/* Dynasty start-year date pills */}
-        {props.layers.dynasties && sortedPrimary.map(d => (
-          <DynastyDatePill key={`date-${d.id}`} year={d.start} geometry={geometry} />
+        {props.layers.dynasties && pillLayouts.map(({ dynasty, level }) => (
+          <DynastyDatePill key={`date-${dynasty.id}`} year={dynasty.start} level={level} geometry={geometry} />
         ))}
 
         {/* Figures (above the snake) */}
@@ -376,6 +388,109 @@ function ConcurrentBar({ item, geometry, highlighted, onPick, onTooltip }: Concu
   );
 }
 
+// ---------------- BCE / CE reference line at year 0 ----------------
+
+// Modern reference, not a historical event. The Gregorian calendar's BCE/CE
+// boundary is a backwards-projected frame: nobody in Han China called this
+// year 0. The marker exists only to help a modern reader orient on a 4000-yr
+// chart. There is no actual "year 0" in the Gregorian calendar (it skips from
+// 1 BCE to 1 CE), but the chart's time scale is continuous, so position 0 is
+// well-defined as the boundary. The label reads "BCE | CE" rather than "0" so
+// the viewer parses it as a divider rather than a date.
+function YearZeroMarker({ geometry }: { geometry: SnakeGeometry }) {
+  const point = yearToPoint(0, geometry);
+  // If the boundary somehow lands on a bend (unlikely for the current row
+  // breakpoints; year 0 falls deep inside Western Han on row 2), suppress
+  // rather than draw a slanted reference line. Reference lines that aren't
+  // perpendicular to the bar read as glitches.
+  if (Math.abs(point.tangent.x) < 0.9) return null;
+
+  const lineExtend = 70;  // px above and below bar centerline
+  const labelOffset = lineExtend + 6;
+
+  return (
+    <g pointerEvents="none" data-testid="year-zero-marker">
+      <line
+        x1={point.x}
+        y1={point.y - lineExtend}
+        x2={point.x}
+        y2={point.y + lineExtend}
+        stroke={COLOR.sepia}
+        strokeWidth={1.4}
+        opacity={0.6}
+        strokeDasharray="4 3"
+      />
+      <text
+        x={point.x}
+        y={point.y - labelOffset}
+        fill={COLOR.sepia}
+        fontFamily="'JetBrains Mono', ui-monospace, monospace"
+        fontSize={10}
+        fontWeight={500}
+        textAnchor="middle"
+        letterSpacing={1.4}
+        opacity={0.9}
+        style={{ textTransform: 'uppercase' }}
+      >
+        BCE | CE
+      </text>
+    </g>
+  );
+}
+
+// ---------------- Date-pill stacking ----------------
+
+interface PillLayout {
+  dynasty: NormalizedSpanItem;
+  level: number;
+}
+
+// Greedy interval-painting: sort pills left to right, place each one in the
+// lowest level whose existing pills don't horizontally overlap it. Pills on
+// different rows of the snake don't conflict because their y-positions differ
+// by far more than a pill height.
+function assignPillLevels(
+  dynasties: ReadonlyArray<NormalizedSpanItem>,
+  geometry: SnakeGeometry,
+): PillLayout[] {
+  const PILL_HORIZONTAL_GAP = 4;
+  // Each entry tracks {y, rightEdge} for the rightmost pill at that level.
+  // We compare rows by y because two pills on different rows never visually
+  // collide even at the same x.
+  type Slot = { y: number; rightEdge: number };
+  const levels: Slot[][] = [];
+
+  const sorted = [...dynasties].sort((a, b) => a.start - b.start);
+  const out: PillLayout[] = [];
+
+  for (const d of sorted) {
+    const point = yearToPoint(d.start, geometry);
+    const onCurve = Math.abs(point.tangent.x) < 0.5;
+    if (onCurve) {
+      // Pill is suppressed at render time; assign level 0 and skip slot bookkeeping.
+      out.push({ dynasty: d, level: 0 });
+      continue;
+    }
+    const text = d.start < 0 ? `${Math.abs(d.start)} BCE` : `${d.start}`;
+    const halfWidth = pillWidthFor(text) / 2;
+    const left = point.x - halfWidth;
+    const right = point.x + halfWidth;
+
+    let level = 0;
+    while (level < levels.length) {
+      const conflicts = levels[level].some(
+        (slot) => Math.abs(slot.y - point.y) < 4 && slot.rightEdge + PILL_HORIZONTAL_GAP > left,
+      );
+      if (!conflicts) break;
+      level++;
+    }
+    if (level >= levels.length) levels.push([]);
+    levels[level].push({ y: point.y, rightEdge: right });
+    out.push({ dynasty: d, level });
+  }
+  return out;
+}
+
 // ---------------- Dynasty start-year date pill ----------------
 
 // Pivotal unification / regime-change years that get visual emphasis: bigger,
@@ -389,33 +504,59 @@ const HIGHLIGHTED_YEARS: Record<number, string> = {};
 interface DatePillProps {
   year: number;
   geometry: SnakeGeometry;
+  level?: number;  // 0 = default below-bar slot; 1+ = stacked further down
 }
 
-function DynastyDatePill({ year, geometry }: DatePillProps) {
+const PILL_HEIGHT = 22;
+const PILL_FONT_SIZE = 13;
+const PILL_VERTICAL_GAP = 3;
+const PILL_BASE_OFFSET = 44;  // distance from bar centerline to top of level-0 pill (leaves room for the leader line)
+const PILL_LEADER_GAP = 2;    // tiny gap between leader end and pill top so they don't visually merge
+const BAR_BOTTOM_FROM_CENTERLINE = 30;  // matches BAR_HALF_THICKNESS in DynastySegment
+
+function pillWidthFor(text: string): number {
+  return text.length * 7.4 + 12;
+}
+
+function DynastyDatePill({ year, geometry, level = 0 }: DatePillProps) {
   const point = yearToPoint(year, geometry);
   const onCurve = Math.abs(point.tangent.x) < 0.5;
   const isHighlighted = HIGHLIGHTED_YEARS[year] !== undefined;
   // Highlighted pills render even on bends (we'll callout them with a leader).
   if (onCurve && !isHighlighted) return null;
 
-  const yearText = year < 0 ? `${Math.abs(year)} BCE` : `${year} CE`;
+  const yearText = year < 0 ? `${Math.abs(year)} BCE` : `${year}`;
 
   if (isHighlighted) {
     return <HighlightedDatePill year={year} point={point} text={yearText} label={HIGHLIGHTED_YEARS[year]} />;
   }
 
-  const pillWidth = yearText.length * 6.2 + 10;
-  const pillHeight = 16;
-  const yTop = point.y + 34;
+  const pillWidth = pillWidthFor(yearText);
+  const pillHeight = PILL_HEIGHT;
+  const yTop = point.y + PILL_BASE_OFFSET + level * (PILL_HEIGHT + PILL_VERTICAL_GAP);
+  // Leader line anchors the pill to the exact start-year boundary on the bar.
+  // Without it, pills near a row break (e.g. Southern Song's 1127 dropping
+  // close to Yuan on the next row) read as labeling the wrong dynasty.
+  const leaderTopY = point.y + BAR_BOTTOM_FROM_CENTERLINE;
+  const leaderBottomY = yTop - PILL_LEADER_GAP;
 
   return (
     <g pointerEvents="none">
+      <line
+        x1={point.x}
+        y1={leaderTopY}
+        x2={point.x}
+        y2={leaderBottomY}
+        stroke={COLOR.sepia}
+        strokeWidth={1.2}
+        opacity={0.7}
+      />
       <rect
         x={point.x - pillWidth / 2}
         y={yTop}
         width={pillWidth}
         height={pillHeight}
-        rx={2}
+        rx={3}
         fill={COLOR.gold}
         opacity={0.92}
         stroke={COLOR.ink2}
@@ -426,7 +567,7 @@ function DynastyDatePill({ year, geometry }: DatePillProps) {
         y={yTop + pillHeight / 2 + 1}
         fill={COLOR.ink}
         fontFamily="'JetBrains Mono', ui-monospace, monospace"
-        fontSize={11}
+        fontSize={PILL_FONT_SIZE}
         fontWeight={600}
         textAnchor="middle"
         dominantBaseline="middle"
