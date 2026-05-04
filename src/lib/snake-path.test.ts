@@ -10,6 +10,7 @@ describe('computeGeometry', () => {
       rowCount: 4,
       yearMin: -2070,
       yearMax: 2026,
+      endExtension: 0,
     });
     expect(g.rowHeight).toBeCloseTo(155, 4);
     expect(g.cornerRadius).toBeCloseTo(77.5, 4);
@@ -44,7 +45,7 @@ import { yearToDistance, distanceToPoint } from './snake-path';
 describe('yearToDistance', () => {
   const g = computeGeometry({
     width: 660, height: 700, padding: 40,
-    rowCount: 4, yearMin: -2070, yearMax: 2026,
+    rowCount: 4, yearMin: -2070, yearMax: 2026, endExtension: 0,
   });
 
   it('returns 0 for yearMin', () => {
@@ -64,7 +65,7 @@ describe('yearToDistance', () => {
 describe('distanceToPoint', () => {
   const g = computeGeometry({
     width: 660, height: 700, padding: 40,
-    rowCount: 4, yearMin: -2070, yearMax: 2026,
+    rowCount: 4, yearMin: -2070, yearMax: 2026, endExtension: 0,
   });
 
   it('returns row 0 start at distance 0', () => {
@@ -115,7 +116,7 @@ import { yearToPoint } from './snake-path';
 describe('yearToPoint', () => {
   const g = computeGeometry({
     width: 660, height: 700, padding: 40,
-    rowCount: 4, yearMin: -2070, yearMax: 2026,
+    rowCount: 4, yearMin: -2070, yearMax: 2026, endExtension: 0,
   });
 
   it('returns rightward tangent on row 0', () => {
@@ -151,7 +152,7 @@ import { backbonePath } from './snake-path';
 describe('backbonePath', () => {
   const g = computeGeometry({
     width: 660, height: 700, padding: 40,
-    rowCount: 4, yearMin: -2070, yearMax: 2026,
+    rowCount: 4, yearMin: -2070, yearMax: 2026, endExtension: 0,
   });
 
   it('starts with M at row 0 left endpoint', () => {
@@ -187,7 +188,7 @@ import { segmentPath, labelPath } from './snake-path';
 describe('segmentPath', () => {
   const g = computeGeometry({
     width: 660, height: 700, padding: 40,
-    rowCount: 4, yearMin: -2070, yearMax: 2026,
+    rowCount: 4, yearMin: -2070, yearMax: 2026, endExtension: 0,
   });
 
   it('produces a single line for a year range entirely within row 0', () => {
@@ -234,7 +235,7 @@ describe('labelPath', () => {
   // Row 3 carries roughly years 1395 to 2026 (RTL).
   const g = computeGeometry({
     width: 660, height: 880, padding: 40,
-    rowCount: 4, yearMin: -2070, yearMax: 2026,
+    rowCount: 4, yearMin: -2070, yearMax: 2026, endExtension: 0,
   });
 
   function firstM(d: string): { x: number; y: number } {

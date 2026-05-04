@@ -9,18 +9,25 @@ export interface GeometryInput {
   /**
    * Extra distance in pixels added to the LEFT free endpoints (row 0 start
    * and last row end) so they reach the same x as the left bend's outer
-   * edge. Default 0 leaves the snake's free endpoints flush with the bend
-   * chord, which makes the bend appear to bulge LEFT of the row endpoints.
-   * Set to (cornerRadius + barHalfThickness) to align the snake's left
-   * outline at x = padding - barHalfThickness.
+   * edge. Default `auto` computes (cornerRadius + barHalfThickness). Pass
+   * a number for an explicit override; pass 0 to let the bend bulge left
+   * of the row endpoints.
    */
-  endExtension?: number;
+  endExtension?: number | 'auto';
   /**
    * Vertical margin on top and bottom. Defaults to `padding`. Pass a smaller
    * value (e.g. 40) to give the snake more vertical room — bigger row gaps
    * for labels above/below each bar.
    */
   paddingY?: number;
+  /**
+   * Bar thickness as a fraction of rowHeight. Default 0.45 — at this ratio,
+   * the bar takes ~45% of the vertical room a row has, leaving ~27% above
+   * and below the bar for callouts and date pills. Everything else (font
+   * sizes, pill heights, leader lengths) derives from the resulting bar
+   * thickness, so the chart stays proportional at any canvas size.
+   */
+  barThicknessRatio?: number;
 }
 
 export interface BendCenter {
@@ -29,9 +36,15 @@ export interface BendCenter {
   side: 'left' | 'right';
 }
 
-export interface SnakeGeometry extends GeometryInput {
+export interface SnakeGeometry extends Omit<GeometryInput, 'endExtension'> {
   rowHeight: number;
   cornerRadius: number;
+  /**
+   * Resolved bar thickness in pixels. Derived from `rowHeight * barThicknessRatio`
+   * (default ratio 0.45). All text and pill sizes downstream derive from this
+   * via `getDerivedSizes(geometry)` so the chart stays proportional at any size.
+   */
+  barThickness: number;
   trackWidth: number;
   arcLength: number;
   endExtension: number;
@@ -43,14 +56,19 @@ export interface SnakeGeometry extends GeometryInput {
 
 export function computeGeometry(input: GeometryInput): SnakeGeometry {
   const { width, height, padding, rowCount, yearMin, yearMax } = input;
-  const endExtension = input.endExtension ?? 0;
   const paddingY = input.paddingY ?? padding;
   const rowHeight = (height - 2 * paddingY) / rowCount;
   const cornerRadius = rowHeight / 2;
+  const barThicknessRatio = input.barThicknessRatio ?? 0.45;
+  const barThickness = rowHeight * barThicknessRatio;
+  // Default endExtension aligns the snake's free LEFT endpoints with the
+  // left bend's outer edge (so the bend doesn't bulge left of the rows).
+  const requestedEndExtension = input.endExtension ?? 'auto';
+  const endExtension = requestedEndExtension === 'auto'
+    ? cornerRadius + barThickness / 2
+    : requestedEndExtension;
   const trackWidth = width - 2 * padding - 2 * cornerRadius;
   const arcLength = Math.PI * cornerRadius;
-  // Rows 0 and (rowCount-1) extend by endExtension on their LEFT side, so
-  // the snake's free endpoints align with the left bend's outer edge.
   const totalPathLength = rowCount * trackWidth + 2 * endExtension + (rowCount - 1) * arcLength;
   const pxPerYear = totalPathLength / (yearMax - yearMin);
 
@@ -72,10 +90,62 @@ export function computeGeometry(input: GeometryInput): SnakeGeometry {
   return {
     ...input,
     endExtension,
+    barThickness,
     rowHeight, cornerRadius, trackWidth, arcLength,
     totalPathLength, pxPerYear, rowCenterlines, bendCenters,
   };
 }
+
+/**
+ * Single source of truth for every text size, pill dimension, leader length,
+ * and offset used in rendering. All values derive from `geometry.barThickness`
+ * so the chart stays proportional at any canvas size — when the canvas grows,
+ * bars get thicker and labels grow with them; when it shrinks, both shrink
+ * together. The ratios below were calibrated against the previous hardcoded
+ * values at the canonical canvas size of ~1400x800 (rowHeight ~132, bar 60).
+ */
+export function getDerivedSizes(geometry: SnakeGeometry) {
+  const t = geometry.barThickness;
+  return {
+    barThickness: t,
+    barHalfThickness: t / 2,
+    // Inline dynasty name carved on the bar.
+    inlineLabelFontSize: t * 0.36,
+    inlineLabelCharWidth: t * 0.247,  // measured: 14.8px wide chars at 22px font + letterSpacing 1.4em
+    // Date pills (e.g. "1644") below dynasty bars.
+    pillFontSize: t * 0.22,
+    pillHeight: t * 0.37,
+    pillCharWidth: t * 0.123,         // measured: 7.4px wide chars at 13px JetBrains Mono
+    pillExtraWidth: t * 0.20,         // padding on either side of the year text
+    pillBaseOffset: t * 0.73,         // distance from bar centerline to top of level-0 pill
+    pillVerticalGap: t * 0.05,        // vertical gap between stacked pills
+    pillLeaderGap: t * 0.033,         // tiny gap between leader-line bottom and pill top
+    pillLeaderStrokeWidth: t * 0.020,
+    // Callout labels (e.g. "Three Kingdoms", "People's Republic of China")
+    // for dynasties whose names don't fit inside their bar.
+    calloutFontSize: t * 0.20,
+    calloutLeaderLength: t * 0.36,
+    calloutGap: t * 0.067,
+    // Sub-period italics carved on parent bars (e.g. "Spring and Autumn").
+    subPeriodFontSize: t * 0.20,
+    subPeriodCharWidth: t * 0.137,
+    // Concurrent state ribbons (e.g. Liao, Western Xia) below the main snake.
+    concurrentBarThickness: t * 0.23,
+    concurrentLaneOffset: { north: t * 0.93, west: t * 1.23, south: t * 1.53 },
+    // Event / figure / cultural anchor / global context markers.
+    eventLabelOffset: t * 0.73,
+    eventLabelLevelStep: t * 0.43,
+    figureOffset: t * 1.17,
+    anchorOffset: t * 1.27,
+    globalOffset: t * 1.83,
+    // Year-zero BCE | CE reference line.
+    yearZeroLineExtend: t * 1.17,
+    yearZeroLabelOffset: t * 0.10,
+    yearZeroFontSize: t * 0.17,
+  };
+}
+
+export type DerivedSizes = ReturnType<typeof getDerivedSizes>;
 
 /**
  * Effective track width for a given row. Rows 0 and (rowCount - 1) get

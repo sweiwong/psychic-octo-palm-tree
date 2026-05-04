@@ -1,14 +1,7 @@
-import { labelPath, segmentPath, yearToDistance, yearToPoint, type SnakeGeometry } from '../../lib/snake-path';
+import { labelPath, segmentPath, yearToDistance, yearToPoint, type DerivedSizes, type SnakeGeometry } from '../../lib/snake-path';
 import { fmtRange } from '../../lib/format';
 import { COLOR } from '../../lib/colors';
 import type { NormalizedSpanItem, SelectedItem } from '../../data/types';
-
-const BAR_THICKNESS = 60;
-const INLINE_LABEL_FONT_SIZE = 22;
-const AVG_CHAR_WIDTH = 14.8;  // px per uppercase char at INLINE_LABEL_FONT_SIZE 22, letterSpacing 1.4
-const LEADER_LENGTH = 22;     // px — vertical leader line from bar to label
-const CALLOUT_FONT_SIZE = 12; // px — smaller than carved label for visual hierarchy
-const CALLOUT_GAP = 4;        // px between leader end and label baseline
 
 interface TooltipPayload {
   x: number;
@@ -20,6 +13,7 @@ interface TooltipPayload {
 interface DynastySegmentProps {
   dynasty: NormalizedSpanItem;
   geometry: SnakeGeometry;
+  sizes: DerivedSizes;
   fill: string;
   highlighted: boolean;
   onPick: (id: string, kind: SelectedItem['kind']) => void;
@@ -30,14 +24,14 @@ interface DynastySegmentProps {
 }
 
 export function DynastySegment(props: DynastySegmentProps) {
-  const { dynasty, geometry, fill, highlighted, onPick, onTooltip, calloutBelow = false, calloutXOffset = 0, calloutSide } = props;
+  const { dynasty, geometry, sizes, fill, highlighted, onPick, onTooltip, calloutBelow = false, calloutXOffset = 0, calloutSide } = props;
   const d = segmentPath(dynasty.start, dynasty.end, geometry);
   if (!d) return null;
 
   const barLengthPx = Math.abs(
     yearToDistance(dynasty.end, geometry) - yearToDistance(dynasty.start, geometry)
   );
-  const estimatedNameWidth = dynasty.name.length * AVG_CHAR_WIDTH;
+  const estimatedNameWidth = dynasty.name.length * sizes.inlineLabelCharWidth;
   const fitsCarved = barLengthPx >= estimatedNameWidth;
   const pathId = `dynasty-path-${dynasty.id}`;
   const labelD = labelPath(dynasty.start, dynasty.end, geometry);
@@ -45,18 +39,20 @@ export function DynastySegment(props: DynastySegmentProps) {
 
   const midYear = (dynasty.start + dynasty.end) / 2;
   const mid = yearToPoint(midYear, geometry);
-  const barHalfThickness = BAR_THICKNESS / 2;
+  const barHalfThickness = sizes.barHalfThickness;
+  const leaderLength = sizes.calloutLeaderLength;
+  const calloutGap = sizes.calloutGap;
   const side = calloutSide ?? (calloutBelow ? 'below' : 'above');
   const verticalDirection = side === 'below' ? 1 : -1;
   const leaderBottom = side === 'right'
     ? { x: mid.x + barHalfThickness, y: mid.y }
     : { x: mid.x, y: mid.y + verticalDirection * barHalfThickness };
   const leaderTop = side === 'right'
-    ? { x: mid.x + barHalfThickness + LEADER_LENGTH, y: mid.y }
-    : { x: mid.x + calloutXOffset, y: mid.y + verticalDirection * (barHalfThickness + LEADER_LENGTH) };
+    ? { x: mid.x + barHalfThickness + leaderLength, y: mid.y }
+    : { x: mid.x + calloutXOffset, y: mid.y + verticalDirection * (barHalfThickness + leaderLength) };
   const labelPos = side === 'right'
-    ? { x: leaderTop.x + CALLOUT_GAP, y: mid.y }
-    : { x: mid.x + calloutXOffset, y: leaderTop.y + verticalDirection * CALLOUT_GAP };
+    ? { x: leaderTop.x + calloutGap, y: mid.y }
+    : { x: mid.x + calloutXOffset, y: leaderTop.y + verticalDirection * calloutGap };
   const labelAnchor: 'start' | 'middle' = side === 'right' ? 'start' : 'middle';
   const labelBaseline: 'auto' | 'middle' | 'hanging' = side === 'right' ? 'middle' : side === 'below' ? 'hanging' : 'auto';
 
@@ -88,7 +84,7 @@ export function DynastySegment(props: DynastySegmentProps) {
         d={d}
         fill="none"
         stroke={fill}
-        strokeWidth={BAR_THICKNESS}
+        strokeWidth={sizes.barThickness}
         strokeLinecap="butt"
         strokeLinejoin="round"
       />
@@ -99,7 +95,7 @@ export function DynastySegment(props: DynastySegmentProps) {
             aria-hidden="true"
             fill="white"
             fontFamily="'Spectral', 'Cormorant Garamond', serif"
-            fontSize={INLINE_LABEL_FONT_SIZE}
+            fontSize={sizes.inlineLabelFontSize}
             fontWeight={600}
             letterSpacing={1.4}
             style={{ textTransform: 'uppercase', pointerEvents: 'none' }}
@@ -128,7 +124,7 @@ export function DynastySegment(props: DynastySegmentProps) {
             dominantBaseline={labelBaseline}
             fill={COLOR.ink}
             fontFamily="'Spectral', 'Cormorant Garamond', serif"
-            fontSize={CALLOUT_FONT_SIZE}
+            fontSize={sizes.calloutFontSize}
             fontWeight={600}
             letterSpacing={1.0}
             style={{ textTransform: 'uppercase' }}
@@ -147,10 +143,9 @@ export function DynastySegment(props: DynastySegmentProps) {
         const overlapPx = Math.abs(
           yearToDistance(overlapEnd, geometry) - yearToDistance(overlapStart, geometry)
         );
-        const charWidth = 8.2; // approximate at fontSize 12 + letterSpacing 0.6
-        const subFits = sub.name.length * charWidth + 18 < overlapPx;
+        const subFits = sub.name.length * sizes.subPeriodCharWidth + sizes.barThickness * 0.3 < overlapPx;
         if (!subFits) return null;
-        const subBaselineY = subPos.y - barHalfThickness + 14;
+        const subBaselineY = subPos.y - barHalfThickness + sizes.subPeriodFontSize + 2;
         return (
           <text
             key={sub.id}
@@ -159,7 +154,7 @@ export function DynastySegment(props: DynastySegmentProps) {
             aria-hidden="true"
             fill="white"
             fontFamily="'Spectral', 'Cormorant Garamond', serif"
-            fontSize={12}
+            fontSize={sizes.subPeriodFontSize}
             fontStyle="italic"
             fontWeight={500}
             letterSpacing={0.6}
@@ -176,7 +171,7 @@ export function DynastySegment(props: DynastySegmentProps) {
           d={d}
           fill="none"
           stroke="oklch(0.45 0.06 250)"
-          strokeWidth={BAR_THICKNESS + 4}
+          strokeWidth={sizes.barThickness + 4}
           strokeLinecap="butt"
           strokeLinejoin="round"
           strokeDasharray="4 4"
