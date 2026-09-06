@@ -81,6 +81,11 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       section.append(html('p','','Marco Polo’s travel account helped shape European images of the Yuan world. Read it as a mixture of observation, reported information and storytelling. Coleridge’s “Kubla Khan,” beginning “In Xanadu,” belongs to that later literary imagination. Xanadu is Shangdu (上都), the Yuan summer capital north of the Great Wall; Dadu (大都) is a different city. The poem is not an eyewitness description.'));
       for(const [label,url] of [['Explore Marco Polo’s Travels · Library of Congress ↗','https://www.loc.gov/resource/gdcwdl.wdl_14300/'],['Read “Kubla Khan” · Samuel Taylor Coleridge ↗','https://www.poetryfoundation.org/poems/43991/kubla-khan'],['Explore historical Xanadu (Shangdu) · UNESCO ↗','https://whc.unesco.org/en/list/1389/']]){const a=html('a','source-link',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';section.append(a);}body.append(section);
     }
+    if(item.id==='xuanzang-return'){
+      const section=html('section','card-analysis card-reading-list');section.append(html('h4','','Reading list'));
+      section.append(html('p','','William Dalrymple, The Golden Road: How Ancient India Transformed the World. Chapter 4: “The Sea of Jewels: Exploring the Great Library of Nalanda.”'));
+      const link=html('a','source-link','View the book · Bloomsbury ↗');link.href='https://www.bloomsbury.com/us/golden-road-9781639734153/';link.target='_blank';link.rel='noopener noreferrer';section.append(link);body.append(section);
+    }
     const map=HISTORY_MAPS[item.id];
     if(map){
       const section=html('section','card-map');section.append(html('h4','','Place this story on the map'));
