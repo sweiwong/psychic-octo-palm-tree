@@ -76,6 +76,11 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       figure.append(photo,caption);body.insertBefore(figure,body.querySelector('.card-description'));
     }
     if(item.sections){for(const section of item.sections){const block=html('section','card-analysis');block.append(html('h4','',section.title),html('p','',section.text));body.append(block);}}
+    if(item.id==='catalog-C_BEIJING_YUAN'){
+      const section=html('section','card-analysis');section.append(html('h4','','Marco Polo and the literary afterlife of Xanadu'));
+      section.append(html('p','','Marco Polo’s travel account helped shape European images of the Yuan world. Read it as a mixture of observation, reported information and storytelling. Coleridge’s “Kubla Khan,” beginning “In Xanadu,” belongs to that later literary imagination. Xanadu is Shangdu (上都), the Yuan summer capital north of the Great Wall; Dadu (大都) is a different city. The poem is not an eyewitness description.'));
+      for(const [label,url] of [['Explore Marco Polo’s Travels · Library of Congress ↗','https://www.loc.gov/resource/gdcwdl.wdl_14300/'],['Read “Kubla Khan” · Samuel Taylor Coleridge ↗','https://www.poetryfoundation.org/poems/43991/kubla-khan'],['Explore historical Xanadu (Shangdu) · UNESCO ↗','https://whc.unesco.org/en/list/1389/']]){const a=html('a','source-link',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';section.append(a);}body.append(section);
+    }
     const map=HISTORY_MAPS[item.id];
     if(map){
       const section=html('section','card-map');section.append(html('h4','','Place this story on the map'));
