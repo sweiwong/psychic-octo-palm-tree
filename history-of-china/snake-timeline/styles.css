@@ -154,3 +154,16 @@
 .result-open{display:block;margin-top:14px;color:var(--red);text-decoration:underline;text-underline-offset:3px}
 
 .card-map{margin-top:24px;border-top:1px solid var(--rule);padding-top:16px}.card-map img{display:block;width:100%;height:auto;background:#fff}.card-map p,.card-map a{font-size:12px;line-height:1.6}.map-enlarge{color:var(--red)}
+
+.detail-expand{background:none;border:0;color:var(--ink);font:12px var(--sans);white-space:nowrap;cursor:pointer;min-height:44px}
+.reading-dialog{width:60vw;max-width:1100px;height:90dvh;max-height:90dvh;padding:0;border:1px solid var(--rule);background:var(--paper);color:var(--ink);overflow:hidden;box-shadow:0 20px 80px #0004}
+.reading-dialog::backdrop{background:rgb(25 29 25 / 48%)}
+.reading-dialog .detail-card{height:100%;max-height:100%;box-sizing:border-box;border:0;background:var(--paper)}
+.reading-dialog .card-body{max-width:760px;margin:auto;padding:32px 40px}
+.reading-dialog .card-body h3{font-size:40px}
+.reading-dialog .card-art{margin-inline:40px}
+.reading-dialog .detail-expand{display:none}
+.reading-dialog .card-description,.reading-dialog .card-analysis p{font-size:16px;line-height:1.85}
+body.reading-open{overflow:hidden}
+@media(max-width:760px){.detail-expand{display:none}.reading-dialog{width:94vw}}
+@media(min-width:761px){.detail-card:not(.welcome-card) .card-top>span:first-child{display:none}.reading-dialog .detail-card:not(.welcome-card) .card-top>span:first-child{display:block}}
