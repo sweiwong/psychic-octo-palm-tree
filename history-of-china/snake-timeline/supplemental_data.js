@@ -1,0 +1,36 @@
+// A small source-checked selection beyond the inherited political chronology.
+const SUPPLEMENTAL_HISTORY = [
+  {id:'sui-grand-canal',name:'Sui builds the Grand Canal network',nameZh:'隋代大运河',han:'河',start:605,end:610,color:'#987950',category:'event',parent:'sui',ribbon:true,label:false,markerOffset:20,
+    description:'Emperor Yang joined and enlarged older waterways into an imperial transport network. Work on the Tongji Canal began in 605; the Jiangnan extension reached completion in 610. The achievement lay in connecting regional systems around Luoyang, rather than excavating a single entirely new canal.',
+    sections:[
+      {title:'Making reunification work',text:'Conquest had reunited north and south in 589; governing them required dependable movement of supplies. The canals carried southern grain toward northern political centres, while a northern branch served frontier armies. Read this as the material machinery of empire: the court could turn harvests collected far away into food for officials and soldiers. Transport capacity helped make territorial claims governable.'},
+      {title:'Who paid, and who benefited?',text:'Construction mobilized enormous bodies of labour. Later dynastic historians treated the demands of canal building as evidence of Emperor Yang’s destructive excess. That judgment needs to be read alongside the network’s enduring usefulness to the Tang and later rulers. A project could strengthen the imperial economy over generations while burdening the people compelled to build it. Long-term value does not settle the question of its immediate human cost.'}
+    ],
+    note:'605–610 marks Emperor Yang’s principal expansion. Earlier canals, including work under Emperor Wen, preceded it; later dynasties changed the routes. The modern Beijing–Hangzhou alignment should not be projected unchanged onto the Sui network.',
+    source:'https://whc.unesco.org/en/list/1443',
+    sources:['https://whc.unesco.org/en/list/1443','https://www.ebsco.com/research-starters/history/grand-canal'],
+    sourceLabels:{'https://whc.unesco.org/en/list/1443':'UNESCO · The Grand Canal','https://www.ebsco.com/research-starters/history/grand-canal':'EBSCO · Grand Canal: construction and historical interpretation'},
+    related:['sui','reunification','tang']},
+  {id:'movable-type',name:'Bi Sheng’s movable type',nameZh:'毕升与活字印刷',han:'印',start:1041,end:1048,color:'#987950',category:'culture',
+    description:'Bi Sheng developed printing with individual reusable characters during the Northern Song. Shen Kuo’s account describes clay types that could be arranged, printed, and reused for another text.',
+    note:'Dated to the Qingli reign period, not an exact invention year.',source:'https://scalar.usc.edu/works/chinese-rare-books/techniques.225'},
+  {id:'qingming-scroll',name:'Along the River During Qingming',nameZh:'清明上河图',han:'画',start:1100,end:1127,approx:true,color:'#987950',category:'culture',
+    description:'Zhang Zeduan’s handscroll depicts streets, boats, shops, and daily life around the Northern Song capital of Bianjing, today’s Kaifeng. Its crowded riverfront offers a rich view of urban work and commerce.',
+    note:'Early 12th century; exact creation year unknown. This entry refers to the Northern Song original, not later copies.',source:'https://www.dpm.org.cn/collection/paint/228226.html'},
+  {id:'manila-silver',name:'Manila and the silver trade',nameZh:'马尼拉与白银贸易',han:'贸',start:1571,end:1571,color:'#987950',category:'event',
+    description:'Manila became a city under Spanish sovereignty in 1571 and grew into a meeting point for Asian and American trade. Chinese merchants linked silk and ceramic markets to American silver carried across the Pacific.',
+    note:'1571 marks Spanish establishment at Manila, not the beginning of Chinese maritime trade or a single date when global trade began.',source:'https://blogs.loc.gov/international-collections/2021/10/negotiating-empire-part-i-from-magellan-to-the-founding-of-manila-16th-18th-centuries/'},
+  {id:'red-chamber',name:'Dream of the Red Chamber in print',nameZh:'红楼梦首次刊印',han:'书',start:1791,end:1791,color:'#987950',category:'culture',
+    description:'The Cheng-Gao edition brought Dream of the Red Chamber into print in 120 chapters. Cao Xueqin’s novel had circulated in manuscript before publication, while the origins of its final forty chapters remain debated.',
+    note:'Publication date, not composition date. The final forty chapters should not be attributed unreservedly to Cao Xueqin.',source:'https://open.lib.umn.edu/redchamber/part/textofthenovel/'},
+  {id:'great-leap',name:'Great Leap Forward',nameZh:'大跃进',han:'跃',start:1958,end:1962,color:'#9e3c2e',category:'event',
+    description:'Mao Zedong’s campaign sought rapid industrial and agricultural expansion through mass mobilization and people’s communes. Coercive policies and production failures contributed to catastrophic famine and profound disruption of rural life.',
+    note:'The broad campaign-and-crisis period is shown. Narrower accounts end the campaign in 1960 or 1961; famine chronology varies by region.',source:'https://histecon.fas.harvard.edu/ghosh/discussion.html'},
+  {id:'cultural-revolution',name:'Cultural Revolution',nameZh:'文化大革命',han:'革',start:1966,end:1976,color:'#9e3c2e',category:'event',
+    description:'Mao Zedong launched a political movement that brought purges, persecution, factional conflict, and major disruptions to education and everyday life. Its successive phases also reshaped artistic production and the institutions governing culture.',
+    note:'A decade containing distinct phases. Conditions and experiences varied considerably by place and year.',source:'https://fairbank.fas.harvard.edu/research/publications/a-continuous-revolution-making-sense-of-cultural-revolution-culture/'},
+  {id:'reform-opening',name:'Reform and opening up',nameZh:'改革开放',han:'改',start:1978,end:1978,color:'#9e3c2e',category:'event',
+    description:'The leadership’s decisions in December 1978 marked a major turn toward economic reform. Changes unfolded gradually through rural experiments, altered business incentives, and expanding trade and foreign investment.',
+    note:'1978 marks a political turning point in a continuing process. Individual reforms began at different times.',source:'https://blogs.worldbank.org/en/eastasiapacific/reflections-on-forty-years-of-china-reforms'}
+];
+if(typeof module!=='undefined')module.exports=SUPPLEMENTAL_HISTORY;

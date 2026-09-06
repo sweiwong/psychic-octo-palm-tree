@@ -1,0 +1,2378 @@
+{
+  "auditedOn": "2026-09-05",
+  "scope": "All 207 card start/end dates and date-bearing introductions; dates of depicted objects and image rights are not a full independent audit.",
+  "records": [
+    {
+      "id": "xia",
+      "sourceIds": [
+        "R_XIA"
+      ],
+      "verdict": "disputed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://english.chnmus.net/en/exhibitions/permanent/details.html?id=418144425005041137",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/sage-king-yu-and-the-bin-gong-xu/C9C992C3FB803232957A781EADF036D6",
+        "https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/abs/myth-of-the-xia-dynasty/0A0E1FDE4C2DE407BB928745E54A25D0"
+      ],
+      "dateNote": "2070–1600 BCE is one modern reconstructed chronology, not securely established exact dates. Xia's identification with excavated cultures and the historical status of its early rulers remain debated. Display as approximate/traditional. Existing UI already labels the date approximate; preserve its fuller description."
+    },
+    {
+      "id": "shang",
+      "sourceIds": [
+        "R_SHANG"
+      ],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://umma.umich.edu/objects/gu-libation-goblet-one-of-a-pair-with-1948-1-118-1948-1-117/"
+      ],
+      "dateNote": "Museum chronology supports approximately 1600–1046 BCE; early boundaries are reconstructions. 'First archaeological state' is misleading because earlier complex societies are archaeologically known. Existing UI already labels the date approximate; preserve its fuller description."
+    },
+    {
+      "id": "western-zhou",
+      "sourceIds": [
+        "SR_ZHOU_W"
+      ],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/art/collection/search/42168",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "Approximately 1046–771 BCE follows the Met. The reconstructed start should not be presented as unquestionably exact. Existing UI already labels the date approximate; preserve its fuller description."
+    },
+    {
+      "id": "eastern-zhou",
+      "sourceIds": [
+        "SR_ZHOU_E"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www2.chnmuseum.cn/portals/0/web/zt/gudai/en/index.html"
+      ],
+      "dateNote": "770–256 BCE: 770 marks King Ping's move to Luoyi; 256 is the conventional end of the Zhou royal house. Warring States continues beyond this dynasty's end."
+    },
+    {
+      "id": "qin",
+      "sourceIds": [
+        "R_QIN"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "221–206 BCE is the standard museum range for the imperial Qin dynasty, not the longer history of the Qin state."
+    },
+    {
+      "id": "xin",
+      "sourceIds": [
+        "R_XIN"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "9–23 CE follows the Met chronology for Wang Mang's dynasty."
+    },
+    {
+      "id": "oracle",
+      "sourceIds": [
+        "E_SHANG_1"
+      ],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://asia.si.edu/explore-art-culture/collections/search/edanmdm%3Afsg_FSC-O-1a-e/",
+        "https://en.wikipedia.org/wiki/Oracle_bone_script"
+      ],
+      "dateNote": "Existing c. 1250 BCE reference is appropriate for the earliest late-Shang corpus; do not force it back to the older workbook's c. 1200. No single invention year is established."
+    },
+    {
+      "id": "confucius",
+      "sourceIds": [
+        "F_CONF"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/confucius/"
+      ],
+      "dateNote": "551 BCE traditional birth is already correctly identified by title and note. No change needed."
+    },
+    {
+      "id": "unification",
+      "sourceIds": [
+        "E_QIN_1"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://en.chnmuseum.cn/collections_577/collection_highlights_608/artifacts_handed___down_from_ancient_times_612/202008/t20200811_246886.html",
+        "https://www2.chnmuseum.cn/portals/0/web/zt/gudai/en/index.html"
+      ],
+      "dateNote": "221 BCE marks completion of the conquests and formation of imperial Qin."
+    },
+    {
+      "id": "catalog-E_XIA_1",
+      "sourceIds": [
+        "E_XIA_1"
+      ],
+      "verdict": "disputed",
+      "proposedFields": {
+        "name": "Yu founds Xia (legendary tradition)"
+      },
+      "sourceUrls": [
+        "https://english.chnmus.net/en/exhibitions/permanent/details.html?id=418144425005041137",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/sage-king-yu-and-the-bin-gong-xu/C9C992C3FB803232957A781EADF036D6"
+      ],
+      "dateNote": "2070 BCE is a reconstructed Xia boundary, not an independently verified event. Existing approx and note disclose uncertainty. Prefer an undated legendary card; if a plotted reference is required, preserve the qualifier visibly and never treat it as a factual coronation date."
+    },
+    {
+      "id": "catalog-F_XIA_1",
+      "sourceIds": [
+        "F_XIA_1"
+      ],
+      "verdict": "disputed",
+      "proposedFields": {
+        "name": "Yu the Great (legendary figure)"
+      },
+      "sourceUrls": [
+        "https://www.cambridge.org/core/journals/early-china/article/abs/sage-king-yu-and-the-bin-gong-xu/C9C992C3FB803232957A781EADF036D6"
+      ],
+      "dateNote": "2100 BCE has no verified birth/activity basis. Existing text acknowledges this, but a date label alone can mislead. Recommended date display is Unknown (legendary); numeric 2100 may serve only as explicitly editorial placement, never as historical date."
+    },
+    {
+      "id": "catalog-E_SHANG_2",
+      "sourceIds": [
+        "E_SHANG_2"
+      ],
+      "verdict": "approximate",
+      "proposedFields": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://openstax.org/books/world-history-volume-1/pages/5-1-ancient-china"
+      ],
+      "dateNote": "1046 BCE is a widely adopted reconstructed date for the Zhou conquest, not universally agreed. Display c. 1046 BCE."
+    },
+    {
+      "id": "catalog-R_ZHOU",
+      "sourceIds": [
+        "R_ZHOU"
+      ],
+      "verdict": "approximate",
+      "proposedFields": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "Approximately 1046–256 BCE follows the Met chronology. The beginning is reconstructed; 256 BCE is the conventional end of Zhou royal rule."
+    },
+    {
+      "id": "catalog-SR_SA",
+      "sourceIds": [
+        "SR_SA"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-ancient-china/spring-and-autumn-period/41B49F658446B6CDC852639FFBD7892C"
+      ],
+      "dateNote": "770–481 BCE is a supported scholarly convention. This is a historical period, not a regime; alternatives use 479, 476, or 475 as endpoint."
+    },
+    {
+      "id": "catalog-SR_WS",
+      "sourceIds": [
+        "SR_WS"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://ocw.mit.edu/courses/21h-151-dynastic-china-fall-2024/pages/readings/"
+      ],
+      "dateNote": "481–221 BCE is an explicit Met chronology, not an error to 'fix' solely because another chronology uses 475 or 403. It is periodization rather than a single founding event."
+    },
+    {
+      "id": "catalog-F_SUN",
+      "sourceIds": [
+        "F_SUN"
+      ],
+      "verdict": "disputed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97811088/30652/excerpt/9781108830652_excerpt.pdf",
+        "https://www.cambridge.org/core/books/abs/sun-tzu-in-the-west/brief-history-of-sunzi-in-china/7D72E0D2B07EE4C01679C56D821A0436"
+      ],
+      "dateNote": "500 BCE is only a traditional approximate placement associated with King Helu's reign. Sunzi's historicity and authorship are contested; the surviving Art of War must not be assigned a proven composition date of 500 BCE. Existing UI already labels the date approximate; preserve its fuller description."
+    },
+    {
+      "id": "catalog-G_ALEX",
+      "sourceIds": [
+        "G_ALEX"
+      ],
+      "verdict": "correct",
+      "proposedFields": {
+        "start": -356,
+        "end": -323,
+        "approx": false,
+        "note": "356–323 BCE gives Alexander’s lifespan. His Asian campaigns began in 334 BCE. He did not invade China.",
+        "description": "Alexander the Great (356–323 BCE) conquered the Achaemenid Persian Empire and carried Macedonian armies into Central Asia and northwestern South Asia. His biography provides wider-world context alongside the Warring States period; these campaigns did not take place in China."
+      },
+      "sourceUrls": [
+        "https://www.iranicaonline.org/articles/alexander-the-great-356-23-bc/"
+      ],
+      "dateNote": "Use the securely recorded biographical range 356–323 BCE for the existing Alexander subject. The former 330 BCE point was an editorial campaign reference, not inherently an erroneous event date. Do not rename the subject to Persepolis solely to justify that anchor."
+    },
+    {
+      "id": "catalog-S_QH",
+      "sourceIds": [
+        "S_QH"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/exhibitions/listings/2017/age-of-empires",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "221 BCE–220 CE is an editorial umbrella for Qin and Han, including intervening conflicts and Xin; not one continuous regime. Stored duration 441 is coordinate subtraction; elapsed historical years are 440 because BCE/CE has no year zero."
+    },
+    {
+      "id": "catalog-R_HAN_W",
+      "sourceIds": [
+        "R_HAN_W"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "206 BCE–9 CE is the standard museum convention, beginning with Liu Bang's kingship; 202 BCE marks his imperial accession and is used by other historians. Duration 215 is coordinate subtraction; elapsed historical years 214."
+    },
+    {
+      "id": "catalog-R_HAN_E",
+      "sourceIds": [
+        "R_HAN_E"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "25–220 CE follows the Met chronology; restoration in 25 is distinct from the earlier Gengshi claimant 23–25."
+    },
+    {
+      "id": "catalog-E_QIN_2",
+      "sourceIds": [
+        "E_QIN_2"
+      ],
+      "verdict": "correct",
+      "proposedFields": {
+        "name": "Qin standardizes weights and measures",
+        "start": -221,
+        "end": -221,
+        "note": "221 BCE dates the weights-and-measures edict. Other standardization measures developed over time; this marker does not date the completion of every reform.",
+        "description": "In 221 BCE, the First Emperor ordered common weights and measures throughout the new empire. Inscribed standard weights preserve evidence of the decree. The narrower event label distinguishes this measure from Qin's broader programmes for writing and administration."
+      },
+      "sourceUrls": [
+        "https://en.chnmuseum.cn/collections_577/collection_highlights_608/artifacts_handed___down_from_ancient_times_612/202008/t20200811_246886.html",
+        "https://www.parismuseescollections.paris.fr/fr/ressources-bibliographiques/to-rule-by-manufacture-measurement-regulation-and-metal-weight"
+      ],
+      "dateNote": "The specific weights-and-measures edict is dated 221 BCE, not 220. Other standardization measures were a process; narrowing the label provides a defensible single year."
+    },
+    {
+      "id": "catalog-E_HAN_1",
+      "sourceIds": [
+        "E_HAN_1"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://www-1.gsb.columbia.edu/cosmos/ort/confucianism.htm"
+      ],
+      "dateNote": "136 BCE marks official promotion of the Five Classics in Han education and scholarship. The imperial academy followed in 124 BCE. These are distinct milestones in a gradual development, not the simultaneous adoption of one exclusive ideology.",
+      "previousReviews": [
+        {
+          "verdict": "approximate",
+          "dateNote": "The existing c. 130 BCE is an editorial reference for a gradual process, not a verified event year. For a specifically dated alternative, official patronage of the Five Classics is associated with 136 BCE. Preserve the existing process description unless intentionally changing the subject.",
+          "context": "Review of the earlier approximate process marker, before the source record was narrowed to a dated milestone."
+        }
+      ]
+    },
+    {
+      "id": "catalog-E_HAN_2",
+      "sourceIds": [
+        "E_HAN_2"
+      ],
+      "verdict": "disputed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://en.unesco.org/silkroad/sites/default/files/knowledge-bank-article/the%20opening%20of%20the%20silk%20route.pdf",
+        "https://www.unesco.org/en/silk-roads/about-silk-roads"
+      ],
+      "dateNote": "138 BCE is the selected conventional departure date for Zhang Qian’s first western mission, commonly dated 138–126 BCE. A UNESCO overview uses 139 BCE for departure. Earlier trade and later exchanges make this a mission milestone, not the creation of the Silk Roads.",
+      "previousReviews": [
+        {
+          "verdict": "approximate",
+          "dateNote": "The existing c. 130 BCE is an editorial reference for growing western contacts, not a verified opening date for the Silk Roads. Zhang Qian’s first mission is conventionally dated 138 BCE; UNESCO also reports 139 BCE. Preserve the existing process description unless intentionally changing the subject.",
+          "context": "Review of the earlier approximate process marker, before the source record was narrowed to a dated milestone."
+        }
+      ]
+    },
+    {
+      "id": "catalog-E_BUD_ENTRY",
+      "sourceIds": [
+        "E_BUD_ENTRY"
+      ],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://archive.asia.si.edu/exhibitions/online/buddhism/china1.htm",
+        "https://www.metmuseum.org/ja/essays/chinese-buddhist-sculpture"
+      ],
+      "dateNote": "50 CE is an editorial midpoint for the first century, not an attested arrival year. Precise introduction is unknown; earlier contacts are possible. Retain year 50 only when displayed explicitly as first-century approximation. Existing UI already labels the date approximate; preserve its fuller description."
+    },
+    {
+      "id": "catalog-C_QIN",
+      "sourceIds": [
+        "C_QIN"
+      ],
+      "verdict": "approximate",
+      "proposedFields": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://smarthistory.org/the-terracotta-warriors/",
+        "https://www.metmuseum.org/exhibitions/listings/2017/age-of-empires"
+      ],
+      "dateNote": "210 BCE is the emperor's death/burial reference, not exact construction date for every statue. Existing explanation is correct; approx flag should match."
+    },
+    {
+      "id": "catalog-E_3K_2",
+      "sourceIds": [
+        "E_3K_2"
+      ],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/4d765733-dc96-43ee-8243-248abea243bd/content",
+        "https://en.wikipedia.org/wiki/Battle_of_Red_Cliffs"
+      ],
+      "dateNote": "208 CE follows Rafe de Crespigny's scholarly chronology. Winter of Jian'an 13 overlaps 208–209 in Julian conversion. Parent Eastern Han is correct; the formal Three Kingdoms period starts 220."
+    },
+    {
+      "id": "late-warring",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528"
+      ],
+      "dateNote": "256–221 BCE is explicitly editorial, not a claimed dynasty. Final conquests 230–221 match the scholarly article. Keep its note."
+    },
+    {
+      "id": "han",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "206 BCE–220 CE museum envelope is supported; Xin interruption and 202 imperial accession are already explained. Description saying dynasty encompassed Xin should become: The overview spans Western Han, the intervening Xin regime, and Eastern Han."
+    },
+    {
+      "id": "paper",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://mci.si.edu/node/1246765",
+        "https://en.wikipedia.org/wiki/Cai_Lun"
+      ],
+      "dateNote": "105 CE traditional improvement/report date is correct as qualified. Smithsonian bibliographic abstract confirms paper existed before 105. Existing Iranica page concerns Persian papermaking and does not directly evidence 105; replace or supplement with direct Cai Lun evidence."
+    },
+    {
+      "id": "laozi",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/laozi/"
+      ],
+      "dateNote": "400–250 BCE is interpretive text-formation range, not Laozi lifespan. SEP describes fourth-century development and relatively stable form by mid-third century. Existing approx and caveat are appropriate."
+    },
+    {
+      "id": "mozi",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {
+        "start": -430,
+        "end": -430,
+        "note": "Mozi flourished around 430 BCE according to the Stanford Encyclopedia of Philosophy. This is an approximate activity marker, not a birth/death date."
+      },
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/mohism/"
+      ],
+      "dateNote": "450–390 BCE was editorial movement window, not a directly evidenced life interval. Prefer explicitly supported fl. c. 430 BCE marker. Existing description of later fifth-century activity remains valid."
+    },
+    {
+      "id": "mencius",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/chinawh/web/help/readings.html",
+        "https://plato.stanford.edu/entries/mencius/"
+      ],
+      "dateNote": "c. 370–290 BCE supported by Columbia educational chronology. Alternatives such as 372–289 exist; retain approximate flag."
+    },
+    {
+      "id": "zhuangzi",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/zhuangzi/"
+      ],
+      "dateNote": "350–250 BCE is a selected window for early textual development; SEP supports late-fourth-century author activity and subsequent layers, not these exact endpoints. Existing note explicitly identifies an approximate textual range. Preserve distinction from life dates."
+    },
+    {
+      "id": "xunzi",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/xunzi/"
+      ],
+      "dateNote": "c. 310 BCE birth estimate and alive after 238 BCE are supported. Existing note correctly says 238 is not death; date display should say c. 310–after 238 BCE, not merely 310–238."
+    },
+    {
+      "id": "han-fei",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://krimdok.uni-tuebingen.de/AuthorityRecord/079343937",
+        "https://plato.stanford.edu/entries/chinese-legalism/"
+      ],
+      "dateNote": "c. 280–233 BCE supported by University of Tuebingen authority record; birth approximate, 233 death. Current note correctly distinguishes them."
+    },
+    {
+      "id": "mawangdui-manuscripts",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://zenodo.org/records/12573936",
+        "https://en.wikipedia.org/wiki/Mawangdui"
+      ],
+      "dateNote": "168 BCE is evidenced by tomb 3 inventory slip; note correctly distinguishes burial/closure from composition. Scholarly manuscript record supports this specific dating."
+    },
+    {
+      "id": "sima-qian",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {
+        "end": -91,
+        "note": "c. 109–91 BCE follows the usual composition dating in the Chinese Text Project and University of Vienna bibliographic guide. It is not an exact publication schedule; portions and subsequent transmission have separate histories."
+      },
+      "sourceUrls": [
+        "https://ctext.org/shiji",
+        "https://china-bibliographie.univie.ac.at/2010/09/30/chavannes-les-memoires-historiques-de-se-ma-tsien/"
+      ],
+      "dateNote": "Existing c. 109–90 is rounded; 109–91 has direct source support. Neither is Sima Qian's lifespan; label already names composition."
+    },
+    {
+      "id": "salt-iron-debate",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-debate-salt-iron.htm",
+        "https://www.loc.gov/resource/gdcwdl.wdl_17196_001/?sp=29"
+      ],
+      "dateNote": "81 BCE conference supported by Columbia and Library of Congress; compilation occurred later, as card says."
+    },
+    {
+      "id": "ban-zhao",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://www.columbia.edu/itc/ealac/moerman/fall2000/edit/pdfs/wk2/banzha1.pdf"
+      ],
+      "dateNote": "92–c. 116 CE is a selected late-career interval, bounded by Ban Gu death and Ban Zhao approximate death. It is not her lifespan or precisely dated composition range; existing note is correct."
+    },
+    {
+      "id": "zhang-heng",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://mathshistory.st-andrews.ac.uk/Biographies/Zhang_Heng/"
+      ],
+      "dateNote": "132 CE device date supported by St Andrews. Existing caution about mechanism and reconstructions appropriate."
+    },
+    {
+      "id": "nine-chapters",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {
+        "note": "The plotted ca. 100 BCE–100 CE interval is an editorial Han-period reference, not an established formation range. MacTutor discusses origins around 200 BCE and alternative dating between 100 BCE and 50 CE. Different layers have different dates; Liu Hui’s commentary dates to 263 CE."
+      },
+      "sourceUrls": [
+        "https://mathshistory.st-andrews.ac.uk/HistTopics/Nine_chapters/"
+      ],
+      "dateNote": "No exact formation endpoints are established. Retain the existing coordinates only as a visibly editorial placement; do not replace them with a synthesized 200 BCE–50 CE range and call it consensus. The revised note distinguishes the plotted window from dates actually discussed by the source."
+    },
+    {
+      "id": "zhou-gonghe",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001784784",
+        "https://en.wikipedia.org/wiki/Gonghe_Regency"
+      ],
+      "dateNote": "841–828 BCE is conventional and supported by Korean academic abstract; 842 start alternative already disclosed. The named lord versus joint-regency interpretation is disputed."
+    },
+    {
+      "id": "zhou-capital-crisis",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://api.pageplace.de/preview/DT0400.9780511345593_A23677391/preview-9780511345593_A23677391.pdf",
+        "https://www2.chnmuseum.cn/portals/0/web/zt/gudai/en/index.html"
+      ],
+      "dateNote": "771 King You death/Western Zhou end and 770 eastward move are supported. Exact political narrative has greater uncertainty, as note explains."
+    },
+    {
+      "id": "shang-yang",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://www.chinaknowledge.de/History/Zhou/personsshangyang.html"
+      ],
+      "dateNote": "356 and 350 BCE phases explicitly supported. Range connects two phases, not six continuous years of uniform reform; note is adequate."
+    },
+    {
+      "id": "qin-great-wall",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://whc.unesco.org/en/list/438/",
+        "https://en.wikipedia.org/wiki/Meng_Tian"
+      ],
+      "dateNote": "215–210 BCE is an approximate selected frontier-campaign interval, not securely dated bounds for all wall building. UNESCO instead says c. 220 BCE, so current UNESCO citation alone cannot prove 215–210. Keep note explicit and approx true; do not present as construction start/completion dates."
+    },
+    {
+      "id": "yellow-turbans",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/3df5d9aa-26db-44c1-8372-14d21d5a4250/content",
+        "https://www.chinaknowledge.de/History/Han/han-event-huangjin.html"
+      ],
+      "dateNote": "184 CE main uprising confirmed by de Crespigny's chronology and ChinaKnowledge. Later remnants do not require extending the onset marker."
+    },
+    {
+      "id": "division",
+      "verdict": "approximate",
+      "proposed": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/05/eac.html",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "220–581 is a declared editorial Han-to-Sui foundation frame. Political division continued until Chen conquest in 589, already stated in the note; neither date should be presented as the only periodization."
+    },
+    {
+      "id": "sui",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "581–618 is supported; Sui–Tang is an editorial aggregate, not one dynasty."
+    },
+    {
+      "id": "tang",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "618–907 is supported; Sui–Tang is an editorial aggregate, not one dynasty."
+    },
+    {
+      "id": "wu-zhou",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "690–705 is Wu Zetian’s imperial Zhou period, as distinguished from her earlier dominance of the Tang court."
+    },
+    {
+      "id": "five-dynasties",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "907–960 is supported; Sui–Tang is an editorial aggregate, not one dynasty."
+    },
+    {
+      "id": "three-kingdoms",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "220–280 follows the museum chronology."
+    },
+    {
+      "id": "jin-early",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97811071/35840/frontmatter/9781107135840_frontmatter.pdf"
+      ],
+      "dateNote": "266–420 is the combined Western and Eastern Jin span. Foundation can appear as 265 under another calendrical convention."
+    },
+    {
+      "id": "sixteen",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "304–439 follows the museum chronology."
+    },
+    {
+      "id": "north-south",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97811071/35840/frontmatter/9781107135840_frontmatter.pdf"
+      ],
+      "dateNote": "420–589 is a supported periodization; Northern Wei began earlier, in 386. Do not infer containment of all northern states."
+    },
+    {
+      "id": "liao",
+      "verdict": "disputed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://depts.washington.edu/silkroad/exhibit/khitans/essay.html",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "916 is the formal imperial-state milestone; 907 dates Abaoji’s earlier accession and is used by the source dataset. Retain 916 with this distinction."
+    },
+    {
+      "id": "reunification",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "589 marks Sui conquest of Chen and reunification; distinct from Sui foundation in 581."
+    },
+    {
+      "id": "an-lushan",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://ajaonline.org/wp-content/uploads/2011/03/AJAonline_China_Dawn_of_a_Golden_Age2.pdf"
+      ],
+      "dateNote": "755 is the onset; the rebellion continued to 763. Keep point at onset; describe 755–763 in summary."
+    },
+    {
+      "id": "sutra",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://idp.bl.uk/discover/learning/buddhism-on-the-silk-roads/articles/buddhism-on-the-ground/buddhist-texts-the-diamond-sutra/"
+      ],
+      "dateNote": "868 dates this printed copy (colophon 11 May), not composition of the Buddhist scripture. The existing description correctly distinguishes it."
+    },
+    {
+      "id": "catalog-R_WEI",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "220–265 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_SHU",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "221–263 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_WU",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "222–280 follows the museum chronology."
+    },
+    {
+      "id": "catalog-E_3K_1",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/05/eac.html"
+      ],
+      "dateNote": "220 marks the end of Eastern Han; long political fragmentation preceded formal abdication."
+    },
+    {
+      "id": "catalog-R_JIN_W",
+      "verdict": "disputed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/books/cambridge-history-of-china/western-jin/C26640110C74E0B6FA215625AFBBA6B7"
+      ],
+      "dateNote": "266–316 is supported with calendrical qualification: Cambridge explicitly gives 265 or 266 for the foundation. Retain 266."
+    },
+    {
+      "id": "catalog-E_JIN_1",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/books/cambridge-history-of-china/western-jin/C26640110C74E0B6FA215625AFBBA6B7"
+      ],
+      "dateNote": "316 is the fall of Western Jin at Chang’an; Eastern Jin continued in the south."
+    },
+    {
+      "id": "catalog-E_BUD_SPREAD",
+      "verdict": "approximate",
+      "proposed": {
+        "name": "Buddhism expands in China (c. 350)"
+      },
+      "sourceUrls": [
+        "https://www.metmuseum.org/essays/chinese-buddhist-sculpture"
+      ],
+      "dateNote": "350 is an illustrative midpoint for fourth-century growth, not a dated introduction or single event."
+    },
+    {
+      "id": "catalog-S_ST",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "581–907 is supported; Sui–Tang is an editorial aggregate, not one dynasty."
+    },
+    {
+      "id": "catalog-G_ISLAM",
+      "verdict": "approximate",
+      "proposed": {
+        "name": "Muhammad’s first revelation (traditional date)"
+      },
+      "sourceUrls": [
+        "https://www.metmuseum.org/essays/the-birth-of-islam"
+      ],
+      "dateNote": "610 refers to the first revelation in Islamic tradition, not a single date encompassing Islam’s rise."
+    },
+    {
+      "id": "catalog-R_JIN_EASTERN_JIN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      ],
+      "dateNote": "317–420 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_SIXTEEN_HAN_ZHAO_FORMER_ZHAO",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97811070/20771/frontmatter/9781107020771_frontmatter.pdf",
+        "https://www.earlymedievalchinagroup.org/resources/thesaurus/"
+      ],
+      "dateNote": "304–329 includes the Han phase; Former Zhao naming begins 319. Retain combined label."
+    },
+    {
+      "id": "catalog-R_SIXTEEN_LATER_ZHAO",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97811070/20771/frontmatter/9781107020771_frontmatter.pdf"
+      ],
+      "dateNote": "Cambridge History table confirms 319–351; EMC thesaurus gives a different 352 endpoint."
+    },
+    {
+      "id": "catalog-R_SIXTEEN_FORMER_YAN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://chinainstitute.org/wp-content/uploads/2024/12/School-Brochure-24-25.pdf"
+      ],
+      "dateNote": "337–370 is the China Institute/Liaoning archaeology exhibition chronology; 337 is royal proclamation."
+    },
+    {
+      "id": "catalog-R_SIXTEEN_FORMER_QIN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.earlymedievalchinagroup.org/resources/thesaurus/"
+      ],
+      "dateNote": "351–394 agrees with EMC scholarly thesaurus. Other tables differ; retain conventional terminal remnant date."
+    },
+    {
+      "id": "catalog-R_SIXTEEN_LATER_QIN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.earlymedievalchinagroup.org/resources/thesaurus/"
+      ],
+      "dateNote": "384–417 agrees with scholarly thesaurus."
+    },
+    {
+      "id": "catalog-R_NS_LIU_SONG",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "420–479 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_NS_SOUTHERN_QI",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "479–502 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_NS_LIANG",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "502–557 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_NS_CHEN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "557–589 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_NS_NORTHERN_WEI",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "386–534 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_NS_EASTERN_WEI",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "534–550 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_NS_WESTERN_WEI",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "535–557 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_NS_NORTHERN_QI",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "550–577 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_NS_NORTHERN_ZHOU",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "557–581 follows the museum chronology."
+    },
+    {
+      "id": "catalog-R_FIVE_LATER_LIANG",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://pages.ucsd.edu/~dkjordan/chin/chinahistory/dyn15-u.html"
+      ],
+      "dateNote": "907–923 agrees with Jordan's university-hosted reign table."
+    },
+    {
+      "id": "catalog-R_FIVE_LATER_TANG",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://pages.ucsd.edu/~dkjordan/chin/chinahistory/dyn15-u.html"
+      ],
+      "dateNote": "923–936 agrees with Jordan's university-hosted reign table."
+    },
+    {
+      "id": "catalog-R_FIVE_LATER_JIN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/frontier-fortification-and-forestation-defensive-woodland-on-the-songliao-border-in-the-long-eleventh-century/847B22FE75C4FD6632086433E7FC3BB1"
+      ],
+      "dateNote": "Cambridge journal explicitly supports the existing endpoints; older tables give one-year-earlier terminal years."
+    },
+    {
+      "id": "catalog-R_FIVE_LATER_HAN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/frontier-fortification-and-forestation-defensive-woodland-on-the-songliao-border-in-the-long-eleventh-century/847B22FE75C4FD6632086433E7FC3BB1"
+      ],
+      "dateNote": "Cambridge journal explicitly supports the existing endpoints; older tables give one-year-earlier terminal years."
+    },
+    {
+      "id": "catalog-R_FIVE_LATER_ZHOU",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://pages.ucsd.edu/~dkjordan/chin/chinahistory/dyn15-u.html"
+      ],
+      "dateNote": "951–960 agrees with Jordan's university-hosted reign table."
+    },
+    {
+      "id": "catalog-R_TEN_WU_YANG_WU",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97805218/12481/excerpt/9780521812481_excerpt.pdf"
+      ],
+      "dateNote": "Existing range confirmed by Cambridge History of China, volume 5 introduction table; starts use state-formation milestones."
+    },
+    {
+      "id": "catalog-R_TEN_FORMER_SHU",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97805218/12481/excerpt/9780521812481_excerpt.pdf"
+      ],
+      "dateNote": "Existing range confirmed by Cambridge History of China, volume 5 introduction table; starts use state-formation milestones."
+    },
+    {
+      "id": "catalog-R_TEN_WUYUE",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97805218/12481/excerpt/9780521812481_excerpt.pdf"
+      ],
+      "dateNote": "Existing range confirmed by Cambridge History of China, volume 5 introduction table; starts use state-formation milestones."
+    },
+    {
+      "id": "catalog-R_TEN_CHU_MA_CHU",
+      "verdict": "disputed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://fass.ubd.edu.bn/staff/docs/JK/Kurz-2014.pdf",
+        "https://pages.ucsd.edu/~dkjordan/chin/chinahistory/dyn15-u.html"
+      ],
+      "dateNote": "907–951 is supported by Kurz; 927 is the later kingdom milestone used in other tables. Retain broad state span."
+    },
+    {
+      "id": "catalog-R_TEN_MIN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97805218/12481/excerpt/9780521812481_excerpt.pdf"
+      ],
+      "dateNote": "Existing range confirmed by Cambridge History of China, volume 5 introduction table; starts use state-formation milestones."
+    },
+    {
+      "id": "catalog-R_TEN_SOUTHERN_HAN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97805218/12481/excerpt/9780521812481_excerpt.pdf"
+      ],
+      "dateNote": "Existing range confirmed by Cambridge History of China, volume 5 introduction table; starts use state-formation milestones."
+    },
+    {
+      "id": "catalog-R_TEN_JINGNAN_NANPING",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97805218/12481/excerpt/9780521812481_excerpt.pdf"
+      ],
+      "dateNote": "Existing range confirmed by Cambridge History of China, volume 5 introduction table; starts use state-formation milestones."
+    },
+    {
+      "id": "catalog-R_TEN_LATER_SHU",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://pages.ucsd.edu/~dkjordan/chin/chinahistory/dyn15-u.html"
+      ],
+      "dateNote": "934–965 agrees with Jordan's university-hosted reign table."
+    },
+    {
+      "id": "catalog-R_TEN_SOUTHERN_TANG",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://pages.ucsd.edu/~dkjordan/chin/chinahistory/dyn15-u.html"
+      ],
+      "dateNote": "937–975 agrees with Jordan's university-hosted reign table."
+    },
+    {
+      "id": "catalog-R_TEN_NORTHERN_HAN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://pages.ucsd.edu/~dkjordan/chin/chinahistory/dyn15-u.html"
+      ],
+      "dateNote": "951–979 agrees with Jordan's university-hosted reign table."
+    },
+    {
+      "id": "catalog-S_TEN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://pages.ucsd.edu/~dkjordan/chin/chinahistory/dyn15-u.html"
+      ],
+      "dateNote": "902–979 agrees with Jordan's university-hosted reign table."
+    },
+    {
+      "id": "sui-grand-canal",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/geography/uses-geography.html"
+      ],
+      "dateNote": "605–610 marks Sui expansion and connection of earlier waterways; it is not the origin of all Chinese canals."
+    },
+    {
+      "id": "xuanwu-gate",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://toaj.stpi.niar.org.tw/index/journal/volume/article/4b1141f98cabd6a3018cd21dcad90efa"
+      ],
+      "dateNote": "626 is confirmed by the scholarly study of Chang He and the coup."
+    },
+    {
+      "id": "xuanzang-return",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "645 is the return from the Indian pilgrimage, not the beginning of his translation career or journey."
+    },
+    {
+      "id": "talas",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://faculty.washington.edu/dwaugh/hist225/225chron/turkchr.html",
+        "https://festival.si.edu/2002/the-silk-road/paper/smithsonian"
+      ],
+      "dateNote": "751 is confirmed. The existing note correctly distinguishes the battle date from the disputed paper-transmission story."
+    },
+    {
+      "id": "two-tax",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cuhk.edu.hk/ics/journal/articles/v57p049.pdf"
+      ],
+      "dateNote": "780 is the promulgation year of the Two-Tax system."
+    },
+    {
+      "id": "huichang",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "845 marks the major suppression; broader restrictions and consequences extend beyond this point."
+    },
+    {
+      "id": "huang-chao",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97810096/49919/frontmatter/9781009649919_frontmatter.pdf"
+      ],
+      "dateNote": "881 CE is correct for the January capture; 880 in regnal/lunar chronology should not replace the Common Era year."
+    },
+    {
+      "id": "tang-end",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "907 is the dynastic transition to Later Liang."
+    },
+    {
+      "id": "orchid-pavilion",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/art/collection/search/51394"
+      ],
+      "dateNote": "353 dates the gathering; later art and copies should retain their own object dates."
+    },
+    {
+      "id": "mogao-caves",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://en.unesco.org/silkroad/content/dunhuang"
+      ],
+      "dateNote": "366 is the traditional foundation date. Existing approximate flag and note correctly avoid dating the entire surviving complex to this year."
+    },
+    {
+      "id": "kumarajiva-translations",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.nichirenlibrary.org/en/lsoc/TranslatorsNote/4"
+      ],
+      "dateNote": "401 is the conventional Chang’an arrival anchor in Burton Watson’s translator note; translation work continued afterward. Existing qualification is appropriate."
+    },
+    {
+      "id": "tao-yuanming",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/art/collection/search/40311"
+      ],
+      "dateNote": "400 is an editorial mature-writing anchor, not verified retirement; 405 retirement and 427 death are supported. Existing note makes this clear, so retain approximate range."
+    },
+    {
+      "id": "yungang-caves",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://whc.unesco.org/archive/advisory_body_evaluation/1039.pdf"
+      ],
+      "dateNote": "460–525 is UNESCO’s main early construction span. Existing note correctly allows later work."
+    },
+    {
+      "id": "longmen-caves",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://whc.unesco.org/en/list/1003/",
+        "https://whc.unesco.org/uploads/nominations/1003.pdf"
+      ],
+      "dateNote": "Late fifth to mid-eighth century is supported for the most intensive carving; UNESCO nomination gives an initial 493 anchor. Existing c.494–750 is an approximate main-period range, not exact creation and closure."
+    },
+    {
+      "id": "tang-code",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://web.colby.edu/eas150/files/2017/11/tang-legal-code.pdf"
+      ],
+      "dateNote": "653 dates the authoritative code/commentary stage; existing text correctly distinguishes earlier legislation."
+    },
+    {
+      "id": "li-bai-du-fu",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/06/eac.html"
+      ],
+      "dateNote": "740–770 is an editorial focus window; Li Bai died 762, Du Fu 770. Existing note accurately rejects a shared lifespan interpretation."
+    },
+    {
+      "id": "tang-women-riding",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://asia-archive.si.edu/learn/for-educators/teaching-china-with-the-smithsonian/explore-by-object/tomb-figures-of-a-man-and-woman-on-horseback/"
+      ],
+      "dateNote": "Smithsonian figures are dated c.700–c.750. This supports the object-based context window, not limits on women’s riding."
+    },
+    {
+      "id": "lu-yu-tea",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://repository.si.edu/server/api/core/bitstreams/a49bb440-b143-4eed-bfa1-94fdfdc110af/content",
+        "https://fowler.ucla.edu/wp-content/uploads/2021/08/zppd_zppd_Tea_Curriculum.pdf"
+      ],
+      "dateNote": "760–780 is a scholarly composition range, with 780 commonly used for completion. Existing approximate treatment is appropriate."
+    },
+    {
+      "id": "eight-princes",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://brill.com/view/journals/east/53/1-2/article-p3_3.pdf"
+      ],
+      "dateNote": "291–306 is the conventional grouped conflict range; existing note correctly denies continuous fighting."
+    },
+    {
+      "id": "xiaowen-reforms",
+      "verdict": "approximate",
+      "proposed": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://cir.nii.ac.jp/crid/1050292726806399488",
+        "https://www.chinaknowledge.de/History/Division/beiwei.html"
+      ],
+      "dateNote": "485 equal-field reforms begin the selected window; 499 is Xiaowen’s death. Reforms involved Empress Dowager Feng and multiple stages, already stated."
+    },
+    {
+      "id": "niu-li-disputes",
+      "verdict": "disputed",
+      "proposed": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/niuli-factional-strife-the-origins-of-a-historiographical-fiction/1845DBAD83C09083145C816B8DE768E6",
+        "https://soas-repository.worktribe.com/output/383615/the-factional-struggle-of-china-820-850-ad"
+      ],
+      "dateNote": "820–850 is an older scholarly grouping; recent scholarship disputes the enduring two-faction interpretation. Existing description already communicates this."
+    },
+    {
+      "id": "zhuge-northern-expeditions",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.tandfonline.com/doi/abs/10.1179/152991099788199472"
+      ],
+      "dateNote": "228–234 is confirmed by John Killigrew’s dedicated scholarly study."
+    },
+    {
+      "id": "fei-river",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://assets.cambridge.org/97811071/20129/index/9781107120129_index.pdf"
+      ],
+      "dateNote": "383 is confirmed in Cambridge History of War; Former Qin did not disappear in the battle year."
+    },
+    {
+      "id": "sui-examinations",
+      "verdict": "disputed",
+      "proposed": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://www.cambridge.org/core/elements/political-economy-of-chinas-imperial-examination-system/3DA0EC88AE5901AEE641FD5686C7F8B8"
+      ],
+      "dateNote": "605 is a disputed conventional origin anchor; proposed alternatives include 587 and 605–607, depending on what counts as an examination. Existing note is appropriately cautious."
+    },
+    {
+      "id": "zhenguan-government",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.slam.org/collection/constituents/26910/"
+      ],
+      "dateNote": "627–649 is the Zhenguan era, distinct from Taizong’s accession in 626."
+    },
+    {
+      "id": "kaiyuan-era",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://digicoll.lib.berkeley.edu/record/245799"
+      ],
+      "dateNote": "713–741 is the Kaiyuan era; the Berkeley inscription catalogue uses these dates."
+    },
+    {
+      "id": "catalog-C_BEIJING_YUAN",
+      "sourceId": "C_BEIJING_YUAN",
+      "verdict": "correct",
+      "proposed": {
+        "start": 1272,
+        "end": 1272
+      },
+      "sourceUrls": [
+        "https://www.beijing.gov.cn/renwen/sy/whkb/201907/t20190715_1866582.html",
+        "https://wwj.beijing.gov.cn/bjww/resource/cms/article/bjww_362762/10869853/2020092815384151837.pdf"
+      ],
+      "dateNote": "Recommend 1272 for Dadu naming/capital milestone instead of preserving a 1271 foundation-context marker. Current explanatory note is honest, but its date refers to the wider dynasty rather than this capital event.",
+      "current": {
+        "start": 1271,
+        "end": 1271
+      }
+    },
+    {
+      "id": "catalog-C_BEIJING_MING",
+      "sourceId": "C_BEIJING_MING",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.dpm.org.cn/Uploads/pdf/1540/T00070_00.pdf",
+        "https://young.dpm.org.cn/info/273",
+        "https://www.dpm.org.cn/subject_600/buildingdetails/253789.html"
+      ],
+      "dateNote": "1420 dates palace completion and preparations; formal transfer occurred in Yongle 19, 1421. Avoid permanent capital, since later governments used other capitals.",
+      "current": {
+        "start": 1421,
+        "end": 1421
+      }
+    },
+    {
+      "id": "catalog-C_BEIJING_QING",
+      "sourceId": "C_BEIJING_QING",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.dpm.org.cn/court/event/159873.html"
+      ],
+      "dateNote": "1644 dates the Qing court's move to Beijing; Qing was proclaimed in 1636, and territorial conquest continued after 1644.",
+      "current": {
+        "start": 1644,
+        "end": 1644
+      }
+    },
+    {
+      "id": "catalog-E_MING_EUNUCH_1",
+      "sourceId": "E_MING_EUNUCH_1",
+      "verdict": "approximate",
+      "proposed": {
+        "start": 1403,
+        "end": 1424,
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://assets.cambridge.org/97805212/43322/excerpt/9780521243322_excerpt.pdf",
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/cessation-of-zheng-hes-voyages-and-the-beginning-of-private-sailings-fiscal-competition-between-emperors-and-bureaucrats/8FE45F3210A4DF174A4EC2B30868D433"
+      ],
+      "dateNote": "The exact 1400 marker is unsupported. Proposed circa 1403 is an editorial anchor for expansion under Yongle: accession 1402, reign era 1403–1424. This was a continuing institutional process, not a single decree.",
+      "current": {
+        "start": 1400,
+        "end": 1400
+      }
+    },
+    {
+      "id": "catalog-E_MING_EUNUCH_2",
+      "sourceId": "E_MING_EUNUCH_2",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://digitalarchive.npm.gov.tw/Collection/Detail/19487?dep=P",
+        "https://www.dpm.org.cn/court/lineage/226243.html"
+      ],
+      "dateNote": "1624 is a supported focal year: Yang Lian's memorial denouncing Wei is dated Tianqi 4. Wei's influence began earlier; major persecutions followed in 1625–1626 and his fall and death in 1627.",
+      "current": {
+        "start": 1624,
+        "end": 1624
+      }
+    },
+    {
+      "id": "catalog-E_QING_OPIUM",
+      "sourceId": "E_QING_OPIUM",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.nam.ac.uk/explore/first-china-war-1839-1842"
+      ],
+      "dateNote": "1839 is a start-year marker for the 1839–1842 war. It includes initial clashes; some periodizations begin with the main expedition in 1840.",
+      "current": {
+        "start": 1839,
+        "end": 1842
+      }
+    },
+    {
+      "id": "catalog-E_QING_TAIPING",
+      "sourceId": "E_QING_TAIPING",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/journals/modern-asian-studies/article/abs/foreigntraining-and-chinas-selfstrengthening-the-case-of-fenghuangshan-18641873/8AF47729DBB9849B462A6351404ADCA1",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/ching-restoration/E7799876F2013102083B06ABBD82100E"
+      ],
+      "dateNote": "1850 is a defensible start for the broader 1850–1864 civil war; 1851 is used for formal uprising/proclamation. Nanjing fell in July 1864; surviving resistance lasted longer.",
+      "current": {
+        "start": 1850,
+        "end": 1864
+      }
+    },
+    {
+      "id": "catalog-E_QING_OPIUM2",
+      "sourceId": "E_QING_OPIUM2",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/special/china_1750_reform.htm",
+        "https://www.nationalarchives.gov.uk/education/resources/hong-kong-and-the-opium-wars/"
+      ],
+      "dateNote": "1856 is the starting marker for the 1856–1860 conflict, which comprised several campaigns and negotiations.",
+      "current": {
+        "start": 1856,
+        "end": 1860
+      }
+    },
+    {
+      "id": "catalog-E_QING_SSM",
+      "sourceId": "E_QING_SSM",
+      "verdict": "approximate",
+      "proposed": {
+        "start": 1861,
+        "end": 1895,
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://academic.oup.com/book/47875/chapter-abstract/422377188",
+        "https://academic.oup.com/cjip/article/11/4/451/5162672",
+        "https://afe.easia.columbia.edu/special/china_1750_reform.htm"
+      ],
+      "dateNote": "Propose circa 1861 as the start anchor, rather than an exact 1860 event. The movement developed from earlier proposals and continued into the 1894–1895 war; scholarly period boundaries vary.",
+      "current": {
+        "start": 1860,
+        "end": 1860
+      }
+    },
+    {
+      "id": "catalog-E_QING_SJ",
+      "sourceId": "E_QING_SJ",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.jacar.go.jp/english/exhibition/jacarbl-fsjwar-e/index.html"
+      ],
+      "dateNote": "1894 is the start-year marker for the First Sino-Japanese War of 1894–1895.",
+      "current": {
+        "start": 1894,
+        "end": 1895
+      }
+    },
+    {
+      "id": "catalog-E_QING_100D",
+      "sourceId": "E_QING_100D",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.dpm.org.cn/lemmas/241774.html"
+      ],
+      "dateNote": "1898 is secure. The reform interval ran June–September; the Palace Museum gives fourth lunar month day 23 through eighth lunar month day 6, 103 days.",
+      "current": {
+        "start": 1898,
+        "end": 1898
+      }
+    },
+    {
+      "id": "catalog-E_QING_BOXER",
+      "sourceId": "E_QING_BOXER",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/b/boxer-rebellion-usnavy-1900-1901.html",
+        "https://history.state.gov/historicaldocuments/frus1900/papers"
+      ],
+      "dateNote": "1900 is a valid focal marker for the siege and foreign intervention, not the movement's entire duration. Expansion preceded it in 1899 and settlement followed in 1901.",
+      "current": {
+        "start": 1899,
+        "end": 1901
+      }
+    },
+    {
+      "id": "catalog-E_QING_1911",
+      "sourceId": "E_QING_1911",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://history.state.gov/milestones/1899-1913/chinese-rev",
+        "https://history.state.gov/historicaldocuments/frus1913/d89"
+      ],
+      "dateNote": "1911 marks the revolutionary outbreak. The republic began in January 1912 and imperial abdication occurred on 12 February 1912.",
+      "current": {
+        "start": 1911,
+        "end": 1911
+      }
+    },
+    {
+      "id": "catalog-S_SONG",
+      "sourceId": "S_SONG",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/07/eac.html",
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/fragility-of-peace-song-chinas-northwestern-frontier-and-erosion-of-the-chanyuan-paradigm-in-the-mideleventh-century/AF2F19A32A23ED0F304C3DE814851A3F"
+      ],
+      "dateNote": "960–1279 follows the Song dynasty as an editorial frame for changing concurrent states. The named states did not all coexist throughout the interval, and this aggregate does not assert Song sovereignty over them.",
+      "current": {
+        "start": 960,
+        "end": 1279
+      }
+    },
+    {
+      "id": "catalog-R_NSONG",
+      "sourceId": "R_NSONG",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/ja/essays/northern-song-dynasty-960-1127"
+      ],
+      "dateNote": "960–1127 is the standard Northern Song chronology.",
+      "current": {
+        "start": 960,
+        "end": 1127
+      }
+    },
+    {
+      "id": "catalog-R_SSONG",
+      "sourceId": "R_SSONG",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/07/eac.html"
+      ],
+      "dateNote": "1127–1279 is the standard Southern Song chronology; 1127 does not mean the court immediately settled permanently at Hangzhou.",
+      "current": {
+        "start": 1127,
+        "end": 1279
+      }
+    },
+    {
+      "id": "western-xia",
+      "sourceId": "R_XIXIA",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://whc.unesco.org/document/221524"
+      ],
+      "dateNote": "1038 dates imperial proclamation by Li Yuanhao; Tangut power predates it. UNESCO's reviewed chronology supports 1038–1227.",
+      "current": {
+        "start": 1038,
+        "end": 1227
+      }
+    },
+    {
+      "id": "jurchen-jin",
+      "sourceId": "R_JIN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/07/eac.html"
+      ],
+      "dateNote": "1115–1234 dates the Jurchen Jin; distinct from the earlier Jin (晋).",
+      "current": {
+        "start": 1115,
+        "end": 1234
+      }
+    },
+    {
+      "id": "chanyuan",
+      "sourceId": "E_SONG_CHANYUAN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/fragility-of-peace-song-chinas-northwestern-frontier-and-erosion-of-the-chanyuan-paradigm-in-the-mideleventh-century/AF2F19A32A23ED0F304C3DE814851A3F"
+      ],
+      "dateNote": "Mid-January 1005 oath exchange follows the winter campaign of 1004; use 1005 in converted Common Era chronology.",
+      "current": {
+        "start": 1005,
+        "end": 1005
+      }
+    },
+    {
+      "id": "jingkang",
+      "sourceId": "E_SONG_JINGKANG",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://collectionsonline.nus.edu.sg/AIS/Details/collect/5552",
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/fragility-of-peace-song-chinas-northwestern-frontier-and-erosion-of-the-chanyuan-paradigm-in-the-mideleventh-century/AF2F19A32A23ED0F304C3DE814851A3F"
+      ],
+      "dateNote": "1127 dates Northern Song's fall and imperial captivity, at the culmination of the 1126–1127 crisis.",
+      "current": {
+        "start": 1127,
+        "end": 1127
+      }
+    },
+    {
+      "id": "catalog-E_SONG_SOUTH",
+      "sourceId": "E_SONG_SOUTH",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/07/eac.html"
+      ],
+      "dateNote": "1127 is the conventional beginning of Southern Song following loss of the northern court; do not equate it with the completion of relocation to Hangzhou.",
+      "current": {
+        "start": 1127,
+        "end": 1127
+      }
+    },
+    {
+      "id": "yuan",
+      "sourceId": "R_YUAN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/07/eac.html"
+      ],
+      "dateNote": "1271 dates the Yuan dynastic name, 1279 the final Song conquest. 1368 ends Yuan rule from Beijing, not all subsequent Mongol or Northern Yuan rule.",
+      "current": {
+        "start": 1271,
+        "end": 1368
+      }
+    },
+    {
+      "id": "ming",
+      "sourceId": "R_MING",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/07/eac.html",
+        "https://www.dpm.org.cn/court/event/159873.html"
+      ],
+      "dateNote": "1368–1644 is the main Ming court convention. Southern Ming successors survived after Beijing fell.",
+      "current": {
+        "start": 1368,
+        "end": 1644
+      }
+    },
+    {
+      "id": "qing",
+      "sourceId": "R_QING",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.dpm.org.cn/court/event/159873.html",
+        "https://history.state.gov/historicaldocuments/frus1913/d89"
+      ],
+      "dateNote": "1636–1912 is correct for proclamation through abdication; the chart interval 1644–1912 properly distinguishes the Beijing phase.",
+      "current": {
+        "start": 1636,
+        "end": 1912
+      }
+    },
+    {
+      "id": "song",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/07/eac.html"
+      ],
+      "dateNote": "960–1279 is secure; the 1127 division and incomplete territorial unification are correctly noted.",
+      "current": {
+        "start": 960,
+        "end": 1279
+      }
+    },
+    {
+      "id": "early-yuan",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/07/eac.html"
+      ],
+      "dateNote": "1271–1279 is a defensible display interval between Yuan naming and Song conquest, not a distinct regime.",
+      "current": {
+        "start": 1271,
+        "end": 1279
+      }
+    },
+    {
+      "id": "early-qing",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.dpm.org.cn/court/event/159873.html"
+      ],
+      "dateNote": "1636 proclamation to 1644 Beijing conquest is a valid display interval, not a separate dynasty.",
+      "current": {
+        "start": 1636,
+        "end": 1644
+      }
+    },
+    {
+      "id": "southern-ming",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/southern-ming-16441662/97FA570559404A627906FBF78D0C3A09"
+      ],
+      "dateNote": "1644–1662 follows Lynn Struve's Cambridge chronology for the Southern Ming courts; the Taiwan continuation is properly distinguished.",
+      "current": {
+        "start": 1644,
+        "end": 1662
+      }
+    },
+    {
+      "id": "zheng-he",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/journals/international-organization/article/defending-hierarchy-from-the-moon-to-the-indian-ocean-symbolic-capital-and-political-dominance-in-early-modern-china-and-the-cold-war/1A48863DA2EE573CA0899DF939CCEE1D"
+      ],
+      "dateNote": "1405 is the first departure. The existing note appropriately explains the seven-voyage sequence through 1433.",
+      "current": {
+        "start": 1405,
+        "end": 1405
+      }
+    },
+    {
+      "id": "nanking",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://history.state.gov/milestones/1830-1860/china-1"
+      ],
+      "dateNote": "1842 is confirmed for the treaty; the distinction between this treaty and subsequent privileges is appropriate.",
+      "current": {
+        "start": 1842,
+        "end": 1842
+      }
+    },
+    {
+      "id": "movable-type",
+      "verdict": "approximate",
+      "proposed": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://scalar.usc.edu/works/chinese-rare-books/techniques.225"
+      ],
+      "dateNote": "1041–1048 is the attestation window for Bi Sheng's work, not a securely dated seven-year project. Preserve the range and make uncertainty visible.",
+      "current": {
+        "start": 1041,
+        "end": 1048
+      }
+    },
+    {
+      "id": "qingming-scroll",
+      "verdict": "approximate",
+      "proposed": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://www.metmuseum.org/art/collection/search/36048",
+        "https://digitalarchive.npm.gov.tw/Collection/Detail/19052?dep=P"
+      ],
+      "dateNote": "Museums support early twelfth century. 1100–1127 is an approximate display envelope, not two independently attested production dates.",
+      "current": {
+        "start": 1100,
+        "end": 1127
+      }
+    },
+    {
+      "id": "manila-silver",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://blogs.loc.gov/international-collections/2021/10/negotiating-empire-part-i-from-magellan-to-the-founding-of-manila-16th-18th-centuries/"
+      ],
+      "dateNote": "1571 correctly marks Spanish establishment in Manila; the trade itself developed gradually and had earlier regional foundations.",
+      "current": {
+        "start": 1571,
+        "end": 1571
+      }
+    },
+    {
+      "id": "red-chamber",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://open.lib.umn.edu/redchamber/part/textofthenovel/"
+      ],
+      "dateNote": "1791 is the publication milestone; earlier manuscript circulation and the disputed last forty chapters are correctly distinguished.",
+      "current": {
+        "start": 1791,
+        "end": 1791
+      }
+    },
+    {
+      "id": "song-paper-money",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://brs.website.rba.gov.au/publications/bulletin/2019/sep/pdf/bulletin-2019-09.pdf",
+        "https://afe.easia.columbia.edu/songdynasty-module/econ-rev-money.html"
+      ],
+      "dateNote": "1024 is supported by the Reserve Bank of Australia's historical account. Columbia describes the government takeover more broadly as the 1020s; retain the note distinguishing administration in 1023 from issues in 1024.",
+      "current": {
+        "start": 1024,
+        "end": 1024
+      }
+    },
+    {
+      "id": "song-wang-anshi",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-wang-anshi-crop-loans.htm"
+      ],
+      "dateNote": "The translated crop-loan memorial is explicitly dated Xining 2, 1069; this is a launch marker rather than the entire reform duration.",
+      "current": {
+        "start": 1069,
+        "end": 1069
+      }
+    },
+    {
+      "id": "song-shen-kuo",
+      "verdict": "approximate",
+      "proposed": {
+        "approx": true
+      },
+      "sourceUrls": [
+        "https://uw.manifoldapp.org/read/good-formulas-a55278c8-9e3b-41b6-af69-c471083061ac/section/c0c96e65-51c5-466e-925e-11d7ecc92581"
+      ],
+      "dateNote": "Retain circa 1088 as a conventional anchor, but replace the assertion of a secure completion year. University of Washington Press places completion of Brush Talks/Dream Pool Essays sometime between 1088 and 1095.",
+      "current": {
+        "start": 1088,
+        "end": 1088
+      }
+    },
+    {
+      "id": "song-zhu-xi",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.degruyterbrill.com/document/doi/10.7312/zhu-20632-001/pdf?licenseType=free"
+      ],
+      "dateNote": "1179 is supported for the Nankang appointment and associated academy revival. Preserve the existing distinction from the later formation of examination orthodoxy.",
+      "current": {
+        "start": 1179,
+        "end": 1179
+      }
+    },
+    {
+      "id": "song-quanzhou",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://whc.unesco.org/document/189212"
+      ],
+      "dateNote": "ICOMOS explicitly dates the Maritime Trade Office's creation to 1087; this does not date Quanzhou's foundation.",
+      "current": {
+        "start": 1087,
+        "end": 1087
+      }
+    },
+    {
+      "id": "yuan-religions",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.metmuseum.org/toah/ht/07/eac.html",
+        "https://afe.easia.columbia.edu/mongols/china/china3_f.htm"
+      ],
+      "dateNote": "1271–1368 is correctly described as a thematic dynastic range, not a universal tolerance decree. Columbia documents selective patronage and restrictions.",
+      "current": {
+        "start": 1271,
+        "end": 1368
+      }
+    },
+    {
+      "id": "yuan-blue-white",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.britishmuseum.org/collection/object/A_PDF-B-613"
+      ],
+      "dateNote": "1351 is directly attested by the David Vases' dedicatory inscription; it is not the invention date of blue-and-white porcelain.",
+      "current": {
+        "start": 1351,
+        "end": 1351
+      }
+    },
+    {
+      "id": "ming-wang-yangming",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://plato.stanford.edu/entries/wang-yangming/"
+      ],
+      "dateNote": "Stanford's scholarly account places Wang's Longchang awakening in 1508; its narrated character is appropriately acknowledged.",
+      "current": {
+        "start": 1508,
+        "end": 1508
+      }
+    },
+    {
+      "id": "ming-journey-west",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.jstor.org/stable/j.ctvct027d",
+        "https://uw.manifoldapp.org/read/72f173a7-0e3b-4728-953c-c40b6e8bb4bd/section/6f00de67-e843-43bc-9d9b-94ee1be9399d"
+      ],
+      "dateNote": "Scholarly studies identify the 1592 edition. The card correctly limits its claim to the surviving complete edition and qualifies author attribution.",
+      "current": {
+        "start": 1592,
+        "end": 1592
+      }
+    },
+    {
+      "id": "ming-li-shizhen",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.ndl.go.jp/en/nature/11"
+      ],
+      "dateNote": "The National Diet Library confirms the 1596 publication milestone; this is distinct from composition and should not imply publication during Li's lifetime.",
+      "current": {
+        "start": 1596,
+        "end": 1596
+      }
+    },
+    {
+      "id": "qing-inner-asia",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13440406/",
+        "https://elibrary.bsu.edu.az/files/books_400/N_6.pdf"
+      ],
+      "dateNote": "1755–1759 is supported for the linked Dzungar and Tarim conquests. The interval groups campaigns and is not an exact duration for all Qing activity in Inner Asia. Do not add the demographic estimates quoted in the recent article as settled numbers.",
+      "current": {
+        "start": 1755,
+        "end": 1759
+      }
+    },
+    {
+      "id": "qing-siku",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://ieas.berkeley.edu/news/c-v-starr-east-asian-library-receives-monumental-gift",
+        "https://www.loc.gov/item/2021666133/"
+      ],
+      "dateNote": "Berkeley explicitly supports compilation in 1773–1782. The earlier commission and differing dates for specific copies are correctly noted.",
+      "current": {
+        "start": 1773,
+        "end": 1782
+      }
+    },
+    {
+      "id": "qing-exams-end",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://history.state.gov/historicaldocuments/frus1905/d215"
+      ],
+      "dateNote": "The contemporary diplomatic report expressly dates the abolition edict to 2 September 1905. The separate December education-ministry decree is not the abolition date.",
+      "current": {
+        "start": 1905,
+        "end": 1905
+      }
+    },
+    {
+      "id": "yue-fei",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/toward-a-nation-defined-by-state-tattooed-loyalty-and-the-evolution-of-yue-feis-11031142-image-from-the-song-to-the-present/D36D331BEBA1C16188E89856AAFB533B"
+      ],
+      "dateNote": "1127–1142 is valid only as the Southern Song portion of his career. He joined the army in 1122; lifespan was 1103–1142. The existing card states the restricted frame, so no date change is necessary.",
+      "current": {
+        "start": 1127,
+        "end": 1142
+      }
+    },
+    {
+      "id": "song-gunpowder",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/songdynasty-module/tech-gunpowder.html"
+      ],
+      "dateNote": "1044 dates the Wujing zongyao manual and recorded recipes; the card correctly avoids treating it as gunpowder's initial discovery.",
+      "current": {
+        "start": 1044,
+        "end": 1044
+      }
+    },
+    {
+      "id": "red-turbans",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/journals/journal-of-asian-studies/article/abs/transformations-of-messianic-revolt-and-the-founding-of-the-ming-dynasty/BE0CE955588A1907A2D9EB97E7B42D04",
+        "https://www.metmuseum.org/toah/ht/07/eac.html"
+      ],
+      "dateNote": "1351 is the documented outbreak; 1368 is the Ming-foundation cutoff for the card's grouped rebellions. This is not a claim that all insurgent activity ended simultaneously.",
+      "current": {
+        "start": 1351,
+        "end": 1368
+      }
+    },
+    {
+      "id": "tumu-crisis",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.dpm.org.cn/lemmas/243962.html"
+      ],
+      "dateNote": "The Palace Museum confirms the defeat and capture in 1449. Later return and restoration are separate events.",
+      "current": {
+        "start": 1449,
+        "end": 1449
+      }
+    },
+    {
+      "id": "ming-maritime-conflict",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://ora.ox.ac.uk/objects/uuid%3A68239bdc-cfde-46db-bd42-386e21dfabba/files/d6108vb75c"
+      ],
+      "dateNote": "The Oxford research dates the first cited maritime prohibition to 1371 and relaxation to 1567, while identifying many intervening decrees. The card's variable-enforcement qualification is necessary.",
+      "current": {
+        "start": 1371,
+        "end": 1567
+      }
+    },
+    {
+      "id": "zhang-juzheng",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://iris.unive.it/retrieve/e4239dde-8923-7180-e053-3705fe0a3322/05-LIPPIELLO-ITINERARIA.pdf",
+        "https://openresearch-repository.anu.edu.au/bitstreams/8772821b-d94f-4d90-ac7b-703d3fafe25a/download"
+      ],
+      "dateNote": "1572–1582 is supported for Zhang's senior-secretary dominance, not his whole official career or all origins of Single Whip reform.",
+      "current": {
+        "start": 1572,
+        "end": 1582
+      }
+    },
+    {
+      "id": "kangxi-rule",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.npm.gov.tw/ChineseArt-Content.aspx?a=3021&idstr=03012531&l=1&sno=04012587&type=2018",
+        "https://uw.manifoldapp.org/read/vignettes-from-the-late-ming/section/17d430d9-5575-40c5-9e94-bfd448f3515b"
+      ],
+      "dateNote": "1661–1722 is accession-to-death; 1662 begins the Kangxi era name. The existing note correctly explains the distinction.",
+      "current": {
+        "start": 1661,
+        "end": 1722
+      }
+    },
+    {
+      "id": "li-zicheng-beijing",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.dpm.org.cn/court/event/159873.html"
+      ],
+      "dateNote": "1644 is secure for Li's capture and loss of Beijing. The Qing takeover and continuing Southern Ming resistance are properly distinguished.",
+      "current": {
+        "start": 1644,
+        "end": 1644
+      }
+    },
+    {
+      "id": "republic",
+      "verdict": "correct",
+      "proposed": {
+        "name": "Republic of China (mainland period)",
+        "end": 1949,
+        "description": "The Republic of China was founded on 1 January 1912; the Qing emperor abdicated on 12 February. Its mainland period included parliamentary experiments, warlord rule, Nationalist government, war with Japan and civil war. In 1949 the ROC government relocated to Taiwan, where it continued."
+      },
+      "sourceUrls": [
+        "https://english.president.gov.tw/page/49",
+        "https://www.president.gov.tw/Page/294/37523"
+      ],
+      "dateNote": "1 January 1912 is the republic’s founding. 1949 ends this mainland-period card, not the existence of the ROC government, which relocated to Taiwan. Qing abdication followed on 12 February 1912."
+    },
+    {
+      "id": "prc",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://history.state.gov/milestones/1945-1952/chinese-rev"
+      ],
+      "dateNote": "Proclaimed 1 October 1949. 2026 is the dataset display horizon, not an end date."
+    },
+    {
+      "id": "catalog-S_MODERN",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://english.president.gov.tw/page/49",
+        "https://www.president.gov.tw/Page/294/37523"
+      ],
+      "dateNote": "1912–2026 is an editorial exhibition frame. Modern China has no universally agreed beginning; 2026 is a display horizon."
+    },
+    {
+      "id": "catalog-E_MOD_SEZ",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://english.court.gov.cn/2016-04/15/c_761530.htm"
+      ],
+      "dateNote": "26 August 1980: approval of Guangdong Special Economic Zone regulations, including Shenzhen. Preparatory policies date to 1979."
+    },
+    {
+      "id": "catalog-E_MOD_BRI",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://en.ndrc.gov.cn/aboutndrc/BandD/202105/t20210526_1280920.html"
+      ],
+      "dateNote": "The land and maritime initiatives were proposed in September and October 2013. This is the launch year, not the date of every project."
+    },
+    {
+      "id": "catalog-E_MOD_XI",
+      "verdict": "correct",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.china.org.cn/china/18th_cpc_congress/2012-11/15/content_27121146.htm",
+        "https://www.congress.gov/crs_external_products/IF/PDF/IF10854/IF10854.2.pdf"
+      ],
+      "dateNote": "15 November 2012 dates appointment as party general secretary. Political consolidation was a subsequent process, not a completed event that year."
+    },
+    {
+      "id": "catalog-E_MOD_MAY4",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://english.pku.edu.cn/news_events/news/focus/8411.html"
+      ],
+      "dateNote": "4 May 1919 dates the Beijing protest; the wider movement has broader boundaries."
+    },
+    {
+      "id": "catalog-E_MOD_LONG_MARCH",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.china.org.cn/m/english/china_key_words/2022-07/13/content_78321650.html"
+      ],
+      "dateNote": "1934 is the beginning anchor. October 1934–October 1936 covers multiple Red Army retreats; 1934–1935 covers the best-known First Front Army route."
+    },
+    {
+      "id": "catalog-E_MOD_MAO_DEATH",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.fmprc.gov.cn/web/ziliao_674904/historytoday_674971/200309/t20030909_7949146.shtml"
+      ],
+      "dateNote": "Mao died on 9 September 1976."
+    },
+    {
+      "id": "catalog-E_MOD_TIANANMEN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://history.state.gov/milestones/1989-1992/tiananmen-square",
+        "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/"
+      ],
+      "dateNote": "1989 covers the protest movement. The Beijing military crackdown occurred on the night of 3–4 June."
+    },
+    {
+      "id": "catalog-E_MOD_HK_RETURN",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://www.yearbook.gov.hk/1997/ch4/e4a.htm"
+      ],
+      "dateNote": "The sovereignty transfer took effect on 1 July 1997. The Joint Declaration was signed in 1984."
+    },
+    {
+      "id": "catalog-E_MOD_SPACE",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://en.cmse.gov.cn/missions/shenzhouv/"
+      ],
+      "dateNote": "Shenzhou 5 launched on 15 October and returned on 16 October 2003."
+    },
+    {
+      "id": "roc-taiwan",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://english.president.gov.tw/page/49",
+        "https://www.president.gov.tw/Page/294/37523"
+      ],
+      "dateNote": "1949 dates the relocation of the ROC central government to Taiwan. ROC administration of Taiwan began in 1945. 2026 is the exhibition horizon, not a historical end."
+    },
+    {
+      "id": "abdication",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://english.president.gov.tw/page/49",
+        "https://history.state.gov/historicaldocuments/frus1912/ch11?start=1"
+      ],
+      "dateNote": "Qing abdication occurred on 12 February 1912, after the ROC provisional government was established on 1 January."
+    },
+    {
+      "id": "great-leap",
+      "verdict": "disputed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://chineseposters.net/themes/great-leap-forward",
+        "https://afe.easia.columbia.edu/special/china_1950_leaders.htm"
+      ],
+      "dateNote": "1958 is the campaign launch. The displayed 1958–1962 frame includes the famine crisis and retreat from the campaign; Chinese Posters uses 1958–1961 for the campaign. These are different scope conventions."
+    },
+    {
+      "id": "cultural-revolution",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://afe.easia.columbia.edu/special/china_1950_leaders.htm"
+      ],
+      "dateNote": "1966–1976 is the conventional decade: launch in 1966, Mao’s death and arrest of the Gang of Four in 1976."
+    },
+    {
+      "id": "reform-opening",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://blogs.worldbank.org/en/eastasiapacific/reflections-on-forty-years-of-china-reforms"
+      ],
+      "dateNote": "December 1978 is the political turning point used here. Individual reforms began at different dates."
+    },
+    {
+      "id": "lu-xun",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://u.osu.edu/mclc/2018/09/28/lu-xuns-diary-of-a-madman-100-years-on/",
+        "https://www.marxists.org/archive/lu-xun/1918/04/x01.htm"
+      ],
+      "dateNote": "A Madman’s Diary was published in New Youth in May 1918. April 1918 on the translated text is its writing date. Ohio State source was available in search excerpt; direct retrieval failed."
+    },
+    {
+      "id": "civil-war",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://history.state.gov/milestones/1945-1952/chinese-rev"
+      ],
+      "dateNote": "1927–1949 marks the main civil-war sequence. Full-scale war resumed in 1946; 1949 is no comprehensive peace settlement."
+    },
+    {
+      "id": "war-japan",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://history.state.gov/milestones/1937-1945/pearl-harbor"
+      ],
+      "dateNote": "1937–1945 dates full-scale war from the Marco Polo Bridge fighting; Japanese occupation of Manchuria began in 1931."
+    },
+    {
+      "id": "land-reform",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://chineseposters.net/themes/land-reform"
+      ],
+      "dateNote": "1950–1953 is the early PRC campaign covered by the source; earlier base-area reforms and subsequent collectivization have different dates."
+    },
+    {
+      "id": "marriage-law",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://chineseposters.net/themes/marriage-law"
+      ],
+      "dateNote": "1950 dates the PRC Marriage Law, not completion of changes in household practices."
+    },
+    {
+      "id": "taiwan-democratization",
+      "verdict": "approximate",
+      "proposed": {},
+      "sourceUrls": [
+        "https://english.president.gov.tw/NEWS/2717",
+        "https://www.president.gov.tw/qrcode/19e"
+      ],
+      "dateNote": "Selected institutional transition window: martial law ended on 15 July 1987 and the first direct presidential election was held in 1996. Earlier activism and later reforms fall outside this range."
+    },
+    {
+      "id": "wto-accession",
+      "verdict": "confirmed",
+      "proposed": {
+        "description": "The WTO approved China’s accession agreement on 10 November 2001. China signed and deposited its ratification on 11 November, and membership took effect on 11 December 2001. The agreement set commitments on tariffs, market access and trade rules."
+      },
+      "sourceUrls": [
+        "https://www.wto.org/english/news_e/pres01_e/pr252_e.htm",
+        "https://www.wto.org/english/thewto_E/minist_e/min01_e/min01_11nov_e.htm",
+        "https://www.wto.org/english/thewto_e/countries_e/china_e.htm"
+      ],
+      "dateNote": "Approval: 10 November 2001. Signature and ratification deposit: 11 November. Legal WTO membership: 11 December."
+    },
+    {
+      "id": "ccp-founding",
+      "verdict": "confirmed",
+      "proposed": {},
+      "sourceUrls": [
+        "https://english.www.gov.cn/news/topnews/202106/23/content_WS60d2f02ec6d0df57f98dbba1.html",
+        "https://journals.sagepub.com/doi/pdf/10.1177/18681026221141448"
+      ],
+      "dateNote": "1921 is established. 23 July is the conventional reconstructed opening date; 1 July is the commemorative anniversary."
+    },
+    {
+      "id": "nixon-china",
+      "sourceIds": [],
+      "verdict": "confirmed",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://history.state.gov/milestones/1969-1976/rapprochement-china",
+        "https://history.state.gov/historicaldocuments/frus1969-76v17/d203"
+      ],
+      "dateNote": "The joint communiqué records the visit as 21–28 February 1972; the Office of the Historian gives the same dates."
+    },
+    {
+      "id": "southward-economic-shift",
+      "sourceIds": [],
+      "verdict": "approximate",
+      "proposedFields": {},
+      "sourceUrls": [
+        "https://www.cambridge.org/core/books/abs/economic-history-of-china/economic-transformation-in-the-tangsong-transition-755-to-1127/55D49F02EE80100AC5A4D9FA3CC04FA1"
+      ],
+      "dateNote": "c. 750–1250 is an approximate window for a major phase of the Tang–Song economic transformation, not the start and finish of a single migration. Earlier southward migrations preceded the An Lushan Rebellion. The decline of Tang control in the northwest did not end trade or cultural exchange with the Western Regions."
+    }
+  ]
+}
