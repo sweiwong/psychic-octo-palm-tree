@@ -19,7 +19,7 @@ const TANG_RESEARCH = (() => {
         {title:'The work after the journey',text:'Bringing manuscripts home was only a beginning. Translation required collaborators, decisions about meaning, and institutions that could sustain years of work. Xuanzang’s enterprise sought to resolve differences among inherited texts. His account of the western regions also preserved knowledge of societies beyond Tang rule.'},
         {title:'An empire learning from elsewhere',text:'The larger significance is a transfer of intellectual authority. Chang’an’s cultural reach depended partly on knowledge acquired outside the empire and made usable within it. Xuanzang did not introduce Buddhism to China; he transformed a tradition already established there. Later religious biographies helped turn this difficult collective enterprise into a heroic individual journey.'}
       ],note:'Return: 645 CE. Accounts differ on his departure year; this marker does not depend on choosing between them.',
-      sources:['https://depts.washington.edu/silkroad/lectures/wulec2.html','https://iep.utm.edu/xuanzang/']},
+      sources:['https://depts.washington.edu/silkroad/lectures/wulec2.html','https://iep.utm.edu/xuanzang/','https://nalanda.nic.in/en/tourist-place/hiuen-tsang-memorial-hall/','https://whc.unesco.org/zh/list/1502']},
     {id:'talas',name:'The Battle of Talas',nameZh:'怛罗斯之战',han:'战',start:751,end:751,markerOffset:-20,
       description:'Tang forces were defeated by an Abbasid army in Central Asia. The battle exposed the limits of imperial intervention far from the court, but its consequences were less tidy than a permanent boundary between civilizations.',
       sections:[
