@@ -104,7 +104,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     const statePoints=showStates?states.flatMap(item=>{const a=g.distance(item.start),b=g.distance(item.end),n=Math.max(1,Math.ceil((b-a)/2));return Array.from({length:n+1},(_,i)=>({...g.at(a+(b-a)*i/n,item.offset),id:item.id}));}):[];
     const coversState=r=>statePoints.some(p=>p.x>r.x-5&&p.x<r.x+r.w+5&&p.y>r.y-6&&p.y<r.y+r.h+5);
     const coversRibbon=r=>ribbonPoints.some(p=>p.x>r.x-10&&p.x<r.x+r.w+10&&p.y>r.y-14&&p.y<r.y+r.h+14);
-    const items=[...periods.filter(d=>d.label!==false),...zhouPhases,...(showStates&&g.width>=500?states.filter(d=>d.label!==false).sort((a,b)=>(a.end-a.start)-(b.end-b.start)):[])];
+    const items=[...periods.filter(d=>d.label!==false).sort((a,b)=>(b.id==='prc')-(a.id==='prc')),...zhouPhases,...(showStates&&g.width>=500?states.filter(d=>d.label!==false).sort((a,b)=>(a.end-a.start)-(b.end-b.start)):[])];
     function collides(r){return placed.some(p=>r.x<p.x+p.w+8&&r.x+r.w+8>p.x&&r.y<p.y+p.h+7&&r.y+r.h+7>p.y);}
     const cross=(a,b,c)=>(b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x);
     function intersects(a,b,c,d){
@@ -146,6 +146,11 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       for(const dy of offsets)for(const dx of [0,-24,24,-48,48,-80,80,-120,120,-180,180,-240,240])consider(p.x-w/2+dx,baseline+dy);
       if(!candidates.some(c=>c.clear)){
         for(let y=baseline-90;y<=baseline+70;y+=8)for(let x=13;x<=g.width-w-13;x+=12)consider(x,y);
+      }
+      // Give crowded main periods another label row rather than dropping their names.
+      if(isPeriod&&!candidates.some(c=>c.clear)){
+        for(let extra=110;extra<=350&&!candidates.some(c=>c.clear);extra+=45)
+          for(let x=13;x<=g.width-w-13;x+=12)consider(x,baseline+extra);
       }
       candidates.sort((a,b)=>a.score-b.score);
       const choice=candidates.find(c=>c.clear);rect=choice?.rect;
@@ -266,9 +271,8 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     document.querySelectorAll('#section-nav button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.section===activeSection)));
     $('#view-range').textContent=view.name+' · '+view.label;
     $('#view-note').textContent=activeSection==='all'?'': 'Focused view. The time scale expands to this range; reading cards retain their full dates.';
-    const eraEndIds=['western-zhou','catalog-SR_WS','han','north-south','five-dynasties','yuan','qing','republic','prc'];
-    const entries=activeSection==='all'?EXHIBITION.eras.map((era,index)=>({id:era.itemId,name:era.name,nameZh:era.nameZh,pinyin:era.pinyin,date:dates({start:era.year,end:EXHIBITION.all.find(item=>item.id===eraEndIds[index]).end,approx:index===0})})):view.ids.map(id=>{const item=EXHIBITION.all.find(item=>item.id===id);return{id,name:item.name,nameZh:item.nameZh,pinyin:PINYIN[item.nameZh],date:dates(item)};});
-    $('#era-nav').replaceChildren();$('#era-nav').dataset.view=activeSection;$('#era-nav').dataset.count=entries.length;
+    const entries=activeSection==='all'?[]:view.ids.map(id=>{const item=EXHIBITION.all.find(item=>item.id===id);return{id,name:item.name,nameZh:item.nameZh,pinyin:PINYIN[item.nameZh],date:dates(item)};});
+    $('#era-nav').hidden=activeSection==='all';$('#era-nav').replaceChildren();$('#era-nav').dataset.view=activeSection;$('#era-nav').dataset.count=entries.length;
     for(const entry of entries){
       const button=html('button','era-link');button.dataset.period=entry.id;
       const zh=html('span','era-chinese',entry.nameZh);zh.lang='zh-Hans';

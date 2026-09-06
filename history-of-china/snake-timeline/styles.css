@@ -148,3 +148,5 @@
 .card-body h3{line-height:1.16;letter-spacing:-.5px}
 .timeline-item .label-date{font-size:10px}
 .card-body h3{word-break:keep-all}
+
+#era-nav[hidden]{display:none}
