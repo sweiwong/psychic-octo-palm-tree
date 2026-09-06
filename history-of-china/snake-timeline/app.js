@@ -14,12 +14,13 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     {id:'modern',name:'Modern China',start:1912,end:2026,label:'1912 – present · shown through 2026',ids:['republic','prc','roc-taiwan']}
   ];
   let activeSection='all';
+  let returnToCollection=false;
   const currentWindow=()=>sections.find(section=>section.id===activeSection)||{id:'all',name:'All history',start:-2070,end:2026,label:'c. 2070 BCE – 2026'};
   const inWindow=(year,view=currentWindow())=>year>=view.start&&(year<view.end||view.end===2026&&year===2026);
   const overlaps=(a,b,view=currentWindow())=>a===b?inWindow(a,view):b>view.start&&a<view.end;
   function sectionFor(item){return sections.find(section=>inWindow(item.start,section))?.id||'all';}
   function selectSection(id){
-    activeSection=id;tip.hidden=true;
+    activeSection=id;returnToCollection=false;tip.hidden=true;
     const view=currentWindow(),item=EXHIBITION.all.find(item=>item.id===selected);
     if(id!=='all'&&(!item||!overlaps(item.start,item.end)))selected=view.ids[0];
     updateNavigation();render();updateDetail(false);
@@ -56,6 +57,16 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       figure.append(photo,caption);body.insertBefore(figure,body.querySelector('.card-description'));
     }
     if(item.sections){for(const section of item.sections){const block=html('section','card-analysis');block.append(html('h4','',section.title),html('p','',section.text));body.append(block);}}
+    const map=HISTORY_MAPS[item.id];
+    if(map){
+      const section=html('section','card-map');section.append(html('h4','','Place this story on the map'));
+      const link=html('a'),img=html('img');link.href=map.src;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Open full-size map: '+map.title);
+      img.src=map.src;img.alt=map.title;img.loading='lazy';link.append(img);
+      const caption=html('p','',map.caption),source=html('a','',map.credit+' · '+map.license),license=html('a','','License');source.href=map.source;license.href=map.licenseUrl;
+      for(const a of [source,license]){a.target='_blank';a.rel='noopener noreferrer';}
+      img.addEventListener('error',()=>{img.hidden=true;link.textContent='Open map image ↗';},{once:true});
+      const enlarge=html('a','map-enlarge','Open map at full size ↗');enlarge.href=map.src;enlarge.target='_blank';enlarge.rel='noopener noreferrer';section.append(link,enlarge,caption,source,document.createTextNode(' · '),license);body.append(section);
+    }
     if(item.significance){const block=html('section','card-analysis card-significance');block.tabIndex=-1;block.append(html('h4','','Why it matters'),html('p','',item.significance));body.append(block);}
     const sources=html('details','card-sources');sources.append(html('summary','','Sources and date notes'));
     if(item.note)sources.append(html('p','card-note',item.note));
@@ -69,8 +80,8 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     prev.onclick=()=>{select(items[index-1].id,true);if(!matchMedia('(max-width:760px)').matches)detail.querySelector('[aria-label="Previous item"]').focus({preventScroll:true});};next.onclick=()=>{select(items[index+1].id,true);if(!matchMedia('(max-width:760px)').matches)detail.querySelector('[aria-label="Next item"]').focus({preventScroll:true});};arrows.append(prev,next);nav.append(arrows);body.append(nav);detail.append(top,art,body);
     if(open&&matchMedia('(max-width:760px)').matches){detail.classList.add('mobile-open');detail.setAttribute('role','dialog');detail.setAttribute('aria-modal','true');detail.setAttribute('aria-label',item.name);close.focus();}else if(!detail.classList.contains('mobile-open')){detail.removeAttribute('role');detail.removeAttribute('aria-modal');}
   }
-  function closeDetail(){if(matchMedia('(min-width:761px)').matches){selected=null;render();updateDetail(false);}detail.classList.remove('mobile-open');detail.removeAttribute('role');detail.removeAttribute('aria-modal');const target=lastTrigger?.isConnected?lastTrigger:(lastTriggerId?chart.querySelector('[data-item="'+lastTriggerId+'"][tabindex="0"]'):null);(target||$('#index-toggle')).focus();}
-  function select(id,scroll=false,trigger=null){const fromCard=!!trigger&&detail.contains(trigger);selected=id;if(activeSection!=='all'){const item=EXHIBITION.all.find(item=>item.id===id);if(!overlaps(item.start,item.end)){activeSection=sectionFor(item);updateNavigation();render();}}if(trigger&&!fromCard){lastTrigger=trigger;lastTriggerId=trigger.dataset.item||null;}tip.hidden=true;updateDetail(true);drawSelection();if(fromCard&&!matchMedia('(max-width:760px)').matches){const heading=detail.querySelector('h3');heading.tabIndex=-1;heading.focus({preventScroll:true});}document.querySelectorAll('[data-item]').forEach(n=>n.classList.toggle('selected',n.dataset.item===id));if(!matchMedia('(max-width:760px)').matches){if(scroll)document.querySelector(`[data-item="${id}"]`)?.scrollIntoView({behavior:'instant',block:'center'});const top=detail.getBoundingClientRect().top;if(top<24)window.scrollBy({top:top-24,behavior:'instant'});}}
+  function closeDetail(){if(returnToCollection){returnToCollection=false;showCollection(true);}if(matchMedia('(min-width:761px)').matches){selected=null;render();updateDetail(false);}detail.classList.remove('mobile-open');detail.removeAttribute('role');detail.removeAttribute('aria-modal');const target=lastTrigger?.dataset.record?$('#search-results [data-record="'+lastTrigger.dataset.record+'"]'):lastTrigger?.isConnected?lastTrigger:(lastTriggerId?chart.querySelector('[data-item="'+lastTriggerId+'"][tabindex="0"]'):null);(target||$('#index-toggle')).focus();}
+  function select(id,scroll=false,trigger=null){const fromCard=!!trigger&&detail.contains(trigger);if(trigger&&!fromCard&&!trigger.dataset.record)returnToCollection=false;selected=id;if(activeSection!=='all'){const item=EXHIBITION.all.find(item=>item.id===id);if(!overlaps(item.start,item.end)){activeSection=sectionFor(item);updateNavigation();render();}}if(trigger&&!fromCard){lastTrigger=trigger;lastTriggerId=trigger.dataset.item||null;}tip.hidden=true;updateDetail(true);drawSelection();if(fromCard&&!matchMedia('(max-width:760px)').matches){const heading=detail.querySelector('h3');heading.tabIndex=-1;heading.focus({preventScroll:true});}document.querySelectorAll('[data-item]').forEach(n=>n.classList.toggle('selected',n.dataset.item===id));if(!matchMedia('(max-width:760px)').matches){if(scroll)document.querySelector(`[data-item="${id}"]`)?.scrollIntoView({behavior:'instant',block:'center'});const top=detail.getBoundingClientRect().top;if(top<24)window.scrollBy({top:top-24,behavior:'instant'});}}
   function tooltip(item,target){const bounds=target.getBoundingClientRect();tip.replaceChildren(html('strong','',item.name),html('span','',dates(item)),html('div','',item.description));tip.hidden=false;const box=tip.getBoundingClientRect();tip.style.left=Math.max(8,Math.min(innerWidth-box.width-8,bounds.x+bounds.width/2-box.width/2))+'px';tip.style.top=Math.max(8,Math.min(innerHeight-box.height-8,bounds.y-box.height-12))+'px';}
   function interactive(node,item){const card=EXHIBITION.all.find(entry=>entry.id===item.id)||item;node.dataset.item=item.id;node.setAttribute('role','button');node.setAttribute('tabindex','0');node.setAttribute('aria-label',`${card.name}, ${dates(card)}${card.id==='confucius'?', traditional date':''}. Open details.`);node.classList.add('timeline-item',item.kind);if(item.id===selected)node.classList.add('selected');node.addEventListener('click',()=>select(item.id,false,node));node.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(item.id,false,node);}});node.addEventListener('mouseenter',()=>tooltip(card,node));node.addEventListener('mouseleave',()=>tip.hidden=true);node.addEventListener('focus',()=>tooltip(card,node));node.addEventListener('blur',()=>tip.hidden=true);}
   function render(){
@@ -262,7 +273,14 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       const copy=html('span','result-copy');copy.append(html('small','',dates(item)),html('strong','result-title',item.name));
       if(item.nameZh){const zh=html('span','result-chinese',item.nameZh);zh.lang='zh-Hans';const reading=html('span','result-pinyin',PINYIN[item.nameZh]);reading.lang='zh-Latn';copy.append(zh,reading);}
       copy.append(html('span','result-summary',item.description));
-      b.append(copy);b.onclick=()=>select(item.id,true,b);$('#search-results').append(b);
+      copy.append(html('span','result-open','Read story →'));
+      b.append(copy);b.onclick=()=>{
+        returnToCollection=true;showCollection(false);select(item.id,false,b);
+        if(!matchMedia('(max-width:760px)').matches){
+          detail.scrollIntoView({behavior:'instant',block:'start'});
+          const heading=detail.querySelector('h3');heading.tabIndex=-1;heading.focus({preventScroll:true});
+        }
+      };$('#search-results').append(b);
     }
     if(!items.length)$('#search-results').append(html('p','','No matches. Try another name or year.'));
   }

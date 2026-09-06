@@ -150,3 +150,7 @@
 .card-body h3{word-break:keep-all}
 
 #era-nav[hidden]{display:none}
+
+.result-open{display:block;margin-top:14px;color:var(--red);text-decoration:underline;text-underline-offset:3px}
+
+.card-map{margin-top:24px;border-top:1px solid var(--rule);padding-top:16px}.card-map img{display:block;width:100%;height:auto;background:#fff}.card-map p,.card-map a{font-size:12px;line-height:1.6}.map-enlarge{color:var(--red)}
