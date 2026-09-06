@@ -460,7 +460,7 @@ const HISTORY_IMAGES = {
     "license": "Public domain",
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
     "alt": "A long calligraphic manuscript with corrections and crossings-out.",
-    "caption": "Yan Zhenqing’s Draft of a Requiem to My Nephew, dated 758. Its corrections preserve an act of mourning within the An Lushan rebellion, linking political violence to a family’s loss."
+    "caption": "Yan Zhenqing’s Draft of a Requiem to My Nephew, dated 758. Its corrections preserve an act of mourning within the An Lushan Rebellion (安史之乱), linking political violence to a family’s loss."
   },
   "sutra": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Jingangjing.jpg/960px-Jingangjing.jpg",
