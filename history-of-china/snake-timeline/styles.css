@@ -167,3 +167,10 @@
 body.reading-open{overflow:hidden}
 @media(max-width:760px){.detail-expand{display:none}.reading-dialog{width:94vw}}
 @media(min-width:761px){.detail-card:not(.welcome-card) .card-top>span:first-child{display:none}.reading-dialog .detail-card:not(.welcome-card) .card-top>span:first-child{display:block}}
+
+@media(max-width:760px){
+ .header-search input,.collection-controls select{font-size:16px}
+ .card-navigation button,.related-items button,.header-search button,.masthead .index-button{min-height:44px;min-width:44px}
+ .detail-card.mobile-open{overscroll-behavior:contain}
+ body.phone-story-open{overflow:hidden}
+}
