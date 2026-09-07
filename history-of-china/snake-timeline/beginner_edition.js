@@ -271,10 +271,10 @@ function applyBeginnerEdition(exhibition, ...packs) {
     start: zhou.start, end: zhou.end, dateLabel: 'Early China · Ideas and beliefs',
     parent: zhou.id, color: zhou.color, importance: 5, sourceIds: [],
     searchAliases: ['Confucius', 'Kongzi', 'Laozi', 'Taoism', 'Chinese philosophy'],
-    description: 'How should we live when the world around us feels out of order? Early Chinese thinkers offered answers that people still debate. Two traditions grew especially influential: Confucianism and Daoism.',
+    description: 'Confucianism and Daoism offer different answers about good government, personal conduct and living with disorder. People still debate both traditions.',
     sections: [
-      {title: 'Confucius: begin with how we treat each other', text: 'Confucius (孔子) connected good government with learning, care for others and the example set by rulers. Practising respect in everyday relationships could help build a better society. Later followers disagreed about how to put these ideas into practice.'},
-      {title: 'Laozi: when does trying harder make things worse?', text: 'The Daodejing (道德经), associated with Laozi (老子), questions forceful control and needless striving. Its idea of wuwei (无为) invites us to act without forcing everything to fit our wishes. The book developed over time; Laozi’s identity and lifetime remain uncertain.'},
+      {title: 'Confucius on conduct and government', text: 'Confucius (孔子) connected good government with learning, care for others and the example set by rulers. Practising respect in everyday relationships could help build a better society. Later followers disagreed about how to put these ideas into practice.'},
+      {title: 'Laozi on force and needless striving', text: 'The Daodejing (道德经), associated with Laozi (老子), questions forceful control and needless striving. Wuwei (无为) describes action that avoids needless interference and force. The book developed over time; Laozi’s identity and lifetime remain uncertain.'},
       {title: 'Keep exploring', text: 'These are starting points within two varied traditions. Neither began on a single known day. Open the individual cards below to meet Confucius, explore the Daodejing, and discover Zhuangzi’s questions about how we see the world.'}
     ],
     note: 'This is a thematic introduction, with Eastern Zhou used only to place it in the Early China collection. It does not mark the founding or full duration of either tradition. Daoism includes later religious traditions as well as the early writings introduced here.',

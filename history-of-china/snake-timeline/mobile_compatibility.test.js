@@ -20,7 +20,7 @@ for(const engine of ['webkit','chromium'])for(const size of [{width:375,height:6
  assert.equal(await p.locator('#detail').evaluate(e=>e.classList.contains('mobile-open')),true);
  }
  const dims=await p.locator('#detail').evaluate(e=>({width:e.getBoundingClientRect().width,scroll:e.scrollWidth}));assert.ok(dims.scroll<=dims.width+2);
- await p.locator('.significance-jump').tap();await p.waitForTimeout(400);
+ await p.locator('.card-sources').scrollIntoViewIfNeeded();
  await p.locator('.detail-close').tap();assert.equal(await p.locator('#collection').evaluate(e=>e.hidden),false);
  assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2));assert.deepEqual(errors,[]);
  await p.screenshot({path:`/tmp/mobile-${engine}-${size.width}.png`});

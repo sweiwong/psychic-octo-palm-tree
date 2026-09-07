@@ -16,8 +16,9 @@ for (const width of [280, 700, 1020]) {
       assert.equal(g.startYear, startYear);
       assert.equal(g.endYear, endYear);
       assert.deepEqual(g.point(startYear), g.at(0));
-      assert.equal(g.point(startYear).x, 12);
+      assert.equal(g.point(startYear).x, g.left - g.radius);
       assert.deepEqual(g.point(endYear), g.at(g.length));
+      close(g.point(endYear).x, (g.rows - 1) % 2 === 0 ? g.right + g.radius : g.left - g.radius);
       assert.equal(g.distance(startYear - 100), 0);
       assert.equal(g.distance(endYear + 100), g.length);
       const perYear = g.length / (ordinal(endYear) - ordinal(startYear));
@@ -40,7 +41,7 @@ for (const width of [280, 700, 1020]) {
     });
   }
 
-  test(`Range lengths grow with duration and full geometry stays unchanged at ${width}px`, () => {
+  test(`Range lengths grow with duration and full geometry uses matching edge extensions at ${width}px`, () => {
     const early = create(width, { startYear: -2070, endYear: -221 });
     const imperial = create(width, { startYear: -221, endYear: 1912 });
     const modern = create(width, { startYear: 1912, endYear: 2026 });
@@ -52,7 +53,7 @@ for (const width of [280, 700, 1020]) {
     const radius = 78, straight = width - 2 * (radius + 48);
     const originalRows = Math.max(5, Math.ceil(5100 / (straight + Math.PI * radius)));
     assert.equal(full.rows, originalRows);
-    assert.equal(full.length, 114 + originalRows * straight + (originalRows - 1) * Math.PI * radius);
+    assert.equal(full.length, 2 * radius + originalRows * straight + (originalRows - 1) * Math.PI * radius);
     assert.equal(full.startYear, -2070);
     assert.equal(full.endYear, 2026);
     assert.equal(create(width, {}).path(), full.path());

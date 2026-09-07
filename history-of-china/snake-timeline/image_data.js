@@ -518,15 +518,15 @@ const HISTORY_IMAGES = {
     "caption": "A Mexican Spanish dollar dated 1796, bearing Chinese merchant chop marks. This later coin illustrates the long-lived silver trade, not a coin documented on the first Manila galleon. The nineteenth-century treaty imposed an indemnity denominated in silver dollars; this 1796 coin is a comparable circulating monetary object, not a coin from the payment."
   },
   "abdication": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Sun_Yat-sen_Li_Yuanhong_Wuchang_1912.jpg",
-    "width": 352,
-    "height": 496,
-    "credit": "Photographer unidentified · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Sun_Yat-sen_Li_Yuanhong_Wuchang_1912.jpg",
-    "license": "Public domain",
-    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "alt": "Sun Yat-sen and Li Yuanhong standing together in formal dress.",
-    "caption": "Sun Yat-sen and Li Yuanhong at Wuchang in April 1912. Their encounter belongs to the early republic’s effort to convert revolutionary coalitions into a functioning state."
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Feb_23_1909_Pu_Yi.jpg",
+    "width": 433,
+    "height": 640,
+    "credit": "George Grantham Bain Collection · Library of Congress",
+    "source": "https://commons.wikimedia.org/wiki/File:Feb_23_1909_Pu_Yi.jpg",
+    "license": "Public domain in the United States",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-US-expired",
+    "alt": "Three-year-old Puyi wearing formal court clothing and a hat.",
+    "caption": "Puyi at age three in 1909, during his reign as the Xuantong emperor. He abdicated in February 1912 at age six, ending Qing rule."
   },
   "catalog-E_XIA_1": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/%E5%A4%A7%E7%A6%B9%E6%B2%BB%E6%B0%B4%E5%9C%96.jpg",
@@ -570,7 +570,7 @@ const HISTORY_IMAGES = {
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "alt": "A rubbing of tightly ordered columns of bronze-script characters.",
-    "caption": "A rubbing of the inscription inside the Shi Qiang pan, a Western Zhou ritual basin. Its account of royal and family ancestors shows political memory being cast into bronze. The inscription predates the Gonghe regency and serves as context for Western Zhou royal memory, not a record of that regency."
+    "caption": "A rubbing of the inscription inside the Shi Qiang pan, a Western Zhou ritual basin. Its account of royal and family ancestors shows political memory being cast into bronze. The inscription predates the Gonghe regency and provides context for Western Zhou royal memory, not a record of that regency."
   },
   "catalog-SR_SA": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg/960px-%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
@@ -1934,7 +1934,7 @@ const HISTORY_IMAGES = {
     "license": "Public domain",
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
     "alt": "An old Chinese book opened to columns of text.",
-    "caption": "A volume of the Siku Quanshu, compiled under Qianlong. The book embodies the court’s work of collecting and ordering texts, alongside the exclusions and censorship discussed in the card."
+    "caption": "This surviving volume is part of the Siku Quanshu, compiled under Qianlong. The court project collected and ordered texts while also excluding and censoring works."
   },
   "qing-exams-end": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Exam_cells-large.jpg/960px-Exam_cells-large.jpg",
@@ -2033,7 +2033,7 @@ const HISTORY_IMAGES = {
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "alt": "A rubbing of tightly ordered columns of bronze-script characters.",
-    "caption": "A rubbing of the inscription inside the Shi Qiang pan, a Western Zhou ritual basin. Its account of royal and family ancestors shows political memory being cast into bronze. The inscription predates the Gonghe regency and serves as context for Western Zhou royal memory, not a record of that regency."
+    "caption": "A rubbing of the inscription inside the Shi Qiang pan, a Western Zhou ritual basin. Its account of royal and family ancestors shows political memory being cast into bronze. The inscription predates the Gonghe regency and provides context for Western Zhou royal memory, not a record of that regency."
   },
   "zhou-capital-crisis": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Early_Western_Zhou_Bronze_Gui_01.jpg/960px-Early_Western_Zhou_Bronze_Gui_01.jpg",
@@ -2165,7 +2165,7 @@ const HISTORY_IMAGES = {
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "alt": "A tall stone slab with three blocks of inscriptions.",
-    "caption": "The Galle trilingual inscription associated with Zheng He, dated 1409. Chinese, Tamil, and Persian texts place maritime diplomacy within several religious and linguistic worlds. The Galle inscription comes from an official expedition. It highlights the contrast between state-sponsored voyages and the private maritime activity discussed in the card."
+    "caption": "The Galle trilingual inscription associated with Zheng He, dated 1409, has text in Chinese, Tamil, and Persian. It comes from an official expedition, unlike the private maritime activity discussed in the card."
   },
   "zhang-juzheng": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Zhang_Juzheng.jpg/330px-Zhang_Juzheng.jpg",
@@ -2267,6 +2267,793 @@ const HISTORY_IMAGES = {
     "caption": "Tang Kaiyuan tongbao coins. The currency type began in 621, before the Kaiyuan reign period; the coins supply contemporary monetary context for Tang taxation without representing an actual Two Tax payment."
   }
 };
+Object.assign(HISTORY_IMAGES, {
+  "sanxingdui-pits": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Ancient_Bronze_Mask_from_Sanxingdui_12.jpg",
+    "width": 4752,
+    "height": 3168,
+    "credit": "Gary Todd · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Ancient_Bronze_Mask_from_Sanxingdui_12.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "Large bronze mask with projecting eyes displayed in the Sanxingdui Museum.",
+    "caption": "A bronze mask from Sanxingdui, photographed in the Sanxingdui Museum in 2010. It is an excavated ritual object, not a portrait of a known person."
+  },
+  "fu-hao": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Shang_Bronze_Owl_Zun%2C_Fuhao_Tomb.jpg",
+    "width": 2833,
+    "height": 4664,
+    "credit": "Gary Todd · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Shang_Bronze_Owl_Zun,_Fuhao_Tomb.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "Owl-shaped bronze ritual vessel with raised decoration from Fu Hao’s tomb.",
+    "caption": "An owl-shaped bronze zun from Fu Hao’s tomb at Anyang, displayed at the Henan Museum. The burial is dated within the thirteenth century BCE; Ebrey uses about 1250 BCE, while museum sources often use about 1200 BCE."
+  },
+  "qin-han-south": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/%22Zhao_Mo%22_Jade_Seal_%289967013394%29.jpg",
+    "width": 3888,
+    "height": 2592,
+    "credit": "Gary Todd · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:%22Zhao_Mo%22_Jade_Seal_(9967013394).jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "Small jade seal from the tomb of Zhao Mo, king of Nanyue, displayed in Guangzhou.",
+    "caption": "A jade seal from the tomb of Zhao Mo, the second king of Nanyue. Nanyue ruled much of Lingnan before Han armies conquered the kingdom in 111 BCE."
+  },
+  "faxian-journey": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/94/Fa_Hsien_at_the_ruins_of_Asoka%27s_palace.jpg",
+    "width": 1133,
+    "height": 1745,
+    "credit": "Allan Stewart · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Fa_Hsien_at_the_ruins_of_Asoka%27s_palace.jpg",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "Early twentieth-century illustration of Faxian standing among ruins attributed to Ashoka’s palace.",
+    "caption": "Allan Stewart’s early twentieth-century illustration imagines Faxian at the ruins of Ashoka’s palace. It is not a contemporary portrait of the fifth-century monk."
+  },
+  "song-footbinding": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Foot_binding%3B_women%27s_shoe%2C_China_Wellcome_L0005078.jpg",
+    "width": 1266,
+    "height": 1556,
+    "credit": "Wellcome Collection · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Foot_binding%3B_women%27s_shoe%2C_China_Wellcome_L0005078.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "alt": "A small embroidered black shoe made for a woman with bound feet, photographed against a plain background.",
+    "caption": "A later model shoe made for a bound foot. It shows the specialized footwear the practice required; it is not a Song-dynasty shoe."
+  },
+  "yuan-drama": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Illustration_from_the_%22One_Hundred_Plays_of_the_Yuan_Dynasty%22.jpg",
+    "width": 2231,
+    "height": 1614,
+    "credit": "Bibliothèque nationale de France · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Illustration_from_the_%22One_Hundred_Plays_of_the_Yuan_Dynasty%22.jpg",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "An open woodblock-printed Chinese book with an official, a kneeling figure and a group of mounted and standing figures.",
+    "caption": "An illustrated spread from a 1615–1616 Ming anthology that preserved Yuan plays in print. It is not a portrait of Guan Hanqing or a contemporary picture of a Yuan performance."
+  },
+  "hongwu-chancellor": {
+    "src": "https://images.metmuseum.org/CRDImages/as/original/51_39_3_149651.JPG",
+    "width": 1038,
+    "height": 1724,
+    "credit": "The Metropolitan Museum of Art",
+    "source": "https://www.metmuseum.org/art/collection/search/48938",
+    "license": "Public domain · Open Access",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A bearded Ming gentleman sits facing forward in a broad robe and square black cap.",
+    "caption": "A later Ming portrait of an unidentified gentleman. It represents the officials affected by Ming government, not Hu Weiyong or the events of 1380."
+  },
+  "ricci-world-map": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Kunyu_Wanguo_Quantu_by_Matteo_Ricci_All_panels.jpg/1280px-Kunyu_Wanguo_Quantu_by_Matteo_Ricci_All_panels.jpg",
+    "width": 1280,
+    "height": 586,
+    "credit": "Matteo Ricci · Library of Congress / Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Kunyu_Wanguo_Quantu_by_Matteo_Ricci_All_panels.jpg",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A long six-panel oval world map densely labelled in Chinese, with Asia near the centre and astronomical diagrams at the edges.",
+    "caption": "Matteo Ricci’s 1602 Map of the Myriad Countries of the World, assembled from the Library of Congress’s six panels. It presented a world map in Chinese and included the Americas."
+  },
+  "qing-muslim-uprisings": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Troops_Carrying_Flags_in_Military_Formation%2C_Preceded_by_Four_Cannons._Gansu_Province%2C_China%2C_1875_WDL1912.png",
+    "width": 1276,
+    "height": 1024,
+    "credit": "Adolf-Nikolay Erazmovich Boiarskii · National Library of Brazil",
+    "source": "https://commons.wikimedia.org/wiki/File:Troops_Carrying_Flags_in_Military_Formation,_Preceded_by_Four_Cannons._Gansu_Province,_China,_1875_WDL1912.png",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "Qing troops carrying flags behind four cannons in Gansu in 1875.",
+    "caption": "Troops and artillery in Gansu in 1875, photographed during a Russian expedition that gathered information about the fighting in western China. The image shows Qing military presence, not a battle or every community involved in the uprisings."
+  },
+  "warlord-era": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Chinese_warlord_soldiers_training_with_swords_1.png",
+    "width": 1000,
+    "height": 762,
+    "credit": "Central Intelligence Agency · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Chinese_warlord_soldiers_training_with_swords_1.png",
+    "license": "Public domain in the United States",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-CIA",
+    "alt": "Chinese soldiers in the 1920s practise with broad swords.",
+    "caption": "Chinese soldiers train with swords during the warlord era. The archival footage survives in a later U.S. government documentary; it illustrates military organization, not one specific battle."
+  },
+  "korean-war": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/NARA_111-SC351718_First_Chinese_prisoners_taken_by_ROK_I_Corps_seen_by_U.S._Marines.jpg",
+    "width": 2727,
+    "height": 2806,
+    "credit": "Cpl. Alex Klein, U.S. Marine Corps · U.S. National Archives",
+    "source": "https://commons.wikimedia.org/wiki/File:NARA_111-SC351718_First_Chinese_prisoners_taken_by_ROK_I_Corps_seen_by_U.S._Marines.jpg",
+    "license": "Public domain in the United States",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Marines",
+    "alt": "Chinese soldiers captured by South Korean troops in Korea on 31 October 1950.",
+    "caption": "Chinese soldiers from the 124th Division after their capture by South Korean forces on 31 October 1950. Their presence records that Chinese units had entered the war by late October."
+  },
+  "agricultural-collectivization": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/20250413-%E7%BA%A2%E6%97%97%E4%BA%BA%E6%B0%91%E5%85%AC%E7%A4%BE%E6%97%A7%E5%9D%80.jpg",
+    "width": 4798,
+    "height": 3198,
+    "credit": "Saigyouji-Noriko · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:20250413-%E7%BA%A2%E6%97%97%E4%BA%BA%E6%B0%91%E5%85%AC%E7%A4%BE%E6%97%A7%E5%9D%80.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "Brick buildings at the former Hongqi People’s Commune site in Yingcheng, Hubei.",
+    "caption": "The former Hongqi People’s Commune site in Yingcheng, photographed in 2025. Communes began in 1958, after the 1951–1956 collectivization covered here, so this is a surviving later institution rather than an image of the original campaign."
+  },
+  "hundred-flowers": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/China_Cultural_Revolution_Anti-Rightist_Campaign_Rehabilitate_file_2.png",
+    "width": 2550,
+    "height": 3507,
+    "credit": "陈少举 · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:China_Cultural_Revolution_Anti-Rightist_Campaign_Rehabilitate_file_2.png",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A Chinese government document rehabilitating a person who had previously been labelled a rightist.",
+    "caption": "A later rehabilitation document for a man who had been labelled a rightist. It records the campaign’s long administrative aftermath, not a scene from the 1957 denunciations."
+  },
+  "one-child-policy": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/One_child_policy.jpg/960px-One_child_policy.jpg",
+    "width": 960,
+    "height": 720,
+    "credit": "Venus / Planet Love · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:One_child_policy.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "alt": "A family-planning slogan painted on a wall in Tangshan Township, Jiangxi, in 2006.",
+    "caption": "A township sign in Jiangxi asks residents to practise family planning, photographed in 2006. The slogan records local policy messaging; enforcement was not identical everywhere."
+  }
+});
 HISTORY_IMAGES['confucianism-daoism'] = HISTORY_IMAGES.laozi;
 HISTORY_IMAGES['southward-economic-shift'] = {...HISTORY_IMAGES['sui-grand-canal'],caption:'Canal boats in Suzhou, photographed in 2018. This modern view illustrates the lower Yangtze delta’s waterway landscape; it does not depict Tang–Song migration or the waterways as they appeared then.'};
+Object.assign(HISTORY_IMAGES, {
+  "red-turbans": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Red_Turban.png",
+    "width": 1272,
+    "height": 900,
+    "source": "https://commons.wikimedia.org/wiki/File:Red_Turban.png",
+    "credit": "SY (Seasonsinthesun) · Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "Map of China showing the territories of Red Turban rebel forces and Yuan warlords during the dynasty’s final years.",
+    "caption": "A modern map of rebel and warlord territories near the end of Yuan rule. It shows the divided political field from which Zhu Yuanzhang emerged; it is a reconstruction, not a contemporary map."
+  },
+  "ming-maritime-conflict": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/Wokou_raid_at_the_Chinese_coast.png",
+    "width": 1135,
+    "height": 1484,
+    "source": "https://commons.wikimedia.org/wiki/File:Wokou_raid_at_the_Chinese_coast.png",
+    "credit": "Henry Charles Seppings Wright · Hutchinson's Story of the Nations / Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "Later illustration of armed raiders attacking people on the Chinese coast while ships approach offshore.",
+    "caption": "Henry Charles Seppings Wright’s 1915 illustration of a wokou raid on China’s coast. It is a later British representation, not an eyewitness image of the sixteenth-century raids."
+  },
+  "early-qing": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Emperor_Shunzhi.jpg",
+    "width": 750,
+    "height": 1290,
+    "source": "https://commons.wikimedia.org/wiki/File:Emperor_Shunzhi.jpg",
+    "credit": "Unknown Qing court artist · Palace Museum, Beijing / Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "Formal seventeenth-century court portrait of the Shunzhi emperor seated in imperial robes.",
+    "caption": "A seventeenth-century court portrait of the Shunzhi emperor, the first Qing ruler to govern from Beijing. Formal imperial portraiture presented dynastic authority; it does not record a particular event."
+  },
+  "li-zicheng-beijing": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Fall_of_Beijing_to_Li_Zicheng_in_1644.png",
+    "width": 611,
+    "height": 666,
+    "source": "https://commons.wikimedia.org/wiki/File:Fall_of_Beijing_to_Li_Zicheng_in_1644.png",
+    "credit": "Henry Charles Seppings Wright · Hutchinson's History of the Nations / Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "Later illustration of armed rebels entering and setting fires in Beijing during the fall of the Ming capital.",
+    "caption": "A 1915 British illustration of Li Zicheng’s forces taking Beijing in 1644. It was made centuries after the event and should be read as a later reconstruction."
+  },
+  "manila-silver": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Manila-Accapulco_galleon_trade_route%2C_showing_onward_route_to_Spain.png",
+    "width": 1280,
+    "height": 435,
+    "source": "https://commons.wikimedia.org/wiki/File:Manila-Accapulco_galleon_trade_route,_showing_onward_route_to_Spain.png",
+    "credit": "Department of Foreign Affairs, Philippines · Official Gazette / Wikimedia Commons",
+    "license": "Public domain, Philippine government work",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "Map showing the Manila–Acapulco galleon route across the Pacific and its onward connection to Spain.",
+    "caption": "A modern map of the Manila–Acapulco route and its connection to Spain. Silver crossed the Pacific to Manila, where Chinese merchants exchanged goods for much of it; the map shows the shipping route, not the full movement of silver within Asia."
+  },
+  "sui-examinations": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Sui_Wendi_Tang.jpg",
+    "width": 868,
+    "height": 1280,
+    "source": "https://commons.wikimedia.org/wiki/File:Sui_Wendi_Tang.jpg",
+    "credit": "Attributed to Yan Liben · Museum of Fine Arts, Boston / Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "Emperor Wen of Sui seated in ceremonial robes in a detail from the Thirteen Emperors Scroll.",
+    "caption": "Emperor Wen of Sui in a seventh-century detail from the Thirteen Emperors Scroll, traditionally attributed to Yan Liben. The ruler’s portrait provides context for Sui government; it does not depict an examination."
+  },
+  "catalog-S_MODERN": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/1912%E5%B9%B41%E6%9C%88%E4%B8%B4%E6%97%B6%E5%A4%A7%E6%80%BB%E7%BB%9F%E5%AD%99%E4%B8%AD%E5%B1%B1%E5%9C%A8%E5%8D%97%E4%BA%AC%E6%80%BB%E7%BB%9F%E5%BA%9C%E5%86%85%E7%9A%84%E7%85%A7%E7%89%87.jpg",
+    "width": 705,
+    "height": 936,
+    "source": "https://commons.wikimedia.org/wiki/File:1912%E5%B9%B41%E6%9C%88%E4%B8%B4%E6%97%B6%E5%A4%A7%E6%80%BB%E7%BB%9F%E5%AD%99%E4%B8%AD%E5%B1%B1%E5%9C%A8%E5%8D%97%E4%BA%AC%E6%80%BB%E7%BB%9F%E5%BA%9C%E5%86%85%E7%9A%84%E7%85%A7%E7%89%87.jpg",
+    "credit": "Unknown photographer · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "Sun Yat-sen seated in the Nanjing presidential office in January 1912.",
+    "caption": "Sun Yat-sen photographed in the Nanjing presidential office in January 1912, during his brief term as provisional president. The image marks the opening of the republican period, not modern China as a whole."
+  },
+  "wto-accession": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/WTO_members.svg",
+    "width": 940,
+    "height": 415,
+    "source": "https://commons.wikimedia.org/wiki/File:WTO_members.svg",
+    "credit": "Emilfaro · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "World map distinguishing the World Trade Organization’s founding members from countries that joined later.",
+    "caption": "A 2009 map distinguishing the WTO’s founding members from later entrants. China joined the organization in December 2001; the map is an explanatory graphic and is not current for later accessions."
+  }
+});
+Object.assign(HISTORY_IMAGES, {
+  "catalog-F_XIA_1": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/%E4%BB%BF%E5%94%90%E4%BA%BA%E5%A4%A7%E7%A6%B9%E6%B2%BB%E6%B0%B4%E5%9B%BE%E8%BD%B4.%E6%B8%85.%E8%B0%A2%E9%81%82%E7%BB%98.%E7%BA%B8%E6%9C%AC%E8%AE%BE%E8%89%B2.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.tif/lossy-page1-1280px-%E4%BB%BF%E5%94%90%E4%BA%BA%E5%A4%A7%E7%A6%B9%E6%B2%BB%E6%B0%B4%E5%9B%BE%E8%BD%B4.%E6%B8%85.%E8%B0%A2%E9%81%82%E7%BB%98.%E7%BA%B8%E6%9C%AC%E8%AE%BE%E8%89%B2.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.tif.jpg",
+    "width": 2754,
+    "height": 5712,
+    "source": "https://commons.wikimedia.org/wiki/File:%E4%BB%BF%E5%94%90%E4%BA%BA%E5%A4%A7%E7%A6%B9%E6%B2%BB%E6%B0%B4%E5%9B%BE%E8%BD%B4.%E6%B8%85.%E8%B0%A2%E9%81%82%E7%BB%98.%E7%BA%B8%E6%9C%AC%E8%AE%BE%E8%89%B2.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.tif",
+    "credit": "Xie Sui · National Palace Museum / Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A painted landscape showing Yu directing workers during flood-control efforts.",
+    "caption": "Xie Sui’s Qing-period painting imagines Yu directing flood-control work. Made millennia after the legendary age, it records a later visual tradition rather than the historical appearance of Yu or the flood."
+  },
+  "catalog-E_SHANG_2": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/King_Wu_of_Zhou.jpg/960px-King_Wu_of_Zhou.jpg",
+    "width": 9102,
+    "height": 20089,
+    "source": "https://commons.wikimedia.org/wiki/File:King_Wu_of_Zhou.jpg",
+    "credit": "Ma Lin, attributed · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A standing ruler in ceremonial robes, identified as King Wu of Zhou.",
+    "caption": "A later painting traditionally identified as King Wu, the Zhou ruler associated with the conquest of Shang. It is an imagined dynastic portrait, not a contemporary likeness or a picture of the battle."
+  },
+  "zhou-capital-crisis": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Bao_Si_-_Bai_Mei_Xin_Yong.JPG",
+    "width": 480,
+    "height": 723,
+    "source": "https://commons.wikimedia.org/wiki/File:Bao_Si_-_Bai_Mei_Xin_Yong.JPG",
+    "credit": "Wang Hui · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "An eighteenth-century painted portrait of a woman identified as Bao Si.",
+    "caption": "Wang Hui’s eighteenth-century image of Bao Si, a figure later narratives linked to the fall of Western Zhou. The painting is much later than 771 BCE, and those narratives often turn a political and military crisis into a moral tale about a woman."
+  },
+  "zhou-gonghe": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Western_Zhou_Bronze_Plate_with_Xiu_Inscription.jpg/960px-Western_Zhou_Bronze_Plate_with_Xiu_Inscription.jpg",
+    "width": 3888,
+    "height": 2592,
+    "source": "https://commons.wikimedia.org/wiki/File:Western_Zhou_Bronze_Plate_with_Xiu_Inscription.jpg",
+    "credit": "Gary Lee Todd · Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A Western Zhou bronze basin with an inscription cast inside it.",
+    "caption": "A Western Zhou bronze basin bearing the Xiu inscription. It shows how elite memory and political relationships were recorded in bronze, but it does not directly document King Li’s expulsion or the Gonghe government."
+  },
+  "catalog-SR_SA": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg/960px-Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg",
+    "width": 4752,
+    "height": 3168,
+    "source": "https://commons.wikimedia.org/wiki/File:Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg",
+    "credit": "Gary Todd · Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "An ornamented bronze chariot axle hub from the Spring and Autumn period.",
+    "caption": "A bronze chariot fitting from the Spring and Autumn period. Chariots belonged to elite warfare and display, although one surviving fitting cannot represent every state or campaign in the period."
+  },
+  "catalog-E_HAN_1": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Eastern_Han_Dynasty_Confucian_classics_carved_in_stone.JPG",
+    "width": 720,
+    "height": 480,
+    "source": "https://commons.wikimedia.org/wiki/File:Eastern_Han_Dynasty_Confucian_classics_carved_in_stone.JPG",
+    "credit": "Gary Lee Todd · Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "Fragments of an Eastern Han stone slab carved with lines of classical Chinese text.",
+    "caption": "Fragments of the Eastern Han stone classics. They are later than Emperor Wu’s initiatives, but show the continuing effort to establish authoritative versions of texts used in education and government."
+  },
+  "confucianism-daoism": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Confucius_and_Laozi%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg",
+    "width": 450,
+    "height": 304,
+    "source": "https://commons.wikimedia.org/wiki/File:Confucius_and_Laozi,_fresco_from_a_Western_Han_tomb_of_Dongping_County,_Shandong_province,_China.jpg",
+    "credit": "Anonymous Western Han painter · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "Faded figures in a Western Han tomb fresco identified as Confucius meeting Laozi.",
+    "caption": "A Western Han tomb painting interpreted as Confucius meeting Laozi. It reflects a later story about the two teachers and should not be treated as evidence that the meeting occurred."
+  },
+  "catalog-SR_WS": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Warring_States_Bronze_Tiger_Tally.jpg/960px-Warring_States_Bronze_Tiger_Tally.jpg",
+    "width": 5184,
+    "height": 3456,
+    "source": "https://commons.wikimedia.org/wiki/File:Warring_States_Bronze_Tiger_Tally.jpg",
+    "credit": "Gary Todd · National Museum of China / Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A bronze tally in the shape of a crouching tiger, inscribed with Chinese characters.",
+    "caption": "A tiger-shaped bronze tally associated with Chu and used to authorize travel through courier stations. It offers material evidence for administration within one Warring States polity, not a picture of the period’s wars."
+  },
+  "unification": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Portrait_of_Qin_Shi_Huang.jpg/960px-Portrait_of_Qin_Shi_Huang.jpg",
+    "width": 2031,
+    "height": 3072,
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_Qin_Shi_Huang.jpg",
+    "credit": "Artist unidentified · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A later painted portrait of Qin Shi Huang in imperial robes and headgear.",
+    "caption": "A later conventional portrait of Qin Shi Huang, who took the title First Emperor after the conquests of 221 BCE. It is not a contemporary likeness and does not show how unification was carried out."
+  },
+  "catalog-C_QIN": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Terracotta_Army%2C_View_of_Pit_1.jpg/960px-Terracotta_Army%2C_View_of_Pit_1.jpg",
+    "width": 5472,
+    "height": 3648,
+    "source": "https://commons.wikimedia.org/wiki/File:Terracotta_Army,_View_of_Pit_1.jpg",
+    "credit": "J. M. Hullot · Wikimedia Commons",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "alt": "Rows of excavated terracotta soldiers standing in the First Emperor’s burial complex.",
+    "caption": "Pit 1 of the First Emperor’s terracotta army. The modern view includes excavated and restored figures, so it is evidence of the burial project rather than the army’s original finished appearance."
+  },
+  "shang-yang": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/Statue_of_Shang_Yang.jpg",
+    "width": 1520,
+    "height": 2260,
+    "source": "https://commons.wikimedia.org/wiki/File:Statue_of_Shang_Yang.jpg",
+    "credit": "Fanghong · Wikimedia Commons",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+    "alt": "A modern outdoor statue representing Shang Yang in official robes.",
+    "caption": "A modern statue commemorating Shang Yang. It shows how the reformer is remembered, not his historical appearance or direct evidence for the measures attributed to him."
+  },
+  "catalog-R_HAN_W": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Western_Han_Jade_Burial_Suit_-_2.jpg/960px-Western_Han_Jade_Burial_Suit_-_2.jpg",
+    "width": 5184,
+    "height": 3456,
+    "source": "https://commons.wikimedia.org/wiki/File:Western_Han_Jade_Burial_Suit_-_2.jpg",
+    "credit": "Gary Todd · Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A human-shaped burial suit assembled from rectangular jade plaques joined with wire.",
+    "caption": "A Western Han jade burial suit made for an elite tomb. It provides evidence for wealth, craftsmanship and funerary belief at the top of society, not a representative view of ordinary Han life."
+  },
+  "qin-great-wall": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Qin_empire_210_BCE.png",
+    "width": 555,
+    "height": 545,
+    "source": "https://commons.wikimedia.org/wiki/File:Qin_empire_210_BCE.png",
+    "credit": "Itsmine · Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": "A modern map of the Qin empire around 210 BCE, with northern frontier areas marked.",
+    "caption": "A modern reconstruction of the Qin empire near the end of the First Emperor’s reign. It situates the northern frontier, but its borders are schematic and it does not trace every wall segment built or reused by Qin."
+  },
+  "yellow-turbans": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Three_Brothers_during_the_Yellow_Turban_Rebellion.jpg",
+    "width": 500,
+    "height": 413,
+    "source": "https://commons.wikimedia.org/wiki/File:Three_Brothers_during_the_Yellow_Turban_Rebellion.jpg",
+    "credit": "Qing-period artist unidentified · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A Qing-period illustration of armed men fighting during the Yellow Turban uprising.",
+    "caption": "A Qing-period illustration based on the Romance of the Three Kingdoms shows fighting during the Yellow Turban uprising. It is a much later literary image, not contemporary evidence for the rebels of 184."
+  },
+  "three-kingdoms": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Three_Kingdoms.png",
+    "width": 1288,
+    "height": 912,
+    "source": "https://commons.wikimedia.org/wiki/File:Three_Kingdoms.png",
+    "credit": "SY · Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "A modern map showing the territories of Wei, Shu and Wu during the Three Kingdoms period.",
+    "caption": "A modern map of Wei, Shu and Wu. The boundaries summarize a changing military situation and should not be read as fixed borders maintained throughout 220–280."
+  },
+  "catalog-R_WEI": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/Cao_Pi_Tang.jpg",
+    "width": 920,
+    "height": 1262,
+    "source": "https://commons.wikimedia.org/wiki/File:Cao_Pi_Tang.jpg",
+    "credit": "Attributed to Yan Liben · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A later painted image of Cao Pi seated in court dress.",
+    "caption": "A later painting traditionally identified as Cao Pi, founder of Wei. Its attribution and date do not make it a verified likeness of the third-century ruler."
+  },
+  "catalog-E_3K_1": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Emperor_Xian_Qing_illustration.jpg",
+    "width": 366,
+    "height": 479,
+    "source": "https://commons.wikimedia.org/wiki/File:Emperor_Xian_Qing_illustration.jpg",
+    "credit": "Qing-period artist unidentified · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A Qing-period illustration of Emperor Xian of Han wearing court robes.",
+    "caption": "A Qing-period illustration of Emperor Xian, whose abdication in 220 ended the Han dynasty. It is an imagined portrait produced many centuries later."
+  },
+  "zhuge-northern-expeditions": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Zhuge_Liang_by_Zhang_Feng.jpg/960px-Zhuge_Liang_by_Zhang_Feng.jpg",
+    "width": 1696,
+    "height": 3542,
+    "source": "https://commons.wikimedia.org/wiki/File:Zhuge_Liang_by_Zhang_Feng.jpg",
+    "credit": "Zhang Feng · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A later ink painting of Zhuge Liang holding a feather fan.",
+    "caption": "Zhang Feng’s later portrait of Zhuge Liang uses the familiar scholar-strategist image. It reflects his posthumous reputation rather than documenting the northern expeditions or his appearance."
+  },
+  "catalog-R_JIN_W": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Jin_Celadon_Hunping_%28Soul_Jar%29.jpg/960px-Western_Jin_Celadon_Hunping_%28Soul_Jar%29.jpg",
+    "width": 3456,
+    "height": 5184,
+    "source": "https://commons.wikimedia.org/wiki/File:Western_Jin_Celadon_Hunping_(Soul_Jar).jpg",
+    "credit": "Gary Todd · Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A tall Western Jin celadon funerary jar crowded with modeled figures and buildings.",
+    "caption": "A Western Jin hunping, or funerary jar, covered with figures and architectural forms. It provides evidence for burial practice and ceramic production, not a direct account of Jin reunification or collapse."
+  },
+  "eight-princes": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/War_of_the_Eight_Princes_301.png",
+    "width": 1123,
+    "height": 794,
+    "source": "https://commons.wikimedia.org/wiki/File:War_of_the_Eight_Princes_301.png",
+    "credit": "SY · Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "A modern map of military alignments during the War of the Eight Princes in 301.",
+    "caption": "A modern map of the coalition against Sima Lun in 301. It captures one stage of a long, shifting conflict and does not represent the alliances of the entire war."
+  },
+  "catalog-E_BUD_ENTRY": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/China-henan-luoyang-white-horse-temple-entrance-20040506.jpg",
+    "width": 1040,
+    "height": 585,
+    "source": "https://commons.wikimedia.org/wiki/File:China-henan-luoyang-white-horse-temple-entrance-20040506.jpg",
+    "credit": "Photographer unidentified · Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": "The modern entrance gate of White Horse Temple near Luoyang.",
+    "caption": "The modern entrance to White Horse Temple, traditionally connected with the early transmission of Buddhism to China. The surviving complex is much later and cannot by itself verify the temple’s first-century foundation story."
+  },
+  "catalog-E_BUD_SPREAD": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Northern_Wei_Stone_Buddhist_Triad_Stele.jpg/960px-Northern_Wei_Stone_Buddhist_Triad_Stele.jpg",
+    "width": 2592,
+    "height": 3888,
+    "source": "https://commons.wikimedia.org/wiki/File:Northern_Wei_Stone_Buddhist_Triad_Stele.jpg",
+    "credit": "Gary Todd · Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A carved Northern Wei stone stele showing a Buddhist triad and attendant figures.",
+    "caption": "A Northern Wei Buddhist triad stele. It is later than the card’s approximate 350 reference point, but records the spread of Buddhist images and patronage in northern China."
+  },
+  "catalog-R_SIXTEEN_LATER_ZHAO": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Shi_Le_%28Emperor_Ming_of_Later_Zhao%29.jpg/960px-Shi_Le_%28Emperor_Ming_of_Later_Zhao%29.jpg",
+    "width": 1897,
+    "height": 2008,
+    "source": "https://commons.wikimedia.org/wiki/File:Shi_Le_(Emperor_Ming_of_Later_Zhao).jpg",
+    "credit": "Formerly attributed to Qian Xuan · Smithsonian National Museum of Asian Art / Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A later painting of the Later Zhao ruler Shi Le bowing before a Buddhist monk.",
+    "caption": "A later painting imagines Shi Le reverencing a Buddhist monk. It reflects the remembered relationship between the Later Zhao court and Buddhism, not a contemporary portrait or eyewitness scene."
+  },
+  "catalog-R_JIN_EASTERN_JIN": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Eastern_Jin_Celadon_Ewer_%2810092881434%29.jpg/960px-Eastern_Jin_Celadon_Ewer_%2810092881434%29.jpg",
+    "width": 5184,
+    "height": 3456,
+    "source": "https://commons.wikimedia.org/wiki/File:Eastern_Jin_Celadon_Ewer_(10092881434).jpg",
+    "credit": "Gary Todd · Xuzhou Museum / Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A green-glazed ceramic ewer made during the Eastern Jin period.",
+    "caption": "An Eastern Jin celadon ewer in the Xuzhou Museum. It represents ceramic production during the southern court’s period, not a particular migration, campaign or political event."
+  },
+  "fei-river": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/Battle_of_Fei_River.png",
+    "width": 916,
+    "height": 586,
+    "source": "https://commons.wikimedia.org/wiki/File:Battle_of_Fei_River.png",
+    "credit": "SY · Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "A modern map showing the opposing movements around the Battle of the Fei River.",
+    "caption": "A modern map of the Fei River campaign between Former Qin and Eastern Jin. It summarizes reported movements and terrain rather than providing a contemporary battlefield survey."
+  },
+  "kumarajiva-translations": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Kumarajiva_at_Kizil_Caves%2C_Kuqa.jpg/960px-Kumarajiva_at_Kizil_Caves%2C_Kuqa.jpg",
+    "width": 3216,
+    "height": 2136,
+    "source": "https://commons.wikimedia.org/wiki/File:Kumarajiva_at_Kizil_Caves,_Kuqa.jpg",
+    "credit": "Yoshi Canopus · Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": "A modern statue of Kumarajiva standing before a cave complex near Kucha.",
+    "caption": "A modern statue of Kumarajiva near the Kizil caves outside Kucha, where he spent part of his early life. It is a commemorative image, not a portrait or evidence for the work of his translation teams in Chang’an."
+  },
+  "catalog-R_NS_NORTHERN_WEI": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Cave_20%2C_Yungang_Grottoes.jpg/960px-Cave_20%2C_Yungang_Grottoes.jpg",
+    "width": 4032,
+    "height": 3024,
+    "source": "https://commons.wikimedia.org/wiki/File:Cave_20,_Yungang_Grottoes.jpg",
+    "credit": "Dudva · Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A monumental seated Buddha carved into the rock at Yungang Cave 20.",
+    "caption": "The colossal Buddha outside Yungang Cave 20, carved under Northern Wei patronage. The modern photograph shows a monument altered by weathering and the loss of its cave front."
+  },
+  "xiaowen-reforms": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Emperor_Xiaowen_of_Northern_Wei.jpg",
+    "width": 500,
+    "height": 363,
+    "source": "https://commons.wikimedia.org/wiki/File:Emperor_Xiaowen_of_Northern_Wei.jpg",
+    "credit": "Artist unidentified · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A later illustration of Emperor Xiaowen and attendants in court dress.",
+    "caption": "A later illustration identified with Emperor Xiaowen. It is useful for the ruler’s historical memory, but it is not a contemporary likeness and cannot show how dress or court culture changed under his reforms."
+  },
+  "catalog-S_ST": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Giant_Wild_Goose_Pagoda%2C_Xi%27an%2C_May%2C_2018-1.jpg/1280px-Giant_Wild_Goose_Pagoda%2C_Xi%27an%2C_May%2C_2018-1.jpg",
+    "width": 5574,
+    "height": 3819,
+    "source": "https://commons.wikimedia.org/wiki/File:Giant_Wild_Goose_Pagoda,_Xi%27an,_May,_2018-1.jpg",
+    "credit": "Alexey Komarov · Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "The brick Giant Wild Goose Pagoda rises above trees in Xi’an.",
+    "caption": "The Giant Wild Goose Pagoda was founded in Tang Chang’an in 652 to house Buddhist texts brought from India. This 2018 photograph shows the repaired and rebuilt monument, not its seventh-century appearance."
+  },
+  "catalog-R_NS_NORTHERN_ZHOU": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Northern_Zhou_Gilded_Silver_Ewer_%289833405755%29.jpg/1280px-Northern_Zhou_Gilded_Silver_Ewer_%289833405755%29.jpg",
+    "width": 3456,
+    "height": 5184,
+    "source": "https://commons.wikimedia.org/wiki/File:Northern_Zhou_Gilded_Silver_Ewer_(9833405755).jpg",
+    "credit": "Gary Todd · National Museum of China / Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A tall gilded-silver ewer with a narrow neck and decorated body.",
+    "caption": "A gilded-silver ewer assigned to the Northern Zhou period. The vessel supplies material evidence for elite metalwork and exchange; it does not depict the dynasty’s conquest of Northern Qi."
+  },
+  "southward-economic-shift": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Song_Dynasty_Hydraulic_Mill_for_Grain.JPG/1280px-Song_Dynasty_Hydraulic_Mill_for_Grain.JPG",
+    "width": 1580,
+    "height": 1100,
+    "source": "https://commons.wikimedia.org/wiki/File:Song_Dynasty_Hydraulic_Mill_for_Grain.JPG",
+    "credit": "Anonymous Northern Song artist · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A Chinese painting shows a water-powered grain mill beside a busy river landing.",
+    "caption": "A Northern Song painting of a water-powered grain mill and river transport. It illustrates the infrastructure behind the period’s commercial economy, but the scene is not a statistical record of the southward shift."
+  },
+  "zhenguan-government": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Chinese_-_The_Twenty-Four_Ministers_of_the_Tang_-T%27ang-_Dynasty_Emperor_Taizong_-T%27ai-Tsung-_-_Walters_3557_-_View_H.jpg/1280px-Chinese_-_The_Twenty-Four_Ministers_of_the_Tang_-T%27ang-_Dynasty_Emperor_Taizong_-T%27ai-Tsung-_-_Walters_3557_-_View_H.jpg",
+    "width": 1800,
+    "height": 1269,
+    "source": "https://commons.wikimedia.org/wiki/File:Chinese_-_The_Twenty-Four_Ministers_of_the_Tang_-T%27ang-_Dynasty_Emperor_Taizong_-T%27ai-Tsung-_-_Walters_3557_-_View_H.jpg",
+    "credit": "Anonymous Chinese artist · Walters Art Museum / Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "Painted officials from a handscroll of Emperor Taizong’s twenty-four ministers.",
+    "caption": "Part of a seventeenth-century handscroll portraying Taizong’s twenty-four celebrated ministers. Made about a millennium after the Zhenguan era, it records their later political reputation rather than their actual likenesses."
+  },
+  "kaiyuan-era": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Tang-xuanzong.jpg",
+    "width": 343,
+    "height": 436,
+    "source": "https://commons.wikimedia.org/wiki/File:Tang-xuanzong.jpg",
+    "credit": "Artist unidentified · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A painted portrait of Tang emperor Xuanzong in court dress.",
+    "caption": "A traditional portrait of Emperor Xuanzong, whose Kaiyuan reign gave the era its name. The Commons record does not identify the artist or date, so it should not be treated as a contemporary likeness."
+  },
+  "movable-type": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Beijing.Musee_imprimerie.caracteres_mobiles.Bisheng.jpg/1280px-Beijing.Musee_imprimerie.caracteres_mobiles.Bisheng.jpg",
+    "width": 3272,
+    "height": 4940,
+    "source": "https://commons.wikimedia.org/wiki/File:Beijing.Musee_imprimerie.caracteres_mobiles.Bisheng.jpg",
+    "credit": "Popolon · China Printing Museum / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "A museum reconstruction shows individual Chinese type pieces arranged for printing.",
+    "caption": "The China Printing Museum’s reconstruction of Bi Sheng’s movable-type equipment. No original set of his eleventh-century clay type survives, so this display explains the method rather than documenting his workshop."
+  },
+  "huichang": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Foguang_Temple_8.JPG/1280px-Foguang_Temple_8.JPG",
+    "width": 2272,
+    "height": 1704,
+    "source": "https://commons.wikimedia.org/wiki/File:Foguang_Temple_8.JPG",
+    "credit": "Angus Cepka · Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": "The timber Grand East Hall of Foguang Temple stands beneath a tiled roof.",
+    "caption": "Foguang Temple’s Grand East Hall was completed in 857, twelve years after the Huichang suppression. Its survival shows that Buddhist institutions continued after 845; it is not a site of the suppression itself."
+  },
+  "catalog-R_TEN_SOUTHERN_TANG": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Li_Yu_scth.jpg",
+    "width": 500,
+    "height": 745,
+    "source": "https://commons.wikimedia.org/wiki/File:Li_Yu_scth.jpg",
+    "credit": "Wang Qi, Illustrations of the Three Powers (1609) · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A black-and-white block-print portrait of Southern Tang ruler Li Yu.",
+    "caption": "A 1609 block-print portrait of Li Yu, Southern Tang’s final ruler and a celebrated poet. Printed more than six centuries after his death, it represents his later memory rather than a verified likeness."
+  },
+  "catalog-S_TEN": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Five_Dynasties_Ten_Kingdoms_923_CE.png",
+    "width": 556,
+    "height": 537,
+    "source": "https://commons.wikimedia.org/wiki/File:Five_Dynasties_Ten_Kingdoms_923_CE.png",
+    "credit": "Ian Kiu · Wikimedia Commons",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "alt": "A modern map labels the states that occupied China and nearby regions in 923.",
+    "caption": "A modern reconstruction of the political map in 923, when several states conventionally grouped among the Ten Kingdoms coexisted. Boundaries are schematic, and the ten did not all exist at the same time."
+  },
+  "tang-end": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Zhu_Wen_%28Liang_Taizu%29.jpg/1280px-Zhu_Wen_%28Liang_Taizu%29.jpg",
+    "width": 1494,
+    "height": 1672,
+    "source": "https://commons.wikimedia.org/wiki/File:Zhu_Wen_(Liang_Taizu).jpg",
+    "credit": "Unknown Qing-dynasty artist · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A later painted portrait of Zhu Wen, founder of Later Liang.",
+    "caption": "A Qing-dynasty portrait of Zhu Wen, who forced the last Tang emperor to abdicate and founded Later Liang in 907. It is a much later imagined likeness, not a contemporary portrait."
+  },
+  "catalog-R_TEN_LATER_SHU": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Later_Shu_Confucian_Classics_on_Stone_%289833831294%29.jpg/1280px-Later_Shu_Confucian_Classics_on_Stone_%289833831294%29.jpg",
+    "width": 5184,
+    "height": 3456,
+    "source": "https://commons.wikimedia.org/wiki/File:Later_Shu_Confucian_Classics_on_Stone_(9833831294).jpg",
+    "credit": "Gary Todd · National Museum of China / Wikimedia Commons",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "An inscribed stone from the Later Shu Confucian Classics project is displayed in a museum.",
+    "caption": "A surviving stone from the Confucian Classics carved in Chengdu under Later Shu. The museum photograph shows evidence of state-sponsored learning, not the complete monument as it appeared in the tenth century."
+  },
+  "chanyuan": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Song_Zhenzong.jpg",
+    "width": 600,
+    "height": 656,
+    "source": "https://commons.wikimedia.org/wiki/File:Song_Zhenzong.jpg",
+    "credit": "Artist unidentified · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A seated portrait of Song emperor Zhenzong in formal robes.",
+    "caption": "A traditional portrait of Emperor Zhenzong, whose government concluded the Chanyuan agreement with Liao in 1005. It is court portraiture, not a depiction of the negotiations, and the Commons record gives no artist or date."
+  },
+  "catalog-R_TEN_CHU_MA_CHU": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/096_20100911_bt_shanghai_museum_%284986578699%29.jpg/1280px-096_20100911_bt_shanghai_museum_%284986578699%29.jpg",
+    "width": 3456,
+    "height": 2304,
+    "source": "https://commons.wikimedia.org/wiki/File:096_20100911_bt_shanghai_museum_(4986578699).jpg",
+    "credit": "Bill Taroli · Shanghai Museum / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "alt": "Cash coins associated with Southern Chu are displayed in the Shanghai Museum.",
+    "caption": "Coins displayed in the Shanghai Museum and catalogued on Commons with Southern Chu coinage. They provide material evidence for regional money, although the photograph’s record does not identify each coin in view."
+  },
+  "catalog-R_TEN_MIN": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Tomb_of_Wang_Shenzhi_1.jpg/1280px-Tomb_of_Wang_Shenzhi_1.jpg",
+    "width": 1438,
+    "height": 1080,
+    "source": "https://commons.wikimedia.org/wiki/File:Tomb_of_Wang_Shenzhi_1.jpg",
+    "credit": "Perinbaba · Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "Stone structures stand at the tomb of Wang Shenzhi in Fuzhou.",
+    "caption": "The tomb of Wang Shenzhi, the ruler who established the Min kingdom in Fujian. This 2023 photograph shows the surviving memorial site, which has been altered since the tenth century."
+  },
+  "catalog-R_TEN_SOUTHERN_HAN": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Crude_lead_Kai_Yuan_Tong_Bao_%28%E9%96%8B%E5%85%83%E9%80%9A%E5%AF%B6%29_-_Southern_Han_Kingdom_-_Scott_Semans.jpg",
+    "width": 848,
+    "height": 448,
+    "source": "https://commons.wikimedia.org/wiki/File:Crude_lead_Kai_Yuan_Tong_Bao_(%E9%96%8B%E5%85%83%E9%80%9A%E5%AF%B6)_-_Southern_Han_Kingdom_-_Scott_Semans.jpg",
+    "credit": "Scott Semans World Coins · Wikimedia Commons",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "alt": "The two faces of a small lead cash coin attributed to Southern Han are shown side by side.",
+    "caption": "A lead Kaiyuan tongbao coin attributed to the Southern Han kingdom. Its modest material fits a regional monetary economy; the attribution comes from modern numismatic cataloguing rather than an inscription naming the state."
+  },
+  "catalog-R_TEN_JINGNAN_NANPING": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%E8%8D%8A%E5%B7%9E%E5%8F%A4%E5%9F%8E_hIstorical_city_wall_of_Jingzhou_-_panoramio.jpg/1280px-%E8%8D%8A%E5%B7%9E%E5%8F%A4%E5%9F%8E_hIstorical_city_wall_of_Jingzhou_-_panoramio.jpg",
+    "width": 1887,
+    "height": 1413,
+    "source": "https://commons.wikimedia.org/wiki/File:%E8%8D%8A%E5%B7%9E%E5%8F%A4%E5%9F%8E_hIstorical_city_wall_of_Jingzhou_-_panoramio.jpg",
+    "credit": "lienyuan lee · Wikimedia Commons",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "alt": "A gate tower and brick walls enclose part of the historic city of Jingzhou.",
+    "caption": "The historic walls of Jingzhou, near Jingnan’s capital at Jiangling. The visible walls largely reflect later rebuilding, so the photograph supplies geographic context rather than tenth-century fabric."
+  },
+  "catalog-S_SONG": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Song-Liao-Xixia-1111.png",
+    "width": 556,
+    "height": 537,
+    "source": "https://commons.wikimedia.org/wiki/File:Song-Liao-Xixia-1111.png",
+    "credit": "Douglasfrankfort · Wikimedia Commons",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "alt": "A modern map labels Song, Liao and Western Xia territories in 1111.",
+    "caption": "A modern reconstruction of Song, Liao and Western Xia in 1111. The three states coexisted, but the map’s clean boundary lines simplify contested frontier zones."
+  },
+  "catalog-R_NSONG": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Northern_Song%28%E5%8C%97%E5%AE%8B%E5%88%86%E8%B7%AF%E5%85%A8%E5%9B%BE%29.jpg/1280px-Northern_Song%28%E5%8C%97%E5%AE%8B%E5%88%86%E8%B7%AF%E5%85%A8%E5%9B%BE%29.jpg",
+    "width": 3740,
+    "height": 3937,
+    "source": "https://commons.wikimedia.org/wiki/File:Northern_Song(%E5%8C%97%E5%AE%8B%E5%88%86%E8%B7%AF%E5%85%A8%E5%9B%BE).jpg",
+    "credit": "Evawen · Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": "A modern Chinese-language map shows the administrative circuits of Northern Song.",
+    "caption": "A modern map of Northern Song administrative circuits and their chief cities. It is useful for orientation, but it presents a reconstructed administrative scheme rather than conditions in every year from 960 to 1127."
+  },
+  "catalog-E_SONG_SOUTH": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Duke_Wen_of_Jin_Recovering_His_State_%28IA_mma_duke_wen_of_jin_recovering_his_state_40051%29.jpg/1280px-Duke_Wen_of_Jin_Recovering_His_State_%28IA_mma_duke_wen_of_jin_recovering_his_state_40051%29.jpg",
+    "width": 1761,
+    "height": 643,
+    "source": "https://commons.wikimedia.org/wiki/File:Duke_Wen_of_Jin_Recovering_His_State_(IA_mma_duke_wen_of_jin_recovering_his_state_40051).jpg",
+    "credit": "Attributed to Li Tang · Metropolitan Museum of Art / Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A handscroll scene shows Duke Wen of Jin returning from exile with attendants.",
+    "caption": "Duke Wen of Jin Recovering His State, attributed to Li Tang and dated to the early 1140s. Gaozong’s court used this older story of exile and return to support its own claim of dynastic recovery after 1127."
+  },
+  "early-yuan": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Yuan_dynasty_under_Kublai_Khan.png/1280px-Yuan_dynasty_under_Kublai_Khan.png",
+    "width": 2496,
+    "height": 2073,
+    "source": "https://commons.wikimedia.org/wiki/File:Yuan_dynasty_under_Kublai_Khan.png",
+    "credit": "Fazoffic · Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "A modern map shows Yuan territory under Kublai Khan across China and Mongolia.",
+    "caption": "A modern reconstruction of Yuan territory under Kublai Khan in the 1290s. The map shows the dynasty after Southern Song’s defeat, so it extends beyond the incomplete conquest of 1271."
+  },
+  "catalog-C_BEIJING_YUAN": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Yuandadu_map.jpg",
+    "width": 591,
+    "height": 780,
+    "source": "https://commons.wikimedia.org/wiki/File:Yuandadu_map.jpg",
+    "credit": "Kallgan · Wikimedia Commons",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "alt": "A schematic plan compares the footprint of Yuan Dadu with later Beijing walls.",
+    "caption": "A modern diagram comparing Yuan Dadu’s plan with the later Ming and Qing capital. It helps locate the Yuan city within Beijing, but it is a schematic reconstruction rather than a Yuan-period map."
+  }
+});
 if(typeof module!=='undefined')module.exports=HISTORY_IMAGES;

@@ -2,19 +2,19 @@ const test=require('node:test');
 const assert=require('node:assert/strict');
 const expand=require('./catalog_adapter');
 const tang=require('./tang_data');
-const packs=['early_research','medieval_research','medieval_culture','late_imperial_research','modern_research','chart_research'].map(name=>require('./'+name));
+const packs=['early_research','medieval_research','medieval_culture','late_imperial_research','modern_research','chart_research','cambridge_research'].map(name=>require('./'+name));
 const original=expand(require('./history_data'),require('./catalog_data'),[...require('./supplemental_data'),...tang.events,...packs.flatMap(pack=>pack.events)],expand.mergeRevisions(tang.revisions,require('./research_revisions'),...packs.map(pack=>pack.revisions)));
 const editorial=['early','middle','late'].map(era=>require('./beginner_'+era));
 const apply=require('./beginner_edition');
 const snapshot=JSON.stringify(original);
-const edition=apply(original,...editorial,...['early','middle','late'].map(era=>require('./significance_'+era)));
+const edition=apply(original,...editorial);
 const saved=require('./data/china_history_expanded.json');
 const images=require('./image_data');
 
 test('beginner edition removes only the approved enrichment card and retains every original source',()=>{
- assert.equal(original.all.length,207);
- assert.equal(edition.all.length,207);
- assert.equal(new Set(edition.all.map(card=>card.id)).size,207);
+ assert.equal(original.all.length,221);
+ assert.equal(edition.all.length,221);
+ assert.equal(new Set(edition.all.map(card=>card.id)).size,221);
  assert(!edition.all.some(card=>card.id==='taiwan-democratization'));
  assert(!edition.events.some(card=>card.id==='taiwan-democratization'));
  assert(edition.all.some(card=>card.id==='roc-taiwan'));
@@ -45,7 +45,7 @@ test('requested titles keep their full context and previous names remain searcha
  for(const card of edition.all){assert(card.description.length>30,card.id);assert(card.sections?.length>=2,card.id+' sections');for(const section of card.sections)assert(section.title&&section.text.length>60,card.id+' useful paragraph');}
 });
 test('saved beginner edition exactly matches the assembled reader cards',()=>{
- assert.equal(saved.cardCount,207);
+ assert.equal(saved.cardCount,221);
  assert.deepEqual(saved.cards.map(card=>card.id),edition.all.map(card=>card.id));
  const pinyin=Object.assign({},require('./pinyin_data'),...packs.map(pack=>pack.pinyin));
  for(const card of edition.all)assert.deepEqual(saved.cards.find(item=>item.id===card.id),{...card,pinyin:pinyin[card.nameZh],image:images[card.id]},card.id);
@@ -87,4 +87,20 @@ test('southward economic shift is an approximate process connected to Tang and S
  for(const id of ['an-lushan','tang','song','sui-grand-canal'])assert(edition.all.find(item=>item.id===id).related.includes(card.id));
  assert.match(card.sections[1].text,/western exchange continued/);
  assert.match(images[card.id].caption,/modern view/);
+});
+
+test('An Lushan card explains the rebellion and its consequences without treating lost registrations as deaths',()=>{
+ const card=edition.all.find(item=>item.id==='an-lushan');
+ assert(card);
+ assert(card.sections.length>=4);
+ const copy=[card.description,...card.sections.map(section=>section.title+' '+section.text),card.note].join(' ');
+ assert.match(copy,/frontier|military governor/i);
+ assert.match(copy,/Luoyang/);
+ assert.match(copy,/Chang’an/);
+ assert.match(copy,/Uyghur/);
+ assert.match(copy,/displac|famine|refuge/i);
+ assert.match(copy,/tax register/i);
+ assert.match(copy,/cannot be (?:read|treated) directly as a death toll/i);
+ assert.match(copy,/780|twice-yearly tax/i);
+ assert.match(copy,/907/);
 });

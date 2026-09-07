@@ -7,15 +7,16 @@ for (const width of [280, 350, 499, 700, 1020, 1300]) {
   test(`Continuous and proportional geometry at ${width}px`, () => {
     const g = create(width);
     assert.deepEqual(g.point(-2070), g.at(0));
-    assert.equal(g.point(-2070).x,12);
+    assert.equal(g.point(-2070).x,g.left-g.radius);
     assert.deepEqual(g.point(2026), g.at(g.length));
+    assert.ok(Math.abs(g.point(2026).x-((g.rows-1)%2===0?g.right+g.radius:g.left-g.radius))<1e-9);
     assert.equal(g.distance(-3000), 0);
     assert.equal(g.distance(3000), g.length);
     const year = g.length / (ordinal(2026) - ordinal(-2070));
     assert.ok(Math.abs(g.distance(1) - g.distance(-1) - year) < 1e-9);
     assert.ok(Math.abs(g.distance(763) - g.distance(755) - 8 * year) < 1e-9);
     for (let row = 0; row < g.rows - 1; row++) {
-      const turn = g.rowStart(row) + g.straight + (row===0?g.extra:0);
+      const turn = g.rowStart(row) + g.rowSpan(row);
       for (const boundary of [turn, turn + Math.PI * g.radius]) {
         for (const offset of [-44, -28, 0, 28, 44]) {
           const a = g.at(boundary - 0.0001, offset);

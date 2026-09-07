@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f0e7">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="Explore a sourced timeline of Chinese history from the traditional Xia chronology to 2026, with overlapping states, major events, maps, images, and reading notes.">
   <title>The History Atlas · Chinese History</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=d840b3fea875">
+  <link rel="stylesheet" href="styles.css?v=f9fb4282d4f8">
   <script defer src="history_data.js?v=0ccfcfa8c672"></script>
   <script defer src="geometry.js?v=a87789589632"></script>
   <script defer src="catalog_data.js?v=27a61f2f103b"></script>
   <script defer src="supplemental_data.js?v=d0b2c268f127"></script>
   <script defer src="tang_data.js?v=1f491f4c3700"></script>
   <script defer src="research_revisions.js?v=4a66d1ec3157"></script>
-  <script defer src="image_data.js?v=ef181fc73761"></script>
+  <script defer src="image_data.js?v=1317fc92d13b"></script>
   <script defer src="catalog_adapter.js?v=3ea96641eb57"></script>
   <script defer src="pinyin_data.js?v=5c4d63127c01"></script>
   <script defer src="early_research.js?v=5303261ec000"></script>
@@ -24,15 +25,13 @@
   <script defer src="late_imperial_research.js?v=87c360eaefae"></script>
   <script defer src="modern_research.js?v=bd16c0b4103c"></script>
   <script defer src="chart_research.js?v=07d5598af4ff"></script>
-  <script defer src="beginner_early.js?v=93428a06a16e"></script>
-  <script defer src="beginner_middle.js?v=144d1ac95e07"></script>
-  <script defer src="beginner_late.js?v=f5bc0a27a23e"></script>
-  <script defer src="significance_early.js?v=b778548a2cf8"></script>
-  <script defer src="significance_middle.js?v=d3c3d5d9a1ce"></script>
-  <script defer src="significance_late.js?v=0d734c7ce808"></script>
-  <script defer src="beginner_edition.js?v=f17ac6e836a8"></script>
-  <script defer src="map_data.js?v=4592d5496872"></script>
-  <script defer src="app.js?v=2fb7f133b1f5"></script>
+  <script defer src="cambridge_research.js?v=97414c24c08e"></script>
+  <script defer src="beginner_early.js?v=989f13b18c08"></script>
+  <script defer src="beginner_middle.js?v=0f6247620a54"></script>
+  <script defer src="beginner_late.js?v=5505c1e71400"></script>
+  <script defer src="beginner_edition.js?v=ed0593bbe140"></script>
+  <script defer src="map_data.js?v=6e17a42f1695"></script>
+  <script defer src="app.js?v=d28b8605c64b"></script>
 </head>
 <body>
   <a class="skip" href="#explore">Skip to the timeline</a>
@@ -40,22 +39,22 @@
     <a class="brand" href="#"><span class="seal-block"><span class="seal" lang="zh-Hans">中</span><span class="seal-pinyin" lang="zh-Latn">zhōng</span></span> THE HISTORY ATLAS</a>
     <div class="masthead-actions">
       <form class="header-search" role="search"><label class="visually-hidden" for="search">Search history</label><input id="search" type="search" placeholder="Search history…" autocomplete="off" aria-controls="collection"><button type="submit" aria-label="Search history"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg></button></form>
-      <button class="index-button" id="index-toggle" aria-expanded="false" aria-controls="collection">Browse all <span aria-hidden="true">↗</span></button>
+      <button class="index-button" id="index-toggle" aria-expanded="false" aria-controls="collection">Browse all</button>
       <a href="#reading-notes" class="text-link">About</a>
     </div>
   </header>
   <main>
     <h1 class="visually-hidden">Chinese history atlas</h1>
     <section id="explore" aria-label="Interactive Chinese history timeline">
-      <div class="toolbar section-toolbar"><nav aria-label="Choose a historical section" id="section-nav"></nav><div class="layer-controls"><label><input id="events-toggle" type="checkbox" checked><span>Moments</span></label><label><input id="states-toggle" type="checkbox" checked><span>Concurrent states</span></label></div></div>
+      <div class="toolbar section-toolbar"><nav aria-label="Choose a historical section" id="section-nav"></nav><div class="layer-controls"><label><input id="events-toggle" type="checkbox" checked><span>Events</span></label><label><input id="states-toggle" type="checkbox" checked><span>Concurrent states</span></label></div></div>
       <nav class="period-navigation" aria-label="Jump to a dynastic or political period" id="era-nav"></nav>
       <div id="collection" class="collection" hidden><div class="collection-controls"><label for="category" class="filter-label">Show</label><select id="category"><option value="all">All entries</option><option value="dynasty">Dynasties & states</option><option value="period">Historical periods</option><option value="event">Events</option><option value="culture">People & culture</option><option value="world">World context</option></select></div><p id="collection-count" aria-live="polite"></p><div id="search-results"></div></div>
-      <div class="atlas-layout"><div class="chart-wrap"><div class="chart-instruction"><span id="view-range" aria-live="polite">All history · c. 2070 BCE – 2026</span></div><p id="view-note"></p><div id="chart"></div><p class="chart-caption">Distance along the central ribbon is proportional to elapsed time, including the turns. Thin parallel lines show overlapping states and periods. Click a label or a dot to explore.</p></div>
-        <aside class="detail-column" aria-label="Selected history item"><div id="detail" class="detail-card" aria-live="polite"></div><div class="legend"><p class="eyebrow">HOW TO READ THE THREAD</p><p><i class="legend-ribbon"></i>A dynasty or historical period</p><p><i class="legend-parallel"></i>A state that existed alongside it</p><p><i class="legend-dot"></i>A moment to explore</p><p class="legend-note">Colors distinguish periods. They do not imply shared territory or a single unbroken state.</p></div></aside>
+      <div class="atlas-layout"><div class="chart-wrap"><div class="chart-instruction"><span id="view-range" aria-live="polite">All history · c. 2070 BCE – 2026</span></div><p id="view-note"></p><div id="chart"></div><dl class="chart-caption chart-key"><div class="chart-key-item"><dt>Time</dt><dd>Ribbon length follows elapsed time, including the turns.</dd></div><div class="chart-key-item"><dt>Events</dt><dd>Short marks show events. Broken marks show approximate dates.</dd></div><div class="chart-key-item"><dt>Groups</dt><dd>Numbered boxes open nearby events. The line spans their start dates.</dd></div><div class="chart-key-item"><dt>Overlaps</dt><dd>Selected events show their known duration. Thin lines show concurrent states and periods.</dd></div></dl></div>
+        <aside class="detail-column" aria-label="Selected history item"><div id="detail" class="detail-card" aria-live="polite"></div><div class="legend"><p class="eyebrow">HOW TO READ THE TIMELINE</p><p><i class="legend-ribbon"></i>A dynasty or historical period</p><p><i class="legend-parallel"></i>A state that existed at the same time</p><p><i class="legend-dot"></i>An event</p><p class="legend-note">Colors distinguish periods. The timeline does not show territorial boundaries.</p></div></aside>
       </div>
     </section>
-    <section class="reading-notes" id="reading-notes"><p class="eyebrow">A NOTE ON HISTORY</p><div><h2>Time is precise. History has edges.</h2><p>This is a curated introduction. Early dates are approximate; Xia belongs to the traditional historical account. Dynasties often overlapped, and their territories changed. The main ribbon is a reading route through history, not a claim to exclusive rule.</p><p>Three Kingdoms, Jin, and the Northern and Southern Dynasties have separate bands. Jin began in 266 before Wu fell in 280; Sui began in 581 before it conquered Chen in 589. Side lines preserve these overlaps.</p><p>The three broad navigation sections are editorial choices for this atlas. The detailed dynastic groupings are informed by the <a href="https://www.chnmuseum.cn/portals/0/web/zt/gudai/default.html" target="_blank" rel="noopener noreferrer">National Museum of China’s Ancient China exhibition</a>. The chart begins with Xia, so the exhibition’s prehistoric section is outside its scope. Qin unification in 221 BCE marks the conventional beginning of imperial China. The links are starting points for exploration; dynasties and states often overlap. The Republic link covers its mainland period, while its continuation in Taiwan has a separate entry.</p><p>Dates before the Common Era use BCE; later dates have no suffix. There is no year zero. The atlas ends in 2026. Each reading card includes source links and analysis. Date notes distinguish traditional accounts, textual formation, and securely dated events.</p><a class="text-link" href="https://en.wikipedia.org/wiki/Timeline_of_Chinese_history" target="_blank" rel="noopener noreferrer">Reference: Timeline of Chinese history ↗</a></div></section>
-  </main><footer><span>THE HISTORY ATLAS</span><span>Made for curiosity. Read with context.</span><span class="footer-chinese"><span lang="zh-Hans">温故知新</span><small lang="zh-Latn">wēn gù zhī xīn</small></span></footer>
+    <section class="reading-notes" id="reading-notes"><p class="eyebrow">ABOUT THIS ATLAS</p><div><h2>How to use this Chinese history atlas</h2><p>This site is an interactive timeline of Chinese history from the traditional Xia dynasty to the present. Choose a dynasty, period, person, or event to read a short illustrated explanation with sources.</p><p>Many early dates are approximate, and the existence of Xia as a dynasty remains debated. Dynasties and states often overlapped, and their borders changed. The thick ribbon orders the main periods by date. Thin parallel lines show selected states and periods that existed at the same time. For example, Jin began in 266 before Wu fell in 280, and Sui began in 581 before it conquered Chen in 589.</p><p>The atlas uses three sections to make the timeline easier to browse: Early China, Imperial China, and Modern China. These are editorial choices. The detailed dynastic groupings draw on the <a href="https://www.chnmuseum.cn/portals/0/web/zt/gudai/default.html" target="_blank" rel="noopener noreferrer">National Museum of China’s Ancient China exhibition</a>. Qin unification in 221 BCE starts Imperial China here. The Republic entry covers mainland China from 1912 to 1949; its continuation in Taiwan has a separate entry.</p><p>BCE marks dates before the Common Era. Later dates have no suffix, and the calendar has no year zero. The timeline ends at 2026. Each card includes source links, image credits, and notes where dates or interpretations are disputed.</p><a class="text-link" href="https://en.wikipedia.org/wiki/Timeline_of_Chinese_history" target="_blank" rel="noopener noreferrer">Reference: Timeline of Chinese history ↗</a></div></section>
+  </main><footer><span>THE HISTORY ATLAS</span><span>Interactive Chinese history from c. 2070 BCE to 2026.</span><span class="footer-chinese"><span lang="zh-Hans">温故知新</span><small lang="zh-Latn">wēn gù zhī xīn</small></span></footer>
   <div id="tooltip" role="tooltip" hidden></div>
 </body>
 </html>

@@ -23,7 +23,7 @@ const BEGINNER_LATE = (() => {
 
   revise('republic', null,
     'The Republic of China was founded on 1 January 1912. The Qing emperor abdicated on 12 February, ending the dynasty. The new republic faced competing armies, political divisions, war with Japan and civil war. In 1949 its government relocated to Taiwan, where it continued.',
-    'Who would govern the republic?',
+    'Competing claims to govern the republic',
     'Ending the monarchy left difficult questions. A parliament could pass laws, but military leaders controlled armies and much of the country’s resources. Rival governments and regional commanders competed for power. The Nationalists later tried to bring the country under their government through new institutions and military force. Political coercion accompanied the effort to establish national authority.',
     'War and a divided future',
     'War with Japan placed enormous demands on civilians and armies. Civil war then brought Communist victory on the mainland and the Republic’s relocation to Taiwan. This card covers the mainland period, 1912–1949. The Republic’s government continued beyond that boundary. Its later history in Taiwan includes authoritarian rule and a gradual transition to democracy, covered in the separate Taiwan entry.');
@@ -60,8 +60,8 @@ const BEGINNER_LATE = (() => {
     'Zheng He’s first fleet departed in 1405. It began seven Ming-sponsored expeditions that continued until 1433, linking the imperial court with ports across Southeast Asia and the Indian Ocean. The fleets eventually reached the East African coast, travelling along routes already used by merchants and sailors.',
     'Gifts, trade and military power',
     'The ships carried envoys, gifts and commercial goods, as well as troops. The expeditions displayed the emperor’s wealth and power and sometimes intervened in local conflicts. Their journeys depended on existing knowledge of navigation and the port communities they visited. These were ambitious state voyages through a connected maritime world.',
-    'What happened when the fleets stopped?',
-    'The Ming court eventually stopped funding these enormous official expeditions as its spending priorities changed. Chinese merchants continued to travel and trade by sea. The end of the fleets was therefore one change within a much larger history of maritime activity. The date on this card, 1405, marks the first departure; it does not date the whole series of voyages.');
+    'The court ended the voyages; maritime trade continued',
+    'The Ming court eventually stopped funding these enormous official expeditions as its spending priorities changed. Chinese merchants continued to travel and trade by sea after the fleets ended. The date on this card, 1405, marks the first departure; it does not date the whole series of voyages.');
 
   revise('nanking', null,
     'The Treaty of Nanking ended the First Opium War in 1842. The Qing ceded Hong Kong Island to Britain, agreed to pay a large sum of money and opened five ports to British trade and residence. The settlement gave lasting force to demands made through military pressure.',
@@ -80,7 +80,7 @@ const BEGINNER_LATE = (() => {
 
   revise('catalog-C_BEIJING_MING', null,
     'The Yongle Emperor moved the Ming court from Nanjing to Beijing in 1421. The Forbidden City had been completed the year before. Beijing was his former power base and stood close to the northern frontier. Nanjing remained a secondary capital with its own government offices.',
-    'Why move the court north?',
+    'Beijing’s military and political advantages',
     'Beijing brought the emperor closer to the armies defending the northern frontier and the Mongol powers beyond it. Yongle had seized the throne in civil war, and his earlier base now became the centre of imperial government. The choice combined military concerns with the ruler’s own position. It changed where power was concentrated without removing Nanjing’s importance.',
     'A capital supplied from the south',
     'Moving the court did not move the empire’s richest farmland with it. The capital and its soldiers depended on grain brought from southern regions. The restored Grand Canal, together with storage and shipping arrangements, helped keep those supplies moving. Beijing’s growth as an imperial capital depended on the labour and harvests of people living far from its walls.',
@@ -131,7 +131,7 @@ const BEGINNER_LATE = (() => {
 
   revise('catalog-E_QING_SSM', null,
     'Qing officials responded to military defeats and civil war with projects to strengthen the state. From the 1860s, they built arsenals and shipyards, opened language schools and supported new industries. These efforts are usually grouped under the name Self-Strengthening Movement.',
-    'More than buying new weapons',
+    'Military and industrial reform',
     'Modern ships and guns needed trained crews, maintenance, reliable supplies and money. Translation and education became important parts of military rebuilding. Officials such as Li Hongzhang also supported transport and commercial ventures. The aim was to develop the skills and resources needed to defend the country, as well as obtain foreign equipment.',
     'Projects with different results',
     'Different officials sponsored different enterprises. Some developed useful skills and infrastructure, while others struggled with funding and coordination. The movement did not operate as one centrally managed programme. Defeat by Japan in 1894–1895 intensified criticism and demands for deeper political change. The conventional dates, around 1861–1895, cover many projects that began and developed at different times.');
@@ -172,7 +172,7 @@ const BEGINNER_LATE = (() => {
     'Factories and construction attracted people into rapidly expanding urban areas. Their work helped turn investment into buildings, goods and trade. Migration also changed families’ living arrangements and access to jobs. The story of the zones includes both business growth and the everyday adjustments of the people who built and worked in them.');
 
   revise('catalog-E_MOD_BRI', null,
-    'The Belt and Road Initiative was launched in 2013 to promote connections, investment and cooperation across countries. It includes many separate projects and agreements, including transport corridors. Its name covers a broad programme whose scope and participants have changed over time.',
+    'China launched the Belt and Road Initiative in 2013 to finance and build infrastructure abroad, including roads, railways and ports. It covers many separate projects and agreements, and its scope and participants have changed over time.',
     'What infrastructure can change',
     'A railway or port can shorten journeys and lower the cost of moving goods. Those benefits also depend on border procedures, maintenance and connections to businesses that can use the route. A completed structure is only one part of the picture. The financing and operation of a project help determine whether it produces lasting gains.',
     'Different projects, different results',
@@ -182,9 +182,9 @@ const BEGINNER_LATE = (() => {
   // Preserve its existing text rather than introduce new claims about a living political figure.
 
   revise('catalog-S_MODERN', null,
-    'This atlas begins its Modern China section in 1912, when the Republic of China was established and Qing rule ended. The period includes wars, revolutions and far-reaching changes to work and family life. The Republic and the People’s Republic have distinct government histories.',
+    'This atlas begins its Modern China section in 1912, when the Republic of China was established and Qing rule ended. Wars, revolutions, new schools, factories, migration and political campaigns changed daily life. The Republic and the People’s Republic have distinct government histories.',
     'Changes beyond the capital',
-    'Schools, factories, newspapers and migration brought politics into new parts of everyday life. Parties and governments organized people through campaigns and offices that reached deep into society. A village family, a factory worker and a refugee could experience the same turning point very differently. Following their circumstances helps make sense of a history often told through leaders and wars.',
+    'Schools, factories, newspapers and migration brought politics into new parts of everyday life. Parties and governments organized people through campaigns and offices that reached deep into society. A village family, a factory worker and a refugee could experience the same turning point very differently.',
     'Different paths through the twentieth century',
     'Mainland China, Taiwan and Hong Kong experienced different combinations of political change and economic growth. Their histories also remained connected through trade, migration and conflict. The entries separate particular events from changes that developed over decades. The 1912 boundary is a choice for this atlas; many developments in the section had roots in the Qing period.');
 
@@ -203,8 +203,8 @@ const BEGINNER_LATE = (() => {
     'The Long March later became central to Communist accounts of the revolution. Poems and recollections helped turn the retreats into a story of endurance and leadership. Mao’s position strengthened over time, but disputes within the movement continued during the journeys. The broad dates 1934–1936 include several principal army retreats; 1934–1935 usually refers to the best-known column.');
 
   revise('catalog-E_MOD_MAO_DEATH', null,
-    'Mao Zedong died on 9 September 1976. Within a month, Hua Guofeng and his allies arrested the Gang of Four. These events changed the balance of power at the top of the Communist Party. The economic reforms associated with 1978 still lay ahead.',
-    'Who would lead next?',
+    'Mao Zedong died on 9 September 1976. Within a month, Hua Guofeng and his allies arrested the Gang of Four and removed the group from power. The economic reforms associated with 1978 still lay ahead.',
+    'The succession struggle after Mao',
     'Mao had exercised exceptional personal authority. His successors had to decide which policies and officials to retain while presenting themselves as legitimate heirs to the revolution. Arresting the Gang of Four resolved an immediate struggle for power. It did not settle the direction of economic policy or establish lasting agreement about how the leadership should work.',
     'A change that took time',
     'Public mourning emphasized continuity with Mao’s era, while later leaders changed many of its policies. Decisions about reform developed through further arguments and experiments. Mao’s death was a major turning point, but the policies of the following years did not emerge all at once. The 1976 succession crisis and the 1978 shift toward reform are separate milestones.');
@@ -266,7 +266,7 @@ const BEGINNER_LATE = (() => {
     'Investment and migration connected villages, coastal cities and overseas markets. People gained new opportunities to earn money and move for work. Access to jobs, housing and welfare remained uneven, so growth affected households differently. The year 1978 marks an important political turning point in a longer process. Individual reforms had their own starting dates and did not all take effect together.');
 
   revise('ming-wang-yangming', 'Wang Yangming’s Philosophy',
-    'Wang Yangming argued that moral knowledge and action belong together. His account of a breakthrough during exile at Longchang in 1508 became an important part of his reputation. His later teaching challenged influential interpretations of how people should learn to live well.',
+    'Wang Yangming argued that moral knowledge and action belong together. He traced this teaching to a breakthrough during his exile at Longchang in 1508. His later work challenged influential interpretations of how people should learn to live well.',
     'Knowing through action',
     'For Wang, repeating a correct moral statement was not enough. Real understanding had to appear in how a person responded and behaved. This challenged the gap between success in scholarly learning and conduct in everyday life. He also warned that selfish desires could obstruct good judgment; his teaching did not simply tell people to trust every impulse.',
     'Debate within Confucian learning',
@@ -277,14 +277,14 @@ const BEGINNER_LATE = (() => {
     'From storytelling to print',
     'Oral tales, performances and earlier writings had already transformed the historical journey. The printed novel gathered this material into a long narrative that later readers could encounter in a durable form. Illustrations and chapter divisions helped shape that experience. The book is traditionally attributed to Wu Cheng’en, although its authorship remains debated.',
     'Adventure with a satirical edge',
-    'The pilgrims meet powerful figures whose claims invite fear, laughter and criticism. Religious discipline appears alongside appetite and the Monkey King’s unruly energy. These tensions help explain the novel’s imaginative range. Its story offers a view of late Ming literary culture, rather than a factual record of Xuanzang’s travels or religious life in the Tang dynasty.');
+    'The pilgrims meet powerful figures whose claims invite fear, laughter and criticism. Religious discipline appears alongside appetite and the Monkey King’s unruly energy. The novel offers a view of late Ming literary culture, rather than a factual record of Xuanzang’s travels or religious life in the Tang dynasty.');
 
   revise('ming-li-shizhen', 'Li Shizhen’s Compendium of Materia Medica',
     'Li Shizhen’s Bencao gangmu, often called the Compendium of Materia Medica, brought together knowledge about medicinal substances. It appeared in print in 1596, after his death. Li compared inherited writings and tried to correct how substances were named, identified and classified.',
     'Checking knowledge passed down in books',
     'Older descriptions could acquire errors as writers copied them. Li examined this inherited material and reorganized it to make distinctions clearer. His work involved more than collecting additional remedies. It asked how reliable existing descriptions were and how a reader could tell one substance from another. A draft had been completed in 1578, before the first printed edition.',
     'Plants, animals and materials',
-    'The book reached beyond remedies into descriptions of the natural world. Its circulation in East Asia supported further study and adaptation. Its historical importance does not establish that every treatment it records is effective. The work helps us understand how people gathered and evaluated knowledge about substances in its own time.');
+    'The book reached beyond remedies into descriptions of the natural world. Its circulation in East Asia supported further study and adaptation. It does not establish that every treatment it records is effective. The work records how people of its time gathered and evaluated knowledge about substances.');
 
   revise('qing-inner-asia', 'Qing Conquests in Inner Asia',
     'Between 1755 and 1759, Qing campaigns destroyed the Dzungar state and conquered the Tarim Basin. The victories greatly expanded the empire. They also brought mass killing, disease and flight, with devastating consequences for Dzungar communities.',
@@ -309,14 +309,14 @@ const BEGINNER_LATE = (() => {
 
   revise('lu-xun', 'Lu Xun’s A Madman’s Diary (狂人日记)',
     'Published in New Youth (新青年) in May 1918, Lu Xun’s A Madman’s Diary became a founding work of modern Chinese short fiction. Its frightened narrator sees a society built on cannibalism. The disturbing image asks whether accepted morality and family obligations can conceal the destruction of individuals.',
-    'Who is really mad?',
+    'How the narrator challenges society',
     'A classical Chinese preface presents the diary as evidence of illness; the diary itself uses vernacular Chinese, or baihua (白话). The narrator reads a history filled with moral teaching and finds cannibalism beneath its respectable words. His suspicions reach into his own family, and he eventually wonders whether he too has participated. The story makes social criticism uncomfortable: recognizing cruelty does not automatically place the critic outside it.',
-    'Recovery, or a return to conformity?',
+    'What the narrator’s recovery means',
     'The preface reports that the narrator has recovered and gone elsewhere to await an official appointment. Readers can ask whether recovery means accepting the society he once condemned. This information comes before the diary, whose final appeal is to save the children. The two voices leave an unresolved question: can another generation escape inherited cruelty, or will those who recognize it also learn to fit in?',
     'Published in May 1918. Vernacular fiction existed centuries earlier, and the New Culture Movement was already underway. The story is a landmark of the modern short story, not the invention of vernacular writing. The preface concerns an official appointment, not civil service examinations.');
 
   revise('civil-war', 'Chinese Civil War',
-    'The Nationalist-Communist alliance broke apart in 1927, beginning a long civil conflict. Cooperation against Japan interrupted the struggle without resolving it. Major war resumed in 1946. Communist victory on the mainland and the Nationalist government’s relocation to Taiwan made 1949 a decisive turning point.',
+    'The Nationalist-Communist alliance broke apart in 1927, beginning a long civil conflict. Cooperation against Japan interrupted the struggle without resolving it. Major war resumed in 1946. In 1949, Communist forces took control of the mainland and the Nationalist government moved to Taiwan.',
     'Keeping armies in the field',
     'Both sides needed soldiers, food and supplies. Their relationships with civilians involved cooperation as well as coercion. Land policies, inflation and years of warfare affected people’s willingness and ability to support them. Military success depended partly on how well each side could organize these resources and sustain support under severe pressure.',
     'A conflict with lasting consequences',
@@ -346,7 +346,7 @@ const BEGINNER_LATE = (() => {
   // Nixon's existing prose is already plain and its exact dates and diplomatic sequence are retained.
 
   revise('wto-accession', 'China Joins the WTO',
-    'China became a member of the World Trade Organization, or WTO, on 11 December 2001. Membership brought commitments on tariffs, access to markets and trade rules. It was an important step in the country’s growing connections with international production and commerce.',
+    'China became a member of the World Trade Organization, or WTO, on 11 December 2001. Membership required changes to tariffs, market access and trade rules, and tied those domestic reforms to an international agreement.',
     'Trading under agreed rules',
     'More predictable access to markets could help businesses plan investment. China also had to carry out the obligations it had accepted. That required changes in rules and administration over time. Joining the organization was a formal milestone, followed by continuing work to put the agreement into practice.',
     'Different effects on different people',
@@ -376,7 +376,7 @@ const BEGINNER_LATE = (() => {
   revise('kangxi-rule', 'The Kangxi Emperor',
     'Kangxi’s long reign helped secure Qing rule through war, negotiation and support for learning and the arts. Defeating the Three Feudatories and incorporating Taiwan were major turning points. His southern inspection tours also brought the emperor into important commercial regions.',
     'Different ways to exercise authority',
-    'The Qing realm contained different political and religious traditions. Kangxi preserved Manchu imperial identity while supporting classical Chinese learning and presenting himself as a responsible ruler. Military campaigns and cultural patronage helped him reach different groups. These activities belonged to the same effort to strengthen the dynasty’s authority across a large and varied empire.',
+    'The Qing empire contained different political and religious traditions. Kangxi preserved Manchu imperial identity while supporting classical Chinese learning and presenting himself as a responsible ruler. Military campaigns and cultural patronage helped him reach different groups. These activities belonged to the same effort to strengthen the dynasty’s authority across a large and varied empire.',
     'Looking at an imperial tour',
     'Paintings of inspection tours show orderly cities, landscapes and the emperor’s progress through them. They present the image the court wanted to project. Waterways and commerce also had practical importance to government. Kangxi took the throne in 1661, while his reign era began in 1662. Regents governed during his early years, before he exercised personal rule.');
 

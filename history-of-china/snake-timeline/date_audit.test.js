@@ -8,11 +8,11 @@ const core=require('./history_data');
 const byId=id=>data.cards.find(x=>x.id===id);
 
 test('Every card has a date review and original source subjects remain available',()=>{
- assert.equal(data.cards.length,207);
+ assert.equal(data.cards.length,221);
  assert(!data.cards.some(card=>card.id==='taiwan-democratization'));
  assert(audit.records.some(card=>card.id==='taiwan-democratization'),'Removed reading card remains in the historical audit');
  assert.equal(new Set(audit.records.map(x=>x.id)).size,207);
- for(const card of data.cards){if(card.kind==='theme'){assert.equal(card.showTimeline,false);assert.match(card.note,/thematic introduction/);continue;}assert(audit.records.some(x=>x.id===card.id));assert(card.dateReview.sources.length);}
+ for(const card of data.cards){if(card.kind==='theme'){assert.equal(card.showTimeline,false);assert.match(card.note,/thematic introduction/);continue;}assert(audit.records.some(x=>x.id===card.id)||card.cambridge,card.id+' date review');assert(card.dateReview.sources.length);}
  assert.equal(data.sourceCount,111);
 });
 test('Mainland Republic period agrees in the ribbon and reading card',()=>{

@@ -1,7 +1,7 @@
-const RESEARCH_PACKS = [EARLY_RESEARCH, MEDIEVAL_RESEARCH, MEDIEVAL_CULTURE, LATE_IMPERIAL_RESEARCH, MODERN_RESEARCH, CHART_RESEARCH];
+const RESEARCH_PACKS = [EARLY_RESEARCH, MEDIEVAL_RESEARCH, MEDIEVAL_CULTURE, LATE_IMPERIAL_RESEARCH, MODERN_RESEARCH, CHART_RESEARCH, CAMBRIDGE_RESEARCH];
 Object.assign(PINYIN, ...RESEARCH_PACKS.map(pack => pack.pinyin));
 const RESEARCH_EXHIBITION = expandHistory(HISTORY, HISTORY_CATALOG, [...SUPPLEMENTAL_HISTORY, ...TANG_RESEARCH.events, ...RESEARCH_PACKS.flatMap(pack => pack.events)], mergeHistoryRevisions(TANG_RESEARCH.revisions, RESEARCH_REVISIONS, ...RESEARCH_PACKS.map(pack => pack.revisions)));
-const EXHIBITION = applyBeginnerEdition(RESEARCH_EXHIBITION, BEGINNER_EARLY, BEGINNER_MIDDLE, BEGINNER_LATE, SIGNIFICANCE_EARLY, SIGNIFICANCE_MIDDLE, SIGNIFICANCE_LATE);
+const EXHIBITION = applyBeginnerEdition(RESEARCH_EXHIBITION, BEGINNER_EARLY, BEGINNER_MIDDLE, BEGINNER_LATE);
 for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_IMAGES[item.id];
 (() => {
   'use strict';
@@ -15,7 +15,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
   ];
   let activeSection='all';
   let returnToCollection=false,storyDismissed=false;
-  const readingDialog=document.createElement('dialog');readingDialog.className='reading-dialog';readingDialog.setAttribute('aria-label','Expanded story');document.body.append(readingDialog);
+  const readingDialog=document.createElement('dialog');readingDialog.className='reading-dialog';readingDialog.setAttribute('aria-label','Expanded entry');document.body.append(readingDialog);
   let detailHome=null,readingScroll=0;
   function expandStory(){
     detailHome=detail.parentNode;readingScroll=detail.scrollTop;
@@ -54,16 +54,16 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     if(!item){
       detail.classList.remove('illustrated','mobile-open');detail.removeAttribute('role');detail.removeAttribute('aria-modal');detail.removeAttribute('aria-label');syncPhoneSheet();
       const body=html('div','card-body');
-      body.append(html('p','eyebrow','WELCOME TO THE HISTORY ATLAS'),html('h3','','Explore Chinese history'),html('p','card-description','Choose a period or a mark on the ribbon to open a story with pictures and clear explanations.'));
-      const actions=html('div','welcome-actions'),early=html('button','start-early','Start with Early China'),browse=html('button','browse-stories','Browse all stories');
+      body.append(html('p','eyebrow','THE HISTORY ATLAS'),html('h3','','Explore Chinese history'),html('p','card-description','Choose a period or a mark on the timeline to see its dates, images, sources, and a short explanation.'));
+      const actions=html('div','welcome-actions'),early=html('button','start-early','Start with Early China'),browse=html('button','browse-stories','Browse all entries');
       early.onclick=()=>{selectSection('early');$('#section-nav [data-section="early"]').focus();};browse.onclick=()=>{$('#index-toggle').click();};actions.append(early,browse);body.append(actions);detail.append(body);return;
     }
     detail.classList.toggle('illustrated',!!item.image);detail.scrollTop=0;detail.style.setProperty('--accent',item.color);
-    const top=html('div','card-top');top.append(html('span','',item.catalogOnly&&!item.ribbon?'FROM THE COLLECTION':item.kind==='event'?'A MOMENT IN HISTORY':item.kind==='concurrent'?'ALONGSIDE THE THREAD':'ON THE THREAD'),html('span','','EXPLORE / '+String(EXHIBITION.all.indexOf(item)+1).padStart(2,'0')));
-    if(item.significance){const jump=html('button','significance-jump','Why it matters ↓');jump.onclick=()=>{const section=detail.querySelector('.card-significance');section.focus({preventScroll:true});detail.scrollTo({top:section.offsetTop-top.offsetHeight-16,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});};top.append(jump);}
-    const expand=html('button','detail-expand','Expand ↗');expand.setAttribute('aria-label','Expand story');expand.onclick=expandStory;top.append(expand);
+    const cardTypes={dynasty:'DYNASTY OR STATE',period:'HISTORICAL PERIOD',event:'EVENT',culture:'PEOPLE AND CULTURE',world:'WORLD CONTEXT'};
+    const top=html('div','card-top');top.append(html('span','',cardTypes[item.category]||'HISTORY ENTRY'),html('span','','ENTRY '+String(EXHIBITION.all.indexOf(item)+1).padStart(2,'0')+' OF '+EXHIBITION.all.length));
+    const expand=html('button','detail-expand','Open full card');expand.setAttribute('aria-label','Open full card');expand.onclick=expandStory;top.append(expand);
     const close=html('button','detail-close','×');close.setAttribute('aria-label','Close details');close.onclick=closeDetail;top.append(close);
-    const art=html('div','card-art');art.setAttribute('aria-hidden','true');const character=html('span','card-character',item.han);character.lang='zh-Hans';const glyph=html('div','card-glyph'),glyphPinyin=html('span','glyph-pinyin',PINYIN[item.han]);glyphPinyin.lang='zh-Latn';glyph.append(character,glyphPinyin);art.append(glyph,html('span','card-era','China / A history'));
+    const art=html('div','card-art');art.setAttribute('aria-hidden','true');const character=html('span','card-character',item.han);character.lang='zh-Hans';const glyph=html('div','card-glyph'),glyphPinyin=html('span','glyph-pinyin',PINYIN[item.han]);glyphPinyin.lang='zh-Latn';glyph.append(character,glyphPinyin);art.append(glyph,html('span','card-era','Chinese history'));
     const body=html('div','card-body');body.append(html('p','card-date',dates(item)),html('h3','',item.name));if(item.nameZh){const chinese=html('p','card-chinese-name',item.nameZh);chinese.lang='zh-Hans';const reading=html('p','card-pinyin',PINYIN[item.nameZh]);reading.lang='zh-Latn';body.append(chinese,reading);}body.append(html('p','card-description',item.description));
     if(item.image){
       const figure=html('figure','card-photo'),photo=html('img');
@@ -77,8 +77,8 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     }
     if(item.sections){for(const section of item.sections){const block=html('section','card-analysis');block.append(html('h4','',section.title),html('p','',section.text));body.append(block);}}
     if(item.id==='catalog-C_BEIJING_YUAN'){
-      const section=html('section','card-analysis');section.append(html('h4','','Marco Polo and the literary afterlife of Xanadu'));
-      section.append(html('p','','Marco Polo’s travel account helped shape European images of the Yuan world. Read it as a mixture of observation, reported information and storytelling. Coleridge’s “Kubla Khan,” beginning “In Xanadu,” belongs to that later literary imagination. Xanadu is Shangdu (上都), the Yuan summer capital north of the Great Wall; Dadu (大都) is a different city. The poem is not an eyewitness description.'));
+      const section=html('section','card-analysis');section.append(html('h4','','Marco Polo and later stories about Xanadu'));
+      section.append(html('p','','Marco Polo’s travel account helped shape European images of the Yuan world. The account mixes observation, reported information, and storytelling. Coleridge’s “Kubla Khan,” beginning “In Xanadu,” came from that later literary tradition. Xanadu is Shangdu (上都), the Yuan summer capital north of the Great Wall; Dadu (大都) is a different city. The poem was written centuries later.'));
       for(const [label,url] of [['Explore Marco Polo’s Travels · Library of Congress ↗','https://www.loc.gov/resource/gdcwdl.wdl_14300/'],['Read “Kubla Khan” · Samuel Taylor Coleridge ↗','https://www.poetryfoundation.org/poems/43991/kubla-khan'],['Explore historical Xanadu (Shangdu) · UNESCO ↗','https://whc.unesco.org/en/list/1389/']]){const a=html('a','source-link',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';section.append(a);}body.append(section);
     }
     if(item.id==='xuanzang-return'){
@@ -86,9 +86,19 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       section.append(html('p','','William Dalrymple, The Golden Road: How Ancient India Transformed the World. Chapter 4: “The Sea of Jewels: Exploring the Great Library of Nalanda.”'));
       const link=html('a','source-link','View the book · Bloomsbury ↗');link.href='https://www.bloomsbury.com/us/golden-road-9781639734153/';link.target='_blank';link.rel='noopener noreferrer';section.append(link);body.append(section);
     }
+    if(['catalog-E_QING_OPIUM','catalog-E_QING_OPIUM2'].includes(item.id)){
+      const section=html('section','card-analysis card-reading-list');section.append(html('h4','','Recommended reading'));
+      section.append(html('p','','Stephen R. Platt, Imperial Twilight: The Opium War and the End of China’s Last Golden Age. A history of the trade, people and political decisions leading to the First Opium War.'));
+      const link=html('a','source-link','About the book · Wikipedia ↗');link.href='https://en.wikipedia.org/wiki/Imperial_Twilight';link.target='_blank';link.rel='noopener noreferrer';section.append(link);body.append(section);
+    }
+    if(item.id==='catalog-E_QING_TAIPING'){
+      const section=html('section','card-analysis card-reading-list');section.append(html('h4','','Recommended reading'));
+      section.append(html('p','','Stephen R. Platt, Autumn in the Heavenly Kingdom: China, the West, and the Epic Story of the Taiping Civil War. A narrative history of the conflict, its leaders and the role of Western powers.'));
+      const link=html('a','source-link','View the book · Penguin Random House ↗');link.href='https://www.penguinrandomhouse.com/books/131825/autumn-in-the-heavenly-kingdom-by-stephen-r-platt/9780307957597';link.target='_blank';link.rel='noopener noreferrer';section.append(link);body.append(section);
+    }
     const map=HISTORY_MAPS[item.id];
     if(map){
-      const section=html('section','card-map');section.append(html('h4','','Place this story on the map'));
+      const section=html('section','card-map');section.append(html('h4','','Map'));
       const link=html('a'),img=html('img');link.href=map.src;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Open full-size map: '+map.title);
       img.src=map.src;img.alt=map.title;img.loading='lazy';link.append(img);
       const caption=html('p','',map.caption),source=html('a','',map.credit+' · '+map.license),license=html('a','','License');source.href=map.source;license.href=map.licenseUrl;
@@ -96,15 +106,13 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       img.addEventListener('error',()=>{img.hidden=true;link.textContent='Open map image ↗';},{once:true});
       const enlarge=html('a','map-enlarge','Open map at full size ↗');enlarge.href=map.src;enlarge.target='_blank';enlarge.rel='noopener noreferrer';section.append(link,enlarge,caption,source,document.createTextNode(' · '),license);body.append(section);
     }
-    if(item.significance){const block=html('section','card-analysis card-significance');block.tabIndex=-1;block.append(html('h4','','Why it matters'),html('p','',item.significance));body.append(block);}
     const sources=html('details','card-sources');sources.append(html('summary','','Sources and date notes'));
     if(item.note)sources.append(html('p','card-note',item.note));
     for(const url of item.sources||[]){if(!/^https:\/\//.test(url))continue;const source=html('a','source-link',item.sourceLabels?.[url]?item.sourceLabels[url]+' ↗':url.includes('en.wikipedia.org')?'Read on Wikipedia ↗':'Read source · '+new URL(url).hostname.replace('www.','')+' ↗');source.href=url;source.target='_blank';source.rel='noopener noreferrer';sources.append(source);}
     const addedSources=new Set(item.sources||[]);
-    for(const ref of item.significanceSources||[]){if(addedSources.has(ref.url)||!/^https:\/\//.test(ref.url))continue;const source=html('a','source-link',ref.label+' ↗');source.href=ref.url;source.target='_blank';source.rel='noopener noreferrer';sources.append(source);addedSources.add(ref.url);}
     body.append(sources);
-    if(item.related?.length){const related=html('div','related-items');related.append(html('p','eyebrow','EXPLORE THIS PERIOD'));for(const id of item.related){const other=EXHIBITION.all.find(d=>d.id===id),button=html('button','',other.name);button.onclick=()=>select(id,false,button);related.append(button);}body.append(related);}
-    const nav=html('div','card-navigation');nav.append(html('span','','KEEP EXPLORING'));const arrows=html('div');const prev=html('button','','←'),next=html('button','','→');prev.setAttribute('aria-label','Previous item');next.setAttribute('aria-label','Next item');
+    if(item.related?.length){const related=html('div','related-items');related.append(html('p','eyebrow','RELATED ENTRIES'));for(const id of item.related){const other=EXHIBITION.all.find(d=>d.id===id),button=html('button','',other.name);button.onclick=()=>select(id,false,button);related.append(button);}body.append(related);}
+    const nav=html('div','card-navigation');nav.append(html('span','','PREVIOUS / NEXT'));const arrows=html('div');const prev=html('button','','←'),next=html('button','','→');prev.setAttribute('aria-label','Previous item');next.setAttribute('aria-label','Next item');
     const items=[...EXHIBITION.all].sort((a,b)=>a.start-b.start),index=items.findIndex(d=>d.id===selected);prev.disabled=index===0;next.disabled=index===items.length-1;
     prev.onclick=()=>{select(items[index-1].id,true);if(!matchMedia('(max-width:760px)').matches)detail.querySelector('[aria-label="Previous item"]').focus({preventScroll:true});};next.onclick=()=>{select(items[index+1].id,true);if(!matchMedia('(max-width:760px)').matches)detail.querySelector('[aria-label="Next item"]').focus({preventScroll:true});};arrows.append(prev,next);nav.append(arrows);body.append(nav);detail.append(top,art,body);
     if(open&&matchMedia('(max-width:760px)').matches){detail.classList.add('mobile-open');detail.setAttribute('role','dialog');detail.setAttribute('aria-modal','true');detail.setAttribute('aria-label',item.name);close.focus();}else if(!detail.classList.contains('mobile-open')){detail.removeAttribute('role');detail.removeAttribute('aria-modal');}
@@ -121,7 +129,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     const periods=EXHIBITION.periods.filter(item=>(item.ranges||[[item.start,item.end]]).some(([a,b])=>overlaps(a,b)));
     const states=EXHIBITION.states.filter(item=>overlaps(item.start,item.end));
     const events=EXHIBITION.events.filter(item=>overlaps(item.start,item.end)&&!/unknown|legendary/i.test(item.dateLabel||''));
-    const g=geometry,svg=el('svg',{viewBox:`0 0 ${g.width} ${g.height}`,role:'group','aria-label':'Chinese history, a continuous serpentine timeline. Time runs left to right, then follows each turn.'});
+    const g=geometry,svg=el('svg',{viewBox:`0 0 ${g.width} ${g.height}`,role:'group','aria-label':'Chinese history timeline. Time runs left to right, then continues on the next row.'});
     const defs=el('defs');const pattern=el('pattern',{id:'uncertain',width:7,height:7,patternUnits:'userSpaceOnUse',patternTransform:'rotate(35)'});pattern.append(el('rect',{width:7,height:7,fill:'#b39c73'}),el('rect',{width:2,height:7,fill:'#d7c9ac'}));defs.append(pattern);svg.append(defs);
     const backdrop=el('g');for(let row=0;row<g.rows;row++){const y=g.top+row*g.radius*2;backdrop.append(el('line',{x1:0,y1:y+g.radius,x2:g.width,y2:y+g.radius,stroke:'#dedbcf','stroke-width':.7}));const label=el('text',{x:2,y:y-54,fill:'#a09e90','font-family':'DM Sans, sans-serif','font-size':8},String(row+1).padStart(2,'0'));backdrop.append(label);}svg.append(backdrop);
     svg.append(el('path',{d:g.path(),fill:'none',stroke:'#d7d2c4','stroke-width':19}));
@@ -139,7 +147,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     divider.append(el('path',{d:dividerPath,stroke:'#f4f0e7','stroke-width':5}),el('path',{d:dividerPath,stroke:'#584e38','stroke-width':1.5}));svg.append(divider);
     }
     // Direction arrows are read from the same tangent as the ribbon.
-    for(let row=0;row<g.rows;row++){const d=g.rowStart(row)+(g.straight+(row===0?g.extra:0))*.45,p=g.at(d);const arrow=el('path',{d:`M-4,-3 L0,0 L-4,3`,transform:`translate(${p.x},${p.y}) rotate(${p.tx<0?180:0})`,fill:'none',stroke:'#f4f0e7','stroke-width':1.2,opacity:.8});svg.append(arrow);}
+    for(let row=0;row<g.rows;row++){const d=g.rowStart(row)+g.rowSpan(row)*.45,p=g.at(d);const arrow=el('path',{d:`M-4,-3 L0,0 L-4,3`,transform:`translate(${p.x},${p.y}) rotate(${p.tx<0?180:0})`,fill:'none',stroke:'#f4f0e7','stroke-width':1.2,opacity:.8});svg.append(arrow);}
     const leaderSegments=[],namedPoints=[],markers=[],placed=[],labels=el('g',{class:'timeline-labels'}),leaders=el('g');
     const ribbonPoints=Array.from({length:Math.ceil(g.length/5)+1},(_,i)=>g.at(Math.min(g.length,i*5)));
     const statePoints=showStates?states.flatMap(item=>{const a=g.distance(item.start),b=g.distance(item.end),n=Math.max(1,Math.ceil((b-a)/2));return Array.from({length:n+1},(_,i)=>({...g.at(a+(b-a)*i/n,item.offset),id:item.id}));}):[];
@@ -266,7 +274,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     clusterDialog.setAttribute('aria-labelledby',heading.id);
     const close=html('button','cluster-close','Close');close.setAttribute('aria-label','Close event list');close.onclick=()=>clusterDialog.close();
     const range=html('p','cluster-date-range','Starting dates: '+fmt(cluster.start)+(cluster.latestStart!==cluster.start?' – '+fmt(cluster.latestStart):''));
-    const intro=html('p','cluster-intro','These events sit close together at this scale. Choose one to read its story. Dates and uncertainty are shown for each event.');
+    const intro=html('p','cluster-intro','These events sit close together at this scale. Choose one to open its card. Each card shows the date and any uncertainty.');
     const list=html('ol','cluster-events');
     for(const item of items){const row=html('li'),button=html('button');button.dataset.record=item.id;button.append(html('span','cluster-event-date',dates(item)+(isUncertain(item)?item.id==='confucius'?' · traditional date':' · approximate date':'')),html('strong','',item.name));button.onclick=()=>{restoreClusterFocus=false;clusterDialog.close();select(item.id,false,trigger);};row.append(button);list.append(row);}
     if(cluster.approx)intro.append(html('span','cluster-uncertainty',' This group includes approximate or traditional dates, shown with broken marks.'));
@@ -293,7 +301,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     const query=normalize($('#search').value.trim()),category=$('#category').value;
     const titleMatch=item=>normalize(item.name+' '+(item.nameZh||'')+' '+(PINYIN[item.nameZh]||'')).includes(query)?0:1;
     const items=EXHIBITION.all.filter(d=>(category==='all'||d.category===category)&&normalize([d.name,d.nameZh||'',PINYIN[d.nameZh]||'',d.start,d.end,d.description,d.note||'',...(d.searchAliases||[]),...(d.sections||[]).map(s=>s.title+' '+s.text)].join(' ')).includes(query)).sort((a,b)=>titleMatch(a)-titleMatch(b)||a.start-b.start||b.importance-a.importance);
-    $('#search-results').replaceChildren();$('#collection-count').textContent=items.length+' of '+EXHIBITION.all.length+' entries · overview and expanded research';
+    $('#search-results').replaceChildren();$('#collection-count').textContent=items.length+' of '+EXHIBITION.all.length+' entries';
     for(const item of items){
       const b=html('button','collection-entry');b.dataset.record=item.id;
       if(item.image){
@@ -303,7 +311,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       const copy=html('span','result-copy');copy.append(html('small','',dates(item)),html('strong','result-title',item.name));
       if(item.nameZh){const zh=html('span','result-chinese',item.nameZh);zh.lang='zh-Hans';const reading=html('span','result-pinyin',PINYIN[item.nameZh]);reading.lang='zh-Latn';copy.append(zh,reading);}
       copy.append(html('span','result-summary',item.description));
-      copy.append(html('span','result-open','Read story →'));
+      copy.append(html('span','result-open','Read entry →'));
       b.append(copy);b.onclick=()=>{
         returnToCollection=true;showCollection(false);select(item.id,false,b);
         if(!matchMedia('(max-width:760px)').matches){
@@ -318,7 +326,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     const view=currentWindow();
     document.querySelectorAll('#section-nav button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.section===activeSection)));
     $('#view-range').textContent=view.name+' · '+view.label;
-    $('#view-note').textContent=activeSection==='all'?'': 'Focused view. The time scale expands to this range; reading cards retain their full dates.';
+    $('#view-note').textContent=activeSection==='all'?'': 'This range uses more space on the timeline. Cards still show complete dates.';
     const entries=activeSection==='all'?[]:view.ids.map(id=>{const item=EXHIBITION.all.find(item=>item.id===id);return{id,name:item.name,nameZh:item.nameZh,pinyin:PINYIN[item.nameZh],date:dates(item)};});
     $('#era-nav').hidden=activeSection==='all';$('#era-nav').replaceChildren();$('#era-nav').dataset.view=activeSection;$('#era-nav').dataset.count=entries.length;
     for(const entry of entries){
@@ -343,7 +351,6 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
   matchMedia('(max-width:760px)').addEventListener('change',()=>{const scroll=detail.scrollTop;if(readingDialog.open)collapseStory();detail.classList.remove('mobile-open');updateDetail(!!selected&&!storyDismissed);detail.scrollTop=scroll;});
   window.addEventListener('scroll',()=>{const active=document.activeElement;if(active?.classList.contains('timeline-item'))tooltip(EXHIBITION.all.find(d=>d.id===active.dataset.item),active);else tip.hidden=true;},{passive:true});let previousWidth=0,resizeFrame=0;new ResizeObserver(()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(()=>{if(previousWidth!==chart.clientWidth){previousWidth=chart.clientWidth;render();}});}).observe(chart);
   const markerLegend=$('.legend-dot').parentElement;markerLegend.replaceChildren(html('i','legend-tick'),document.createTextNode('An event mark · numbers open a group'));
-  $('.chart-caption').textContent='Distance along the ribbon is proportional to elapsed time, including the turns. Short marks show events; broken marks indicate approximate dates. Numbers open groups of nearby events, with a line spanning their starting dates. Selecting an event highlights its duration when known. Thin parallel lines show overlapping states and periods.';
   $('.brand').onclick=()=>{
     selected=null;activeSection='all';lastTrigger=null;lastTriggerId=null;tip.hidden=true;
     $('#search').value='';$('#category').value='all';showCollection(false);

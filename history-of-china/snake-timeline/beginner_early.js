@@ -78,10 +78,10 @@ var BEGINNER_EARLY = (() => {
     'Starting again in the south',
     'The southern court kept the Jin name, but depended on families who had moved south and powerful people already living there. It had to build new agreements to govern. The names Western Jin and Eastern Jin describe this major change in territory and support, as well as a move of the court. The later dynasty could not simply recreate the world it had lost.');
   add('sixteen', null,
-    'The Sixteen Kingdoms were competing northern states of the fourth and early fifth centuries. Their rulers drew on mixed armies and shifting alliances within the former Jin realm. Older accounts use the derogatory label “Five Barbarians” for Xiongnu, Jie, Xianbei, Di and Qiang groups. These were not five united peoples carrying out one invasion.',
+    'The Sixteen Kingdoms were competing northern states of the fourth and early fifth centuries. Their rulers drew on mixed armies and shifting alliances within former Jin territories. Older accounts use the derogatory label “Five Barbarians” for Xiongnu, Jie, Xianbei, Di and Qiang groups. These were not five united peoples carrying out one invasion.',
     'How rulers built support',
     'Founders from different communities adopted imperial titles, recruited officials and governed mixed populations. Their family origins alone cannot explain how their states worked. Alliances among commanders, inherited methods of government and support for religious communities helped rulers gather authority. Loyalties could shift as courts rose and fell.',
-    'Why sixteen?',
+    'How historians count the Sixteen Kingdoms',
     'Later historians selected sixteen regimes to organize a much more crowded history. The name does not mean sixteen governments all existed at once, and other significant states can also be counted. Looking at individual courts reveals different choices about governing and survival. The period included more than warfare: officials and communities continued building institutions even while rulers competed.');
   add('north-south', 'Northern and Southern Dynasties',
     'From 420, successive southern dynasties ruled alongside courts in the north. Both regions developed centres of government and culture. Migration, diplomacy and war connected them, even while rulers competed for territory and the right to govern.',
@@ -150,7 +150,7 @@ var BEGINNER_EARLY = (() => {
     'Larger states absorbed weaker neighbours during the Warring States period. Seven became the main rivals: Qin, Chu, Qi, Yan, Han, Zhao and Wei. Other states also survived, and the seven did not all emerge at once.',
     'Drawing households into war',
     'Rulers registered families, collected taxes and required military service. Farming and effective local government supplied armies that could conquer more land. These methods differed between states. Inherited privilege, ceremonies and local interests continued to matter, even as governments gained more direct control over ordinary people’s work and service.',
-    'How could order be restored?',
+    'Competing ideas about restoring order',
     'Thinkers offered rival answers to the violence around them. Some stressed moral education, others care for all people, strong institutions or rewards and punishments. Their disagreements addressed practical problems of cooperation and rule. Later writers grouped these arguments into schools, but the texts within each group could differ. Teachers also depended on supporters who helped their ideas travel between courts.',
     '481 BCE is the start used here; 475 BCE and 403 BCE are other common boundaries. These dates mark different ways of dividing the period, not rival dates for one event. The seven main states were not the only ones.');
   add('catalog-F_SUN', null,
@@ -158,7 +158,7 @@ var BEGINNER_EARLY = (() => {
     'Winning without wasting strength',
     'A long campaign or costly siege could weaken a ruler even if his army won. Intelligence and deception offered ways to act with less risk. The text treats restraint as a practical military choice. It accepts warfare while asking commanders to avoid unnecessary losses and expense.',
     'A text people argued with',
-    'Other early thinkers, including Xunzi, questioned deception on moral and practical grounds. Ancient Chinese writers did not all share one view of strategy. Modern adaptations sometimes turn sayings from the Art of War into business advice. The original arguments concerned rulers and armies whose choices depended on supplies, uncertainty and the cost of fighting. Those circumstances help explain what its advice meant.');
+    'Other early thinkers, including Xunzi, questioned deception on moral and practical grounds. Ancient Chinese writers did not all share one view of strategy. Modern adaptations sometimes turn sayings from the Art of War into business advice. Its advice addressed rulers and armies facing supply limits, uncertainty and the cost of war.');
   add('catalog-G_ALEX', null,
     'Alexander the Great (356–323 BCE) conquered the Achaemenid Persian Empire and led Macedonian armies into Central Asia and northwestern South Asia. He lived during China’s Warring States period, but his campaigns did not reach China.',
     'After Alexander’s death',
@@ -170,17 +170,17 @@ var BEGINNER_EARLY = (() => {
     'The daily work of empire',
     'Officials registered households, kept legal records and arranged the movement of goods. At the local level, they turned imperial commands into decisions about taxes, compulsory service and disputes. The emperor held the highest authority, but needed these offices and their staff to reach ordinary families. Surviving documents show how much imperial rule relied on routine work.',
     'An ambition later rulers inherited',
-    'Later dynasties repeatedly sought to govern one realm, even after periods of division. Qin and Han offered examples of how such rule might work. Their methods were adapted to changing military needs, tax income and society. The persistence of that ambition did not mean uninterrupted unity: rival states could all claim a right to the same imperial inheritance.');
+    'Later dynasties repeatedly sought to govern one empire, even after periods of division. Qin and Han offered examples of how such rule might work. Their methods were adapted to changing military needs, tax income and society. The persistence of that ambition did not mean uninterrupted unity: rival states could all claim a right to the same imperial inheritance.');
   add('catalog-R_HAN_W', null,
     'Western Han combined districts governed by appointed officials with kingdoms held by royal relatives. Emperor Wu, who reigned 141–87 BCE, expanded campaigns against the Xiongnu and sent diplomatic missions west. These commitments helped connections later called the Silk Roads grow, while increasing the costs of government.',
     'Keeping powerful allies in check',
     'Giving supporters kingdoms helped the early rulers secure their position. Those kingdoms could later threaten the court. After the rebellion of seven kingdoms in 154 BCE, the emperor further reduced their independence. Arrangements that had rewarded allies after conquest became problems for later rulers seeking firmer control.',
-    'Who paid for expansion?',
+    'Taxes, monopolies, and the cost of expansion',
     'Emperor Wu’s armies and frontier activity required continuing supplies and money. Government monopolies and other ways of raising revenue provoked disagreement. Support for classical learning accompanied these policies without replacing law or military force. Critics could object to the burden on households while still supporting imperial government. Debate about good rule included the practical question of what people should have to pay.',
     '206 BCE–9 CE is the conventional range used here. Liu Bang became emperor in 202 BCE. Institutions and territorial reach changed substantially during Western Han.');
   add('catalog-R_HAN_E', null,
     'Liu Xiu proclaimed a restoration of Han in 25 CE and ruled from Luoyang. Civil war had changed alliances and local power, so bringing back the Han name did not restore everything that had existed before. The dynasty lasted until 220 CE, with commanders increasingly controlling its final decades.',
-    'Who had the emperor’s ear?',
+    'Rival groups at the imperial court',
     'Imperial relatives, empresses’ families, eunuchs and officials competed for access to the ruler. Appointments linked palace struggles to supporters and resources outside it. Powerful local families supplied knowledge and influence that the court needed, but could not always control. These relationships affected how government worked far beyond the palace.',
     'Life beyond the final wars',
     'The dynasty’s collapse can overshadow two centuries of writing, skilled production and contact between regions. Ban Zhao’s historical work and Zhang Heng’s technical inquiries belong to this longer history. The final breakdown raises a separate question: how did the court lose its ability to manage succession, armed commanders and competing interests? Earlier achievements did not vanish because that political order eventually failed.');
@@ -198,7 +198,7 @@ var BEGINNER_EARLY = (() => {
     'Calling this a complete victory for Confucianism oversimplifies Han rule. Courts continued to use administrative law, punishment and other intellectual traditions. Some specialists also interpreted relationships between human affairs and the wider universe. Certain texts and teachers became more influential, but their meanings remained contested. Han government was shaped by this mixture, rather than by one exclusive doctrine.',
     '136 BCE marks official promotion of the Five Classics. The imperial academy followed in 124 BCE; neither step imposed one exclusive teaching everywhere.');
   add('catalog-E_HAN_2', null,
-    'Zhang Qian set out on his first western mission in 138 BCE, seeking connections with Central Asian societies for the Han court. His journey became a landmark in a wider period of diplomacy and frontier expansion. Earlier exchanges and the people living along the routes had already made long-distance travel possible.',
+    'Zhang Qian set out on his first western mission in 138 BCE, seeking allies for the Han court in Central Asia. His reports gave Han rulers information about distant peoples, resources and possible diplomatic partners. Earlier exchanges and the people living along the routes had already made long-distance travel possible.',
     'Looking for allies',
     'The Han court wanted allies against the Xiongnu. Its envoys gathered information about distant peoples and resources while carrying gifts. Merchants used opportunities created by these political relationships, though wars could also obstruct movement. Trade and diplomacy developed within the same world as military rivalry.',
     'Many routes and many hands',
@@ -208,7 +208,7 @@ var BEGINNER_EARLY = (() => {
     'Finding words for new ideas',
     'Translators had to explain rebirth, liberation from suffering and disciplined religious life using unfamiliar languages and existing Chinese words. This involved choices and discussion. An Shigao, a translator active in the second century, gives us a firmer historical reference than a single story about Buddhism’s arrival.',
     'Communities grew gradually',
-    'Buddhist practitioners at one centre do not prove that the wider population shared their beliefs. Support from rulers also varied. Religious communities needed patrons, teachers and continuing contact across borders. Later stories about emperors discovering Buddhism helped explain its place in China, but the growth of the religion depended on the slower work of translating, teaching and sustaining those communities.');
+    'Buddhist practitioners at one centre do not prove that the wider population shared their beliefs. Support from rulers also varied. Religious communities needed patrons, teachers and continuing contact across borders. Later stories placed Buddhism within Chinese imperial history, while the religion spread through the slower work of translating, teaching and sustaining communities.');
   add('catalog-C_QIN', null,
     'Thousands of terracotta soldiers, horses and other figures form part of the First Emperor’s enormous burial complex. Construction began before Qin unified the rival kingdoms and continued into the end of his reign. The date 210 BCE marks his death, rather than the making of every figure.',
     'An army for the afterlife',
@@ -236,7 +236,7 @@ var BEGINNER_EARLY = (() => {
   add('catalog-E_3K_1', null,
     'In 220, Cao Pi accepted the Han emperor’s abdication and founded Wei. Han’s control had already weakened over many years. Cao Cao had built a powerful military government while keeping the emperor and issuing decisions in his name.',
     'The emperor’s name still mattered',
-    'Controlling the emperor allowed Cao Cao to authorize appointments and campaigns without immediately replacing Han. The abdication later gave Cao Pi a claim to a lawful transfer of rule. This ceremony helped explain the new dynasty’s authority to officials and rivals. Possessing military power and being accepted as the rightful ruler were connected, but different, problems.',
+    'Controlling the emperor allowed Cao Cao to authorize appointments and campaigns without immediately replacing Han. The abdication later gave Cao Pi a claim to a lawful transfer of rule. The ceremony presented the new dynasty as legitimate to officials and rivals. Possessing military power and being accepted as the rightful ruler were connected, but different, problems.',
     'Several successors to Han',
     'Shu and Wu developed their own courts and claims after the transfer. Han’s methods of government and imperial language remained useful to several rival states. The dynasty’s formal end did not make its inheritance disappear. The date 220 marks the end of the Han ruling house within a division of power that had already advanced much further on the ground.');
   add('catalog-E_3K_2', null,
@@ -274,13 +274,13 @@ var BEGINNER_EARLY = (() => {
     'Claiming an imperial inheritance',
     'The Han name and claims about ancestry connected the new court to an established tradition of empire. They offered a way to seek support beyond the founder’s original followers. The court could use inherited titles and institutions rather than rejecting everything associated with earlier rulers. Its past was part of its argument for governing in the present.',
     'One name covers several changes',
-    'Rulers, capitals and territory changed during the state’s history. The combined name makes those phases easier to follow, but can also hide their differences. Later Zhao was a separate regime, despite the shared word Zhao. These distinctions help explain a period in which military alliances were unstable and rival courts repeatedly sought the same imperial authority.');
+    'Rulers, capitals and territory changed during the state’s history. The combined name makes those phases easier to follow, but can also hide their differences. Later Zhao was a separate regime, despite the shared word Zhao. Military alliances shifted, and rival courts repeatedly sought the same imperial authority.');
   add('catalog-R_SIXTEEN_LATER_ZHAO', null,
     'Shi Le and his successors made Later Zhao a major power in the north. The Buddhist monk Fotudeng developed close relationships with its rulers. Court support helped Buddhist institutions gain influence during the state’s short political life.',
     'A monk at court',
     'Religious biographies credit Fotudeng with ritual powers and influence over rulers. Miracles in these stories cannot be independently confirmed. The accounts do show what people expected religious figures to offer, including protection for rulers and their government. Personal access to the court helped religious communities secure support, alongside the spread of texts and teachings.',
     'What survived the state',
-    'Monks, disciples and stories could travel beyond Later Zhao’s borders. The religious influence supported by its rulers could therefore continue after the dynasty fell. This helps explain why a short-lived court could matter to a longer cultural history. Political defeat did not necessarily end the communities or traditions that had benefited from royal support.');
+    'Monks, disciples and stories could travel beyond Later Zhao’s borders. The court fell, but the Buddhist communities and institutions it supported survived. Political defeat did not necessarily end the traditions that had benefited from royal support.');
   add('catalog-R_SIXTEEN_FORMER_YAN', null,
     'Former Yan grew from a northeastern base under the Murong family into a major northern state. Its rulers expanded by force while using titles and recognition from other courts to strengthen their position.',
     'Claiming authority in stages',
@@ -288,11 +288,11 @@ var BEGINNER_EARLY = (() => {
     'Looking from the northeast',
     'The northeast can appear distant when viewed from another dynasty’s capital. For the Murong rulers, it was the centre from which they gathered resources and built alliances. Starting from their own base makes their choices easier to understand. They were organizing a state with its own supporters and ambitions within a wider contest for imperial rule.');
   add('catalog-R_SIXTEEN_FORMER_QIN', null,
-    'Under Fu Jian, Former Qin brought much of northern China under one ruler. Eastern Jin defeated its army at the Fei River in 383. Former Qin survived the battle, but the alliance supporting its expanded realm quickly began to break apart.',
+    'Under Fu Jian, Former Qin brought much of northern China under one ruler. Eastern Jin defeated its army at the Fei River in 383. Former Qin survived the battle, but the alliance supporting its expanded territory quickly began to break apart.',
     'Conquest did not settle every loyalty',
     'Military victories brought different commanders and communities under Fu Jian without giving them identical interests. Their support could depend on rewards or the ruler’s ability to compel obedience. A serious defeat exposed those unsettled relationships. Former Qin’s greatest territorial extent therefore does not tell us how securely every region was governed.',
     'Why one defeat had wider effects',
-    'Stories of the Fei River often stress clever tactics and enormous armies. The reported troop numbers remain uncertain. The political aftermath also matters: once the centre weakened, commanders and communities could pursue other loyalties and ambitions. Those choices help explain why losing a battle caused such extensive fragmentation, while the dynasty itself continued until 394.');
+    'Stories of the Fei River often stress clever tactics and enormous armies. The reported troop numbers remain uncertain. After the defeat, commanders and communities withdrew their support, and Former Qin fragmented even though it survived until 394.');
   add('catalog-R_SIXTEEN_LATER_QIN', null,
     'The Yao family ruled Later Qin from Chang’an. After Kumarajiva arrived in 401, Yao Xing supported the monk and his collaborators in translating Buddhist texts. Later Qin ended in 417, while the translations continued to shape readers long afterward.',
     'A team of translators',
@@ -374,7 +374,7 @@ var BEGINNER_EARLY = (() => {
     'The text permits harsh criticism of rulers who abandon their duties. It assumes monarchy and different social roles, rather than modern government by the people. Even so, holding the throne did not automatically make a ruler worthy of it. Later readers could use this argument to advise a ruler or condemn his failures.');
   add('zhuangzi', 'Zhuangzi',
     'The Zhuangzi uses stories, humour and unexpected viewpoints to question familiar judgments. Zhuang Zhou probably lived in the later fourth century BCE, but other writers contributed to the surviving book. The approximate dates here describe its early development, rather than one established lifespan.',
-    'Useful to whom?',
+    'Usefulness depends on who is judging',
     'Its stories ask who decides what has value. A tree that a carpenter finds useless may survive because no one wants to cut it down for timber. What looks like a disadvantage from one position can look different from another. Tales of skill and transformation similarly invite readers to reconsider the purposes behind their judgments.',
     'Living under demanding rulers',
     'Doubts about ambition and public office had force in a world where rulers could demand service and punish failure. The text also explores action that is skilled and responsive, less restricted by fixed categories. Later readers have interpreted it in very different ways. A slogan such as “everything is relative” misses the variety and movement of its arguments.');
@@ -400,7 +400,7 @@ var BEGINNER_EARLY = (() => {
     'The Laozi manuscripts differ in wording and order from the later text. A book now encountered in a familiar form once circulated in alternatives. These copies help us see how texts changed as people transmitted them. A later edition’s authority does not mean that all earlier readers knew exactly the same words or arrangement.');
   add('sima-qian', 'Sima Qian and the Shiji',
     'Sima Qian’s Shiji, or Records of the Grand Historian, brings together chronological accounts, tables, studies of government and society, and biographies. Written in the later second and early first centuries BCE, its 130 chapters include merchants, advisers and defeated rivals alongside emperors.',
-    'More than one view of the past',
+    'Competing views of the past',
     'An emperor’s account can show a different world from a study of the economy or the life of someone he defeated. Readers have to connect these parts. The structure allows questions about behaviour, social position and how people gathered wealth and power, alongside the sequence of major events.',
     'History as criticism',
     'The economic chapters can be read as criticism of imperial expansion under Emperor Wu. That is an interpretation, rather than proof that every passage carries one hidden message. An official historian’s access to the court did not necessarily make him a simple spokesman for it. Writing about earlier events could also expose difficulties in the government of his own time.',
@@ -413,14 +413,14 @@ var BEGINNER_EARLY = (() => {
     'The speakers argued within a monarchy and a largely farming society. Modern labels such as capitalism and socialism do not neatly describe their positions. The surviving book also arranges arguments for later readers. It is evidence of political disagreement, but cannot recover every participant’s exact words or the full range of official opinion.');
   add('ban-zhao', 'Ban Zhao',
     'Ban Zhao helped finish the Book of Han after her brother Ban Gu died in 92 CE, and taught at the imperial court. Her Admonitions for Women became widely read. Her career shows a woman exercising authority through learning within a society that restricted women’s roles.',
-    'Why should girls be taught?',
+    'Ban Zhao’s case for educating girls',
     'Ban Zhao questioned giving education to boys while neglecting girls. She based her argument on women’s duties in marriage and ritual life, rather than calling for that social order to be abolished. Her writing could support learning for women while also expecting their subordination. Both parts matter to understanding what she argued.',
     'Advice and everyday life',
     'Rules about how women ought to behave cannot show that every household followed them. The text reflects expectations in a particular wealthy setting; its later readers gave it a wider influence. Ban Zhao’s own achievement also warns against treating ancient women as one identical group. Access to education and court relationships could differ greatly.');
   add('zhang-heng', 'Zhang Heng’s earthquake detector',
     'In 132 CE, Zhang Heng presented an instrument intended to indicate the direction of a distant earthquake. He also worked in astronomy, mathematics and literature. Observing natural events mattered at court because they could carry practical and political meaning.',
     'News of distant disaster',
-    'An earthquake might damage a region far from the capital. It could also be interpreted as a warning about government. A device registering an event that people nearby had not felt offered a way to learn about the wider realm. Technical observation and beliefs about nature therefore worked together in this setting.',
+    'An earthquake might damage a region far from the capital. It could also be interpreted as a warning about government. A device registering an event that people nearby had not felt offered a way to learn about the wider empire. Technical observation and beliefs about nature therefore worked together in this setting.',
     'What the device could do',
     'No original instrument survives. Modern reconstructions rely on descriptions that leave its mechanism uncertain. It was reportedly a detector of an earthquake and its direction, rather than an instrument drawing a continuous record or calculating magnitude. It did not predict earthquakes. These limits matter when judging the achievement: a modern reconstruction cannot establish every detail of how the Han device worked.');
   add('nine-chapters', 'Nine Chapters on the Mathematical Art',
@@ -462,9 +462,9 @@ var BEGINNER_EARLY = (() => {
     'Carvers and patrons combined artistic forms associated with South and Central Asia with local preferences. Their choices changed over time. These were adaptations by people working within connected worlds, rather than an inevitable march from foreign art toward a final Chinese form. Changes at Yungang also belong to the history of Northern Wei’s shifting political centre.');
   add('longmen-caves', 'Longmen Caves',
     'Near Luoyang, Longmen’s most intensive carving ran from the late fifth to the middle of the eighth century. Northern Wei and Tang patrons commissioned Buddhist images and inscriptions. Different generations added to the site, rather than completing one ruler’s single plan.',
-    'Who paid, and who was remembered?',
+    'Cave workers, donors, and inscriptions',
     'At Binyang, donor processions showed rulers approaching the Buddha. Other inscriptions record commissions and hopes attached to them. The caves therefore tell us about the people supporting religious art as well as the makers’ skill. Images connected living donors, the dead and political authority within places of worship.',
-    'More than sculpture',
+    'Inscriptions and patronage',
     'Medical prescriptions carved at Yaofangdong reveal practical concerns alongside devotion. Later changes and damage have also shaped the site. Some donor reliefs now displayed abroad once belonged to larger arrangements of figures and architecture. Understanding where they stood helps recover relationships that an isolated museum object cannot fully show. Each cave has its own sequence of work within Longmen’s long history.');
   add('zhou-gonghe', 'King Li’s expulsion and the Gonghe period',
     'Traditional histories place the expulsion of King Li of Zhou around 841 BCE, followed by a period known as Gonghe. The people involved are often called inhabitants of the capital. The ancient term guoren does not simply mean modern citizens or the whole farming population.',
@@ -512,7 +512,7 @@ var BEGINNER_EARLY = (() => {
   add('zhuge-northern-expeditions', null,
     'Between 228 and 234, Zhuge Liang led repeated campaigns from Shu against Wei. Shu’s court in Sichuan claimed to restore Han rule, but faced a much larger rival. Mountain routes and the work of supplying soldiers limited what its armies could achieve.',
     'Getting food to the troops',
-    'An army crossing difficult terrain needed provisions while leaving its home territory able to support the next campaign. A chance to win a battle mattered only if troops and supplies could reach it. These limits help explain repeated withdrawals. Comparing the cleverness of individual commanders cannot fully explain what Shu could sustain.',
+    'An army crossing difficult terrain needed provisions while leaving its home territory able to support the next campaign. A chance to win a battle mattered only if troops and supplies could reach it. Supply limits repeatedly forced the armies to withdraw. Comparing the cleverness of individual commanders cannot fully explain what Shu could sustain.',
     'The commander and his later reputation',
     'Zhuge Liang died in 234, ending his leadership of the campaigns. Shu survived until 263. Later stories made him a model of extraordinary foresight and loyalty. His historical work involved keeping a smaller state capable of pursuing a large military ambition. That sustained effort can be appreciated while keeping later fiction separate from accounts of the campaigns themselves.');
   add('fei-river', 'Battle of the Fei River',
@@ -520,7 +520,7 @@ var BEGINNER_EARLY = (() => {
     'One ruler, different interests',
     'Conquest had brought commanders and troops under Fu Jian without making all their interests the same. Their willingness to remain depended on rewards, confidence and the centre’s ability to demand obedience. Losing a battle could change those calculations. Defections and rival ambitions then made the consequences much larger than the immediate military loss.',
     'The south survived',
-    'Victory allowed Eastern Jin and powerful southern families to continue developing government around the Yangtze. Former Qin did not disappear that day; it lasted until 394 as its territory fragmented. Traditional accounts contain dramatic tactics and enormous troop totals that remain uncertain. The battle’s longer importance lies in the choices commanders and rulers made afterward, as well as the fighting itself.');
+    'Victory allowed Eastern Jin and powerful southern families to continue developing government around the Yangtze. Former Qin did not disappear that day; it lasted until 394 as its territory fragmented. Traditional accounts contain dramatic tactics and enormous troop totals that remain uncertain. The choices commanders and rulers made after the battle determined its wider effects.');
   revisions['catalog-E_QIN_2'].note = '221 BCE dates the weights-and-measures edict. Other standardization measures developed over time; they were not all completed that year.';
   revisions['catalog-E_HAN_2'].note = 'Zhang Qian’s first mission is commonly dated 138–126 BCE; some sources use 139 BCE for departure.';
   revisions['catalog-E_BUD_ENTRY'].note = 'About 50 CE represents early contact, not a verified introduction year. The familiar imperial dream story is a later tradition, not a contemporary arrival record.';

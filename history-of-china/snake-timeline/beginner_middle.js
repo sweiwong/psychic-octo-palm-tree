@@ -54,11 +54,28 @@ var BEGINNER_MIDDLE = { revisions: {} };
     'Sui forces conquered the southern Chen dynasty in 589. The victory brought the lower Yangtze and other southern regions under the northern court, ending a major political division.',
     'Governing the conquered regions', 'Defeating a rival emperor did not make local officials and communities disappear. Sui needed appointments, cooperation and dependable ways to gather and move supplies. These were slower tasks than capturing a capital. Political reunification began a larger effort to make northern and southern government work together.',
     'What the south brought', 'Southern courts had spent centuries developing their own institutions and cultural life. Sui inherited regions with established resources, skills and powerful local relationships. The reunited empire depended on these foundations while redirecting them toward a new imperial centre. Southern history did not begin with the northern conquest.');
-  revise('an-lushan', null,
-    'An Lushan’s revolt began in December 755 and grew into a prolonged civil war. Tang forces defeated the main rebellion by 763, but the government that survived had a different balance of power between the emperor and provincial commanders.',
-    'Saving the dynasty strengthened commanders', 'The court created more military commands to organize resistance. Many provincial armies fought for Tang, so stronger regional military power grew partly from the effort to save it. Commanders needed soldiers, supplies and dependable income. Once they controlled these resources, the emperor could not simply take every wartime power back.',
-    'Government after the war', 'The restored court increasingly raised money through taxes on commerce and consumption. These changes helped support continued government, even as powerful provinces limited what the emperor could demand. Tang lasted for another century and a half, with important cultural achievements as well as conflict. Survival required compromises that both sustained the dynasty and constrained it.',
-    '755–763 CE. Losses in tax registers include people the government could no longer count; they cannot be treated directly as a death toll.');
+  BEGINNER_MIDDLE.revisions['an-lushan'] = {
+    description: 'In December 755, the frontier general An Lushan (安禄山) turned his armies against the Tang. His forces captured Luoyang and then Chang’an, forcing Emperor Xuanzong (唐玄宗) to flee. An Lushan was killed in 757, but the war continued under other rebel leaders until 763.',
+    sections: [
+      {
+        title: 'A frontier general with a large army',
+        text: 'Tang defence depended on military governors who commanded troops along the empire’s borders. An Lushan controlled several northeastern commands and enjoyed the emperor’s favour at court. This gave him soldiers, supplies and authority on a scale that the central government struggled to contain once he rebelled.'
+      },
+      {
+        title: 'War for Luoyang and Chang’an',
+        text: 'The rebels took Luoyang, established a rival Yan dynasty and entered Chang’an in 756. Xuanzong fled west, and his son took the throne as Emperor Suzong (唐肃宗). Tang armies recovered both capitals with Uyghur help, but the rebellion outlived An Lushan and passed through several leaders before the last major rebel forces surrendered in 763.'
+      },
+      {
+        title: 'Displacement, hunger and lost records',
+        text: 'Eight years of campaigning brought sieges, requisitions, famine and flight across much of northern and central China. Families lost relatives, homes and farmland; Yan Zhenqing’s (颜真卿) requiem for his nephew records one such loss. Later tax registers counted far fewer people, but many were displaced, unregistered or living beyond the court’s reach. The missing registrations cannot be read directly as a death toll.'
+      },
+      {
+        title: 'The Tang after the rebellion',
+        text: 'To end the war, the court accepted the surrender of former rebel commanders and allowed some to remain as military governors. Several provinces, especially in Hebei, kept their armies and much of their tax revenue. The government relied more heavily on taxes on trade and salt, then introduced a twice-yearly tax on property in 780. Tang rule continued until 907, but the emperor governed through stronger provincial powers and a different financial system.'
+      }
+    ],
+    note: '755–763 CE. Figures sometimes presented as a death toll are largely derived from changes in household and tax registers, which were badly disrupted by war and displacement.'
+  };
   revise('sutra', 'Diamond Sutra',
     'The Diamond Sutra scroll dated 868 is an exceptionally early surviving printed book. Its dedication names Wang Jie as the sponsor. He had the Buddhist scripture made for his parents’ benefit and for wider distribution.',
     'Printing for religious merit', 'Making copies of a scripture could spread Buddhist teaching and bring religious merit to the donor and others. Wang Jie’s dedication connects the printed object to his family and to readers beyond it. The reason to reproduce a text mattered as much as the method: religious giving helped create demand for copies.',
@@ -74,7 +91,7 @@ var BEGINNER_MIDDLE = { revisions: {} };
     '1127 marks Kaifeng’s fall and the emperors’ captivity after campaigns in 1125–1127. Song continued in the south until 1279.');
   revise('catalog-S_ST', 'Sui and Tang',
     'Sui and Tang together span the rebuilding of a united empire and nearly three centuries of change. Tang inherited northern military and government traditions from Sui, along with a territory that had recently been reunited.',
-    'An inherited foundation', 'The change of dynasty in 618 brought new rulers and priorities, while useful offices and practices continued. Governing a large empire still meant appointing officials, collecting resources and moving grain and armies. These shared foundations help explain why the two dynasties are often studied together.',
+    'An inherited foundation', 'The change of dynasty in 618 brought new rulers and priorities, while useful offices and practices continued. Governing a large empire still meant appointing officials, collecting resources and moving grain and armies. Both dynasties relied on many of the same offices and governing practices.',
     'A changing empire', 'The An Lushan Rebellion transformed Tang government. New military commands and ways of collecting taxes changed the relationship between the court and the provinces. Later Tang rulers worked within arrangements very different from those of early Sui. Across this long period, institutions survived by changing, rather than operating in one fixed form.',
     '581–907 groups two successive dynasties, Sui and Tang.');
   revise('catalog-G_ISLAM', 'Muhammad’s first revelation',
@@ -138,7 +155,7 @@ var BEGINNER_MIDDLE = { revisions: {} };
   revise('catalog-R_TEN_CHU_MA_CHU', null,
     'Ma Yin’s Chu ruled from Hunan and drew income from regional production and trade, including tea. The Ma family’s court ended in 951, but some local commanders continued to hold power afterward.',
     'Tea across borders', 'Tea connected growers and merchants with customers and courts beyond Chu. Income from this trade helped sustain the state alongside diplomacy with stronger neighbours. Political division did not sever commercial routes; a regional government could depend on exchange across its borders.',
-    'After the Ma family', 'The end of the ruling house did not immediately bring all of Hunan under another state’s administration. Local military leaders could retain control after the dynasty fell. This is why a history of autonomous Hunan can extend beyond the narrower dates assigned to Ma Chu.');
+    'After the Ma family', 'The end of the ruling house did not immediately bring all of Hunan under another state’s administration. Local leaders kept parts of Hunan autonomous after the Ma court fell in 951.');
   revise('catalog-R_TEN_MIN', null,
     'The Wang family’s Min state developed in Fujian, drawing resources partly from coastal trade. Conflict within the ruling house divided it before its conventional end in 945. Some local centres continued under separate leaders.',
     'A trading coast still needed government', 'Sea routes brought opportunities, but rulers also needed to govern inland districts, maintain support and manage succession within the family. Commercial resources could strengthen a court without protecting it from internal conflict. Min’s troubles grew within a region that remained connected to maritime exchange.',
@@ -164,7 +181,7 @@ var BEGINNER_MIDDLE = { revisions: {} };
   revise('catalog-R_TEN_NORTHERN_HAN', null,
     'Northern Han preserved a Liu-family court in Shanxi after Later Han fell in 951. It relied on Liao support while claiming imperial authority of its own. Song conquered it in 979.',
     'A stronger ally', 'Liao ties offered protection and recognition, while limiting the court’s choices. Depending on an ally did not mean giving up every claim to authority at home. Northern Han’s rulers combined an imperial title with the practical need for support from a larger neighbour.',
-    'The northern kingdom', 'Despite its location, Northern Han is traditionally counted among the Ten Kingdoms. It also survived beyond Song’s foundation in 960. Its history helps explain why neither the name Ten Kingdoms nor the end of the Five Dynasties describes a single tidy boundary in place or time.');
+    'The northern kingdom', 'Despite its location, Northern Han is traditionally counted among the Ten Kingdoms. It also survived beyond Song’s foundation in 960. Northern Han’s location and survival past 960 make both labels imperfect.');
   revise('catalog-S_TEN', null,
     'The Ten Kingdoms were regional states around the transition from Tang to Song. They began and ended at different times and did not all exist together. Northern Han, despite the common association of these kingdoms with the south, lay in the north.',
     'Life beyond the northern courts', 'Some kingdoms lasted much longer than the rapidly changing Five Dynasties in the north. Their governments supported farming, sea trade, religious institutions and cultural life. Warfare mattered, but its effects differed across regions; political division did not make every place equally unstable.',
@@ -194,11 +211,11 @@ var BEGINNER_MIDDLE = { revisions: {} };
   revise('talas', 'Battle of Talas',
     'In 751, Tang forces were defeated by an Abbasid army at Talas in Central Asia. The defeat showed the difficulty of projecting military power far from the imperial court. It did not end contact between the two worlds.',
     'Contacts after the fighting', 'Abbasid embassies continued to visit the Tang court after the battle. Du Huan, taken captive, eventually returned by merchant ship with observations of life abroad. Diplomats and merchants could keep moving even while armies fought. Military rivalry and exchange were part of the same connected region.',
-    'Did captives spread papermaking?', 'A famous story credits captured Chinese papermakers with bringing the craft to the Islamic world. The details remain disputed. Paper was already used in Central Asia before 751, and the battle’s exact role in spreading production is uncertain. Talas cannot securely be treated as the single moment that transferred the technology or instantly transformed the region’s religion.');
+    'The disputed papermaking story at Talas', 'A famous story credits captured Chinese papermakers with bringing the craft to the Islamic world. The details remain disputed. Paper was already used in Central Asia before 751, and the battle’s exact role in spreading production is uncertain. Talas cannot securely be treated as the single moment that transferred the technology or instantly transformed the region’s religion.');
   revise('two-tax', 'Two-Tax reform',
     'In 780, Yang Yan proposed taxing households where they actually lived and grading their payments by wealth. Collection took place in summer and autumn. The government was trying to raise income from a population that no longer fitted its older records.',
     'Finding people and property to tax', 'The proposal covered settled farmers and travelling merchants. Instead of relying only on inherited household categories, officials would assess the property and activity they could identify. This changed both how the court collected money and the basis on which households owed it.',
-    'Who carried the burden?', 'The official Lu Zhi warned that the reform made emergency wartime demands permanent. He also argued that farming property was easy to find while mobile wealth could escape assessment. A more adaptable system was therefore not necessarily fairer. The name Two Taxes refers to the two collection seasons, rather than simply to two kinds of taxable goods.',
+    'Who paid the new taxes', 'The official Lu Zhi warned that the reform made emergency wartime demands permanent. He also argued that farming property was easy to find while mobile wealth could escape assessment. A more adaptable system was therefore not necessarily fairer. The name Two Taxes refers to the two collection seasons, rather than simply to two kinds of taxable goods.',
     '780 CE. Surviving memorials record both Yang Yan’s proposal and Lu Zhi’s criticism.');
   revise('huichang', 'Huichang suppression of Buddhism',
     'In 845, Emperor Wuzong ordered a major suppression of Buddhism. Clergy were forced back into lay life, and the state took control of monastic resources. Other religious communities were also targeted.',
@@ -224,7 +241,7 @@ var BEGINNER_MIDDLE = { revisions: {} };
   revise('tang-women-riding', 'Women riders in Tang China',
     'Tang tomb figures show women on horseback, and evidence of riding sports places some women within an active courtly culture. Horses, leisure and elaborate burial goods required wealth. These objects chiefly illuminate the lives and ideals of privileged circles.',
     'Riding and status', 'Riding and polo could make women visible participants in elite life. Court fashion and the prestige of horses helped shape those opportunities. This evidence challenges the idea that elite women were always secluded, but does not establish equal legal rights or tell us how women in poorer households lived.',
-    'Why place a rider in a tomb?', 'Burial figures were chosen to furnish or evoke an afterlife and express the deceased person’s standing. Their clothing and poses show what patrons wanted represented alongside them. They can reveal valued activities and styles, while remaining carefully selected images rather than a complete picture of ordinary streets.',
+    'What the tomb rider represented', 'Burial figures were chosen to furnish or evoke an afterlife and express the deceased person’s standing. Their clothing and poses show what patrons wanted represented alongside them. They can reveal valued activities and styles, while remaining carefully selected images rather than a complete picture of ordinary streets.',
     'About 700–750 is a broad context. The cited objects span the seventh and eighth centuries and mainly represent elite life.');
   revise('lu-yu-tea', 'Lu Yu’s Tea Classic',
     'In the later eighth century, Lu Yu gathered knowledge about tea plants, processing, utensils, water and preparation into the Tea Classic. People already drank tea. His book helped turn practical expertise and judgments of taste into a lasting written authority.',
@@ -233,7 +250,7 @@ var BEGINNER_MIDDLE = { revisions: {} };
     'About 760–780 is an approximate writing and development range; 780 is a common completion date. Tea drinking predates Lu Yu.');
   revise('song-paper-money', 'Song paper money',
     'In the 1020s, the Song government took over the issuing of paper certificates in Sichuan. Known as jiaozi, they developed from merchant arrangements that made payments easier than carrying heavy strings of coins.',
-    'Why accept a piece of paper?', 'The notes depended on trust in the issuer and on rules for using and redeeming them. Government backing could make them more dependable, while issuing money also gave officials a way to fund spending. Their value came from these arrangements, not simply from the printed sheet.',
+    'How paper money earned trust', 'The notes depended on trust in the issuer and on rules for using and redeeming them. Government backing could make them more dependable, while issuing money also gave officials a way to fund spending. Their value came from these arrangements, not simply from the printed sheet.',
     'Money with boundaries', 'Early notes were valid within particular regions and conditions. They did not immediately become one currency accepted everywhere. Coins, commodities and different paper issues continued side by side. Successful use depended on administration, control over how much was issued and the payments people could make with it. Paper money solved a practical problem, while creating new responsibilities for its issuer.');
   revise('song-wang-anshi', null,
     'Wang Anshi launched the New Policies in 1069 under Emperor Shenzong. They sought to change government finance, administration and military support. One proposal offered farmers public loans before harvest, to be repaid alongside seasonal taxes.',
@@ -270,7 +287,7 @@ var BEGINNER_MIDDLE = { revisions: {} };
     'About 820–850 covers the principal disputes. The existence and membership of two stable factions remain contested.');
   revise('yue-fei', 'Yue Fei',
     'Yue Fei was a leading Southern Song commander against the Jurchen Jin. His successful campaigns, recall and execution in 1142 made him a lasting symbol of loyalty. His career unfolded amid disagreements about recovering territory, negotiating peace and controlling powerful generals.',
-    'Campaigns and court decisions', 'Recovering the north required money, supplies and continued military risk. The court also sought a settlement it could sustain and worried about its control over commanders. These pressures help explain the choices surrounding Yue’s career without justifying his execution. His death cannot be reduced to proof that victory would otherwise have been certain.',
+    'Campaigns and court decisions', 'Recovering the north required money, supplies and continued military risk. The court also sought a settlement it could sustain and worried about its control over commanders. The court weighed those pressures when it recalled Yue, though they do not justify his execution. His death cannot be reduced to proof that victory would otherwise have been certain.',
     'The remembered loyal general', 'Later generations found different meanings in Yue’s loyalty: service to his dynasty, personal moral courage and modern national identity. Poems, tattoo stories and family anecdotes helped carry that reputation. Their evidence is uneven, so famous stories should not all be treated as equally reliable accounts from his lifetime.');
   revise('song-gunpowder', 'Gunpowder in the Wujing Zongyao',
     'The Wujing Zongyao, a military reference work completed in 1044, recorded gunpowder recipes and military uses. It preserves knowledge developed through earlier experiments. Weapons that used fire came before the mature firearms familiar from later centuries.',
@@ -288,13 +305,12 @@ var BEGINNER_MIDDLE = { revisions: {} };
   revise('zhenguan-government', 'Taizong’s Zhenguan era',
     'Taizong’s Zhenguan era, 627–649, became a famous model of imperial government. Later collections portrayed him debating policy and listening to criticism from ministers. Those texts preserved ideals of good rule as well as memories of a particular reign.',
     'Speaking honestly to an emperor', 'Ministers were expected to point out dangers, but the emperor still held the power to appoint and punish them. Honest advice depended on a ruler’s willingness to listen within that unequal relationship. Accounts of Taizong accepting criticism later gave officials examples they could use when urging other monarchs to heed advice.',
-    'A model across East Asia', 'The Essentials of Governance circulated beyond Tang China and influenced later political debate. Its selected conversations offered lessons, rather than an unedited record of everything said at court. Taizong’s authority also rested on military and administrative institutions and followed a violent succession struggle. The admired model captures one important part of that larger history.');
+    'A model across East Asia', 'The Essentials of Governance circulated beyond Tang China and influenced later political debate. Its selected conversations offered lessons, rather than an unedited record of everything said at court. Taizong’s authority also rested on military and administrative institutions and followed a violent succession struggle. The book preserves one influential view of the reign alongside its military rise and violent succession.');
   revise('kaiyuan-era', 'Xuanzong’s Kaiyuan era',
     'Xuanzong’s Kaiyuan era, 713–741, is remembered as a high point of Tang prosperity. Court support for the arts, skilled production and imperial reach contributed to its reputation. That prosperity was not shared equally by every region or household.',
     'The work behind fine objects', 'Elite possessions reveal skilled workshops and resources drawn toward wealthy patrons. Storehouses and court commissions helped organize production. Finished objects preserve the tastes of their owners more clearly than the lives of the people who supplied materials and labour. Cultural splendour depended on this less visible work.',
     'Prosperity before the rebellion', 'The An Lushan Rebellion began later, in 755. Comparing its destruction with Kaiyuan abundance can make the whole period look like a simple warning about luxury. Military arrangements, appointments and government demands also changed over time. The era’s achievements were real, but neither its prosperity nor the later disaster made the outcome inevitable.',
     '713–741 is the Kaiyuan era, not Xuanzong’s entire reign. Shengshi means a flourishing age; the An Lushan Rebellion began in 755.');
-  BEGINNER_MIDDLE.revisions["an-lushan"].note = "755 marks the outbreak; the main rebellion continued until 763. Losses in tax registers include people the government could no longer count and cannot be read directly as a death toll.";
   BEGINNER_MIDDLE.revisions["catalog-R_FIVE_LATER_JIN"].note = "936–947 is the chronology used here. Some older tables place the endpoint one year earlier. Later Jin is distinct from both the earlier Sima Jin and the later Jurchen Jin.";
   BEGINNER_MIDDLE.revisions["catalog-R_FIVE_LATER_HAN"].note = "947–951 is the chronology used here. Some older tables place the endpoint one year earlier. Northern Han survived separately until 979.";
   BEGINNER_MIDDLE.revisions["catalog-R_TEN_CHU_MA_CHU"].note = "907–951 covers Ma Chu’s broader state history; 927 is a later kingdom milestone used in some chronologies. Autonomous rule in Hunan continued beyond the Ma court’s fall in 951.";
