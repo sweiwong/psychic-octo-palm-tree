@@ -345,12 +345,28 @@ const HISTORY_IMAGES = {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/YuanEmperorAlbumKhubilaiPortrait.jpg/960px-YuanEmperorAlbumKhubilaiPortrait.jpg",
     "width": 3221,
     "height": 4018,
-    "credit": "Araniko (1244–1306) · Wikimedia Commons",
+    "alt": "Painted portrait of Kublai Khan wearing a white robe and a fur-trimmed hat.",
+    "caption": "Posthumous portrait of Kublai Khan, dated about 1294 and attributed to Araniko, from the Yuan imperial album in the National Palace Museum.",
+    "credit": "Attributed to Araniko · Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumKhubilaiPortrait.jpg",
     "license": "Public domain",
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "alt": "A painted portrait of Kublai Khan in a white robe and fur-trimmed hat.",
-    "caption": "Kublai Khan’s portrait from the Yuan imperial album, traditionally associated with Araniko. It represents the ruler through court portraiture, rather than illustrating a specific proclamation."
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "Conquest, expansion and rival khans",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/MongolEmpireDivisions1300.png",
+        "width": 1644,
+        "height": 959,
+        "alt": "Map of Eurasia with the Yuan region in green, the Golden Horde in yellow, the Chagatai Khanate in grey and the Ilkhanate in purple.",
+        "caption": "Modern reconstruction of the main Mongol khanates and dependent territories around 1300. Yuan is green; the Golden Horde is yellow, the Chagatai Khanate grey and the Ilkhanate purple. Coloured areas include dependencies as well as directly ruled lands. Boundaries are approximate.",
+        "credit": "Gabagool · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "fullSize": true
+      }
+    ]
   },
   "ming": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/A_Seated_Portrait_of_Ming_Emperor_Taizu.jpg/960px-A_Seated_Portrait_of_Ming_Emperor_Taizu.jpg",
