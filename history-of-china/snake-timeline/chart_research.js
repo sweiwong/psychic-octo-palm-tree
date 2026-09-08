@@ -1623,7 +1623,8 @@ const CHART_RESEARCH=(()=>{
       "huang-chao",
       "tang",
       "li-bai-du-fu",
-      "yuan-drama"
+      "yuan-drama",
+      "chang-an"
     ]
   },
   "sutra": {

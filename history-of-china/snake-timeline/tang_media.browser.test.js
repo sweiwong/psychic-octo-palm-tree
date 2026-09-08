@@ -5,7 +5,7 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const images = require('./image_data.js');
 let browser;
 
-test.before(async () => { browser = await chromium.launch({ headless: true }); });
+test.before(async () => { browser = await chromium.launch({ headless: true, ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) }); });
 test.after(async () => { await browser?.close(); });
 
 for (const width of [1440, 390]) {
@@ -57,7 +57,7 @@ for (const width of [1440, 390]) {
       const second = await figures.nth(1).boundingBox();
       if (width === 1440) assert.ok(Math.abs(first.y - second.y) < 1, 'wide reading view pairs images');
       else assert.ok(second.y > first.y, 'phone view stacks images');
-      assert.equal(await page.locator('.card-description a, .card-analysis a[data-card-id]').count(), 26);
+      assert.equal(await page.locator('.card-description a, .card-analysis a[data-card-id]').count(), 27);
       assert.ok(await page.locator('#detail').evaluate(node => node.scrollWidth <= node.clientWidth + 1));
     } finally { await page.close(); }
   });

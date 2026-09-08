@@ -65,15 +65,22 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     if (supporting) photo.loading = 'lazy';
 
     const caption = html('figcaption', '', image.caption);
-    const credit = html('a', '', image.credit);
-    const license = html('a', '', image.license);
-    credit.href = image.source;
-    license.href = image.licenseUrl;
-    for (const link of [credit, license]) {
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
+    const credit = html(image.source ? 'a' : 'span', '', image.credit);
+    if (image.source) {
+      credit.href = image.source;
+      credit.target = '_blank';
+      credit.rel = 'noopener noreferrer';
     }
-    caption.append(html('br'), credit, document.createTextNode(' · '), license);
+    caption.append(html('br'), credit);
+    if (image.license) {
+      const license = html(image.licenseUrl ? 'a' : 'span', '', image.license);
+      if (image.licenseUrl) {
+        license.href = image.licenseUrl;
+        license.target = '_blank';
+        license.rel = 'noopener noreferrer';
+      }
+      caption.append(document.createTextNode(' · '), license);
+    }
     photo.addEventListener('error', () => {
       photo.hidden = true;
       caption.prepend(document.createTextNode('Image unavailable. '));

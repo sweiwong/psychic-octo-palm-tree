@@ -20,19 +20,19 @@ test('browser uses generated note edits while preserving historical records', ()
   const baseline = browserCards();
   const edited = browserCards(`\nCARD_NOTES.revisions.tang.description = 'An edit from the Tang note.';`);
   assert.equal(edited.find(card => card.id === 'tang').description, 'An edit from the Tang note.');
-  assert.equal(edited.length, 221);
+  assert.equal(edited.length, 222);
   for (const card of edited) {
     const original = baseline.find(item => item.id === card.id);
     assert.deepEqual({ ...card, description: original.description }, original);
   }
 });
 
-test('all eleven authored notes are connected and the saved site pack matches their current text', () => {
+test('all twelve authored notes are connected and the saved site pack matches their current text', () => {
   const notes = Object.fromEntries(fs.readdirSync(__dirname + '/card-notes')
     .filter(name => name.endsWith('.md') && name !== 'README.md')
     .map(name => [name, fs.readFileSync(__dirname + '/card-notes/' + name, 'utf8')]));
   const compiled = compileNotes(notes, browserCards().map(card => card.id));
-  assert.equal(Object.keys(compiled.revisions).length, 11);
+  assert.equal(Object.keys(compiled.revisions).length, 12);
   assert.deepEqual(require('./card_notes'), compiled, 'Rebuild after editing notes.');
   const { graph, errors } = links.validateCards(browserCards());
   assert.deepEqual(errors, []);
@@ -44,7 +44,7 @@ test('all eleven authored notes are connected and the saved site pack matches th
   assert(graph.outbound.get('xuanwu-gate').includes('zhenguan-government'));
 });
 
-test('the Tang card matches the approved prose and all 26 approved link destinations', () => {
+test('the Tang card matches the approved prose and all 27 approved link destinations', () => {
   const approved = fs.readFileSync(__dirname + '/fixtures/tang-approved.md', 'utf8')
     .split('**618–907**\n\n')[1].split('\n\n**Word count:')[0].trim();
   const plain = approved.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1');
@@ -63,6 +63,6 @@ test('the Tang card matches the approved prose and all 26 approved link destinat
   const destinations = [...approved.matchAll(/\?card=([^)]*)\)/g)].map(match => decodeURIComponent(match[1]));
   const { graph, errors } = links.validateCards(cards);
   assert.deepEqual(errors, []);
-  assert.equal(destinations.length, 26);
+  assert.equal(destinations.length, 27);
   assert.deepEqual(graph.outbound.get('tang'), destinations);
 });

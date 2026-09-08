@@ -13,11 +13,11 @@ for (const [, name] of index.matchAll(/<script defer src="([^"?]+)(?:\?[^\"]*)?"
 }
 const cards = JSON.parse(vm.runInContext('JSON.stringify(EXHIBITION.all)', context));
 
-test('all 221 assembled cards have unique IDs, stable titles and resolvable links', () => {
-  assert.equal(cards.length, 221);
-  assert.equal(new Set(cards.map(card => card.id)).size, 221);
+test('all 222 assembled cards have unique IDs, stable titles and resolvable links', () => {
+  assert.equal(cards.length, 222);
+  assert.equal(new Set(cards.map(card => card.id)).size, 222);
   assert(cards.every(card => typeof card.linkTitle === 'string' && card.linkTitle.trim()));
-  assert.equal(new Set(cards.map(card => links.normalizeTitle(card.linkTitle))).size, 221);
+  assert.equal(new Set(cards.map(card => links.normalizeTitle(card.linkTitle))).size, 222);
   const result = links.validateCards(cards);
   assert.deepEqual(result.errors, [], result.errors.map(error => error.message).join('\n'));
   for (const card of cards) for (const alias of card.linkAliases || []) {

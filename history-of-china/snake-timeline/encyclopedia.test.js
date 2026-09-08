@@ -34,8 +34,16 @@ test('Every source-chart subject resolves to a complete sourced card without los
 test('Every encyclopedia card has an image with descriptive text and credited provenance',()=>{
  for(const card of reading.all){
   const img=images[card.id];assert.ok(img,card.id+' image');
-  for(const key of ['src','alt','caption','credit','source','license','licenseUrl'])assert.ok(typeof img[key]==='string'&&img[key].length,card.id+' '+key);
-  for(const key of ['src','source','licenseUrl'])assert.equal(new URL(img[key]).protocol,'https:',card.id+' '+key);
+  for(const key of ['src','alt','caption','credit'])assert.ok(typeof img[key]==='string'&&img[key].length,card.id+' '+key);
+  if(card.id==='chang-an'){
+   assert.equal(img.src,'assets/chang-an-street-illustration.png');
+   assert.ok(fs.existsSync(path.join(__dirname,img.src)));
+   assert.equal(img.credit,'Image supplied by the user');
+   for(const key of ['source','license','licenseUrl'])assert.equal(img[key],undefined);
+  }else{
+   for(const key of ['source','license','licenseUrl'])assert.ok(typeof img[key]==='string'&&img[key].length,card.id+' '+key);
+   for(const key of ['src','source','licenseUrl'])assert.equal(new URL(img[key]).protocol,'https:',card.id+' '+key);
+  }
   assert.ok(img.width>0&&img.height>0,card.id+' dimensions');
  }
  assert.notEqual(images.abdication.src,images.republic.src,'abdication and republic use different images');
@@ -45,7 +53,7 @@ test('Every displayed card uses a different picture',()=>{
  const seenSources=new Map(),seenImages=new Map();
  const normalize=url=>url.replace(/^https?:\/\//,'').replace(/\/$/,'');
  for(const card of reading.all){
-  const image=images[card.id],source=normalize(image.source),src=normalize(image.src);
+  const image=images[card.id],source=normalize(image.source||image.src),src=normalize(image.src);
   assert.equal(seenSources.has(source),false,card.id+' repeats the picture used by '+seenSources.get(source));
   assert.equal(seenImages.has(src),false,card.id+' repeats the image URL used by '+seenImages.get(src));
   seenSources.set(source,card.id);seenImages.set(src,card.id);

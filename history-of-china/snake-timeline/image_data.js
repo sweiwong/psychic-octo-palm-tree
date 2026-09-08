@@ -1,5 +1,29 @@
 // Curated historical images. Each caption identifies its object, date relationship, and evidential limits.
 const HISTORY_IMAGES = {
+  "chang-an": {
+    "src": "assets/chang-an-street-illustration.png",
+    "width": 750,
+    "height": 315,
+    "alt": "Illustrated street scene with tiled-roof buildings, pedestrians, horses and camels.",
+    "caption": "An imagined street scene in Chang’an.",
+    "credit": "Image supplied by the user",
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "The Sui and Tang capital",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Chang%27an_of_Tang.jpg/960px-Chang%27an_of_Tang.jpg",
+        "width": 983,
+        "height": 728,
+        "alt": "English-labelled plan of Tang Chang'an, with a rectangular street grid, palace compounds along the north, and separate western and eastern markets.",
+        "caption": "Modern reconstruction of the Tang capital's street and ward grid, drawn by SY in 2017. The two markets and northern palace compounds are labelled separately. Boundaries are approximate; the plan combines features of the Tang city rather than documenting one specified year.",
+        "credit": "SY (Seasonsinthesun) · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Chang%27an_of_Tang.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fullSize": true
+      }
+    ]
+  },
   "nixon-china": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/President_Richard_Nixon_and_Premier_Chou_En-Lai_Shake_Hands_at_the_Nixons%27_Arrival_in_Peking%2C_China_-_DPLA_-_315dbcc0e8b46e1bc678fde12bef9eb8.jpg",
     "width": 3000,
