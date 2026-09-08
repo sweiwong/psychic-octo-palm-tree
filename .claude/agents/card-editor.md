@@ -32,7 +32,7 @@ Read `docs/card-style-guide.md`, `docs/cards/tang.md`, and the card's research b
 
 Grep for the mechanical ones. Read for the rest.
 
-**4. Structure.** Lead paragraph states what the thing is, 60 to 90 words, no hook. Section headings short and substantive, not "Background" or "Legacy". A closing section on how the subject was remembered and what historians argue. Total 600 to 950 words.
+**4. Structure.** Lead paragraph states what the thing is, 60 to 90 words, no hook. Section headings short and substantive, not "Background" or "Legacy". A closing section on how the subject was remembered and what historians argue. Total word count should match the card's band: 900 to 1500 for a dynasty or period, 500 to 800 for everything else (a single event, institution, text, figure or object). Treat the band as a default: flag it for Wei rather than silently enforcing it if the card's actual scope clearly justifies going outside.
 
 **5. Chinese terms.** Simplified hanzi throughout, no traditional mixed in. Tone marks on all pinyin, and verify them; wrong tones are the most common silent error. First mention only, no term glossed twice. Personal names capitalised, institutional terms lower case.
 

@@ -79,13 +79,18 @@ Populate the `sources` array with real URLs actually consulted, and `sourceLabel
 
 ## Structure
 
-Target 600 to 950 words. Built for progressive disclosure in a 340px panel: a lead paragraph that loads by default, then expandable sections.
+Word count follows scope, not one fixed number. The bands below are defaults to aim for, not hard caps in either direction.
 
-1. **Lead paragraph, no heading.** What the thing is, when, what it followed or belonged to, and the single claim that frames the card. Roughly 60 to 90 words.
-2. **Three to six sections with `##` headings.** Headings are short and substantive ("Frontier origins", "Government", "A world capital", "The centre of gravity moves south"). Not generic ("Background", "Overview", "Legacy").
+- **Dynasty and period cards** — a multi-century regime or era where government, culture, economy and foreign relations are all in play, like Tang — run roughly **900 to 1500 words**, across four to seven sections plus the closing.
+- **Everything else** — event, culture and world cards: a single institution, incident, text, object, figure or foreign contact, like the jiedushi system or the An Lushan Rebellion — run roughly **500 to 800 words**, across two to four sections plus the closing.
+
+If a brief for a "small" topic turns out to carry unusual weight (An Lushan did, landing near 900), or a macro topic is unusually narrow, say so plainly in the writer's report and let Wei decide whether to go outside the band. Do not pad a thin topic to hit a floor, and do not trim a rich one just to fit a ceiling.
+
+All cards are built for progressive disclosure in a 340px panel: a lead paragraph that loads by default, then expandable sections.
+
+1. **Lead paragraph, no heading.** What the thing is, when, what it followed or belonged to, and the single claim that frames the card. Roughly 60 to 90 words, whatever the card's total length.
+2. **Sections with `##` headings**, per the counts above. Headings are short and substantive ("Frontier origins", "Government", "A world capital", "The centre of gravity moves south"). Not generic ("Background", "Overview", "Legacy").
 3. **A closing section, usually "Why X matters".** How the subject was remembered and used by later generations, what historians argue about it, and where it sits in the longer arc. This is the section that separates these cards from Wikipedia and it is mandatory.
-
-For an event or person card, scale down: lead plus two or three sections plus the closing.
 
 ## Hanzi and pinyin
 

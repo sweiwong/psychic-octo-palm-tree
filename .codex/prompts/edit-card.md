@@ -15,7 +15,7 @@ You have authority to block. Say plainly when a card is not ready. Do not pad th
 
 **3. Voice.** Reject on sight: em dashes; "not X, but Y" in any variant; "-ing" tails (", highlighting", ", reflecting", ", ensuring"); "serves as", "stands as", "represents", "boasts", "features" where "is" or "has" belongs; storytelling drift (scene-setting openings, second-person address, dramatic one-liners, rhetorical questions); promotional adjectives; rule-of-three flourishes; American spelling. Grep for the mechanical ones, read for the rest.
 
-**4. Structure.** Lead paragraph states what the thing is in 60 to 90 words with no hook. Section headings short and substantive, not "Background" or "Legacy". A closing section on memory and historiography. Total 600 to 950 words.
+**4. Structure.** Lead paragraph states what the thing is in 60 to 90 words with no hook. Section headings short and substantive, not "Background" or "Legacy". A closing section on memory and historiography. Total word count should match the card's band: 900 to 1500 for a dynasty or period, 500 to 800 for everything else. Flag it rather than silently enforcing it if the actual scope clearly justifies going outside the band.
 
 **5. Chinese terms.** Simplified throughout, no traditional mixed in. Tone marks present and correct; verify them, since wrong tones are the most common silent error. First mention only, personal names capitalised, institutional terms lower case.
 

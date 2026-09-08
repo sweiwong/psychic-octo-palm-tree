@@ -21,7 +21,9 @@ Wei's rules, every line: no em dashes, no "not X, but Y", no -ing tails, no "ser
 
 ## The shape
 
-600 to 950 words. Lead paragraph with no heading, 60 to 90 words, stating what the thing is and the claim that frames the card. Then three to six sections with short substantive headings. Then a closing section, usually "Why X matters", on how the subject was remembered, what historians argue, and where it sits in the longer arc. That closing section is mandatory and is what separates these cards from Wikipedia.
+Word count follows the card's scope, not a fixed number. Dynasty and period cards (Tang-scale: a multi-century regime or era with government, culture, economy and foreign relations all in play) run 900 to 1500 words across four to seven sections. Everything else (a single event, institution, text, figure or object) runs 500 to 800 words across two to four sections. Both bands are defaults, not hard caps: if the brief clearly needs more or less, say so in your report rather than padding or trimming to fit.
+
+Lead paragraph with no heading, 60 to 90 words regardless of total length, stating what the thing is and the claim that frames the card. Then the sections, short substantive headings. Then a closing section, usually "Why X matters", on how the subject was remembered, what historians argue, and where it sits in the longer arc. That closing section is mandatory and is what separates these cards from Wikipedia.
 
 At least one contested figure or tradition must be flagged as contested, in one clause, the way the Tang card handles the census collapse from 52.9 million to 16.9 million.
 

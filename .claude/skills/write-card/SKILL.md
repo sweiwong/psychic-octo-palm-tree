@@ -31,6 +31,7 @@ Full detail is in the style guide. The parts most often got wrong:
 - No em dashes. No "not X, but Y". No -ing tails. No "serves as" or "represents" where "is" or "has" belongs. British spelling.
 - No AI-slop phrasing either: no importance puffery ("marks a pivotal moment"), weasel attribution ("historians agree"), colon reveals, or banned words like "meticulous", "leverage", "transformative". `card-editor` checks for this on every card.
 - Every card carries an argument, and closes with a section on how the subject was remembered and what historians dispute.
+- Word count follows scope, not one number: 900-1500 for a dynasty or period, 500-800 for a single event, institution, text, figure or object. Both are defaults; flag it, don't pad or trim, if a specific card clearly needs more or less.
 - At least one contested figure or tradition flagged as contested.
 - Simplified hanzi with tone-marked pinyin, first mention only, in the exact format `Chang'an (长安 Cháng'ān)`.
 - Only link a term inline if its card already exists. The live site does not grey out unresolved links the way Obsidian does, it drops them to plain text with no signal, so a link to nothing is worse than none. Not-yet-written targets go in the `## Link inventory` section and `_queue.md`, never inline.
