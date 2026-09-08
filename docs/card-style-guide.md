@@ -119,9 +119,13 @@ Obsidian syntax, piped so the display text reads naturally and the target stays 
 [[catalog-R_FIVE_LATER_LIANG|Later Liang]]
 ```
 
-Link generously, on first mention only. Link targets that do not exist yet anyway: Obsidian renders unresolved links greyed out, which gives Wei a live queue of cards still to write.
+**Only link to a card that already exists.** Insert an inline link on first mention when, and only when, the target already has a written card in the corpus. A term whose card has not been written yet stays as plain text, glossed with hanzi and pinyin as usual, with no bracket syntax at all.
 
-Update the card's `related` array in frontmatter to include every slug linked, split by a comment into existing and proposed.
+This project first assumed Obsidian's convention, where a link to a page that does not exist yet still renders, greyed out, as a visible prompt to write it. The live site does not do that: an unresolved link just vanishes into plain text with no visual signal, which is worse than never linking it, since it silently drops a promise the reader never sees. Every card written before this rule (`tang.md` included) has been swept to remove these dead links; do not reintroduce them.
+
+Every proposed link target still gets tracked, just not inline: it goes in the card's `## Link inventory` section and in `docs/cards/_queue.md`, tiered, so there is a live written record of what to write next even though the page itself shows nothing.
+
+Update the card's `related` array in frontmatter to include every slug actually linked in the text. Since only existing cards are ever linked inline, this array holds existing cards only; do not add a proposed half.
 
 ## The link inventory
 

@@ -33,4 +33,5 @@ Full detail is in the style guide. The parts most often got wrong:
 - Every card carries an argument, and closes with a section on how the subject was remembered and what historians dispute.
 - At least one contested figure or tradition flagged as contested.
 - Simplified hanzi with tone-marked pinyin, first mention only, in the exact format `Chang'an (长安 Cháng'ān)`.
+- Only link a term inline if its card already exists. The live site does not grey out unresolved links the way Obsidian does, it drops them to plain text with no signal, so a link to nothing is worse than none. Not-yet-written targets go in the `## Link inventory` section and `_queue.md`, never inline.
 - Never build a card by paraphrasing one book. An earlier Tang draft tracked Mark Edward Lewis closely and could not ship.

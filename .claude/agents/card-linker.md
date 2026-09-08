@@ -13,9 +13,9 @@ Read `docs/card-style-guide.md` and `docs/cards/tang.md` for the conventions.
 
 1. Load the corpus from `history-of-china/snake-timeline/data/china_history_expanded.json` (branch `codex/china-atlas`, key `cards`) and build the full id-to-name index. Ids are kebab-case slugs; older imported records carry a `catalog-` prefix with the original uppercase id.
 2. Read the drafted card. Identify every proper noun, place, institution, event, person and concept that is or should be its own card.
-3. Insert piped Obsidian wikilinks on first mention only: `[[an-lushan|rebellion of the frontier general An Lushan]]`. The display text must read naturally in the sentence. Never reword the prose to accommodate a link; if a link will not sit cleanly, leave it out and note it.
-4. Link targets that do not exist yet as well. Obsidian greys out unresolved links, which is the working queue.
-5. Update the card's `related` frontmatter array, split by comment into existing cards and proposed cards.
+3. Insert piped Obsidian wikilinks on first mention only, **and only when the target card already exists in the corpus**: `[[an-lushan|rebellion of the frontier general An Lushan]]`. The display text must read naturally in the sentence. Never reword the prose to accommodate a link; if a link will not sit cleanly, leave it out and note it.
+4. Do not link a target that does not exist yet. Unlike Obsidian, the live site does not grey out unresolved links, it silently drops them to plain text with no signal to the reader, so a link to nothing is worse than no link. Leave the term as plain text (still glossed with hanzi and pinyin as normal) and record it in the link inventory instead.
+5. Update the card's `related` frontmatter array to the existing-card slugs actually linked in the text. No proposed half.
 6. Write the `## Link inventory` section at the foot of the card: existing slugs as inline code, then Tier 1 (the card is incoherent without them, usually hub cards), Tier 2 (strongly wanted), Tier 3 (eventually), one line each on what the card would cover.
 
 ## Your job across the corpus
