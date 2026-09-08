@@ -1709,18 +1709,22 @@
     },
     {
       "id": "song",
-      "name": "Song",
+      "name": "Song dynasty",
       "han": "宋",
       "start": 960,
       "end": 1279,
       "color": "#567f7c",
-      "description": "Founded in 960, Song brought much of the former Tang heartland under one court while sharing East Asia with powerful neighbouring empires. Growing markets, printed books and examinations helped shape its society. Trade and learning flourished alongside the continuing demands of war.",
+      "description": "The Song (宋 Sòng) dynasty ruled much of China from 960 to 1279. Its era brought government-issued paper money, movable-type printing and celebrated landscape painting. Founded by Emperor Taizu (太祖 Tàizǔ), it reunited much of a divided China before losing the north in 1127; its southern court survived until the Mongol conquest.",
       "source": "https://en.wikipedia.org/wiki/Song_dynasty",
       "kind": "period",
-      "note": "960–1279. Northern Song ends in 1127; Southern Song continues to 1279. Regional prosperity and political boundaries changed substantially within both periods.",
+      "note": "",
       "sourceIds": [],
       "sources": [
         "https://en.wikipedia.org/wiki/Song_dynasty",
+        "https://www.jstor.org/stable/j.ctvjsf42m",
+        "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B",
+        "https://www.jstor.org/stable/j.ctv1cbn3m5",
+        "https://afe.easia.columbia.edu/songdynasty-module/tech-printing.html",
         "https://afe.easia.columbia.edu/songdynasty-module/index.html",
         "https://www.metmuseum.org/toah/ht/07/eac.html"
       ],
@@ -1728,20 +1732,44 @@
       "category": "dynasty",
       "evidence": "Sourced historical commentary",
       "importance": 5,
-      "sections": [
-        {
-          "title": "Markets and education",
-          "text": "Specialized producers supplied towns and cities through expanding markets. Printing made study texts more available, while examinations offered educated families a route into government. These developments created opportunities, but preparation still required time, teachers and money. Commercial growth also left families exposed to debt, failed harvests and taxes."
-        },
-        {
-          "title": "Survival in the south",
-          "text": "Jin forces took the northern capital in 1127, but the Song ruling house rebuilt its government in the south. Southern farming, cities and transport routes supplied the money and grain needed to maintain armies. The dynasty continued until 1279, resisting first Jin and then the Mongols. Wealth gave it resources to fight; turning those resources into lasting security remained a difficult political and military task."
-        }
-      ],
       "sourceLabels": {
+        "https://www.jstor.org/stable/j.ctvjsf42m": "Dieter Kuhn · The Age of Confucian Rule: The Song Transformation of China",
+        "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B": "Patricia Buckley Ebrey · The Cambridge Illustrated History of China",
+        "https://www.jstor.org/stable/j.ctv1cbn3m5": "F. W. Mote · Imperial China 900–1800",
+        "https://afe.easia.columbia.edu/songdynasty-module/tech-printing.html": "Columbia University · Song printing",
         "https://afe.easia.columbia.edu/songdynasty-module/index.html": "Columbia University · Song society",
         "https://en.wikipedia.org/wiki/Song_dynasty": "Wikipedia · Song dynasty"
       },
+      "sections": [
+        {
+          "title": "Taizu founds the dynasty",
+          "text": "In 960, an army commander seized the throne from a child emperor. His name was Zhao Kuangyin (赵匡胤 Zhào Kuāngyìn), better known as Emperor Taizu (r. 960–976). Backed by his troops, he forced the ruler of Later Zhou (后周 Hòu Zhōu) to abdicate and founded the Song.\n\nChina had been divided since the fall of the [[id:tang|Tang]] (唐 Táng). In the north, military leaders repeatedly overthrew one another; in the south, rival kingdoms ruled independently. Later Zhou was the last of the northern regimes in this [[id:five-dynasties|Five Dynasties and Ten Kingdoms period]] (五代十国 Wǔdài Shíguó). When its emperor died in 959, his young son inherited the throne. Taizu took power the following year.\n\nFrom his capital at Kaifeng (开封 Kāifēng), Taizu conquered several southern kingdoms and brought their tax revenues under Song control. His brother and successor, Emperor Taizong (太宗 Tàizōng, r. 976–997), completed the remaining conquests and submissions by 979. Reuniting much of China took the two emperors nearly twenty years.\n\nTaizu knew that another general could overthrow him in turn. He and his successors put civilian officials in charge of regional government, brought strong military units into the central army and rotated commanders. Generals had less freedom to build the personal armies that had brought earlier rulers to power."
+        },
+        {
+          "title": "Northern Song and Southern Song",
+          "text": "The Northern Song (北宋 Běi Sòng, 960–1127) ruled from Kaifeng over much of northern and southern China. It shared the wider region with powerful neighbours: the Khitan-ruled [[id:liao|Liao]] (辽 Liáo) to the north and the Tangut-ruled [[id:western-xia|Western Xia]] (西夏 Xī Xià) to the northwest. Song campaigns failed to recover all the northern lands its rulers claimed. Agreements with [[id:chanyuan|Liao in 1005]] and Xia in 1044 brought peace in return for annual payments.\n\nHoping to regain northern territory, Song joined the Jurchen-ruled [[id:jurchen-jin|Jin]] (金 Jīn) in an attack on Liao. Jin then turned against Song. Its armies [[id:jingkang|captured Kaifeng in 1127]] and took both the reigning emperor and his father prisoner.\n\nAnother member of the imperial family took the throne as Emperor Gaozong (高宗 Gāozōng, r. 1127–1162). His court fled south and, after years on the move, settled at Hangzhou (杭州 Hángzhōu). Officially called Lin'an (临安 Lín'ān), it became the capital in 1138.\n\nThe Southern Song (南宋 Nán Sòng, 1127–1279) was the same dynasty ruling from a new capital. It had lost the north, but retained populous southern lands with productive farms and busy markets. Their wealth sustained the court and its armies for another century and a half. A peace agreement with Jin in 1141–42 recognised the division, although Song rulers continued to hope for recovery of the north."
+        },
+        {
+          "title": "Governing through educated officials",
+          "text": "Song emperors relied increasingly on officials selected through the civil examinations (科举 kējǔ). Candidates studied classical texts and practised the writing required for government service. Passing could win a government post and bring status to a whole family. Parents invested in schooling and books to give their sons that chance.\n\nYears of study were expensive. Families already connected to government could afford better preparation and had other routes into office. Women could study and teach their children, but could not sit the examinations or enter the civil service.\n\nCivilian officials also supervised a large professional army. Paying soldiers and defending the borders put heavy demands on the treasury. From 1069, [[id:song-wang-anshi|Wang Anshi]] (王安石 Wáng Ānshí), supported by Emperor Shenzong (神宗 Shénzōng), introduced reforms that included government loans to farmers, changes to labour obligations and local militia training. He hoped to help farming households and increase government revenue. Opponents disputed how the reforms worked and whom they helped. The struggle over his policies outlasted his years in office."
+        },
+        {
+          "title": "Rice, paper money and sea trade",
+          "text": "New rice varieties helped feed the growing towns. Early-ripening, drought-resistant Champa rice from Southeast Asia could grow in places less suited to older varieties. Farmers also extended irrigation and brought more land into cultivation. More food supported a larger population, while farming families sold surplus crops and specialised in products such as tea and silk. The [[id:southward-economic-shift|south's economic expansion]] was already well advanced before the court moved there in 1127.\n\nSong merchants and officials developed new ways to pay for this trade. In Sichuan (四川 Sìchuān), merchants used paper notes to avoid carrying heavy iron coins. In 1023, the government set up an office to issue [[id:song-paper-money|paper currency]]. Paper notes could carry a large value without the weight of metal, although coins remained in use.\n\nLarge ships carried Chinese ceramics, silk and books overseas. Magnetic compasses helped sailors navigate, and watertight compartments limited the spread of water through a damaged hull. Taxes on maritime commerce supplied government revenue. Southern Song also maintained a powerful navy, which fought for a state increasingly dependent on its rivers and coast."
+        },
+        {
+          "title": "Movable type and gunpowder weapons",
+          "text": "Bi Sheng (毕昇 Bì Shēng) developed movable type in the 1040s. Printers could arrange individual clay characters to make a page, then reuse them for another text. Woodblock printing, in which a whole page was carved on a block, remained more widely used. The larger expansion of printing put examination guides, religious works and practical manuals within reach of more readers.\n\nGunpowder acquired new military uses during the Song. Armies used [[id:song-gunpowder|gunpowder incendiary weapons]], including grenades thrown by catapults, and military manuals recorded recipes for making the powder. These weapons spread fire during sieges. Song's enemies also acquired its technology, so inventions could give an advantage without guaranteeing victory."
+        },
+        {
+          "title": "Landscape painting and Confucian learning",
+          "text": "Song painters made mountains, rivers and forests the main subjects of major works. In a monumental landscape by Fan Kuan (范宽 Fàn Kuān), towering peaks dwarf the travellers below. Ink and brushwork could suggest rock, mist and distance on a hanging scroll. Landscape painting became one of the best-known achievements of Chinese art.\n\nPotters produced ceramics for a wide market. Cizhou (磁州 Cízhōu) was known for black-and-white stoneware, including vases decorated with carved peonies. Similar wares were made elsewhere in northern China. Merchants carried bowls, dishes and vases from regional workshops to buyers across China and overseas.\n\nConfucian scholars reconsidered how people should learn and live. [[id:song-zhu-xi|Zhu Xi]] (朱熹 Zhū Xī) helped establish academies and taught that study should shape personal conduct and family responsibilities. His commentaries on the Four Books (四书 Sìshū), a collection of Confucian texts, brought earlier teachings into an influential programme of moral education. His ideas faced opposition in his lifetime before gaining official support."
+        },
+        {
+          "title": "Mongol conquest and what continued",
+          "text": "The Mongols conquered Southern Song after decades of war. Chinese soldiers, sailors and engineers helped their armies besiege cities and fight on the rivers. The fall of the stronghold of Xiangyang (襄阳 Xiāngyáng) in 1273 opened an invasion route into the south. Hangzhou surrendered in 1276, but surviving members of the imperial family continued resistance. Their final naval defeat in 1279 ended Song rule.\n\nSouthern China became part of the Mongol [[id:yuan|Yuan]] (元 Yuán) dynasty. Song books remained in use, and later rulers adopted Zhu Xi's interpretations of the Confucian classics for the civil examinations. Students continued to study his work long after the dynasty that produced it had fallen."
+        }
+      ],
       "related": [
         "catalog-R_NSONG",
         "catalog-R_SSONG",
@@ -1766,21 +1794,40 @@
           "https://www.metmuseum.org/toah/ht/07/eac.html"
         ]
       },
-      "searchAliases": [
-        "Song"
-      ],
       "linkTitle": "Song",
+      "linkAliases": [],
+      "annotateNames": false,
+      "searchAliases": [
+        "Song",
+        "Song dynasty"
+      ],
       "pinyin": "sòng",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Song_Taizu.jpg/960px-Song_Taizu.jpg",
-        "width": 22645,
-        "height": 25422,
-        "credit": "Anonymous Unknown author · Wikimedia Commons",
-        "source": "https://commons.wikimedia.org/wiki/File:Song_Taizu.jpg",
-        "license": "Public domain",
-        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "alt": "A seated emperor in red court robes.",
-        "caption": "A court portrait of Song Taizu, Zhao Kuangyin. Imperial portraiture asserts dynastic authority; the image is not a literal record of the military transfer of power in 960."
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Song-Liao-Xixia-1111.png",
+        "width": 556,
+        "height": 537,
+        "alt": "Map with Song in orange, Western Xia in green and Liao in purple, with Jurchens labelled to the northeast.",
+        "caption": "Modern reconstruction of Song, Liao and Western Xia in 1111. Boundaries are approximate; faint modern borders provide a geographical reference.",
+        "credit": "Douglasfrankfort; 2018 revision by 复旦大学张超 · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Song-Liao-Xixia-1111.png",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "fullSize": true,
+        "sectionImages": [
+          {
+            "section": "Northern Song and Southern Song",
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/China_-_Southern_Song_Dynasty-en.svg/960px-China_-_Southern_Song_Dynasty-en.svg.png",
+            "width": 960,
+            "height": 943,
+            "alt": "Map showing Song south of Jin, Western Xia to the northwest, and labelled cities including Kaifeng and Lin'an.",
+            "caption": "Modern reconstruction of Southern Song and its neighbours in the twelfth century. Approximate boundaries show Song south of Jin; Kaifeng and Lin'an are labelled for comparison.",
+            "credit": "Mozzan and Kanguole, after Yu Ninjie · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:China_-_Southern_Song_Dynasty-en.svg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "fullSize": true
+          }
+        ]
       }
     },
     {

@@ -315,15 +315,31 @@ const HISTORY_IMAGES = {
     "caption": "Palace Banquet, a painting assigned to the tenth-century Five Dynasties–early Song milieu, in the Metropolitan Museum of Art. Court culture continued across rapid political changes."
   },
   "song": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Song_Taizu.jpg/960px-Song_Taizu.jpg",
-    "width": 22645,
-    "height": 25422,
-    "credit": "Anonymous Unknown author · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Song_Taizu.jpg",
-    "license": "Public domain",
-    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "alt": "A seated emperor in red court robes.",
-    "caption": "A court portrait of Song Taizu, Zhao Kuangyin. Imperial portraiture asserts dynastic authority; the image is not a literal record of the military transfer of power in 960."
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Song-Liao-Xixia-1111.png",
+    "width": 556,
+    "height": 537,
+    "alt": "Map with Song in orange, Western Xia in green and Liao in purple, with Jurchens labelled to the northeast.",
+    "caption": "Modern reconstruction of Song, Liao and Western Xia in 1111. Boundaries are approximate; faint modern borders provide a geographical reference.",
+    "credit": "Douglasfrankfort; 2018 revision by 复旦大学张超 · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Song-Liao-Xixia-1111.png",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "Northern Song and Southern Song",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/China_-_Southern_Song_Dynasty-en.svg/960px-China_-_Southern_Song_Dynasty-en.svg.png",
+        "width": 960,
+        "height": 943,
+        "alt": "Map showing Song south of Jin, Western Xia to the northwest, and labelled cities including Kaifeng and Lin'an.",
+        "caption": "Modern reconstruction of Southern Song and its neighbours in the twelfth century. Approximate boundaries show Song south of Jin; Kaifeng and Lin'an are labelled for comparison.",
+        "credit": "Mozzan and Kanguole, after Yu Ninjie · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:China_-_Southern_Song_Dynasty-en.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fullSize": true
+      }
+    ]
   },
   "yuan": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/YuanEmperorAlbumKhubilaiPortrait.jpg/960px-YuanEmperorAlbumKhubilaiPortrait.jpg",

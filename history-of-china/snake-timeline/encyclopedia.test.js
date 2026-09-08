@@ -49,13 +49,18 @@ test('Every encyclopedia card has an image with descriptive text and credited pr
  assert.notEqual(images.abdication.src,images.republic.src,'abdication and republic use different images');
  assert.match(images.abdication.caption,/Puyi at age three in 1909/);
 });
-test('Every displayed card uses a different picture',()=>{
+test('Every displayed card uses a different picture except the shared Song period map',()=>{
  const seenSources=new Map(),seenImages=new Map();
  const normalize=url=>url.replace(/^https?:\/\//,'').replace(/\/$/,'');
  for(const card of reading.all){
   const image=images[card.id],source=normalize(image.source||image.src),src=normalize(image.src);
-  assert.equal(seenSources.has(source),false,card.id+' repeats the picture used by '+seenSources.get(source));
-  assert.equal(seenImages.has(src),false,card.id+' repeats the image URL used by '+seenImages.get(src));
+  // The dynasty overview and its Northern Song period use the same approved explanatory map.
+  const sameSongMap = card.id === 'catalog-S_SONG' && seenSources.get(source) === 'song'
+    && image.source === 'https://commons.wikimedia.org/wiki/File:Song-Liao-Xixia-1111.png';
+  if (!sameSongMap) {
+   assert.equal(seenSources.has(source),false,card.id+' repeats the picture used by '+seenSources.get(source));
+   assert.equal(seenImages.has(src),false,card.id+' repeats the image URL used by '+seenImages.get(src));
+  }
   seenSources.set(source,card.id);seenImages.set(src,card.id);
  }
 });

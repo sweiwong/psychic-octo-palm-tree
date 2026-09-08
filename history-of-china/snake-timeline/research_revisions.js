@@ -1,5 +1,19 @@
 // Source-checked expansions of subjects already present in the workbook.
 const RESEARCH_REVISIONS = {
+  "song": {
+    "sources": [
+      "https://www.jstor.org/stable/j.ctvjsf42m",
+      "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B",
+      "https://www.jstor.org/stable/j.ctv1cbn3m5",
+      "https://afe.easia.columbia.edu/songdynasty-module/tech-printing.html"
+    ],
+    "sourceLabels": {
+      "https://www.jstor.org/stable/j.ctvjsf42m": "Dieter Kuhn · The Age of Confucian Rule: The Song Transformation of China",
+      "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B": "Patricia Buckley Ebrey · The Cambridge Illustrated History of China",
+      "https://www.jstor.org/stable/j.ctv1cbn3m5": "F. W. Mote · Imperial China 900–1800",
+      "https://afe.easia.columbia.edu/songdynasty-module/tech-printing.html": "Columbia University · Song printing"
+    }
+  },
   'catalog-E_QING_TAIPING': {
     name:'Taiping Rebellion',nameZh:'太平天国运动',han:'乱',start:1850,end:1864,
     category:'event',kind:'event',parent:'qing',ribbon:true,label:false,markerOffset:44,
