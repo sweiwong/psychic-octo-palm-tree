@@ -7,13 +7,6 @@ const BEGINNER_LATE = (() => {
       ...(note ? { note } : {}) };
   };
 
-  revise('ming', null,
-    'Zhu Yuanzhang rose through rebellions against the Yuan and founded the Ming dynasty in 1368. His court rebuilt imperial government and presented its rule as a restoration of good order. Over the next three centuries, growing cities, trade and publishing changed the society it governed.',
-    'Building a new dynasty',
-    'The Ming drew on earlier institutions and traditions to establish its authority. Court ceremonies, scholarship and painting helped present the new rulers as rightful emperors. Artists revived older styles, while officials adapted older ways of governing to new circumstances. These choices connected the dynasty to a respected past and gave a former rebel a language in which to claim the throne.',
-    'A growing commercial world',
-    'In the later Ming, readers bought more books and wealthy households bought more luxury goods. Silver linked taxes and trade to distant markets. These changes created opportunities, but people also faced changing prices and heavy obligations. Rebellion, financial strain and war converged in the dynasty’s final years. After Beijing fell in 1644, Ming loyalist courts continued in the south.');
-
   revise('qing', null,
     'The Qing dynasty began in the northeast in 1636. Its armies took Beijing in 1644 and made the former Ming capital their own. The conquest continued for decades, as Ming loyalists resisted in the south. Qing rule eventually lasted until the emperor’s abdication in 1912.',
     'Governing a diverse empire',

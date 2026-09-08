@@ -398,12 +398,54 @@ const HISTORY_IMAGES = {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/A_Seated_Portrait_of_Ming_Emperor_Taizu.jpg/960px-A_Seated_Portrait_of_Ming_Emperor_Taizu.jpg",
     "width": 3101,
     "height": 5050,
-    "credit": "Artist unidentified · Wikimedia Commons",
+    "alt": "Seated emperor wearing a yellow dragon robe and black cap on a decorated throne.",
+    "caption": "Ming-dynasty portrait of the Hongwu emperor, Zhu Yuanzhang, by an unidentified artist. The formal robe and throne present him as an emperor; the painting’s exact date is unspecified.",
+    "credit": "Artist unidentified · National Palace Museum / Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:A_Seated_Portrait_of_Ming_Emperor_Taizu.jpg",
     "license": "Public domain",
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "alt": "A seated emperor in yellow robes before a decorated throne.",
-    "caption": "A formal portrait of the Hongwu emperor, founder of the Ming. Dynastic portraiture represents authority; it is not a depiction of the rebellion or conquest that produced it."
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "The northern frontier",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Ming_Empire_cca_1580_%28en%29.svg/960px-Ming_Empire_cca_1580_%28en%29.svg.png",
+        "width": 2304,
+        "height": 2344,
+        "alt": "Map showing Ming territory in brown, neighbouring states, principal cities and the Great Wall along the northern frontier.",
+        "caption": "Modern reconstruction of the Ming empire around 1580, with principal cities and the Great Wall marked. Boundaries are approximate; this is the later Ming, not the territory held throughout the dynasty.",
+        "credit": "Michal Klajban; English derivative by Jann · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Ming_Empire_cca_1580_(en).svg",
+        "license": "CC BY-SA 3.0 Czech Republic",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/cz/",
+        "fullSize": true
+      },
+      {
+        "section": "Books, learning and new ideas",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Kunyu_Wanguo_Quantu_by_Matteo_Ricci_All_panels.jpg/1280px-Kunyu_Wanguo_Quantu_by_Matteo_Ricci_All_panels.jpg",
+        "width": 1280,
+        "height": 586,
+        "alt": "Six-panel oval world map with Chinese labels, Asia near the centre, the Americas to the right and astronomical diagrams at the edges.",
+        "caption": "Matteo Ricci’s Chinese-language world map of 1602, shown as a joined reproduction of six panels digitised by the Library of Congress. The Americas appear on the right. This is a map made during the Ming, not a modern reconstruction.",
+        "credit": "Matteo Ricci · Library of Congress; panels joined by MawaruNeko / Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Kunyu_Wanguo_Quantu_by_Matteo_Ricci_All_panels.jpg",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "fullSize": true
+      },
+      {
+        "section": "Porcelain for the court and the world",
+        "src": "https://images.metmuseum.org/CRDImages/as/web-large/DP225254.jpg",
+        "width": 468,
+        "height": 624,
+        "alt": "Large rounded white porcelain jar painted in cobalt blue with dragons, cloud shapes and stylised Chinese characters.",
+        "caption": "Imperial Jingdezhen jar, Jiajing mark and period, 1522–1566. Two dragons surround a stylised character for longevity. The cobalt-blue decoration lies beneath the glaze.",
+        "credit": "The Metropolitan Museum of Art, Gift of Elizabeth Milbank Anderson, 1920",
+        "source": "https://www.metmuseum.org/art/collection/search/53828",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fullSize": true
+      }
+    ]
   },
   "qing": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Sura_han_ni_chiha._Currency_of_the_farther_East._No.850.jpg",

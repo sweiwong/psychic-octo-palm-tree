@@ -2953,8 +2953,10 @@ const CHART_RESEARCH=(()=>{
 },
   "ming": {
     "sources": [
-      "https://www.metmuseum.org/toah/ht/07/eac.html",
-      "https://www.dpm.org.cn/court/event/159873.html"
+      "https://www.jstor.org/stable/j.ctt6wpmgz",
+      "https://www.jstor.org/stable/j.ctv1cbn3m5",
+      "https://www.metmuseum.org/art/collection/search/53828",
+      "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B"
     ],
     "dateReview": {
       "status": "confirmed",
@@ -2965,7 +2967,13 @@ const CHART_RESEARCH=(()=>{
       ]
     },
     "catalogDates": null,
-    "catalogNote": "1368–1644 is the main Ming court convention. Southern Ming successors survived after Beijing fell."
+    "catalogNote": "1368–1644 is the main Ming court convention. Southern Ming successors survived after Beijing fell.",
+    "sourceLabels": {
+      "https://www.jstor.org/stable/j.ctt6wpmgz": "Timothy Brook · The Troubled Empire: China in the Yuan and Ming Dynasties",
+      "https://www.jstor.org/stable/j.ctv1cbn3m5": "F. W. Mote · Imperial China 900–1800",
+      "https://www.metmuseum.org/art/collection/search/53828": "Metropolitan Museum of Art · Jiajing dragon jar",
+      "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B": "Patricia Buckley Ebrey · The Cambridge Illustrated History of China"
+    }
   },
   "qing": {
     "sources": [
