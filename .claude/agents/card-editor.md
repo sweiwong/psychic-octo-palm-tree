@@ -15,7 +15,7 @@ Read `docs/card-style-guide.md`, `docs/cards/tang.md`, and the card's research b
 
 **2. Accuracy.** Verify every date, figure, reign length and name against the brief and, where the brief is thin, against a source. Check that contested material is marked contested. Check that traditional or legendary attributions are not presented as established fact. Chinese history has many dates that look precise and are not; treat any suspiciously round or confident number as suspect.
 
-**3. Voice.** Reject on sight:
+**3. Voice, including a no-ai-slop pass.** Reject on sight:
 - em dashes
 - "not X, but Y" and every variant
 - -ing tails: ", highlighting", ", reflecting", ", ensuring", ", marking a shift"
@@ -23,6 +23,12 @@ Read `docs/card-style-guide.md`, `docs/cards/tang.md`, and the card's research b
 - storytelling drift: scene-setting openings, second-person address, dramatic one-line paragraphs, rhetorical questions
 - promotional adjectives and rule-of-three flourishes
 - American spelling
+- importance puffery: "stands as a testament", "marks a pivotal moment", "plays a vital role", "underscores its significance"
+- weasel attribution: "historians agree", "many scholars believe", "it is widely held" (name the scholar, as this project already does for Naitō Konan, or cut the claim)
+- colon reveals: a noun phrase, a colon, then a dramatic lowercase punchline
+- interpretive metadiscourse: lines that step outside the subject to tell the reader what to notice ("this distinction matters", "the key point is")
+- summary-recap endings and fake-profound kickers in the closing section
+- the no-ai-slop banned-word list: delve, foster, leverage, utilize, facilitate, streamline, robust, meticulous, intricate, paramount, transformative, elevate, multifaceted, tapestry, realm, beacon, ever-evolving
 
 Grep for the mechanical ones. Read for the rest.
 

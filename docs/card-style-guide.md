@@ -57,6 +57,15 @@ Wei's writing rules are non-negotiable and apply to every line:
 - **No chatbot artifacts**, no promotional adjectives, no rule-of-three flourishes.
 - British spelling ("militarised", "neighbouring") to match the existing corpus.
 
+Cards also get a no-ai-slop pass, adapted from the `no-ai-slop` skill's detection rules (not its "preserve personal voice" editing principles, which do not apply to impersonal reference prose):
+
+- **No importance puffery.** "Stands as a testament", "marks a pivotal moment", "plays a vital role", "underscores its significance". State the fact and let the reader judge whether it matters.
+- **No weasel attribution.** "Historians agree", "many scholars believe", "it is widely held". Name the historian, the way this project already names Naitō Konan for the Tang-Song transition, or cut the claim.
+- **No colon reveals.** A noun phrase, a colon, then a dramatic lowercase punchline ("The result: chaos"). Write a plain sentence instead.
+- **No interpretive metadiscourse.** Cut lines that step outside the subject to tell the reader what to notice or how much weight to give it ("this distinction matters", "the key point is"). If the point is clear from the facts already given, delete the aside.
+- **No summary-recap endings or fake-profound kickers.** No "in conclusion", "ultimately", or a closing metaphor doing the work a plain sentence should do. End the closing section on the clearest concrete point already made, not a cute line.
+- **No banned words**: delve, foster, leverage, utilize, facilitate, streamline, robust, meticulous, intricate, paramount, transformative, elevate, multifaceted, tapestry, realm, beacon, ever-evolving.
+
 Two further rules specific to this project:
 
 - **Every card carries an argument, not just a chronology.** The Tang card argues that the golden age was constructed retrospectively and that the "most Chinese" dynasty had frontier origins. Find the equivalent for each topic: what does a good historian actually think is at stake here.
@@ -202,6 +211,7 @@ Then report to Wei: the file path, the word count, how many new cards the articl
 - No em dashes anywhere.
 - No "not X, but Y" constructions.
 - No -ing tails, no "serves as" or "represents".
+- No importance puffery, weasel attribution, colon reveals, interpretive metadiscourse, summary-recap endings, or banned AI-slop words (delve, leverage, utilize, robust, meticulous, transformative and the rest of the list above).
 - Every Chinese term glossed once with simplified hanzi and tone-marked pinyin.
 - Lead paragraph states what the thing is, no hook.
 - Every section heading is substantive.

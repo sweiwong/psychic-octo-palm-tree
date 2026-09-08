@@ -19,4 +19,6 @@ Codex has no subagents, so run these phases yourself in order, in this session, 
 
 **Phase 5, edit.** Check your own work against the style guide checklist, hardest on sourcing integrity: search a distinctive sentence or two and confirm you have not tracked a source. Then accuracy, voice rules, structure, tone marks, and whether the card actually makes an argument. State the argument back in one sentence. If you cannot, the card is not finished.
 
+Also run the `/no-ai-slop` skill in detect mode against the finished card text and fix anything it flags. The style guide's voice section lists the specific patterns this project has already seen slip through: importance puffery ("marks a pivotal moment"), weasel attribution ("historians agree"), colon reveals, interpretive metadiscourse, and banned words like "meticulous" or "transformative".
+
 Report: file path, word count, the argument, new cards generated, and anything factually contested Wei should rule on.
