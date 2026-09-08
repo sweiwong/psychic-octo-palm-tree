@@ -32,16 +32,16 @@ for (const width of [1440, 390]) {
       await page.goto(baseUrl + '?card=tang', { waitUntil: 'domcontentloaded' });
       await page.locator('.card-analysis a[data-card-id="an-lushan"]').click();
       assert.equal(new URL(page.url()).searchParams.get('card'), 'an-lushan');
-      await page.locator('.card-analysis a[data-card-id="two-tax"]').click();
-      assert.equal(new URL(page.url()).searchParams.get('card'), 'two-tax');
-      assert.equal(await page.locator('#detail h3').innerText(), 'Two-Tax reform');
+      await page.locator('.card-analysis a[data-card-id="li-bai-du-fu"]').click();
+      assert.equal(new URL(page.url()).searchParams.get('card'), 'li-bai-du-fu');
+      assert.equal(await page.locator('#detail h3').innerText(), 'Li Bai (李白) and Du Fu (杜甫)');
       assert.doesNotMatch(await page.locator('#detail').innerText(), /\[\[|\]\]/);
       await page.locator('.card-backlinks a[data-card-id="an-lushan"]').click();
       assert.equal(new URL(page.url()).searchParams.get('card'), 'an-lushan');
       await page.goBack();
-      await page.waitForFunction(() => document.querySelector('#detail h3')?.textContent === 'Two-Tax reform');
+      await page.waitForFunction(() => document.querySelector('#detail h3')?.textContent === 'Li Bai (李白) and Du Fu (杜甫)');
       await page.reload({ waitUntil: 'domcontentloaded' });
-      assert.equal(await page.locator('#detail h3').innerText(), 'Two-Tax reform');
+      assert.equal(await page.locator('#detail h3').innerText(), 'Li Bai (李白) and Du Fu (杜甫)');
     } finally { await page.close(); }
   });
 }

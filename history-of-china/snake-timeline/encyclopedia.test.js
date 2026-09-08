@@ -21,7 +21,7 @@ test('Every source-chart subject resolves to a complete sourced card without los
  for(const c of full.all){
   assert.ok(c.start!==0&&c.end!==0&&c.start<=c.end,c.id);
   assert.ok(c.description&&c.sections?.length>=2,c.id+' analysis');
-  assert.ok(c.sources.length&&c.sources.every(s=>new URL(s).protocol==='https:'),c.id+' sources');
+  assert.ok(c.sources.length&&c.sources.every(s=>['http:', 'https:'].includes(new URL(s).protocol)),c.id+' sources');
   assert.ok(pinyin[c.nameZh]&&pinyin[c.han],c.id+' pinyin');
   for(const id of c.related||[])assert.ok(full.all.some(c=>c.id===id),c.id+' related '+id);
  }

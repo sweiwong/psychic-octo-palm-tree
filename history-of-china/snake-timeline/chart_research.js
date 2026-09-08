@@ -1428,7 +1428,21 @@ const CHART_RESEARCH=(()=>{
   },
   "three-kingdoms": {
     "sources": [
-      "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+      "https://www.eastasianhistory.org/sites/default/files/article-content/01/EAH01_01.pdf",
+      "https://www.eastasianhistory.org/sites/default/files/article-content/02/EAH02_07.pdf",
+      "https://dash.harvard.edu/server/api/core/bitstreams/7312037e-7325-6bd4-e053-0100007fdf3b/content",
+      "https://medievalworlds.net/0xc1aa5572_0x003f8da1.pdf",
+      "https://web.archive.org/web/2023/https://www.chinaknowledge.de/History/Division/sanguo-event.html",
+      "https://web.archive.org/web/2023/https://www.chinaknowledge.de/History/Division/sanguo-military.html",
+      "https://web.archive.org/web/2023/https://www.chinaknowledge.de/Literature/Novels/sanguoyanyi.html",
+      "https://babelstone.co.uk/SanguoYanyi/TextualHistory/Authorship.html",
+      "https://www.cambridge.org/core/books/cambridge-history-of-china/wei/5BFDF2845654D4FC6D7C8BDC6F5D8470/core-reader",
+      "https://en.wikipedia.org/wiki/Records_of_the_Three_Kingdoms",
+      "https://en.wikipedia.org/wiki/Battle_of_Red_Cliffs",
+      "https://en.wikipedia.org/wiki/Three_Kingdoms",
+      "https://en.wikipedia.org/wiki/Cao_Cao_Mausoleum",
+      "https://www.sixthtone.com/news/1006043"
     ],
     "dateReview": {
       "status": "confirmed",
@@ -1438,7 +1452,49 @@ const CHART_RESEARCH=(()=>{
       ]
     },
     "catalogDates": null,
-    "catalogNote": "220–280 follows the museum chronology."
+    "catalogNote": "220–280 follows the museum chronology.",
+    "related": [
+      "catalog-E_3K_1",
+      "catalog-R_WEI",
+      "catalog-R_SHU",
+      "catalog-R_WU",
+      "catalog-E_3K_2",
+      "yellow-turbans",
+      "zhuge-northern-expeditions",
+      "han",
+      "catalog-R_HAN_E",
+      "catalog-R_HAN_W",
+      "jin-early",
+      "catalog-R_JIN_W",
+      "catalog-R_JIN_EASTERN_JIN",
+      "division",
+      "eight-princes",
+      "sixteen",
+      "southward-economic-shift",
+      "sui-examinations",
+      "song-zhu-xi",
+      "catalog-R_NSONG",
+      "yuan",
+      "ming",
+      "qing",
+      "ming-journey-west"
+    ],
+    "sourceLabels": {
+      "https://www.eastasianhistory.org/sites/default/files/article-content/01/EAH01_01.pdf": "Rafe de Crespigny · The Three Kingdoms and Western Jin, Part I",
+      "https://www.eastasianhistory.org/sites/default/files/article-content/02/EAH02_07.pdf": "Rafe de Crespigny · The Three Kingdoms and Western Jin, Part II",
+      "https://dash.harvard.edu/server/api/core/bitstreams/7312037e-7325-6bd4-e053-0100007fdf3b/content": "Xiaofei Tian · Remaking History: The Shu and Wu Perspectives in the Three Kingdoms Period",
+      "https://medievalworlds.net/0xc1aa5572_0x003f8da1.pdf": "Q. Edward Wang · The Legitimacy Debate and Historical Interpretation in the Post-Han Periods",
+      "https://web.archive.org/web/2023/https://www.chinaknowledge.de/History/Division/sanguo-event.html": "Ulrich Theobald · ChinaKnowledge, Previous Events of the Three Empires",
+      "https://web.archive.org/web/2023/https://www.chinaknowledge.de/History/Division/sanguo-military.html": "Ulrich Theobald · ChinaKnowledge, Military History of the Three Empires",
+      "https://web.archive.org/web/2023/https://www.chinaknowledge.de/Literature/Novels/sanguoyanyi.html": "Ulrich Theobald · ChinaKnowledge, Sanguo yanyi",
+      "https://babelstone.co.uk/SanguoYanyi/TextualHistory/Authorship.html": "Andrew West · BabelStone, The Textual History of Sanguo Yanyi",
+      "https://www.cambridge.org/core/books/cambridge-history-of-china/wei/5BFDF2845654D4FC6D7C8BDC6F5D8470/core-reader": "Cambridge History of China vol. 2 · The Six Dynasties 220–589, chapter on Wei",
+      "https://en.wikipedia.org/wiki/Records_of_the_Three_Kingdoms": "Wikipedia · Records of the Three Kingdoms",
+      "https://en.wikipedia.org/wiki/Battle_of_Red_Cliffs": "Wikipedia · Battle of Red Cliffs",
+      "https://en.wikipedia.org/wiki/Three_Kingdoms": "Wikipedia · Three Kingdoms",
+      "https://en.wikipedia.org/wiki/Cao_Cao_Mausoleum": "Wikipedia · Cao Cao Mausoleum",
+      "https://www.sixthtone.com/news/1006043": "Sixth Tone · How Guan Yu Became China's God of War, Wealth, and Everything Else"
+    }
   },
   "jin-early": {
     "sources": [
@@ -1516,7 +1572,37 @@ const CHART_RESEARCH=(()=>{
   },
   "an-lushan": {
     "sources": [
-      "https://ajaonline.org/wp-content/uploads/2011/03/AJAonline_China_Dawn_of_a_Golden_Age2.pdf"
+      "https://ajaonline.org/wp-content/uploads/2011/03/AJAonline_China_Dawn_of_a_Golden_Age2.pdf",
+      "http://www.chinaknowledge.de/History/Tang/tang-event-anlushanrebellion.html",
+      "http://www.chinaknowledge.de/History/Terms/fanzhen.html",
+      "http://www.chinaknowledge.de/History/Terms/huji.html",
+      "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/reach-of-the-military-tang/ECFE9C64AE6E73EC4319B165A606F88C",
+      "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/court-and-province-in-mid-and-late-tang/9944E1F41895AF5010CD2B7F97EB0DAB",
+      "https://www.cambridge.org/core/books/abs/cambridge-economic-history-of-china/public-finance/DBE2FA37763786D641ED7D999E1C55CC",
+      "https://dergipark.org.tr/en/download/article-file/3797515",
+      "https://www.lse.ac.uk/asset-library/information/wp7603.pdf",
+      "https://d-nb.info/1238874010/34",
+      "https://www.iranicaonline.org/articles/personal-names-sogdian-1-in-chinese-sources/",
+      "https://sogdians.si.edu/introduction/",
+      "https://reviews.history.ac.uk/review/1807/",
+      "https://www.tandfonline.com/doi/abs/10.1080/07375034.2018.1514701",
+      "https://bedejournal.blogspot.com/2011/11/steven-pinker-and-an-lushan-revolt.html",
+      "https://www.ebsco.com/research-starters/history/rebellion-lushan",
+      "https://www.ebsco.com/research-starters/history/tibetans-capture-changan",
+      "http://thechinaproject.com/2021/02/03/the-end-of-chinas-golden-age/",
+      "https://tjj.sh.gov.cn/tjzx_tjls/20190312/0014-1003239.html",
+      "https://commons.wikimedia.org/wiki/File:Yan_Zhenqing_-_Draft_of_a_Requiem_to_My_Nephew.jpg",
+      "https://learning.hku.hk/ccch9051/group-24/items/show/40",
+      "https://en.wikipedia.org/wiki/An_Lushan_rebellion",
+      "https://en.wikipedia.org/wiki/An_Lushan",
+      "https://en.wikipedia.org/wiki/Yan_(An%E2%80%93Shi)",
+      "https://en.wikipedia.org/wiki/Emperor_Xuanzong_of_Tang",
+      "https://en.wikipedia.org/wiki/Battle_of_Xiangji_Temple",
+      "https://en.wikipedia.org/wiki/Siege_of_Suiyang",
+      "https://en.wikipedia.org/wiki/Li_Baoyu",
+      "https://en.wikipedia.org/wiki/Chang_Hen_Ge_(poem)",
+      "https://en.wikipedia.org/wiki/Shence_Army",
+      "https://en.wikipedia.org/wiki/Three_Fanzhen_of_Hebei"
     ],
     "dateReview": {
       "status": "confirmed",
@@ -1530,7 +1616,15 @@ const CHART_RESEARCH=(()=>{
       "end": 755,
       "approx": false
     },
-    "catalogNote": "755 is the onset; the rebellion continued to 763. Keep point at onset; describe 755–763 in summary."
+    "catalogNote": "755 is the onset; the rebellion continued to 763. Keep point at onset; describe 755–763 in summary.",
+    "related": [
+      "two-tax",
+      "huichang",
+      "huang-chao",
+      "tang",
+      "li-bai-du-fu",
+      "yuan-drama"
+    ]
   },
   "sutra": {
     "sources": [

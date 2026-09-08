@@ -54,6 +54,8 @@ The compact masthead keeps search, Browse all, and About visible. Nine researche
 
 ## Internal links and backlinks
 
+On 8 September 2026, Wei’s An Lushan and Three Kingdoms drafts from `docs/cards/` were imported into `card-notes/`. There are now eleven authored notes. The supplied wording, image captions, and sources are retained; existing IDs are clickable and proposed cards display as plain labels. The writing queues remain in the source drafts. `fixtures/*-approved.md` preserves the imported drafts for text comparisons. Three Kingdoms keeps its existing timeline ranges and footer map.
+
 The Tang pilot's ten cards are edited in `card-notes/*.md`. The main `card-notes/tang.md` now contains Wei's approved long draft with 26 inline links. Its `annotate-names: false` property preserves the approved Chinese names and pinyin without automatic additions. Other cards remain in the beginner source packs (`beginner_early.js`, `beginner_middle.js`, and `beginner_late.js`). Use links in `description`, section `title` and `text`, or `note`:
 
 ```text

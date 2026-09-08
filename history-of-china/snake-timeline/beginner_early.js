@@ -65,12 +65,6 @@ var BEGINNER_EARLY = (() => {
     'Successor states employed officials and kept methods inherited from earlier rulers. Their kings and emperors argued over who deserved to rule the empire. Even when no court controlled it all, the idea of imperial rule remained powerful. Political borders did not bring all learning, trade or government work to a halt.',
     'New regional centres',
     'Migration helped reshape society around the lower Yangtze River. In the north, courts maintained military and religious ties with Inner Asia. These regions developed their own centres of power and culture. People living through these changes did not know that a future dynasty would reunite much of the country. Their choices involved the rival courts and opportunities of their own time.');
-  add('three-kingdoms', null,
-    'Wei, Shu and Wu emerged as Han power collapsed. Each court claimed a right to inherit or continue imperial rule, but their territories and resources were unequal. Their formal division followed decades of fighting; it did not suddenly begin in 220.',
-    'Three rival courts',
-    'All three used people and methods inherited from Han. Shu claimed to restore Han, while Wei received the imperial title through a transfer from the last Han emperor. Wu established its own southern court. These were rival governments competing over an imperial inheritance, rather than three permanent national identities.',
-    'What an army could sustain',
-    'Commanders needed food, transport and enough people to keep campaigning. Rivers, farming settlements and cooperation with local powerful families helped determine where armies could go and how long they could stay. Later stories celebrate clever plans and memorable heroes. Those plans still faced material limits: even a talented commander could not feed soldiers or replace exhausted resources through ingenuity alone.');
   add('jin-early', null,
     'The Sima family’s Jin dynasty reunited the main successor states in 280. Fighting within the ruling family and upheaval in the north soon broke that unity. A Jin court survived in the south until 420, so the dynasty lasted much longer than its period of broad control.',
     'Princes with armies',

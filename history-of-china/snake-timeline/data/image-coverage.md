@@ -253,3 +253,8 @@ The Tang card now leads with the 661 map. The camel appears with the cultural di
 Caption context: [The Met on internationalism in the Tang](https://www.metmuseum.org/essays/internationalism-in-the-tang-dynasty-618-906), [University of Washington on camel figurines and Central Asian merchants](https://depts.washington.edu/silkroad/exhibit/tang/camel_trader.html), [The Met on Chinese ceramics excavated in Iran](https://www.metmuseum.org/perspectives/medieval-globalism-chinese-ceramics-iran), and [UNESCO’s Longmen nomination, catalogue item 67](https://whc.unesco.org/uploads/nominations/1003.pdf).
 
 The canal map combines courses from several periods. The map caption distinguishes levels of Tang control. The painting is attributed to Han Gan and includes later collectors’ marks. The wooden figure illustrates court fashion; it does not establish clothing for every social class. The bowl fragment documents an imported Chinese object at Nishapur, without claiming a specific journey or arrival date.
+
+
+## Authored cards update · 8 September 2026
+
+An Lushan now uses Wei’s supplied caption for [Yan Zhenqing’s requiem](https://commons.wikimedia.org/wiki/File:Yan_Zhenqing_-_Draft_of_a_Requiem_to_My_Nephew.jpg), with the original public-domain credit. Three Kingdoms uses Wei’s selected [Wu celadon container](https://commons.wikimedia.org/wiki/File:Three_Kingdoms_Celadon_Container_(9832865844).jpg), photographed by Gary Todd, CC0. Both image records and reuse terms were checked, and both images loaded in the local browser. The existing Three Kingdoms map remains below its text.

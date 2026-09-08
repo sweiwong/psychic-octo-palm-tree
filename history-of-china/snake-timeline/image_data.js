@@ -536,12 +536,13 @@ const HISTORY_IMAGES = {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Yan_Zhenqing_-_Draft_of_a_Requiem_to_My_Nephew.jpg/960px-Yan_Zhenqing_-_Draft_of_a_Requiem_to_My_Nephew.jpg",
     "width": 6903,
     "height": 400,
+    "alt": "A handscroll of running-script Chinese calligraphy in black ink, with corrections and crossed-out characters throughout.",
+    "caption": "Yan Zhenqing's draft eulogy for his nephew Yan Jiming, killed with his father Yan Gaoqing when the rebels took Changshan in 756. Written in 758 while the rebellion continued, the sheet is a working draft, its crossings-out and corrections left in place. It is a private record of one family's grief and documentary evidence of the war's human cost, independent of the official chronicles.",
     "credit": "Yan Zhenqing · Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:Yan_Zhenqing_-_Draft_of_a_Requiem_to_My_Nephew.jpg",
     "license": "Public domain",
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "alt": "A long calligraphic manuscript with corrections and crossings-out.",
-    "caption": "Yan Zhenqing’s Draft of a Requiem to My Nephew, dated 758. Its corrections preserve an act of mourning within the An Lushan Rebellion (安史之乱), linking political violence to a family’s loss."
+    "fullSize": true
   },
   "sutra": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Jingangjing.jpg/960px-Jingangjing.jpg",
@@ -2752,15 +2753,16 @@ Object.assign(HISTORY_IMAGES, {
     "caption": "A Qing-period illustration based on the Romance of the Three Kingdoms shows fighting during the Yellow Turban uprising. It is a much later literary image, not contemporary evidence for the rebels of 184."
   },
   "three-kingdoms": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Three_Kingdoms.png",
-    "width": 1288,
-    "height": 912,
-    "source": "https://commons.wikimedia.org/wiki/File:Three_Kingdoms.png",
-    "credit": "SY · Wikimedia Commons",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "alt": "A modern map showing the territories of Wei, Shu and Wu during the Three Kingdoms period.",
-    "caption": "A modern map of Wei, Shu and Wu. The boundaries summarize a changing military situation and should not be read as fixed borders maintained throughout 220–280."
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Three_Kingdoms_Celadon_Container_(9832865844).jpg/960px-Three_Kingdoms_Celadon_Container_(9832865844).jpg",
+    "width": 3456,
+    "height": 5184,
+    "alt": "A grey-green glazed stoneware jar with a wide flanged rim and a band of incised lattice pattern below the neck, on a museum plinth.",
+    "caption": "A celadon-glazed stoneware jar recorded by the National Museum of China as excavated at Nanjing in 1958 and dated to the Wu kingdom (孙吴 Sūn Wú, 222–280), photographed in the museum in 2011. Yue ware celadon came from kilns in the lower Yangtze that Wu's expansion into the south turned into settled, taxable ground: a material trace of the period's most durable achievement rather than of any battle.",
+    "credit": "Gary Todd from Xinzheng, China · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Three_Kingdoms_Celadon_Container_(9832865844).jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "fullSize": true
   },
   "catalog-R_WEI": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/Cao_Pi_Tang.jpg",

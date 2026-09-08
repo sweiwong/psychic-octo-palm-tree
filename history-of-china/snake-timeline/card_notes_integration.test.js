@@ -27,12 +27,12 @@ test('browser uses generated note edits while preserving historical records', ()
   }
 });
 
-test('all ten Tang notes are connected and the saved site pack matches their current text', () => {
+test('all eleven authored notes are connected and the saved site pack matches their current text', () => {
   const notes = Object.fromEntries(fs.readdirSync(__dirname + '/card-notes')
     .filter(name => name.endsWith('.md') && name !== 'README.md')
     .map(name => [name, fs.readFileSync(__dirname + '/card-notes/' + name, 'utf8')]));
   const compiled = compileNotes(notes, browserCards().map(card => card.id));
-  assert.equal(Object.keys(compiled.revisions).length, 10);
+  assert.equal(Object.keys(compiled.revisions).length, 11);
   assert.deepEqual(require('./card_notes'), compiled, 'Rebuild after editing notes.');
   const { graph, errors } = links.validateCards(browserCards());
   assert.deepEqual(errors, []);
@@ -40,7 +40,7 @@ test('all ten Tang notes are connected and the saved site pack matches their cur
     assert(graph.outbound.get(id).some(target => target !== id), id + ' has a useful outgoing link');
     assert(graph.backlinks.get(id).length > 0, id + ' can be reached from another note');
   }
-  assert(graph.outbound.get('an-lushan').includes('two-tax'));
+  assert(graph.outbound.get('an-lushan').includes('li-bai-du-fu'));
   assert(graph.outbound.get('xuanwu-gate').includes('zhenguan-government'));
 });
 

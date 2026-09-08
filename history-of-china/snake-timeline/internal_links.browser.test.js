@@ -47,7 +47,7 @@ test('renders safe links in all prose fields, follows them and derives ordered b
     await expectCard(page, 'Han');
     await page.locator('.card-description a', { hasText: 'the Qing dynasty' }).click();
     await expectCard(page, 'Qing');
-    assert.deepEqual(await page.locator('.card-backlinks a').evaluateAll(nodes => nodes.map(node => node.dataset.cardId)), ['qin', 'han', 'tang', 'early-qing']);
+    assert.deepEqual(await page.locator('.card-backlinks a').evaluateAll(nodes => nodes.map(node => node.dataset.cardId)), ['qin', 'han', 'three-kingdoms', 'tang', 'early-qing']);
   } finally { await page.close(); }
 });
 

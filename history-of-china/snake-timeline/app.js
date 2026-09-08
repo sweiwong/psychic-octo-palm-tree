@@ -164,7 +164,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     }
     const sources=html('details','card-sources');sources.append(html('summary','','Sources and date notes'));
     if(item.note)sources.append(richText('p','card-note',item.note));
-    for(const url of item.sources||[]){if(!/^https:\/\//.test(url))continue;const source=html('a','source-link',item.sourceLabels?.[url]?item.sourceLabels[url]+' ↗':url.includes('en.wikipedia.org')?'Read on Wikipedia ↗':'Read source · '+new URL(url).hostname.replace('www.','')+' ↗');source.href=url;source.target='_blank';source.rel='noopener noreferrer';sources.append(source);}
+    for(const url of item.sources||[]){if(!/^https?:\/\//.test(url))continue;const source=html('a','source-link',item.sourceLabels?.[url]?item.sourceLabels[url]+' ↗':url.includes('en.wikipedia.org')?'Read on Wikipedia ↗':'Read source · '+new URL(url).hostname.replace('www.','')+' ↗');source.href=url;source.target='_blank';source.rel='noopener noreferrer';sources.append(source);}
     const addedSources=new Set(item.sources||[]);
     body.append(sources);
     const linkedFrom = internalLinks.graph.backlinks.get(item.id);
