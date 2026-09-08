@@ -106,7 +106,7 @@ var CARD_NOTES = {
       "note": "About 740–770 locates the mature poetic world of the two writers; it is not their shared lifespan. Li Bai (李白) died in 762 and Du Fu (杜甫) in 770. Individual poem dates can be disputed."
     },
     "song": {
-      "name": "Song dynasty",
+      "name": "Song",
       "linkTitle": "Song",
       "linkAliases": [],
       "description": "The Song (宋 Sòng) dynasty ruled much of China from 960 to 1279. Its era brought government-issued paper money, movable-type printing and celebrated landscape painting. Founded by Emperor Taizu (太祖 Tàizǔ), it reunited much of a divided China before losing the north in 1127; its southern court survived until the Mongol conquest.",

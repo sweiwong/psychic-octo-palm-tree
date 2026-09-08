@@ -1,5 +1,5 @@
 ---
-title: Song dynasty
+title: Song
 link-title: Song
 annotate-names: false
 ---

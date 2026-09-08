@@ -27,7 +27,7 @@ test('Song preserves every approved paragraph, seven sections and thirteen links
   assert.equal(card.note, '');
   assert.equal(card.start, metadata.start);
   assert.equal(card.end, metadata.end);
-  assert.equal(card.name, metadata.name);
+  assert.equal(card.name, 'Song');
   assert.equal(cards.length, 222);
   const { graph, errors } = links.validateCards(cards);
   assert.deepEqual(errors, []);

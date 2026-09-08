@@ -1709,7 +1709,7 @@
     },
     {
       "id": "song",
-      "name": "Song dynasty",
+      "name": "Song",
       "han": "宋",
       "start": 960,
       "end": 1279,
@@ -1798,8 +1798,7 @@
       "linkAliases": [],
       "annotateNames": false,
       "searchAliases": [
-        "Song",
-        "Song dynasty"
+        "Song"
       ],
       "pinyin": "sòng",
       "image": {
