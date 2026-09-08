@@ -7,13 +7,6 @@ const BEGINNER_LATE = (() => {
       ...(note ? { note } : {}) };
   };
 
-  revise('qing', null,
-    'The Qing dynasty began in the northeast in 1636. Its armies took Beijing in 1644 and made the former Ming capital their own. The conquest continued for decades, as Ming loyalists resisted in the south. Qing rule eventually lasted until the emperor’s abdication in 1912.',
-    'Governing a diverse empire',
-    'The Manchu ruling house used Chinese imperial offices and ceremonies while preserving its own military institutions. It also worked with Mongol and Tibetan leaders and supported Buddhist institutions. Different regions had different relationships with the court. The emperor’s authority therefore depended on several traditions of rule, alongside the officials who collected taxes and managed local government.',
-    'Expansion and crisis',
-    'The empire grew in territory and population. Trade supported prosperous regions, but feeding people, raising money and maintaining order placed growing demands on government. During the nineteenth century, devastating civil wars and attacks by foreign powers strained these arrangements. Officials tried new military and industrial projects as they struggled to preserve the dynasty. Its long history includes expansion and prosperity as well as its troubled final decades.');
-
   revise('republic', null,
     'The Republic of China was founded on 1 January 1912. The Qing emperor abdicated on 12 February, ending the dynasty. The new republic faced competing armies, political divisions, war with Japan and civil war. In 1949 its government relocated to Taiwan, where it continued.',
     'Competing claims to govern the republic',

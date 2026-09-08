@@ -448,15 +448,57 @@ const HISTORY_IMAGES = {
     ]
   },
   "qing": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Sura_han_ni_chiha._Currency_of_the_farther_East._No.850.jpg",
-    "width": 520,
-    "height": 260,
-    "credit": "J.H. Stewart Lockhart（骆克） · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Sura_han_ni_chiha._Currency_of_the_farther_East._No.850.jpg",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "alt": "A printed illustration of both sides of a coin with Manchu writing.",
-    "caption": "An 1895 numismatic illustration of a coin associated with Hong Taiji. The object’s Manchu inscription recalls Qing state formation before the conquest of Beijing; the illustration itself is much later."
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Portrait_of_the_Kangxi_Emperor_in_Court_Dress.jpg",
+    "width": 1136,
+    "height": 1798,
+    "alt": "The Kangxi emperor seated in yellow court robes on an elaborately decorated throne.",
+    "caption": "Portrait of the Kangxi emperor in court dress, by an unidentified Qing court painter, late Kangxi period (1662–1722). Colour on silk; Palace Museum, Beijing. This formal portrait presents imperial authority.",
+    "credit": "Unidentified Qing court painter · Palace Museum, Beijing · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_the_Kangxi_Emperor_in_Court_Dress.jpg",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "The eighteenth-century empire",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/39/Qing_China_1820.png",
+        "width": 910,
+        "height": 675,
+        "alt": "English-labelled map of the Qing empire in 1820, with provinces, frontier regions and modern boundary reference lines.",
+        "caption": "Modern reconstruction of the Qing empire in 1820, with provinces and frontier regions labelled in English. Historical boundaries are approximate; red lines show modern boundaries and claims for reference.",
+        "credit": "Pryaltonian; derivative by Wengier · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Qing_China_1820.png",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fullSize": true
+      },
+      {
+        "section": "Books and skilled crafts",
+        "src": "https://images.metmuseum.org/CRDImages/as/web-large/DP-31252-001.jpg",
+        "width": 468,
+        "height": 624,
+        "alt": "A dark brown glass vase with a tall neck, flared rim and rounded body.",
+        "caption": "Glass vase, eighteenth century, Qianlong period (1736–95), China. The Metropolitan Museum of Art, object 91.1.1190; 27.3 centimetres high. The object is an example of Qing decorative production in glass.",
+        "credit": "The Metropolitan Museum of Art · Edward C. Moore Collection, Bequest of Edward C. Moore, 1891",
+        "source": "https://www.metmuseum.org/art/collection/search/60617",
+        "license": "Public domain · CC0",
+        "licenseUrl": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+        "fullSize": true
+      },
+      {
+        "section": "More people, more trade",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Enamellers_Peking_by_John_Thomson_Wellcome_L0056317.jpg/960px-Enamellers_Peking_by_John_Thomson_Wellcome_L0056317.jpg",
+        "width": 960,
+        "height": 958,
+        "alt": "Craftspeople working with vessels in an enamelling workshop in Beijing.",
+        "caption": "Enamellers at work in Beijing, photographed by John Thomson in 1869. Wellcome Collection, L0056317. The workshop scene records skilled craft production during the late Qing.",
+        "credit": "John Thomson · Wellcome Collection · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Enamellers_Peking_by_John_Thomson_Wellcome_L0056317.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "fullSize": true
+      }
+    ]
   },
   "republic": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Sun_Yat-sen_Li_Yuanhong_Wuchang_1912.jpg",
