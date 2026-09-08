@@ -258,3 +258,12 @@ The canal map combines courses from several periods. The map caption distinguish
 ## Authored cards update · 8 September 2026
 
 An Lushan now uses Wei’s supplied caption for [Yan Zhenqing’s requiem](https://commons.wikimedia.org/wiki/File:Yan_Zhenqing_-_Draft_of_a_Requiem_to_My_Nephew.jpg), with the original public-domain credit. Three Kingdoms uses Wei’s selected [Wu celadon container](https://commons.wikimedia.org/wiki/File:Three_Kingdoms_Celadon_Container_(9832865844).jpg), photographed by Gary Todd, CC0. Both image records and reuse terms were checked, and both images loaded in the local browser. The existing Three Kingdoms map remains below its text.
+
+### Yuan completion audit, 2026-09-08
+
+The Yuan card now pairs its founder portrait and khanates comparison map with the two named art examples in the arts section. Full records are stored in `image_data.js` and the authored draft.
+
+| Supporting visual | Source | Credit | Reuse |
+|---|---|---|---|
+| Zhao Mengfu, *Twin Pines, Level Distance*, circa 1310 | [Met object 40508](https://www.metmuseum.org/art/collection/search/40508) | The Metropolitan Museum of Art, Ex coll.: C. C. Wang Family, Gift of The Dillon Fund, 1973 | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| David Vases, 1351, photographed 2010 | [Commons file record](https://commons.wikimedia.org/wiki/File:The_David_Vases.jpg) | Szilas · Wikimedia Commons | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) |

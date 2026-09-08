@@ -10,11 +10,11 @@ const [, properties, markdown] = source.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$
 const metadata = YAML.parse(properties);
 const body = markdown.split(/\n---\s*\n/)[0]
   .replace(/^\s*# [^\n]+\n\s*\*\*[^\n]+\*\*\s*\n/, '')
-  .split(/\n\n/).filter(paragraph => !paragraph.startsWith('![') && !paragraph.startsWith('*Modern reconstruction'))
+  .split(/\n\n/).filter(paragraph => !paragraph.startsWith('![') && !paragraph.startsWith('*'))
   .join('\n\n').replaceAll('*', '').trim();
 const card = cards.find(card => card.id === 'yuan');
 
-test('Yuan preserves every approved paragraph, six sections and eight links', () => {
+test('Yuan preserves every approved paragraph, six sections and twelve links', () => {
   const plain = body.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, (_, target, label) => label);
   const [intro, ...parts] = plain.split(/^## /m);
   const sections = parts.map(part => {
@@ -31,7 +31,7 @@ test('Yuan preserves every approved paragraph, six sections and eight links', ()
   assert.equal(cards.length, 222);
   const { graph, errors } = links.validateCards(cards);
   assert.deepEqual(errors, []);
-  assert.equal(metadata.related.length, 8);
+  assert.equal(metadata.related.length, 12);
   assert.deepEqual(graph.outbound.get('yuan'), metadata.related);
   metadata.sources.forEach((url, index) => {
     assert.ok(card.sources.includes(url));

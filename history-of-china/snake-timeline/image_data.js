@@ -342,32 +342,58 @@ const HISTORY_IMAGES = {
     ]
   },
   "yuan": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/YuanEmperorAlbumKhubilaiPortrait.jpg/960px-YuanEmperorAlbumKhubilaiPortrait.jpg",
-    "width": 3221,
-    "height": 4018,
-    "alt": "Painted portrait of Kublai Khan wearing a white robe and a fur-trimmed hat.",
-    "caption": "Posthumous portrait of Kublai Khan, dated about 1294 and attributed to Araniko, from the Yuan imperial album in the National Palace Museum.",
-    "credit": "Attributed to Araniko · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumKhubilaiPortrait.jpg",
-    "license": "Public domain",
-    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "fullSize": true,
-    "sectionImages": [
-      {
-        "section": "Conquest, expansion and rival khans",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/MongolEmpireDivisions1300.png",
-        "width": 1644,
-        "height": 959,
-        "alt": "Map of Eurasia with the Yuan region in green, the Golden Horde in yellow, the Chagatai Khanate in grey and the Ilkhanate in purple.",
-        "caption": "Modern reconstruction of the main Mongol khanates and dependent territories around 1300. Yuan is green; the Golden Horde is yellow, the Chagatai Khanate grey and the Ilkhanate purple. Coloured areas include dependencies as well as directly ruled lands. Boundaries are approximate.",
-        "credit": "Gabagool · Wikimedia Commons",
-        "source": "https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
-        "fullSize": true
-      }
-    ]
-  },
+  "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/YuanEmperorAlbumKhubilaiPortrait.jpg/960px-YuanEmperorAlbumKhubilaiPortrait.jpg",
+  "width": 3221,
+  "height": 4018,
+  "alt": "Painted portrait of Kublai Khan wearing a white robe and a fur-trimmed hat.",
+  "caption": "Posthumous portrait of Kublai Khan, dated about 1294 and attributed to Araniko, from the Yuan imperial album in the National Palace Museum.",
+  "credit": "Attributed to Araniko · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumKhubilaiPortrait.jpg",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "fullSize": true,
+  "sectionImages": [
+    {
+      "section": "Conquest, expansion and rival khans",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/82/MongolEmpireDivisions1300.png",
+      "width": 1644,
+      "height": 959,
+      "alt": "Map of Eurasia with the Yuan region in green, the Golden Horde in yellow, the Chagatai Khanate in grey and the Ilkhanate in purple.",
+      "caption": "Modern reconstruction of the main Mongol khanates and dependent territories around 1300. Yuan is green; the Golden Horde is yellow, the Chagatai Khanate grey and the Ilkhanate purple. Coloured areas include dependencies as well as directly ruled lands. Boundaries are approximate.",
+      "credit": "Gabagool · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "fullSize": true
+    },
+    {
+      "section": "Plays, paintings and porcelain",
+      "src": "https://images.metmuseum.org/CRDImages/as/original/DP153682.jpg",
+      "width": 3919,
+      "height": 951,
+      "alt": "Ink landscape handscroll with two pine trees at the right, distant hills and calligraphy at the left.",
+      "caption": "Zhao Mengfu’s Twin Pines, Level Distance, about 1310. Ink brush lines describe the trees and rocks, with written inscriptions beside the landscape. The painting is read from right to left.",
+      "credit": "The Metropolitan Museum of Art, Ex coll.: C. C. Wang Family, Gift of The Dillon Fund, 1973",
+      "source": "https://www.metmuseum.org/art/collection/search/40508",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "fullSize": true
+    },
+    {
+      "section": "Plays, paintings and porcelain",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_David_Vases.jpg/960px-The_David_Vases.jpg",
+      "width": 2080,
+      "height": 2342,
+      "alt": "Two tall white porcelain vases with blue dragons, flowers, inscriptions and elephant-head handles.",
+      "caption": "The David Vases, made at Jingdezhen in 1351 and photographed at the British Museum in 2010. The blue decoration is painted beneath the glaze; inscriptions on the necks record their dedication to a Daoist temple.",
+      "credit": "Szilas · Wikimedia Commons",
+      "source": "https://commons.wikimedia.org/wiki/File:The_David_Vases.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "fullSize": true
+    }
+  ]
+},
   "ming": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/A_Seated_Portrait_of_Ming_Emperor_Taizu.jpg/960px-A_Seated_Portrait_of_Ming_Emperor_Taizu.jpg",
     "width": 3101,

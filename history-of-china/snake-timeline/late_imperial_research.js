@@ -85,11 +85,11 @@ const LATE_IMPERIAL_RESEARCH = (() => {
     },
     {
       "title": "Canals, ports and journeys across Asia",
-      "text": "Dadu needed grain from the productive south. The Yuan extended the Grand Canal north to the capital and also transported supplies by sea. Floods and silt repeatedly blocked the canal, so officials had to switch between routes. Keeping the court supplied required ships, repairs and labour on a large scale.\n\nAt Quanzhou (泉州 Quánzhōu), foreign merchant communities traded through a busy seaport. Ships carried Chinese ceramics to buyers around the Indian Ocean. The Yuan also continued the use of paper currency inherited from earlier dynasties, including arrangements to exchange old Song notes for Yuan money.\n\nMongol rulers welcomed merchants and recruited officials from distant lands. Travellers carried knowledge as well as goods: Persian and Indian astronomy and mathematics reached China, while Chinese technologies travelled west. Marco Polo's account introduced European readers to wealthy Chinese cities and the use of paper money.\n\nSome people travelled by choice; others were moved by force. Mongol conquerors took skilled workers from captured cities and sent them far from home to serve their rulers. The same connections that offered merchants new customers could mean compulsory service for an artisan.\n\nReligious communities also crossed these routes. Buddhists, Muslims and Christians lived under Yuan rule alongside Chinese religious traditions. Kublai especially favoured Tibetan Buddhism. Patronage was unequal, and his support for Buddhists could come at the expense of their Daoist rivals."
+      "text": "Dadu needed grain from the productive south. The Yuan extended the Grand Canal (大运河 Dà Yùnhé) north to the capital and also transported supplies by sea. Floods and silt repeatedly blocked the canal, so officials had to switch between routes. Keeping the court supplied required ships, repairs and labour on a large scale.\n\nAt Quanzhou (泉州 Quánzhōu), foreign merchant communities traded through a busy seaport. Ships carried Chinese ceramics to buyers around the Indian Ocean. The Yuan also continued the use of paper currency inherited from earlier dynasties, including arrangements to exchange old Song notes for Yuan money.\n\nMongol rulers welcomed merchants and recruited officials from distant lands. Travellers carried knowledge as well as goods: Persian and Indian astronomy and mathematics reached China, while Chinese technologies travelled west. Marco Polo's account introduced European readers to wealthy Chinese cities and the use of paper money.\n\nSome people travelled by choice; others were moved by force. Mongol conquerors took skilled workers from captured cities and sent them far from home to serve their rulers. The same connections that offered merchants new customers could mean compulsory service for an artisan.\n\nReligious communities also crossed these routes. Buddhists, Muslims and Christians lived under Yuan rule alongside Chinese religious traditions. Kublai especially favoured Tibetan Buddhism. Patronage was unequal, and his support for Buddhists could come at the expense of their Daoist rivals."
     },
     {
       "title": "Plays, paintings and porcelain",
-      "text": "The Yuan was a major age of Chinese drama. Plays combined spoken dialogue with songs, commonly arranged in four acts. Their subjects included love, family conflict and injustice. Performances could reach audiences who would never read a literary text.\n\nGuan Hanqing (关汉卿 Guān Hànqīng) wrote The Injustice to Dou E (窦娥冤 Dòu É yuān), about a widow wrongly condemned to death. She confesses to a murder to save her mother-in-law from torture. The play makes the suffering caused by corrupt justice personal and immediate.\n\nPainting offered another form of expression. Zhao Mengfu (赵孟頫 Zhào Mèngfǔ), a descendant of the Song imperial family, became a Yuan official and an influential painter and calligrapher. Some former friends condemned his decision to serve the Mongols. Yuan scholar-painters used brushwork to express personal taste and feeling, and studied older paintings as models. Later collectors eagerly sought their work.\n\nPotters at Jingdezhen (景德镇 Jǐngdézhèn) made blue-and-white porcelain by painting cobalt designs beneath a transparent glaze. The surviving David Vases have dragons around their bodies and elephant-head handles. Their inscriptions date them to 1351 and record a gift to a Daoist temple."
+      "text": "The Yuan was a major age of Chinese drama. Plays combined spoken dialogue with songs, commonly arranged in four acts. Their subjects included love, family conflict and injustice. Performances could reach audiences who would never read a literary text.\n\nGuan Hanqing (关汉卿 Guān Hànqīng) wrote The Injustice to Dou E (窦娥冤 Dòu É yuān), about a widow wrongly condemned to death. She confesses to a murder to save her mother-in-law from torture.\n\nPainting offered another form of expression. Zhao Mengfu (赵孟頫 Zhào Mèngfǔ), a descendant of the Song imperial family, became a Yuan official and an influential painter and calligrapher. Some former friends condemned his decision to serve the Mongols. Yuan scholar-painters used brushwork to express personal taste and feeling, and studied older paintings as models. Later collectors eagerly sought their work.\n\nPotters at Jingdezhen (景德镇 Jǐngdézhèn) made blue-and-white porcelain by painting cobalt designs beneath a transparent glaze. The surviving David Vases have dragons around their bodies and elephant-head handles. Their inscriptions date them to 1351 and record a gift to a Daoist temple."
     },
     {
       "title": "Rebellion and the Ming takeover",
@@ -102,22 +102,30 @@ const LATE_IMPERIAL_RESEARCH = (() => {
     "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B",
     "https://afe.easia.columbia.edu/mongols/china/china4_a.htm",
     "https://www.metmuseum.org/essays/yuan-dynasty-1271-1368",
-    "https://www.britishmuseum.org/collection/object/A_PDF-B-613"
+    "https://www.britishmuseum.org/collection/object/A_PDF-B-613",
+    "https://www.metmuseum.org/art/collection/search/40508",
+    "https://afe.easia.columbia.edu/mongols/china/china3_f.htm"
   ],
   "sourceLabels": {
     "https://www.jstor.org/stable/j.ctt6wpmgz": "Timothy Brook · The Troubled Empire: China in the Yuan and Ming Dynasties",
     "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B": "Patricia Buckley Ebrey · The Cambridge Illustrated History of China",
     "https://afe.easia.columbia.edu/mongols/china/china4_a.htm": "Columbia University · Mongol military successes and failures",
     "https://www.metmuseum.org/essays/yuan-dynasty-1271-1368": "Metropolitan Museum of Art · Yuan dynasty",
-    "https://www.britishmuseum.org/collection/object/A_PDF-B-613": "British Museum · One of the David Vases"
+    "https://www.britishmuseum.org/collection/object/A_PDF-B-613": "British Museum · One of the David Vases",
+    "https://www.metmuseum.org/art/collection/search/40508": "Metropolitan Museum of Art · Zhao Mengfu, Twin Pines, Level Distance",
+    "https://afe.easia.columbia.edu/mongols/china/china3_f.htm": "Columbia University · Religion under Mongol rule"
   },
   "related": [
+    "early-yuan",
+    "yuan-blue-white",
     "jurchen-jin",
     "song",
     "catalog-C_BEIJING_YUAN",
+    "sui-grand-canal",
+    "song-quanzhou",
+    "song-paper-money",
     "yuan-religions",
     "yuan-drama",
-    "yuan-blue-white",
     "red-turbans",
     "ming"
   ]

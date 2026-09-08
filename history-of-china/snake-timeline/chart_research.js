@@ -2923,30 +2923,34 @@ const CHART_RESEARCH=(()=>{
     "catalogNote": "1127 is the conventional beginning of Southern Song following loss of the northern court; do not equate it with the completion of relocation to Hangzhou."
   },
   "yuan": {
+  "sources": [
+    "https://www.jstor.org/stable/j.ctt6wpmgz",
+    "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B",
+    "https://afe.easia.columbia.edu/mongols/china/china4_a.htm",
+    "https://www.metmuseum.org/essays/yuan-dynasty-1271-1368",
+    "https://www.britishmuseum.org/collection/object/A_PDF-B-613",
+    "https://www.metmuseum.org/art/collection/search/40508",
+    "https://afe.easia.columbia.edu/mongols/china/china3_f.htm"
+  ],
+  "dateReview": {
+    "status": "confirmed",
+    "note": "1271 dates the Yuan dynastic name, 1279 the final Song conquest. 1368 ends Yuan rule from Beijing, not all subsequent Mongol or Northern Yuan rule.",
     "sources": [
-      "https://www.jstor.org/stable/j.ctt6wpmgz",
-      "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B",
-      "https://afe.easia.columbia.edu/mongols/china/china4_a.htm",
-      "https://www.metmuseum.org/essays/yuan-dynasty-1271-1368",
-      "https://www.britishmuseum.org/collection/object/A_PDF-B-613"
-    ],
-    "dateReview": {
-      "status": "confirmed",
-      "note": "1271 dates the Yuan dynastic name, 1279 the final Song conquest. 1368 ends Yuan rule from Beijing, not all subsequent Mongol or Northern Yuan rule.",
-      "sources": [
-        "https://www.metmuseum.org/toah/ht/07/eac.html"
-      ]
-    },
-    "catalogDates": null,
-    "catalogNote": "1271 dates the Yuan dynastic name, 1279 the final Song conquest. 1368 ends Yuan rule from Beijing, not all subsequent Mongol or Northern Yuan rule.",
-    "sourceLabels": {
-      "https://www.jstor.org/stable/j.ctt6wpmgz": "Timothy Brook · The Troubled Empire: China in the Yuan and Ming Dynasties",
-      "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B": "Patricia Buckley Ebrey · The Cambridge Illustrated History of China",
-      "https://afe.easia.columbia.edu/mongols/china/china4_a.htm": "Columbia University · Mongol military successes and failures",
-      "https://www.metmuseum.org/essays/yuan-dynasty-1271-1368": "Metropolitan Museum of Art · Yuan dynasty",
-      "https://www.britishmuseum.org/collection/object/A_PDF-B-613": "British Museum · One of the David Vases"
-    }
+      "https://www.metmuseum.org/toah/ht/07/eac.html"
+    ]
   },
+  "catalogDates": null,
+  "catalogNote": "1271 dates the Yuan dynastic name, 1279 the final Song conquest. 1368 ends Yuan rule from Beijing, not all subsequent Mongol or Northern Yuan rule.",
+  "sourceLabels": {
+    "https://www.jstor.org/stable/j.ctt6wpmgz": "Timothy Brook · The Troubled Empire: China in the Yuan and Ming Dynasties",
+    "https://www.cambridge.org/highereducation/books/the-cambridge-illustrated-history-of-china/B8415BCABB0218ABC80F4EFEEA9F5B2B": "Patricia Buckley Ebrey · The Cambridge Illustrated History of China",
+    "https://afe.easia.columbia.edu/mongols/china/china4_a.htm": "Columbia University · Mongol military successes and failures",
+    "https://www.metmuseum.org/essays/yuan-dynasty-1271-1368": "Metropolitan Museum of Art · Yuan dynasty",
+    "https://www.britishmuseum.org/collection/object/A_PDF-B-613": "British Museum · One of the David Vases",
+    "https://www.metmuseum.org/art/collection/search/40508": "Metropolitan Museum of Art · Zhao Mengfu, Twin Pines, Level Distance",
+    "https://afe.easia.columbia.edu/mongols/china/china3_f.htm": "Columbia University · Religion under Mongol rule"
+  }
+},
   "ming": {
     "sources": [
       "https://www.metmuseum.org/toah/ht/07/eac.html",

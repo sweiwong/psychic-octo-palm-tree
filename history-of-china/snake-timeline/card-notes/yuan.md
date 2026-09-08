@@ -4,7 +4,7 @@ link-title: Yuan
 annotate-names: false
 ---
 
-The Yuan (元 Yuán) dynasty was founded by Kublai Khan in 1271. Its Mongol rulers conquered southern China in 1279 and governed a reunited China until 1368. Yuan China was connected to trade across Asia and produced celebrated plays, paintings and blue-and-white porcelain, while Mongols retained privileges over their conquered subjects.
+The Yuan (元 Yuán) dynasty was [[id:early-yuan|founded by Kublai Khan in 1271]]. Its Mongol rulers conquered southern China in 1279 and governed a reunited China until 1368. Yuan China was connected to trade across Asia and produced celebrated plays, paintings and [[id:yuan-blue-white|blue-and-white porcelain]], while Mongols retained privileges over their conquered subjects.
 
 ## Kublai founds the Yuan
 
@@ -38,9 +38,9 @@ The civil examinations (科举 kējǔ), which had been an important route into S
 
 ## Canals, ports and journeys across Asia
 
-Dadu needed grain from the productive south. The Yuan extended the Grand Canal north to the capital and also transported supplies by sea. Floods and silt repeatedly blocked the canal, so officials had to switch between routes. Keeping the court supplied required ships, repairs and labour on a large scale.
+Dadu needed grain from the productive south. The Yuan extended the [[id:sui-grand-canal|Grand Canal]] (大运河 Dà Yùnhé) north to the capital and also transported supplies by sea. Floods and silt repeatedly blocked the canal, so officials had to switch between routes. Keeping the court supplied required ships, repairs and labour on a large scale.
 
-At Quanzhou (泉州 Quánzhōu), foreign merchant communities traded through a busy seaport. Ships carried Chinese ceramics to buyers around the Indian Ocean. The Yuan also continued the use of paper currency inherited from earlier dynasties, including arrangements to exchange old Song notes for Yuan money.
+At [[id:song-quanzhou|Quanzhou]] (泉州 Quánzhōu), foreign merchant communities traded through a busy seaport. Ships carried Chinese ceramics to buyers around the Indian Ocean. The Yuan also continued the use of [[id:song-paper-money|paper currency]] inherited from earlier dynasties, including arrangements to exchange old Song notes for Yuan money.
 
 Mongol rulers welcomed merchants and recruited officials from distant lands. Travellers carried knowledge as well as goods: Persian and Indian astronomy and mathematics reached China, while Chinese technologies travelled west. Marco Polo's account introduced European readers to wealthy Chinese cities and the use of paper money.
 
@@ -52,11 +52,11 @@ Some people travelled by choice; others were moved by force. Mongol conquerors t
 
 The Yuan was a major age of [[id:yuan-drama|Chinese drama]]. Plays combined spoken dialogue with songs, commonly arranged in four acts. Their subjects included love, family conflict and injustice. Performances could reach audiences who would never read a literary text.
 
-Guan Hanqing (关汉卿 Guān Hànqīng) wrote The Injustice to Dou E (窦娥冤 Dòu É yuān), about a widow wrongly condemned to death. She confesses to a murder to save her mother-in-law from torture. The play makes the suffering caused by corrupt justice personal and immediate.
+Guan Hanqing (关汉卿 Guān Hànqīng) wrote The Injustice to Dou E (窦娥冤 Dòu É yuān), about a widow wrongly condemned to death. She confesses to a murder to save her mother-in-law from torture.
 
 Painting offered another form of expression. Zhao Mengfu (赵孟頫 Zhào Mèngfǔ), a descendant of the Song imperial family, became a Yuan official and an influential painter and calligrapher. Some former friends condemned his decision to serve the Mongols. Yuan scholar-painters used brushwork to express personal taste and feeling, and studied older paintings as models. Later collectors eagerly sought their work.
 
-Potters at Jingdezhen (景德镇 Jǐngdézhèn) made [[id:yuan-blue-white|blue-and-white porcelain]] by painting cobalt designs beneath a transparent glaze. The surviving David Vases have dragons around their bodies and elephant-head handles. Their inscriptions date them to 1351 and record a gift to a Daoist temple.
+Potters at Jingdezhen (景德镇 Jǐngdézhèn) made blue-and-white porcelain by painting cobalt designs beneath a transparent glaze. The surviving David Vases have dragons around their bodies and elephant-head handles. Their inscriptions date them to 1351 and record a gift to a Daoist temple.
 
 ## Rebellion and the Ming takeover
 
