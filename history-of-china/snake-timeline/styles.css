@@ -11,6 +11,12 @@
 .card-analysis{margin:24px 0}.card-analysis h4{font:500 18px/1.25 var(--serif);letter-spacing:-.3px;margin:0 0 10px}.card-analysis p{font:13px/1.85 var(--sans);margin:0}.card-analysis+.card-analysis{padding-top:19px;border-top:1px solid var(--rule)}
 .collection-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.collection-controls select{border:1px solid var(--rule);background:var(--paper);font:12px var(--sans);padding:12px;color:var(--ink)}.filter-label{font-size:11px;color:var(--muted)}#collection-count{font-size:10px;color:var(--muted);margin:14px 0 0}.result-chinese{display:block;font:12px 'Noto Serif SC',serif;color:var(--muted);margin-top:6px}.card-chinese-name{font:17px 'Noto Serif SC',serif;letter-spacing:2px;color:var(--accent);margin:-5px 0 20px}.card-evidence{font-size:9px;letter-spacing:.4px;color:var(--muted);margin:18px 0 0}.source-link{overflow-wrap:anywhere}.related-items{margin-top:20px;border-top:1px solid var(--rule);padding-top:18px}.related-items .eyebrow{font-size:8px;margin-bottom:10px}.related-items button{display:block;border:0;background:none;text-decoration:underline;text-underline-offset:4px;padding:5px 0;font-size:11px;text-align:left}.detail-card{max-height:calc(100dvh - 270px);overflow:auto}.card-top>span:last-of-type{white-space:nowrap}.card-top{gap:8px}.card-art{flex-shrink:0}
 .card-photo{margin:22px 0 24px}.card-photo img{display:block;width:100%;height:auto;border:1px solid var(--rule)}.card-photo img[hidden]{display:none}.card-photo figcaption{font:11px/1.6 var(--sans);color:var(--muted);margin-top:10px}.card-photo a{color:inherit;text-underline-offset:3px}
+.card-section-photo img{max-height:420px;object-fit:contain;background:#fff}
+.card-section-images{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px;margin-top:22px}
+.card-section-images .card-photo{min-width:0;margin:0}
+.card-section-images:has(> :nth-child(2)) img{height:300px}
+.card-section-photo figcaption{font-size:13px;line-height:1.7}
+.card-photo .image-enlarge{display:inline-block;margin-top:8px;font:12px/1.6 var(--sans);color:var(--red)}
 
 /* The collection is an illustrated reading index, with the timeline kept above it. */
 #search-results{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:12px;max-height:460px;padding:3px}
@@ -183,3 +189,11 @@ body.reading-open{overflow:hidden}
  .detail-card.mobile-open{overscroll-behavior:contain}
  body.phone-story-open{overflow:hidden}
 }
+
+.internal-link{color:#655023;text-decoration:underline;text-underline-offset:.18em;text-decoration-thickness:1px}
+.internal-link:hover{color:#342911;text-decoration-thickness:2px}
+.internal-link:focus-visible{outline:2px solid #655023;outline-offset:3px;border-radius:2px}
+.card-backlinks{margin-top:24px;padding-top:16px;border-top:1px solid var(--rule)}
+.card-backlinks ul{list-style:none;padding:0;margin:8px 0}
+.card-backlinks li{margin:8px 0}
+.backlink-date{display:block;font-size:.8rem;color:var(--muted)}

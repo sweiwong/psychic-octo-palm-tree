@@ -36,7 +36,7 @@ const BEGINNER_LATE = (() => {
     'From the late 1970s, reforms changed farming, business and connections with overseas markets. Families, factories and cities encountered new opportunities and pressures. The state’s name remained the same through these sharp changes in policy. The individual entries explain those turning points, including reform and opening, special economic zones and China’s entry into the World Trade Organization.');
 
   revise('early-qing', null,
-    'Hong Taiji proclaimed the Qing dynasty in 1636, eight years before Qing forces entered Beijing. His state had developed in the northeast, with connections reaching into Mongolia and Korea. The conquest of the Ming capital followed years of building armies, alliances and government.',
+    'Hong Taiji proclaimed [[Qing|the Qing dynasty]] in 1636, eight years before Qing forces entered Beijing. His state had developed in the northeast, with connections reaching into Mongolia and Korea. The conquest of the Ming capital followed years of building armies, alliances and government.',
     'An established state before Beijing',
     'Manchu, Mongol and Han personnel served the emerging state through different military and administrative arrangements. Recruitment and defections brought soldiers and officials with useful skills. These people helped the rulers collect resources and govern. The force that entered Beijing in 1644 already belonged to a working state with institutions of its own.',
     'Two dates for the Qing',

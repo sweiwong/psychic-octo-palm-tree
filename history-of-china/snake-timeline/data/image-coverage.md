@@ -234,3 +234,22 @@ Particular corrections made during review: Fu Hao is a reconstructed tomb displa
 | The emergence of imperial examinations (`sui-examinations`) | [Source record](https://commons.wikimedia.org/wiki/File:Exam_cells-large.jpg) | Artist or photographer unidentified · Wikimedia Commons | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) |
 | Zhenguan: government and its exemplary record (`zhenguan-government`) | [Source record](https://commons.wikimedia.org/wiki/File:Tang_Emperor_Taizong.jpg) | Attributed to Yan Liben · Wikimedia Commons | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) |
 | Kaiyuan: prosperity and the demands of empire (`kaiyuan-era`) | [Source record](https://commons.wikimedia.org/wiki/File:100_Tang_Kaiyuan_Coins.jpg) | Gary Lee Todd, Ph.D. · Wikimedia Commons | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
+
+
+## Tang update · 7 September 2026
+
+The Tang card now leads with the 661 map. The camel appears with the cultural discussion, alongside a painting, a clothing figure, and a documented ceramic import. Longmen sculpture and the canal map accompany their relevant sections. This replaces the Tang selection in the historical inventory above.
+
+| Placement | Source record | Credit | Reuse terms |
+|---|---|---|---|
+| Lead map | [Map of Tang civil administration, Anxi military administration, and briefly controlled protectorates in 661.](https://commons.wikimedia.org/wiki/File:Tang_outline_map,_661.svg) | Kanguole · 2023 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| A world capital | [Ink painting of a white horse tethered to a post, surrounded by collectors’ seals and inscriptions.](https://www.metmuseum.org/art/collection/search/39901) | The Metropolitan Museum of Art · accession 1977.78 | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| A world capital | [A glazed ceramic Bactrian camel carrying a saddle and bundles between its two humps.](https://commons.wikimedia.org/wiki/File:Tang_Sancai_Camel_(9912365146).jpg) | Gary Todd · Wikimedia Commons · photograph 2011 | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| A world capital | [Painted wooden female attendant wearing a long dress and a short jacket.](https://www.metmuseum.org/art/collection/search/39770) | The Metropolitan Museum of Art · Gift of Enid A. Haupt, 1997 · 1997.442.7.2 | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| A world capital | [A broken ceramic bowl base with a dragon medallion and patches of green, amber, and pale glaze.](https://www.metmuseum.org/art/collection/search/449479) | The Metropolitan Museum of Art · Rogers Fund, 1938 · 38.40.274 | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| Wu Zetian | [Close view of the stone Vairocana Buddha’s head, upper body, and carved halo at Fengxian Temple, Longmen.](https://commons.wikimedia.org/wiki/File:Colossal_Statue_of_Vairocana,_Fengxian_Temple,_Longmen_Grottoes_(10241060455).jpg) | Gary Todd · Wikimedia Commons | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| The centre of gravity moves south | [Map showing older and later Grand Canal courses between the Yellow River and Yangtze regions.](https://commons.wikimedia.org/wiki/File:Grand-Canal.png) | Groverlynn · 2016 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+
+Caption context: [The Met on internationalism in the Tang](https://www.metmuseum.org/essays/internationalism-in-the-tang-dynasty-618-906), [University of Washington on camel figurines and Central Asian merchants](https://depts.washington.edu/silkroad/exhibit/tang/camel_trader.html), [The Met on Chinese ceramics excavated in Iran](https://www.metmuseum.org/perspectives/medieval-globalism-chinese-ceramics-iran), and [UNESCO’s Longmen nomination, catalogue item 67](https://whc.unesco.org/uploads/nominations/1003.pdf).
+
+The canal map combines courses from several periods. The map caption distinguishes levels of Tang control. The painting is attributed to Han Gan and includes later collectors’ marks. The wooden figure illustrates court fashion; it does not establish clothing for every social class. The bowl fragment documents an imported Chinese object at Nishapur, without claiming a specific journey or arrival date.

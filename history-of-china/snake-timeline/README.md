@@ -1,6 +1,6 @@
 # The History Atlas
 
-The local beginner edition has 205 illustrated cards after the approved removal of the Taiwan democratic transition event from the 206-card research collection. Reader copy follows [the audience guide](audience-guide.md). The date audit retains all 206 research records. This editorial update has not been published; publication notes below describe earlier editions.
+The local beginner edition has 221 illustrated cards. Browse all is the visual index of every active card. Reader copy follows [the audience guide](audience-guide.md). Earlier research exports remain available for reference. This editorial update has not been published; publication notes below describe earlier editions.
 
 A working, responsive Chinese history snake timeline. This new edition preserves the original handoff in `../project/` and all original workbook/JSON data.
 
@@ -24,7 +24,7 @@ The compact masthead keeps search, Browse all, and About visible. Nine researche
 
 - Click a ribbon, label or event dot to open its source-linked card.
 - Hover or focus a control for a short preview. Enter or Space opens details.
-- Jump between eras, search all 205 entries in English, Simplified Chinese, or pinyin with or without tone marks, or switch event and concurrent-state layers.
+- Jump between eras, search all 221 entries in English, Simplified Chinese, or pinyin with or without tone marks, or switch event and concurrent-state layers.
 - On phones, details open in a bottom sheet. Escape or the close button returns focus to the timeline.
 - Small periods remain interactive and searchable even when their labels are omitted to preserve space. On narrow canvases, concurrent state names are available through their lines and Browse all.
 
@@ -51,6 +51,42 @@ The compact masthead keeps search, Browse all, and About visible. Nine researche
 - `styles.css`: paper, ink and mineral color system, responsive layout and typography.
 - `geometry.test.js`: built-in Node tests; no packages required.
 - `browser.test.js`: browser checks using Playwright, plus desktop/mobile screenshots.
+
+## Internal links and backlinks
+
+The Tang pilot's ten cards are edited in `card-notes/*.md`. The main `card-notes/tang.md` now contains Wei's approved long draft with 26 inline links. Its `annotate-names: false` property preserves the approved Chinese names and pinyin without automatic additions. Other cards remain in the beginner source packs (`beginner_early.js`, `beginner_middle.js`, and `beginner_late.js`). Use links in `description`, section `title` and `text`, or `note`:
+
+```text
+[[Three Kingdoms]]
+[[An Lushan Rebellion]]
+[[Qing|the Qing dynasty]]
+[[id:qing|the Qing era]]
+```
+
+The text before the bar identifies a card; the text after it is the label readers see. The last form uses the card's stable ID. Card URLs use `?card=qing` and retain other query settings and page section links. Back and Forward move between cards. Close returns to the preceding card or page state; for a directly loaded card it clears only the card query. The expanded reading view can still be collapsed with Escape or its close control.
+
+Each card has a `linkTitle`, captured from its English editorial name before automatic Chinese annotations. Preserve that title when changing visible wording. A source revision may supply an explicit `linkTitle` and a small `linkAliases` array for genuine alternate names. Broad `searchAliases` are only search terms. Link titles and aliases must be unique after case, accent, Unicode and whitespace normalization. IDs must stay stable because shared URLs use them.
+
+Links match exactly after that normalization. A display label does not create an alternate target name. Automatic annotations leave everything inside `[[...]]` unchanged. The browser displays literal HTML as text. Repeated links generate one entry in the target's Linked from list; self-links are omitted and sources are sorted by date, then title.
+
+From this directory, rebuild and validate before publication:
+
+```sh
+node build_catalog.js
+node build_expanded.js
+node internal_links.test.js
+node internal_links_collection.test.js
+node beginner_edition.test.js
+node internal_links.browser.test.js
+```
+
+The browser test uses the local server and Playwright settings described below. The collection check validates all 221 assembled cards. An unknown target reports its source card, field and written target, with a close suggestion when available. For example, `[[Three Kingdms]]` suggests `Three Kingdoms` but fails validation until corrected. Malformed links, duplicate identities and links in unsupported fields also fail. Generated files must be rebuilt, never hand-edited.
+
+Known unrelated check: the southward economic shift image-caption assertion in `beginner_edition.test.js` expects an older caption. It remains visible and outside this link feature.
+
+Within the notes folder, use native links such as `[[an-lushan|An Lushan Rebellion]]`. For an existing atlas card without its own note, use `[Sui](../index.html?card=sui)`. The build checks those destinations against the research records and converts them to the atlas's internal links. Proposed cards must remain plain text until they exist. Paragraph breaks within sections are preserved.
+
+After editing a note, run `npm ci` once to install the YAML reader, then `npm run build:content` to regenerate `card_notes.js` and the reading JSON. Reload the local page to see the change. Saving in Obsidian does not yet trigger an automatic rebuild. Do not edit the generated files. The compiler supports paragraphs, `##` headings, native note links, and the relative atlas links described above. A final `## Note` is optional; an exact-copy note without it clears the inherited caveat. Dates, images and sources remain in the research records. The rest of the Markdown migration and any synchronization remain future work.
 
 ## Historical conventions
 

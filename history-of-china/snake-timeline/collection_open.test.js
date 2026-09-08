@@ -9,13 +9,17 @@ test('Every collection card opens visible details and returns to the collection'
   const page=await browser.newPage({viewport:{width,height:900}});
   await page.goto(pathToFileURL(path.join(__dirname,'index.html')).href);
   await page.locator('.browse-stories').click();
-  const failures=await page.evaluate(()=>{
+  const failures=await page.evaluate(async()=>{
    const ids=[...document.querySelectorAll('.collection-entry')].map(e=>e.dataset.record),failures=[];
    for(const id of ids){
     document.querySelector(`[data-record="${id}"]`).click();
     const item=EXHIBITION.all.find(i=>i.id===id),detail=document.querySelector('#detail'),r=detail.getBoundingClientRect();
     if(detail.querySelector('h3')?.textContent!==item.name||r.top>=innerHeight||r.bottom<=0||!document.querySelector('#collection').hidden)failures.push(id);
-    detail.querySelector('.detail-close').click();
+    // Close follows browser history; inspect the result after navigation completes.
+    await new Promise(resolve => {
+      window.addEventListener('popstate', resolve, {once:true});
+      detail.querySelector('.detail-close').click();
+    });
     if(document.querySelector('#collection').hidden||document.activeElement.dataset.record!==id)failures.push(id+':return');
    }return failures;
   });assert.deepEqual(failures,[],`width ${width}`);await page.close();

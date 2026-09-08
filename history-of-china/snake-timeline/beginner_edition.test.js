@@ -11,6 +11,17 @@ const edition=apply(original,...editorial);
 const saved=require('./data/china_history_expanded.json');
 const images=require('./image_data');
 
+test('approved exact copy bypasses added name annotations and can clear the old caveat', () => {
+ const prose = 'Taizong (太宗 Tàizōng) ruled from Chang\'an.';
+ const custom = apply(original, { revisions: { tang: {
+  annotateNames: false, description: prose, sections: [{ title: 'Taizong', text: prose }], note: ''
+ } } });
+ const card = custom.all.find(card => card.id === 'tang');
+ assert.equal(card.description, prose);
+ assert.deepEqual(card.sections, [{ title: 'Taizong', text: prose }]);
+ assert.equal(card.note, '');
+});
+
 test('beginner edition removes only the approved enrichment card and retains every original source',()=>{
  assert.equal(original.all.length,221);
  assert.equal(edition.all.length,221);
@@ -103,4 +114,23 @@ test('An Lushan card explains the rebellion and its consequences without treatin
  assert.match(copy,/cannot be (?:read|treated) directly as a death toll/i);
  assert.match(copy,/780|twice-yearly tax/i);
  assert.match(copy,/907/);
+});
+
+test('link identities preserve editorial English names and explicit alternate names', () => {
+ const poetry = edition.all.find(card => card.id === 'li-bai-du-fu');
+ assert.equal(poetry.linkTitle, 'Li Bai and Du Fu');
+ assert.equal(apply(edition).all.find(card => card.id === poetry.id).linkTitle, poetry.linkTitle);
+ assert(edition.all.every(card => card.linkTitle), 'includes thematic cards');
+ const custom = apply(original, { revisions: { qin: { linkTitle: '  Qin Era ', linkAliases: ['Ch’in'] } } });
+ assert.equal(custom.all.find(card => card.id === 'qin').linkTitle, '  Qin Era ');
+ assert.deepEqual(custom.all.find(card => card.id === 'qin').linkAliases, ['Ch’in']);
+});
+
+test('Chinese annotations preserve wiki targets and labels byte for byte in all prose fields', () => {
+ const prose = 'Li Bai and [[Li Bai|Li Bai and Du Fu]] meet [[Qing|the Qing dynasty]].';
+ const custom = apply(original, { revisions: { qin: { description: prose, note: prose, sections: [{title: prose, text: prose}] } } });
+ const card = custom.all.find(card => card.id === 'qin');
+ for (const text of [card.description, card.note, card.sections[0].title, card.sections[0].text]) {
+  assert.equal(text, 'Li Bai (李白) and [[Li Bai|Li Bai and Du Fu]] meet [[Qing|the Qing dynasty]].');
+ }
 });

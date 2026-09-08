@@ -231,11 +231,15 @@ function annotateReaderNames(text, cardId) {
   // The two emperors share an English title but belong to different dynasties.
   const names = {...readerChineseNames, 'Emperor Wen': cardId === 'sui-grand-canal' ? '隋文帝' : '宋文帝'};
   const pattern = new RegExp('\\b(' + Object.keys(names).sort((a, b) => b.length - a.length).map(name => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')\\b', 'g');
-  return text.replace(pattern, (name, match, offset) => {
-    // Preserve existing annotations, including on a second application.
-    if (/^\s*[（(][\u3400-\u9fff]/.test(text.slice(offset + name.length))) return name;
-    return name + ' (' + names[name] + ')';
-  });
+  // Link targets and labels are editorial text; annotate only the surrounding prose.
+  return text.split(/(\[\[[\s\S]*?\]\])/g).map(part => {
+    if (part.startsWith('[[')) return part;
+    return part.replace(pattern, (name, match, offset) => {
+      // Preserve existing annotations, including on a second application.
+      if (/^\s*[（(][\u3400-\u9fff]/.test(part.slice(offset + name.length))) return name;
+      return name + ' (' + names[name] + ')';
+    });
+  }).join('');
 }
 
 function applyBeginnerEdition(exhibition, ...packs) {
@@ -245,11 +249,12 @@ function applyBeginnerEdition(exhibition, ...packs) {
     if (Object.hasOwn(revisions, id)) throw new Error('Duplicate editorial card: ' + id);
     revisions[id] = revision;
   }
-  const allowed = new Set(['name', 'description', 'sections', 'note']);
+  const allowed = new Set(['name', 'description', 'sections', 'note', 'linkTitle', 'linkAliases', 'annotateNames']);
   for (const [id, revision] of Object.entries(revisions)) {
     if (!exhibition.all.some(card => card.id === id)) throw new Error('Unknown editorial card: ' + id);
     for (const key of Object.keys(revision)) if (!allowed.has(key)) throw new Error('Editorial field is not copy: ' + id + '.' + key);
   }
+  const annotate = (text, card) => card.annotateNames === false ? text : annotateReaderNames(text, card.id);
   const all = exhibition.all.filter(card => !removed.has(card.id)).map(card => ({
     ...card,
     ...revisions[card.id],
@@ -257,10 +262,11 @@ function applyBeginnerEdition(exhibition, ...packs) {
     related: (card.related || []).filter(id => !removed.has(id))
   })).map(card => ({
     ...card,
-    name: annotateReaderNames(card.name, card.id),
-    description: annotateReaderNames(card.description, card.id),
-    sections: card.sections?.map(section => ({...section, title: annotateReaderNames(section.title, card.id), text: annotateReaderNames(section.text, card.id)})),
-    ...(card.note !== undefined ? {note: annotateReaderNames(card.note, card.id)} : {}),
+    linkTitle: card.linkTitle ?? card.name,
+    name: annotate(card.name, card),
+    description: annotate(card.description, card),
+    sections: card.sections?.map(section => ({...section, title: annotate(section.title, card), text: annotate(section.text, card)})),
+    ...(card.note !== undefined ? {note: annotate(card.note, card)} : {}),
     searchAliases: [...new Set([...card.searchAliases, card.name])]
   }));
   // A thematic reading card uses the parent period for navigation, not as a founding date.
@@ -283,6 +289,7 @@ function applyBeginnerEdition(exhibition, ...packs) {
     related: ['confucius', 'laozi', 'zhuangzi']
   });
   for (const card of all) {
+    card.linkTitle ??= card.name;
     if (card.kind === 'theme') {
       card.sections = card.sections.map(section => ({title: annotateReaderNames(section.title, card.id), text: annotateReaderNames(section.text, card.id)}));
       card.note = annotateReaderNames(card.note, card.id);

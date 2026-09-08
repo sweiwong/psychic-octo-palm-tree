@@ -242,7 +242,7 @@ var BEGINNER_EARLY = (() => {
   add('catalog-E_3K_2', null,
     'At Red Cliffs in winter 208–209 CE, forces associated with Sun Quan and Liu Bei stopped Cao Cao’s advance along the Yangtze. Cao Cao controlled the Han emperor and dominated the north. His defeat allowed southern rivals to survive while Han still formally existed.',
     'Fighting on the river',
-    'Naval experience mattered, along with disease, supplies and the difficulty of campaigning far from familiar ground. The defeat stopped Cao Cao from immediately extending northern dominance southward. It did not create the Three Kingdoms in one day. Wei, Shu and Wu emerged through later campaigns and competing claims to rule.',
+    'Naval experience mattered, along with disease, supplies and the difficulty of campaigning far from familiar ground. The defeat stopped Cao Cao from immediately extending northern dominance southward. It did not create the [[Three Kingdoms]] in one day. Wei, Shu and Wu emerged through later campaigns and competing claims to rule.',
     'The battle in later stories',
     'Fiction turned Red Cliffs into a setting for brilliant plans and memorable personalities. Surviving historical accounts support a more limited picture, and several famous tricks remain disputed. Those later stories shaped how people remembered the battle, especially its lessons about loyalty and intelligence. They need to be distinguished from evidence of what the armies actually did.');
   add('catalog-R_JIN_W', null,

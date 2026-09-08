@@ -666,6 +666,7 @@
       "searchAliases": [
         "Xia"
       ],
+      "linkTitle": "Xia",
       "pinyin": "xià",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Xia_Dynasty_pottery_jue.jpg",
@@ -739,6 +740,7 @@
       "searchAliases": [
         "Shang"
       ],
+      "linkTitle": "Shang",
       "pinyin": "Shāng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Tomb_Fu_Hao_YinXu.jpg",
@@ -809,6 +811,7 @@
       "searchAliases": [
         "Western Zhou"
       ],
+      "linkTitle": "Western Zhou",
       "pinyin": "xī zhōu",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Early_Western_Zhou_Bronze_Gui_01.jpg/960px-Early_Western_Zhou_Bronze_Gui_01.jpg",
@@ -884,6 +887,7 @@
       "searchAliases": [
         "Eastern Zhou"
       ],
+      "linkTitle": "Eastern Zhou",
       "pinyin": "dōng zhōu",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg/960px-%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
@@ -944,6 +948,7 @@
       "searchAliases": [
         "Late Warring States"
       ],
+      "linkTitle": "Late Warring States",
       "pinyin": "zhàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Warring_States_Bronze_Warriors_(9831196065).jpg/960px-Warring_States_Bronze_Warriors_(9831196065).jpg",
@@ -1012,6 +1017,7 @@
       "searchAliases": [
         "Qin"
       ],
+      "linkTitle": "Qin",
       "pinyin": "Qín",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/01_terracottawarriorsgroup.jpg",
@@ -1092,6 +1098,7 @@
       "searchAliases": [
         "Han"
       ],
+      "linkTitle": "Han",
       "pinyin": "hàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Huo_Qubing_horse_(cropped).jpg/960px-Huo_Qubing_horse_(cropped).jpg",
@@ -1158,6 +1165,7 @@
       "searchAliases": [
         "Xin"
       ],
+      "linkTitle": "Xin",
       "pinyin": "xīn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/S-119_Wang_Mang_knife_coin.jpg",
@@ -1234,6 +1242,7 @@
         "Age of division",
         "Age of Division"
       ],
+      "linkTitle": "Age of Division",
       "pinyin": "fēn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Figure,_horse_(AM_8189-12).jpg/960px-Figure,_horse_(AM_8189-12).jpg",
@@ -1304,6 +1313,7 @@
       "searchAliases": [
         "Sui"
       ],
+      "linkTitle": "Sui",
       "pinyin": "suí",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Yu_Hong_Tomb_general_view.jpg/960px-Yu_Hong_Tomb_general_view.jpg",
@@ -1324,7 +1334,7 @@
       "start": 618,
       "end": 907,
       "color": "#ae5941",
-      "description": "The Tang dynasty ruled for nearly three centuries, linking a powerful court with armies, trading routes, religious communities and distant neighbours. Its capital, Chang’an (长安), attracted people and ideas from beyond the empire. Behind its famous poetry and art lay a government that changed greatly over time.",
+      "description": "The Tang ruled China for close to three centuries, taking power in 618 after the collapse of the [[id:sui|Sui]] (隋朝 Suícháo), which had [[id:reunification|reunified the country in 589]] following almost four hundred years of division. Chinese tradition treats the Tang as the high point of imperial China in both politics and culture, and the dynasty's territorial reach in the 660s was the largest of any Chinese state before the Manchu [[id:qing|Qing]].",
       "source": "https://en.wikipedia.org/wiki/Tang_dynasty",
       "kind": "period",
       "ranges": [
@@ -1337,7 +1347,7 @@
           907
         ]
       ],
-      "note": "Tang rule was interrupted by Wu Zetian (武则天)’s Zhou dynasty from 690 to 705.",
+      "note": "",
       "sourceIds": [
         "R_TANG"
       ],
@@ -1356,12 +1366,32 @@
       "originalType": "regime",
       "sections": [
         {
-          "title": "A connected capital",
-          "text": "Merchants, travellers and religious teachers carried objects and knowledge across political borders. Xuanzang (玄奘) brought Buddhist manuscripts home and worked with others to translate them. The court supported some of these exchanges, but many depended on people and routes beyond its control. Even military conflict did not necessarily stop trade or diplomatic visits."
+          "title": "Frontier origins",
+          "text": "The ruling Li (李 Lǐ) family came from the militarised northwest frontier, where Chinese officials had intermarried for generations with Turkic and Xianbei (鲜卑 Xiānbēi) steppe nobility, a world shaped by the [[id:catalog-R_NS_NORTHERN_WEI|Northern Wei]]. This mattered in practice. Emperor Taizong (太宗 Tàizōng, born Li Shimin 李世民 Lǐ Shìmín, r. 626–649), who took the throne after [[id:xuanwu-gate|killing two brothers at the Xuanwu Gate]] and forcing his father's abdication, accepted the steppe title Heavenly Khagan (天可汗 Tiān Kèhán) in 630 after defeating the Eastern Turks. He governed as Chinese emperor and as khan of a nomadic confederation at once, and his [[id:zhenguan-government|Zhenguan era]] became the model of good government invoked by every later dynasty. Tang armies held protectorates deep into Central Asia until defeat by the Abbasids at [[id:talas|Talas]] (怛罗斯 Dáluósī) in 751 checked further westward expansion."
         },
         {
-          "title": "Rebuilding after rebellion",
-          "text": "The An Lushan Rebellion (安史之乱) transformed the balance of power between the emperor and provincial commanders. To survive, the court accepted new military arrangements and changed how it raised money. These compromises limited its authority but also helped it keep governing. Tang cultural life continued through the next century and a half; the rebellion was a turning point, rather than an immediate end."
+          "title": "Government",
+          "text": "Administratively the Tang built on Sui foundations and produced the model that most later dynasties worked from. The [[id:tang-code|Tang Code]] (唐律疏议 Tánglǜ Shūyì) of 653 was the most influential legal document in East Asian history, adopted in modified form by Japan, Korea and Vietnam. Government ran through three departments and six ministries (三省六部 sān shěng liù bù). Officials were recruited partly through written civil service examinations (科举 kējǔ), [[id:sui-examinations|begun under the Sui]], though the great aristocratic clans retained most senior posts throughout the dynasty. Land was distributed under the equal-field system (均田制 jūntiánzhì) and the army raised through rotating militia service (府兵制 fǔbīngzhì), both of which broke down in the eighth century."
+        },
+        {
+          "title": "A world capital",
+          "text": "Chang'an (长安 Cháng'ān), the capital, held roughly a million people within a walled grid, and both Nara and Heian-kyō in Japan were laid out in imitation of it. Sogdian and Persian merchants, Japanese and Korean students, and Zoroastrian, Manichaean and Nestorian Christian communities all had a presence there, and a stele erected in 781 records the Christian mission. [[id:catalog-E_BUD_SPREAD|Buddhism]] reached its greatest institutional strength, supported by pilgrim-scholars such as [[id:xuanzang-return|Xuanzang]] (玄奘 Xuánzàng), who travelled to India between 629 and 645 and returned with several hundred texts. Steppe habits persisted in elite society, and [[id:tang-women-riding|aristocratic women rode horses, hunted and played polo]] with a freedom that later dynasties withdrew. Roughly 48,900 poems by some 2,200 Tang authors survive, and the work of [[id:li-bai-du-fu|Li Bai (李白 Lǐ Bái) and Du Fu (杜甫 Dù Fǔ)]] became the standard against which later Chinese poetry was measured."
+        },
+        {
+          "title": "Wu Zetian",
+          "text": "[[id:wu-zhou|Wu Zetian]] (武则天 Wǔ Zétiān), who entered the palace as a concubine of Taizong and later became consort to his son Gaozong (高宗 Gāozōng), governed in his name during his illness and in 690 declared her own Zhou dynasty (周朝 Zhōucháo). She ruled as emperor in her own right until 705, the only woman ever to do so, and expanded examination recruitment against the interests of the established aristocracy."
+        },
+        {
+          "title": "The rebellion and after",
+          "text": "The [[id:an-lushan|rebellion of the frontier general An Lushan]] (安禄山 Ān Lùshān), which began in 755 during the long reign of Emperor Xuanzong (玄宗 Xuánzōng, r. 712–756, whose [[id:kaiyuan-era|Kaiyuan era]] is remembered as the dynasty's peak) and was not suppressed until 763, permanently altered the dynasty. Registered population fell from about 52.9 million in 754 to about 16.9 million in 764, a figure that reflects administrative collapse as much as mortality, though the human cost was enormous by any measure. Afterwards provincial military governors (节度使 jiédùshǐ) held effective autonomy, the court financed itself through a [[id:two-tax|new twice-yearly tax]] (两税法 liǎngshuìfǎ) from 780, and palace eunuchs controlled the imperial armies while the bureaucracy consumed itself in [[id:niu-li-disputes|factional struggle]]. State [[id:huichang|suppression of Buddhism]] under Emperor Wuzong (武宗 Wǔzōng) in 845 closed thousands of monasteries and marked a broader turn against foreign influence. The [[id:huang-chao|rebellion of Huang Chao]] (黄巢 Huáng Cháo) sacked Chang'an in 881, and in 907 the warlord Zhu Wen (朱温 Zhū Wēn) [[id:tang-end|deposed the last emperor]] and founded the [[id:catalog-R_FIVE_LATER_LIANG|Later Liang]] (后梁 Hòu Liáng), opening the [[id:five-dynasties|Five Dynasties and Ten Kingdoms period]] (五代十国 Wǔdài Shíguó)."
+        },
+        {
+          "title": "The centre of gravity moves south",
+          "text": "The rebellion also accelerated a permanent shift in where China's people and wealth sat. Tang power rested on the Guanzhong basin (关中 Guānzhōng) around Chang'an and the Central Plains (中原 Zhōngyuán) around Luoyang (洛阳 Luòyáng), the old Yellow River heartland. A clear majority of households registered in the census of 742 were northern. The wars of the eighth century, and then the devastation of the ninth, drove sustained migration south across the Huai River into the Yangtze (长江 Chángjiāng) valley, and [[id:southward-economic-shift|by the Song the majority of the population lived in the south]]. Wet-rice agriculture in the lower Yangtze yielded far larger surpluses than the millet and wheat farming of the north, and the [[id:sui-grand-canal|Grand Canal]] (大运河 Dà Yùnhé), dug at ruinous cost by the Sui, carried that surplus upriver to feed the capitals. After 755 the court survived on southern grain and on a salt monopoly administered from the Huai region, which by the 780s supplied more than half of its cash revenue. Yangzhou (扬州 Yángzhōu), where the canal met the Yangtze, became the wealthiest commercial city in the empire, and Guangzhou (广州 Guǎngzhōu) carried a seaborne trade with Arab and Persian merchants substantial enough that a massacre of foreign residents there during the Huang Chao rebellion was recorded as far away as Iraq. The two-tax reform of 780, which assessed land and property rather than registered adults, was an admission that the old northern system of allotted fields and counted persons no longer described the country."
+        },
+        {
+          "title": "Why the Tang matters",
+          "text": "Historians describe the passage from the late Tang into the [[id:song|Song]] as the hinge between medieval and early modern China, an argument first framed by the Japanese scholar Naitō Konan and known as the Tang-Song transition (唐宋变革 Táng-Sòng biàngé). The aristocratic clans that had held the senior offices throughout the Tang were broken by the rebellions of the ninth century, and the Song governed instead through a gentry class made by examination. The capital never returned to Chang'an. The Song ruled from Kaifeng (开封 Kāifēng) and later Hangzhou (杭州 Hángzhōu), both chosen for their access to the canal and the southern economy. Political power had followed the grain.\n\nThe Tang reputation as a golden age was largely formed after the fact, by writers of the ninth century onward who understood themselves to be living in the aftermath of something greater. Later dynasties, with north China or the whole country under non-Chinese rule for much of the following millennium, came to treat the Tang as the last great native dynasty. That reading sits awkwardly with the frontier and steppe origins of the Tang ruling house itself."
         }
       ],
       "related": [
@@ -1411,20 +1441,107 @@
         ]
       },
       "catalogDates": null,
+      "linkTitle": "Tang",
+      "linkAliases": [
+        "Tang dynasty",
+        "唐"
+      ],
+      "annotateNames": false,
       "searchAliases": [
         "Tang"
       ],
       "pinyin": "táng",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Tang_Sancai_Camel_%289912365146%29.jpg/1280px-Tang_Sancai_Camel_%289912365146%29.jpg",
-        "width": 4752,
-        "height": 3168,
-        "alt": "A glazed ceramic camel displayed in a museum.",
-        "caption": "A Tang sancai ceramic camel in Xi’an’s Bell Tower Museum, photographed in 2011. An artifact offers a different kind of evidence from a written chronicle: the subjects and materials that makers chose to preserve.",
-        "credit": "Gary Todd · Wikimedia Commons",
-        "source": "https://commons.wikimedia.org/wiki/File:Tang_Sancai_Camel_(9912365146).jpg",
-        "license": "CC0 1.0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Tang_outline_map%2C_661.svg",
+        "width": 1288,
+        "height": 757,
+        "alt": "Map of Tang civil administration, Anxi military administration, and briefly controlled protectorates in 661.",
+        "caption": "Tang administration and protectorates in 661. In this modern reconstruction, dark red marks civil administration, the middle shade marks Anxi military administration, and pale red marks briefly controlled protectorates. Control varied across these regions and over time.",
+        "credit": "Kanguole · 2023",
+        "source": "https://commons.wikimedia.org/wiki/File:Tang_outline_map,_661.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fullSize": true,
+        "sectionImages": [
+          {
+            "section": "A world capital",
+            "src": "https://images.metmuseum.org/CRDImages/as/original/DP153705.jpg",
+            "width": 2000,
+            "height": 1501,
+            "alt": "Ink painting of a white horse tethered to a post, surrounded by collectors’ seals and inscriptions.",
+            "caption": "Night-Shining White, attributed to Han Gan, c. 750. The painting depicts a horse belonging to Emperor Xuanzong; later collectors added seals and inscriptions.",
+            "credit": "The Metropolitan Museum of Art · accession 1977.78",
+            "source": "https://www.metmuseum.org/art/collection/search/39901",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "fullSize": true
+          },
+          {
+            "section": "A world capital",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/6/65/Tang_Sancai_Camel_%289912365146%29.jpg",
+            "width": 4752,
+            "height": 3168,
+            "alt": "A glazed ceramic two-humped camel carrying a decorated saddle.",
+            "caption": "A Tang sancai glazed ceramic camel, photographed in Xi’an’s Bell Tower Museum. Camels carried goods along the Silk Road, the network connecting China with Central Asia and lands farther west. Sogdian and Persian merchants helped bring textiles, metalwork, and new fashions into Tang cities. This figure evokes that commercial world and the cosmopolitan tastes of Tang society: foreign people, goods, and styles became familiar subjects for Chinese craftspeople.",
+            "credit": "Gary Todd · Wikimedia Commons · photograph 2011",
+            "source": "https://commons.wikimedia.org/wiki/File:Tang_Sancai_Camel_(9912365146).jpg",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "fullSize": true
+          },
+          {
+            "section": "A world capital",
+            "src": "https://images.metmuseum.org/CRDImages/as/original/DT209214.jpg",
+            "width": 2942,
+            "height": 3722,
+            "alt": "Painted wooden female attendant wearing a long dress and a short jacket.",
+            "caption": "This painted wooden attendant wears the high-waisted dress and short jacket fashionable at the Tang court. The Met associates its survival with the dry regions of the Silk Roads. Trade also influenced elite fashion: fitted sleeves, short tunics, and riding boots reflected Central Asian tastes. Late seventh to early eighth century.",
+            "credit": "The Metropolitan Museum of Art · Gift of Enid A. Haupt, 1997 · 1997.442.7.2",
+            "source": "https://www.metmuseum.org/art/collection/search/39770",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "fullSize": true
+          },
+          {
+            "section": "A world capital",
+            "src": "https://images.metmuseum.org/CRDImages/is/original/DP251986.jpg",
+            "width": 2948,
+            "height": 4000,
+            "alt": "A broken ceramic bowl base with a dragon medallion and patches of green, amber, and pale glaze.",
+            "caption": "Made in China and excavated at Nishapur in Iran, this Tang bowl fragment shows how far Chinese ceramics travelled. Its dragon medallion survives beneath a three-colour glaze. Local potters drew inspiration from imported Chinese wares. Late seventh to first half of the eighth century.",
+            "credit": "The Metropolitan Museum of Art · Rogers Fund, 1938 · 38.40.274",
+            "source": "https://www.metmuseum.org/art/collection/search/449479",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "fullSize": true
+          },
+          {
+            "section": "Wu Zetian",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/3/39/Colossal_Statue_of_Vairocana%2C_Fengxian_Temple%2C_Longmen_Grottoes_%2810241060455%29.jpg",
+            "width": 3888,
+            "height": 2592,
+            "alt": "Close view of the stone Vairocana Buddha’s head, upper body, and carved halo at Fengxian Temple, Longmen.",
+            "caption": "Vairocana Buddha at Fengxian Temple, Longmen Grottoes, completed in 675. A surviving example of Buddhist sculpture from the Tang imperial court’s era of patronage. Photograph taken in 2009.",
+            "credit": "Gary Todd · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Colossal_Statue_of_Vairocana,_Fengxian_Temple,_Longmen_Grottoes_(10241060455).jpg",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "fullSize": true
+          },
+          {
+            "section": "The centre of gravity moves south",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Grand-Canal.png",
+            "width": 700,
+            "height": 800,
+            "alt": "Map showing older and later Grand Canal courses between the Yellow River and Yangtze regions.",
+            "caption": "Older and later canal courses connect the Yellow River and Yangtze regions. This composite map explains transport geography; it is not a map of a single year or of migration routes.",
+            "credit": "Groverlynn · 2016",
+            "source": "https://commons.wikimedia.org/wiki/File:Grand-Canal.png",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "fullSize": true
+          }
+        ]
       }
     },
     {
@@ -1434,7 +1551,7 @@
       "start": 690,
       "end": 705,
       "color": "#7a6375",
-      "description": "In 690, Wu Zetian (武则天) took the imperial title and founded her own Zhou dynasty, interrupting Tang rule. A woman occupying the emperor’s position broke established expectations. Keeping that position required a working government, loyal supporters and ways to persuade others that her rule was legitimate.",
+      "description": "In 690, Wu Zetian (武则天) took the imperial title and founded her own Zhou dynasty, interrupting [[id:tang|Tang rule]]. A woman occupying the emperor’s position broke established expectations. Keeping that position required a working government, loyal supporters and ways to persuade others that her rule was legitimate.",
       "source": "https://en.wikipedia.org/wiki/Wu_Zetian",
       "kind": "period",
       "label": false,
@@ -1489,6 +1606,12 @@
           "https://www.metmuseum.org/toah/ht/06/eac.html"
         ]
       },
+      "linkTitle": "Wu Zetian’s Zhou dynasty",
+      "linkAliases": [
+        "Wu Zhou",
+        "Wu Zetian",
+        "武周"
+      ],
       "searchAliases": [
         "Wu Zhou",
         "Wu Zetian’s Zhou dynasty"
@@ -1569,6 +1692,7 @@
       "searchAliases": [
         "Five Dynasties"
       ],
+      "linkTitle": "Five Dynasties",
       "pinyin": "wǔ dài",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%E4%BA%94%E4%BB%A3-%E5%8C%97%E5%AE%8B_%E4%BD%9A%E5%90%8D_%E4%B9%9E%E5%B7%A7%E5%9C%96_%E8%BB%B8-Palace_banquet_MET_DP251118.jpg/960px-%E4%BA%94%E4%BB%A3-%E5%8C%97%E5%AE%8B_%E4%BD%9A%E5%90%8D_%E4%B9%9E%E5%B7%A7%E5%9C%96_%E8%BB%B8-Palace_banquet_MET_DP251118.jpg",
@@ -1644,6 +1768,7 @@
       "searchAliases": [
         "Song"
       ],
+      "linkTitle": "Song",
       "pinyin": "sòng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Song_Taizu.jpg/960px-Song_Taizu.jpg",
@@ -1721,6 +1846,7 @@
       "searchAliases": [
         "Yuan"
       ],
+      "linkTitle": "Yuan",
       "pinyin": "yuán",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/YuanEmperorAlbumKhubilaiPortrait.jpg/960px-YuanEmperorAlbumKhubilaiPortrait.jpg",
@@ -1803,6 +1929,7 @@
       "searchAliases": [
         "Ming"
       ],
+      "linkTitle": "Ming",
       "pinyin": "míng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/A_Seated_Portrait_of_Ming_Emperor_Taizu.jpg/960px-A_Seated_Portrait_of_Ming_Emperor_Taizu.jpg",
@@ -1897,6 +2024,7 @@
       "searchAliases": [
         "Qing"
       ],
+      "linkTitle": "Qing",
       "pinyin": "qīng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Sura_han_ni_chiha._Currency_of_the_farther_East._No.850.jpg",
@@ -1980,6 +2108,7 @@
       "searchAliases": [
         "Republic of China (mainland period)"
       ],
+      "linkTitle": "Republic of China (mainland period)",
       "pinyin": "zhōng huá mín guó",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Sun_Yat-sen_Li_Yuanhong_Wuchang_1912.jpg",
@@ -2066,6 +2195,7 @@
         "People’s Republic",
         "People’s Republic of China"
       ],
+      "linkTitle": "People’s Republic of China",
       "pinyin": "zhōng huá rén mín gòng hé guó",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Mao_Proclaiming_New_China.JPG",
@@ -2144,6 +2274,7 @@
       "searchAliases": [
         "Three Kingdoms"
       ],
+      "linkTitle": "Three Kingdoms",
       "pinyin": "sān guó",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Three_Kingdoms.png",
@@ -2219,6 +2350,7 @@
       "searchAliases": [
         "Jin"
       ],
+      "linkTitle": "Jin",
       "pinyin": "jìn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Western_Jin_Porcelain_Female_Figure_(9832737224).jpg/960px-Western_Jin_Porcelain_Female_Figure_(9832737224).jpg",
@@ -2293,6 +2425,7 @@
       "searchAliases": [
         "Sixteen Kingdoms"
       ],
+      "linkTitle": "Sixteen Kingdoms",
       "pinyin": "shí liù guó",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Buddha_dated_338,_China,_Hebei,_Later_Zhao_kingdom,_bronze_with_gilding_-_Asian_Art_Museum_-_San_Francisco,_CA_-_DSC07620.jpg/960px-Buddha_dated_338,_China,_Hebei,_Later_Zhao_kingdom,_bronze_with_gilding_-_Asian_Art_Museum_-_San_Francisco,_CA_-_DSC07620.jpg",
@@ -2381,6 +2514,7 @@
         "Northern & Southern",
         "Northern and Southern Dynasties"
       ],
+      "linkTitle": "Northern and Southern Dynasties",
       "pinyin": "nán běi cháo",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tomb_Terracotta_Group_of_Figurines,_Northern_Wei_(tomb_of_Sima_Jinlong).jpg/960px-Tomb_Terracotta_Group_of_Figurines,_Northern_Wei_(tomb_of_Sima_Jinlong).jpg",
@@ -2458,6 +2592,7 @@
       "searchAliases": [
         "Liao"
       ],
+      "linkTitle": "Liao",
       "pinyin": "liáo",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Liao_Silver_Crown.jpg/960px-Liao_Silver_Crown.jpg",
@@ -2528,6 +2663,7 @@
       "searchAliases": [
         "Western Xia"
       ],
+      "linkTitle": "Western Xia",
       "pinyin": "xī xià",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Xixia_Painting_from_Hongfo_Pagoda_(28069106568).jpg/960px-Xixia_Painting_from_Hongfo_Pagoda_(28069106568).jpg",
@@ -2598,6 +2734,7 @@
       "searchAliases": [
         "Jin (Jurchen)"
       ],
+      "linkTitle": "Jin (Jurchen)",
       "pinyin": "jīn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Zheng_Long_Yuan_Bao_(%E6%AD%A3%E9%9A%86%E5%85%83%E5%AF%B6)_-_1158-1161_Zheng_bottom_horizontal_does_not_protrude_variety_L._Yuan_cap_wavy_Bao_wide_(S1083_-_FD1637)_-_Scott_Semans_01.jpg/960px-Zheng_Long_Yuan_Bao_(%E6%AD%A3%E9%9A%86%E5%85%83%E5%AF%B6)_-_1158-1161_Zheng_bottom_horizontal_does_not_protrude_variety_L._Yuan_cap_wavy_Bao_wide_(S1083_-_FD1637)_-_Scott_Semans_01.jpg",
@@ -2664,6 +2801,7 @@
       "searchAliases": [
         "Yuan foundation"
       ],
+      "linkTitle": "Yuan foundation",
       "pinyin": "yuán",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Yuan_dynasty_under_Kublai_Khan.png/1280px-Yuan_dynasty_under_Kublai_Khan.png",
@@ -2684,7 +2822,7 @@
       "start": 1636,
       "end": 1644,
       "color": "#4f7166",
-      "description": "Hong Taiji (皇太极) proclaimed the Qing dynasty in 1636, eight years before Qing forces entered Beijing (北京). His state had developed in the northeast, with connections reaching into Mongolia and Korea. The conquest of the Ming capital followed years of building armies, alliances and government.",
+      "description": "Hong Taiji (皇太极) proclaimed [[Qing|the Qing dynasty]] in 1636, eight years before Qing forces entered Beijing (北京). His state had developed in the northeast, with connections reaching into Mongolia and Korea. The conquest of the Ming capital followed years of building armies, alliances and government.",
       "source": "https://en.wikipedia.org/wiki/Qing_dynasty",
       "kind": "concurrent",
       "offset": -28,
@@ -2730,6 +2868,7 @@
       "searchAliases": [
         "Early Qing"
       ],
+      "linkTitle": "Early Qing",
       "pinyin": "qīng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/Emperor_Shunzhi.jpg",
@@ -2795,6 +2934,7 @@
       "searchAliases": [
         "Southern Ming"
       ],
+      "linkTitle": "Southern Ming",
       "pinyin": "míng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Shanhaiguan.jpg/960px-Shanhaiguan.jpg",
@@ -2863,6 +3003,7 @@
         "ROC in Taiwan",
         "Republic of China in Taiwan"
       ],
+      "linkTitle": "Republic of China in Taiwan",
       "pinyin": "mín",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Members_of_the_Republic_of_China_Army_board_a_ship_bound_for_Taiwan_in_1949.jpg",
@@ -2934,6 +3075,7 @@
       "searchAliases": [
         "Oracle-bone writing"
       ],
+      "linkTitle": "Oracle-bone writing",
       "pinyin": "jiǎ gǔ wén",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Shang_dynasty_inscribed_tortoise_plastron.jpg/960px-Shang_dynasty_inscribed_tortoise_plastron.jpg",
@@ -3001,6 +3143,7 @@
         "Confucius is born",
         "Confucius"
       ],
+      "linkTitle": "Confucius",
       "showTimeline": false,
       "pinyin": "kǒng zǐ",
       "image": {
@@ -3069,6 +3212,7 @@
         "Qin unifies the states",
         "Qin unification"
       ],
+      "linkTitle": "Qin unification",
       "pinyin": "qín tǒng yī liù guó",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Portrait_of_Qin_Shi_Huang.jpg/960px-Portrait_of_Qin_Shi_Huang.jpg",
@@ -3129,6 +3273,7 @@
       "searchAliases": [
         "Papermaking advances"
       ],
+      "linkTitle": "Papermaking advances",
       "pinyin": "zhǐ",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Chinese_hemp_paper_western_han.jpg/960px-Chinese_hemp_paper_western_han.jpg",
@@ -3199,6 +3344,7 @@
         "Sui reunites China",
         "Sui reunification"
       ],
+      "linkTitle": "Sui reunification",
       "pinyin": "suí cháo tǒng yī",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chinese_swords_Sui_Dynasty_about_600_found_near_Luoyang.jpg/960px-Chinese_swords_Sui_Dynasty_about_600_found_near_Luoyang.jpg",
@@ -3219,7 +3365,7 @@
       "start": 755,
       "end": 763,
       "color": "#9e3c2e",
-      "description": "In December 755, the frontier general An Lushan (安禄山) turned his armies against the Tang. His forces captured Luoyang (洛阳) and then Chang’an (长安), forcing Emperor Xuanzong (唐玄宗) to flee. An Lushan (安禄山) was killed in 757, but the war continued under other rebel leaders until 763.",
+      "description": "In December 755, the frontier general An Lushan (安禄山) turned his armies against the [[id:tang|Tang]]. His forces captured Luoyang (洛阳) and then Chang’an (长安), forcing Emperor Xuanzong (唐玄宗) to flee. An Lushan (安禄山) was killed in 757, but the war continued under other rebel leaders until 763.",
       "source": "https://en.wikipedia.org/wiki/An_Lushan_Rebellion",
       "kind": "event",
       "note": "755–763 CE. Figures sometimes presented as a death toll are largely derived from changes in household and tax registers, which were badly disrupted by war and displacement.",
@@ -3259,7 +3405,7 @@
         },
         {
           "title": "The Tang after the rebellion",
-          "text": "To end the war, the court accepted the surrender of former rebel commanders and allowed some to remain as military governors. Several provinces, especially in Hebei, kept their armies and much of their tax revenue. The government relied more heavily on taxes on trade and salt, then introduced a twice-yearly tax on property in 780. Tang rule continued until 907, but the emperor governed through stronger provincial powers and a different financial system."
+          "text": "To end the war, the court accepted the surrender of former rebel commanders and allowed some to remain as military governors. Several provinces, especially in Hebei, kept their armies and much of their tax revenue. The government relied more heavily on taxes on trade and salt, then introduced a [[id:two-tax|twice-yearly tax on property in 780]]. Tang rule continued until 907, but the emperor governed through stronger provincial powers and a different financial system."
         }
       ],
       "related": [
@@ -3294,6 +3440,11 @@
           "https://ajaonline.org/wp-content/uploads/2011/03/AJAonline_China_Dawn_of_a_Golden_Age2.pdf"
         ]
       },
+      "linkTitle": "An Lushan Rebellion",
+      "linkAliases": [
+        "An Shi Rebellion",
+        "安史之乱"
+      ],
       "searchAliases": [
         "An Lushan Rebellion"
       ],
@@ -3375,6 +3526,7 @@
         "The Diamond Sutra",
         "Diamond Sutra"
       ],
+      "linkTitle": "Diamond Sutra",
       "pinyin": "jīn gāng jīng kān yìn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Jingangjing.jpg/960px-Jingangjing.jpg",
@@ -3443,6 +3595,7 @@
       "searchAliases": [
         "Treaty of Chanyuan"
       ],
+      "linkTitle": "Treaty of Chanyuan",
       "pinyin": "chán yuān zhī méng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Song_Zhenzong.jpg",
@@ -3514,6 +3667,7 @@
         "The fall of Kaifeng",
         "Fall of Kaifeng"
       ],
+      "linkTitle": "Fall of Kaifeng",
       "pinyin": "jìng kāng zhī biàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Song-Palace1.jpg/960px-Song-Palace1.jpg",
@@ -3579,6 +3733,7 @@
         "Zheng He sets sail",
         "Ming Voyages"
       ],
+      "linkTitle": "Ming Voyages",
       "pinyin": "háng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gall_Trilingual_Inscription.jpg/960px-Gall_Trilingual_Inscription.jpg",
@@ -3641,6 +3796,7 @@
       "searchAliases": [
         "Treaty of Nanking"
       ],
+      "linkTitle": "Treaty of Nanking",
       "pinyin": "yuē",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/1796_Spanish_Dollar,_Mexico_(6264082469).jpg/960px-1796_Spanish_Dollar,_Mexico_(6264082469).jpg",
@@ -3709,6 +3865,7 @@
         "The emperor abdicates",
         "End of Imperial China"
       ],
+      "linkTitle": "End of Imperial China",
       "pinyin": "zhōng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Feb_23_1909_Pu_Yi.jpg",
@@ -3781,6 +3938,7 @@
       "searchAliases": [
         "Yu founds Xia (legendary tradition)"
       ],
+      "linkTitle": "Yu founds Xia (legendary tradition)",
       "pinyin": "dà yǔ jiàn xià",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/e2/%E5%A4%A7%E7%A6%B9%E6%B2%BB%E6%B0%B4%E5%9C%96.jpg",
@@ -3850,6 +4008,7 @@
       "searchAliases": [
         "Yu the Great (legendary figure)"
       ],
+      "linkTitle": "Yu the Great (legendary figure)",
       "pinyin": "dà yǔ",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/%E4%BB%BF%E5%94%90%E4%BA%BA%E5%A4%A7%E7%A6%B9%E6%B2%BB%E6%B0%B4%E5%9B%BE%E8%BD%B4.%E6%B8%85.%E8%B0%A2%E9%81%82%E7%BB%98.%E7%BA%B8%E6%9C%AC%E8%AE%BE%E8%89%B2.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.tif/lossy-page1-1280px-%E4%BB%BF%E5%94%90%E4%BA%BA%E5%A4%A7%E7%A6%B9%E6%B2%BB%E6%B0%B4%E5%9B%BE%E8%BD%B4.%E6%B8%85.%E8%B0%A2%E9%81%82%E7%BB%98.%E7%BA%B8%E6%9C%AC%E8%AE%BE%E8%89%B2.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.tif.jpg",
@@ -3921,6 +4080,7 @@
       "searchAliases": [
         "Zhou conquest of Shang"
       ],
+      "linkTitle": "Zhou conquest of Shang",
       "pinyin": "wǔ wáng fá zhòu",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/King_Wu_of_Zhou.jpg/960px-King_Wu_of_Zhou.jpg",
@@ -3989,6 +4149,7 @@
       "searchAliases": [
         "Zhou"
       ],
+      "linkTitle": "Zhou",
       "pinyin": "zhōu",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Shi_Qiang_pan_inscription.jpg/960px-Shi_Qiang_pan_inscription.jpg",
@@ -4067,6 +4228,7 @@
         "Spring and Autumn",
         "Spring and Autumn Period"
       ],
+      "linkTitle": "Spring and Autumn Period",
       "pinyin": "chūn qiū",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg/960px-Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg",
@@ -4146,6 +4308,7 @@
         "Warring States",
         "Warring States Period"
       ],
+      "linkTitle": "Warring States Period",
       "pinyin": "zhàn guó",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Warring_States_Bronze_Tiger_Tally.jpg/960px-Warring_States_Bronze_Tiger_Tally.jpg",
@@ -4217,6 +4380,7 @@
       "searchAliases": [
         "Sun Tzu (traditional c. 500 BCE)"
       ],
+      "linkTitle": "Sun Tzu (traditional c. 500 BCE)",
       "pinyin": "sūn zǐ",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Inscribed_bamboo-slips_of_Art_of_War.jpg/960px-Inscribed_bamboo-slips_of_Art_of_War.jpg",
@@ -4289,6 +4453,7 @@
       "searchAliases": [
         "Alexander the Great"
       ],
+      "linkTitle": "Alexander the Great",
       "pinyin": "yà lì shān dà",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Alexander_Mosaic_detail_of_Alexander_the_Great_(3x4_cropped).jpg/960px-Alexander_Mosaic_detail_of_Alexander_the_Great_(3x4_cropped).jpg",
@@ -4361,6 +4526,7 @@
         "Qin-Han system",
         "Qin and Han government"
       ],
+      "linkTitle": "Qin and Han government",
       "pinyin": "qín hàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/026_S-83_Qin_Ban_Liang,_221-208_BC,_30mm.jpg/960px-026_S-83_Qin_Ban_Liang,_221-208_BC,_30mm.jpg",
@@ -4431,6 +4597,7 @@
       "searchAliases": [
         "Western Han"
       ],
+      "linkTitle": "Western Han",
       "pinyin": "xī hàn",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Western_Han_Jade_Burial_Suit_-_2.jpg/960px-Western_Han_Jade_Burial_Suit_-_2.jpg",
@@ -4501,6 +4668,7 @@
       "searchAliases": [
         "Eastern Han"
       ],
+      "linkTitle": "Eastern Han",
       "pinyin": "dōng hàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Dahuting_mural,_Eastern_Han_Dynasty.jpg",
@@ -4572,6 +4740,7 @@
         "Qin standardizes weights and measures",
         "Qin weights and measures"
       ],
+      "linkTitle": "Qin weights and measures",
       "pinyin": "qín dài biāo zhǔn huà",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/CMOC_Treasures_of_Ancient_China_exhibit_-_stone_slab_with_twelve_small_seal_characters_(cropped).jpg/960px-CMOC_Treasures_of_Ancient_China_exhibit_-_stone_slab_with_twelve_small_seal_characters_(cropped).jpg",
@@ -4645,6 +4814,7 @@
       "searchAliases": [
         "Classical learning and Han government"
       ],
+      "linkTitle": "Classical learning and Han government",
       "pinyin": "rú xué yǔ hàn dài zhèng zhì",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Eastern_Han_Dynasty_Confucian_classics_carved_in_stone.JPG",
@@ -4719,6 +4889,7 @@
       "searchAliases": [
         "Zhang Qian's first western mission"
       ],
+      "linkTitle": "Zhang Qian's first western mission",
       "pinyin": "sī chóu zhī lù",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Summer_Vacation_2007,_263,_Watchtower_In_The_Morning_Light,_Dunhuang,_Gansu_Province.jpg/960px-Summer_Vacation_2007,_263,_Watchtower_In_The_Morning_Light,_Dunhuang,_Gansu_Province.jpg",
@@ -4791,6 +4962,7 @@
         "Early Buddhist contact and translation",
         "Buddhism comes to China"
       ],
+      "linkTitle": "Buddhism comes to China",
       "pinyin": "fó jiào chuán rù",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/China-henan-luoyang-white-horse-temple-entrance-20040506.jpg",
@@ -4862,6 +5034,7 @@
       "searchAliases": [
         "Terracotta Army (c. 210 BCE)"
       ],
+      "linkTitle": "Terracotta Army (c. 210 BCE)",
       "pinyin": "bīng mǎ yǒng",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Terracotta_Army%2C_View_of_Pit_1.jpg/960px-Terracotta_Army%2C_View_of_Pit_1.jpg",
@@ -4932,6 +5105,7 @@
       "searchAliases": [
         "Wei"
       ],
+      "linkTitle": "Wei",
       "pinyin": "cáo wèi",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/Cao_Pi_Tang.jpg",
@@ -5003,6 +5177,7 @@
       "searchAliases": [
         "Shu"
       ],
+      "linkTitle": "Shu",
       "pinyin": "shǔ hàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Three_Kingdoms_Shu_Pottery_Musician_(9832743546).jpg/960px-Three_Kingdoms_Shu_Pottery_Musician_(9832743546).jpg",
@@ -5073,6 +5248,7 @@
       "searchAliases": [
         "Wu"
       ],
+      "linkTitle": "Wu",
       "pinyin": "sūn wú",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/WuJar.jpg/960px-WuJar.jpg",
@@ -5145,6 +5321,7 @@
       "searchAliases": [
         "Fall of Han"
       ],
+      "linkTitle": "Fall of Han",
       "pinyin": "hàn cháo zhōng jié",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Emperor_Xian_Qing_illustration.jpg",
@@ -5191,7 +5368,7 @@
       "sections": [
         {
           "title": "Fighting on the river",
-          "text": "Naval experience mattered, along with disease, supplies and the difficulty of campaigning far from familiar ground. The defeat stopped Cao Cao (曹操) from immediately extending northern dominance southward. It did not create the Three Kingdoms in one day. Wei, Shu and Wu emerged through later campaigns and competing claims to rule."
+          "text": "Naval experience mattered, along with disease, supplies and the difficulty of campaigning far from familiar ground. The defeat stopped Cao Cao (曹操) from immediately extending northern dominance southward. It did not create the [[Three Kingdoms]] in one day. Wei, Shu and Wu emerged through later campaigns and competing claims to rule."
         },
         {
           "title": "The battle in later stories",
@@ -5217,6 +5394,7 @@
       "searchAliases": [
         "Battle of Red Cliffs"
       ],
+      "linkTitle": "Battle of Red Cliffs",
       "pinyin": "chì bì zhī zhàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/Chibi.jpg",
@@ -5286,6 +5464,7 @@
       "searchAliases": [
         "Western Jin"
       ],
+      "linkTitle": "Western Jin",
       "pinyin": "xī jìn",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Jin_Celadon_Hunping_%28Soul_Jar%29.jpg/960px-Western_Jin_Celadon_Hunping_%28Soul_Jar%29.jpg",
@@ -5356,6 +5535,7 @@
       "searchAliases": [
         "Western Jin loses Chang’an"
       ],
+      "linkTitle": "Western Jin loses Chang’an",
       "pinyin": "xī jìn miè wáng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Celadon_jar_Eastern_Jin_317_420_CE.jpg/960px-Celadon_jar_Eastern_Jin_317_420_CE.jpg",
@@ -5428,6 +5608,7 @@
       "searchAliases": [
         "Buddhism expands in China (c. 350)"
       ],
+      "linkTitle": "Buddhism expands in China (c. 350)",
       "pinyin": "fó jiào chuán bō",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Northern_Wei_Stone_Buddhist_Triad_Stele.jpg/960px-Northern_Wei_Stone_Buddhist_Triad_Stele.jpg",
@@ -5501,6 +5682,7 @@
         "Sui-Tang",
         "Sui and Tang"
       ],
+      "linkTitle": "Sui and Tang",
       "pinyin": "suí táng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Giant_Wild_Goose_Pagoda%2C_Xi%27an%2C_May%2C_2018-1.jpg/1280px-Giant_Wild_Goose_Pagoda%2C_Xi%27an%2C_May%2C_2018-1.jpg",
@@ -5573,6 +5755,7 @@
         "Muhammad’s first revelation (traditional date)",
         "Muhammad’s first revelation"
       ],
+      "linkTitle": "Muhammad’s first revelation",
       "pinyin": "yī sī lán jiào xīng qǐ",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Stanford_2007,_recto.jpg",
@@ -5648,6 +5831,7 @@
         "Dadu named as the Yuan capital",
         "Dadu, the Yuan capital"
       ],
+      "linkTitle": "Dadu, the Yuan capital",
       "pinyin": "yuán dà dū",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Yuandadu_map.jpg",
@@ -5738,6 +5922,7 @@
       "searchAliases": [
         "Beijing becomes the Ming capital"
       ],
+      "linkTitle": "Beijing becomes the Ming capital",
       "pinyin": "yǒng lè qiān dū běi jīng"
     },
     {
@@ -5800,6 +5985,7 @@
         "Beijing as Qing capital",
         "Beijing Becomes the Qing Capital"
       ],
+      "linkTitle": "Beijing Becomes the Qing Capital",
       "pinyin": "qīng dài běi jīng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Dorgon,_the_Prince_Rui_(17th_century).jpg",
@@ -5880,6 +6066,7 @@
         "Expansion of eunuch power in Ming government",
         "Ming Palace Eunuchs"
       ],
+      "linkTitle": "Ming Palace Eunuchs",
       "pinyin": "míng dài huàn guān quán lì",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Portrait_assis_de_l'empereur_Ming_Chengzu.jpg/960px-Portrait_assis_de_l'empereur_Ming_Chengzu.jpg",
@@ -5954,6 +6141,7 @@
         "Wei Zhongxian dominance",
         "Wei Zhongxian’s Court Power"
       ],
+      "linkTitle": "Wei Zhongxian’s Court Power",
       "pinyin": "wèi zhōng xián zhuān quán",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Porcelain_tea_cups_from_the_reign_of_the_Tianqi_Emperor.jpg/960px-Porcelain_tea_cups_from_the_reign_of_the_Tianqi_Emperor.jpg",
@@ -6032,6 +6220,7 @@
       "searchAliases": [
         "First Opium War"
       ],
+      "linkTitle": "First Opium War",
       "pinyin": "dì yī cì yā piàn zhàn zhēng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/f6/The_Hon._E.I._Co._Iron_Steam_Ship_Nemesis%2C_..._with_boats_of_Sulphur%2C_Calliope%2C_Larne_and_Starling%2C_destroying_the_Chinese_War_Junks%2C_in_Anson%27s_Bay%2C_Jany_7th_1841_PAH8893.jpg",
@@ -6113,6 +6302,7 @@
       "searchAliases": [
         "Taiping Rebellion"
       ],
+      "linkTitle": "Taiping Rebellion",
       "pinyin": "tài píng tiān guó yùn dòng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Regaining_the_Provincial_Capital_of_Ruizhou.jpg/1280px-Regaining_the_Provincial_Capital_of_Ruizhou.jpg",
@@ -6195,6 +6385,7 @@
       "searchAliases": [
         "Second Opium War"
       ],
+      "linkTitle": "Second Opium War",
       "pinyin": "dì èr cì yā piàn zhàn zhēng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/The_China_War_1857%2C_river_view_with_tower%2C_fort%2C_three_masted_vessel_and_junk_%281857%29.jpg",
@@ -6275,6 +6466,7 @@
       "searchAliases": [
         "Self-Strengthening Movement"
       ],
+      "linkTitle": "Self-Strengthening Movement",
       "pinyin": "yáng wù yùn dòng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Zongli_Yamen_members_1894.jpg/960px-Zongli_Yamen_members_1894.jpg",
@@ -6350,6 +6542,7 @@
       "searchAliases": [
         "First Sino-Japanese War"
       ],
+      "linkTitle": "First Sino-Japanese War",
       "pinyin": "jiǎ wǔ zhàn zhēng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/ChineseTing-yuen.jpg/960px-ChineseTing-yuen.jpg",
@@ -6422,6 +6615,7 @@
       "searchAliases": [
         "Hundred Days Reform"
       ],
+      "linkTitle": "Hundred Days Reform",
       "pinyin": "wù xū biàn fǎ",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/W._A._P._Martin_%26_faculty.jpg/960px-W._A._P._Martin_%26_faculty.jpg",
@@ -6502,6 +6696,7 @@
       "searchAliases": [
         "Boxer Rebellion"
       ],
+      "linkTitle": "Boxer Rebellion",
       "pinyin": "yì hé tuán yùn dòng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Boxer_Rebellion.jpg/1280px-Boxer_Rebellion.jpg",
@@ -6575,6 +6770,7 @@
       "searchAliases": [
         "Xinhai Revolution"
       ],
+      "linkTitle": "Xinhai Revolution",
       "pinyin": "xīn hài gé mìng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/1911%E5%B9%B411%E6%9C%88%EF%BC%8C%E4%B8%8A%E6%B5%B7%E5%8C%97%E4%BC%90%E5%AD%B8%E7%94%9F%E9%9A%8A%E5%9C%A8%E7%85%99%E5%8F%B0%E7%99%BB%E9%99%B8_(cropped).jpg/500px-1911%E5%B9%B411%E6%9C%88%EF%BC%8C%E4%B8%8A%E6%B5%B7%E5%8C%97%E4%BC%90%E5%AD%B8%E7%94%9F%E9%9A%8A%E5%9C%A8%E7%85%99%E5%8F%B0%E7%99%BB%E9%99%B8_(cropped).jpg",
@@ -6648,6 +6844,7 @@
         "Establishment of Special Economic Zones (Shenzhen)",
         "Special Economic Zones"
       ],
+      "linkTitle": "Special Economic Zones",
       "pinyin": "jīng jì tè qū",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Commercial_area_of_futian_to_east2020.jpg/960px-Commercial_area_of_futian_to_east2020.jpg",
@@ -6719,6 +6916,7 @@
       "searchAliases": [
         "Belt and Road Initiative"
       ],
+      "linkTitle": "Belt and Road Initiative",
       "pinyin": "yī dài yī lù",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Port_of_Shanghai,_Yangshan_Deep-water_Harbour_Zone,_02.jpg/960px-Port_of_Shanghai,_Yangshan_Deep-water_Harbour_Zone,_02.jpg",
@@ -6790,6 +6988,7 @@
       "searchAliases": [
         "Xi Jinping assumes party leadership"
       ],
+      "linkTitle": "Xi Jinping assumes party leadership",
       "pinyin": "xí jìn píng zhí zhèng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/President_George_W._Bush_with_Vice_President_Xi_Jinping.jpg",
@@ -6867,6 +7066,7 @@
       "searchAliases": [
         "Modern China"
       ],
+      "linkTitle": "Modern China",
       "pinyin": "xiàn dài zhōng guó",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/1912%E5%B9%B41%E6%9C%88%E4%B8%B4%E6%97%B6%E5%A4%A7%E6%80%BB%E7%BB%9F%E5%AD%99%E4%B8%AD%E5%B1%B1%E5%9C%A8%E5%8D%97%E4%BA%AC%E6%80%BB%E7%BB%9F%E5%BA%9C%E5%86%85%E7%9A%84%E7%85%A7%E7%89%87.jpg",
@@ -6941,6 +7141,7 @@
       "searchAliases": [
         "May Fourth Movement"
       ],
+      "linkTitle": "May Fourth Movement",
       "pinyin": "wǔ sì yùn dòng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Chinese_protestors_march_against_the_Treaty_of_Versailles_(May_4,_1919).jpg/960px-Chinese_protestors_march_against_the_Treaty_of_Versailles_(May_4,_1919).jpg",
@@ -7017,6 +7218,7 @@
       "searchAliases": [
         "Long March"
       ],
+      "linkTitle": "Long March",
       "pinyin": "cháng zhēng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Luding_bridge.jpg/960px-Luding_bridge.jpg",
@@ -7088,6 +7290,7 @@
       "searchAliases": [
         "Death of Mao Zedong"
       ],
+      "linkTitle": "Death of Mao Zedong",
       "pinyin": "máo zé dōng shì shì",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/China_1976-026_Beijing.jpg/960px-China_1976-026_Beijing.jpg",
@@ -7161,6 +7364,7 @@
       "searchAliases": [
         "Tiananmen protests and crackdown"
       ],
+      "linkTitle": "Tiananmen protests and crackdown",
       "pinyin": "tiān ān mén kàng yì yǔ zhèn yā",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Ud%C3%A1losti_na_n%C3%A1m%C4%9Bst%C3%AD_Tian_an_men,_%C4%8C%C3%ADna_1989,_foto_Ji%C5%99%C3%AD_Tondl.jpg",
@@ -7234,6 +7438,7 @@
         "Return of Hong Kong to China",
         "Hong Kong Handover"
       ],
+      "linkTitle": "Hong Kong Handover",
       "pinyin": "xiāng gǎng huí guī",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/GoldenBauhiniaSquare.jpg/500px-GoldenBauhiniaSquare.jpg",
@@ -7305,6 +7510,7 @@
         "First Chinese crewed space mission",
         "China’s First Crewed Spaceflight"
       ],
+      "linkTitle": "China’s First Crewed Spaceflight",
       "pinyin": "shén zhōu wǔ hào",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Yang_Liwei.jpg/960px-Yang_Liwei.jpg",
@@ -7383,6 +7589,7 @@
         "Song multi-state system",
         "Song and neighbouring empires"
       ],
+      "linkTitle": "Song and neighbouring empires",
       "pinyin": "sòng yǔ bìng lì zhèng quán",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Song-Liao-Xixia-1111.png",
@@ -7456,6 +7663,7 @@
       "searchAliases": [
         "Northern Song"
       ],
+      "linkTitle": "Northern Song",
       "pinyin": "běi sòng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Northern_Song%28%E5%8C%97%E5%AE%8B%E5%88%86%E8%B7%AF%E5%85%A8%E5%9B%BE%29.jpg/1280px-Northern_Song%28%E5%8C%97%E5%AE%8B%E5%88%86%E8%B7%AF%E5%85%A8%E5%9B%BE%29.jpg",
@@ -7531,6 +7739,7 @@
       "searchAliases": [
         "Southern Song"
       ],
+      "linkTitle": "Southern Song",
       "pinyin": "nán sòng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Song_Gaozong.png/960px-Song_Gaozong.png",
@@ -7603,6 +7812,7 @@
         "Establishment of Southern Song",
         "Southern Song foundation"
       ],
+      "linkTitle": "Southern Song foundation",
       "pinyin": "nán sòng jiàn lì",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Duke_Wen_of_Jin_Recovering_His_State_%28IA_mma_duke_wen_of_jin_recovering_his_state_40051%29.jpg/1280px-Duke_Wen_of_Jin_Recovering_His_State_%28IA_mma_duke_wen_of_jin_recovering_his_state_40051%29.jpg",
@@ -7675,6 +7885,7 @@
       "searchAliases": [
         "Eastern Jin"
       ],
+      "linkTitle": "Eastern Jin",
       "pinyin": "dōng jìn",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Eastern_Jin_Celadon_Ewer_%2810092881434%29.jpg/960px-Eastern_Jin_Celadon_Ewer_%2810092881434%29.jpg",
@@ -7749,6 +7960,7 @@
       "searchAliases": [
         "Han Zhao (Former Zhao)"
       ],
+      "linkTitle": "Han Zhao (Former Zhao)",
       "pinyin": "hàn zhào (qián zhào)",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Sixteen_Kingdoms_317_AD_(2).jpg/960px-Sixteen_Kingdoms_317_AD_(2).jpg",
@@ -7822,6 +8034,7 @@
       "searchAliases": [
         "Later Zhao"
       ],
+      "linkTitle": "Later Zhao",
       "pinyin": "hòu zhào",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Shi_Le_%28Emperor_Ming_of_Later_Zhao%29.jpg/960px-Shi_Le_%28Emperor_Ming_of_Later_Zhao%29.jpg",
@@ -7895,6 +8108,7 @@
       "searchAliases": [
         "Former Yan"
       ],
+      "linkTitle": "Former Yan",
       "pinyin": "qián yān",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sixteen_Kingdoms_369_AD.jpg/960px-Sixteen_Kingdoms_369_AD.jpg",
@@ -7969,6 +8183,7 @@
       "searchAliases": [
         "Former Qin"
       ],
+      "linkTitle": "Former Qin",
       "pinyin": "qián qín",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Sixteen_Kingdoms_376_AD_(2).jpg/960px-Sixteen_Kingdoms_376_AD_(2).jpg",
@@ -8042,6 +8257,7 @@
       "searchAliases": [
         "Later Qin"
       ],
+      "linkTitle": "Later Qin",
       "pinyin": "hòu qín",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Handwritten_diamond_sutra_zhang_jizhi_song_dynasty_1253.jpg/960px-Handwritten_diamond_sutra_zhang_jizhi_song_dynasty_1253.jpg",
@@ -8117,6 +8333,7 @@
       "searchAliases": [
         "Liu Song"
       ],
+      "linkTitle": "Liu Song",
       "pinyin": "liú sòng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Southern_and_Northern_Dynasties_440_CE.png/500px-Southern_and_Northern_Dynasties_440_CE.png",
@@ -8192,6 +8409,7 @@
       "searchAliases": [
         "Southern Qi"
       ],
+      "linkTitle": "Southern Qi",
       "pinyin": "nán qí",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%E7%9F%B3%E9%97%A8%EF%BC%8C2012%E5%B9%B4%E5%8D%97%E4%BA%AC%E6%A0%96%E9%9C%9E%E5%8C%BA%E7%81%B5%E5%B1%B1%E5%A4%A7%E6%B5%A6%E5%A1%98%E6%9D%91%E5%8D%97%E6%9C%9D%E5%A2%93%E5%87%BA%E5%9C%9F.jpg/960px-%E7%9F%B3%E9%97%A8%EF%BC%8C2012%E5%B9%B4%E5%8D%97%E4%BA%AC%E6%A0%96%E9%9C%9E%E5%8C%BA%E7%81%B5%E5%B1%B1%E5%A4%A7%E6%B5%A6%E5%A1%98%E6%9D%91%E5%8D%97%E6%9C%9D%E5%A2%93%E5%87%BA%E5%9C%9F.jpg",
@@ -8268,6 +8486,7 @@
       "searchAliases": [
         "Liang"
       ],
+      "linkTitle": "Liang",
       "pinyin": "liáng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Tomb_of_Xiao_Jing_-_Bixie.JPG/960px-Tomb_of_Xiao_Jing_-_Bixie.JPG",
@@ -8344,6 +8563,7 @@
       "searchAliases": [
         "Chen"
       ],
+      "linkTitle": "Chen",
       "pinyin": "chén",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Chen_Xuandi_Tang.jpg/330px-Chen_Xuandi_Tang.jpg",
@@ -8421,6 +8641,7 @@
       "searchAliases": [
         "Northern Wei"
       ],
+      "linkTitle": "Northern Wei",
       "pinyin": "běi wèi",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Cave_20%2C_Yungang_Grottoes.jpg/960px-Cave_20%2C_Yungang_Grottoes.jpg",
@@ -8496,6 +8717,7 @@
       "searchAliases": [
         "Eastern Wei"
       ],
+      "linkTitle": "Eastern Wei",
       "pinyin": "dōng wèi",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Armored_warriors,_China,_Eastern_Wei_dynasty,_534-550_AD,_ceramic_-_Linden-Museum_-_Stuttgart,_Germany_-_DSC03593.jpg/960px-Armored_warriors,_China,_Eastern_Wei_dynasty,_534-550_AD,_ceramic_-_Linden-Museum_-_Stuttgart,_Germany_-_DSC03593.jpg",
@@ -8571,6 +8793,7 @@
       "searchAliases": [
         "Western Wei"
       ],
+      "linkTitle": "Western Wei",
       "pinyin": "xī wèi",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Western_Wei_civil_officer.jpg/960px-Western_Wei_civil_officer.jpg",
@@ -8646,6 +8869,7 @@
       "searchAliases": [
         "Northern Qi"
       ],
+      "linkTitle": "Northern Qi",
       "pinyin": "běi qí",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Riders_on_Horseback,_Northern_Qi_Dynasty.jpg/960px-Riders_on_Horseback,_Northern_Qi_Dynasty.jpg",
@@ -8722,6 +8946,7 @@
       "searchAliases": [
         "Northern Zhou"
       ],
+      "linkTitle": "Northern Zhou",
       "pinyin": "běi zhōu",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Northern_Zhou_Gilded_Silver_Ewer_%289833405755%29.jpg/1280px-Northern_Zhou_Gilded_Silver_Ewer_%289833405755%29.jpg",
@@ -8796,6 +9021,7 @@
       "searchAliases": [
         "Later Liang"
       ],
+      "linkTitle": "Later Liang",
       "pinyin": "hòu liáng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Later_Liang.png/960px-Later_Liang.png",
@@ -8870,6 +9096,7 @@
       "searchAliases": [
         "Later Tang"
       ],
+      "linkTitle": "Later Tang",
       "pinyin": "hòu táng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Later_Tang.png/960px-Later_Tang.png",
@@ -8944,6 +9171,7 @@
       "searchAliases": [
         "Later Jin"
       ],
+      "linkTitle": "Later Jin",
       "pinyin": "hòu jìn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Later_Jin.png/960px-Later_Jin.png",
@@ -9018,6 +9246,7 @@
       "searchAliases": [
         "Later Han"
       ],
+      "linkTitle": "Later Han",
       "pinyin": "hòu hàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Later_Han.png/960px-Later_Han.png",
@@ -9091,6 +9320,7 @@
       "searchAliases": [
         "Later Zhou"
       ],
+      "linkTitle": "Later Zhou",
       "pinyin": "hòu zhōu",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Zhou_Yuan_Tong_Bao_-_Scott_Semans_01.jpg/960px-Zhou_Yuan_Tong_Bao_-_Scott_Semans_01.jpg",
@@ -9163,6 +9393,7 @@
       "searchAliases": [
         "Wu (Yang Wu)"
       ],
+      "linkTitle": "Wu (Yang Wu)",
       "pinyin": "wú (yáng wú)",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/%D0%A7%D0%B6%D0%BE%D1%83_%D0%92%D1%8D%D0%BD%D1%8C%D1%86%D0%B7%D1%8E%D0%B9_1.jpg/960px-%D0%A7%D0%B6%D0%BE%D1%83_%D0%92%D1%8D%D0%BD%D1%8C%D1%86%D0%B7%D1%8E%D0%B9_1.jpg",
@@ -9236,6 +9467,7 @@
       "searchAliases": [
         "Former Shu"
       ],
+      "linkTitle": "Former Shu",
       "pinyin": "qián shǔ",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/WangJian's-Tomb.jpg/960px-WangJian's-Tomb.jpg",
@@ -9309,6 +9541,7 @@
       "searchAliases": [
         "Wuyue"
       ],
+      "linkTitle": "Wuyue",
       "pinyin": "wú yuè",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/%E9%BE%8D%E5%BE%B7%E4%BA%8C%E5%B9%B4%EF%BC%88922%EF%BC%89%E5%90%B3%E8%B6%8A%E7%8E%8B%E9%8C%A2%E9%8F%90%E7%89%92%E5%B4%87%E5%90%B3%E7%A6%AA%E9%99%A2%E9%95%B7%E8%80%81%E5%97%A3%E5%8C%A1.jpg/960px-%E9%BE%8D%E5%BE%B7%E4%BA%8C%E5%B9%B4%EF%BC%88922%EF%BC%89%E5%90%B3%E8%B6%8A%E7%8E%8B%E9%8C%A2%E9%8F%90%E7%89%92%E5%B4%87%E5%90%B3%E7%A6%AA%E9%99%A2%E9%95%B7%E8%80%81%E5%97%A3%E5%8C%A1.jpg",
@@ -9384,6 +9617,7 @@
       "searchAliases": [
         "Chu (Ma Chu)"
       ],
+      "linkTitle": "Chu (Ma Chu)",
       "pinyin": "chǔ (mǎ chǔ)",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/096_20100911_bt_shanghai_museum_%284986578699%29.jpg/1280px-096_20100911_bt_shanghai_museum_%284986578699%29.jpg",
@@ -9456,6 +9690,7 @@
       "searchAliases": [
         "Min"
       ],
+      "linkTitle": "Min",
       "pinyin": "mǐn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Tomb_of_Wang_Shenzhi_1.jpg/1280px-Tomb_of_Wang_Shenzhi_1.jpg",
@@ -9529,6 +9764,7 @@
       "searchAliases": [
         "Southern Han"
       ],
+      "linkTitle": "Southern Han",
       "pinyin": "nán hàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Crude_lead_Kai_Yuan_Tong_Bao_%28%E9%96%8B%E5%85%83%E9%80%9A%E5%AF%B6%29_-_Southern_Han_Kingdom_-_Scott_Semans.jpg",
@@ -9602,6 +9838,7 @@
       "searchAliases": [
         "Jingnan (Nanping)"
       ],
+      "linkTitle": "Jingnan (Nanping)",
       "pinyin": "jīng nán (nán píng)",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%E8%8D%8A%E5%B7%9E%E5%8F%A4%E5%9F%8E_hIstorical_city_wall_of_Jingzhou_-_panoramio.jpg/1280px-%E8%8D%8A%E5%B7%9E%E5%8F%A4%E5%9F%8E_hIstorical_city_wall_of_Jingzhou_-_panoramio.jpg",
@@ -9676,6 +9913,7 @@
       "searchAliases": [
         "Later Shu"
       ],
+      "linkTitle": "Later Shu",
       "pinyin": "hòu shǔ",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Later_Shu_Confucian_Classics_on_Stone_%289833831294%29.jpg/1280px-Later_Shu_Confucian_Classics_on_Stone_%289833831294%29.jpg",
@@ -9750,6 +9988,7 @@
       "searchAliases": [
         "Southern Tang"
       ],
+      "linkTitle": "Southern Tang",
       "pinyin": "nán táng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Li_Yu_scth.jpg",
@@ -9824,6 +10063,7 @@
       "searchAliases": [
         "Northern Han"
       ],
+      "linkTitle": "Northern Han",
       "pinyin": "běi hàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Later_Zhou.png/960px-Later_Zhou.png",
@@ -9904,6 +10144,7 @@
       "searchAliases": [
         "Ten Kingdoms"
       ],
+      "linkTitle": "Ten Kingdoms",
       "pinyin": "shí guó",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Five_Dynasties_Ten_Kingdoms_923_CE.png",
@@ -9971,6 +10212,7 @@
         "Sui builds the Grand Canal network",
         "Grand Canal"
       ],
+      "linkTitle": "Grand Canal",
       "pinyin": "suí dài dà yùn hé",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Grand_Canal%2C_tour_boats%2C_Suzhou%2C_China.jpg/1280px-Grand_Canal%2C_tour_boats%2C_Suzhou%2C_China.jpg",
@@ -10035,6 +10277,7 @@
       "searchAliases": [
         "Bi Sheng’s movable type"
       ],
+      "linkTitle": "Bi Sheng’s movable type",
       "pinyin": "bì shēng yǔ huó zì yìn shuā",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Beijing.Musee_imprimerie.caracteres_mobiles.Bisheng.jpg/1280px-Beijing.Musee_imprimerie.caracteres_mobiles.Bisheng.jpg",
@@ -10101,6 +10344,7 @@
       "searchAliases": [
         "Along the River During Qingming"
       ],
+      "linkTitle": "Along the River During Qingming",
       "pinyin": "qīng míng shàng hé tú",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Bianjing_city_gate.JPG/960px-Bianjing_city_gate.JPG",
@@ -10165,6 +10409,7 @@
         "Manila and the silver trade",
         "China and the Manila Silver Trade"
       ],
+      "linkTitle": "China and the Manila Silver Trade",
       "pinyin": "mǎ ní lā yǔ bái yín mào yì",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Manila-Accapulco_galleon_trade_route%2C_showing_onward_route_to_Spain.png",
@@ -10228,6 +10473,7 @@
         "Dream of the Red Chamber in print",
         "Dream of the Red Chamber"
       ],
+      "linkTitle": "Dream of the Red Chamber",
       "pinyin": "hóng lóu mèng shǒu cì kān yìn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sun_Wen_Red_Chamber_15.jpg",
@@ -10293,6 +10539,7 @@
       "searchAliases": [
         "Great Leap Forward"
       ],
+      "linkTitle": "Great Leap Forward",
       "pinyin": "dà yuè jìn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Backyard_furnace4.jpg",
@@ -10358,6 +10605,7 @@
       "searchAliases": [
         "Cultural Revolution"
       ],
+      "linkTitle": "Cultural Revolution",
       "pinyin": "wén huà dà gé mìng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/1967-11_1967%E5%B9%B4_%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%A4%A7%E5%AD%97%E6%8A%A5.jpg/960px-1967-11_1967%E5%B9%B4_%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%A4%A7%E5%AD%97%E6%8A%A5.jpg",
@@ -10422,6 +10670,7 @@
         "Reform and opening up",
         "Reform and Opening"
       ],
+      "linkTitle": "Reform and Opening",
       "pinyin": "gǎi gé kāi fàng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Time_is_money,_Efficiency_is_life.jpg/960px-Time_is_money,_Efficiency_is_life.jpg",
@@ -10450,7 +10699,7 @@
         },
         {
           "title": "The celebrated emperor",
-          "text": "Taizong (唐太宗) later acquired a reputation for good government. That achievement and the violent succession are both parts of his reign. The deaths of his brothers are well established, while accounts presenting his victory as inevitable or entirely justified need more caution. Later readers inherited a story shaped partly by the court that benefited from the coup."
+          "text": "Taizong (唐太宗) later acquired a [[id:zhenguan-government|reputation for good government]]. That achievement and the violent succession are both parts of his reign. The deaths of his brothers are well established, while accounts presenting his victory as inevitable or entirely justified need more caution. Later readers inherited a story shaped partly by the court that benefited from the coup."
         }
       ],
       "note": "626 CE.",
@@ -10479,6 +10728,11 @@
         ]
       },
       "related": [],
+      "linkTitle": "Xuanwu Gate coup",
+      "linkAliases": [
+        "Xuanwu Gate Incident",
+        "玄武门之变"
+      ],
       "searchAliases": [
         "The Xuanwu Gate coup",
         "Xuanwu Gate coup"
@@ -10507,7 +10761,7 @@
       "sections": [
         {
           "title": "The work of translation",
-          "text": "Bringing manuscripts home began another long task. Translators needed to compare texts, decide on meanings and work together with continuing institutional support. Xuanzang (玄奘) sought to resolve differences among the Buddhist writings already available in China. His account of the western regions also preserved knowledge of societies beyond Tang rule."
+          "text": "Bringing manuscripts home began another long task. Translators needed to compare texts, decide on meanings and work together with continuing institutional support. Xuanzang (玄奘) sought to resolve differences among the Buddhist writings already available in China. His account of the western regions also preserved knowledge of societies beyond [[id:tang|Tang rule]]."
         },
         {
           "title": "Learning from beyond the empire",
@@ -10542,6 +10796,11 @@
         ]
       },
       "related": [],
+      "linkTitle": "Xuanzang’s return",
+      "linkAliases": [
+        "Xuanzang",
+        "玄奘"
+      ],
       "searchAliases": [
         "Xuanzang returns to Chang’an",
         "Xuanzang’s return"
@@ -10567,7 +10826,7 @@
       "start": 751,
       "end": 751,
       "markerOffset": -20,
-      "description": "In 751, Tang forces were defeated by an Abbasid army at Talas in Central Asia. The defeat showed the difficulty of projecting military power far from the imperial court. It did not end contact between the two worlds.",
+      "description": "In 751, [[id:tang|Tang]] forces were defeated by an Abbasid army at Talas in Central Asia. The defeat showed the difficulty of projecting military power far from the imperial court. It did not end contact between the two worlds.",
       "sections": [
         {
           "title": "Contacts after the fighting",
@@ -10607,6 +10866,11 @@
         ]
       },
       "related": [],
+      "linkTitle": "Battle of Talas",
+      "linkAliases": [
+        "Talas",
+        "怛罗斯之战"
+      ],
       "searchAliases": [
         "The Battle of Talas",
         "Battle of Talas"
@@ -10640,6 +10904,10 @@
         {
           "title": "Who paid the new taxes",
           "text": "The official Lu Zhi (陆贽) warned that the reform made emergency wartime demands permanent. He also argued that farming property was easy to find while mobile wealth could escape assessment. A more adaptable system was therefore not necessarily fairer. The name Two Taxes refers to the two collection seasons, rather than simply to two kinds of taxable goods."
+        },
+        {
+          "title": "Keep exploring",
+          "text": "Read about the [[id:an-lushan|An Lushan Rebellion]] and the wider [[id:tang|Tang dynasty]]."
         }
       ],
       "note": "780 CE. Surviving memorials record both Yang Yan (杨炎)’s proposal and Lu Zhi (陆贽)’s criticism.",
@@ -10668,6 +10936,11 @@
         ]
       },
       "related": [],
+      "linkTitle": "Two-Tax reform",
+      "linkAliases": [
+        "Two-Tax system",
+        "两税法"
+      ],
       "searchAliases": [
         "The Two-Tax reform",
         "Two-Tax reform"
@@ -10733,6 +11006,7 @@
         "The suppression of Buddhism",
         "Huichang suppression of Buddhism"
       ],
+      "linkTitle": "Huichang suppression of Buddhism",
       "pinyin": "huì chāng miè fó",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Foguang_Temple_8.JPG/1280px-Foguang_Temple_8.JPG",
@@ -10794,6 +11068,7 @@
         "Huang Chao takes Chang’an",
         "Huang Chao’s occupation of Chang’an"
       ],
+      "linkTitle": "Huang Chao’s occupation of Chang’an",
       "pinyin": "huáng cháo gōng rù cháng ān",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/%E9%BB%83%E5%B7%A2%EF%BC%88%E6%AE%98%E5%94%90%E4%BA%94%E4%BB%A3%E5%8F%B2%E6%BC%94%E7%BE%A9%E5%82%B3%EF%BC%89.jpg/960px-%E9%BB%83%E5%B7%A2%EF%BC%88%E6%AE%98%E5%94%90%E4%BA%94%E4%BB%A3%E5%8F%B2%E6%BC%94%E7%BE%A9%E5%82%B3%EF%BC%89.jpg",
@@ -10855,6 +11130,7 @@
         "Tang gives way to Later Liang",
         "Tang’s fall and Later Liang’s foundation"
       ],
+      "linkTitle": "Tang’s fall and Later Liang’s foundation",
       "pinyin": "táng cháo miè wáng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Zhu_Wen_%28Liang_Taizu%29.jpg/1280px-Zhu_Wen_%28Liang_Taizu%29.jpg",
@@ -10921,6 +11197,7 @@
         "Laozi and the making of the Daodejing",
         "Laozi and the Daodejing"
       ],
+      "linkTitle": "Laozi and the Daodejing",
       "pinyin": "Lǎozǐ yǔ Dàodéjīng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Zhang_Lu-Laozi_Riding_an_Ox.jpg",
@@ -10986,6 +11263,7 @@
         "Mozi and impartial concern",
         "Mozi"
       ],
+      "linkTitle": "Mozi",
       "pinyin": "Mòzǐ yǔ Jiān’ài",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Mozi.jpg",
@@ -11053,6 +11331,7 @@
         "Mencius: livelihood and moral government",
         "Mencius"
       ],
+      "linkTitle": "Mencius",
       "pinyin": "Mèngzǐ yǔ Rénzhèng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Great_Confucian_Figures_-_Painting_of_Mengzi_by_Kan%C5%8D_Sansetsu.jpg/960px-Great_Confucian_Figures_-_Painting_of_Mengzi_by_Kan%C5%8D_Sansetsu.jpg",
@@ -11118,6 +11397,7 @@
         "Zhuangzi: perspectives and the art of living",
         "Zhuangzi"
       ],
+      "linkTitle": "Zhuangzi",
       "pinyin": "Zhuāngzǐ yǔ Xiāoyáo",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/%E7%8E%84%E9%96%80%E5%8D%81%E5%AD%90%E5%9C%96_%E8%8E%8A%E5%AD%90.jpg/960px-%E7%8E%84%E9%96%80%E5%8D%81%E5%AD%90%E5%9C%96_%E8%8E%8A%E5%AD%90.jpg",
@@ -11183,6 +11463,7 @@
         "Xunzi: learning makes an ethical world",
         "Xunzi"
       ],
+      "linkTitle": "Xunzi",
       "pinyin": "Xúnzǐ yǔ Lǐfǎ",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Xunzi_published_in_Edo_period_Japan.jpg/960px-Xunzi_published_in_Edo_period_Japan.jpg",
@@ -11250,6 +11531,7 @@
         "Han Fei: standards, incentives and distrust",
         "Han Fei"
       ],
+      "linkTitle": "Han Fei",
       "pinyin": "Hán Fēi yǔ Fǎjiā",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Statue_Of_Han_Fei.png/960px-Statue_Of_Han_Fei.png",
@@ -11317,6 +11599,7 @@
         "Mawangdui: an archive beneath the earth",
         "Mawangdui Manuscripts"
       ],
+      "linkTitle": "Mawangdui Manuscripts",
       "pinyin": "Mǎwángduī Bóshū",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Mawangdui_LaoTsu_Ms2.JPG",
@@ -11385,6 +11668,7 @@
         "Sima Qian and the Records of the Grand Historian",
         "Sima Qian and the Shiji"
       ],
+      "linkTitle": "Sima Qian and the Shiji",
       "pinyin": "Sīmǎ Qiān yǔ Shǐjì",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Shiji.jpg",
@@ -11452,6 +11736,7 @@
         "The debate on salt and iron",
         "Salt and Iron Debate"
       ],
+      "linkTitle": "Salt and Iron Debate",
       "pinyin": "Yántiě zhī Yì",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Western_Han_Bronze_Wuzhu_Coins_(9832267673).jpg/960px-Western_Han_Bronze_Wuzhu_Coins_(9832267673).jpg",
@@ -11518,6 +11803,7 @@
         "Ban Zhao: scholarship and women’s education",
         "Ban Zhao"
       ],
+      "linkTitle": "Ban Zhao",
       "pinyin": "Bān Zhāo yǔ Nǚjiè",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Famous_Women,_1799_(L).jpg/960px-Famous_Women,_1799_(L).jpg",
@@ -11582,6 +11868,7 @@
         "Zhang Heng and the earthquake detector",
         "Zhang Heng’s earthquake detector"
       ],
+      "linkTitle": "Zhang Heng’s earthquake detector",
       "pinyin": "Zhāng Héng yǔ Dìdòngyí",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pottery_palace_1.JPG/960px-Pottery_palace_1.JPG",
@@ -11647,6 +11934,7 @@
         "Nine Chapters: mathematics for a working world",
         "Nine Chapters on the Mathematical Art"
       ],
+      "linkTitle": "Nine Chapters on the Mathematical Art",
       "pinyin": "Jiǔzhāng Suànshù",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/e0/%E4%B9%9D%E7%AB%A0%E7%AE%97%E8%A1%93%E7%B4%B0%E8%8D%89%E5%9C%96%E8%AA%AA.jpg",
@@ -11712,6 +12000,7 @@
         "Wang Xizhi and the Orchid Pavilion",
         "Wang Xizhi’s Orchid Pavilion gathering"
       ],
+      "linkTitle": "Wang Xizhi’s Orchid Pavilion gathering",
       "pinyin": "Wáng Xīzhī yǔ Lántíng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/LantingXu.jpg/960px-LantingXu.jpg",
@@ -11777,6 +12066,7 @@
         "Mogao: a religious archive at a crossroads",
         "Mogao Caves"
       ],
+      "linkTitle": "Mogao Caves",
       "pinyin": "Mògāo Kū",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Dunhuang_Mogao_cave_159.jpg",
@@ -11842,6 +12132,7 @@
         "Kumarajiva and collaborative translation",
         "Kumarajiva’s Buddhist translations"
       ],
+      "linkTitle": "Kumarajiva’s Buddhist translations",
       "pinyin": "Jiūmóluóshí yìjīng",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Kumarajiva_at_Kizil_Caves%2C_Kuqa.jpg/960px-Kumarajiva_at_Kizil_Caves%2C_Kuqa.jpg",
@@ -11906,6 +12197,7 @@
         "Tao Yuanming: withdrawal and its afterlife",
         "Tao Yuanming"
       ],
+      "linkTitle": "Tao Yuanming",
       "pinyin": "Táo Yuānmíng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Renouncing_the_Official_Seal_from_'Scenes_from_the_Life_of_Tao_Yuanming'_by_Chen_Hongshou.jpg/960px-Renouncing_the_Official_Seal_from_'Scenes_from_the_Life_of_Tao_Yuanming'_by_Chen_Hongshou.jpg",
@@ -11971,6 +12263,7 @@
         "Yungang: Buddhism and imperial sponsorship",
         "Yungang Caves"
       ],
+      "linkTitle": "Yungang Caves",
       "pinyin": "Yúngāng Shíkū",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/61292-Yungang-Grottoes_(28498548881).jpg/960px-61292-Yungang-Grottoes_(28498548881).jpg",
@@ -12037,6 +12330,7 @@
         "Longmen: patrons, inscriptions and sacred space",
         "Longmen Caves"
       ],
+      "linkTitle": "Longmen Caves",
       "pinyin": "Lóngmén Shíkū",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Longmen-binyang-middle-cave-wideshot.jpg/500px-Longmen-binyang-middle-cave-wideshot.jpg",
@@ -12102,6 +12396,7 @@
         "Tang Code: making hierarchy legally explicit",
         "Tang Code"
       ],
+      "linkTitle": "Tang Code",
       "pinyin": "Táng Lǜ Shūyì",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/NLC892-1040-206105_%E6%95%85%E5%94%90%E5%BE%8B%E7%96%8F%E8%AD%B0.pdf/page1-960px-NLC892-1040-206105_%E6%95%85%E5%94%90%E5%BE%8B%E7%96%8F%E8%AD%B0.pdf.jpg",
@@ -12127,7 +12422,7 @@
       "label": false,
       "color": "#987950",
       "category": "culture",
-      "description": "Li Bai (李白) and Du Fu (杜甫) wrote in a world of friendship, travel, court connections and political ambition. Their poetry includes responses to war, displacement and disappointed hopes around the An Lushan Rebellion (安史之乱), alongside humour and intimate exchanges.",
+      "description": "Li Bai (李白) and Du Fu (杜甫) wrote in a world of friendship, travel, court connections and political ambition. Their poetry includes responses to war, displacement and disappointed hopes around the [[id:an-lushan|An Lushan Rebellion]], alongside humour and intimate exchanges.",
       "sections": [
         {
           "title": "What a poem could do",
@@ -12166,6 +12461,12 @@
           "https://www.metmuseum.org/toah/ht/06/eac.html"
         ]
       },
+      "linkTitle": "Li Bai and Du Fu",
+      "linkAliases": [
+        "Li Bai",
+        "Du Fu",
+        "李白与杜甫"
+      ],
       "searchAliases": [
         "Li Bai and Du Fu: poetry within history",
         "Li Bai and Du Fu"
@@ -12235,6 +12536,7 @@
         "Tang women, riding and the limits of visibility",
         "Women riders in Tang China"
       ],
+      "linkTitle": "Women riders in Tang China",
       "pinyin": "Tángdài Nǚxìng yǔ Qíchéng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Tang_Dynasty_horse_with_rider,_National_Museum_Cardiff_02.jpg/960px-Tang_Dynasty_horse_with_rider,_National_Museum_Cardiff_02.jpg",
@@ -12302,6 +12604,7 @@
         "Lu Yu: turning tea into an art of judgment",
         "Lu Yu’s Tea Classic"
       ],
+      "linkTitle": "Lu Yu’s Tea Classic",
       "pinyin": "Lù Yǔ yǔ Chájīng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Lu_Y%C3%BC.png",
@@ -12378,6 +12681,7 @@
       "searchAliases": [
         "China’s economic centre moves south"
       ],
+      "linkTitle": "China’s economic centre moves south",
       "pinyin": "jīng jì zhòng xīn nán yí",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Song_Dynasty_Hydraulic_Mill_for_Grain.JPG/1280px-Song_Dynasty_Hydraulic_Mill_for_Grain.JPG",
@@ -12446,6 +12750,7 @@
         "The state issues paper money",
         "Song paper money"
       ],
+      "linkTitle": "Song paper money",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Hue-tzu_(Song_Dynasty_government_issue),_1023_-_John_E._Sandrock.jpg",
         "width": 318,
@@ -12510,6 +12815,7 @@
       "searchAliases": [
         "Wang Anshi’s New Policies"
       ],
+      "linkTitle": "Wang Anshi’s New Policies",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Wang_Anshi_2.jpg",
         "width": 803,
@@ -12578,6 +12884,7 @@
       "searchAliases": [
         "Shen Kuo’s Dream Pool Essays"
       ],
+      "linkTitle": "Shen Kuo’s Dream Pool Essays",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Yingzao_Fashi_5_desmear.JPG/500px-Yingzao_Fashi_5_desmear.JPG",
         "width": 815,
@@ -12643,6 +12950,7 @@
         "Zhu Xi rebuilds a community of learning",
         "Zhu Xi and White Deer Grotto Academy"
       ],
+      "linkTitle": "Zhu Xi and White Deer Grotto Academy",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Letter_on_Government_Affairs_-_Zhu_Xi.jpg/960px-Letter_on_Government_Affairs_-_Zhu_Xi.jpg",
         "width": 1259,
@@ -12708,6 +13016,7 @@
         "Quanzhou organizes maritime commerce",
         "Quanzhou port"
       ],
+      "linkTitle": "Quanzhou port",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Quanzhou_Luoyang_Bridge_20170727.jpg/960px-Quanzhou_Luoyang_Bridge_20170727.jpg",
         "width": 2700,
@@ -12776,6 +13085,7 @@
         "Religious patronage under Mongol rule",
         "Religion under Yuan rule"
       ],
+      "linkTitle": "Religion under Yuan rule",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Yuntai_north_side.jpg/960px-Yuntai_north_side.jpg",
         "width": 2832,
@@ -12842,6 +13152,7 @@
         "A dated offering changes ceramic history",
         "David Vases"
       ],
+      "linkTitle": "David Vases",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Yuan_Dynasty,_porcelain_dish,_mid_14th_century.jpg/960px-Yuan_Dynasty,_porcelain_dish,_mid_14th_century.jpg",
         "width": 2560,
@@ -12907,6 +13218,7 @@
         "Wang Yangming and moral knowledge",
         "Wang Yangming’s Philosophy"
       ],
+      "linkTitle": "Wang Yangming’s Philosophy",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/%E7%8E%8B%E5%AE%88%E4%BB%81.jpg/500px-%E7%8E%8B%E5%AE%88%E4%BB%81.jpg",
         "width": 698,
@@ -12974,6 +13286,7 @@
         "Journey to the West reaches print",
         "Journey to the West"
       ],
+      "linkTitle": "Journey to the West",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/The_Journey_to_the_West,_Shidetang_Hall_of_Jinling_in_1592.jpg/960px-The_Journey_to_the_West,_Shidetang_Hall_of_Jinling_in_1592.jpg",
         "width": 1856,
@@ -13039,6 +13352,7 @@
         "Li Shizhen reorganizes natural knowledge",
         "Li Shizhen’s Compendium of Materia Medica"
       ],
+      "linkTitle": "Li Shizhen’s Compendium of Materia Medica",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Compendium_of_Materia_Medica.png",
         "width": 400,
@@ -13108,6 +13422,7 @@
         "Qing conquest remakes Inner Asia",
         "Qing Conquests in Inner Asia"
       ],
+      "linkTitle": "Qing Conquests in Inner Asia",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/The_Emperor_at_the_Kherlen_river.jpg/960px-The_Emperor_at_the_Kherlen_river.jpg",
         "width": 1916,
@@ -13175,6 +13490,7 @@
         "The Siku library: preservation and control",
         "The Siku Quanshu Book Collection"
       ],
+      "linkTitle": "The Siku Quanshu Book Collection",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/The_Complete_Library_in_Four_Sections_(Siku_Quanshu)_WDL3020.jpg/960px-The_Complete_Library_in_Four_Sections_(Siku_Quanshu)_WDL3020.jpg",
         "width": 1024,
@@ -13240,6 +13556,7 @@
         "The imperial examinations are abolished",
         "End of the Imperial Examinations"
       ],
+      "linkTitle": "End of the Imperial Examinations",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Exam_cells-large.jpg/960px-Exam_cells-large.jpg",
         "width": 968,
@@ -13303,6 +13620,7 @@
         "Lu Xun publishes A Madman’s Diary",
         "Lu Xun’s A Madman’s Diary (狂人日记)"
       ],
+      "linkTitle": "Lu Xun’s A Madman’s Diary (狂人日记)",
       "pinyin": "lǔ xùn yǔ kuáng rén rì jì",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/A_Madman's_Diary_-_Lu_Xun.JPG/960px-A_Madman's_Diary_-_Lu_Xun.JPG",
@@ -13365,6 +13683,7 @@
         "Civil war and the division of governments",
         "Chinese Civil War"
       ],
+      "linkTitle": "Chinese Civil War",
       "pinyin": "guó gòng nèi zhàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Battle_of_Siping03.jpg",
@@ -13427,6 +13746,7 @@
         "Full-scale war with Japan",
         "Second World War: War with Japan"
       ],
+      "linkTitle": "Second World War: War with Japan",
       "pinyin": "quán miàn kàng zhàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Shanghai1937KMT_intersection.jpg",
@@ -13489,6 +13809,7 @@
         "Land reform and rural power",
         "Land Reform"
       ],
+      "linkTitle": "Land Reform",
       "pinyin": "tǔ dì gǎi gé",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/A_man_reads_the_Land_Reform_Law_of_PRC.jpg",
@@ -13551,6 +13872,7 @@
         "The new Marriage Law",
         "The 1950 Marriage Law"
       ],
+      "linkTitle": "The 1950 Marriage Law",
       "pinyin": "xīn hūn yīn fǎ",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%A9%9A%E5%A7%BB%E6%B3%95.pdf/page1-960px-%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%A9%9A%E5%A7%BB%E6%B3%95.pdf.jpg",
@@ -13617,6 +13939,7 @@
       "searchAliases": [
         "Nixon visits China"
       ],
+      "linkTitle": "Nixon visits China",
       "pinyin": "ní kè sōng fǎng huá",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/President_Richard_Nixon_and_Premier_Chou_En-Lai_Shake_Hands_at_the_Nixons%27_Arrival_in_Peking%2C_China_-_DPLA_-_315dbcc0e8b46e1bc678fde12bef9eb8.jpg",
@@ -13684,6 +14007,7 @@
         "China joins the World Trade Organization",
         "China Joins the WTO"
       ],
+      "linkTitle": "China Joins the WTO",
       "pinyin": "zhōng guó jiā rù shì mào zǔ zhī",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/WTO_members.svg",
@@ -13749,6 +14073,7 @@
         "King Li’s expulsion and the Gonghe interregnum",
         "King Li’s expulsion and the Gonghe period"
       ],
+      "linkTitle": "King Li’s expulsion and the Gonghe period",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Western_Zhou_Bronze_Plate_with_Xiu_Inscription.jpg/960px-Western_Zhou_Bronze_Plate_with_Xiu_Inscription.jpg",
         "width": 3888,
@@ -13814,6 +14139,7 @@
         "The western Zhou capital falls",
         "Fall of the Western Zhou capital"
       ],
+      "linkTitle": "Fall of the Western Zhou capital",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Bao_Si_-_Bai_Mei_Xin_Yong.JPG",
         "width": 480,
@@ -13876,6 +14202,7 @@
         "Shang Yang’s reforms in Qin",
         "Shang Yang’s reforms"
       ],
+      "linkTitle": "Shang Yang’s reforms",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/Statue_of_Shang_Yang.jpg",
         "width": 1520,
@@ -13941,6 +14268,7 @@
         "Qin’s northern walls and frontier occupation",
         "Qin’s northern walls"
       ],
+      "linkTitle": "Qin’s northern walls",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/11/Qin_empire_210_BCE.png",
         "width": 555,
@@ -14005,6 +14333,7 @@
         "The Yellow Turban uprising",
         "Yellow Turban Uprising"
       ],
+      "linkTitle": "Yellow Turban Uprising",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Three_Brothers_during_the_Yellow_Turban_Rebellion.jpg",
         "width": 500,
@@ -14068,6 +14397,7 @@
         "The wars of the Eight Princes",
         "War of the Eight Princes"
       ],
+      "linkTitle": "War of the Eight Princes",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/War_of_the_Eight_Princes_301.png",
         "width": 1123,
@@ -14133,6 +14463,7 @@
         "Northern Wei reforms and the move to Luoyang",
         "Northern Wei reforms"
       ],
+      "linkTitle": "Northern Wei reforms",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Emperor_Xiaowen_of_Northern_Wei.jpg",
         "width": 500,
@@ -14197,6 +14528,7 @@
         "The Niu–Li disputes and their later interpretation",
         "Niu–Li court disputes"
       ],
+      "linkTitle": "Niu–Li court disputes",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Five_officials_haikou_2010_01.jpg/960px-Five_officials_haikou_2010_01.jpg",
         "width": 3456,
@@ -14259,6 +14591,7 @@
         "Yue Fei: warfare, execution and remembered loyalty",
         "Yue Fei"
       ],
+      "linkTitle": "Yue Fei",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Four_Generals_of_Song.jpg/960px-Four_Generals_of_Song.jpg",
         "width": 6000,
@@ -14321,6 +14654,7 @@
         "Gunpowder enters the military manual",
         "Gunpowder in the Wujing Zongyao"
       ],
+      "linkTitle": "Gunpowder in the Wujing Zongyao",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Chinese_Gunpowder_Formula.JPG/960px-Chinese_Gunpowder_Formula.JPG",
         "width": 1194,
@@ -14385,6 +14719,7 @@
         "The Red Turban rebellions",
         "Red Turban rebellions"
       ],
+      "linkTitle": "Red Turban rebellions",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Red_Turban.png",
         "width": 1272,
@@ -14448,6 +14783,7 @@
         "The Tumu crisis: an emperor captured",
         "The Tumu Crisis"
       ],
+      "linkTitle": "The Tumu Crisis",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/%E7%9A%87%E6%98%8E%E4%B9%9D%E9%82%8A%E8%80%83%E5%AE%A3%E5%BA%9C%E9%8E%AE%E5%9C%9F%E6%9C%A8%E4%B9%8B%E8%AE%8A.jpg/960px-%E7%9A%87%E6%98%8E%E4%B9%9D%E9%82%8A%E8%80%83%E5%AE%A3%E5%BA%9C%E9%8E%AE%E5%9C%9F%E6%9C%A8%E4%B9%8B%E8%AE%8A.jpg",
         "width": 1862,
@@ -14511,6 +14847,7 @@
         "Maritime bans, commerce and wokou",
         "Ming Sea Trade and Coastal Raids"
       ],
+      "linkTitle": "Ming Sea Trade and Coastal Raids",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/8/86/Wokou_raid_at_the_Chinese_coast.png",
         "width": 1135,
@@ -14576,6 +14913,7 @@
         "Zhang Juzheng and the discipline of government",
         "Zhang Juzheng’s Reforms"
       ],
+      "linkTitle": "Zhang Juzheng’s Reforms",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Zhang_Juzheng.jpg/330px-Zhang_Juzheng.jpg",
         "width": 352,
@@ -14641,6 +14979,7 @@
         "Kangxi: consolidation and imperial self-presentation",
         "The Kangxi Emperor"
       ],
+      "linkTitle": "The Kangxi Emperor",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Portrait_of_the_Kangxi_Emperor_in_Court_Dress.jpg/960px-Portrait_of_the_Kangxi_Emperor_in_Court_Dress.jpg",
         "width": 1136,
@@ -14705,6 +15044,7 @@
         "The Chinese Communist Party is founded",
         "Founding of the Chinese Communist Party"
       ],
+      "linkTitle": "Founding of the Chinese Communist Party",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/%E4%B8%AD%E5%85%B1%E4%B8%80%E5%A4%A7%E4%BC%9A%E5%9D%80%E6%AD%A3%E9%9D%A22021_(2).jpg/960px-%E4%B8%AD%E5%85%B1%E4%B8%80%E5%A4%A7%E4%BC%9A%E5%9D%80%E6%AD%A3%E9%9D%A22021_(2).jpg",
         "width": 5152,
@@ -14767,6 +15107,7 @@
       "searchAliases": [
         "Zhuge Liang’s northern expeditions"
       ],
+      "linkTitle": "Zhuge Liang’s northern expeditions",
       "image": {
         "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Zhuge_Liang_by_Zhang_Feng.jpg/960px-Zhuge_Liang_by_Zhang_Feng.jpg",
         "width": 1696,
@@ -14830,6 +15171,7 @@
         "The battle of the Fei River",
         "Battle of the Fei River"
       ],
+      "linkTitle": "Battle of the Fei River",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/db/Battle_of_Fei_River.png",
         "width": 916,
@@ -14892,6 +15234,7 @@
       "searchAliases": [
         "Li Zicheng captures Beijing"
       ],
+      "linkTitle": "Li Zicheng captures Beijing",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/Fall_of_Beijing_to_Li_Zicheng_in_1644.png",
         "width": 611,
@@ -14956,6 +15299,7 @@
         "The emergence of imperial examinations",
         "Imperial examinations under Sui"
       ],
+      "linkTitle": "Imperial examinations under Sui",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Sui_Wendi_Tang.jpg",
         "width": 868,
@@ -14989,7 +15333,7 @@
         },
         {
           "title": "A model across East Asia",
-          "text": "The Essentials of Governance circulated beyond Tang China and influenced later political debate. Its selected conversations offered lessons, rather than an unedited record of everything said at court. Taizong (唐太宗)’s authority also rested on military and administrative institutions and followed a violent succession struggle. The book preserves one influential view of the reign alongside its military rise and violent succession."
+          "text": "The Essentials of Governance circulated beyond [[id:tang|Tang China]] and influenced later political debate. Its selected conversations offered lessons, rather than an unedited record of everything said at court. Taizong (唐太宗)’s authority also rested on military and administrative institutions and followed a [[id:xuanwu-gate|violent succession struggle]]. The book preserves one influential view of the reign alongside its military rise and violent succession."
         }
       ],
       "note": "627–649 is the Zhenguan (贞观) reign era, beginning after Taizong (唐太宗)’s accession in 626. The surviving governance compilation was produced and transmitted later, with editorial choices and variant versions.",
@@ -15014,6 +15358,11 @@
           "https://www.slam.org/collection/constituents/26910/"
         ]
       },
+      "linkTitle": "Taizong’s Zhenguan era",
+      "linkAliases": [
+        "Zhenguan era",
+        "贞观之治"
+      ],
       "searchAliases": [
         "Zhenguan: government and its exemplary record",
         "Taizong’s Zhenguan era"
@@ -15043,7 +15392,7 @@
       "category": "event",
       "ribbon": true,
       "label": false,
-      "description": "Xuanzong (唐玄宗)’s Kaiyuan (开元) era, 713–741, is remembered as a high point of Tang prosperity. Court support for the arts, skilled production and imperial reach contributed to its reputation. That prosperity was not shared equally by every region or household.",
+      "description": "Xuanzong (唐玄宗)’s Kaiyuan (开元) era, 713–741, is remembered as a high point of [[id:tang|Tang]] prosperity. Court support for the arts, skilled production and imperial reach contributed to its reputation. That prosperity was not shared equally by every region or household.",
       "sections": [
         {
           "title": "The work behind fine objects",
@@ -15051,7 +15400,7 @@
         },
         {
           "title": "Prosperity before the rebellion",
-          "text": "The An Lushan Rebellion (安史之乱) began later, in 755. Comparing its destruction with Kaiyuan (开元) abundance can make the whole period look like a simple warning about luxury. Military arrangements, appointments and government demands also changed over time. The era’s achievements were real, but neither its prosperity nor the later disaster made the outcome inevitable."
+          "text": "The [[id:an-lushan|An Lushan Rebellion]] began later, in 755. Comparing its destruction with Kaiyuan (开元) abundance can make the whole period look like a simple warning about luxury. Military arrangements, appointments and government demands also changed over time. The era’s achievements were real, but neither its prosperity nor the later disaster made the outcome inevitable."
         }
       ],
       "note": "713–741 is the Kaiyuan (开元) era, not Xuanzong (唐玄宗)’s entire reign. Shengshi means a flourishing age; the An Lushan Rebellion (安史之乱) began in 755.",
@@ -15077,6 +15426,11 @@
           "https://digicoll.lib.berkeley.edu/record/245799"
         ]
       },
+      "linkTitle": "Xuanzong’s Kaiyuan era",
+      "linkAliases": [
+        "Kaiyuan era",
+        "开元盛世"
+      ],
       "searchAliases": [
         "Kaiyuan: prosperity and the demands of empire",
         "Xuanzong’s Kaiyuan era"
@@ -15153,6 +15507,7 @@
       "searchAliases": [
         "Sanxingdui ritual pits"
       ],
+      "linkTitle": "Sanxingdui ritual pits",
       "pinyin": "sān xīng duī jì sì kēng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Ancient_Bronze_Mask_from_Sanxingdui_12.jpg",
@@ -15226,6 +15581,7 @@
       "searchAliases": [
         "Fu Hao: Shang commander and royal consort"
       ],
+      "linkTitle": "Fu Hao: Shang commander and royal consort",
       "pinyin": "fù hǎo",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Shang_Bronze_Owl_Zun%2C_Fuhao_Tomb.jpg",
@@ -15299,6 +15655,7 @@
       "searchAliases": [
         "Qin–Han expansion into the south"
       ],
+      "linkTitle": "Qin–Han expansion into the south",
       "pinyin": "qín hàn nán fāng kuò zhāng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/15/%22Zhao_Mo%22_Jade_Seal_%289967013394%29.jpg",
@@ -15371,6 +15728,7 @@
       "searchAliases": [
         "Faxian’s journey to India"
       ],
+      "linkTitle": "Faxian’s journey to India",
       "pinyin": "fǎ xiǎn xī xíng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/94/Fa_Hsien_at_the_ruins_of_Asoka%27s_palace.jpg",
@@ -15443,6 +15801,7 @@
       "searchAliases": [
         "Footbinding spreads among Song elites"
       ],
+      "linkTitle": "Footbinding spreads among Song elites",
       "pinyin": "chán zú",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Foot_binding%3B_women%27s_shoe%2C_China_Wellcome_L0005078.jpg",
@@ -15516,6 +15875,7 @@
       "searchAliases": [
         "Guan Hanqing and Yuan drama"
       ],
+      "linkTitle": "Guan Hanqing and Yuan drama",
       "pinyin": "guān hàn qīng yǔ yuán zá jù",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Illustration_from_the_%22One_Hundred_Plays_of_the_Yuan_Dynasty%22.jpg",
@@ -15588,6 +15948,7 @@
       "searchAliases": [
         "Hongwu abolishes the chancellorship"
       ],
+      "linkTitle": "Hongwu abolishes the chancellorship",
       "pinyin": "fèi chú chéng xiàng zhì",
       "image": {
         "src": "https://images.metmuseum.org/CRDImages/as/original/51_39_3_149651.JPG",
@@ -15659,6 +16020,7 @@
       "searchAliases": [
         "Matteo Ricci prints a Chinese world map"
       ],
+      "linkTitle": "Matteo Ricci prints a Chinese world map",
       "pinyin": "lì mǎ dòu kūn yú wàn guó quán tú",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Kunyu_Wanguo_Quantu_by_Matteo_Ricci_All_panels.jpg/1280px-Kunyu_Wanguo_Quantu_by_Matteo_Ricci_All_panels.jpg",
@@ -15732,6 +16094,7 @@
       "searchAliases": [
         "Muslim uprisings and Qing reconquest"
       ],
+      "linkTitle": "Muslim uprisings and Qing reconquest",
       "pinyin": "qīng mò huí mín qǐ yì yǔ qīng jūn shōu fù xīn jiāng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Troops_Carrying_Flags_in_Military_Formation%2C_Preceded_by_Four_Cannons._Gansu_Province%2C_China%2C_1875_WDL1912.png",
@@ -15805,6 +16168,7 @@
       "searchAliases": [
         "The Warlord Period"
       ],
+      "linkTitle": "The Warlord Period",
       "pinyin": "jūn fá shí dài",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Chinese_warlord_soldiers_training_with_swords_1.png",
@@ -15877,6 +16241,7 @@
       "searchAliases": [
         "China enters the Korean War"
       ],
+      "linkTitle": "China enters the Korean War",
       "pinyin": "zhōng guó rén mín zhì yuàn jūn rù cháo cān zhàn",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/3/33/NARA_111-SC351718_First_Chinese_prisoners_taken_by_ROK_I_Corps_seen_by_U.S._Marines.jpg",
@@ -15950,6 +16315,7 @@
       "searchAliases": [
         "Agricultural collectivization"
       ],
+      "linkTitle": "Agricultural collectivization",
       "pinyin": "nóng yè hé zuò huà yùn dòng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/20250413-%E7%BA%A2%E6%97%97%E4%BA%BA%E6%B0%91%E5%85%AC%E7%A4%BE%E6%97%A7%E5%9D%80.jpg",
@@ -16022,6 +16388,7 @@
       "searchAliases": [
         "Hundred Flowers and the Anti-Rightist Campaign"
       ],
+      "linkTitle": "Hundred Flowers and the Anti-Rightist Campaign",
       "pinyin": "bǎi huā qí fàng yǔ fǎn yòu yùn dòng",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/China_Cultural_Revolution_Anti-Rightist_Campaign_Rehabilitate_file_2.png",
@@ -16095,6 +16462,7 @@
       "searchAliases": [
         "The one-child policy"
       ],
+      "linkTitle": "The one-child policy",
       "pinyin": "dú shēng zǐ nǚ zhèng cè",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/One_child_policy.jpg/960px-One_child_policy.jpg",
@@ -16160,6 +16528,7 @@
         "laozi",
         "zhuangzi"
       ],
+      "linkTitle": "Confucianism and Daoism",
       "pinyin": "rú jiā yǔ dào jiā",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Confucius_and_Laozi%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China.jpg",
