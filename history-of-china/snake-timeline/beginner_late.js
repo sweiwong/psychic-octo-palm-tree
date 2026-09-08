@@ -7,13 +7,6 @@ const BEGINNER_LATE = (() => {
       ...(note ? { note } : {}) };
   };
 
-  revise('republic', null,
-    'The Republic of China was founded on 1 January 1912. The Qing emperor abdicated on 12 February, ending the dynasty. The new republic faced competing armies, political divisions, war with Japan and civil war. In 1949 its government relocated to Taiwan, where it continued.',
-    'Competing claims to govern the republic',
-    'Ending the monarchy left difficult questions. A parliament could pass laws, but military leaders controlled armies and much of the country’s resources. Rival governments and regional commanders competed for power. The Nationalists later tried to bring the country under their government through new institutions and military force. Political coercion accompanied the effort to establish national authority.',
-    'War and a divided future',
-    'War with Japan placed enormous demands on civilians and armies. Civil war then brought Communist victory on the mainland and the Republic’s relocation to Taiwan. This card covers the mainland period, 1912–1949. The Republic’s government continued beyond that boundary. Its later history in Taiwan includes authoritarian rule and a gradual transition to democracy, covered in the separate Taiwan entry.');
-
   revise('prc', 'People’s Republic of China',
     'Mao Zedong proclaimed the People’s Republic of China on 1 October 1949 after Communist victories on the mainland. The Communist Party set out to redistribute land, expand industry and reorganize society. Later economic reforms brought major changes while the party retained control of national political power.',
     'Revolution reaches everyday life',

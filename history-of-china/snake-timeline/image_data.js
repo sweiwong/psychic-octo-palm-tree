@@ -501,15 +501,57 @@ const HISTORY_IMAGES = {
     ]
   },
   "republic": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Sun_Yat-sen_Li_Yuanhong_Wuchang_1912.jpg",
-    "width": 352,
-    "height": 496,
-    "credit": "Photographer unidentified · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Sun_Yat-sen_Li_Yuanhong_Wuchang_1912.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Sun_Yat_Sen_-_btv1b53078822w.jpg/960px-Sun_Yat_Sen_-_btv1b53078822w.jpg",
+    "width": 960,
+    "height": 1334,
+    "alt": "A monochrome press portrait of Sun Yat-sen.",
+    "caption": "Sun Yat-sen in a press photograph catalogued by Agence Rol in May 1922. Bibliothèque nationale de France, Rol 74026. Sun remained a leading advocate of republican government after his brief provisional presidency in 1912.",
+    "credit": "Agence Rol · Bibliothèque nationale de France, Rol 74026 · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Sun_Yat_Sen_-_btv1b53078822w.jpg",
     "license": "Public domain",
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "alt": "Sun Yat-sen and Li Yuanhong standing together in formal dress.",
-    "caption": "Sun Yat-sen and Li Yuanhong at Wuchang in April 1912. Their encounter belongs to the early republic’s effort to convert revolutionary coalitions into a functioning state."
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "A country divided among armies",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Warlords_in_China_1925.svg/1280px-Warlords_in_China_1925.svg.png",
+        "width": 1280,
+        "height": 985,
+        "alt": "English-labelled map of China in 1925, distinguishing the principal warlord coalitions from the Kuomintang and its allies.",
+        "caption": "Modern reconstruction of the main Chinese military coalitions in 1925, based on a United States Military Academy map and translated into English in 2026. The approximate areas show the division of military power before the Northern Expedition.",
+        "credit": "Rowanwindwhistler; English adaptation by Hogweard · based on United States Military Academy mapping · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Warlords_in_China_1925.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fullSize": true
+      },
+      {
+        "section": "New writing, education and women’s rights",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/La_jeunesse.jpg",
+        "width": 418,
+        "height": 598,
+        "alt": "The cover of Youth Magazine, with Chinese lettering, the French title La Jeunesse and a portrait medallion.",
+        "caption": "Youth Magazine (青年杂志 Qīngnián Zázhì), 1915, the predecessor of New Youth (新青年 Xīn Qīngnián). The journal became a forum for the cultural and literary debates of the early republic.",
+        "credit": "Youth Magazine, 1915 · scan shared by Refrain · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:La_jeunesse.jpg",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "fullSize": true
+      },
+      {
+        "section": "War with Japan",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/American_Troops_of_Merrill%27s_Marauders_and_the_Chinese_March_Side_by_Side_Down_the_Ledo_Road_-_NARA_-_6003981.jpg/960px-American_Troops_of_Merrill%27s_Marauders_and_the_Chinese_March_Side_by_Side_Down_the_Ledo_Road_-_NARA_-_6003981.jpg",
+        "width": 960,
+        "height": 790,
+        "alt": "American and Chinese soldiers carrying equipment as they march along the Ledo Road.",
+        "caption": "Chinese troops and American soldiers of Merrill's Marauders on the Ledo Road, 15 February 1944. Their joint operations formed part of the Allied campaign in the China–Burma–India theatre. United States National Archives, 111-SC-193542.",
+        "credit": "United States military photographer, name unrecorded · National Archives and Records Administration, 6003981 · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:American_Troops_of_Merrill%27s_Marauders_and_the_Chinese_March_Side_by_Side_Down_the_Ledo_Road_-_NARA_-_6003981.jpg",
+        "license": "Public domain · United States government",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military",
+        "fullSize": true
+      }
+    ]
   },
   "prc": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Mao_Proclaiming_New_China.JPG",
