@@ -7,10 +7,6 @@ var BEGINNER_MIDDLE = { revisions: {} };
     if (note !== undefined) revision.note = note;
     BEGINNER_MIDDLE.revisions[id] = revision;
   }
-  revise('sui', null,
-    'The Sui dynasty began in 581 and conquered the southern Chen dynasty in 589, bringing north and south under one court. Its rulers built the transport and government systems needed to hold this large territory together. Their demands also helped turn people against them.',
-    'Connecting north and south', 'Winning territory was only the first step. Officials needed records of households, ways to collect grain and reliable routes for moving supplies and armies. The canal network connected regions that had spent generations under different rulers. Sui government also drew on practices inherited from those earlier states; reunification did not mean that every district immediately worked in the same way.',
-    'The cost of imperial ambition', 'Canal construction and repeated campaigns against Goguryeo in 612–614 demanded labour and supplies from communities. The same power that made enormous projects possible could place unbearable pressure on the people supporting them. Sui lasted only until 618, but later dynasties inherited important parts of its government and transport network. Their usefulness outlived the court that built them.');
   revise('five-dynasties', null,
     'Between Tang’s fall in 907 and Song’s foundation in 960, five dynasties succeeded one another in the north. Some regional states lasted much longer. Military commanders could make and unmake emperors, but government did not start again from nothing with each new ruling family.',
     'Armies and personal loyalty', 'Commanders depended on relationships with their troops and on access to money and supplies. These ties could help a ruler take power, then allow another commander to overthrow him. Offices, armies and regional centres often survived a change of dynasty, even when the people at the top changed quickly.',

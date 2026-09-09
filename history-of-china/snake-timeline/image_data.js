@@ -282,15 +282,68 @@ const HISTORY_IMAGES = {
     "caption": "An unglazed pottery horse attributed to the Wei dynasty, in Auckland Museum. A funerary object offers material evidence alongside the dynastic chronicles."
   },
   "sui": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Yu_Hong_Tomb_general_view.jpg/960px-Yu_Hong_Tomb_general_view.jpg",
-    "width": 2066,
-    "height": 1544,
-    "credit": "123_456 · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Yu_Hong_Tomb_general_view.jpg",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "alt": "An elaborately carved stone funerary bed displayed in a museum.",
-    "caption": "The tomb furnishings of Yu Hong, who died in 592, in the Shanxi Museum. Their imagery offers evidence for the Sogdian and Iranian connections within Sui elite society."
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Sui_Dynasty.png",
+    "width": 1272,
+    "height": 900,
+    "credit": "SY · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Sui_Dynasty.png",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "alt": "Map of the Sui empire in 610 with administrative divisions, neighbouring peoples, rivers and present-day boundaries.",
+    "caption": "Modern reconstruction of the Sui empire and its administrative divisions in 610, based on Tan Qixiang’s Historical Atlas of China. Historical boundaries are approximate; pale modern borders provide geographical reference.",
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "The Grand Canal",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/China-Grand_canal%2C_Sui_and_Tang.svg",
+        "width": 667,
+        "height": 717,
+        "credit": "Yug; topographic base by Ksiom · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:China-Grand_canal,_Sui_and_Tang.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "alt": "Topographic map of eastern China with the principal Sui and Tang canal routes and nearby cities labelled.",
+        "caption": "Modern reconstruction of the Sui and Tang canal network. It shows the routes between Luoyang, the lower Yangtze and the northern frontier; it is not a map of one construction campaign or the later fixed Beijing to Hangzhou alignment.",
+        "fullSize": true
+      },
+      {
+        "section": "Cultural production",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Anji_%28Zhaozhou%29_Bridge_2011.jpg",
+        "width": 2144,
+        "height": 1424,
+        "credit": "crazlei · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Anji_(Zhaozhou)_Bridge_2011.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "alt": "The low stone arch of the Zhaozhou Bridge spanning a river in Hebei.",
+        "caption": "The Zhaozhou Bridge, also called the Anji Bridge, in Hebei. Completed in 605, it is the world’s oldest surviving open-spandrel stone arch bridge.",
+        "fullSize": true
+      },
+      {
+        "section": "Cultural production",
+        "src": "https://images.metmuseum.org/CRDImages/as/original/63394.jpg",
+        "width": 714,
+        "height": 900,
+        "credit": "The Metropolitan Museum of Art · Rogers Fund, 1926 · object 26.65",
+        "source": "https://www.metmuseum.org/art/collection/search/61543",
+        "license": "Public domain · CC0",
+        "licenseUrl": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+        "alt": "A sandstone head of a bodhisattva with a high crown and a calm expression.",
+        "caption": "Head of a bodhisattva, China, Sui dynasty (581–618), sandstone. The object has no documented connection to the Longmen Grottoes.",
+        "fullSize": true
+      },
+      {
+        "section": "Five dates",
+        "src": "assets/sui-timeline.svg",
+        "width": 1400,
+        "height": 520,
+        "credit": "History of China atlas",
+        "license": "Original graphic",
+        "alt": "Timeline of five Sui dates: foundation in 581, reunification in 589, canal and capital work in 605, the failed Goguryeo invasion in 612, and the Tang succession in 618.",
+        "caption": "Five dates frame the Sui dynasty. Canal construction continued after the Tongji Canal work began in 605.",
+        "fullSize": true
+      }
+    ]
   },
   "wu-zhou": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Luoyang_2006_7-29.jpg/960px-Luoyang_2006_7-29.jpg",
