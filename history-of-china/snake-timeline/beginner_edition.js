@@ -316,7 +316,11 @@ function applyBeginnerEdition(exhibition, ...packs) {
     card.significanceSources = significance[card.id].sources.map(source => ({...source}));
   }
   // Drawing dates and interrupted ribbon ranges stay untouched. Only labels change.
-  const drawing = items => items.filter(item => !removed.has(item.id)).map(item => revisions[item.id]?.name ? {...item, name: revisions[item.id].name} : item);
+  const drawing = items => items.filter(item => !removed.has(item.id)).map(item => revisions[item.id]?.name ? {
+    ...item,
+    name: revisions[item.id].name,
+    linkTitle: revisions[item.id].linkTitle
+  } : item);
   return {...exhibition, all, periods: drawing(exhibition.periods), states: drawing(exhibition.states), events: drawing(exhibition.events).filter(item => item.id !== 'confucius')};
 }
 if (typeof module !== 'undefined') module.exports = applyBeginnerEdition;
