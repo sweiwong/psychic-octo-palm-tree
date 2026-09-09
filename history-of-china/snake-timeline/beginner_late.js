@@ -7,13 +7,6 @@ const BEGINNER_LATE = (() => {
       ...(note ? { note } : {}) };
   };
 
-  revise('prc', 'People’s Republic of China',
-    'Mao Zedong proclaimed the People’s Republic of China on 1 October 1949 after Communist victories on the mainland. The Communist Party set out to redistribute land, expand industry and reorganize society. Later economic reforms brought major changes while the party retained control of national political power.',
-    'Revolution reaches everyday life',
-    'The new government extended its authority through local party organizations, political campaigns, workplaces and economic planning. Land redistribution and expanded basic services changed many lives. Coercion and disastrous policies also caused immense suffering. The Great Leap Forward brought a devastating famine, and the Cultural Revolution disrupted education, families and government. These campaigns had different aims and consequences.',
-    'A different economic direction',
-    'From the late 1970s, reforms changed farming, business and connections with overseas markets. Families, factories and cities encountered new opportunities and pressures. The state’s name remained the same through these sharp changes in policy. The individual entries explain those turning points, including reform and opening, special economic zones and China’s entry into the World Trade Organization.');
-
   revise('early-qing', null,
     'Hong Taiji proclaimed [[Qing|the Qing dynasty]] in 1636, eight years before Qing forces entered Beijing. His state had developed in the northeast, with connections reaching into Mongolia and Korea. The conquest of the Ming capital followed years of building armies, alliances and government.',
     'An established state before Beijing',

@@ -554,15 +554,57 @@ const HISTORY_IMAGES = {
     ]
   },
   "prc": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Mao_Proclaiming_New_China.JPG",
-    "width": 771,
-    "height": 566,
-    "credit": "Hou Bo · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Mao_Proclaiming_New_China.JPG",
-    "license": "Public domain",
-    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "alt": "Mao Zedong speaking at a row of microphones above a crowd.",
-    "caption": "Mao Zedong proclaiming the People’s Republic of China on 1 October 1949. The ceremony established a public claim to state authority while military and political consolidation continued."
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/1945_Conference_between_Communists_and_Americans_in_Yan%27an_-_NARA_-_531400.jpg/960px-1945_Conference_between_Communists_and_Americans_in_Yan%27an_-_NARA_-_531400.jpg",
+    "width": 960,
+    "height": 761,
+    "alt": "Mao Zedong and American officials at a conference in Yan’an.",
+    "caption": "Mao Zedong with American officials at Yan’an on 27 August 1945, four years before the founding of the People’s Republic. The meeting preceded his departure for negotiations in Chongqing.",
+    "credit": "United States Army Signal Corps; photographer unrecorded · National Archives, 531400",
+    "source": "https://commons.wikimedia.org/wiki/File:1945_Conference_between_Communists_and_Americans_in_Yan%27an_-_NARA_-_531400.jpg",
+    "license": "Public domain · United States government",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "Industrial planning and the Great Leap Forward",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/China_-_distribution_of_industry._LOC_2007628760.jpg/1280px-China_-_distribution_of_industry._LOC_2007628760.jpg",
+        "width": 1280,
+        "height": 1664,
+        "alt": "A 1976 English-language map of China with symbols for industries, shaded industrial areas and a key to seven economic regions.",
+        "caption": "China’s industrial distribution in September 1976, mapped by the United States Central Intelligence Agency. The symbols locate industries and major industrial areas before the economic reforms that began in 1978. Enlarge the map to read the detailed key; boundary lines are approximate.",
+        "credit": "United States Central Intelligence Agency, 1976 · Library of Congress, 2007628760 · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:China_-_distribution_of_industry._LOC_2007628760.jpg",
+        "license": "Public domain · United States government",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-CIA",
+        "fullSize": true
+      },
+      {
+        "section": "Deng opens the economy",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Carter_DengXiaoping.jpg/960px-Carter_DengXiaoping.jpg",
+        "width": 960,
+        "height": 651,
+        "alt": "Deng Xiaoping and Jimmy Carter seated at a signing ceremony.",
+        "caption": "Deng Xiaoping and United States president Jimmy Carter at a signing ceremony on 31 January 1979. The visit accompanied a new period of diplomatic relations and China’s opening to the outside world.",
+        "credit": "Karl H. Schumacher · Executive Office of the President · National Archives, 183286",
+        "source": "https://commons.wikimedia.org/wiki/File:Carter_DengXiaoping.jpg",
+        "license": "Public domain · United States government",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-POTUS",
+        "fullSize": true
+      },
+      {
+        "section": "Factories, cities and smaller families",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Geely_assembly_line_in_Beilun%2C_Ningbo.JPG/960px-Geely_assembly_line_in_Beilun%2C_Ningbo.JPG",
+        "width": 960,
+        "height": 720,
+        "alt": "Cars progressing through a brightly lit Geely assembly line in Ningbo.",
+        "caption": "A Geely car assembly line in Beilun, Ningbo, photographed on 22 December 2011. Vehicle manufacturing became part of the industrial economy that expanded during the reform era.",
+        "credit": "Siyuwj · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Geely_assembly_line_in_Beilun%2C_Ningbo.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fullSize": true
+      }
+    ]
   },
   "three-kingdoms": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Figure,_horse_(AM_8189-12).jpg/960px-Figure,_horse_(AM_8189-12).jpg",
