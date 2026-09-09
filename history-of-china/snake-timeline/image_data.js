@@ -312,7 +312,21 @@ const HISTORY_IMAGES = {
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "alt": "Women gathered inside a palace in a vertical painting.",
-    "caption": "Palace Banquet, a painting assigned to the tenth-century Five Dynasties–early Song milieu, in the Metropolitan Museum of Art. Court culture continued across rapid political changes."
+    "caption": "Palace Banquet, a painting assigned to the tenth-century Five Dynasties–early Song milieu, in the Metropolitan Museum of Art. Court culture continued across rapid political changes.",
+    "sectionImages": [
+      {
+        "section": "Ten kingdoms across the regions",
+        "src": "assets/external-sourced/night-revels-of-han-xizai.jpg",
+        "width": 960,
+        "height": 745,
+        "credit": "Traditionally attributed to Gu Hongzhong; later Song copy · Palace Museum, Beijing / Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Gu_Hongzhong%27s_Night_Revels_1_edit_(cropped2)_(cropped)_(cropped).jpg",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "alt": "Musicians, dancers and male guests gather around Han Xizai at an indoor banquet.",
+        "caption": "Detail from Night Revels of Han Xizai. The Palace Museum identifies the surviving handscroll as a later Song copy of a work traditionally attributed to Gu Hongzhong. It depicts the Southern Tang official Han Xizai at a private gathering."
+      }
+    ]
   },
   "song": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Song-Liao-Xixia-1111.png",

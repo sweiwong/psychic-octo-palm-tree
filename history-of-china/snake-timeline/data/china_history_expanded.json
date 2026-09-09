@@ -1633,15 +1633,15 @@
     },
     {
       "id": "five-dynasties",
-      "name": "Five Dynasties",
+      "name": "Five Dynasties and Ten Kingdoms",
       "han": "五",
       "start": 907,
-      "end": 960,
+      "end": 979,
       "color": "#8c7b68",
-      "description": "Between Tang’s fall in 907 and Song’s foundation in 960, five dynasties succeeded one another in the north. Some regional states lasted much longer. Military commanders could make and unmake emperors, but government did not start again from nothing with each new ruling family.",
+      "description": "The Five Dynasties and Ten Kingdoms period (五代十国 Wǔdài Shíguó) lasted from the fall of the [[id:tang|Tang]] in 907 to the defeat of Northern Han in 979. Five short-lived dynasties succeeded one another across much of northern China, while regional kingdoms governed the south and parts of the north. The division broke the old Tang political order and shaped the military, administrative and economic choices of the [[id:song|Song]] rulers who reunited most of China.",
       "source": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period",
       "kind": "period",
-      "note": "907–960 concerns the five northern dynasties. The wider regional division extends beyond those dates.",
+      "note": "The five northern dynasties ran from 907 to 960. The broader Five Dynasties and Ten Kingdoms period is conventionally dated 907–979, while individual kingdoms began before 907 or ended before 979. Population estimates for Tang China and the world vary considerably, so the share given here is an approximate range rather than a census of humanity.",
       "sourceIds": [
         "S_FIVE"
       ],
@@ -1651,9 +1651,15 @@
         "https://www.metmuseum.org/toah/ht/06/eac.html",
         "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/five-dynasties/BED8234EA917268392A83E07FFE08EE7",
         "https://assets.cambridge.org/97811070/84759/excerpt/9781107084759_excerpt.pdf",
-        "https://www.jstor.org/stable/10.7312/davi12826"
+        "https://www.jstor.org/stable/10.7312/davi12826",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/southern-kingdoms-between-the-tang-and-the-sung-907979/DA46EC4F957DC57884D32C133A9883C8",
+        "https://assets.cambridge.org/97805218/12481/excerpt/9780521812481_excerpt.pdf",
+        "https://fass.ubd.edu.bn/staff/docs/JK/han-xizai.pdf",
+        "https://www.dpm.org.cn/collection/paint/228200.html",
+        "https://www.cuhk.edu.hk/ics/journal/articles/v19p389.pdf",
+        "https://www.census.gov/data/tables/time-series/demo/international-programs/historical-est-worldpop.html"
       ],
-      "nameZh": "五代",
+      "nameZh": "五代十国",
       "category": "period",
       "evidence": "Source-checked synthesis",
       "importance": 5,
@@ -1661,27 +1667,69 @@
       "originalType": "macro_system",
       "sections": [
         {
-          "title": "Armies and personal loyalty",
-          "text": "Commanders depended on relationships with their troops and on access to money and supplies. These ties could help a ruler take power, then allow another commander to overthrow him. Offices, armies and regional centres often survived a change of dynasty, even when the people at the top changed quickly."
+          "title": "The Tang order breaks apart",
+          "text": "Around 750, Tang China had roughly 50 to 75 million people, while estimates of the world's population cluster around 200 to 220 million. China therefore contained somewhere between about one-quarter and one-third of the people alive, though both figures are estimates and the Tang registers missed many households.\n\nThe [[id:jiedushi|regional military governors]] (节度使 jiédùshǐ) had become central to the empire's defence. They commanded professional armies and, in many provinces, controlled appointments and revenue. The [[id:an-lushan|An Lushan Rebellion]] (安史之乱 Ān Shǐ Zhīluàn, 755–763) weakened the court's control over those commanders. A later fall in the registered population records administrative collapse and displacement as well as the war's immense death toll; it cannot be read as a count of 36 million deaths.\n\nThe [[id:huang-chao|Huang Chao Rebellion]] (黄巢起义 Huáng Cháo Qǐyì, 874–884) then devastated major regions and occupied Chang'an (长安 Cháng'ān). Zhu Wen (朱温 Zhū Wēn), a former rebel who entered Tang service, forced the last emperor to abdicate in 907 and founded the [[id:catalog-R_FIVE_LATER_LIANG|Later Liang]] (后梁 Hòu Liáng). His government controlled only part of the former empire. Rival military coalitions and regional courts already held the rest."
         },
         {
-          "title": "The foundations of Song",
-          "text": "Later Zhou strengthened its military and government and expanded its territory before Song was founded. Song inherited that work and continued the struggle to bring regional states under one court. The year 960 therefore marks a new dynasty, not an instant end to division. Reunification depended on campaigns and negotiations that continued after the Five Dynasties period."
+          "title": "Five dynasties in the north",
+          "text": "The Five Dynasties ruled the Central Plains (中原 Zhōngyuán) in succession between 907 and 960. Their capitals and armies gave them a claim to empire, but none reunited the former Tang lands.\n\nThe Later Liang lasted from 907 to 923. Zhu Wen was killed in a palace coup in 912, and Li Cunxu (李存勖 Lǐ Cúnxù) defeated the dynasty eleven years later. Li founded the [[id:catalog-R_FIVE_LATER_TANG|Later Tang]] (后唐 Hòu Táng, 923–936). Its rulers came from the Shatuo (沙陀 Shātuó), a Turkic-speaking military community, and used the Tang name to claim restoration.\n\nShi Jingtang (石敬瑭 Shí Jìngtáng) founded the [[id:catalog-R_FIVE_LATER_JIN|Later Jin]] (后晋 Hòu Jìn, 936–947) with military support from the Khitan (契丹 Qìdān). He ceded the Sixteen Prefectures (燕云十六州 Yānyún Shíliù Zhōu), including the region around modern Beijing, to the Khitan [[id:liao|Liao]] (辽 Liáo). The [[id:catalog-R_FIVE_LATER_HAN|Later Han]] (后汉 Hòu Hàn, 947–951) survived for less than four years. Guo Wei (郭威 Guō Wēi) then founded the [[id:catalog-R_FIVE_LATER_ZHOU|Later Zhou]] (后周 Hòu Zhōu, 951–960). Guo and his successor Chai Rong (柴荣 Chái Róng) strengthened the army, government and tax base that Song inherited."
+        },
+        {
+          "title": "Ten kingdoms across the regions",
+          "text": "The conventional [[id:catalog-S_TEN|Ten Kingdoms]] (十国 Shíguó) did not all exist at the same time, and the list leaves out other regional powers. Most lay in the south, where several courts survived longer than the northern dynasties.\n\n[[id:catalog-R_TEN_WU_YANG_WU|Wu]] (吴 Wú, 902–937) controlled the lower Yangtze before the [[id:catalog-R_TEN_SOUTHERN_TANG|Southern Tang]] (南唐 Nán Táng, 937–975) took over its government and territory. The Southern Tang court supported poets and painters. The handscroll Night Revels of Han Xizai (韩熙载夜宴图 Hán Xīzài Yèyàn Tú), preserved in a later Song copy and traditionally attributed to Gu Hongzhong (顾闳中 Gù Hóngzhōng), depicts the official Han Xizai (韩熙载 Hán Xīzài) at a private gathering during the Southern Tang.\n\n[[id:catalog-R_TEN_WUYUE|Wuyue]] (吴越 Wúyè, 907–978), centred on modern Hangzhou, invested in waterways, coastal works and Buddhist institutions. [[id:catalog-R_TEN_MIN|Min]] (闽 Mǐn, 909–945) and the [[id:catalog-R_TEN_SOUTHERN_HAN|Southern Han]] (南汉 Nán Hàn, 917–971) controlled ports tied to maritime trade. [[id:catalog-R_TEN_CHU_MA_CHU|Chu]] (楚 Chǔ, 907–951) drew income from the tea trade in Hunan. [[id:catalog-R_TEN_FORMER_SHU|Former Shu]] (前蜀 Qián Shǔ, 907–925) and [[id:catalog-R_TEN_LATER_SHU|Later Shu]] (后蜀 Hòu Shǔ, 934–965) ruled the Sichuan basin. [[id:catalog-R_TEN_JINGNAN_NANPING|Jingnan]] (荆南 Jīngnán, 924–963) survived through diplomacy from a small territory on the middle Yangtze. [[id:catalog-R_TEN_NORTHERN_HAN|Northern Han]] (北汉 Běi Hàn, 951–979), the one member of the group based in the north, depended on Liao support and was the last kingdom conquered by Song."
+        },
+        {
+          "title": "Armies, officials and social change",
+          "text": "Political power rested increasingly on paid, long-service troops and the commanders who could reward them. Palace guards could enthrone or remove an emperor. Northern dynasties changed quickly, yet many offices, military units and regional administrations survived each change of ruling house.\n\nThe upheavals of the late Tang and tenth century also weakened the great aristocratic clans that had dominated high office. Song rulers expanded the civil examinations (科举 kějǔ) and recruited more officials through education and written performance. Wealthy and connected families still had major advantages, so the system was broader than aristocratic birth without being socially equal."
+        },
+        {
+          "title": "Printing and the southern economy",
+          "text": "Southern courts supported woodblock printing (雕版印刷 diāobǎn yìnshuā) of Buddhist and secular texts. Wuyue rulers sponsored the printing and circulation of Buddhist scriptures, while Sichuan became an important printing centre. In 971, after Song had begun its reunification, the court commissioned the first printed Chinese Buddhist canon (大藏经 Dàzàngjīng) in Chengdu. This work belonged to the wider tenth-century printing culture rather than to Wuyue alone.\n\nTrade continued across political borders. Tea, salt, rice and manufactured goods moved through river and coastal networks. Several southern kingdoms benefited from agriculture and maritime exchange while much of the north endured repeated campaigns. These decades accelerated the [[id:southward-economic-shift|movement of population and economic activity toward the Yangtze basin]], a shift that continued under Song."
+        },
+        {
+          "title": "Song reunification",
+          "text": "In 960, Later Zhou general Zhao Kuangyin (赵匡胤 Zhào Kuāngyìn) was proclaimed emperor after the Chenqiao mutiny (陈桥驿兵变 Chénqiáo Yì Bīngbiàn). As Emperor Taizu (太祖 Tàizǔ, r. 960–976), he founded Song and began a methodical series of conquests and negotiated submissions. Jingnan fell in 963, Later Shu in 965, Southern Han in 971, Southern Tang in 975 and Wuyue in 978. His brother Emperor Taizong (太宗 Tàizōng, r. 976–997) conquered Northern Han in 979.\n\nThe Song court brought major armies under central control, limited the independence of regional commanders and placed civilian officials in regional government. It inherited much of Later Zhou's military and administrative capacity, then used southern tax revenue to support the new state. The conquest of Northern Han ended the conventional Five Dynasties and Ten Kingdoms period, although Liao still held the Sixteen Prefectures and Song never recovered the whole region."
+        },
+        {
+          "title": "What the period changed",
+          "text": "The years from 907 to 979 connected the fall of the Tang to the construction of a different imperial order. Military governments replaced one another rapidly in the north, while longer-lived regional courts developed institutions, trade and cultural life across the south. Song reunification joined many of those territories under one court, while retaining the professional armies, expanding examinations, commercial networks and printing culture that had grown through the division."
         }
       ],
       "sourceLabels": {
         "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/five-dynasties/BED8234EA917268392A83E07FFE08EE7": "Naomi Standen · Five Dynasties",
         "https://assets.cambridge.org/97811070/84759/excerpt/9781107084759_excerpt.pdf": "Peter Lorge · The Reunification of China: excerpt",
-        "https://www.jstor.org/stable/10.7312/davi12826": "Ouyang Xiu / Richard Davis · Historical Records of the Five Dynasties"
+        "https://www.jstor.org/stable/10.7312/davi12826": "Ouyang Xiu / Richard Davis · Historical Records of the Five Dynasties",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/southern-kingdoms-between-the-tang-and-the-sung-907979/DA46EC4F957DC57884D32C133A9883C8": "Hugh Clark · Southern kingdoms between Tang and Song",
+        "https://assets.cambridge.org/97805218/12481/excerpt/9780521812481_excerpt.pdf": "Cambridge History of China · Tenth-century chronology",
+        "https://fass.ubd.edu.bn/staff/docs/JK/han-xizai.pdf": "Johannes Kurz · Han Xizai and Southern Tang",
+        "https://www.dpm.org.cn/collection/paint/228200.html": "Palace Museum · Night Revels of Han Xizai",
+        "https://www.cuhk.edu.hk/ics/journal/articles/v19p389.pdf": "Hans Bielenstein · The Population of T’ang China",
+        "https://www.census.gov/data/tables/time-series/demo/international-programs/historical-est-worldpop.html": "United States Census Bureau · Historical estimates of world population"
       },
       "related": [
+        "tang",
+        "jiedushi",
+        "an-lushan",
+        "huang-chao",
         "catalog-S_TEN",
-        "catalog-R_FIVE_LATER_ZHOU",
-        "song",
         "catalog-R_FIVE_LATER_LIANG",
         "catalog-R_FIVE_LATER_TANG",
         "catalog-R_FIVE_LATER_JIN",
-        "catalog-R_FIVE_LATER_HAN"
+        "catalog-R_FIVE_LATER_HAN",
+        "catalog-R_FIVE_LATER_ZHOU",
+        "catalog-R_TEN_WU_YANG_WU",
+        "catalog-R_TEN_SOUTHERN_TANG",
+        "catalog-R_TEN_WUYUE",
+        "catalog-R_TEN_MIN",
+        "catalog-R_TEN_SOUTHERN_HAN",
+        "catalog-R_TEN_CHU_MA_CHU",
+        "catalog-R_TEN_FORMER_SHU",
+        "catalog-R_TEN_LATER_SHU",
+        "catalog-R_TEN_JINGNAN_NANPING",
+        "catalog-R_TEN_NORTHERN_HAN",
+        "liao",
+        "southward-economic-shift",
+        "song"
       ],
       "dateReview": {
         "status": "confirmed",
@@ -1691,11 +1739,17 @@
         ]
       },
       "catalogDates": null,
-      "searchAliases": [
-        "Five Dynasties"
-      ],
       "linkTitle": "Five Dynasties",
-      "pinyin": "wǔ dài",
+      "linkAliases": [
+        "Five Dynasties and Ten Kingdoms period",
+        "五代十国"
+      ],
+      "annotateNames": false,
+      "searchAliases": [
+        "Five Dynasties",
+        "Five Dynasties and Ten Kingdoms"
+      ],
+      "pinyin": "wǔ dài shí guó",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%E4%BA%94%E4%BB%A3-%E5%8C%97%E5%AE%8B_%E4%BD%9A%E5%90%8D_%E4%B9%9E%E5%B7%A7%E5%9C%96_%E8%BB%B8-Palace_banquet_MET_DP251118.jpg/960px-%E4%BA%94%E4%BB%A3-%E5%8C%97%E5%AE%8B_%E4%BD%9A%E5%90%8D_%E4%B9%9E%E5%B7%A7%E5%9C%96_%E8%BB%B8-Palace_banquet_MET_DP251118.jpg",
         "width": 2486,
@@ -1705,7 +1759,21 @@
         "license": "CC0 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
         "alt": "Women gathered inside a palace in a vertical painting.",
-        "caption": "Palace Banquet, a painting assigned to the tenth-century Five Dynasties–early Song milieu, in the Metropolitan Museum of Art. Court culture continued across rapid political changes."
+        "caption": "Palace Banquet, a painting assigned to the tenth-century Five Dynasties–early Song milieu, in the Metropolitan Museum of Art. Court culture continued across rapid political changes.",
+        "sectionImages": [
+          {
+            "section": "Ten kingdoms across the regions",
+            "src": "assets/external-sourced/night-revels-of-han-xizai.jpg",
+            "width": 960,
+            "height": 745,
+            "credit": "Traditionally attributed to Gu Hongzhong; later Song copy · Palace Museum, Beijing / Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Gu_Hongzhong%27s_Night_Revels_1_edit_(cropped2)_(cropped)_(cropped).jpg",
+            "license": "Public domain",
+            "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+            "alt": "Musicians, dancers and male guests gather around Han Xizai at an indoor banquet.",
+            "caption": "Detail from Night Revels of Han Xizai. The Palace Museum identifies the surviving handscroll as a later Song copy of a work traditionally attributed to Gu Hongzhong. It depicts the Southern Tang official Han Xizai at a private gathering."
+          }
+        ]
       }
     },
     {
