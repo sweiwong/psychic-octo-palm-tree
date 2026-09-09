@@ -5,6 +5,7 @@
     "build:content": "node build_card_notes.js && node build_expanded.js"
   },
   "devDependencies": {
+    "playwright": "^1.60.0",
     "yaml": "2.9.0"
   }
 }
