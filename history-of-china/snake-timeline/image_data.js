@@ -3387,6 +3387,18 @@ Object.assign(HISTORY_IMAGES, {
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
     "alt": "A schematic plan compares the footprint of Yuan Dadu with later Beijing walls.",
     "caption": "A modern diagram comparing Yuan Dadu’s plan with the later Ming and Qing capital. It helps locate the Yuan city within Beijing, but it is a schematic reconstruction rather than a Yuan-period map."
-  }
+  },
+  "jiedushi": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Dunhuang_Zhang_Yichao_army.jpg/960px-Dunhuang_Zhang_Yichao_army.jpg",
+  "width": 1234,
+  "height": 624,
+  "alt": "A weathered wall painting showing two rows of armoured horsemen carrying tall banners with black scalloped tails, with musicians and robed attendants riding and standing between them.",
+  "caption": "A detail from Zhang Yichao Leading His Army Out (张议潮统军出行图), the procession mural on the south wall of Mogao Cave 156 at Dunhuang, painted around 865 for Zhang Yichao's family, fourteen years after his appointment as commissioner of the Guiyi Army in 851. The full procession of cavalry, standard-bearers and musicians runs about 8.5 metres. It is among the very few contemporary images of a Tang military commissioner in the exercise of his office, and the family that commissioned it decided how he would appear.",
+  "credit": "Unknown Tang-dynasty painter · Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:Dunhuang_Zhang_Yichao_army.jpg",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "fullSize": true
+}
 });
 if(typeof module!=='undefined')module.exports=HISTORY_IMAGES;

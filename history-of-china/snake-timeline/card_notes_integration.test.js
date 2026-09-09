@@ -20,19 +20,19 @@ test('browser uses generated note edits while preserving historical records', ()
   const baseline = browserCards();
   const edited = browserCards(`\nCARD_NOTES.revisions.tang.description = 'An edit from the Tang note.';`);
   assert.equal(edited.find(card => card.id === 'tang').description, 'An edit from the Tang note.');
-  assert.equal(edited.length, 222);
+  assert.equal(edited.length, 223);
   for (const card of edited) {
     const original = baseline.find(item => item.id === card.id);
     assert.deepEqual({ ...card, description: original.description }, original);
   }
 });
 
-test('all eighteen authored notes are connected and the saved site pack matches their current text', () => {
+test('all nineteen authored notes are connected and the saved site pack matches their current text', () => {
   const notes = Object.fromEntries(fs.readdirSync(__dirname + '/card-notes')
     .filter(name => name.endsWith('.md') && name !== 'README.md')
     .map(name => [name, fs.readFileSync(__dirname + '/card-notes/' + name, 'utf8')]));
   const compiled = compileNotes(notes, browserCards().map(card => card.id));
-  assert.equal(Object.keys(compiled.revisions).length, 18);
+  assert.equal(Object.keys(compiled.revisions).length, 19);
   assert.deepEqual(require('./card_notes'), compiled, 'Rebuild after editing notes.');
   const { graph, errors } = links.validateCards(browserCards());
   assert.deepEqual(errors, []);
