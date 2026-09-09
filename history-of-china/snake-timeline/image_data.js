@@ -3398,7 +3398,20 @@ Object.assign(HISTORY_IMAGES, {
   "source": "https://commons.wikimedia.org/wiki/File:Dunhuang_Zhang_Yichao_army.jpg",
   "license": "Public domain",
   "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-  "fullSize": true
+  "fullSize": true,
+  "sectionImages": [
+    {
+      "section": "The An Lushan Rebellion and the Turning Point",
+      "src": "assets/jiedushi-military-districts-867.png",
+      "width": 1080,
+      "height": 1080,
+      "alt": "A modern map of late-Tang China showing military districts, their internal administrative divisions, and neighbouring states in 867.",
+      "caption": "Military Districts of the Late Tang Dynasty, 867 CE. In the century after the An Lushan Rebellion, the Tang court became increasingly unstable. These military districts had originally answered to the emperor and the central government in Chang'an. By 867, many could override the civil administrations within their borders. Some approached open warlord rule: local soldiers assassinated, deposed, or chose commanders. After the Huang Chao Rebellion, many districts ignored the court and fought one another, accelerating the Tang dynasty's collapse. This is a modern historical reconstruction.",
+      "credit": "Diao Jin Fu Hu Chen · completed 25 February 2021",
+      "license": "Privately supplied",
+      "fullSize": true
+    }
+  ]
 }
 });
 if(typeof module!=='undefined')module.exports=HISTORY_IMAGES;
