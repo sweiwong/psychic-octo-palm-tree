@@ -2551,8 +2551,25 @@ const CHART_RESEARCH=(()=>{
   },
   "kaiyuan-era": {
     "sources": [
-      "https://digicoll.lib.berkeley.edu/record/245799"
+      "https://digicoll.lib.berkeley.edu/record/245799",
+      "https://journal.hep.com.cn/fhc/EN/10.3868/s020-012-023-0004-0",
+      "https://ctext.org/wiki.pl?chapter=813675&if=en&remap=gb",
+      "https://www.metmuseum.org/essays/tang-dynasty-618-906",
+      "https://asia.si.edu/whats-on/exhibitions/the-sogdians/",
+      "https://www.britishmuseum.org/blog/who-were-sogdians",
+      "https://www.iranicaonline.org/articles/sogdian-trade/",
+      "https://www.iranicaonline.org/articles/chinese-iranian-xiii/"
     ],
+    "sourceLabels": {
+      "https://digicoll.lib.berkeley.edu/record/245799": "UC Berkeley · Kaiyuan-dated inscription catalogue",
+      "https://journal.hep.com.cn/fhc/EN/10.3868/s020-012-023-0004-0": "Ding Jun · Kaiyuan land and household registration",
+      "https://ctext.org/wiki.pl?chapter=813675&if=en&remap=gb": "Old Book of Tang · Yuwen Rong biography",
+      "https://www.metmuseum.org/essays/tang-dynasty-618-906": "The Met · Tang dynasty art and exchange",
+      "https://asia.si.edu/whats-on/exhibitions/the-sogdians/": "Smithsonian National Museum of Asian Art · The Sogdians",
+      "https://www.britishmuseum.org/blog/who-were-sogdians": "British Museum · Who were the Sogdians?",
+      "https://www.iranicaonline.org/articles/sogdian-trade/": "Encyclopaedia Iranica · Sogdian trade",
+      "https://www.iranicaonline.org/articles/chinese-iranian-xiii/": "Encyclopaedia Iranica · Iranian migrations to China"
+    },
     "dateReview": {
       "status": "confirmed",
       "note": "713–741 is the Kaiyuan era; the Berkeley inscription catalogue uses these dates.",

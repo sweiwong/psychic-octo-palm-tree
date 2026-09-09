@@ -3210,7 +3210,75 @@ Object.assign(HISTORY_IMAGES, {
     "license": "Public domain",
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
     "alt": "A painted portrait of Tang emperor Xuanzong in court dress.",
-    "caption": "A traditional portrait of Emperor Xuanzong, whose Kaiyuan reign gave the era its name. The Commons record does not identify the artist or date, so it should not be treated as a contemporary likeness."
+    "caption": "A traditional portrait of Emperor Xuanzong, whose Kaiyuan reign gave the era its name. The Commons record does not identify the artist or date, so it should not be treated as a contemporary likeness.",
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "Revenue, grain and the work of governing",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/100_Tang_Kaiyuan_Coins.jpg",
+        "width": 3888,
+        "height": 2592,
+        "credit": "Gary Lee Todd, Ph.D. · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:100_Tang_Kaiyuan_Coins.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "A group of round bronze Tang coins with square holes and four-character inscriptions.",
+        "caption": "Kaiyuan tongbao coins, a currency type first issued in 621 under Tang Gaozu. Despite sharing the words kaiyuan, these coins predate Xuanzong’s 713–741 reign period and should not be read as evidence of a new currency introduced during it.",
+        "fullSize": true
+      },
+      {
+        "section": "Tang and its neighbouring states",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/97/Asia_ca_750_AD.jpg",
+        "width": 6749,
+        "height": 5934,
+        "credit": "Albert Herrmann and Georg Westermann · Historical and Commercial Atlas of China (1935) / Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Asia_ca_750_AD.jpg",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "alt": "Historical atlas map of Asia around 750 showing Tang China, Tibet, the Turkic steppe, Sogdian cities, the caliphate, Korea and Japan.",
+        "caption": "A 1935 historical atlas map of Asia around 750 places Tang China beside Tibet, Turkic and Central Asian polities, Korea, Japan and the western caliphate. It is close context rather than a map of one Kaiyuan year: borders are schematic, Abbasid rule began in 750, and Tang authority varied greatly between prefectures, protectorates and allied rulers.",
+        "fullSize": true
+      },
+      {
+        "section": "A Silk Roads crossroads",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Silk-Road_course.jpg",
+        "width": 2000,
+        "height": 964,
+        "credit": "Refrain · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Silk-Road_course.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "alt": "A Chinese-labelled map traces several overland Silk Road routes between Chang’an, the Tarim Basin, Central Asia, Iran and the Mediterranean.",
+        "caption": "A modern route map presents the Silk Roads as branching corridors through the Hexi Corridor, around the Tarim Basin and across Central Asia. It is a schematic guide to long-lived routes, not a map of fixed eighth-century borders or a claim that one government controlled the whole network.",
+        "fullSize": true
+      },
+      {
+        "section": "A cosmopolitan capital",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Sogdien_Tang.jpeg",
+        "width": 3456,
+        "height": 4608,
+        "credit": "Thomon · Musée Guimet / Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Sogdien_Tang.jpeg",
+        "license": "Public domain dedication",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "alt": "Painted Tang terracotta statuette of a bearded foreign caravaneer wearing a pointed cap.",
+        "caption": "Tang terracotta statuette of a foreign caravaneer, seventh century, Musée Guimet. The Commons record identifies him as a Sogdian merchant; the museum reference uses the broader description “foreign caravaneer,” a useful reminder that clothing and facial type do not securely establish one person’s ethnicity. The figure belongs to a camel-and-rider group associated with Silk Roads trade.",
+        "fullSize": true
+      },
+      {
+        "section": "A cosmopolitan capital",
+        "src": "https://images.metmuseum.org/CRDImages/as/original/DP337805.jpg",
+        "width": 2920,
+        "height": 3894,
+        "credit": "The Metropolitan Museum of Art · Rogers Fund, 1923 · 23.180.4",
+        "source": "https://www.metmuseum.org/art/collection/search/44801",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "Painted earthenware figure of a seated female musician holding a pear-shaped lute.",
+        "caption": "A female musician plays a pipa in this late seventh-century Tang tomb figure. The instrument’s West and Central Asian connections, and related forms preserved in Japan, make music a material example of cultural exchange rather than a purely courtly abstraction.",
+        "fullSize": true
+      }
+    ]
   },
   "movable-type": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Beijing.Musee_imprimerie.caracteres_mobiles.Bisheng.jpg/1280px-Beijing.Musee_imprimerie.caracteres_mobiles.Bisheng.jpg",
