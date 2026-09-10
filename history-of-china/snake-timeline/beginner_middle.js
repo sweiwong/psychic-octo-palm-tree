@@ -7,10 +7,6 @@ var BEGINNER_MIDDLE = { revisions: {} };
     if (note !== undefined) revision.note = note;
     BEGINNER_MIDDLE.revisions[id] = revision;
   }
-  revise('five-dynasties', null,
-    'Between Tang’s fall in 907 and Song’s foundation in 960, five dynasties succeeded one another in the north. Some regional states lasted much longer. Military commanders could make and unmake emperors, but government did not start again from nothing with each new ruling family.',
-    'Armies and personal loyalty', 'Commanders depended on relationships with their troops and on access to money and supplies. These ties could help a ruler take power, then allow another commander to overthrow him. Offices, armies and regional centres often survived a change of dynasty, even when the people at the top changed quickly.',
-    'The foundations of Song', 'Later Zhou strengthened its military and government and expanded its territory before Song was founded. Song inherited that work and continued the struggle to bring regional states under one court. The year 960 therefore marks a new dynasty, not an instant end to division. Reunification depended on campaigns and negotiations that continued after the Five Dynasties period.');
   revise('liao', null,
     'The Khitan-led Liao empire governed pastoral communities and farming regions north of Song. Its rulers claimed to be emperors in their own right. Liao helped shape the borders, diplomacy and trade of the region for more than two centuries.',
     'Different ways of governing', 'The court used different arrangements for different populations and tasks. Mobile court practices existed alongside Chinese-style administration in farming regions. This allowed rulers to draw on several kinds of resources and expertise. It also meant managing competing powerful families and deciding who owed military service and who held office.',

@@ -1729,15 +1729,15 @@
     },
     {
       "id": "five-dynasties",
-      "name": "Five Dynasties",
+      "name": "Five Dynasties and Ten Kingdoms",
       "han": "五",
       "start": 907,
-      "end": 960,
+      "end": 979,
       "color": "#8c7b68",
-      "description": "Between Tang’s fall in 907 and Song’s foundation in 960, five dynasties succeeded one another in the north. Some regional states lasted much longer. Military commanders could make and unmake emperors, but government did not start again from nothing with each new ruling family.",
+      "description": "The Five Dynasties and Ten Kingdoms period (五代十国 Wǔdài Shíguó) lasted from the fall of the [[id:tang|Tang]] in 907 to the defeat of Northern Han in 979. Five short-lived dynasties succeeded one another across much of northern China, while regional kingdoms governed the south and parts of the north. The division broke the old Tang political order and shaped the military, administrative and economic choices of the [[id:song|Song]] rulers who reunited most of China.",
       "source": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period",
       "kind": "period",
-      "note": "907–960 concerns the five northern dynasties. The wider regional division extends beyond those dates.",
+      "note": "The five northern dynasties ran from 907 to 960. The broader Five Dynasties and Ten Kingdoms period is conventionally dated 907–979, while individual kingdoms began before 907 or ended before 979. Population estimates for Tang China and the world vary considerably, so the share given here is an approximate range rather than a census of humanity.",
       "sourceIds": [
         "S_FIVE"
       ],
@@ -1747,9 +1747,15 @@
         "https://www.metmuseum.org/toah/ht/06/eac.html",
         "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/five-dynasties/BED8234EA917268392A83E07FFE08EE7",
         "https://assets.cambridge.org/97811070/84759/excerpt/9781107084759_excerpt.pdf",
-        "https://www.jstor.org/stable/10.7312/davi12826"
+        "https://www.jstor.org/stable/10.7312/davi12826",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/southern-kingdoms-between-the-tang-and-the-sung-907979/DA46EC4F957DC57884D32C133A9883C8",
+        "https://assets.cambridge.org/97805218/12481/excerpt/9780521812481_excerpt.pdf",
+        "https://fass.ubd.edu.bn/staff/docs/JK/han-xizai.pdf",
+        "https://www.dpm.org.cn/collection/paint/228200.html",
+        "https://www.cuhk.edu.hk/ics/journal/articles/v19p389.pdf",
+        "https://www.census.gov/data/tables/time-series/demo/international-programs/historical-est-worldpop.html"
       ],
-      "nameZh": "五代",
+      "nameZh": "五代十国",
       "category": "period",
       "evidence": "Source-checked synthesis",
       "importance": 5,
@@ -1757,27 +1763,69 @@
       "originalType": "macro_system",
       "sections": [
         {
-          "title": "Armies and personal loyalty",
-          "text": "Commanders depended on relationships with their troops and on access to money and supplies. These ties could help a ruler take power, then allow another commander to overthrow him. Offices, armies and regional centres often survived a change of dynasty, even when the people at the top changed quickly."
+          "title": "The Tang order breaks apart",
+          "text": "Around 750, Tang China had roughly 50 to 75 million people, while estimates of the world's population cluster around 200 to 220 million. China therefore contained somewhere between about one-quarter and one-third of the people alive, though both figures are estimates and the Tang registers missed many households.\n\nThe [[id:jiedushi|regional military governors]] (节度使 jiédùshǐ) had become central to the empire's defence. They commanded professional armies and, in many provinces, controlled appointments and revenue. The [[id:an-lushan|An Lushan Rebellion]] (安史之乱 Ān Shǐ Zhīluàn, 755–763) weakened the court's control over those commanders. A later fall in the registered population records administrative collapse and displacement as well as the war's immense death toll; it cannot be read as a count of 36 million deaths.\n\nThe [[id:huang-chao|Huang Chao Rebellion]] (黄巢起义 Huáng Cháo Qǐyì, 874–884) then devastated major regions and occupied Chang'an (长安 Cháng'ān). Zhu Wen (朱温 Zhū Wēn), a former rebel who entered Tang service, forced the last emperor to abdicate in 907 and founded the [[id:catalog-R_FIVE_LATER_LIANG|Later Liang]] (后梁 Hòu Liáng). His government controlled only part of the former empire. Rival military coalitions and regional courts already held the rest."
         },
         {
-          "title": "The foundations of Song",
-          "text": "Later Zhou strengthened its military and government and expanded its territory before Song was founded. Song inherited that work and continued the struggle to bring regional states under one court. The year 960 therefore marks a new dynasty, not an instant end to division. Reunification depended on campaigns and negotiations that continued after the Five Dynasties period."
+          "title": "Five dynasties in the north",
+          "text": "The Five Dynasties ruled the Central Plains (中原 Zhōngyuán) in succession between 907 and 960. Their capitals and armies gave them a claim to empire, but none reunited the former Tang lands.\n\nThe Later Liang lasted from 907 to 923. Zhu Wen was killed in a palace coup in 912, and Li Cunxu (李存勖 Lǐ Cúnxù) defeated the dynasty eleven years later. Li founded the [[id:catalog-R_FIVE_LATER_TANG|Later Tang]] (后唐 Hòu Táng, 923–936). Its rulers came from the Shatuo (沙陀 Shātuó), a Turkic-speaking military community, and used the Tang name to claim restoration.\n\nShi Jingtang (石敬瑭 Shí Jìngtáng) founded the [[id:catalog-R_FIVE_LATER_JIN|Later Jin]] (后晋 Hòu Jìn, 936–947) with military support from the Khitan (契丹 Qìdān). He ceded the Sixteen Prefectures (燕云十六州 Yānyún Shíliù Zhōu), including the region around modern Beijing, to the Khitan [[id:liao|Liao]] (辽 Liáo). The [[id:catalog-R_FIVE_LATER_HAN|Later Han]] (后汉 Hòu Hàn, 947–951) survived for less than four years. Guo Wei (郭威 Guō Wēi) then founded the [[id:catalog-R_FIVE_LATER_ZHOU|Later Zhou]] (后周 Hòu Zhōu, 951–960). Guo and his successor Chai Rong (柴荣 Chái Róng) strengthened the army, government and tax base that Song inherited."
+        },
+        {
+          "title": "Ten kingdoms across the regions",
+          "text": "The conventional [[id:catalog-S_TEN|Ten Kingdoms]] (十国 Shíguó) did not all exist at the same time, and the list leaves out other regional powers. Most lay in the south, where several courts survived longer than the northern dynasties.\n\n[[id:catalog-R_TEN_WU_YANG_WU|Wu]] (吴 Wú, 902–937) controlled the lower Yangtze before the [[id:catalog-R_TEN_SOUTHERN_TANG|Southern Tang]] (南唐 Nán Táng, 937–975) took over its government and territory. The Southern Tang court supported poets and painters. The handscroll Night Revels of Han Xizai (韩熙载夜宴图 Hán Xīzài Yèyàn Tú), preserved in a later Song copy and traditionally attributed to Gu Hongzhong (顾闳中 Gù Hóngzhōng), depicts the official Han Xizai (韩熙载 Hán Xīzài) at a private gathering during the Southern Tang.\n\n[[id:catalog-R_TEN_WUYUE|Wuyue]] (吴越 Wúyè, 907–978), centred on modern Hangzhou, invested in waterways, coastal works and Buddhist institutions. [[id:catalog-R_TEN_MIN|Min]] (闽 Mǐn, 909–945) and the [[id:catalog-R_TEN_SOUTHERN_HAN|Southern Han]] (南汉 Nán Hàn, 917–971) controlled ports tied to maritime trade. [[id:catalog-R_TEN_CHU_MA_CHU|Chu]] (楚 Chǔ, 907–951) drew income from the tea trade in Hunan. [[id:catalog-R_TEN_FORMER_SHU|Former Shu]] (前蜀 Qián Shǔ, 907–925) and [[id:catalog-R_TEN_LATER_SHU|Later Shu]] (后蜀 Hòu Shǔ, 934–965) ruled the Sichuan basin. [[id:catalog-R_TEN_JINGNAN_NANPING|Jingnan]] (荆南 Jīngnán, 924–963) survived through diplomacy from a small territory on the middle Yangtze. [[id:catalog-R_TEN_NORTHERN_HAN|Northern Han]] (北汉 Běi Hàn, 951–979), the one member of the group based in the north, depended on Liao support and was the last kingdom conquered by Song."
+        },
+        {
+          "title": "Armies, officials and social change",
+          "text": "Political power rested increasingly on paid, long-service troops and the commanders who could reward them. Palace guards could enthrone or remove an emperor. Northern dynasties changed quickly, yet many offices, military units and regional administrations survived each change of ruling house.\n\nThe upheavals of the late Tang and tenth century also weakened the great aristocratic clans that had dominated high office. Song rulers expanded the civil examinations (科举 kějǔ) and recruited more officials through education and written performance. Wealthy and connected families still had major advantages, so the system was broader than aristocratic birth without being socially equal."
+        },
+        {
+          "title": "Printing and the southern economy",
+          "text": "Southern courts supported woodblock printing (雕版印刷 diāobǎn yìnshuā) of Buddhist and secular texts. Wuyue rulers sponsored the printing and circulation of Buddhist scriptures, while Sichuan became an important printing centre. In 971, after Song had begun its reunification, the court commissioned the first printed Chinese Buddhist canon (大藏经 Dàzàngjīng) in Chengdu. This work belonged to the wider tenth-century printing culture rather than to Wuyue alone.\n\nTrade continued across political borders. Tea, salt, rice and manufactured goods moved through river and coastal networks. Several southern kingdoms benefited from agriculture and maritime exchange while much of the north endured repeated campaigns. These decades accelerated the [[id:southward-economic-shift|movement of population and economic activity toward the Yangtze basin]], a shift that continued under Song."
+        },
+        {
+          "title": "Song reunification",
+          "text": "In 960, Later Zhou general Zhao Kuangyin (赵匡胤 Zhào Kuāngyìn) was proclaimed emperor after the Chenqiao mutiny (陈桥驿兵变 Chénqiáo Yì Bīngbiàn). As Emperor Taizu (太祖 Tàizǔ, r. 960–976), he founded Song and began a methodical series of conquests and negotiated submissions. Jingnan fell in 963, Later Shu in 965, Southern Han in 971, Southern Tang in 975 and Wuyue in 978. His brother Emperor Taizong (太宗 Tàizōng, r. 976–997) conquered Northern Han in 979.\n\nThe Song court brought major armies under central control, limited the independence of regional commanders and placed civilian officials in regional government. It inherited much of Later Zhou's military and administrative capacity, then used southern tax revenue to support the new state. The conquest of Northern Han ended the conventional Five Dynasties and Ten Kingdoms period, although Liao still held the Sixteen Prefectures and Song never recovered the whole region."
+        },
+        {
+          "title": "What the period changed",
+          "text": "The years from 907 to 979 connected the fall of the Tang to the construction of a different imperial order. Military governments replaced one another rapidly in the north, while longer-lived regional courts developed institutions, trade and cultural life across the south. Song reunification joined many of those territories under one court, while retaining the professional armies, expanding examinations, commercial networks and printing culture that had grown through the division."
         }
       ],
       "sourceLabels": {
         "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/five-dynasties/BED8234EA917268392A83E07FFE08EE7": "Naomi Standen · Five Dynasties",
         "https://assets.cambridge.org/97811070/84759/excerpt/9781107084759_excerpt.pdf": "Peter Lorge · The Reunification of China: excerpt",
-        "https://www.jstor.org/stable/10.7312/davi12826": "Ouyang Xiu / Richard Davis · Historical Records of the Five Dynasties"
+        "https://www.jstor.org/stable/10.7312/davi12826": "Ouyang Xiu / Richard Davis · Historical Records of the Five Dynasties",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/southern-kingdoms-between-the-tang-and-the-sung-907979/DA46EC4F957DC57884D32C133A9883C8": "Hugh Clark · Southern kingdoms between Tang and Song",
+        "https://assets.cambridge.org/97805218/12481/excerpt/9780521812481_excerpt.pdf": "Cambridge History of China · Tenth-century chronology",
+        "https://fass.ubd.edu.bn/staff/docs/JK/han-xizai.pdf": "Johannes Kurz · Han Xizai and Southern Tang",
+        "https://www.dpm.org.cn/collection/paint/228200.html": "Palace Museum · Night Revels of Han Xizai",
+        "https://www.cuhk.edu.hk/ics/journal/articles/v19p389.pdf": "Hans Bielenstein · The Population of T’ang China",
+        "https://www.census.gov/data/tables/time-series/demo/international-programs/historical-est-worldpop.html": "United States Census Bureau · Historical estimates of world population"
       },
       "related": [
+        "tang",
+        "jiedushi",
+        "an-lushan",
+        "huang-chao",
         "catalog-S_TEN",
-        "catalog-R_FIVE_LATER_ZHOU",
-        "song",
         "catalog-R_FIVE_LATER_LIANG",
         "catalog-R_FIVE_LATER_TANG",
         "catalog-R_FIVE_LATER_JIN",
-        "catalog-R_FIVE_LATER_HAN"
+        "catalog-R_FIVE_LATER_HAN",
+        "catalog-R_FIVE_LATER_ZHOU",
+        "catalog-R_TEN_WU_YANG_WU",
+        "catalog-R_TEN_SOUTHERN_TANG",
+        "catalog-R_TEN_WUYUE",
+        "catalog-R_TEN_MIN",
+        "catalog-R_TEN_SOUTHERN_HAN",
+        "catalog-R_TEN_CHU_MA_CHU",
+        "catalog-R_TEN_FORMER_SHU",
+        "catalog-R_TEN_LATER_SHU",
+        "catalog-R_TEN_JINGNAN_NANPING",
+        "catalog-R_TEN_NORTHERN_HAN",
+        "liao",
+        "southward-economic-shift",
+        "song"
       ],
       "dateReview": {
         "status": "confirmed",
@@ -1787,11 +1835,17 @@
         ]
       },
       "catalogDates": null,
-      "searchAliases": [
-        "Five Dynasties"
-      ],
       "linkTitle": "Five Dynasties",
-      "pinyin": "wǔ dài",
+      "linkAliases": [
+        "Five Dynasties and Ten Kingdoms period",
+        "五代十国"
+      ],
+      "annotateNames": false,
+      "searchAliases": [
+        "Five Dynasties",
+        "Five Dynasties and Ten Kingdoms"
+      ],
+      "pinyin": "wǔ dài shí guó",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%E4%BA%94%E4%BB%A3-%E5%8C%97%E5%AE%8B_%E4%BD%9A%E5%90%8D_%E4%B9%9E%E5%B7%A7%E5%9C%96_%E8%BB%B8-Palace_banquet_MET_DP251118.jpg/960px-%E4%BA%94%E4%BB%A3-%E5%8C%97%E5%AE%8B_%E4%BD%9A%E5%90%8D_%E4%B9%9E%E5%B7%A7%E5%9C%96_%E8%BB%B8-Palace_banquet_MET_DP251118.jpg",
         "width": 2486,
@@ -1801,7 +1855,21 @@
         "license": "CC0 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
         "alt": "Women gathered inside a palace in a vertical painting.",
-        "caption": "Palace Banquet, a painting assigned to the tenth-century Five Dynasties–early Song milieu, in the Metropolitan Museum of Art. Court culture continued across rapid political changes."
+        "caption": "Palace Banquet, a painting assigned to the tenth-century Five Dynasties–early Song milieu, in the Metropolitan Museum of Art. Court culture continued across rapid political changes.",
+        "sectionImages": [
+          {
+            "section": "Ten kingdoms across the regions",
+            "src": "assets/external-sourced/night-revels-of-han-xizai.jpg",
+            "width": 960,
+            "height": 745,
+            "credit": "Traditionally attributed to Gu Hongzhong; later Song copy · Palace Museum, Beijing / Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Gu_Hongzhong%27s_Night_Revels_1_edit_(cropped2)_(cropped)_(cropped).jpg",
+            "license": "Public domain",
+            "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+            "alt": "Musicians, dancers and male guests gather around Han Xizai at an indoor banquet.",
+            "caption": "Detail from Night Revels of Han Xizai. The Palace Museum identifies the surviving handscroll as a later Song copy of a work traditionally attributed to Gu Hongzhong. It depicts the Southern Tang official Han Xizai at a private gathering."
+          }
+        ]
       }
     },
     {
@@ -4902,14 +4970,24 @@
       "start": -481,
       "end": -221,
       "color": "#647c70",
-      "description": "Larger states absorbed weaker neighbours during the Warring States period. Seven became the main rivals: Qin, Chu, Qi, Yan, Han, Zhao and Wei. Other states also survived, and the seven did not all emerge at once.",
-      "note": "481 BCE is the start used here; 475 BCE and 403 BCE are other common boundaries. These dates mark different ways of dividing the period, not rival dates for one event. The seven main states were not the only ones.",
+      "description": "The Warring States period (战国 Zhànguó) was an era of interstate warfare that ended in 221 BCE. This atlas dates it 481–221 BCE; 475 and 403 BCE are other common starting points. Warfare and government changed together as rulers fielded larger infantry armies, used iron tools and weapons, and built more direct systems of taxation, registration and command. The [[id:catalog-R_ZHOU|Zhou royal house]] (周朝 Zhōu Cháo) fell in 256 BCE, before [[id:qin|Qin]] (秦 Qín) defeated its remaining rivals and founded China’s first unified empire. In the same centuries, the Mediterranean passed from classical Greece into the Hellenistic kingdoms. The comparison places two regions in the same era without implying direct contact or identical development.",
+      "note": "The exhibition retains its source catalogue’s 481 BCE start. The supplied account used the common 475 BCE boundary; 403 BCE is another convention. Eastern Zhou lasted until the Zhou royal house fell in 256 BCE, while warfare among the major states continued until Qin’s victory in 221 BCE. Ancient troop and casualty totals are transmitted claims, not precise modern counts.",
       "sources": [
         "https://static.artmuseum.princeton.edu/asian-art/china/timeline",
         "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
         "https://ocw.mit.edu/courses/21h-151-dynastic-china-fall-2024/pages/readings/",
         "https://en.wikipedia.org/wiki/Warring_States_period",
         "https://www.persee.fr/doc/befeo_0336-1519_1997_num_84_1_2473",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/The_Year_One_Art_of_the_Ancient_World_East_and_West.pdf",
+        "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/51bdb8a8-620f-42ef-8a96-82fc3066efe3/content",
+        "https://plato.stanford.edu/entries/chinese-legalism/",
+        "https://afe.easia.columbia.edu/ps/cup/book_of_lord_shang.pdf",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/altars-of-the-soil-and-grain-are-closer-than-kin-the-qi-model-of-intellectual-participation-and-the-jixia-patronage-community/A423314171ED9CC423BFBCA2E11E9C9F",
+        "https://opus.lib.uts.edu.au/handle/10453/183828",
+        "https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528",
+        "https://www.ucpress.edu/books/go-nation/paper",
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-quyuan-encounteringsorrow.htm",
+        "https://www.cambridge.org/core/books/abs/sun-tzu-in-the-west/brief-history-of-sunzi-in-china/7D72E0D2B07EE4C01679C56D821A0436",
         "https://www.zgbk.com/ecph/words?ID=135971&SiteID=1&SubID=44006&Type=bkzyb",
         "https://en.wikipedia.org/wiki/Seven_Warring_States"
       ],
@@ -4927,17 +5005,51 @@
       "catalogOnly": true,
       "sections": [
         {
-          "title": "Drawing households into war",
-          "text": "Rulers registered families, collected taxes and required military service. Farming and effective local government supplied armies that could conquer more land. These methods differed between states. Inherited privilege, ceremonies and local interests continued to matter, even as governments gained more direct control over ordinary people’s work and service."
+          "title": "Collapse of the Zhou order",
+          "text": "Zhou rulers had governed through a network of hereditary regional lords, an arrangement often compared with feudalism but not identical to its medieval European forms. Lords held land and owed military and ritual service to the king. The Mandate of Heaven (天命 Tiānmìng) connected a ruler’s conduct with his right to rule.\n\nAn attack involving the lord of Shen and Quanrong forces killed King You in 771 BCE. The court’s move east in 770 began [[id:eastern-zhou|Eastern Zhou]] (东周 Dōng Zhōu), but royal authority weakened as regional rulers controlled their own armies, taxes and diplomacy. Chu had claimed the title wang (王 wáng), or king, much earlier; most other major rulers adopted it during the fourth century BCE. The title announced that they no longer accepted the Zhou king as their political superior."
         },
         {
-          "title": "Competing ideas about restoring order",
-          "text": "Thinkers offered rival answers to the violence around them. Some stressed moral education, others care for all people, strong institutions or rewards and punishments. Their disagreements addressed practical problems of cooperation and rule. Later writers grouped these arguments into schools, but the texts within each group could differ. Teachers also depended on supporters who helped their ideas travel between courts."
+          "title": "Seven major states",
+          "text": "By about 350 BCE, seven powers dominated the political map: Qin (秦 Qín) in the west, Chu (楚 Chǔ) in the south, Qi (齐 Qí) in the east, Yan (燕 Yān) in the north, and Zhao (赵 Zhào), Wei (魏 Wèi) and Han (韩 Hán) across the central plain. They were the strongest rivals, not the only surviving states.\n\nQin’s territory in modern Shaanxi was protected by mountain passes. Eastern courts sometimes treated its people as outsiders, while Qin’s rulers developed a highly militarized state. Chu controlled the largest area, extending through the Yangtze valley and sustaining distinctive southern traditions. Qi prospered through trade and salt production on the Shandong Peninsula and supported the Jixia intellectual community. Yan held a northern frontier around modern Beijing and faced pressure from neighbouring steppe peoples. Zhao adopted cavalry methods from northern nomads. Wei was initially the strongest of the three states formed from Jin, but repeated wars weakened it. Han was the smallest of the seven and controlled routes between Qin and the central plain, leaving it exposed to attack.\n\nSmaller states such as Song and Zhongshan survived for part of the period before stronger neighbours absorbed them."
+        },
+        {
+          "title": "Military revolution",
+          "text": "War increasingly moved away from contests led by chariot-riding aristocrats toward campaigns fought by mass infantry armies. Iron tools could increase agricultural output, while iron weapons supplemented rather than immediately replaced bronze. States drew soldiers, grain and labour from registered farming households.\n\nThe crossbow became a major infantry weapon. Its mechanical trigger allowed states to equip soldiers with a powerful weapon that required different training from the traditional bow. Zhao’s King Wuling ordered troops to adopt northern dress and mounted archery in 307 BCE, making cavalry part of a deliberate military reform. States also built long frontier walls; after unification, Qin joined and extended some earlier fortifications, part of the much longer history explored in [[id:qin-great-wall|Qin’s northern walls]].\n\nTransmitted histories give enormous army totals, including 600,000 men in Qin’s campaign against Chu. Modern scholarship treats that figure as anecdotal and possibly exaggerated. Even with that caution, the records and excavated administrative documents show rulers mobilizing people and supplies on a scale that demanded new systems of government."
+        },
+        {
+          "title": "Bureaucratic revolution",
+          "text": "The scale and frequency of war pushed rulers to govern territory more directly. Appointed officials increasingly worked alongside or replaced hereditary lords. States registered households, collected taxes in grain, issued legal rules and tied rank to service. These changes differed between states and did not erase inherited privilege or local power.\n\nQin carried these methods furthest through reforms associated with [[id:shang-yang|Shang Yang]] (商鞅 Shāng Yāng) from 356 BCE. The reforms organized households into mutual-responsibility groups, rewarded farming and military achievement, and used strict punishments to enforce the ruler’s commands. Traditional accounts describe promotion through enemy heads taken in battle. Shang Yang was executed in 338 BCE after losing political protection, but several reforms survived him. They allowed Qin to extract soldiers, grain and labour more reliably than its rivals."
+        },
+        {
+          "title": "Hundred Schools of Thought",
+          "text": "Political instability produced an intense period of argument later called the Hundred Schools of Thought (百家争鸣 Bǎijiā Zhēngmíng). Thinkers moved between courts and offered rival answers to violence, cooperation and good government. The later school labels are useful guides, but they can make a diverse intellectual world look more orderly than it was.\n\n[[id:confucianism-daoism|Confucian thought]] (儒家 Rújiā) grew from the teachings associated with [[id:confucius|Confucius]] (孔子 Kǒngzǐ), who died near the beginning of the period, and was developed by later thinkers including [[id:mencius|Mencius]] (孟子 Mèngzǐ). It stressed cultivated conduct, ritual and humane government. Texts associated with [[id:laozi|Laozi]] (老子 Lǎozǐ) and [[id:zhuangzi|Zhuangzi]] (庄子 Zhuāngzǐ) later became central to [[id:confucianism-daoism|Daoist traditions]] (道家 Dàojiā), questioning forceful control and rigid distinctions. Legalist thinkers (法家 Fǎjiā) argued that clear standards, rewards and punishments could order the state without relying on a ruler’s moral example.\n\nAt the Jixia patronage community (稷下学宫 Jìxià Xuégōng) in Qi, rulers supported intellectual clients from different traditions. It is often called an academy, but the evidence does not justify treating it as a modern university or claiming a precise enrolment."
+        },
+        {
+          "title": "Qin unification",
+          "text": "By the late third century BCE, Qin’s protected position, agricultural base and administrative reach gave it a lasting advantage. At the Battle of Changping (长平之战 Chángpíng zhī Zhàn) in 260 BCE, Qin defeated Zhao. Transmitted histories claim that 400,000 surrendered Zhao soldiers were killed. The number cannot be treated as a measured modern death toll, but the account preserves the battle’s reputation for exceptional slaughter.\n\nYing Zheng (嬴政 Yíng Zhèng), king of Qin, conquered the remaining states one by one: Han in 230 BCE, Zhao in 228, Wei in 225, Chu in 223, the last Yan territory in 222, and Qi in 221. With Qi’s fall, the Warring States period ended. Ying Zheng declared himself Qin Shi Huang (秦始皇 Qín Shǐhuáng), the First Emperor. [[id:unification|Qin unification]] replaced the competing royal courts with commanderies governed by appointed officials. Qin’s ruling house fell within fifteen years, but later dynasties retained and adapted much of the imperial framework."
+        },
+        {
+          "title": "The game of Go",
+          "text": "The board game Go, called Weiqi (围棋 Wéiqí) in Chinese, appears in written records from the fourth century BCE. Players place stones to surround positions and control territory."
+        },
+        {
+          "title": "Cultural references",
+          "text": "[[id:catalog-F_SUN|The Art of War]] (孙子兵法 Sūnzǐ Bīngfǎ), traditionally attributed to Sunzi (孙子 Sūnzǐ), is an early military text. Its traditional author and precise formation remain debated. The Li Sao (离骚 Lí Sāo), traditionally attributed to Qu Yuan (屈原 Qū Yuán), belongs to the Chu poetic tradition. Qu Yuan’s biography and the poem’s exact composition date remain uncertain."
         }
       ],
       "sourceLabels": {
         "https://en.wikipedia.org/wiki/Warring_States_period": "Wikipedia · Warring States period (reference overview)",
         "https://www.persee.fr/doc/befeo_0336-1519_1997_num_84_1_2473": "Bulletin de l’École française d’Extrême-Orient · Ritual origins of Warring States",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/The_Year_One_Art_of_the_Ancient_World_East_and_West.pdf": "Metropolitan Museum of Art · The Year One: Warring States and Qin",
+        "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/51bdb8a8-620f-42ef-8a96-82fc3066efe3/content": "Indiana University · The Warring States Period",
+        "https://plato.stanford.edu/entries/chinese-legalism/": "Stanford Encyclopedia of Philosophy · Legalism in Chinese Philosophy",
+        "https://afe.easia.columbia.edu/ps/cup/book_of_lord_shang.pdf": "Columbia Asia for Educators · Selections from the Book of Lord Shang",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/altars-of-the-soil-and-grain-are-closer-than-kin-the-qi-model-of-intellectual-participation-and-the-jixia-patronage-community/A423314171ED9CC423BFBCA2E11E9C9F": "Early China · The Jixia patronage community",
+        "https://opus.lib.uts.edu.au/handle/10453/183828": "Journal of Chinese Military History · A study of the Battle of Changping",
+        "https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528": "Early China · Qin logistics and financial administration",
+        "https://www.ucpress.edu/books/go-nation/paper": "University of California Press · Go Nation",
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-quyuan-encounteringsorrow.htm": "Columbia Asia for Educators · Encountering Sorrow (Li Sao)",
+        "https://www.cambridge.org/core/books/abs/sun-tzu-in-the-west/brief-history-of-sunzi-in-china/7D72E0D2B07EE4C01679C56D821A0436": "Cambridge · A brief history of Sunzi in China",
         "https://www.zgbk.com/ecph/words?ID=135971&SiteID=1&SubID=44006&Type=bkzyb": "Encyclopedia of China · Seven Warring States",
         "https://en.wikipedia.org/wiki/Seven_Warring_States": "Wikipedia · Seven Warring States (reference overview)"
       },
@@ -4956,6 +5068,7 @@
         "han-fei",
         "shang-yang"
       ],
+      "annotateNames": false,
       "searchAliases": [
         "Warring States",
         "Warring States Period"
@@ -4963,15 +5076,43 @@
       "linkTitle": "Warring States Period",
       "pinyin": "zhàn guó",
       "image": {
-        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Warring_States_Bronze_Tiger_Tally.jpg/960px-Warring_States_Bronze_Tiger_Tally.jpg",
-        "width": 5184,
-        "height": 3456,
-        "source": "https://commons.wikimedia.org/wiki/File:Warring_States_Bronze_Tiger_Tally.jpg",
-        "credit": "Gary Todd · National Museum of China / Wikimedia Commons",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Bronze_pot%2C_Warring_States%2C_Shanghai_Museum.jpg/960px-Bronze_pot%2C_Warring_States%2C_Shanghai_Museum.jpg",
+        "width": 3000,
+        "height": 4000,
+        "source": "https://commons.wikimedia.org/wiki/File:Bronze_pot,_Warring_States,_Shanghai_Museum.jpg",
+        "credit": "Huangdan2060 · Shanghai Museum / Wikimedia Commons",
         "license": "CC0 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "alt": "A bronze tally in the shape of a crouching tiger, inscribed with Chinese characters.",
-        "caption": "A tiger-shaped bronze tally associated with Chu and used to authorize travel through courier stations. It offers material evidence for administration within one Warring States polity, not a picture of the period’s wars."
+        "alt": "A dark bronze vessel with geometric inlay, displayed in a museum case.",
+        "caption": "An inlaid bronze hu vessel from the Warring States period, in the Shanghai Museum. Objects such as this show that the era’s rival states sustained sophisticated elite workshops alongside warfare and political competition.",
+        "sectionImages": [
+          {
+            "section": "Military revolution",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/WarringStatesBronzeSword.JPG/960px-WarringStatesBronzeSword.JPG",
+            "width": 4592,
+            "height": 2576,
+            "source": "https://commons.wikimedia.org/wiki/File:WarringStatesBronzeSword.JPG",
+            "credit": "Zcm11 · Wikimedia Commons",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "alt": "Three bronze swords displayed horizontally on museum supports.",
+            "caption": "Three bronze swords attributed to the Warring States-period traditions of Wu and Yue. Bronze weapons remained in use while iron tools and weapons expanded; this photograph does not represent a single army or battle.",
+            "fullSize": true
+          },
+          {
+            "section": "Qin unification",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Qin_Unification.png/960px-Qin_Unification.png",
+            "width": 1140,
+            "height": 896,
+            "source": "https://commons.wikimedia.org/wiki/File:Qin_Unification.png",
+            "credit": "SY · Wikimedia Commons",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "alt": "Map diagram of Qin’s conquest of the rival states during unification.",
+            "caption": "A schematic overview of Qin’s conquest of the rival states, completed with Qi’s fall in 221 BCE. It complements the card’s map of the Seven States around 350 BCE by showing the end of that political order; it is not a surveyed reconstruction of changing borders.",
+            "fullSize": true
+          }
+        ]
       }
     },
     {
