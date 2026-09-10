@@ -27,12 +27,12 @@ test('browser uses generated note edits while preserving historical records', ()
   }
 });
 
-test('all twenty authored notes are connected and the saved site pack matches their current text', () => {
+test('all twenty-one authored notes are connected and the saved site pack matches their current text', () => {
   const notes = Object.fromEntries(fs.readdirSync(__dirname + '/card-notes')
     .filter(name => name.endsWith('.md') && name !== 'README.md')
     .map(name => [name, fs.readFileSync(__dirname + '/card-notes/' + name, 'utf8')]));
   const compiled = compileNotes(notes, browserCards().map(card => card.id));
-  assert.equal(Object.keys(compiled.revisions).length, 20);
+  assert.equal(Object.keys(compiled.revisions).length, 21);
   assert.deepEqual(require('./card_notes'), compiled, 'Rebuild after editing notes.');
   const { graph, errors } = links.validateCards(browserCards());
   assert.deepEqual(errors, []);

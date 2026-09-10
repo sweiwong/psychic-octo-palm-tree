@@ -1263,10 +1263,10 @@
       "start": 581,
       "end": 618,
       "color": "#607969",
-      "description": "The Sui dynasty began in 581 and conquered the southern Chen dynasty in 589, bringing north and south under one court. Its rulers built the transport and government systems needed to hold this large territory together. Their demands also helped turn people against them.",
+      "description": "The Sui dynasty (隋朝 Suí Cháo) lasted from 581 to 618 and reshaped Chinese statecraft by reuniting a fractured empire, building a vast pre-modern canal network, and imposing centralized legal and administrative reforms that later dynasties refined.\n\nMore than three centuries passed between the collapse of the [[id:han|Han Dynasty]] (汉朝 Hàn Cháo) in 220 and the Sui conquest of the southern Chen dynasty (南陈 Nán Chén) in 589, although the Western Jin briefly reunited much of China in between. The Sui rose from a northern military-aristocratic clan. Its founder, Yang Jian (杨坚 Yáng Jiān), known as Emperor Wen of Sui (隋文帝 Suí Wéndì), took the Northern Zhou (北周 Běi Zhōu) throne in 581 and conquered Chen in 589, [[id:reunification|re-establishing unified imperial rule]]. Emperor Wen and his son Emperor Yang dominated the dynasty, while Emperor Gong of Sui, Yang You (隋恭帝杨侑 Suí Gōngdì Yáng Yòu), formally reigned from 617 to 618. The Sui lasted only 37 years, yet its institutions became a foundation for the [[id:tang|Tang Dynasty]] (唐朝 Táng Cháo).",
       "source": "https://en.wikipedia.org/wiki/Sui_dynasty",
       "kind": "period",
-      "note": "581–618 follows the conventional dynastic span. Some scholarship ends its main political narrative in 617; southern conquest occurred in 589.",
+      "note": "581–618 is the conventional dynastic span. Emperor Wen and Emperor Yang dominated the period, while Emperor Gong formally reigned from 617 to 618. Major canal construction continued after 605, including work on the Yongji Canal in 608 and the Jiangnan Canal in 610. Figures for Sui conscription and battlefield losses come from court histories and should not be read as modern headcounts.",
       "sourceIds": [
         "R_SUI"
       ],
@@ -1274,7 +1274,12 @@
         "https://en.wikipedia.org/wiki/Sui_dynasty",
         "https://www.metmuseum.org/toah/ht/06/eac.html",
         "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/sui-dynasty-581617/5A2EC762FFB0E26FDB1462DF7CB5BA82",
-        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/reach-of-the-military-tang/ECFE9C64AE6E73EC4319B165A606F88C"
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/reach-of-the-military-tang/ECFE9C64AE6E73EC4319B165A606F88C",
+        "https://whc.unesco.org/en/list/1443/",
+        "https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/zhaozhou-bridge",
+        "https://www.metmuseum.org/art/collection/search/61543",
+        "https://ora.ox.ac.uk/objects/uuid%3Af7f02498-4ae1-4ff0-81f6-aad909f041b1",
+        "https://contents.history.go.kr/front/kc/printViewPopup.do?levelId=kc_i101200"
       ],
       "nameZh": "隋",
       "category": "dynasty",
@@ -1284,17 +1289,50 @@
       "originalType": "regime",
       "sections": [
         {
-          "title": "Connecting north and south",
-          "text": "Winning territory was only the first step. Officials needed records of households, ways to collect grain and reliable routes for moving supplies and armies. The canal network connected regions that had spent generations under different rulers. Sui government also drew on practices inherited from those earlier states; reunification did not mean that every district immediately worked in the same way."
+          "title": "Geopolitical context",
+          "text": "The Western Roman Empire had fallen just over a century before the Sui rose. The Byzantine Empire remained a regional power in the eastern Mediterranean, while the Sasanian Persian Empire controlled important routes between the Mediterranean and Central and South Asia. China had been divided into competing northern and southern regimes since the early fourth century, during the [[id:north-south|Northern and Southern Dynasties]] (南北朝 Nánběi Cháo). Northern courts combined farming and steppe traditions and included rulers from several ethnic backgrounds. Southern courts governed from the Yangtze River valley (长江流域 Chángjiāng Liúyù) and developed their own political and cultural institutions.\n\nThe Sui conquest of Chen in 589 ended this division at the level of imperial rule. For the first time since the [[id:catalog-R_JIN_W|Western Jin]] (西晋 Xī Jìn) collapsed in 316, one court claimed authority from the steppe frontier in the north to the subtropical coast in the south. Modern reconstructions estimate the Sui Empire at its peak at roughly 3.1 million square kilometres, smaller than the Roman Empire under Trajan. Conquest changed the political map quickly. Governing the reunited territory took longer."
         },
         {
-          "title": "The cost of imperial ambition",
-          "text": "Canal construction and repeated campaigns against Goguryeo in 612–614 demanded labour and supplies from communities. The same power that made enormous projects possible could place unbearable pressure on the people supporting them. Sui lasted only until 618, but later dynasties inherited important parts of its government and transport network. Their usefulness outlived the court that built them."
+          "title": "The dominant emperors",
+          "text": "Emperor Wen of Sui, who ruled from 581 to 604, reduced taxes, revised harsh laws, promoted agricultural resettlement, and sponsored public granaries to stabilize grain supplies and provide famine relief. Household registers compiled under his successor recorded roughly nine million households and about 46 million people. These records measured the state’s registered tax base, so they were not a modern census and did not capture everyone.\n\nWen’s son, Emperor Yang of Sui (隋炀帝 Suí Yángdì), who ruled from 604 to 618, expanded the scale and speed of state projects. He built a new eastern capital at Luoyang (洛阳 Luòyáng), extended the Grand Canal network, repaired sections of the northern frontier walls, and launched three major campaigns against the Korean kingdom of Goguryeo (高句丽 Gāogōulí)."
+        },
+        {
+          "title": "The Grand Canal",
+          "text": "The [[id:sui-grand-canal|Grand Canal]] (隋代大运河 Suí Dài Dà Yùnhé) was not a single artificial waterway but a system of natural rivers, lakes, older channels, and new excavations. Between 605 and 611, the Sui linked and enlarged older waterways connecting the Yellow and Yangtze river regions. The route changed under later dynasties, so the modern Beijing to Hangzhou line should not be projected unchanged onto the Sui system.\n\nThe mature Grand Canal system eventually exceeded 2,000 kilometres, but that later total should not be assigned to Sui construction alone. Contemporary chronicles claim that millions of labourers were conscripted for canals, palaces, roads, and frontier works. These transmitted totals are better treated as claims than precise headcounts, but the demands were immense.\n\nThe canal moved tax grain from the productive Yangtze River valley toward northern capitals and frontier armies, where nearby farmland could not reliably meet demand. Water transport moved bulk grain more efficiently than carts and pack animals. The network helped bind northern and southern regions into one tax and supply system, while placing its immediate cost on the people ordered to dig and maintain it."
+        },
+        {
+          "title": "Legal and administrative reform",
+          "text": "In 583, Emperor Wen promulgated the Kaihuang Code (开皇律 Kāihuáng Lǜ). It reduced the number and severity of punishments, standardized sentencing, and strengthened the central government’s control over law. The code helped shape the later [[id:tang-code|Tang legal code]], which influenced legal systems in Japan, Korea, and Vietnam.\n\nThe Sui also helped establish the [[id:sui-examinations|civil service examination system]] (科举制度 Kējǔ Zhìdù). Early examinations selected only a small share of officials. Family standing, recommendations, and aristocratic connections still mattered. Written tests became more important under later dynasties and reached a much larger scale under the [[id:song|Song Dynasty]] (宋朝 Sòng Cháo)."
+        },
+        {
+          "title": "Military overreach and collapse",
+          "text": "Between 612 and 614, Emperor Yang launched three invasions of Goguryeo, a kingdom that controlled northern Korea and territory in southern Manchuria. Official Sui histories assign more than one million troops and support personnel to the first campaign. The figure may be inflated, but the expedition was enormous by pre-modern standards.\n\nThe first invasion ended in disaster. At the Salsu River (萨水 Sàshuǐ), Goguryeo forces destroyed much of a retreating Sui army. Traditional accounts claim that fewer than 3,000 men returned from a force of more than 300,000; those figures also demand caution. The failed wars depleted the treasury, disrupted farming through conscription, and weakened the ruling house.\n\nRebellions spread from 613. By 617, the Sui court had lost control of most of the empire. Emperor Yang was killed by his own officers at Jiangdu (江都 Jiāngdū), in modern Yangzhou (扬州 Yángzhōu), in April 618. The dynasty conventionally ended two months later, when Li Yuan deposed Emperor Gong and founded the Tang."
+        },
+        {
+          "title": "Legacy: the foundation for Tang",
+          "text": "The Tang inherited a recently reunited territory, the Grand Canal network, legal reforms, government offices, granaries, and the beginnings of examination recruitment. It retained useful parts of the Sui state and changed them over time. The infrastructure outlived the court that had forced people to build it.\n\nThe Sui invites comparison with the [[id:qin|Qin Dynasty]] (秦朝 Qín Cháo). Both reunited divided territories, standardized government, demanded heavy labour for large projects, and fell within a few decades. Each was followed by a longer-lived dynasty that kept parts of its predecessor’s system."
+        },
+        {
+          "title": "Cultural production",
+          "text": "The Sui sponsored cultural synthesis as well as state building. Emperor Wen promoted Buddhism (佛教 Fójiào) as a unifying ideology after centuries of regional religious divergence. Sui records claim that by 601 the empire had 3,792 monasteries and 230,000 registered monks and nuns, although official totals should be read as evidence of the state’s reach rather than a precise modern count.\n\nStone Buddhist sculpture from the Sui period shows a transitional style between the geometric abstraction of Northern Wei (北魏 Běi Wèi) and the fuller forms of the mature Tang. The sandstone bodhisattva head shown here dates to the Sui dynasty, but it has no documented connection to the [[id:longmen-caves|Longmen Grottoes]] (龙门石窟 Lóngmén Shíkū). Sui ceramics also brought northern lead-glazed wares and southern celadon traditions into closer contact.\n\nThe Zhaozhou Bridge (赵州桥 Zhàozhōu Qiáo), also called the Anji Bridge (安济桥 Ānjì Qiáo), was completed in Hebei (河北 Héběi) in 605. Designed by Li Chun, it is the world’s oldest surviving open-spandrel stone arch bridge. Its main span measures about 37 metres, and the bridge remains in use."
+        },
+        {
+          "title": "Did you know?",
+          "text": "Parts of the Grand Canal still carry freight. UNESCO describes the complete system, enlarged and rerouted across many dynasties, as the world’s longest and oldest canal."
+        },
+        {
+          "title": "Five dates",
+          "text": "In 581, Yang Jian took the throne and founded the Sui dynasty. In 589, Sui armies defeated Chen and reunited north and south. In 605, work began on the eastern capital at Luoyang and the Tongji Canal. In 612, Emperor Yang launched the first great invasion of Goguryeo, which ended in disaster at the Salsu River. In 618, Emperor Yang was killed at Jiangdu and Emperor Gong was deposed as the Tang dynasty began."
         }
       ],
       "sourceLabels": {
         "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/sui-dynasty-581617/5A2EC762FFB0E26FDB1462DF7CB5BA82": "Arthur Wright · The Sui Dynasty",
-        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/reach-of-the-military-tang/ECFE9C64AE6E73EC4319B165A606F88C": "David Graff · The Reach of the Military: Tang"
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/reach-of-the-military-tang/ECFE9C64AE6E73EC4319B165A606F88C": "David Graff · The Reach of the Military: Tang",
+        "https://whc.unesco.org/en/list/1443/": "UNESCO World Heritage Centre · The Grand Canal",
+        "https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/zhaozhou-bridge": "American Society of Civil Engineers · Zhaozhou Bridge",
+        "https://www.metmuseum.org/art/collection/search/61543": "Metropolitan Museum of Art · Sui head of a bodhisattva",
+        "https://ora.ox.ac.uk/objects/uuid%3Af7f02498-4ae1-4ff0-81f6-aad909f041b1": "University of Oxford · The size of the Roman Empire",
+        "https://contents.history.go.kr/front/kc/printViewPopup.do?levelId=kc_i101200": "National Institute of Korean History · The Sui campaigns against Goguryeo"
       },
       "related": [
         "reunification",
@@ -1310,21 +1348,79 @@
         ]
       },
       "catalogDates": null,
+      "linkTitle": "Sui",
+      "linkAliases": [
+        "Sui dynasty",
+        "隋"
+      ],
+      "annotateNames": false,
       "searchAliases": [
         "Sui"
       ],
-      "linkTitle": "Sui",
       "pinyin": "suí",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Yu_Hong_Tomb_general_view.jpg/960px-Yu_Hong_Tomb_general_view.jpg",
-        "width": 2066,
-        "height": 1544,
-        "credit": "123_456 · Wikimedia Commons",
-        "source": "https://commons.wikimedia.org/wiki/File:Yu_Hong_Tomb_general_view.jpg",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-        "alt": "An elaborately carved stone funerary bed displayed in a museum.",
-        "caption": "The tomb furnishings of Yu Hong, who died in 592, in the Shanxi Museum. Their imagery offers evidence for the Sogdian and Iranian connections within Sui elite society."
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Sui_Dynasty.png",
+        "width": 1272,
+        "height": 900,
+        "credit": "SY · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Sui_Dynasty.png",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "alt": "Map of the Sui empire in 610 with administrative divisions, neighbouring peoples, rivers and present-day boundaries.",
+        "caption": "Modern reconstruction of the Sui empire and its administrative divisions in 610, based on Tan Qixiang’s Historical Atlas of China. Historical boundaries are approximate; pale modern borders provide geographical reference.",
+        "fullSize": true,
+        "sectionImages": [
+          {
+            "section": "The Grand Canal",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/5/51/China-Grand_canal%2C_Sui_and_Tang.svg",
+            "width": 667,
+            "height": 717,
+            "credit": "Yug; topographic base by Ksiom · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:China-Grand_canal,_Sui_and_Tang.svg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "alt": "Topographic map of eastern China with the principal Sui and Tang canal routes and nearby cities labelled.",
+            "caption": "Modern reconstruction of the Sui and Tang canal network. It shows the routes between Luoyang, the lower Yangtze and the northern frontier; it is not a map of one construction campaign or the later fixed Beijing to Hangzhou alignment.",
+            "fullSize": true
+          },
+          {
+            "section": "Cultural production",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Anji_%28Zhaozhou%29_Bridge_2011.jpg",
+            "width": 2144,
+            "height": 1424,
+            "credit": "crazlei · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Anji_(Zhaozhou)_Bridge_2011.jpg",
+            "license": "CC BY 2.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+            "alt": "The low stone arch of the Zhaozhou Bridge spanning a river in Hebei.",
+            "caption": "The Zhaozhou Bridge, also called the Anji Bridge, in Hebei. Completed in 605, it is the world’s oldest surviving open-spandrel stone arch bridge.",
+            "fullSize": true
+          },
+          {
+            "section": "Cultural production",
+            "src": "https://images.metmuseum.org/CRDImages/as/original/63394.jpg",
+            "width": 714,
+            "height": 900,
+            "credit": "The Metropolitan Museum of Art · Rogers Fund, 1926 · object 26.65",
+            "source": "https://www.metmuseum.org/art/collection/search/61543",
+            "license": "Public domain · CC0",
+            "licenseUrl": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+            "alt": "A sandstone head of a bodhisattva with a high crown and a calm expression.",
+            "caption": "Head of a bodhisattva, China, Sui dynasty (581–618), sandstone. The object has no documented connection to the Longmen Grottoes.",
+            "fullSize": true
+          },
+          {
+            "section": "Five dates",
+            "src": "assets/sui-timeline.svg",
+            "width": 1400,
+            "height": 520,
+            "credit": "History of China atlas",
+            "license": "Original graphic",
+            "alt": "Timeline of five Sui dates: foundation in 581, reunification in 589, canal and capital work in 605, the failed Goguryeo invasion in 612, and the Tang succession in 618.",
+            "caption": "Five dates frame the Sui dynasty. Canal construction continued after the Tongji Canal work began in 605.",
+            "fullSize": true
+          }
+        ]
       }
     },
     {
