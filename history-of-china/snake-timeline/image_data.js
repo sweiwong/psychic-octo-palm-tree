@@ -2940,15 +2940,43 @@ Object.assign(HISTORY_IMAGES, {
     "caption": "A Western Han tomb painting interpreted as Confucius meeting Laozi. It reflects a later story about the two teachers and should not be treated as evidence that the meeting occurred."
   },
   "catalog-SR_WS": {
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Warring_States_Bronze_Tiger_Tally.jpg/960px-Warring_States_Bronze_Tiger_Tally.jpg",
-    "width": 5184,
-    "height": 3456,
-    "source": "https://commons.wikimedia.org/wiki/File:Warring_States_Bronze_Tiger_Tally.jpg",
-    "credit": "Gary Todd · National Museum of China / Wikimedia Commons",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Bronze_pot%2C_Warring_States%2C_Shanghai_Museum.jpg/960px-Bronze_pot%2C_Warring_States%2C_Shanghai_Museum.jpg",
+    "width": 3000,
+    "height": 4000,
+    "source": "https://commons.wikimedia.org/wiki/File:Bronze_pot,_Warring_States,_Shanghai_Museum.jpg",
+    "credit": "Huangdan2060 · Shanghai Museum / Wikimedia Commons",
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "alt": "A bronze tally in the shape of a crouching tiger, inscribed with Chinese characters.",
-    "caption": "A tiger-shaped bronze tally associated with Chu and used to authorize travel through courier stations. It offers material evidence for administration within one Warring States polity, not a picture of the period’s wars."
+    "alt": "A dark bronze vessel with geometric inlay, displayed in a museum case.",
+    "caption": "An inlaid bronze hu vessel from the Warring States period, in the Shanghai Museum. Objects such as this show that the era’s rival states sustained sophisticated elite workshops alongside warfare and political competition.",
+    "sectionImages": [
+      {
+        "section": "Military revolution",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/WarringStatesBronzeSword.JPG/960px-WarringStatesBronzeSword.JPG",
+        "width": 4592,
+        "height": 2576,
+        "source": "https://commons.wikimedia.org/wiki/File:WarringStatesBronzeSword.JPG",
+        "credit": "Zcm11 · Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "alt": "Three bronze swords displayed horizontally on museum supports.",
+        "caption": "Three bronze swords attributed to the Warring States-period traditions of Wu and Yue. Bronze weapons remained in use while iron tools and weapons expanded; this photograph does not represent a single army or battle.",
+        "fullSize": true
+      },
+      {
+        "section": "Qin unification",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Qin_Unification.png/960px-Qin_Unification.png",
+        "width": 1140,
+        "height": 896,
+        "source": "https://commons.wikimedia.org/wiki/File:Qin_Unification.png",
+        "credit": "SY · Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "alt": "Map diagram of Qin’s conquest of the rival states during unification.",
+        "caption": "A schematic overview of Qin’s conquest of the rival states, completed with Qi’s fall in 221 BCE. It complements the card’s map of the Seven States around 350 BCE by showing the end of that political order; it is not a surveyed reconstruction of changing borders.",
+        "fullSize": true
+      }
+    ]
   },
   "unification": {
     "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Portrait_of_Qin_Shi_Huang.jpg/960px-Portrait_of_Qin_Shi_Huang.jpg",
