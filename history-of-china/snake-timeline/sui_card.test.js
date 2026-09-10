@@ -9,19 +9,22 @@ const images = require('./image_data').sui;
 test('Sui has the replacement reading card and verified internal links', () => {
   assert.deepEqual(card.sections.map(section => links.plainText(section.title)), [
     'Geopolitical context',
-    'The two emperors',
+    'The dominant emperors',
     'The Grand Canal',
-    'Law and government',
+    'Legal and administrative reform',
     'Military overreach and collapse',
-    'What the Tang inherited',
+    'Legacy: the foundation for Tang',
     'Cultural production',
+    'Did you know?',
     'Five dates',
   ]);
-  assert.match(links.plainText(card.description), /581 to 618/);
+  assert.match(links.plainText(card.description), /581 to 618.*reshaped Chinese statecraft/s);
+  assert.equal(card.annotateNames, false);
   assert.match(links.plainText(card.sections[2].text), /grain/);
   assert.match(links.plainText(card.sections[4].text), /Salsu River/);
-  assert.match(links.plainText(card.sections[7].text), /581.*589.*605.*612.*618/s);
-  assert.doesNotMatch(JSON.stringify(card), /larger than the Roman Empire|ruled by just two emperors|Erie Canal/);
+  assert.match(links.plainText(card.sections[7].text), /world’s longest and oldest canal/);
+  assert.match(links.plainText(card.sections[8].text), /581.*589.*605.*612.*618/s);
+  assert.doesNotMatch(JSON.stringify(card), /larger than the Roman Empire|ruled by just two emperors|No European canal exceeded|宋文帝|5\.5 million/);
 
   const { graph, errors } = links.validateCards(cards);
   assert.deepEqual(errors, []);
