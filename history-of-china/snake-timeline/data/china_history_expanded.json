@@ -1033,12 +1033,12 @@
     },
     {
       "id": "han",
-      "name": "Han",
+      "name": "Han Dynasty",
       "han": "汉",
       "start": -206,
       "end": 220,
       "color": "#a54d3d",
-      "description": "Han rulers rebuilt an empire after the wars that destroyed Qin. Its history includes Western Han, the interruption of Wang Mang (王莽)’s Xin dynasty, and the restored Eastern Han. Across these centuries, government changed, classical learning grew and connections across Eurasia expanded.",
+      "description": "The Han dynasty (汉朝 Hàn Cháo) ruled from 206 BCE to 220 CE, with a break under the Xin dynasty. Across four centuries, Han rulers turned the imperial system they inherited from the [[id:qin|Qin dynasty]] (秦朝 Qíncháo) into a durable model. They combined centralized government with kingdoms ruled by imperial relatives, gave classical learning a larger place at court, and expanded diplomatic and trading connections across Eurasia. While Rome grew from a Mediterranean republic into an empire, Han courts were building another long-lived imperial tradition in East Asia.",
       "source": "https://en.wikipedia.org/wiki/Han_dynasty",
       "kind": "period",
       "ranges": [
@@ -1051,37 +1051,76 @@
           220
         ]
       ],
-      "note": "206 BCE marks Liu Bang (刘邦) becoming king of Han; 202 BCE marks his imperial accession. Xin interrupted Han rule in 9–23 CE and appears separately.",
+      "note": "The overview uses 206 BCE for Liu Bang’s kingship and 202 BCE for his imperial accession. The Xin dynasty ruled from 9 to 23 CE; the restored Eastern Han began in 25 after further warfare. The territorial reach of Han changed over time and combined several kinds of control, so one peak-area figure cannot describe all four centuries.",
       "sourceIds": [],
       "sources": [
         "https://en.wikipedia.org/wiki/Han_dynasty",
         "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d",
+        "https://ccnmtl.columbia.edu/services/dropoff/china_civ_temp/week01/pdfs/chines2.pdf",
         "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/structure-and-practice-of-government/85B70184514CED4B7F825C92626F971D",
-        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+        "https://www.cambridge.org/core/books/abs/bureaucracy-of-han-times/civil-service-recruitment/9334C1BD771968D5690197868D38DF38",
+        "https://www.tandfonline.com/doi/full/10.1080/10971467.2020.1800901",
+        "https://whc.unesco.org/en/list/1442",
+        "https://doi.org/10.25365/jeacs.2025.6.1.roctus",
+        "https://www.cai.cam.ac.uk/discover/library/online-exhibitions/print-and-material-book/paper",
+        "https://www.metmuseum.org/essays/music-and-art-of-china",
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-debate-salt-iron.htm"
       ],
-      "nameZh": "汉",
+      "nameZh": "汉朝",
       "category": "dynasty",
       "evidence": "Source-checked historical interpretation",
       "importance": 5,
       "sections": [
         {
-          "title": "Sharing and gathering power",
-          "text": "Some regions were governed by appointed officials; others were kingdoms held by members of the imperial family. Disputes over these arrangements gradually increased the court’s power. Farming households supplied much of the tax income and labour. Officials still needed local knowledge and the help of influential families to turn orders from the emperor into action."
+          "title": "Two eras, one dynasty",
+          "text": "The [[id:catalog-R_HAN_W|Western Han]] (西汉 Xī Hàn) ruled from 206 BCE to 9 CE and made [[id:chang-an|Chang'an]] (长安 Cháng’ān) its capital. Liu Bang (刘邦 Liú Bāng), a rebel leader from a farming family, became king of Han in 206 BCE and emperor in 202 BCE. His government kept much of the Qin administrative system while easing some of its demands.\n\nWang Mang (王莽 Wáng Mǎng), a regent, took the throne in 9 CE and founded the [[id:xin|Xin dynasty]] (新朝 Xīn Cháo). He tried to change landholding, slavery, currency, and the state’s role in the economy. Rebellion, flooding, famine, and resistance to his policies brought the regime down in 23. Liu Xiu (刘秀 Liú Xiù), later Emperor Guangwu (汉光武帝 Hàn Guāngwǔdì), restored Han rule in 25. The [[id:catalog-R_HAN_E|Eastern Han]] (东汉 Dōng Hàn) governed from Luoyang (洛阳 Luòyáng) until 220."
         },
         {
-          "title": "Life behind the fine objects",
-          "text": "Han tombs preserve textiles, lacquerware and images of farms, servants and entertainments. They show what wealthy people valued, along with signs of the work supporting their lives. Learning from ancient texts became more important in government, but punishment and inherited privilege remained powerful. The familiar story of a cruel Qin followed by a kind Han overlooks both the methods they shared and disagreements within Han itself."
+          "title": "The scale of empire",
+          "text": "Han power reached the Korean peninsula in the northeast, the Hexi Corridor (河西走廊 Héxī Zǒuláng) and Tarim Basin (塔里木盆地 Tǎlǐmù Péndì) in the west, the steppe frontier in the north, and what is now northern Vietnam in the south. These frontiers moved over time. Military occupation, tributary relationships, commanderies, and indirect influence did not amount to uniform control across one fixed shape on a map.\n\nA government census completed in 2 CE recorded 57.67 million people in 12.36 million households. The figures are unusually detailed for the ancient world, though they count people and households known to the tax administration rather than every person living within Han influence. Han China and the Roman Empire were the two largest states of their time by population, but estimates for Rome and for the world total vary too widely to support a precise percentage comparison."
+        },
+        {
+          "title": "Government and classical learning",
+          "text": "Han rulers inherited Qin commanderies, laws, records, taxes, and compulsory labour. They also governed alongside kingdoms held by members of the imperial family. Court struggles gradually reduced the autonomy of many kingdoms, but local officials still depended on landholding families and community leaders to collect revenue, settle disputes, and carry out orders.\n\nClassical learning gained greater court sponsorship under Emperor Wu (汉武帝 Hàn Wǔdì, r. 141–87 BCE). In 136 BCE, the court created official posts for scholars of the Five Classics. In 124 BCE, it founded an Imperial Academy (太学 Tàixué) to educate selected students. Officials entered government through recommendations, family connections, clerical work, and some tests of knowledge. This system helped create traditions that later examination governments would develop. The open, standardized civil service examination system came much later. The [[id:catalog-E_HAN_1|classical learning and Han government]] card follows that gradual change."
+        },
+        {
+          "title": "Trade and the Silk Roads",
+          "text": "The journeys of Zhang Qian (张骞 Zhāng Qiān), sent west by Emperor Wu in 138 BCE, gave the Han court new knowledge of Central Asian states and helped expand diplomatic and commercial connections. The [[id:catalog-E_HAN_2|Silk Roads]] (丝绸之路 Sīchóu zhī Lù) grew through a changing network of caravan routes over many centuries. Han garrisons and way stations guarded parts of the route through the Hexi Corridor and toward the Tarim Basin, while many independent merchants and states carried goods farther west.\n\nSilk travelled west, while Han markets received horses, jade, glassware, and other goods through Central Asian exchange. Religions and ideas moved through the same connected regions. The earliest clear evidence for [[id:catalog-E_BUD_ENTRY|Buddhist contact and translation]] (佛教 Fójiào) in China belongs to the first centuries CE. Later stories give this process a single dramatic beginning, but the evidence points to several routes and communities."
+        },
+        {
+          "title": "Technology and science",
+          "text": "Paper existed in China before the lifetime of Cai Lun (蔡伦 Cài Lún). A court biography credits him with presenting an improved method in 105 CE that used bark, hemp, rags, and fishing nets. Cheaper and lighter than silk, and less bulky than bamboo slips, [[id:paper|paper]] gradually became a major writing material.\n\nAround 132, the astronomer and mathematician [[id:zhang-heng|Zhang Heng]] (张衡 Zhāng Héng) built an instrument designed to indicate the direction of distant earthquakes. Accounts describe a bronze vessel with eight dragon heads that released a ball when the mechanism responded to ground movement. No original survives, so modern reconstructions depend on the written description.\n\nHan foundries produced cast iron with blast furnaces, and salt workers used iron drilling tools to reach underground brine. In 117 BCE, Emperor Wu placed salt and iron production under state monopolies to raise revenue for the court and its wars. Officials and scholars later argued over whether those monopolies strengthened government or burdened ordinary households. Their arguments survive in the [[id:salt-iron-debate|Debate on Salt and Iron]] (盐铁之议 Yántiě Zhī Yì)."
+        },
+        {
+          "title": "Culture and literature",
+          "text": "The most influential Han history is the [[id:sima-qian|Records of the Grand Historian]] (史记 Shǐjì), completed by Sima Qian (司马迁 Sīmǎ Qiān) around 100 BCE. It organized more than two thousand years of the remembered past through annals, chronological tables, treatises, hereditary houses, and biographies. Later dynastic histories adopted parts of this structure, and Sima Qian’s character portraits also made the work a literary classic.\n\nHan writers developed the fu (赋 fù), a rhapsody that mixed prose and verse. Sima Xiangru (司马相如 Sīmǎ Xiàngrú) became its most famous court poet. The Music Bureau (乐府 Yuèfǔ) collected songs and supplied music for ceremonies, though the surviving poems associated with it were copied and edited over many centuries. They preserve voices of soldiers, farmers, travellers, and lovers that rarely appear in court histories.\n\nTombs provide much of the surviving Han visual record. Painted pottery figures, bronze mirrors, lacquerware, silk paintings, and objects from the [[id:mawangdui-manuscripts|Mawangdui tombs]] (马王堆 Mǎwángduī) reveal elite beliefs and daily arrangements, together with the labour that supported them. Jade burial suits made from plaques joined with wire were reserved for high-ranking burials. They express the hope that jade could protect the body after death."
+        },
+        {
+          "title": "Decline and fall",
+          "text": "Han decline unfolded over generations. Frontier defence against the Xiongnu (匈奴 Xiōngnú) consumed money and soldiers. Large landholders acquired farms from indebted peasants, reducing the number of households that paid taxes and owed service directly to the state. At court, consort families, eunuchs, officials, and scholars fought over appointments and access to the emperor.\n\nThe [[id:yellow-turbans|Yellow Turban uprising]] (黄巾起义 Huángjīn Qǐyì) began in 184. Government forces killed its main leaders, but the court had to rely on regional commanders and local armies. Those commanders kept growing more independent. By the early third century, warlords controlled the emperor and much of the territory claimed by Han.\n\nIn 220, Emperor Xian (汉献帝 Hàn Xiàndì) abdicated in favour of Cao Pi (曹丕 Cáo Pī). The [[id:catalog-E_3K_1|fall of Han]] opened the formal [[id:three-kingdoms|Three Kingdoms]] (三国 Sānguó) period. Wei, Shu Han, and Wu competed until the [[id:catalog-R_JIN_W|Western Jin]] (西晋 Xī Jìn) reunified the three states in 280."
+        },
+        {
+          "title": "Did you know?",
+          "text": "The English word \"China\" may derive from the name Qin through Sanskrit and Persian, though the etymology is debated. Han left a different legacy in Chinese: Han people are Hanren (汉人 Hànrén), and Chinese characters are Hanzi (汉字 Hànzì). The dynasty’s name became a lasting marker of cultural and ethnic identity."
         }
       ],
       "sourceLabels": {
         "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d": "Metropolitan Museum of Art · Han dynasty",
-        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/structure-and-practice-of-government/85B70184514CED4B7F825C92626F971D": "Cambridge History of China · Structure and practice of Han government"
+        "https://ccnmtl.columbia.edu/services/dropoff/china_civ_temp/week01/pdfs/chines2.pdf": "Columbia University · Chinese Civilization sourcebook · Han overview",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/structure-and-practice-of-government/85B70184514CED4B7F825C92626F971D": "Cambridge History of China · Structure and practice of Han government",
+        "https://www.cambridge.org/core/books/abs/bureaucracy-of-han-times/civil-service-recruitment/9334C1BD771968D5690197868D38DF38": "Hans Bielenstein · The Bureaucracy of Han Times · Civil service recruitment",
+        "https://www.tandfonline.com/doi/full/10.1080/10971467.2020.1800901": "Lee Ting-mien · The “victory of Confucianism” reconsidered",
+        "https://whc.unesco.org/en/list/1442": "UNESCO · Chang’an–Tianshan corridor",
+        "https://doi.org/10.25365/jeacs.2025.6.1.roctus": "Jasper Roctus · Han registration figures and later Chinese population claims",
+        "https://www.cai.cam.ac.uk/discover/library/online-exhibitions/print-and-material-book/paper": "Gonville & Caius College, Cambridge · Paper before and after Cai Lun",
+        "https://www.metmuseum.org/essays/music-and-art-of-china": "Metropolitan Museum of Art · Music and art of China",
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-debate-salt-iron.htm": "Columbia Asia for Educators · Debate on Salt and Iron"
       },
       "dateReview": {
         "status": "confirmed",
         "note": "206 BCE–220 CE museum envelope is supported; Xin interruption and 202 imperial accession are already explained. Description saying dynasty encompassed Xin should become: The overview spans Western Han, the intervening Xin regime, and Eastern Han.",
         "sources": [
-          "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+          "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d"
         ]
       },
       "related": [
@@ -1095,11 +1134,18 @@
         "catalog-R_HAN_W",
         "catalog-R_HAN_E"
       ],
-      "searchAliases": [
-        "Han"
+      "linkTitle": "Han Dynasty",
+      "linkAliases": [
+        "Han",
+        "Han dynasty",
+        "汉朝"
       ],
-      "linkTitle": "Han",
-      "pinyin": "hàn",
+      "annotateNames": false,
+      "searchAliases": [
+        "Han",
+        "Han Dynasty"
+      ],
+      "pinyin": "hàn cháo",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Huo_Qubing_horse_(cropped).jpg/960px-Huo_Qubing_horse_(cropped).jpg",
         "width": 4605,
@@ -1109,7 +1155,48 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "alt": "A monumental stone horse standing above a fallen figure.",
-        "caption": "A horse trampling a Xiongnu figure at Huo Qubing’s mausoleum. The monument expresses a Han victory narrative and should be read as imperial commemoration."
+        "caption": "A horse trampling a Xiongnu figure at Huo Qubing’s mausoleum. The monument expresses a Han victory narrative and should be read as imperial commemoration.",
+        "sectionImages": [
+          {
+            "section": "The scale of empire",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Han_Civilisation_bright_large.jpg/1280px-Han_Civilisation_bright_large.jpg",
+            "width": 1280,
+            "height": 945,
+            "alt": "English-labelled map of the Han world in 2 CE, with settlements, frontier peoples, capitals, garrisons, and routes west through the Tarim Basin.",
+            "caption": "A modern reconstruction of the Han world in 2 CE. Brown shading marks areas evidenced by settlements under direct Han political or military control; the white route west from Chang’an includes what is often called the Silk Road. The map also overlays a modern PRC-claimed boundary, so it should not be read as an uncontested ancient border.",
+            "credit": "Yeu Ninje · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Han_Civilisation_bright_large.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "fullSize": true
+          },
+          {
+            "section": "Culture and literature",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Mawangdui_painted_silk_funeral_banner.jpg/500px-Mawangdui_painted_silk_funeral_banner.jpg",
+            "width": 500,
+            "height": 1200,
+            "alt": "A tall T-shaped painted silk banner filled with figures, birds, dragons, celestial symbols, and funerary scenes.",
+            "caption": "The T-shaped painted silk banner from tomb 1 at Mawangdui, c. 168 BCE, found draped over the coffin of Xin Zhui, Lady Dai. Its layered scenes are commonly read as imagery of her passage through the afterlife, though their precise meanings remain debated.",
+            "credit": "Unknown Han artist · Hunan Museum / Google Arts & Culture / Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Mawangdui_painted_silk_funeral_banner.jpg",
+            "license": "Public domain",
+            "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+            "fullSize": true
+          },
+          {
+            "section": "Culture and literature",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg/1280px-Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "A human-shaped burial suit assembled from rectangular jade plaques joined by gold wire, displayed horizontally in a museum case.",
+            "caption": "The gold-threaded jade burial suit of Liu Sheng, king of Zhongshan, who died in 113 BCE. Excavated at Mancheng and now displayed in Hebei Museum, the fitted plaques show elite Han hopes that jade would protect the body after death. This was a funerary garment, not ordinary dress.",
+            "credit": "Gary Todd · Hebei Museum / Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "fullSize": true
+          }
+        ]
       }
     },
     {

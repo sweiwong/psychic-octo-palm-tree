@@ -46,13 +46,6 @@ var BEGINNER_EARLY = (() => {
     'Common measures, written records and official procedures helped officials compare goods and carry out orders across long distances. They could also help trade. For rulers, these standards made it easier to collect resources and direct people. Excavated records show many offices handling routine transfers. Even a powerful emperor depended on officials doing this work in local communities.',
     'The burden on households',
     'Military campaigns, construction and compulsory service demanded much from ordinary families. After the First Emperor died in 210 BCE, struggles over succession and rebellion broke the dynasty. Later Han writers stressed Qin’s cruelty, and their accounts need to be read alongside excavated evidence. Han’s continued use of Qin methods shows how much survived the collapse, despite the sharp criticism of its rulers.');
-  add('han', null,
-    'Han rulers rebuilt an empire after the wars that destroyed Qin. Its history includes Western Han, the interruption of Wang Mang’s Xin dynasty, and the restored Eastern Han. Across these centuries, government changed, classical learning grew and connections across Eurasia expanded.',
-    'Sharing and gathering power',
-    'Some regions were governed by appointed officials; others were kingdoms held by members of the imperial family. Disputes over these arrangements gradually increased the court’s power. Farming households supplied much of the tax income and labour. Officials still needed local knowledge and the help of influential families to turn orders from the emperor into action.',
-    'Life behind the fine objects',
-    'Han tombs preserve textiles, lacquerware and images of farms, servants and entertainments. They show what wealthy people valued, along with signs of the work supporting their lives. Learning from ancient texts became more important in government, but punishment and inherited privilege remained powerful. The familiar story of a cruel Qin followed by a kind Han overlooks both the methods they shared and disagreements within Han itself.',
-    '206 BCE marks Liu Bang becoming king of Han; 202 BCE marks his imperial accession. Xin interrupted Han rule in 9–23 CE and appears separately.');
   add('xin', null,
     'Wang Mang replaced Han in 9 CE and founded the Xin dynasty. He tried to change landholding, slavery, currency and the government’s role in the economy, claiming to restore an ideal ancient order. Rebellion ended his reign in 23 CE. Further warfare followed before Han rule was restored.',
     'Old ideals, disruptive changes',

@@ -257,7 +257,48 @@ const HISTORY_IMAGES = {
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "alt": "A monumental stone horse standing above a fallen figure.",
-    "caption": "A horse trampling a Xiongnu figure at Huo Qubing’s mausoleum. The monument expresses a Han victory narrative and should be read as imperial commemoration."
+    "caption": "A horse trampling a Xiongnu figure at Huo Qubing’s mausoleum. The monument expresses a Han victory narrative and should be read as imperial commemoration.",
+    "sectionImages": [
+      {
+        "section": "The scale of empire",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Han_Civilisation_bright_large.jpg/1280px-Han_Civilisation_bright_large.jpg",
+        "width": 1280,
+        "height": 945,
+        "alt": "English-labelled map of the Han world in 2 CE, with settlements, frontier peoples, capitals, garrisons, and routes west through the Tarim Basin.",
+        "caption": "A modern reconstruction of the Han world in 2 CE. Brown shading marks areas evidenced by settlements under direct Han political or military control; the white route west from Chang’an includes what is often called the Silk Road. The map also overlays a modern PRC-claimed boundary, so it should not be read as an uncontested ancient border.",
+        "credit": "Yeu Ninje · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Han_Civilisation_bright_large.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fullSize": true
+      },
+      {
+        "section": "Culture and literature",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Mawangdui_painted_silk_funeral_banner.jpg/500px-Mawangdui_painted_silk_funeral_banner.jpg",
+        "width": 500,
+        "height": 1200,
+        "alt": "A tall T-shaped painted silk banner filled with figures, birds, dragons, celestial symbols, and funerary scenes.",
+        "caption": "The T-shaped painted silk banner from tomb 1 at Mawangdui, c. 168 BCE, found draped over the coffin of Xin Zhui, Lady Dai. Its layered scenes are commonly read as imagery of her passage through the afterlife, though their precise meanings remain debated.",
+        "credit": "Unknown Han artist · Hunan Museum / Google Arts & Culture / Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Mawangdui_painted_silk_funeral_banner.jpg",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "fullSize": true
+      },
+      {
+        "section": "Culture and literature",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg/1280px-Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg",
+        "width": 1280,
+        "height": 853,
+        "alt": "A human-shaped burial suit assembled from rectangular jade plaques joined by gold wire, displayed horizontally in a museum case.",
+        "caption": "The gold-threaded jade burial suit of Liu Sheng, king of Zhongshan, who died in 113 BCE. Excavated at Mancheng and now displayed in Hebei Museum, the fitted plaques show elite Han hopes that jade would protect the body after death. This was a funerary garment, not ordinary dress.",
+        "credit": "Gary Todd · Hebei Museum / Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fullSize": true
+      }
+    ]
   },
   "xin": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/S-119_Wang_Mang_knife_coin.jpg",

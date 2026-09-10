@@ -14,7 +14,9 @@ const EARLY_RESEARCH = (() => {
     logistics:['https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528','Early China · Qin logistics and financial administration'],
     tomb:['https://whc.unesco.org/en/list/441/','UNESCO · Mausoleum of the First Qin Emperor'],
     han:['https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d','Metropolitan Museum of Art · Han dynasty'],
+    hanSourcebook:['https://ccnmtl.columbia.edu/services/dropoff/china_civ_temp/week01/pdfs/chines2.pdf','Columbia University · Chinese Civilization sourcebook · Han overview'],
     government:['https://www.cambridge.org/core/books/abs/cambridge-history-of-china/structure-and-practice-of-government/85B70184514CED4B7F825C92626F971D','Cambridge History of China · Structure and practice of Han government'],
+    recruitment:['https://www.cambridge.org/core/books/abs/bureaucracy-of-han-times/civil-service-recruitment/9334C1BD771968D5690197868D38DF38','Hans Bielenstein · The Bureaucracy of Han Times · Civil service recruitment'],
     restoration:['https://www.cambridge.org/core/books/abs/cambridge-history-of-china/wang-mang-the-restoration-of-the-han-dynasty-and-later-han/48EC19985183F5A65A477CB7133E8D80','Cambridge History of China · Wang Mang and Later Han'],
     silk:['https://whc.unesco.org/en/list/1442','UNESCO · Chang’an–Tianshan corridor'],
     buddhism:['https://depts.washington.edu/silkroad/exhibit/religion/buddhism/buddhism_silkroad.html','University of Washington · Buddhism on the Silk Routes'],
@@ -31,7 +33,11 @@ const EARLY_RESEARCH = (() => {
     quYuan:['https://afe.easia.columbia.edu/main_pop/ps/ps_china-quyuan-encounteringsorrow.htm','Columbia Asia for Educators · Encountering Sorrow (Li Sao)'],
     sunHistory:['https://www.cambridge.org/core/books/abs/sun-tzu-in-the-west/brief-history-of-sunzi-in-china/7D72E0D2B07EE4C01679C56D821A0436','Cambridge · A brief history of Sunzi in China'],
     orthodoxy:['https://www.tandfonline.com/doi/full/10.1080/10971467.2020.1800901','Lee Ting-mien · The “victory of Confucianism” reconsidered'],
-    hanThought:['https://www.cambridge.org/core/journals/early-china/article/ban-gus-view-on-the-second-victory-of-confucianism-and-the-fall-of-the-former-han/621066E658781FE88139CE2CBD6272A8','Early China · Ban Gu and Han political thought']
+    hanThought:['https://www.cambridge.org/core/journals/early-china/article/ban-gus-view-on-the-second-victory-of-confucianism-and-the-fall-of-the-former-han/621066E658781FE88139CE2CBD6272A8','Early China · Ban Gu and Han political thought'],
+    hanCensus:['https://doi.org/10.25365/jeacs.2025.6.1.roctus','Jasper Roctus · Han registration figures and later Chinese population claims'],
+    hanPaper:['https://www.cai.cam.ac.uk/discover/library/online-exhibitions/print-and-material-book/paper','Gonville & Caius College, Cambridge · Paper before and after Cai Lun'],
+    hanMusic:['https://www.metmuseum.org/essays/music-and-art-of-china','Metropolitan Museum of Art · Music and art of China'],
+    saltIron:['https://afe.easia.columbia.edu/main_pop/ps/ps_china-debate-salt-iron.htm','Columbia Asia for Educators · Debate on Salt and Iron']
   };
   const card = (description, title1, text1, title2, text2, note, sources, extra={}) => ({description, sections:[{title:title1,text:text1},{title:title2,text:text2}],note,sources:sources.map(x=>x[0]),sourceLabels:Object.fromEntries(sources),evidence:'Source-checked historical interpretation',...extra});
   const revisions = {
@@ -83,7 +89,7 @@ const EARLY_RESEARCH = (() => {
       'Commanderies governed by officials coexisted with kingdoms held by members of the imperial family. Court authority grew through repeated disputes over these arrangements, rather than through a complete rejection of aristocratic power. Revenue and labour came largely from agricultural households, while officials relied on local knowledge and influential families to turn imperial instructions into action.',
       'A cultural achievement with social costs',
       'Tombs preserve extraordinary textiles, lacquer and images of farms, servants and entertainments. These illuminate elite ambitions while indirectly revealing the labour on which that world depended. Classical learning became increasingly important in political argument, yet law, punishment and hereditary advantage remained powerful. The familiar contrast between a harsh Qin and a humane Han obscures substantial institutional continuities and conflicts within Han government itself.',
-      '206 BCE marks Liu Bang becoming king of Han;202 BCE marks his imperial accession. The overview includes the Xin interruption 9–23 CE, shown separately.',[refs.han,refs.government]),
+      '206 BCE marks Liu Bang becoming king of Han; 202 BCE marks his imperial accession. The overview includes the Xin interruption 9–23 CE, shown separately.',[refs.han,refs.hanSourcebook,refs.government,refs.recruitment,refs.orthodoxy,refs.silk,refs.hanCensus,refs.hanPaper,refs.hanMusic,refs.saltIron],{nameZh:'汉朝'}),
     xin:card(
       'Wang Mang replaced Han rule in 9 CE, founding the Xin dynasty. His programmes invoked an idealized ancient order while attempting changes to landholding, slavery, currency and state economic activity. Rebellion ended his reign in 23 CE; the subsequent restoration of Han was itself achieved through further warfare.',
       'Radical change in the language of restoration',
