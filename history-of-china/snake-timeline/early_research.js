@@ -21,6 +21,15 @@ const EARLY_RESEARCH = (() => {
     paper:['https://www.iranicaonline.org/articles/paper-and-papermaking/','Encyclopaedia Iranica · Paper and papermaking'],
     yu:['https://academic.oup.com/edited-volume/63145/chapter-abstract/568229012','Oxford Handbook of Chinese Archaeology · Geoarchaeology and flood myths'],
     sun:['https://www.cambridge.org/core/journals/early-china/article/sunzi-versus-xunzi-two-views-of-deception-and-indirection/C1C5F934239AF76235BCC5D7B6831735','Early China · Sunzi and Xunzi on deception'],
+    warringMet:['https://resources.metmuseum.org/resources/metpublications/pdf/The_Year_One_Art_of_the_Ancient_World_East_and_West.pdf','Metropolitan Museum of Art · The Year One: Warring States and Qin'],
+    warringEno:['https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/51bdb8a8-620f-42ef-8a96-82fc3066efe3/content','Indiana University · The Warring States Period'],
+    legalism:['https://plato.stanford.edu/entries/chinese-legalism/','Stanford Encyclopedia of Philosophy · Legalism in Chinese Philosophy'],
+    lordShang:['https://afe.easia.columbia.edu/ps/cup/book_of_lord_shang.pdf','Columbia Asia for Educators · Selections from the Book of Lord Shang'],
+    jixia:['https://www.cambridge.org/core/journals/early-china/article/abs/altars-of-the-soil-and-grain-are-closer-than-kin-the-qi-model-of-intellectual-participation-and-the-jixia-patronage-community/A423314171ED9CC423BFBCA2E11E9C9F','Early China · The Jixia patronage community'],
+    changping:['https://opus.lib.uts.edu.au/handle/10453/183828','Journal of Chinese Military History · A study of the Battle of Changping'],
+    weiqi:['https://www.ucpress.edu/books/go-nation/paper','University of California Press · Go Nation'],
+    quYuan:['https://afe.easia.columbia.edu/main_pop/ps/ps_china-quyuan-encounteringsorrow.htm','Columbia Asia for Educators · Encountering Sorrow (Li Sao)'],
+    sunHistory:['https://www.cambridge.org/core/books/abs/sun-tzu-in-the-west/brief-history-of-sunzi-in-china/7D72E0D2B07EE4C01679C56D821A0436','Cambridge · A brief history of Sunzi in China'],
     orthodoxy:['https://www.tandfonline.com/doi/full/10.1080/10971467.2020.1800901','Lee Ting-mien · The “victory of Confucianism” reconsidered'],
     hanThought:['https://www.cambridge.org/core/journals/early-china/article/ban-gus-view-on-the-second-victory-of-confucianism-and-the-fall-of-the-former-han/621066E658781FE88139CE2CBD6272A8','Early China · Ban Gu and Han political thought']
   };
@@ -151,7 +160,7 @@ const EARLY_RESEARCH = (() => {
       'Registration, taxation and military service connected ordinary people more directly to rulers. Agricultural output and effective administration could translate into armies and territorial expansion. This did not amount to a uniform “total war system” everywhere: states differed, and ritual, hereditary privilege and local interests continued to shape government alongside new methods of mobilization.',
       'Intellectual disagreement was part of the crisis',
       'Thinkers disputed whether order required moral cultivation, impartial care, exemplary institutions, strategic restraint or severe incentives. Their arguments addressed practical questions about violence and cooperation. They were not interchangeable expressions of one Chinese worldview. The later habit of grouping them into schools can be useful, provided those labels do not conceal textual diversity or the changing patronage that allowed ideas to circulate.',
-      '481–221 BCE preserves the workbook convention. Common alternatives begin 475 or 403 BCE. The date range labels a historical period, not one government.',[wiki('Warring_States_period'),['https://www.persee.fr/doc/befeo_0336-1519_1997_num_84_1_2473','Bulletin de l’École française d’Extrême-Orient · Ritual origins of Warring States']]),
+      '481–221 BCE preserves the workbook convention. Common alternatives begin 475 or 403 BCE. The date range labels a historical period, not one government.',[wiki('Warring_States_period'),['https://www.persee.fr/doc/befeo_0336-1519_1997_num_84_1_2473','Bulletin de l’École française d’Extrême-Orient · Ritual origins of Warring States'],refs.warringMet,refs.warringEno,refs.legalism,refs.lordShang,refs.jixia,refs.changping,refs.logistics,refs.weiqi,refs.quYuan,refs.sunHistory]),
     'catalog-F_SUN':card(
       'The Art of War attributed to Sunzi presents warfare as a problem of information, organization and advantage. Its thirteen chapters discuss conditions under which force should be used and resources preserved. The traditional author Sun Wu is much less securely recoverable than the text’s existence and later influence.',
       'Restraint was a strategic argument',
