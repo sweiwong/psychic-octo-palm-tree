@@ -21,12 +21,41 @@ var BEGINNER_EARLY = (() => {
     'What the writing tells us',
     'The inscriptions bring us close to royal decisions, but mostly record what troubled the king and the people who interpreted signs for him. They tell us much less about ordinary households. Archaeology helps fill those gaps and reveals other Bronze Age centres beyond the court’s reach. Shang territory should not be confused with the borders of China today.',
     'About 1600–1046 BCE is the conventional range. Late Shang writing is much more securely documented than the dynasty’s precise beginning.');
-  add('western-zhou', null,
-    'After defeating Shang, Zhou rulers claimed that Heaven had given them the right to govern: the Mandate of Heaven. Their power depended on regional lords and influential families. Land grants and family ties helped hold this order together, though it did not work identically everywhere.',
-    'Promises cast in bronze',
-    'A lord receiving an appointment or reward could have it recorded on a bronze vessel used in ceremonies for ancestors. The inscription celebrated the king’s favour and helped the recipient’s descendants claim their place. Family relationships mattered, but warfare, marriage and service also bound lords to the court. The king needed these alliances to exercise power at a distance.',
-    'Explaining the conquest',
-    'Stories of the Zhou founders gave later rulers and noble families respected ancestors to follow. They also explained how overthrowing Shang could be justified: a ruling family might lose Heaven’s support. This argument served a dynasty born through conquest. As conditions changed, later generations retold the founding story to support their own claims about good government.');
+  revisions['western-zhou'] = {
+    description: 'The Western Zhou took power around 1046 BCE, after King Wu of Zhou (周武王 Zhōu Wǔwáng) defeated the [[id:shang|Shang dynasty (商朝 Shāngcháo)]] at the [[id:catalog-E_SHANG_2|Battle of Muye (牧野之战 Mùyě zhī Zhàn)]]. Over the next 275 years, Zhou rulers built a network of kin and allies, developed the Mandate of Heaven, and spread their ritual and bronze culture across the Yellow River plain.',
+    sections: [
+      {
+        title: 'From Shang to Zhou',
+        text: 'The Shang ruled from their final capital at Yin (殷 Yīn) on the North China Plain. Their last king, Di Xin (帝辛 Dì Xīn), faced a coalition led by the Zhou, a western state based in the Wei River valley (渭河流域 Wèi Hé Liúyù). Victory at Muye gave the Zhou control, but conquest still needed a moral explanation. Zhou rulers claimed that Heaven entrusted power to virtuous kings and withdrew that trust when they failed. Known as the Mandate of Heaven (天命 Tiānmìng), this idea legitimized the fall of the Shang and became a lasting framework for explaining dynastic rise and collapse.'
+      },
+      {
+        title: 'A network of kin and allies',
+        text: 'Western Zhou rule operated through fengjian (封建 fēngjiàn), often translated as feudalism. The king granted land and titles to relatives, allies, and members of the former Shang elite. The late Warring States thinker Xunzi (荀子 Xúnzǐ) claimed that the early Zhou established 71 states, with 53 ruled by members of the royal Ji (姬 Jī) clan. These figures come from a much later account, rather than a surviving Western Zhou record. Regional lords owed the king military service, tribute, and ritual deference. In return, they governed their territories with considerable autonomy. Kinship and ritual held this network together more than a central bureaucracy did. The Duke of Zhou (周公 Zhōu Gōng) governed for the young King Cheng of Zhou (周成王 Zhōu Chéngwáng) and became a model of loyal service in later tradition. He established an eastern centre at Chengzhou (成周 Chéngzhōu), near modern Luoyang (洛阳 Luòyáng), to oversee former Shang lands. Haojing (镐京 Hàojīng), near modern Xi’an, remained the main royal seat. The two centres helped the Zhou court govern territories in both the Wei River valley and the North China Plain.'
+      },
+      {
+        title: 'Ritual, bronze and writing',
+        text: 'Ritual made rank and authority visible. The king performed sacrifices to Heaven and the royal ancestors, while regional lords conducted ceremonies suited to their status. Bronze vessels stood at the centre of ancestral rites. Their inscriptions recorded royal appointments, land grants, military campaigns, and legal disputes. These records provide direct evidence for Western Zhou history alongside later works such as the Book of Documents (尚书 Shàngshū) and the early layers of the Classic of Poetry (诗经 Shījīng). Zhou bronze inscriptions became longer than many Shang examples, sometimes reaching hundreds of characters. Vessels such as the Da Yu Ding (大盂鼎 Dà Yú Dǐng) and Mao Gong Ding (毛公鼎 Máo Gōng Dǐng) preserve accounts of appointments, gifts, victories, lineage, and royal favour. Later thinkers, including [[id:confucius|Confucius (孔子 Kǒngzǐ)]], looked back to Zhou ritual as a model for social and political order.'
+      },
+      {
+        title: 'Military and administration',
+        text: 'The Zhou king commanded royal armies based in the west and at Chengzhou. He appointed ministers and judges and sent officials to regional courts. Over time, ties between the royal house and its lords weakened. Regional rulers intermarried, fought one another, and enlarged their own territories as the royal domain contracted. Campaigns against northern peoples, including the Xianyun (猃狁 Xiǎnyǔn), placed further pressure on the court. In 841 BCE, King Li of Zhou (周厉王 Zhōu Lìwáng) was driven into exile during the crisis known as the [[id:zhou-gonghe|Gonghe period (共和 Gònghé)]]. The form of government that followed remains disputed. The Shiji (史记 Shǐjì) describes two nobles governing jointly, while the excavated Xinian (系年 Xìnián) presents an account centred on Gongbo He (共伯和 Gòngbó Hé). The year 841 BCE begins the conventional continuous chronology of Chinese history because traditional sources provide an unbroken sequence of annual dates from that point onward.'
+      },
+      {
+        title: 'Collapse',
+        text: 'Western Zhou rule ended in 771 BCE. [[id:zhou-capital-crisis|King You of Zhou (周幽王 Zhōu Yōuwáng)]] faced a coalition of disaffected lords and the Quanrong (犬戎 Quǎnróng), a northwestern group. The attackers sacked Haojing and killed the king. King You’s son, King Ping of Zhou (周平王 Zhōu Píngwáng), moved the royal court east to Chengzhou in 770 BCE. Historians use this move to mark the beginning of the [[id:eastern-zhou|Eastern Zhou (东周 Dōng Zhōu)]].'
+      },
+      {
+        title: 'Legacy',
+        text: 'Western Zhou institutions shaped later Chinese political thought. The Mandate of Heaven supplied a moral explanation for changes of rule, while fengjian influenced later ideas about the duties linking kings and regional lords. Bronze inscriptions and ritual practices also helped maintain a shared elite culture across the Yellow River region. Confucius later presented his work as the transmission of an inherited tradition and treated early Zhou culture as an important model.'
+      },
+      {
+        title: 'A long dynasty and an early name',
+        text: 'By the conventional dates assigned to its royal line, the Zhou dynasty lasted from around 1046 to 256 BCE, about 790 years. Under that method of dating, it is the longest-lasting Chinese dynasty. The term Zhongguo (中国 Zhōngguó) appears in Western Zhou bronze inscriptions, where it referred to a central territory or capital region within the Zhou world. Reading it as the name of the modern Chinese nation-state would be anachronistic.'
+      }
+    ],
+    note: '1046 BCE is a widely used conquest date, but early Zhou chronology remains debated. “Feudal” is an imperfect comparison with medieval Europe. Western Zhou boundaries shifted, and the court often ruled indirectly through regional lords, so precise area and population estimates are not reliable.',
+    annotateNames: false
+  };
   add('eastern-zhou', null,
     'The Zhou royal court moved east in 770 BCE. Kings kept their respected title, but regional rulers increasingly controlled their own armies, taxes and decisions. The Spring and Autumn and Warring States periods describe successive parts of this long era of competition.',
     'Stronger states around a weaker king',

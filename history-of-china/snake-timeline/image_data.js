@@ -205,15 +205,44 @@ const HISTORY_IMAGES = {
     "caption": "A reconstructed display of Fu Hao’s tomb at Yinxu, photographed in 2007. It interprets the archaeological burial and must not be mistaken for original grave goods still lying in their excavated positions."
   },
   "western-zhou": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Early_Western_Zhou_Bronze_Gui_01.jpg/960px-Early_Western_Zhou_Bronze_Gui_01.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Early_Western_Zhou_Bronze_Gui_01.jpg",
     "width": 4474,
     "height": 3782,
-    "credit": "Gary Lee Todd, Ph.D. · Wikimedia Commons",
+    "credit": "Gary Lee Todd, Ph.D. · Shaanxi History Museum, Xi’an · Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:Early_Western_Zhou_Bronze_Gui_01.jpg",
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "alt": "An ancient bronze vessel with two handles on a square pedestal.",
-    "caption": "The Li gui, an early Western Zhou bronze whose inscription records the conquest of Shang. The vessel is evidence close to the event, rather than a later portrait of its protagonists."
+    "alt": "The early Western Zhou Li gui, a bronze food vessel with paired handles on a decorated square pedestal.",
+    "caption": "The Li gui, cast early in the Western Zhou, bears a 32-character inscription describing King Wu’s attack on Shang. This contemporary bronze is evidence close to the conquest, rather than a later imagined portrait of its participants.",
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "A network of kin and allies",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Western_Zhou_geography.svg",
+        "width": 1734,
+        "height": 1369,
+        "alt": "Relief map of the North China Plain in the ninth century BCE, marking the Western Zhou royal domain, capitals, regional states, rivers and archaeological sites.",
+        "caption": "A modern reconstruction of the Western Zhou landscape in the ninth century BCE. The red dashed outline marks the royal domain; squares mark capitals and regional states, and dots mark archaeological sites. The map uses Feng and Chengzhou for the western and eastern royal centres.",
+        "credit": "Kanguole · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Western_Zhou_geography.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fullSize": true
+      },
+      {
+        "section": "Ritual, bronze and writing",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/Western_Zhou_bronze_ding.jpg",
+        "width": 4752,
+        "height": 3168,
+        "alt": "The monumental Da Yu ding, a three-legged Western Zhou bronze vessel with upright handles and a decorated band below the rim.",
+        "caption": "The Da Yu ding was made during King Kang’s reign in the early Western Zhou and is now in the National Museum of China. Its scale and inscription show how Zhou elites recorded authority, royal favour and lineage in ritual bronze.",
+        "credit": "Gary Todd · National Museum of China · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Western_Zhou_bronze_ding.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fullSize": true
+      }
+    ]
   },
   "eastern-zhou": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg/960px-%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
