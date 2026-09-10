@@ -1033,7 +1033,7 @@
     },
     {
       "id": "han",
-      "name": "Han Dynasty",
+      "name": "Han",
       "han": "汉",
       "start": -206,
       "end": 220,
@@ -1134,16 +1134,13 @@
         "catalog-R_HAN_W",
         "catalog-R_HAN_E"
       ],
-      "linkTitle": "Han Dynasty",
+      "linkTitle": "Han",
       "linkAliases": [
-        "Han",
-        "Han dynasty",
         "汉朝"
       ],
       "annotateNames": false,
       "searchAliases": [
-        "Han",
-        "Han Dynasty"
+        "Han"
       ],
       "pinyin": "hàn cháo",
       "image": {

@@ -1,9 +1,7 @@
 ---
-title: Han Dynasty
-link-title: Han Dynasty
+title: Han
+link-title: Han
 aliases:
-  - Han
-  - Han dynasty
   - 汉朝
 annotate-names: false
 ---

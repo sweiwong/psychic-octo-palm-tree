@@ -106,11 +106,9 @@ var CARD_NOTES = {
       "note": "The five northern dynasties ran from 907 to 960. The broader Five Dynasties and Ten Kingdoms period is conventionally dated 907–979, while individual kingdoms began before 907 or ended before 979. Population estimates for Tang China and the world vary considerably, so the share given here is an approximate range rather than a census of humanity."
     },
     "han": {
-      "name": "Han Dynasty",
-      "linkTitle": "Han Dynasty",
+      "name": "Han",
+      "linkTitle": "Han",
       "linkAliases": [
-        "Han",
-        "Han dynasty",
         "汉朝"
       ],
       "description": "The Han dynasty (汉朝 Hàn Cháo) ruled from 206 BCE to 220 CE, with a break under the Xin dynasty. Across four centuries, Han rulers turned the imperial system they inherited from the [[id:qin|Qin dynasty]] (秦朝 Qíncháo) into a durable model. They combined centralized government with kingdoms ruled by imperial relatives, gave classical learning a larger place at court, and expanded diplomatic and trading connections across Eurasia. While Rome grew from a Mediterranean republic into an empire, Han courts were building another long-lived imperial tradition in East Asia.",

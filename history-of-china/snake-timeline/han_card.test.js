@@ -8,8 +8,9 @@ const images = require('./image_data');
 const cards = apply(research, ...['early', 'middle', 'late'].map(era => require('./beginner_' + era))).all;
 const han = cards.find(card => card.id === 'han');
 
-test('Han Dynasty keeps its identity, chronology, bilingual title and sourced reading card', () => {
-  assert.equal(han.name, 'Han Dynasty');
+test('Han keeps its identity, chronology, bilingual title and sourced reading card', () => {
+  assert.equal(han.name, 'Han');
+  assert.equal(han.linkTitle, 'Han');
   assert.equal(han.nameZh, '汉朝');
   assert.equal(han.han, '汉');
   assert.equal(pinyin[han.nameZh], 'hàn cháo');

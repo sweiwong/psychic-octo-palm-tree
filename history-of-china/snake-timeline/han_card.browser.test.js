@@ -16,7 +16,8 @@ for (const width of [1440, 390]) {
         body: '<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900"/>',
       }));
       await page.goto(pathToFileURL(__dirname + '/index.html').href + '?card=han');
-      assert.equal(await page.locator('#detail h3').innerText(), 'Han Dynasty');
+      assert.equal(await page.locator('#detail h3').innerText(), 'Han');
+      assert.equal(await page.locator('[data-item="han"] .label-name').textContent(), 'Han');
       assert.equal(await page.locator('.card-chinese-name').innerText(), '汉朝');
       assert.equal(await page.locator('.card-pinyin').innerText(), 'hàn cháo');
       assert.equal(await page.locator('#detail .card-photo').count(), 4);
@@ -34,7 +35,7 @@ for (const width of [1440, 390]) {
   });
 }
 
-test('Han Dynasty is searchable in English, Chinese and pinyin', async () => {
+test('Han is searchable in English, Chinese and pinyin', async () => {
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
   try {
     await page.goto(pathToFileURL(__dirname + '/index.html').href);
@@ -42,7 +43,7 @@ test('Han Dynasty is searchable in English, Chinese and pinyin', async () => {
       await page.locator('#search').fill(query);
       const result = page.locator('#search-results [data-record="han"]');
       assert.equal(await result.count(), 1, query);
-      assert.match(await result.innerText(), /Han Dynasty/);
+      assert.match(await result.innerText(), /Han/);
     }
   } finally {
     await page.close();
