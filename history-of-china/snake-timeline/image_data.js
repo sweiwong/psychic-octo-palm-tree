@@ -217,14 +217,14 @@ const HISTORY_IMAGES = {
   },
   "eastern-zhou": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg/960px-%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
-    "width": 3574,
-    "height": 4696,
-    "credit": "三猎 · Wikimedia Commons",
+    "width": 960,
+    "height": 1261,
+    "credit": "三猎 · Zhejiang Provincial Museum / Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "alt": "A miniature bronze building containing musicians and other figures.",
-    "caption": "A Spring and Autumn-period bronze model of a building with performers. Elite ceremony and entertainment accompanied the competition between regional courts."
+    "alt": "A small bronze house model with an open front, lattice-like side walls, a peaked roof topped by a bird, and six kneeling performers inside.",
+    "caption": "A bronze house model with six kneeling performers, Spring and Autumn period (770–476 BCE), excavated from tomb 306 at Shizishan in Potang, Shaoxing; Zhejiang Provincial Museum. This period artifact comes from the Yue region and does not depict a named political event or the Eastern Zhou as a whole. The photograph was made in 2018."
   },
   "late-warring": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Warring_States_Bronze_Warriors_(9831196065).jpg/960px-Warring_States_Bronze_Warriors_(9831196065).jpg",

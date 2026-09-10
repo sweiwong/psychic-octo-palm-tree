@@ -832,10 +832,10 @@
       "start": -770,
       "end": -256,
       "color": "#ad955f",
-      "description": "The Zhou royal court moved east in 770 BCE. Kings kept their respected title, but regional rulers increasingly controlled their own armies, taxes and decisions. The Spring and Autumn and Warring States periods describe successive parts of this long era of competition.",
+      "description": "The Eastern Zhou began in 770 BCE when the Zhou court abandoned its western capital and moved east to Luoyang. Over the next 514 years, royal authority dissolved into competitive states, mass armies, and the Hundred Schools of Thought, a political and intellectual transformation that set the terms for imperial China.",
       "source": "https://en.wikipedia.org/wiki/Eastern_Zhou",
       "kind": "period",
-      "note": "770–256 BCE dates the Eastern Zhou royal house. Warring States politics continues beyond its fall to 221 BCE; the two spans describe different things.",
+      "note": "770–256 BCE dates the Eastern Zhou royal house. This atlas uses 770–481 BCE for Spring and Autumn and 481–221 BCE for Warring States; 476/475, 453 and 403 BCE are other boundaries used for the transition. Warring States politics continued after the Zhou royal house fell. Ancient casualty totals are transmitted claims, not precise modern counts.",
       "sourceIds": [
         "SR_ZHOU_E"
       ],
@@ -843,7 +843,12 @@
         "https://en.wikipedia.org/wiki/Eastern_Zhou",
         "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
         "https://www2.chnmuseum.cn/portals/0/web/zt/gudai/en/index.html",
-        "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china"
+        "https://82nd-and-fifth.metmuseum.org/toah/ht/04/eac.html",
+        "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/51bdb8a8-620f-42ef-8a96-82fc3066efe3/content",
+        "https://www.cambridge.org/core/elements/institutions-and-environment-in-ancient-southern-east-asia-3000-bce-to-300-ce/CC39D2BB0C5D015C230983E4DB2E3728",
+        "https://afe.easia.columbia.edu/main_pop/kpct/kp_4000bce-1000ce.htm",
+        "https://whc.unesco.org/en/list/1001",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/altars-of-the-soil-and-grain-are-closer-than-kin-the-qi-model-of-intellectual-participation-and-the-jixia-patronage-community/A423314171ED9CC423BFBCA2E11E9C9F"
       ],
       "nameZh": "东周",
       "category": "dynasty",
@@ -853,18 +858,50 @@
       "originalType": "regime",
       "sections": [
         {
-          "title": "Stronger states around a weaker king",
-          "text": "Rival courts developed ways to collect taxes, recruit soldiers and settle disputes. The Zhou king could lose power while government elsewhere became more forceful. Officials, teachers and military advisers travelled between courts seeking support for their ideas. Competition brought destructive wars, but also new ways to organize armies and govern larger territories."
+          "title": "From Western Zhou to Eastern Zhou",
+          "text": "Before Eastern Zhou began, [[id:western-zhou|Western Zhou]] (西周 Xī Zhōu) kings had ruled for nearly three centuries from the Wei River valley (渭河 Wèihé). In the traditional chronology, the lord of Shen and Quanrong (犬戎 Quǎnróng) forces [[id:zhou-capital-crisis|sacked Haojing]] (镐京 Hàojīng) in 771 BCE and killed King You (周幽王 Zhōu Yōuwáng). His successor, King Ping (周平王 Zhōu Píngwáng), moved the court east to Luoyang (洛阳 Luòyáng) in 770 BCE. This move gave the period its name.\n\nThe Zhou king’s royal domain contracted to a small territory around Luoyang. He retained ritual prestige and the Mandate of Heaven (天命 Tiānmìng), but regional rulers increasingly controlled their own armies, taxes and diplomacy. The king remained a respected source of titles and ceremony while practical power shifted to competing states.\n\nIn the Mediterranean, Rome became a republic after 509 BCE and Athens developed its own form of citizen government. The comparison places these regions in the same broad era. It does not imply direct contact or identical political change."
         },
         {
-          "title": "Competing ideas of good rule",
-          "text": "Rulers and thinkers still appealed to Zhou ceremonies and admired figures from the past. They disagreed about what those examples meant. Confucian and Mohist teachings, among others, grew in this world of rival answers. There was no single philosophy shared by everyone. Later labels make the arguments look more neatly divided than they were when teachers and their followers first debated them."
+          "title": "Spring and Autumn: hegemons and changing war",
+          "text": "The first phase of Eastern Zhou is the [[id:catalog-SR_SA|Spring and Autumn period]] (春秋时期 Chūnqiū Shíqī). This atlas dates it 770–481 BCE; 476 or 475 BCE are other common endpoints. Its name comes from the Spring and Autumn Annals (《春秋》 Chūnqiū), a chronicle traditionally associated with [[id:confucius|Confucius]] (孔子 Kǒngzǐ). Many small polities existed at the period’s start. By its end, a much smaller group of powerful states dominated. Chariot-riding aristocrats still led much of the earlier warfare, and ritual rules shaped elite conduct. Ambition and violence often exceeded those ideals.\n\nBecause no state could command all the others, powerful rulers acted as hegemons. Traditional lists of the Five Hegemons (五霸 Wǔbà) differ, but Duke Huan of Qi (齐桓公 Qí Huángōng) and Duke Wen of Jin (晋文公 Jìn Wéngōng) appear most often. They convened alliances, defended the Zhou order and tried to enforce agreements among states. Their authority depended on coalitions rather than an imperial office. This arrangement kept Zhou ritual authority useful while regional rulers gathered more power.\n\nJin’s leading families divided its territory among Han (韩 Hán), Zhao (赵 Zhào) and Wei (魏 Wèi) in 453 BCE. The Zhou court formally recognized the three rulers in 403 BCE. These dates mark key transitions toward the [[id:catalog-SR_WS|Warring States period]], whose starting boundary varies between historical chronologies."
+        },
+        {
+          "title": "Warring States: mass warfare and stronger governments",
+          "text": "The Warring States period (战国时期 Zhànguó Shíqī) ended in 221 BCE. Seven major powers dominated its later centuries: Qin (秦 Qín), Chu (楚 Chǔ), Qi (齐 Qí), Yan (燕 Yān), Han, Zhao and Wei. Smaller states also survived for part of the period.\n\nStates replaced many aristocratic levies with mass infantry armies drawn from registered households. Iron tools and weapons spread, crossbows became an important infantry weapon, and some northern states adopted cavalry. These forces depended on grain, labour, transport and officials who could organize them. At the Battle of Changping (长平之战 Chángpíng zhī Zhàn) in 260 BCE, Qin defeated Zhao. The Records of the Grand Historian (《史记》 Shǐjì) later claimed that Qin killed 400,000 surrendered Zhao soldiers. The figure is a transmitted claim and cannot be treated as a measured modern death toll. The account preserves the battle’s reputation for exceptional slaughter.\n\nRulers created bureaucracies staffed by appointed officials, registered households, collected taxes, issued legal rules and standardized measures. These changes differed between states and did not erase inherited privilege or local power. Qin went furthest through reforms associated with [[id:shang-yang|Shang Yang]] (商鞅 Shāng Yāng) from 356 BCE. They tied rank to farming and military service, organized households into mutual-responsibility groups and made the ruler’s commands easier to enforce. The later [[id:qin|Qin dynasty]] (秦朝 Qín Cháo) and [[id:han|Han dynasty]] (汉朝 Hàn Cháo) retained and adapted many practices developed during these centuries.\n\nEconomic output also grew. States expanded irrigation and brought more land under cultivation. Dujiangyan (都江堰 Dūjiāngyàn) in Sichuan (四川 Sìchuān) was begun around 256 BCE, then modified and enlarged over later centuries. It still controls floods and waters the Chengdu plain."
+        },
+        {
+          "title": "The Hundred Schools of Thought",
+          "text": "Interstate competition and political turmoil produced an intense period of argument later called the Hundred Schools of Thought (百家争鸣 Bǎijiā Zhēngmíng). Thinkers moved between courts and offered rulers rival answers about violence, cooperation and good government. The school labels are useful guides, but they make a diverse intellectual world look tidier than it was.\n\n[[id:confucianism-daoism|Confucian thought]] (儒家 Rújiā) grew from teachings associated with Confucius and was developed by later thinkers including [[id:mencius|Mencius]] (孟子 Mèngzǐ) and [[id:xunzi|Xunzi]] (荀子 Xúnzǐ). It connected good government with cultivated character, ritual and humane conduct. Texts associated with [[id:laozi|Laozi]] (老子 Lǎozǐ) and [[id:zhuangzi|Zhuangzi]] (庄子 Zhuāngzǐ) later became central to Daoist traditions (道家 Dàojiā), which questioned forceful control and rigid distinctions. [[id:mozi|Mozi]] (墨子 Mòzǐ) argued for impartial care and against offensive war. Legalist thinkers (法家 Fǎjiā), including [[id:han-fei|Han Fei]] (韩非 Hán Fēi), argued that clear standards, rewards and punishments could order the state without relying on a ruler’s moral example. [[id:catalog-F_SUN|The Art of War]] (《孙子兵法》 Sūnzǐ Bīngfǎ), traditionally attributed to Sunzi (孙子 Sūnzǐ), examined strategy, information and the cost of prolonged conflict.\n\nThese thinkers lived in the same broad centuries as Socrates, Plato and Aristotle. Both regions produced influential traditions amid political fragmentation, although their institutions and arguments differed. In Qi, the Jixia patronage community (稷下学宫 Jìxià Xuégōng) brought intellectual clients from different traditions to one court. Historians often call it an academy. The evidence does not support treating it as a modern university."
+        },
+        {
+          "title": "The Zhou house ends",
+          "text": "The Zhou royal house conventionally ended in 256 BCE, during the reign of King Nan (周赧王 Zhōu Nǎnwáng). The surviving accounts do not give a completely clear sequence for the final annexation of the royal territories. Warfare among the major states continued until the king of Qin, Ying Zheng (嬴政 Yíng Zhèng), [[id:unification|unified the rival states]] in 221 BCE and took the title Qin Shi Huang (秦始皇 Qín Shǐhuáng).\n\nEastern Zhou left institutions and arguments that later empires developed further. States had learned to command larger armies, register households, appoint officials and move resources across wider territories. Confucian, Mohist, Daoist and Legalist traditions all took shape amid these wars. The names Spring and Autumn and Warring States still organize how historians describe the period."
+        },
+        {
+          "title": "Did you know?",
+          "text": "Eastern Zhou lasted 514 years. Its first phase takes its name from the Spring and Autumn Annals. The later term Warring States comes from the title Strategies of the Warring States (《战国策》 Zhànguó Cè), a text compiled after the period. Dujiangyan, begun near the Eastern Zhou’s conventional end, still waters the Chengdu plain today."
         }
       ],
       "sourceLabels": {
-        "https://en.wikipedia.org/wiki/Eastern_Zhou": "Wikipedia · Eastern Zhou (reference overview)",
-        "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china": "Metropolitan Museum of Art · Shang and Zhou bronze cultures"
+        "https://82nd-and-fifth.metmuseum.org/toah/ht/04/eac.html": "Metropolitan Museum of Art · China, 1000 B.C.–1 A.D.",
+        "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/51bdb8a8-620f-42ef-8a96-82fc3066efe3/content": "Indiana University · The Warring States Period",
+        "https://www.cambridge.org/core/elements/institutions-and-environment-in-ancient-southern-east-asia-3000-bce-to-300-ce/CC39D2BB0C5D015C230983E4DB2E3728": "Cambridge Elements · Institutions and environment in ancient southern East Asia",
+        "https://afe.easia.columbia.edu/main_pop/kpct/kp_4000bce-1000ce.htm": "Columbia Asia for Educators · Key points across Chinese history",
+        "https://whc.unesco.org/en/list/1001": "UNESCO · Dujiangyan Irrigation System",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/altars-of-the-soil-and-grain-are-closer-than-kin-the-qi-model-of-intellectual-participation-and-the-jixia-patronage-community/A423314171ED9CC423BFBCA2E11E9C9F": "Early China · The Jixia patronage community"
       },
+      "related": [
+        "confucianism-daoism",
+        "western-zhou",
+        "late-warring",
+        "catalog-SR_SA",
+        "laozi",
+        "mozi",
+        "mencius",
+        "zhuangzi",
+        "xunzi",
+        "catalog-SR_WS"
+      ],
       "dateReview": {
         "status": "confirmed",
         "note": "770–256 BCE: 770 marks King Ping's move to Luoyi; 256 is the conventional end of the Zhou royal house. Warring States continues beyond this dynasty's end.",
@@ -874,16 +911,7 @@
         ]
       },
       "catalogDates": null,
-      "related": [
-        "confucianism-daoism",
-        "catalog-SR_SA",
-        "laozi",
-        "mozi",
-        "mencius",
-        "zhuangzi",
-        "xunzi",
-        "catalog-SR_WS"
-      ],
+      "annotateNames": false,
       "searchAliases": [
         "Eastern Zhou"
       ],
@@ -891,14 +919,14 @@
       "pinyin": "dōng zhōu",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg/960px-%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
-        "width": 3574,
-        "height": 4696,
-        "credit": "三猎 · Wikimedia Commons",
+        "width": 960,
+        "height": 1261,
+        "credit": "三猎 · Zhejiang Provincial Museum / Wikimedia Commons",
         "source": "https://commons.wikimedia.org/wiki/File:%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "alt": "A miniature bronze building containing musicians and other figures.",
-        "caption": "A Spring and Autumn-period bronze model of a building with performers. Elite ceremony and entertainment accompanied the competition between regional courts."
+        "alt": "A small bronze house model with an open front, lattice-like side walls, a peaked roof topped by a bird, and six kneeling performers inside.",
+        "caption": "A bronze house model with six kneeling performers, Spring and Autumn period (770–476 BCE), excavated from tomb 306 at Shizishan in Potang, Shaoxing; Zhejiang Provincial Museum. This period artifact comes from the Yue region and does not depict a named political event or the Eastern Zhou as a whole. The photograph was made in 2018."
       }
     },
     {
