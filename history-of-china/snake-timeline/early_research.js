@@ -7,7 +7,11 @@ const EARLY_RESEARCH = (() => {
   const refs = {
     xia:['https://www.cambridge.org/core/journals/early-china/article/abs/erlitou-and-the-search-for-the-xia/56BB0C6F4CA7EE7F1FD3F67CA95895A9','Early China · Erlitou and the search for Xia'],
     bronze:['https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china','Metropolitan Museum of Art · Shang and Zhou bronze cultures'],
-    anyang:['https://asia.si.edu/whats-on/exhibitions/anyang-chinas-ancient-city-of-kings/','Smithsonian National Museum of Asian Art · Anyang'],
+    anyang:['https://asia.si.edu/exhibition/anyang-chinas-ancient-city-of-kings/','Smithsonian National Museum of Asian Art · Anyang: China’s Ancient City of Kings'],
+    yinxu:['https://whc.unesco.org/en/list/1114/','UNESCO World Heritage Centre · Yin Xu'],
+    wuDing:['https://www.cambridge.org/core/journals/radiocarbon/article/radiocarbon-dating-of-oracle-bones-of-late-shang-period-in-ancient-china/38A7B64D6D538A3A7B96F912BBEE9592','Radiocarbon · Dating late Shang oracle bones'],
+    houmuwu:['https://en.chnmuseum.cn/collections_577/collection_highlights_608/archaeological_discoveries_609/202109/t20210902_251133.html','National Museum of China · Houmuwu Ding'],
+    fuHao:['https://smarthistory.org/tomb-of-fu-hao/','Smarthistory · The tomb of Fu Hao'],
     bones:['https://asia.si.edu/explore-art-culture/collections/search/edanmdm%3Afsg_FSC-O-1a-e/','Smithsonian · Oracle-bone fragments, ca. 1250–1050 BCE'],
     memory:['https://www.cambridge.org/core/journals/early-china/article/beginning-of-cultural-memory-production-in-china-and-the-memory-policy-of-the-zhou-royal-house-during-the-western-zhou-period/F63EFDF78EAE29A923ADA7D597B85F43','Early China · Zhou royal memory and bronze inscriptions'],
     ritual:['https://www.cambridge.org/core/journals/early-china/article/abs/scribes-cooks-and-artisans-breaking-zhou-tradition/A16B318BE3C4E27FB3AA7F86D138A26A','Constance Cook · Scribes, cooks and artisans'],
@@ -48,7 +52,7 @@ const EARLY_RESEARCH = (() => {
       'Large bronze vessels required access to metal, fuel and highly skilled labour. Their use in offerings and feasts made rank visible and linked living rulers with powerful ancestors. These objects therefore document more than artistic accomplishment: they expose the resources a ruling house could assemble and the ceremonies through which authority was reproduced. Monumental tombs also preserve the coercion, including human sacrifice, behind that order.',
       'An archive with a point of view',
       'Oracle inscriptions bring us unusually close to royal decisions, but their survival does not turn them into a census of Shang society. They disproportionately record what worried the king and his diviners. Communities beyond the court, and competing Bronze Age centres outside its immediate reach, must be studied through other archaeological evidence. Shang should not be imagined as a modern territorial nation occupying every place later called China.',
-      'The ribbon retains ca. 1600–1046 BCE. Late Shang writing is much more securely attested than the precise beginning of the dynasty.',[refs.anyang,wiki('Shang_dynasty')]),
+      'The ribbon retains ca. 1600–1046 BCE. Late Shang writing is much more securely attested than the precise beginning of the dynasty.',[refs.anyang,refs.yinxu,refs.bronze,refs.wuDing,refs.houmuwu,refs.fuHao]),
     'western-zhou':card(
       'The Zhou defeated Shang and established a royal order centred in the Wei River valley. They extended power through related and allied houses, settlements and military obligations. Inscribed bronzes record appointments, gifts and service, showing authority being negotiated within a network rather than administered uniformly from one capital.',
       'Gifts made obligations durable',

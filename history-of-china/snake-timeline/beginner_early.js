@@ -14,13 +14,41 @@ var BEGINNER_EARLY = (() => {
     'Why later rulers told the story',
     'Later accounts describe Xia losing power because its rulers failed to govern well. Shang then takes its place. This gave later generations a way to explain why one ruling family could rightfully replace another. The tradition may preserve memories of an older world, while also expressing what later writers believed a ruler should do.',
     '2070–1600 BCE is a conventional, approximate chronology, not a securely documented sequence of reigns. Erlitou has not been proven to be Xia.');
-  add('shang', null,
-    'Shang sites preserve large settlements and elaborate bronze vessels. At Anyang, writing on bones and turtle shells records the concerns of late Shang kings. The earlier walled centre at Zhengzhou shows how much work rulers could organize, though the dates and identities of the earliest Shang rulers are less secure.',
-    'Bronze, ancestors and power',
-    'Making large bronze vessels required metal, fuel and highly skilled workers. Rulers used the vessels in offerings and feasts that displayed rank and honoured powerful ancestors. Their beauty depended on a ruling family’s ability to command resources. Large tombs reveal a harsher side of that power: people were also killed in human sacrifices.',
-    'What the writing tells us',
-    'The inscriptions bring us close to royal decisions, but mostly record what troubled the king and the people who interpreted signs for him. They tell us much less about ordinary households. Archaeology helps fill those gaps and reveals other Bronze Age centres beyond the court’s reach. Shang territory should not be confused with the borders of China today.',
-    'About 1600–1046 BCE is the conventional range. Late Shang writing is much more securely documented than the dynasty’s precise beginning.');
+  revisions.shang = {
+    annotateNames: false,
+    description: 'The Shang (商朝 Shāng Cháo) was a Bronze Age royal dynasty centred in the Yellow River (黄河 Huáng Hé) valley of northern China. Its conventional dates are about 1600–1046 BCE, though the evidence is strongest for its later centuries. At Anyang (安阳 Ānyáng), royal tombs, bronze workshops and inscribed bones show a court that tied warfare, farming, craft production and communication with ancestors into one system of power.',
+    sections: [
+      {
+        title: 'From later tradition to contemporary evidence',
+        text: 'Later histories say Tang of Shang (商汤 Shāng Tāng) defeated the last ruler of [[id:xia|Xia]] (夏朝 Xià Cháo) and founded the Shang dynasty. These accounts were written long after the events, so they preserve a later tradition rather than a contemporary record of the conquest. Archaeological sites show that early Shang rulers could organize large settlements, walls, workshops and labour, but they do not confirm every king or date in the transmitted story. The evidence becomes much fuller at Yinxu (殷墟 Yīnxū) near modern Anyang, the dynasty’s last capital.'
+      },
+      {
+        title: 'Kings, ancestors and royal decisions',
+        text: 'Shang kings sought guidance from royal ancestors about harvests, weather, illness, warfare and other affairs. Divination made communication with the dead part of government: the same court that interpreted signs also directed soldiers, workers and valuable materials. Wu Ding (武丁 Wǔ Dīng), who probably ruled in the late thirteenth century BCE, is the earliest Shang king represented by a large body of writing from his own time. Radiocarbon modelling of selected oracle bones is consistent with this broad placement, but it does not establish exact years for his reign.'
+      },
+      {
+        title: 'A general, consort and ritual leader',
+        text: '[[id:fu-hao|Fu Hao]] (妇好 Fù Hǎo), one of Wu Ding’s consorts, appears in oracle inscriptions in connection with military campaigns and royal rituals. Her tomb, discovered intact at Yinxu in 1976, contained around 1.6 tonnes of bronze objects, about 6,900 cowry shells and numerous jades. Because the tomb had not been looted, its contents can be connected with a named woman known from contemporary writing. Together, the inscriptions and burial goods show that Fu Hao held an exceptional position at court and could exercise authority in both war and ritual.'
+      },
+      {
+        title: 'Questions written on bone',
+        text: 'Shang diviners applied heat to turtle shells and cattle shoulder blades, then interpreted the cracks. Inscriptions recorded the questions put to ancestors and, in some cases, what followed. This [[id:oracle|oracle-bone writing]] (甲骨文 Jiǎgǔwén) is the earliest securely attested Chinese writing and contains forms ancestral to later Chinese characters. The records bring us close to the concerns of the king and his diviners, but they are not a complete account of Shang society. Farmers, craft workers, captives and communities beyond the court appear mainly through archaeology or through the narrow viewpoint of royal records.'
+      },
+      {
+        title: 'Bronze made power visible',
+        text: 'Shang craftspeople used piece-mould casting to make ritual vessels. They formed sectional clay moulds around a core, then poured bronze into the space between them. The method produced vessels with complex shapes and decoration, including the animal-like mask now called the taotie (饕餮纹 tāotièwén). Making these objects required metal, fuel, skilled workers and organized workshops. The Houmuwu Ding (后母戊鼎 Hòumǔwù Dǐng), a rectangular ritual vessel weighing 832.84 kilograms, makes that command of labour and material visible. Used in offerings and feasts, such vessels displayed rank and connected living elites with their ancestors.'
+      },
+      {
+        title: 'Work, rank and warfare',
+        text: 'Most people supported an agricultural economy based on crops including millet and wheat. Above them stood royal and noble households that controlled land, labour, workshops and military expeditions; specialized artisans produced bronzes, weapons, chariot fittings and other elite goods. Human sacrifice at royal sites reveals the violence behind this order, especially toward captives and people with little power. Horse-drawn chariots also appear in late Shang warfare and elite burials. They were costly, limited vehicles associated with high-status warriors rather than evidence that every Shang army fought from chariots.'
+      },
+      {
+        title: 'Anyang and the Zhou conquest',
+        text: 'At Yinxu, palace foundations, royal tombs, roads, workshops and oracle bones preserve the clearest picture of the late Shang court. Shang rule ended conventionally in 1046 BCE, when Zhou forces defeated the last king at the [[id:catalog-E_SHANG_2|Battle of Muye]] (牧野之战 Mùyě zhī Zhàn). Zhou rulers explained their victory by arguing that Heaven could withdraw support from a ruling house that governed badly. This claim developed into the [[id:western-zhou|Mandate of Heaven]] (天命 Tiānmìng), which gave later rulers a language for defending conquest and judging political failure.'
+      }
+    ],
+    note: 'About 1600–1046 BCE is the conventional chronology. The beginning of Shang rule and the traditional account of Tang overthrowing Xia are less securely documented than the late Shang court at Anyang. Radiocarbon modelling supports a broad late-thirteenth-century BCE setting for oracle bones associated with Wu Ding, not exact reign dates. The Battle of Muye is conventionally dated to 1046 BCE.'
+  };
   add('western-zhou', null,
     'After defeating Shang, Zhou rulers claimed that Heaven had given them the right to govern: the Mandate of Heaven. Their power depended on regional lords and influential families. Land grants and family ties helped hold this order together, though it did not work identically everywhere.',
     'Promises cast in bronze',

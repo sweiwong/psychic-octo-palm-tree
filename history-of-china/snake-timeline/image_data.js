@@ -194,15 +194,29 @@ const HISTORY_IMAGES = {
     "caption": "An Erlitou pottery jue in Luoyang Museum. Archaeological evidence for Erlitou does not by itself establish the names or reigns of the Xia kings."
   },
   "shang": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Tomb_Fu_Hao_YinXu.jpg",
-    "width": 640,
-    "height": 480,
-    "credit": "Chris Gyford · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Tomb_Fu_Hao_YinXu.jpg",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "alt": "Bronze vessel forms arranged in a reconstructed tomb chamber.",
-    "caption": "A reconstructed display of Fu Hao’s tomb at Yinxu, photographed in 2007. It interprets the archaeological burial and must not be mistaken for original grave goods still lying in their excavated positions."
+    "src": "https://images.metmuseum.org/CRDImages/as/original/DP164965.jpg",
+    "width": 1501,
+    "height": 2000,
+    "credit": "Unidentified Shang bronze caster · The Metropolitan Museum of Art",
+    "source": "https://www.metmuseum.org/art/collection/search/61239",
+    "license": "Public domain",
+    "licenseUrl": "https://www.metmuseum.org/policies/frequently-asked-questions-image-and-data-resources",
+    "alt": "Three-legged Shang bronze ding with upright handles and a band of symmetrical animal-mask decoration.",
+    "caption": "A Shang ritual tripod cauldron (ding), twelfth–eleventh century BCE. Bronze vessels joined food offerings, ancestor ritual and elite authority; this example’s animal-mask decoration shows the control possible with piece-mould casting.",
+    "sectionImages": [
+      {
+        "section": "Questions written on bone",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Chinese_oracle_bone_%2816th-10th_C_BC%29_-_BL_Or._7694.jpg",
+        "width": 1670,
+        "height": 1714,
+        "credit": "Unidentified Shang diviner or scribe · British Library",
+        "source": "https://commons.wikimedia.org/wiki/File:Chinese_oracle_bone_%2816th-10th_C_BC%29_-_BL_Or._7694.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "Fragmentary ox shoulder blade with rows of Shang characters and dark circular heat pits used for divination.",
+        "caption": "A late Shang oracle bone from the British Library’s Couling–Chalfant collection. Diviners heated prepared pits to create cracks, then recorded royal questions and prognostications in writing ancestral to modern Chinese characters."
+      }
+    ]
   },
   "western-zhou": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Early_Western_Zhou_Bronze_Gui_01.jpg/960px-Early_Western_Zhou_Bronze_Gui_01.jpg",
