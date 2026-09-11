@@ -803,7 +803,87 @@ const HISTORY_IMAGES = {
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "alt": "A green-grey celadon ewer with a rounded body, tall neck, arched handle and chicken-head spout.",
-    "caption": "A Yue-ware chicken-headed ewer made in the fourth or fifth century during the Eastern Jin period. It shows celadon production in the dynasty's southern cultural world; it does not depict a political event."
+    "caption": "A Yue-ware chicken-headed ewer made in the fourth or fifth century during the Eastern Jin period. It shows celadon production in the dynasty's southern cultural world; it does not depict a political event.",
+    "sectionImages": [
+      {
+        "section": "The princes turned protection into civil war",
+        "src": "https://media.artmuseum.princeton.edu/iiif/3/collection/PUAMSTU2021_64498/full/max/0/default.jpg",
+        "width": 5325,
+        "height": 6656,
+        "credit": "Maker unidentified · Princeton University Art Museum · Museum purchase, Fowler McCormick, Class of 1921, Fund",
+        "source": "https://artmuseum.princeton.edu/art/collections/objects/3609",
+        "license": "Public domain",
+        "licenseUrl": "https://artmuseum.princeton.edu/art/our-collections/image-use-and-access",
+        "alt": "An earthenware tomb figure of a standing warrior in a long robe, with one arm incomplete and traces of red and black pigment.",
+        "caption": "A Western Jin tomb figure of a standing warrior, still carrying traces of red and black pigment. It evokes the military personnel behind the dynasty's rival commands, but it cannot be tied to a named prince, army or campaign.",
+        "fullSize": true
+      },
+      {
+        "section": "A refugee court built through bargains",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/General_southward_migrations_during_the_Upheaval_of_the_Five_Barbarians.svg",
+        "width": 569,
+        "height": 337,
+        "credit": "ND381 · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:General_southward_migrations_during_the_Upheaval_of_the_Five_Barbarians.svg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "alt": "Map of China with arrows tracing broad migration routes from the north toward the Yangtze basin and southeastern regions.",
+        "caption": "A modern reconstruction of major southward migration routes after the Western Jin collapse. The arrows summarize broad population movements toward the Yangtze basin; modern provincial borders, place names and coastline are included only for orientation.",
+        "fullSize": true
+      },
+      {
+        "section": "A refugee court built through bargains",
+        "src": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/64920/206565/main-image",
+        "width": 1200,
+        "height": 900,
+        "credit": "Maker unidentified · The Metropolitan Museum of Art · Purchase, Bequest of Dorothy Graham Bennett, 2002",
+        "source": "https://www.metmuseum.org/art/collection/search/64920",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "A gilt-bronze oval plaque set with blue, green and red stones around a central cicada ornament.",
+        "caption": "This jeweled Eastern Jin plaque once decorated a government official's hat. Its gold, lapis, turquoise, coral and cicada emblem turn the court's hierarchy into something worn on the body; it does not identify a particular official or clan.",
+        "fullSize": true
+      },
+      {
+        "section": "Fei River and the survival of the south",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Eastern_Jin_Dynasty_376_CE.png",
+        "width": 556,
+        "height": 537,
+        "credit": "Ian Kiu, after Albert Herrmann · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Eastern_Jin_Dynasty_376_CE.png",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "alt": "Map showing Former Qin across northern China and Eastern Jin south of the Yangtze in 376.",
+        "caption": "A modern reconstruction of Eastern Jin and Former Qin in 376, seven years before the Fei River campaign. It shows the scale of the north-south division rather than exact surveyed frontiers.",
+        "fullSize": true
+      },
+      {
+        "section": "Culture in an age of displacement",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/08/%E9%99%86%E6%9C%BA%E8%8D%89%E9%9A%B6%E5%B9%B3%E5%A4%8D%E5%B8%96%E5%8D%B7.png",
+        "width": 4796,
+        "height": 2534,
+        "credit": "Traditionally attributed to Lu Ji · Palace Museum, Beijing · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%99%86%E6%9C%BA%E8%8D%89%E9%9A%B6%E5%B9%B3%E5%A4%8D%E5%B8%96%E5%8D%B7.png",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "alt": "A horizontal sheet of aged hemp paper covered with closely spaced lines of dark cursive Chinese calligraphy.",
+        "caption": "A personal letter traditionally identified as Lu Ji's Pingfu Tie (平复帖), written on hemp paper around the turn of the fourth century. The Palace Museum describes it as the earliest surviving authentic calligraphy by a named Western Jin writer, although its attribution and exact date have been questioned.",
+        "fullSize": true
+      },
+      {
+        "section": "Culture in an age of displacement",
+        "src": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/44733/154222/main-image",
+        "width": 931,
+        "height": 1200,
+        "credit": "Maker unidentified · The Metropolitan Museum of Art · Charlotte C. and John C. Weber Collection",
+        "source": "https://www.metmuseum.org/art/collection/search/44733",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "A tall green-brown funerary urn crowded with miniature buildings, animals, figures and a ring of seated Buddhas.",
+        "caption": "A Western Jin funerary urn joins a heavenly palace and auspicious animals with a ring of seated Buddhas. It shows Buddhist imagery entering older Chinese visions of the afterlife; the vessel is burial evidence, not a picture of ordinary daily worship.",
+        "fullSize": true
+      }
+    ]
   },
   "sixteen": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Buddha_dated_338,_China,_Hebei,_Later_Zhao_kingdom,_bronze_with_gilding_-_Asian_Art_Museum_-_San_Francisco,_CA_-_DSC07620.jpg/960px-Buddha_dated_338,_China,_Hebei,_Later_Zhao_kingdom,_bronze_with_gilding_-_Asian_Art_Museum_-_San_Francisco,_CA_-_DSC07620.jpg",
