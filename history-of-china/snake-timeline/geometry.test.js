@@ -6,10 +6,12 @@ const history = require('./history_data.js');
 for (const width of [280, 350, 499, 700, 1020, 1300]) {
   test(`Continuous and proportional geometry at ${width}px`, () => {
     const g = create(width);
-    assert.deepEqual(g.point(-2070), g.at(0));
-    assert.equal(g.point(-2070).x,g.left-g.radius);
+    const xia = history.all.find(item => item.id === 'xia');
+    assert.equal(xia.start, -2070);
+    assert.deepEqual(g.point(xia.start), g.at(0));
+    assert.equal(g.point(xia.start).x, 48);
     assert.deepEqual(g.point(2026), g.at(g.length));
-    assert.ok(Math.abs(g.point(2026).x-((g.rows-1)%2===0?g.right+g.radius:g.left-g.radius))<1e-9);
+    assert.ok(Math.abs(g.point(2026).x - ((g.rows - 1) % 2 === 0 ? width - 48 : 48)) < 1e-9);
     assert.equal(g.distance(-3000), 0);
     assert.equal(g.distance(3000), g.length);
     const year = g.length / (ordinal(2026) - ordinal(-2070));

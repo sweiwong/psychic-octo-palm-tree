@@ -687,11 +687,11 @@
       "start": -1600,
       "end": -1046,
       "color": "#758879",
-      "description": "Shang sites preserve large settlements and elaborate bronze vessels. At Anyang (安阳), writing on bones and turtle shells records the concerns of late Shang kings. The earlier walled centre at Zhengzhou (郑州) shows how much work rulers could organize, though the dates and identities of the earliest Shang rulers are less secure.",
+      "description": "The Shang (商朝 Shāng Cháo) was a Bronze Age royal dynasty centred in the Yellow River (黄河 Huáng Hé) valley of northern China. Its conventional dates are about 1600–1046 BCE, though the evidence is strongest for its later centuries. At Anyang (安阳 Ānyáng), royal tombs, bronze workshops and inscribed bones show a court that tied warfare, farming, craft production and communication with ancestors into one system of power.",
       "source": "https://en.wikipedia.org/wiki/Shang_dynasty",
       "kind": "period",
       "approx": true,
-      "note": "About 1600–1046 BCE is the conventional range. Late Shang writing is much more securely documented than the dynasty’s precise beginning.",
+      "note": "About 1600–1046 BCE is the conventional chronology. The beginning of Shang rule and the traditional account of Tang overthrowing Xia are less securely documented than the late Shang court at Anyang. Radiocarbon modelling supports a broad late-thirteenth-century BCE setting for oracle bones associated with Wu Ding, not exact reign dates. The Battle of Muye is conventionally dated to 1046 BCE.",
       "sourceIds": [
         "R_SHANG"
       ],
@@ -699,7 +699,12 @@
         "https://en.wikipedia.org/wiki/Shang_dynasty",
         "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
         "https://umma.umich.edu/objects/gu-libation-goblet-one-of-a-pair-with-1948-1-118-1948-1-117/",
-        "https://asia.si.edu/whats-on/exhibitions/anyang-chinas-ancient-city-of-kings/",
+        "https://asia.si.edu/exhibition/anyang-chinas-ancient-city-of-kings/",
+        "https://whc.unesco.org/en/list/1114/",
+        "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china",
+        "https://www.cambridge.org/core/journals/radiocarbon/article/radiocarbon-dating-of-oracle-bones-of-late-shang-period-in-ancient-china/38A7B64D6D538A3A7B96F912BBEE9592",
+        "https://en.chnmuseum.cn/collections_577/collection_highlights_608/archaeological_discoveries_609/202109/t20210902_251133.html",
+        "https://smarthistory.org/tomb-of-fu-hao/",
         "https://faculty.risd.edu/bcampbel/Dematte_EarlyDynasties_fromArchaeologica%5B1%5D.pdf"
       ],
       "nameZh": "商",
@@ -710,17 +715,41 @@
       "originalType": "regime",
       "sections": [
         {
-          "title": "Bronze, ancestors and power",
-          "text": "Making large bronze vessels required metal, fuel and highly skilled workers. Rulers used the vessels in offerings and feasts that displayed rank and honoured powerful ancestors. Their beauty depended on a ruling family’s ability to command resources. Large tombs reveal a harsher side of that power: people were also killed in human sacrifices."
+          "title": "From later tradition to contemporary evidence",
+          "text": "Later histories say Tang of Shang (商汤 Shāng Tāng) defeated the last ruler of [[id:xia|Xia]] (夏朝 Xià Cháo) and founded the Shang dynasty. These accounts were written long after the events, so they preserve a later tradition rather than a contemporary record of the conquest. Archaeological sites show that early Shang rulers could organize large settlements, walls, workshops and labour, but they do not confirm every king or date in the transmitted story. The evidence becomes much fuller at Yinxu (殷墟 Yīnxū) near modern Anyang, the dynasty’s last capital."
         },
         {
-          "title": "What the writing tells us",
-          "text": "The inscriptions bring us close to royal decisions, but mostly record what troubled the king and the people who interpreted signs for him. They tell us much less about ordinary households. Archaeology helps fill those gaps and reveals other Bronze Age centres beyond the court’s reach. Shang territory should not be confused with the borders of China today."
+          "title": "Kings, ancestors and royal decisions",
+          "text": "Shang kings sought guidance from royal ancestors about harvests, weather, illness, warfare and other affairs. Divination made communication with the dead part of government: the same court that interpreted signs also directed soldiers, workers and valuable materials. Wu Ding (武丁 Wǔ Dīng), who probably ruled in the late thirteenth century BCE, is the earliest Shang king represented by a large body of writing from his own time. Radiocarbon modelling of selected oracle bones is consistent with this broad placement, but it does not establish exact years for his reign."
+        },
+        {
+          "title": "A general, consort and ritual leader",
+          "text": "[[id:fu-hao|Fu Hao]] (妇好 Fù Hǎo), one of Wu Ding’s consorts, appears in oracle inscriptions in connection with military campaigns and royal rituals. Her tomb, discovered intact at Yinxu in 1976, contained around 1.6 tonnes of bronze objects, about 6,900 cowry shells and numerous jades. Because the tomb had not been looted, its contents can be connected with a named woman known from contemporary writing. Together, the inscriptions and burial goods show that Fu Hao held an exceptional position at court and could exercise authority in both war and ritual."
+        },
+        {
+          "title": "Questions written on bone",
+          "text": "Shang diviners applied heat to turtle shells and cattle shoulder blades, then interpreted the cracks. Inscriptions recorded the questions put to ancestors and, in some cases, what followed. This [[id:oracle|oracle-bone writing]] (甲骨文 Jiǎgǔwén) is the earliest securely attested Chinese writing and contains forms ancestral to later Chinese characters. The records bring us close to the concerns of the king and his diviners, but they are not a complete account of Shang society. Farmers, craft workers, captives and communities beyond the court appear mainly through archaeology or through the narrow viewpoint of royal records."
+        },
+        {
+          "title": "Bronze made power visible",
+          "text": "Shang craftspeople used piece-mould casting to make ritual vessels. They formed sectional clay moulds around a core, then poured bronze into the space between them. The method produced vessels with complex shapes and decoration, including the animal-like mask now called the taotie (饕餮纹 tāotièwén). Making these objects required metal, fuel, skilled workers and organized workshops. The Houmuwu Ding (后母戊鼎 Hòumǔwù Dǐng), a rectangular ritual vessel weighing 832.84 kilograms, makes that command of labour and material visible. Used in offerings and feasts, such vessels displayed rank and connected living elites with their ancestors."
+        },
+        {
+          "title": "Work, rank and warfare",
+          "text": "Most people supported an agricultural economy based on crops including millet and wheat. Above them stood royal and noble households that controlled land, labour, workshops and military expeditions; specialized artisans produced bronzes, weapons, chariot fittings and other elite goods. Human sacrifice at royal sites reveals the violence behind this order, especially toward captives and people with little power. Horse-drawn chariots also appear in late Shang warfare and elite burials. They were costly, limited vehicles associated with high-status warriors rather than evidence that every Shang army fought from chariots."
+        },
+        {
+          "title": "Anyang and the Zhou conquest",
+          "text": "At Yinxu, palace foundations, royal tombs, roads, workshops and oracle bones preserve the clearest picture of the late Shang court. Shang rule ended conventionally in 1046 BCE, when Zhou forces defeated the last king at the [[id:catalog-E_SHANG_2|Battle of Muye]] (牧野之战 Mùyě zhī Zhàn). Zhou rulers explained their victory by arguing that Heaven could withdraw support from a ruling house that governed badly. This claim developed into the [[id:western-zhou|Mandate of Heaven]] (天命 Tiānmìng), which gave later rulers a language for defending conquest and judging political failure."
         }
       ],
       "sourceLabels": {
-        "https://asia.si.edu/whats-on/exhibitions/anyang-chinas-ancient-city-of-kings/": "Smithsonian National Museum of Asian Art · Anyang",
-        "https://en.wikipedia.org/wiki/Shang_dynasty": "Wikipedia · Shang dynasty (reference overview)",
+        "https://asia.si.edu/exhibition/anyang-chinas-ancient-city-of-kings/": "Smithsonian National Museum of Asian Art · Anyang: China’s Ancient City of Kings",
+        "https://whc.unesco.org/en/list/1114/": "UNESCO World Heritage Centre · Yin Xu",
+        "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china": "Metropolitan Museum of Art · Shang and Zhou bronze cultures",
+        "https://www.cambridge.org/core/journals/radiocarbon/article/radiocarbon-dating-of-oracle-bones-of-late-shang-period-in-ancient-china/38A7B64D6D538A3A7B96F912BBEE9592": "Radiocarbon · Dating late Shang oracle bones",
+        "https://en.chnmuseum.cn/collections_577/collection_highlights_608/archaeological_discoveries_609/202109/t20210902_251133.html": "National Museum of China · Houmuwu Ding",
+        "https://smarthistory.org/tomb-of-fu-hao/": "Smarthistory · The tomb of Fu Hao",
         "https://faculty.risd.edu/bcampbel/Dematte_EarlyDynasties_fromArchaeologica%5B1%5D.pdf": "Paola Demattè · Early Chinese dynasties and Zhengzhou archaeology"
       },
       "dateReview": {
@@ -737,21 +766,36 @@
         "sanxingdui-pits",
         "fu-hao"
       ],
+      "annotateNames": false,
       "searchAliases": [
         "Shang"
       ],
       "linkTitle": "Shang",
       "pinyin": "Shāng",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Tomb_Fu_Hao_YinXu.jpg",
-        "width": 640,
-        "height": 480,
-        "credit": "Chris Gyford · Wikimedia Commons",
-        "source": "https://commons.wikimedia.org/wiki/File:Tomb_Fu_Hao_YinXu.jpg",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-        "alt": "Bronze vessel forms arranged in a reconstructed tomb chamber.",
-        "caption": "A reconstructed display of Fu Hao’s tomb at Yinxu, photographed in 2007. It interprets the archaeological burial and must not be mistaken for original grave goods still lying in their excavated positions."
+        "src": "https://images.metmuseum.org/CRDImages/as/original/DP164965.jpg",
+        "width": 1501,
+        "height": 2000,
+        "credit": "Unidentified Shang bronze caster · The Metropolitan Museum of Art",
+        "source": "https://www.metmuseum.org/art/collection/search/61239",
+        "license": "Public domain",
+        "licenseUrl": "https://www.metmuseum.org/policies/frequently-asked-questions-image-and-data-resources",
+        "alt": "Three-legged Shang bronze ding with upright handles and a band of symmetrical animal-mask decoration.",
+        "caption": "A Shang ritual tripod cauldron (ding), twelfth–eleventh century BCE. Bronze vessels joined food offerings, ancestor ritual and elite authority; this example’s animal-mask decoration shows the control possible with piece-mould casting.",
+        "sectionImages": [
+          {
+            "section": "Questions written on bone",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Chinese_oracle_bone_%2816th-10th_C_BC%29_-_BL_Or._7694.jpg",
+            "width": 1670,
+            "height": 1714,
+            "credit": "Unidentified Shang diviner or scribe · British Library",
+            "source": "https://commons.wikimedia.org/wiki/File:Chinese_oracle_bone_%2816th-10th_C_BC%29_-_BL_Or._7694.jpg",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "alt": "Fragmentary ox shoulder blade with rows of Shang characters and dark circular heat pits used for divination.",
+            "caption": "A late Shang oracle bone from the British Library’s Couling–Chalfant collection. Diviners heated prepared pits to create cracks, then recorded royal questions and prognostications in writing ancestral to modern Chinese characters."
+          }
+        ]
       }
     },
     {
@@ -761,11 +805,11 @@
       "start": -1046,
       "end": -771,
       "color": "#9b8253",
-      "description": "After defeating Shang, Zhou rulers claimed that Heaven had given them the right to govern: the Mandate of Heaven. Their power depended on regional lords and influential families. Land grants and family ties helped hold this order together, though it did not work identically everywhere.",
+      "description": "The Western Zhou took power around 1046 BCE, after King Wu of Zhou (周武王 Zhōu Wǔwáng) defeated the [[id:shang|Shang dynasty (商朝 Shāngcháo)]] at the [[id:catalog-E_SHANG_2|Battle of Muye (牧野之战 Mùyě zhī Zhàn)]]. Over the next 275 years, Zhou rulers built a network of kin and allies, developed the Mandate of Heaven, and spread their ritual and bronze culture across the Yellow River plain.",
       "source": "https://en.wikipedia.org/wiki/Western_Zhou",
       "kind": "period",
       "approx": true,
-      "note": "1046 BCE is a widely used conquest date, but early Zhou chronology remains debated. “Feudal” is an imperfect comparison, not an exact match to medieval Europe.",
+      "note": "1046 BCE is a widely used conquest date, but early Zhou chronology remains debated. “Feudal” is an imperfect comparison with medieval Europe. Western Zhou boundaries shifted, and the court often ruled indirectly through regional lords, so precise area and population estimates are not reliable.",
       "sourceIds": [
         "SR_ZHOU_W"
       ],
@@ -773,6 +817,11 @@
         "https://en.wikipedia.org/wiki/Western_Zhou",
         "https://www.metmuseum.org/art/collection/search/42168",
         "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
+        "https://openstax.org/books/world-history-volume-1/pages/5-1-ancient-china",
+        "https://harvardartmuseums.org/collections/object/200497",
+        "https://ctext.org/text.pl?node=12359&if=en&remap=gb",
+        "https://www.cambridge.org/core/journals/early-china/article/xinian-an-ancient-historical-text-from-the-qinghua-university-collection-of-bamboo-books/426F77FC5F669A0CB240EB650AD1A3FE",
+        "https://www.lhp.sdu.edu.cn/__local/A/EC/81/0CC1965B5469B3C1C017B45315A_F37EC24E_3458DD.pdf",
         "https://www.cambridge.org/core/journals/early-china/article/abs/scribes-cooks-and-artisans-breaking-zhou-tradition/A16B318BE3C4E27FB3AA7F86D138A26A"
       ],
       "nameZh": "西周",
@@ -783,18 +832,49 @@
       "originalType": "regime",
       "sections": [
         {
-          "title": "Promises cast in bronze",
-          "text": "A lord receiving an appointment or reward could have it recorded on a bronze vessel used in ceremonies for ancestors. The inscription celebrated the king’s favour and helped the recipient’s descendants claim their place. Family relationships mattered, but warfare, marriage and service also bound lords to the court. The king needed these alliances to exercise power at a distance."
+          "title": "From Shang to Zhou",
+          "text": "The Shang ruled from their final capital at Yin (殷 Yīn) on the North China Plain. Their last king, Di Xin (帝辛 Dì Xīn), faced a coalition led by the Zhou, a western state based in the Wei River valley (渭河流域 Wèi Hé Liúyù). Victory at Muye gave the Zhou control, but conquest still needed a moral explanation. Zhou rulers claimed that Heaven entrusted power to virtuous kings and withdrew that trust when they failed. Known as the Mandate of Heaven (天命 Tiānmìng), this idea legitimized the fall of the Shang and became a lasting framework for explaining dynastic rise and collapse."
         },
         {
-          "title": "Explaining the conquest",
-          "text": "Stories of the Zhou founders gave later rulers and noble families respected ancestors to follow. They also explained how overthrowing Shang could be justified: a ruling family might lose Heaven’s support. This argument served a dynasty born through conquest. As conditions changed, later generations retold the founding story to support their own claims about good government."
+          "title": "A network of kin and allies",
+          "text": "Western Zhou rule operated through fengjian (封建 fēngjiàn), often translated as feudalism. The king granted land and titles to relatives, allies, and members of the former Shang elite. The late Warring States thinker Xunzi (荀子 Xúnzǐ) claimed that the early Zhou established 71 states, with 53 ruled by members of the royal Ji (姬 Jī) clan. These figures come from a much later account, rather than a surviving Western Zhou record. Regional lords owed the king military service, tribute, and ritual deference. In return, they governed their territories with considerable autonomy. Kinship and ritual held this network together more than a central bureaucracy did. The Duke of Zhou (周公 Zhōu Gōng) governed for the young King Cheng of Zhou (周成王 Zhōu Chéngwáng) and became a model of loyal service in later tradition. He established an eastern centre at Chengzhou (成周 Chéngzhōu), near modern Luoyang (洛阳 Luòyáng), to oversee former Shang lands. Haojing (镐京 Hàojīng), near modern Xi’an, remained the main royal seat. The two centres helped the Zhou court govern territories in both the Wei River valley and the North China Plain."
+        },
+        {
+          "title": "Ritual, bronze and writing",
+          "text": "Ritual made rank and authority visible. The king performed sacrifices to Heaven and the royal ancestors, while regional lords conducted ceremonies suited to their status. Bronze vessels stood at the centre of ancestral rites. Their inscriptions recorded royal appointments, land grants, military campaigns, and legal disputes. These records provide direct evidence for Western Zhou history alongside later works such as the Book of Documents (尚书 Shàngshū) and the early layers of the Classic of Poetry (诗经 Shījīng). Zhou bronze inscriptions became longer than many Shang examples, sometimes reaching hundreds of characters. Vessels such as the Da Yu Ding (大盂鼎 Dà Yú Dǐng) and Mao Gong Ding (毛公鼎 Máo Gōng Dǐng) preserve accounts of appointments, gifts, victories, lineage, and royal favour. Later thinkers, including [[id:confucius|Confucius (孔子 Kǒngzǐ)]], looked back to Zhou ritual as a model for social and political order."
+        },
+        {
+          "title": "Military and administration",
+          "text": "The Zhou king commanded royal armies based in the west and at Chengzhou. He appointed ministers and judges and sent officials to regional courts. Over time, ties between the royal house and its lords weakened. Regional rulers intermarried, fought one another, and enlarged their own territories as the royal domain contracted. Campaigns against northern peoples, including the Xianyun (猃狁 Xiǎnyǔn), placed further pressure on the court. In 841 BCE, King Li of Zhou (周厉王 Zhōu Lìwáng) was driven into exile during the crisis known as the [[id:zhou-gonghe|Gonghe period (共和 Gònghé)]]. The form of government that followed remains disputed. The Shiji (史记 Shǐjì) describes two nobles governing jointly, while the excavated Xinian (系年 Xìnián) presents an account centred on Gongbo He (共伯和 Gòngbó Hé). The year 841 BCE begins the conventional continuous chronology of Chinese history because traditional sources provide an unbroken sequence of annual dates from that point onward."
+        },
+        {
+          "title": "Collapse",
+          "text": "Western Zhou rule ended in 771 BCE. [[id:zhou-capital-crisis|King You of Zhou (周幽王 Zhōu Yōuwáng)]] faced a coalition of disaffected lords and the Quanrong (犬戎 Quǎnróng), a northwestern group. The attackers sacked Haojing and killed the king. King You’s son, King Ping of Zhou (周平王 Zhōu Píngwáng), moved the royal court east to Chengzhou in 770 BCE. Historians use this move to mark the beginning of the [[id:eastern-zhou|Eastern Zhou (东周 Dōng Zhōu)]]."
+        },
+        {
+          "title": "Legacy",
+          "text": "Western Zhou institutions shaped later Chinese political thought. The Mandate of Heaven supplied a moral explanation for changes of rule, while fengjian influenced later ideas about the duties linking kings and regional lords. Bronze inscriptions and ritual practices also helped maintain a shared elite culture across the Yellow River region. Confucius later presented his work as the transmission of an inherited tradition and treated early Zhou culture as an important model."
+        },
+        {
+          "title": "A long dynasty and an early name",
+          "text": "By the conventional dates assigned to its royal line, the Zhou dynasty lasted from around 1046 to 256 BCE, about 790 years. Under that method of dating, it is the longest-lasting Chinese dynasty. The term Zhongguo (中国 Zhōngguó) appears in Western Zhou bronze inscriptions, where it referred to a central territory or capital region within the Zhou world. Reading it as the name of the modern Chinese nation-state would be anachronistic."
         }
       ],
       "sourceLabels": {
-        "https://en.wikipedia.org/wiki/Western_Zhou": "Wikipedia · Western Zhou (reference overview)",
+        "https://openstax.org/books/world-history-volume-1/pages/5-1-ancient-china": "OpenStax World History · Ancient China",
+        "https://harvardartmuseums.org/collections/object/200497": "Harvard Art Museums · Western Zhou ritual food vessel",
+        "https://ctext.org/text.pl?node=12359&if=en&remap=gb": "Chinese Text Project · Xunzi on the Zhou states",
+        "https://www.cambridge.org/core/journals/early-china/article/xinian-an-ancient-historical-text-from-the-qinghua-university-collection-of-bamboo-books/426F77FC5F669A0CB240EB650AD1A3FE": "Early China · The Xinian and the Gonghe period",
+        "https://www.lhp.sdu.edu.cn/__local/A/EC/81/0CC1965B5469B3C1C017B45315A_F37EC24E_3458DD.pdf": "Journal of Chinese Humanities · The earliest Zhongguo",
         "https://www.cambridge.org/core/journals/early-china/article/abs/scribes-cooks-and-artisans-breaking-zhou-tradition/A16B318BE3C4E27FB3AA7F86D138A26A": "Constance Cook · Scribes, cooks and artisans"
       },
+      "related": [
+        "shang",
+        "catalog-E_SHANG_2",
+        "eastern-zhou",
+        "zhou-gonghe",
+        "zhou-capital-crisis"
+      ],
       "dateReview": {
         "status": "approximate",
         "note": "Approximately 1046–771 BCE follows the Met. The reconstructed start should not be presented as unquestionably exact. Existing UI already labels the date approximate; preserve its fuller description.",
@@ -804,25 +884,51 @@
         ]
       },
       "catalogDates": null,
-      "related": [
-        "zhou-gonghe",
-        "zhou-capital-crisis"
-      ],
+      "annotateNames": false,
       "searchAliases": [
         "Western Zhou"
       ],
       "linkTitle": "Western Zhou",
       "pinyin": "xī zhōu",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Early_Western_Zhou_Bronze_Gui_01.jpg/960px-Early_Western_Zhou_Bronze_Gui_01.jpg",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Early_Western_Zhou_Bronze_Gui_01.jpg",
         "width": 4474,
         "height": 3782,
-        "credit": "Gary Lee Todd, Ph.D. · Wikimedia Commons",
+        "credit": "Gary Lee Todd, Ph.D. · Shaanxi History Museum, Xi’an · Wikimedia Commons",
         "source": "https://commons.wikimedia.org/wiki/File:Early_Western_Zhou_Bronze_Gui_01.jpg",
         "license": "CC0 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "alt": "An ancient bronze vessel with two handles on a square pedestal.",
-        "caption": "The Li gui, an early Western Zhou bronze whose inscription records the conquest of Shang. The vessel is evidence close to the event, rather than a later portrait of its protagonists."
+        "alt": "The early Western Zhou Li gui, a bronze food vessel with paired handles on a decorated square pedestal.",
+        "caption": "The Li gui, cast early in the Western Zhou, bears a 32-character inscription describing King Wu’s attack on Shang. This contemporary bronze is evidence close to the conquest, rather than a later imagined portrait of its participants.",
+        "fullSize": true,
+        "sectionImages": [
+          {
+            "section": "A network of kin and allies",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Western_Zhou_geography.svg",
+            "width": 1734,
+            "height": 1369,
+            "alt": "Relief map of the North China Plain in the ninth century BCE, marking the Western Zhou royal domain, capitals, regional states, rivers and archaeological sites.",
+            "caption": "A modern reconstruction of the Western Zhou landscape in the ninth century BCE. The red dashed outline marks the royal domain; squares mark capitals and regional states, and dots mark archaeological sites. The map uses Feng and Chengzhou for the western and eastern royal centres.",
+            "credit": "Kanguole · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Western_Zhou_geography.svg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "fullSize": true
+          },
+          {
+            "section": "Ritual, bronze and writing",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/Western_Zhou_bronze_ding.jpg",
+            "width": 4752,
+            "height": 3168,
+            "alt": "The monumental Da Yu ding, a three-legged Western Zhou bronze vessel with upright handles and a decorated band below the rim.",
+            "caption": "The Da Yu ding was made during King Kang’s reign in the early Western Zhou and is now in the National Museum of China. Its scale and inscription show how Zhou elites recorded authority, royal favour and lineage in ritual bronze.",
+            "credit": "Gary Todd · National Museum of China · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Western_Zhou_bronze_ding.jpg",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "fullSize": true
+          }
+        ]
       }
     },
     {
@@ -832,10 +938,10 @@
       "start": -770,
       "end": -256,
       "color": "#ad955f",
-      "description": "The Zhou royal court moved east in 770 BCE. Kings kept their respected title, but regional rulers increasingly controlled their own armies, taxes and decisions. The Spring and Autumn and Warring States periods describe successive parts of this long era of competition.",
+      "description": "The Eastern Zhou began in 770 BCE when the Zhou court abandoned its western capital and moved east to Luoyang. Over the next 514 years, royal authority dissolved into competitive states, mass armies, and the Hundred Schools of Thought, a political and intellectual transformation that set the terms for imperial China.",
       "source": "https://en.wikipedia.org/wiki/Eastern_Zhou",
       "kind": "period",
-      "note": "770–256 BCE dates the Eastern Zhou royal house. Warring States politics continues beyond its fall to 221 BCE; the two spans describe different things.",
+      "note": "770–256 BCE dates the Eastern Zhou royal house. This atlas uses 770–481 BCE for Spring and Autumn and 481–221 BCE for Warring States; 476/475, 453 and 403 BCE are other boundaries used for the transition. Warring States politics continued after the Zhou royal house fell. Ancient casualty totals are transmitted claims, not precise modern counts.",
       "sourceIds": [
         "SR_ZHOU_E"
       ],
@@ -843,7 +949,12 @@
         "https://en.wikipedia.org/wiki/Eastern_Zhou",
         "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
         "https://www2.chnmuseum.cn/portals/0/web/zt/gudai/en/index.html",
-        "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china"
+        "https://82nd-and-fifth.metmuseum.org/toah/ht/04/eac.html",
+        "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/51bdb8a8-620f-42ef-8a96-82fc3066efe3/content",
+        "https://www.cambridge.org/core/elements/institutions-and-environment-in-ancient-southern-east-asia-3000-bce-to-300-ce/CC39D2BB0C5D015C230983E4DB2E3728",
+        "https://afe.easia.columbia.edu/main_pop/kpct/kp_4000bce-1000ce.htm",
+        "https://whc.unesco.org/en/list/1001",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/altars-of-the-soil-and-grain-are-closer-than-kin-the-qi-model-of-intellectual-participation-and-the-jixia-patronage-community/A423314171ED9CC423BFBCA2E11E9C9F"
       ],
       "nameZh": "东周",
       "category": "dynasty",
@@ -853,18 +964,50 @@
       "originalType": "regime",
       "sections": [
         {
-          "title": "Stronger states around a weaker king",
-          "text": "Rival courts developed ways to collect taxes, recruit soldiers and settle disputes. The Zhou king could lose power while government elsewhere became more forceful. Officials, teachers and military advisers travelled between courts seeking support for their ideas. Competition brought destructive wars, but also new ways to organize armies and govern larger territories."
+          "title": "From Western Zhou to Eastern Zhou",
+          "text": "Before Eastern Zhou began, [[id:western-zhou|Western Zhou]] (西周 Xī Zhōu) kings had ruled for nearly three centuries from the Wei River valley (渭河 Wèihé). In the traditional chronology, the lord of Shen and Quanrong (犬戎 Quǎnróng) forces [[id:zhou-capital-crisis|sacked Haojing]] (镐京 Hàojīng) in 771 BCE and killed King You (周幽王 Zhōu Yōuwáng). His successor, King Ping (周平王 Zhōu Píngwáng), moved the court east to Luoyang (洛阳 Luòyáng) in 770 BCE. This move gave the period its name.\n\nThe Zhou king’s royal domain contracted to a small territory around Luoyang. He retained ritual prestige and the Mandate of Heaven (天命 Tiānmìng), but regional rulers increasingly controlled their own armies, taxes and diplomacy. The king remained a respected source of titles and ceremony while practical power shifted to competing states.\n\nIn the Mediterranean, Rome became a republic after 509 BCE and Athens developed its own form of citizen government. The comparison places these regions in the same broad era. It does not imply direct contact or identical political change."
         },
         {
-          "title": "Competing ideas of good rule",
-          "text": "Rulers and thinkers still appealed to Zhou ceremonies and admired figures from the past. They disagreed about what those examples meant. Confucian and Mohist teachings, among others, grew in this world of rival answers. There was no single philosophy shared by everyone. Later labels make the arguments look more neatly divided than they were when teachers and their followers first debated them."
+          "title": "Spring and Autumn: hegemons and changing war",
+          "text": "The first phase of Eastern Zhou is the [[id:catalog-SR_SA|Spring and Autumn period]] (春秋时期 Chūnqiū Shíqī). This atlas dates it 770–481 BCE; 476 or 475 BCE are other common endpoints. Its name comes from the Spring and Autumn Annals (《春秋》 Chūnqiū), a chronicle traditionally associated with [[id:confucius|Confucius]] (孔子 Kǒngzǐ). Many small polities existed at the period’s start. By its end, a much smaller group of powerful states dominated. Chariot-riding aristocrats still led much of the earlier warfare, and ritual rules shaped elite conduct. Ambition and violence often exceeded those ideals.\n\nBecause no state could command all the others, powerful rulers acted as hegemons. Traditional lists of the Five Hegemons (五霸 Wǔbà) differ, but Duke Huan of Qi (齐桓公 Qí Huángōng) and Duke Wen of Jin (晋文公 Jìn Wéngōng) appear most often. They convened alliances, defended the Zhou order and tried to enforce agreements among states. Their authority depended on coalitions rather than an imperial office. This arrangement kept Zhou ritual authority useful while regional rulers gathered more power.\n\nJin’s leading families divided its territory among Han (韩 Hán), Zhao (赵 Zhào) and Wei (魏 Wèi) in 453 BCE. The Zhou court formally recognized the three rulers in 403 BCE. These dates mark key transitions toward the [[id:catalog-SR_WS|Warring States period]], whose starting boundary varies between historical chronologies."
+        },
+        {
+          "title": "Warring States: mass warfare and stronger governments",
+          "text": "The Warring States period (战国时期 Zhànguó Shíqī) ended in 221 BCE. Seven major powers dominated its later centuries: Qin (秦 Qín), Chu (楚 Chǔ), Qi (齐 Qí), Yan (燕 Yān), Han, Zhao and Wei. Smaller states also survived for part of the period.\n\nStates replaced many aristocratic levies with mass infantry armies drawn from registered households. Iron tools and weapons spread, crossbows became an important infantry weapon, and some northern states adopted cavalry. These forces depended on grain, labour, transport and officials who could organize them. At the Battle of Changping (长平之战 Chángpíng zhī Zhàn) in 260 BCE, Qin defeated Zhao. The Records of the Grand Historian (《史记》 Shǐjì) later claimed that Qin killed 400,000 surrendered Zhao soldiers. The figure is a transmitted claim and cannot be treated as a measured modern death toll. The account preserves the battle’s reputation for exceptional slaughter.\n\nRulers created bureaucracies staffed by appointed officials, registered households, collected taxes, issued legal rules and standardized measures. These changes differed between states and did not erase inherited privilege or local power. Qin went furthest through reforms associated with [[id:shang-yang|Shang Yang]] (商鞅 Shāng Yāng) from 356 BCE. They tied rank to farming and military service, organized households into mutual-responsibility groups and made the ruler’s commands easier to enforce. The later [[id:qin|Qin dynasty]] (秦朝 Qín Cháo) and [[id:han|Han dynasty]] (汉朝 Hàn Cháo) retained and adapted many practices developed during these centuries.\n\nEconomic output also grew. States expanded irrigation and brought more land under cultivation. Dujiangyan (都江堰 Dūjiāngyàn) in Sichuan (四川 Sìchuān) was begun around 256 BCE, then modified and enlarged over later centuries. It still controls floods and waters the Chengdu plain."
+        },
+        {
+          "title": "The Hundred Schools of Thought",
+          "text": "Interstate competition and political turmoil produced an intense period of argument later called the Hundred Schools of Thought (百家争鸣 Bǎijiā Zhēngmíng). Thinkers moved between courts and offered rulers rival answers about violence, cooperation and good government. The school labels are useful guides, but they make a diverse intellectual world look tidier than it was.\n\n[[id:confucianism-daoism|Confucian thought]] (儒家 Rújiā) grew from teachings associated with Confucius and was developed by later thinkers including [[id:mencius|Mencius]] (孟子 Mèngzǐ) and [[id:xunzi|Xunzi]] (荀子 Xúnzǐ). It connected good government with cultivated character, ritual and humane conduct. Texts associated with [[id:laozi|Laozi]] (老子 Lǎozǐ) and [[id:zhuangzi|Zhuangzi]] (庄子 Zhuāngzǐ) later became central to Daoist traditions (道家 Dàojiā), which questioned forceful control and rigid distinctions. [[id:mozi|Mozi]] (墨子 Mòzǐ) argued for impartial care and against offensive war. Legalist thinkers (法家 Fǎjiā), including [[id:han-fei|Han Fei]] (韩非 Hán Fēi), argued that clear standards, rewards and punishments could order the state without relying on a ruler’s moral example. [[id:catalog-F_SUN|The Art of War]] (《孙子兵法》 Sūnzǐ Bīngfǎ), traditionally attributed to Sunzi (孙子 Sūnzǐ), examined strategy, information and the cost of prolonged conflict.\n\nThese thinkers lived in the same broad centuries as Socrates, Plato and Aristotle. Both regions produced influential traditions amid political fragmentation, although their institutions and arguments differed. In Qi, the Jixia patronage community (稷下学宫 Jìxià Xuégōng) brought intellectual clients from different traditions to one court. Historians often call it an academy. The evidence does not support treating it as a modern university."
+        },
+        {
+          "title": "The Zhou house ends",
+          "text": "The Zhou royal house conventionally ended in 256 BCE, during the reign of King Nan (周赧王 Zhōu Nǎnwáng). The surviving accounts do not give a completely clear sequence for the final annexation of the royal territories. Warfare among the major states continued until the king of Qin, Ying Zheng (嬴政 Yíng Zhèng), [[id:unification|unified the rival states]] in 221 BCE and took the title Qin Shi Huang (秦始皇 Qín Shǐhuáng).\n\nEastern Zhou left institutions and arguments that later empires developed further. States had learned to command larger armies, register households, appoint officials and move resources across wider territories. Confucian, Mohist, Daoist and Legalist traditions all took shape amid these wars. The names Spring and Autumn and Warring States still organize how historians describe the period."
+        },
+        {
+          "title": "Did you know?",
+          "text": "Eastern Zhou lasted 514 years. Its first phase takes its name from the Spring and Autumn Annals. The later term Warring States comes from the title Strategies of the Warring States (《战国策》 Zhànguó Cè), a text compiled after the period. Dujiangyan, begun near the Eastern Zhou’s conventional end, still waters the Chengdu plain today."
         }
       ],
       "sourceLabels": {
-        "https://en.wikipedia.org/wiki/Eastern_Zhou": "Wikipedia · Eastern Zhou (reference overview)",
-        "https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china": "Metropolitan Museum of Art · Shang and Zhou bronze cultures"
+        "https://82nd-and-fifth.metmuseum.org/toah/ht/04/eac.html": "Metropolitan Museum of Art · China, 1000 B.C.–1 A.D.",
+        "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/51bdb8a8-620f-42ef-8a96-82fc3066efe3/content": "Indiana University · The Warring States Period",
+        "https://www.cambridge.org/core/elements/institutions-and-environment-in-ancient-southern-east-asia-3000-bce-to-300-ce/CC39D2BB0C5D015C230983E4DB2E3728": "Cambridge Elements · Institutions and environment in ancient southern East Asia",
+        "https://afe.easia.columbia.edu/main_pop/kpct/kp_4000bce-1000ce.htm": "Columbia Asia for Educators · Key points across Chinese history",
+        "https://whc.unesco.org/en/list/1001": "UNESCO · Dujiangyan Irrigation System",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/altars-of-the-soil-and-grain-are-closer-than-kin-the-qi-model-of-intellectual-participation-and-the-jixia-patronage-community/A423314171ED9CC423BFBCA2E11E9C9F": "Early China · The Jixia patronage community"
       },
+      "related": [
+        "confucianism-daoism",
+        "western-zhou",
+        "late-warring",
+        "catalog-SR_SA",
+        "laozi",
+        "mozi",
+        "mencius",
+        "zhuangzi",
+        "xunzi",
+        "catalog-SR_WS"
+      ],
       "dateReview": {
         "status": "confirmed",
         "note": "770–256 BCE: 770 marks King Ping's move to Luoyi; 256 is the conventional end of the Zhou royal house. Warring States continues beyond this dynasty's end.",
@@ -874,16 +1017,7 @@
         ]
       },
       "catalogDates": null,
-      "related": [
-        "confucianism-daoism",
-        "catalog-SR_SA",
-        "laozi",
-        "mozi",
-        "mencius",
-        "zhuangzi",
-        "xunzi",
-        "catalog-SR_WS"
-      ],
+      "annotateNames": false,
       "searchAliases": [
         "Eastern Zhou"
       ],
@@ -891,14 +1025,14 @@
       "pinyin": "dōng zhōu",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg/960px-%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
-        "width": 3574,
-        "height": 4696,
-        "credit": "三猎 · Wikimedia Commons",
+        "width": 960,
+        "height": 1261,
+        "credit": "三猎 · Zhejiang Provincial Museum / Wikimedia Commons",
         "source": "https://commons.wikimedia.org/wiki/File:%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "alt": "A miniature bronze building containing musicians and other figures.",
-        "caption": "A Spring and Autumn-period bronze model of a building with performers. Elite ceremony and entertainment accompanied the competition between regional courts."
+        "alt": "A small bronze house model with an open front, lattice-like side walls, a peaked roof topped by a bird, and six kneeling performers inside.",
+        "caption": "A bronze house model with six kneeling performers, Spring and Autumn period (770–476 BCE), excavated from tomb 306 at Shizishan in Potang, Shaoxing; Zhejiang Provincial Museum. This period artifact comes from the Yue region and does not depict a named political event or the Eastern Zhou as a whole. The photograph was made in 2018."
       }
     },
     {
@@ -964,22 +1098,27 @@
     },
     {
       "id": "qin",
-      "name": "Qin",
+      "name": "Qin Dynasty",
       "han": "秦",
       "start": -221,
       "end": -206,
       "color": "#454d48",
-      "description": "In 221 BCE, Qin defeated its major rivals and created an empire governed through appointed officials. The dynasty fell in 206 BCE, but later rulers kept many of its methods. Its government lasted far longer in practice than its ruling family did.",
+      "description": "The Qin Dynasty (秦朝 Qín Cháo) ruled from 221 to 206 BCE. During those fifteen years, it created an empire governed through appointed officials and common standards. Qin itself was much older, one of several kingdoms that fought for power during the Warring States period (战国时期 Zhànguó Shíqī). Its rulers built a state that could register households, collect grain, recruit soldiers and move supplies across long distances. Those abilities helped Qin defeat its rivals. They also allowed Qin Shi Huang (秦始皇 Qín Shǐhuáng), the First Emperor (始皇帝 Shǐ Huángdì), to place heavy demands on the people he ruled.",
       "source": "https://en.wikipedia.org/wiki/Qin_dynasty",
       "kind": "period",
-      "note": "221–206 BCE dates the empire; Qin existed as a state for centuries before it. Descriptions of identical rule across every locality overstate what survives in the evidence.",
+      "note": "221–206 BCE is the conventional range for the Qin imperial dynasty; the Qin state existed for centuries before unification. Ziying surrendered in 207 BCE. Accounts of the book restrictions, executions and succession crisis come mainly through later transmitted histories and require caution. Qin's policies also varied in their local reach and implementation.",
       "sourceIds": [
         "R_QIN"
       ],
       "sources": [
         "https://en.wikipedia.org/wiki/Qin_dynasty",
         "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
-        "https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528"
+        "https://www.metmuseum.org/essays/qin-dynasty-221-206-b-c",
+        "https://plato.stanford.edu/entries/chinese-legalism/",
+        "https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528",
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/making-use-of-the-land-the-political-ecology-of-chinas-first-empire/5C80E8CC40548B2953F72246C49A6CF7",
+        "https://whc.unesco.org/en/list/441/",
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-lisi-legalist-memorials.htm"
       ],
       "nameZh": "秦",
       "category": "dynasty",
@@ -989,23 +1128,43 @@
       "originalType": "regime",
       "sections": [
         {
-          "title": "Making a large empire work",
-          "text": "Common measures, written records and official procedures helped officials compare goods and carry out orders across long distances. They could also help trade. For rulers, these standards made it easier to collect resources and direct people. Excavated records show many offices handling routine transfers. Even a powerful emperor depended on officials doing this work in local communities."
+          "title": "From a rival kingdom to the First Emperor",
+          "text": "Qin had existed as a state under the [[id:catalog-R_ZHOU|Zhou Dynasty (周朝 Zhōu Cháo)]] for centuries before it became an empire. Its rise took generations. Reforms traditionally associated with [[id:shang-yang|Shang Yang (商鞅 Shāng Yāng)]] in the fourth century BCE rewarded farming and military achievement, tightened the registration and supervision of households, and extended the authority of appointed officials. Collective responsibility made groups of families answerable for one another's conduct. These policies weakened some inherited privileges while directing more people and resources toward the state.\n\nBetween 230 and 221 BCE, King Ying Zheng (嬴政 Yíng Zhèng) of Qin [[id:unification|conquered the six rival states]] of Han, Zhao, Wei, Chu, Yan and Qi. He then adopted the title First Emperor, claiming a rank above the kings who had ruled the competing states. He governed from Xianyang (咸阳 Xiányáng), near present-day Xi'an (西安 Xī'ān).\n\nVictory did not make the conquered regions identical. They had their own customs, loyalties and administrative practices. Qin's officials had to turn military conquest into everyday government. This slower work depended on local records, transport networks and people who could carry out orders far from the capital."
         },
         {
-          "title": "The burden on households",
-          "text": "Military campaigns, construction and compulsory service demanded much from ordinary families. After the First Emperor died in 210 BCE, struggles over succession and rebellion broke the dynasty. Later Han writers stressed Qin’s cruelty, and their accounts need to be read alongside excavated evidence. Han’s continued use of Qin methods shows how much survived the collapse, despite the sharp criticism of its rulers."
+          "title": "Governing conquered territories",
+          "text": "The Qin court extended a commandery-county system (郡县制 jùnxiàn zhì) across the empire. The central government appointed officials to govern territorial units instead of granting large hereditary kingdoms to members of the ruling family. This gave the emperor a more direct claim over taxation, law and compulsory service, though officials still depended on local knowledge and cooperation.\n\nLi Si (李斯 Lǐ Sī), the First Emperor's chief minister, is closely associated with the use of small seal script (小篆 xiǎozhuàn) as a standard for official writing. This policy did not erase every regional form of writing at once. It gave officials a shared written system for government documents. Qin authorities also [[id:catalog-E_QIN_2|standardized weights and measures (度量衡 dùliànghéng)]] and promoted common coinage, including the round banliang coin (半两钱 bànliǎng qián) with its square hole. Rules for cart axles helped vehicles follow established road tracks.\n\nCommon standards made goods and records easier to compare across regions. They could support trade and helped officials assess taxes, record supplies and transmit instructions. Excavated documents show many offices handling the routine work that turned imperial commands into local action."
+        },
+        {
+          "title": "Roads, walls and the First Emperor's tomb",
+          "text": "Qin drew soldiers, conscripted workers and people serving penal sentences into military campaigns and construction. They built roads, worked on palaces and extended defences along the northern frontier. Earlier kingdoms had already built walls there. Qin joined, rebuilt and adapted some of them as a precursor to the [[id:qin-great-wall|Great Wall (长城 Chángchéng)]]. Most of the stone and brick structures familiar today belong to much later periods, especially the Ming dynasty.\n\nThe Mausoleum of the First Qin Emperor (秦始皇陵 Qín Shǐhuáng Líng) placed similar demands on labour. The wider burial complex covers more than 50 square kilometres. Its best-known remains are pits containing thousands of life-sized [[id:catalog-C_QIN|terracotta warriors (兵马俑 Bīngmǎyǒng)]], horses and chariots. Workshops assembled the figures from modular parts and finished them by hand. Their varied faces and equipment show organized production and careful workmanship. Most scholars do not treat them as portraits of individual Qin soldiers.\n\nFarmers digging a well uncovered fragments from the terracotta army in 1974. Archaeologists have since excavated parts of the surrounding complex, while the central burial mound remains unopened. A traditional account describes a tomb chamber with rivers of mercury and a model of the heavens. Since the chamber has not been entered, that description cannot confirm what survives inside."
+        },
+        {
+          "title": "Law, punishment and contested memory",
+          "text": "Qin government placed great weight on written rules, official responsibility, rewards and punishment. Later scholars grouped several texts and thinkers under the name Legalism (法家 Fǎjiā). They offered different arguments about law, authority and the conduct of officials, so the label does not describe one uniform Qin doctrine.\n\nIn 213 BCE, an order associated with Li Si targeted selected private copies of historical and philosophical writings. Technical works and official archives were exempt. The familiar claim that Qin burned every book outside a narrow state canon exaggerates the order's scope.\n\nTraditional histories also say that the First Emperor had 460 scholars buried alive the following year. The details remain disputed, including who the victims were and what punishment they received. The story became part of a larger portrait of Qin as the enemy of learning, remembered in the phrase \"burning books and burying scholars\" (焚书坑儒 Fénshū Kēngrú).\n\nThe court moved powerful families from conquered regions toward the capital, reducing their ability to rebuild local bases of power. Compulsory labour, military service and punishment gave Qin government a harsh presence in ordinary lives. Later Han writers had political and moral reasons to emphasize that harshness. Excavated laws and administrative records provide another view of how Qin offices worked in practice."
+        },
+        {
+          "title": "Rebellion and collapse",
+          "text": "The First Emperor died in 210 BCE while travelling through the eastern part of the empire. Transmitted histories say that the court officials Zhao Gao (赵高 Zhào Gāo) and Li Si concealed his death and helped place his younger son Huhai (胡亥 Hú Hài) on the throne as Qin Er Shi (秦二世 Qín Èrshì), the Second Emperor. Succession struggles and killings at court soon weakened the government.\n\nThe first major revolt began in 209 BCE under Chen Sheng (陈胜 Chén Shèng) and Wu Guang (吴广 Wú Guǎng). Other rebellions followed. Xiang Yu (项羽 Xiàng Yǔ), a noble from the former state of Chu, and Liu Bang (刘邦 Liú Bāng), a local official of modest background, later emerged as leading competitors. In 207 BCE, Liu Bang entered the Qin capital region and Ziying (子婴 Zǐyīng), the last Qin ruler, surrendered. The dynasty is conventionally dated to 206 BCE, when rival leaders divided its territory. Fighting between Liu Bang and Xiang Yu continued in the Chu-Han Contention (楚汉战争 Chǔ-Hàn Zhànzhēng)."
+        },
+        {
+          "title": "What survived under Han",
+          "text": "Liu Bang defeated Xiang Yu and became emperor in 202 BCE, founding the [[id:han|Han Dynasty (汉朝 Hàn Cháo)]]. Han rulers retained and adapted many Qin institutions. They governed some territories through appointed officials in commanderies and counties, while other regions remained kingdoms held by members of the imperial family. They also revised laws, taxes and demands for service.\n\nOfficial writing, measures, coinage and territorial administration continued to develop after Qin. Later dynasties repeatedly used the imperial title and governed through appointed officials, but each changed the system to meet its own political needs. Qin's ruling house disappeared in 206 BCE. Under Han, commanderies stood alongside kingdoms, and institutions associated with Qin became part of a different settlement."
         }
       ],
       "sourceLabels": {
-        "https://en.wikipedia.org/wiki/Qin_dynasty": "Wikipedia · Qin dynasty (reference overview)",
-        "https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528": "Early China · Qin logistics and financial administration"
+        "https://www.metmuseum.org/essays/qin-dynasty-221-206-b-c": "Metropolitan Museum of Art · Qin dynasty",
+        "https://plato.stanford.edu/entries/chinese-legalism/": "Stanford Encyclopedia of Philosophy · Legalism in Chinese Philosophy",
+        "https://www.cambridge.org/core/journals/early-china/article/emergence-of-logistics-networks-and-financial-administration-during-the-qin-conquest-230221-bce/88CAA846820D79FE59DE99630ADB3528": "Early China · Qin logistics and financial administration",
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/making-use-of-the-land-the-political-ecology-of-chinas-first-empire/5C80E8CC40548B2953F72246C49A6CF7": "Journal of Chinese History · Political ecology of the Qin empire",
+        "https://whc.unesco.org/en/list/441/": "UNESCO · Mausoleum of the First Qin Emperor",
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-lisi-legalist-memorials.htm": "Columbia Asia for Educators · Li Si memorials in the Shiji"
       },
       "dateReview": {
         "status": "confirmed",
         "note": "221–206 BCE is the standard museum range for the imperial Qin dynasty, not the longer history of the Qin state.",
         "sources": [
-          "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+          "https://www.metmuseum.org/essays/qin-dynasty-221-206-b-c"
         ]
       },
       "catalogDates": null,
@@ -1014,21 +1173,53 @@
         "catalog-C_QIN",
         "qin-great-wall"
       ],
-      "searchAliases": [
-        "Qin"
-      ],
       "linkTitle": "Qin",
+      "linkAliases": [
+        "Qin",
+        "秦朝"
+      ],
+      "annotateNames": false,
+      "searchAliases": [
+        "Qin",
+        "Qin Dynasty"
+      ],
       "pinyin": "Qín",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/01_terracottawarriorsgroup.jpg",
         "width": 860,
         "height": 650,
-        "credit": "Gremelm · Wikimedia Commons",
+        "credit": "Gremelm · Bowers Museum, Santa Ana · Wikimedia Commons",
         "source": "https://commons.wikimedia.org/wiki/File:01_terracottawarriorsgroup.jpg",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-        "alt": "Rows of terracotta soldiers and a horse in a museum display.",
-        "caption": "Terracotta figures from the First Emperor’s mausoleum complex. Their differentiated faces and equipment belong to a coordinated funerary project, not a surviving photograph of the Qin army."
+        "alt": "Rows of life-sized terracotta soldiers and a horse displayed in a museum.",
+        "caption": "Terracotta figures from the First Emperor’s mausoleum complex, photographed in a modern display at the Bowers Museum. Their varied faces and equipment belong to a coordinated funerary project, not a surviving image of the Qin army.",
+        "sectionImages": [
+          {
+            "section": "Governing conquered territories",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Qin_Bronze_Weight_with_2_Imperial_Edicts_%2814367061301%29.jpg/960px-Qin_Bronze_Weight_with_2_Imperial_Edicts_%2814367061301%29.jpg",
+            "width": 960,
+            "height": 640,
+            "source": "https://commons.wikimedia.org/wiki/File:Qin_Bronze_Weight_with_2_Imperial_Edicts_(14367061301).jpg",
+            "credit": "Gary Todd · Qin Shihuang Museum, Lintong · Wikimedia Commons",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "alt": "Dark bronze Qin weight with two dense panels of incised Chinese characters.",
+            "caption": "A Qin bronze standard weight bearing two imperial edicts, displayed at the Qin Shihuang Museum in Lintong. Centrally issued rules were attached to the instruments officials used to measure."
+          },
+          {
+            "section": "Law, punishment and contested memory",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Eighteen_Laws_of_Qin_on_Qin_Bamboo_Slips_%2810160622885%29.jpg/960px-Eighteen_Laws_of_Qin_on_Qin_Bamboo_Slips_%2810160622885%29.jpg",
+            "width": 960,
+            "height": 640,
+            "source": "https://commons.wikimedia.org/wiki/File:Eighteen_Laws_of_Qin_on_Qin_Bamboo_Slips_(10160622885).jpg",
+            "credit": "Gary Todd · Hubei Provincial Museum, Wuhan · Wikimedia Commons",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "alt": "Long inscribed bamboo slips arranged in rows in a museum display.",
+            "caption": "A Hubei Provincial Museum display identified as the Eighteen Laws of Qin among the Shuihudi bamboo texts. These slips preserve evidence of Qin legal and administrative practice; they do not establish the later account of book burning or scholars buried alive."
+          }
+        ]
       }
     },
     {
@@ -1038,7 +1229,7 @@
       "start": -206,
       "end": 220,
       "color": "#a54d3d",
-      "description": "Han rulers rebuilt an empire after the wars that destroyed Qin. Its history includes Western Han, the interruption of Wang Mang (王莽)’s Xin dynasty, and the restored Eastern Han. Across these centuries, government changed, classical learning grew and connections across Eurasia expanded.",
+      "description": "The Han dynasty (汉朝 Hàn Cháo) ruled from 206 BCE to 220 CE, with a break under the Xin dynasty. Across four centuries, Han rulers turned the imperial system they inherited from the [[id:qin|Qin dynasty]] (秦朝 Qíncháo) into a durable model. They combined centralized government with kingdoms ruled by imperial relatives, gave classical learning a larger place at court, and expanded diplomatic and trading connections across Eurasia. While Rome grew from a Mediterranean republic into an empire, Han courts were building another long-lived imperial tradition in East Asia.",
       "source": "https://en.wikipedia.org/wiki/Han_dynasty",
       "kind": "period",
       "ranges": [
@@ -1051,37 +1242,76 @@
           220
         ]
       ],
-      "note": "206 BCE marks Liu Bang (刘邦) becoming king of Han; 202 BCE marks his imperial accession. Xin interrupted Han rule in 9–23 CE and appears separately.",
+      "note": "The overview uses 206 BCE for Liu Bang’s kingship and 202 BCE for his imperial accession. The Xin dynasty ruled from 9 to 23 CE; the restored Eastern Han began in 25 after further warfare. The territorial reach of Han changed over time and combined several kinds of control, so one peak-area figure cannot describe all four centuries.",
       "sourceIds": [],
       "sources": [
         "https://en.wikipedia.org/wiki/Han_dynasty",
         "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d",
+        "https://ccnmtl.columbia.edu/services/dropoff/china_civ_temp/week01/pdfs/chines2.pdf",
         "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/structure-and-practice-of-government/85B70184514CED4B7F825C92626F971D",
-        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+        "https://www.cambridge.org/core/books/abs/bureaucracy-of-han-times/civil-service-recruitment/9334C1BD771968D5690197868D38DF38",
+        "https://www.tandfonline.com/doi/full/10.1080/10971467.2020.1800901",
+        "https://whc.unesco.org/en/list/1442",
+        "https://doi.org/10.25365/jeacs.2025.6.1.roctus",
+        "https://www.cai.cam.ac.uk/discover/library/online-exhibitions/print-and-material-book/paper",
+        "https://www.metmuseum.org/essays/music-and-art-of-china",
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-debate-salt-iron.htm"
       ],
-      "nameZh": "汉",
+      "nameZh": "汉朝",
       "category": "dynasty",
       "evidence": "Source-checked historical interpretation",
       "importance": 5,
       "sections": [
         {
-          "title": "Sharing and gathering power",
-          "text": "Some regions were governed by appointed officials; others were kingdoms held by members of the imperial family. Disputes over these arrangements gradually increased the court’s power. Farming households supplied much of the tax income and labour. Officials still needed local knowledge and the help of influential families to turn orders from the emperor into action."
+          "title": "Two eras, one dynasty",
+          "text": "The [[id:catalog-R_HAN_W|Western Han]] (西汉 Xī Hàn) ruled from 206 BCE to 9 CE and made [[id:chang-an|Chang'an]] (长安 Cháng’ān) its capital. Liu Bang (刘邦 Liú Bāng), a rebel leader from a farming family, became king of Han in 206 BCE and emperor in 202 BCE. His government kept much of the Qin administrative system while easing some of its demands.\n\nWang Mang (王莽 Wáng Mǎng), a regent, took the throne in 9 CE and founded the [[id:xin|Xin dynasty]] (新朝 Xīn Cháo). He tried to change landholding, slavery, currency, and the state’s role in the economy. Rebellion, flooding, famine, and resistance to his policies brought the regime down in 23. Liu Xiu (刘秀 Liú Xiù), later Emperor Guangwu (汉光武帝 Hàn Guāngwǔdì), restored Han rule in 25. The [[id:catalog-R_HAN_E|Eastern Han]] (东汉 Dōng Hàn) governed from Luoyang (洛阳 Luòyáng) until 220."
         },
         {
-          "title": "Life behind the fine objects",
-          "text": "Han tombs preserve textiles, lacquerware and images of farms, servants and entertainments. They show what wealthy people valued, along with signs of the work supporting their lives. Learning from ancient texts became more important in government, but punishment and inherited privilege remained powerful. The familiar story of a cruel Qin followed by a kind Han overlooks both the methods they shared and disagreements within Han itself."
+          "title": "The scale of empire",
+          "text": "Han power reached the Korean peninsula in the northeast, the Hexi Corridor (河西走廊 Héxī Zǒuláng) and Tarim Basin (塔里木盆地 Tǎlǐmù Péndì) in the west, the steppe frontier in the north, and what is now northern Vietnam in the south. These frontiers moved over time. Military occupation, tributary relationships, commanderies, and indirect influence did not amount to uniform control across one fixed shape on a map.\n\nA government census completed in 2 CE recorded 57.67 million people in 12.36 million households. The figures are unusually detailed for the ancient world, though they count people and households known to the tax administration rather than every person living within Han influence. Han China and the Roman Empire were the two largest states of their time by population, but estimates for Rome and for the world total vary too widely to support a precise percentage comparison."
+        },
+        {
+          "title": "Government and classical learning",
+          "text": "Han rulers inherited Qin commanderies, laws, records, taxes, and compulsory labour. They also governed alongside kingdoms held by members of the imperial family. Court struggles gradually reduced the autonomy of many kingdoms, but local officials still depended on landholding families and community leaders to collect revenue, settle disputes, and carry out orders.\n\nClassical learning gained greater court sponsorship under Emperor Wu (汉武帝 Hàn Wǔdì, r. 141–87 BCE). In 136 BCE, the court created official posts for scholars of the Five Classics. In 124 BCE, it founded an Imperial Academy (太学 Tàixué) to educate selected students. Officials entered government through recommendations, family connections, clerical work, and some tests of knowledge. This system helped create traditions that later examination governments would develop. The open, standardized civil service examination system came much later. The [[id:catalog-E_HAN_1|classical learning and Han government]] card follows that gradual change."
+        },
+        {
+          "title": "Trade and the Silk Roads",
+          "text": "The journeys of Zhang Qian (张骞 Zhāng Qiān), sent west by Emperor Wu in 138 BCE, gave the Han court new knowledge of Central Asian states and helped expand diplomatic and commercial connections. The [[id:catalog-E_HAN_2|Silk Roads]] (丝绸之路 Sīchóu zhī Lù) grew through a changing network of caravan routes over many centuries. Han garrisons and way stations guarded parts of the route through the Hexi Corridor and toward the Tarim Basin, while many independent merchants and states carried goods farther west.\n\nSilk travelled west, while Han markets received horses, jade, glassware, and other goods through Central Asian exchange. Religions and ideas moved through the same connected regions. The earliest clear evidence for [[id:catalog-E_BUD_ENTRY|Buddhist contact and translation]] (佛教 Fójiào) in China belongs to the first centuries CE. Later stories give this process a single dramatic beginning, but the evidence points to several routes and communities."
+        },
+        {
+          "title": "Technology and science",
+          "text": "Paper existed in China before the lifetime of Cai Lun (蔡伦 Cài Lún). A court biography credits him with presenting an improved method in 105 CE that used bark, hemp, rags, and fishing nets. Cheaper and lighter than silk, and less bulky than bamboo slips, [[id:paper|paper]] gradually became a major writing material.\n\nAround 132, the astronomer and mathematician [[id:zhang-heng|Zhang Heng]] (张衡 Zhāng Héng) built an instrument designed to indicate the direction of distant earthquakes. Accounts describe a bronze vessel with eight dragon heads that released a ball when the mechanism responded to ground movement. No original survives, so modern reconstructions depend on the written description.\n\nHan foundries produced cast iron with blast furnaces, and salt workers used iron drilling tools to reach underground brine. In 117 BCE, Emperor Wu placed salt and iron production under state monopolies to raise revenue for the court and its wars. Officials and scholars later argued over whether those monopolies strengthened government or burdened ordinary households. Their arguments survive in the [[id:salt-iron-debate|Debate on Salt and Iron]] (盐铁之议 Yántiě Zhī Yì)."
+        },
+        {
+          "title": "Culture and literature",
+          "text": "The most influential Han history is the [[id:sima-qian|Records of the Grand Historian]] (史记 Shǐjì), completed by Sima Qian (司马迁 Sīmǎ Qiān) around 100 BCE. It organized more than two thousand years of the remembered past through annals, chronological tables, treatises, hereditary houses, and biographies. Later dynastic histories adopted parts of this structure, and Sima Qian’s character portraits also made the work a literary classic.\n\nHan writers developed the fu (赋 fù), a rhapsody that mixed prose and verse. Sima Xiangru (司马相如 Sīmǎ Xiàngrú) became its most famous court poet. The Music Bureau (乐府 Yuèfǔ) collected songs and supplied music for ceremonies, though the surviving poems associated with it were copied and edited over many centuries. They preserve voices of soldiers, farmers, travellers, and lovers that rarely appear in court histories.\n\nTombs provide much of the surviving Han visual record. Painted pottery figures, bronze mirrors, lacquerware, silk paintings, and objects from the [[id:mawangdui-manuscripts|Mawangdui tombs]] (马王堆 Mǎwángduī) reveal elite beliefs and daily arrangements, together with the labour that supported them. Jade burial suits made from plaques joined with wire were reserved for high-ranking burials. They express the hope that jade could protect the body after death."
+        },
+        {
+          "title": "Decline and fall",
+          "text": "Han decline unfolded over generations. Frontier defence against the Xiongnu (匈奴 Xiōngnú) consumed money and soldiers. Large landholders acquired farms from indebted peasants, reducing the number of households that paid taxes and owed service directly to the state. At court, consort families, eunuchs, officials, and scholars fought over appointments and access to the emperor.\n\nThe [[id:yellow-turbans|Yellow Turban uprising]] (黄巾起义 Huángjīn Qǐyì) began in 184. Government forces killed its main leaders, but the court had to rely on regional commanders and local armies. Those commanders kept growing more independent. By the early third century, warlords controlled the emperor and much of the territory claimed by Han.\n\nIn 220, Emperor Xian (汉献帝 Hàn Xiàndì) abdicated in favour of Cao Pi (曹丕 Cáo Pī). The [[id:catalog-E_3K_1|fall of Han]] opened the formal [[id:three-kingdoms|Three Kingdoms]] (三国 Sānguó) period. Wei, Shu Han, and Wu competed until the [[id:catalog-R_JIN_W|Western Jin]] (西晋 Xī Jìn) reunified the three states in 280."
+        },
+        {
+          "title": "Did you know?",
+          "text": "The English word \"China\" may derive from the name Qin through Sanskrit and Persian, though the etymology is debated. Han left a different legacy in Chinese: Han people are Hanren (汉人 Hànrén), and Chinese characters are Hanzi (汉字 Hànzì). The dynasty’s name became a lasting marker of cultural and ethnic identity."
         }
       ],
       "sourceLabels": {
         "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d": "Metropolitan Museum of Art · Han dynasty",
-        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/structure-and-practice-of-government/85B70184514CED4B7F825C92626F971D": "Cambridge History of China · Structure and practice of Han government"
+        "https://ccnmtl.columbia.edu/services/dropoff/china_civ_temp/week01/pdfs/chines2.pdf": "Columbia University · Chinese Civilization sourcebook · Han overview",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/structure-and-practice-of-government/85B70184514CED4B7F825C92626F971D": "Cambridge History of China · Structure and practice of Han government",
+        "https://www.cambridge.org/core/books/abs/bureaucracy-of-han-times/civil-service-recruitment/9334C1BD771968D5690197868D38DF38": "Hans Bielenstein · The Bureaucracy of Han Times · Civil service recruitment",
+        "https://www.tandfonline.com/doi/full/10.1080/10971467.2020.1800901": "Lee Ting-mien · The “victory of Confucianism” reconsidered",
+        "https://whc.unesco.org/en/list/1442": "UNESCO · Chang’an–Tianshan corridor",
+        "https://doi.org/10.25365/jeacs.2025.6.1.roctus": "Jasper Roctus · Han registration figures and later Chinese population claims",
+        "https://www.cai.cam.ac.uk/discover/library/online-exhibitions/print-and-material-book/paper": "Gonville & Caius College, Cambridge · Paper before and after Cai Lun",
+        "https://www.metmuseum.org/essays/music-and-art-of-china": "Metropolitan Museum of Art · Music and art of China",
+        "https://afe.easia.columbia.edu/main_pop/ps/ps_china-debate-salt-iron.htm": "Columbia Asia for Educators · Debate on Salt and Iron"
       },
       "dateReview": {
         "status": "confirmed",
         "note": "206 BCE–220 CE museum envelope is supported; Xin interruption and 202 imperial accession are already explained. Description saying dynasty encompassed Xin should become: The overview spans Western Han, the intervening Xin regime, and Eastern Han.",
         "sources": [
-          "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+          "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d"
         ]
       },
       "related": [
@@ -1095,11 +1325,15 @@
         "catalog-R_HAN_W",
         "catalog-R_HAN_E"
       ],
+      "linkTitle": "Han",
+      "linkAliases": [
+        "汉朝"
+      ],
+      "annotateNames": false,
       "searchAliases": [
         "Han"
       ],
-      "linkTitle": "Han",
-      "pinyin": "hàn",
+      "pinyin": "hàn cháo",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Huo_Qubing_horse_(cropped).jpg/960px-Huo_Qubing_horse_(cropped).jpg",
         "width": 4605,
@@ -1109,7 +1343,48 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "alt": "A monumental stone horse standing above a fallen figure.",
-        "caption": "A horse trampling a Xiongnu figure at Huo Qubing’s mausoleum. The monument expresses a Han victory narrative and should be read as imperial commemoration."
+        "caption": "A horse trampling a Xiongnu figure at Huo Qubing’s mausoleum. The monument expresses a Han victory narrative and should be read as imperial commemoration.",
+        "sectionImages": [
+          {
+            "section": "The scale of empire",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Han_Civilisation_bright_large.jpg/1280px-Han_Civilisation_bright_large.jpg",
+            "width": 1280,
+            "height": 945,
+            "alt": "English-labelled map of the Han world in 2 CE, with settlements, frontier peoples, capitals, garrisons, and routes west through the Tarim Basin.",
+            "caption": "A modern reconstruction of the Han world in 2 CE. Brown shading marks areas evidenced by settlements under direct Han political or military control; the white route west from Chang’an includes what is often called the Silk Road. The map also overlays a modern PRC-claimed boundary, so it should not be read as an uncontested ancient border.",
+            "credit": "Yeu Ninje · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Han_Civilisation_bright_large.jpg",
+            "license": "CC BY-SA 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "fullSize": true
+          },
+          {
+            "section": "Culture and literature",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Mawangdui_painted_silk_funeral_banner.jpg/500px-Mawangdui_painted_silk_funeral_banner.jpg",
+            "width": 500,
+            "height": 1200,
+            "alt": "A tall T-shaped painted silk banner filled with figures, birds, dragons, celestial symbols, and funerary scenes.",
+            "caption": "The T-shaped painted silk banner from tomb 1 at Mawangdui, c. 168 BCE, found draped over the coffin of Xin Zhui, Lady Dai. Its layered scenes are commonly read as imagery of her passage through the afterlife, though their precise meanings remain debated.",
+            "credit": "Unknown Han artist · Hunan Museum / Google Arts & Culture / Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Mawangdui_painted_silk_funeral_banner.jpg",
+            "license": "Public domain",
+            "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+            "fullSize": true
+          },
+          {
+            "section": "Culture and literature",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg/1280px-Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg",
+            "width": 1280,
+            "height": 853,
+            "alt": "A human-shaped burial suit assembled from rectangular jade plaques joined by gold wire, displayed horizontally in a museum case.",
+            "caption": "The gold-threaded jade burial suit of Liu Sheng, king of Zhongshan, who died in 113 BCE. Excavated at Mancheng and now displayed in Hebei Museum, the fitted plaques show elite Han hopes that jade would protect the body after death. This was a funerary garment, not ordinary dress.",
+            "credit": "Gary Todd · Hebei Museum / Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "fullSize": true
+          }
+        ]
       }
     },
     {

@@ -712,13 +712,13 @@ const CHART_RESEARCH=(()=>{
   },
   "qin": {
     "sources": [
-      "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      "https://www.metmuseum.org/essays/qin-dynasty-221-206-b-c"
     ],
     "dateReview": {
       "status": "confirmed",
       "note": "221–206 BCE is the standard museum range for the imperial Qin dynasty, not the longer history of the Qin state.",
       "sources": [
-        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+        "https://www.metmuseum.org/essays/qin-dynasty-221-206-b-c"
       ]
     },
     "catalogDates": null,
@@ -1095,13 +1095,13 @@ const CHART_RESEARCH=(()=>{
   },
   "han": {
     "sources": [
-      "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d"
     ],
     "dateReview": {
       "status": "confirmed",
       "note": "206 BCE–220 CE museum envelope is supported; Xin interruption and 202 imperial accession are already explained. Description saying dynasty encompassed Xin should become: The overview spans Western Han, the intervening Xin regime, and Eastern Han.",
       "sources": [
-        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+        "https://www.metmuseum.org/essays/han-dynasty-206-b-c-220-a-d"
       ]
     }
   },

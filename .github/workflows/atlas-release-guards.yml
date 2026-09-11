@@ -1,0 +1,37 @@
+name: Atlas release guards
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  release-guards:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: history-of-china/snake-timeline
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check timeline geometry
+        run: npm run vercel-build
+      - name: Test release policies
+        run: node --test protected_file_guard.test.js deployment_source_guard.test.js
+      - name: Check pull request files
+        if: github.event_name == 'pull_request'
+        shell: bash
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_LABELS_JSON: ${{ toJson(github.event.pull_request.labels.*.name) }}
+        run: bash protected_file_git_guard.sh "$BASE_SHA" "$HEAD_SHA"
