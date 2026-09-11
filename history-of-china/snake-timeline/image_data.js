@@ -685,15 +685,15 @@ const HISTORY_IMAGES = {
     "caption": "An unglazed pottery horse attributed to the Wei dynasty, in Auckland Museum. A funerary object offers material evidence alongside the dynastic chronicles."
   },
   "jin-early": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Western_Jin_Porcelain_Female_Figure_(9832737224).jpg/960px-Western_Jin_Porcelain_Female_Figure_(9832737224).jpg",
-    "width": 3456,
-    "height": 5184,
-    "credit": "Gary Todd from Xinzheng, China · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Western_Jin_Porcelain_Female_Figure_(9832737224).jpg",
+    "src": "https://images.metmuseum.org/CRDImages/as/original/DP-14609-030.jpg",
+    "width": 4000,
+    "height": 3002,
+    "credit": "The Metropolitan Museum of Art · Gift of Mrs. Richard E. Linburn, 1979",
+    "source": "https://www.metmuseum.org/art/collection/search/42350",
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "alt": "A pale glazed figurine of a woman wearing a long robe.",
-    "caption": "A Western Jin porcelain figure. The burial object provides a view of elite representation during the dynasty that briefly reunited the Three Kingdoms."
+    "alt": "A green-grey celadon ewer with a rounded body, tall neck, arched handle and chicken-head spout.",
+    "caption": "A Yue-ware chicken-headed ewer made in the fourth or fifth century during the Eastern Jin period. It shows celadon production in the dynasty's southern cultural world; it does not depict a political event."
   },
   "sixteen": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Buddha_dated_338,_China,_Hebei,_Later_Zhao_kingdom,_bronze_with_gilding_-_Asian_Art_Museum_-_San_Francisco,_CA_-_DSC07620.jpg/960px-Buddha_dated_338,_China,_Hebei,_Later_Zhao_kingdom,_bronze_with_gilding_-_Asian_Art_Museum_-_San_Francisco,_CA_-_DSC07620.jpg",
