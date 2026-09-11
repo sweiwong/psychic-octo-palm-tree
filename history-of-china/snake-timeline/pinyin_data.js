@@ -49,6 +49,7 @@ const PINYIN = {
   "三国": "sān guó",
   "三": "sān",
   "晋": "jìn",
+  "晋朝": "jìn cháo",
   "十六国": "shí liù guó",
   "国": "guó",
   "南北朝": "nán běi cháo",

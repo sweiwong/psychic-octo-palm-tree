@@ -134,12 +134,6 @@ var BEGINNER_EARLY = (() => {
     'Successor states employed officials and kept methods inherited from earlier rulers. Their kings and emperors argued over who deserved to rule the empire. Even when no court controlled it all, the idea of imperial rule remained powerful. Political borders did not bring all learning, trade or government work to a halt.',
     'New regional centres',
     'Migration helped reshape society around the lower Yangtze River. In the north, courts maintained military and religious ties with Inner Asia. These regions developed their own centres of power and culture. People living through these changes did not know that a future dynasty would reunite much of the country. Their choices involved the rival courts and opportunities of their own time.');
-  add('jin-early', null,
-    'The Sima family’s Jin dynasty reunited the main successor states in 280. Fighting within the ruling family and upheaval in the north soon broke that unity. A Jin court survived in the south until 420, so the dynasty lasted much longer than its period of broad control.',
-    'Princes with armies',
-    'Giving imperial relatives troops and regional authority could help protect the ruling family. It also gave rival princes resources to fight one another when succession became disputed. Winning territory had not settled how power would pass between rulers or who would command the armies. Family protection became a source of destructive conflict.',
-    'Starting again in the south',
-    'The southern court kept the Jin name, but depended on families who had moved south and powerful people already living there. It had to build new agreements to govern. The names Western Jin and Eastern Jin describe this major change in territory and support, as well as a move of the court. The later dynasty could not simply recreate the world it had lost.');
   add('sixteen', null,
     'The Sixteen Kingdoms were competing northern states of the fourth and early fifth centuries. Their rulers drew on mixed armies and shifting alliances within former Jin territories. Older accounts use the derogatory label “Five Barbarians” for Xiongnu, Jie, Xianbei, Di and Qiang groups. These were not five united peoples carrying out one invasion.',
     'How rulers built support',
