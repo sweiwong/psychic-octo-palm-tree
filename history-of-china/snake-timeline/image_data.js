@@ -241,12 +241,38 @@ const HISTORY_IMAGES = {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/01_terracottawarriorsgroup.jpg",
     "width": 860,
     "height": 650,
-    "credit": "Gremelm · Wikimedia Commons",
+    "credit": "Gremelm · Bowers Museum, Santa Ana · Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:01_terracottawarriorsgroup.jpg",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "alt": "Rows of terracotta soldiers and a horse in a museum display.",
-    "caption": "Terracotta figures from the First Emperor’s mausoleum complex. Their differentiated faces and equipment belong to a coordinated funerary project, not a surviving photograph of the Qin army."
+    "alt": "Rows of life-sized terracotta soldiers and a horse displayed in a museum.",
+    "caption": "Terracotta figures from the First Emperor’s mausoleum complex, photographed in a modern display at the Bowers Museum. Their varied faces and equipment belong to a coordinated funerary project, not a surviving image of the Qin army.",
+    "sectionImages": [
+      {
+        "section": "Governing conquered territories",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Qin_Bronze_Weight_with_2_Imperial_Edicts_%2814367061301%29.jpg/960px-Qin_Bronze_Weight_with_2_Imperial_Edicts_%2814367061301%29.jpg",
+        "width": 960,
+        "height": 640,
+        "source": "https://commons.wikimedia.org/wiki/File:Qin_Bronze_Weight_with_2_Imperial_Edicts_(14367061301).jpg",
+        "credit": "Gary Todd · Qin Shihuang Museum, Lintong · Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "Dark bronze Qin weight with two dense panels of incised Chinese characters.",
+        "caption": "A Qin bronze standard weight bearing two imperial edicts, displayed at the Qin Shihuang Museum in Lintong. Centrally issued rules were attached to the instruments officials used to measure."
+      },
+      {
+        "section": "Law, punishment and contested memory",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Eighteen_Laws_of_Qin_on_Qin_Bamboo_Slips_%2810160622885%29.jpg/960px-Eighteen_Laws_of_Qin_on_Qin_Bamboo_Slips_%2810160622885%29.jpg",
+        "width": 960,
+        "height": 640,
+        "source": "https://commons.wikimedia.org/wiki/File:Eighteen_Laws_of_Qin_on_Qin_Bamboo_Slips_(10160622885).jpg",
+        "credit": "Gary Todd · Hubei Provincial Museum, Wuhan · Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "Long inscribed bamboo slips arranged in rows in a museum display.",
+        "caption": "A Hubei Provincial Museum display identified as the Eighteen Laws of Qin among the Shuihudi bamboo texts. These slips preserve evidence of Qin legal and administrative practice; they do not establish the later account of book burning or scholars buried alive."
+      }
+    ]
   },
   "han": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Huo_Qubing_horse_(cropped).jpg/960px-Huo_Qubing_horse_(cropped).jpg",

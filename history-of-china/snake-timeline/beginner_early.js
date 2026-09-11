@@ -40,12 +40,6 @@ var BEGINNER_EARLY = (() => {
     'A victory that was not guaranteed',
     'The other kingdoms defended their own rulers and formed alliances to survive. Qin’s eventual victory can make their defeat seem inevitable, but they had different possible futures in view. Conquest ended their independent courts. It did not immediately erase regional customs, languages or loyalties. The new empire had to govern people whose lives had developed under separate states.',
     '256–221 BCE covers the years after the Zhou royal house fell. The full Warring States period began earlier, and Qin’s conquests involved several campaigns.');
-  add('qin', null,
-    'In 221 BCE, Qin defeated its major rivals and created an empire governed through appointed officials. The dynasty fell in 206 BCE, but later rulers kept many of its methods. Its government lasted far longer in practice than its ruling family did.',
-    'Making a large empire work',
-    'Common measures, written records and official procedures helped officials compare goods and carry out orders across long distances. They could also help trade. For rulers, these standards made it easier to collect resources and direct people. Excavated records show many offices handling routine transfers. Even a powerful emperor depended on officials doing this work in local communities.',
-    'The burden on households',
-    'Military campaigns, construction and compulsory service demanded much from ordinary families. After the First Emperor died in 210 BCE, struggles over succession and rebellion broke the dynasty. Later Han writers stressed Qin’s cruelty, and their accounts need to be read alongside excavated evidence. Han’s continued use of Qin methods shows how much survived the collapse, despite the sharp criticism of its rulers.');
   add('han', null,
     'Han rulers rebuilt an empire after the wars that destroyed Qin. Its history includes Western Han, the interruption of Wang Mang’s Xin dynasty, and the restored Eastern Han. Across these centuries, government changed, classical learning grew and connections across Eurasia expanded.',
     'Sharing and gathering power',
