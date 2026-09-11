@@ -10,13 +10,13 @@ test.after(async () => { await browser?.close(); });
 async function pageWithFixtures(width = 1440, suffix = '') {
   const page = await browser.newPage({ viewport: { width, height: 1000 } });
   page.setDefaultTimeout(5000);
-  await page.route('**/beginner_early.js*', route => route.fulfill({
+  await page.route('**/card_notes.js*', route => route.fulfill({
     contentType: 'application/javascript',
-    body: fs.readFileSync(__dirname + '/beginner_early.js', 'utf8') + `
-      BEGINNER_EARLY.revisions.han.description = 'Read [[Three Kingdoms]] then [[Qing|the Qing dynasty]]. <b>literal prose</b>';
-      BEGINNER_EARLY.revisions.han.sections = [{title: 'After [[Three Kingdoms]]', text: 'See [[id:qing|the Qing era]].'}];
-      BEGINNER_EARLY.revisions.han.note = 'Also [[Qing]].';
-      BEGINNER_EARLY.revisions.qin.description = 'Read [[Qing]] and [[Qing]].';`,
+    body: fs.readFileSync(__dirname + '/card_notes.js', 'utf8') + `
+      CARD_NOTES.revisions.han.description = 'Read [[Three Kingdoms]] then [[Qing|the Qing dynasty]]. <b>literal prose</b>';
+      CARD_NOTES.revisions.han.sections = [{title: 'After [[Three Kingdoms]]', text: 'See [[id:qing|the Qing era]].'}];
+      CARD_NOTES.revisions.han.note = 'Also [[Qing]].';
+      CARD_NOTES.revisions.qin.description = 'Read [[Qing]] and [[Qing]].';`,
   }));
   await page.goto(baseUrl + suffix);
   await page.locator('#chart svg').waitFor();

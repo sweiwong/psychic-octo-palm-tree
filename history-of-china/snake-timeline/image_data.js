@@ -194,37 +194,80 @@ const HISTORY_IMAGES = {
     "caption": "An Erlitou pottery jue in Luoyang Museum. Archaeological evidence for Erlitou does not by itself establish the names or reigns of the Xia kings."
   },
   "shang": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Tomb_Fu_Hao_YinXu.jpg",
-    "width": 640,
-    "height": 480,
-    "credit": "Chris Gyford · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Tomb_Fu_Hao_YinXu.jpg",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "alt": "Bronze vessel forms arranged in a reconstructed tomb chamber.",
-    "caption": "A reconstructed display of Fu Hao’s tomb at Yinxu, photographed in 2007. It interprets the archaeological burial and must not be mistaken for original grave goods still lying in their excavated positions."
+    "src": "https://images.metmuseum.org/CRDImages/as/original/DP164965.jpg",
+    "width": 1501,
+    "height": 2000,
+    "credit": "Unidentified Shang bronze caster · The Metropolitan Museum of Art",
+    "source": "https://www.metmuseum.org/art/collection/search/61239",
+    "license": "Public domain",
+    "licenseUrl": "https://www.metmuseum.org/policies/frequently-asked-questions-image-and-data-resources",
+    "alt": "Three-legged Shang bronze ding with upright handles and a band of symmetrical animal-mask decoration.",
+    "caption": "A Shang ritual tripod cauldron (ding), twelfth–eleventh century BCE. Bronze vessels joined food offerings, ancestor ritual and elite authority; this example’s animal-mask decoration shows the control possible with piece-mould casting.",
+    "sectionImages": [
+      {
+        "section": "Questions written on bone",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Chinese_oracle_bone_%2816th-10th_C_BC%29_-_BL_Or._7694.jpg",
+        "width": 1670,
+        "height": 1714,
+        "credit": "Unidentified Shang diviner or scribe · British Library",
+        "source": "https://commons.wikimedia.org/wiki/File:Chinese_oracle_bone_%2816th-10th_C_BC%29_-_BL_Or._7694.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "Fragmentary ox shoulder blade with rows of Shang characters and dark circular heat pits used for divination.",
+        "caption": "A late Shang oracle bone from the British Library’s Couling–Chalfant collection. Diviners heated prepared pits to create cracks, then recorded royal questions and prognostications in writing ancestral to modern Chinese characters."
+      }
+    ]
   },
   "western-zhou": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Early_Western_Zhou_Bronze_Gui_01.jpg/960px-Early_Western_Zhou_Bronze_Gui_01.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Early_Western_Zhou_Bronze_Gui_01.jpg",
     "width": 4474,
     "height": 3782,
-    "credit": "Gary Lee Todd, Ph.D. · Wikimedia Commons",
+    "credit": "Gary Lee Todd, Ph.D. · Shaanxi History Museum, Xi’an · Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:Early_Western_Zhou_Bronze_Gui_01.jpg",
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "alt": "An ancient bronze vessel with two handles on a square pedestal.",
-    "caption": "The Li gui, an early Western Zhou bronze whose inscription records the conquest of Shang. The vessel is evidence close to the event, rather than a later portrait of its protagonists."
+    "alt": "The early Western Zhou Li gui, a bronze food vessel with paired handles on a decorated square pedestal.",
+    "caption": "The Li gui, cast early in the Western Zhou, bears a 32-character inscription describing King Wu’s attack on Shang. This contemporary bronze is evidence close to the conquest, rather than a later imagined portrait of its participants.",
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "A network of kin and allies",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Western_Zhou_geography.svg",
+        "width": 1734,
+        "height": 1369,
+        "alt": "Relief map of the North China Plain in the ninth century BCE, marking the Western Zhou royal domain, capitals, regional states, rivers and archaeological sites.",
+        "caption": "A modern reconstruction of the Western Zhou landscape in the ninth century BCE. The red dashed outline marks the royal domain; squares mark capitals and regional states, and dots mark archaeological sites. The map uses Feng and Chengzhou for the western and eastern royal centres.",
+        "credit": "Kanguole · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Western_Zhou_geography.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fullSize": true
+      },
+      {
+        "section": "Ritual, bronze and writing",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/06/Western_Zhou_bronze_ding.jpg",
+        "width": 4752,
+        "height": 3168,
+        "alt": "The monumental Da Yu ding, a three-legged Western Zhou bronze vessel with upright handles and a decorated band below the rim.",
+        "caption": "The Da Yu ding was made during King Kang’s reign in the early Western Zhou and is now in the National Museum of China. Its scale and inscription show how Zhou elites recorded authority, royal favour and lineage in ritual bronze.",
+        "credit": "Gary Todd · National Museum of China · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Western_Zhou_bronze_ding.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fullSize": true
+      }
+    ]
   },
   "eastern-zhou": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg/960px-%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
-    "width": 3574,
-    "height": 4696,
-    "credit": "三猎 · Wikimedia Commons",
+    "width": 960,
+    "height": 1261,
+    "credit": "三猎 · Zhejiang Provincial Museum / Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:%E6%98%A5%E7%A7%8B%E4%BC%8E%E4%B9%90%E9%93%9C%E5%B1%8B1.jpg",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "alt": "A miniature bronze building containing musicians and other figures.",
-    "caption": "A Spring and Autumn-period bronze model of a building with performers. Elite ceremony and entertainment accompanied the competition between regional courts."
+    "alt": "A small bronze house model with an open front, lattice-like side walls, a peaked roof topped by a bird, and six kneeling performers inside.",
+    "caption": "A bronze house model with six kneeling performers, Spring and Autumn period (770–476 BCE), excavated from tomb 306 at Shizishan in Potang, Shaoxing; Zhejiang Provincial Museum. This period artifact comes from the Yue region and does not depict a named political event or the Eastern Zhou as a whole. The photograph was made in 2018."
   },
   "late-warring": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Warring_States_Bronze_Warriors_(9831196065).jpg/960px-Warring_States_Bronze_Warriors_(9831196065).jpg",
@@ -241,12 +284,38 @@ const HISTORY_IMAGES = {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b7/01_terracottawarriorsgroup.jpg",
     "width": 860,
     "height": 650,
-    "credit": "Gremelm · Wikimedia Commons",
+    "credit": "Gremelm · Bowers Museum, Santa Ana · Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:01_terracottawarriorsgroup.jpg",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "alt": "Rows of terracotta soldiers and a horse in a museum display.",
-    "caption": "Terracotta figures from the First Emperor’s mausoleum complex. Their differentiated faces and equipment belong to a coordinated funerary project, not a surviving photograph of the Qin army."
+    "alt": "Rows of life-sized terracotta soldiers and a horse displayed in a museum.",
+    "caption": "Terracotta figures from the First Emperor’s mausoleum complex, photographed in a modern display at the Bowers Museum. Their varied faces and equipment belong to a coordinated funerary project, not a surviving image of the Qin army.",
+    "sectionImages": [
+      {
+        "section": "Governing conquered territories",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Qin_Bronze_Weight_with_2_Imperial_Edicts_%2814367061301%29.jpg/960px-Qin_Bronze_Weight_with_2_Imperial_Edicts_%2814367061301%29.jpg",
+        "width": 960,
+        "height": 640,
+        "source": "https://commons.wikimedia.org/wiki/File:Qin_Bronze_Weight_with_2_Imperial_Edicts_(14367061301).jpg",
+        "credit": "Gary Todd · Qin Shihuang Museum, Lintong · Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "Dark bronze Qin weight with two dense panels of incised Chinese characters.",
+        "caption": "A Qin bronze standard weight bearing two imperial edicts, displayed at the Qin Shihuang Museum in Lintong. Centrally issued rules were attached to the instruments officials used to measure."
+      },
+      {
+        "section": "Law, punishment and contested memory",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Eighteen_Laws_of_Qin_on_Qin_Bamboo_Slips_%2810160622885%29.jpg/960px-Eighteen_Laws_of_Qin_on_Qin_Bamboo_Slips_%2810160622885%29.jpg",
+        "width": 960,
+        "height": 640,
+        "source": "https://commons.wikimedia.org/wiki/File:Eighteen_Laws_of_Qin_on_Qin_Bamboo_Slips_(10160622885).jpg",
+        "credit": "Gary Todd · Hubei Provincial Museum, Wuhan · Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "Long inscribed bamboo slips arranged in rows in a museum display.",
+        "caption": "A Hubei Provincial Museum display identified as the Eighteen Laws of Qin among the Shuihudi bamboo texts. These slips preserve evidence of Qin legal and administrative practice; they do not establish the later account of book burning or scholars buried alive."
+      }
+    ]
   },
   "han": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Huo_Qubing_horse_(cropped).jpg/960px-Huo_Qubing_horse_(cropped).jpg",
@@ -257,7 +326,48 @@ const HISTORY_IMAGES = {
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "alt": "A monumental stone horse standing above a fallen figure.",
-    "caption": "A horse trampling a Xiongnu figure at Huo Qubing’s mausoleum. The monument expresses a Han victory narrative and should be read as imperial commemoration."
+    "caption": "A horse trampling a Xiongnu figure at Huo Qubing’s mausoleum. The monument expresses a Han victory narrative and should be read as imperial commemoration.",
+    "sectionImages": [
+      {
+        "section": "The scale of empire",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Han_Civilisation_bright_large.jpg/1280px-Han_Civilisation_bright_large.jpg",
+        "width": 1280,
+        "height": 945,
+        "alt": "English-labelled map of the Han world in 2 CE, with settlements, frontier peoples, capitals, garrisons, and routes west through the Tarim Basin.",
+        "caption": "A modern reconstruction of the Han world in 2 CE. Brown shading marks areas evidenced by settlements under direct Han political or military control; the white route west from Chang’an includes what is often called the Silk Road. The map also overlays a modern PRC-claimed boundary, so it should not be read as an uncontested ancient border.",
+        "credit": "Yeu Ninje · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Han_Civilisation_bright_large.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fullSize": true
+      },
+      {
+        "section": "Culture and literature",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Mawangdui_painted_silk_funeral_banner.jpg/500px-Mawangdui_painted_silk_funeral_banner.jpg",
+        "width": 500,
+        "height": 1200,
+        "alt": "A tall T-shaped painted silk banner filled with figures, birds, dragons, celestial symbols, and funerary scenes.",
+        "caption": "The T-shaped painted silk banner from tomb 1 at Mawangdui, c. 168 BCE, found draped over the coffin of Xin Zhui, Lady Dai. Its layered scenes are commonly read as imagery of her passage through the afterlife, though their precise meanings remain debated.",
+        "credit": "Unknown Han artist · Hunan Museum / Google Arts & Culture / Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Mawangdui_painted_silk_funeral_banner.jpg",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "fullSize": true
+      },
+      {
+        "section": "Culture and literature",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg/1280px-Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg",
+        "width": 1280,
+        "height": 853,
+        "alt": "A human-shaped burial suit assembled from rectangular jade plaques joined by gold wire, displayed horizontally in a museum case.",
+        "caption": "The gold-threaded jade burial suit of Liu Sheng, king of Zhongshan, who died in 113 BCE. Excavated at Mancheng and now displayed in Hebei Museum, the fitted plaques show elite Han hopes that jade would protect the body after death. This was a funerary garment, not ordinary dress.",
+        "credit": "Gary Todd · Hebei Museum / Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Liu_Sheng%27s_Jade_Burial_Suit_with_Gold_Thread.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fullSize": true
+      }
+    ]
   },
   "xin": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/S-119_Wang_Mang_knife_coin.jpg",
