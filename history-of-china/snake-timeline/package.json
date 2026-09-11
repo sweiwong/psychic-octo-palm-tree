@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build:content": "node build_card_notes.js && node build_expanded.js",
-    "vercel-build": "node --test geometry.test.js focused_geometry.test.js"
+    "vercel-build": "node deployment_source_guard.js && node --test geometry.test.js focused_geometry.test.js"
   },
   "devDependencies": {
     "playwright": "^1.60.0",
