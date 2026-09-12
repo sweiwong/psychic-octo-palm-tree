@@ -7,13 +7,33 @@ var BEGINNER_EARLY = (() => {
     if (note !== undefined) entry.note = note;
     revisions[id] = entry;
   };
-  add('xia', null,
-    'Xia is the first dynasty in the traditional account of Chinese history. Later books name its kings, but no royal records from their own time have been securely identified. Its familiar dates are therefore much less certain than those of the later Shang.',
-    'The evidence at Erlitou',
-    'Excavations at Erlitou reveal a major early Bronze Age centre, with large buildings for powerful families and workshops requiring skilled workers. People there could gather considerable wealth and labour. Whether they called their kingdom Xia is another question. The place and broad dates fit some later accounts, but that alone cannot identify its rulers. The settlement is real; its connection with Xia remains debated.',
-    'Why later rulers told the story',
-    'Later accounts describe Xia losing power because its rulers failed to govern well. Shang then takes its place. This gave later generations a way to explain why one ruling family could rightfully replace another. The tradition may preserve memories of an older world, while also expressing what later writers believed a ruler should do.',
-    '2070–1600 BCE is a conventional, approximate chronology, not a securely documented sequence of reigns. Erlitou has not been proven to be Xia.');
+  revisions.xia = {
+    annotateNames: false,
+    description: 'The Xia Dynasty (夏朝 Xià Cháo), traditionally dated to about 2070–1600 BCE, is the first dynasty in the traditional account of Chinese history. No contemporary written records securely identify a Xia ruler or state. Much later works, chiefly the [[id:sima-qian|Records of the Grand Historian]] (《史记》 Shǐjì) by Sima Qian (司马迁 Sīmǎ Qiān) and the Bamboo Annals (《竹书纪年》 Zhúshū Jìnián), name 17 kings over 14 generations and tell how Xia rose and fell. Archaeology reveals a large Bronze Age centre at Erlitou (二里头 Èrlǐtóu) during part of this period, but whether Erlitou was Xia remains debated.',
+    sections: [
+      {
+        title: 'Yu, succession and the fall of Xia',
+        text: 'Traditional accounts place Xia in the Yellow River valley (黄河流域 Huáng Hé liúyù) of north-central China. In these stories, [[id:catalog-F_XIA_1|Yu the Great]] (大禹 Dà Yǔ) earns authority by controlling catastrophic floods. He then passes power to his son Qi (启 Qǐ), beginning hereditary succession. The final king, Jie of Xia (夏桀 Xià Jié), rules as a tyrant until Tang of Shang (商汤 Shāng Tāng) defeats him and founds the [[id:shang|Shang Dynasty]] (商朝 Shāng Cháo).\n\nThese accounts were written long after the period they describe. They preserve a tradition about the origins of hereditary rule and the replacement of one ruling house by another. They are not a contemporary record of events around 2000 BCE.'
+      },
+      {
+        title: 'An early urban centre at Erlitou',
+        text: 'The Erlitou Culture (二里头文化 Èrlǐtóu wénhuà) is named after a site in Henan (河南 Hénán) that was occupied from roughly 1900 to 1500 BCE. At its largest, the settlement covered about 300 hectares, or 3 square kilometres. Large building compounds, workshops and burials show that Erlitou was a major centre whose leaders could organize substantial labour and resources.\n\nIts foundry produced bronze vessels and weapons, while a separate workshop made turquoise-inlaid objects. Erlitou was one of the earliest major bronze-casting centres in the Central Plain (中原 Zhōngyuán). Farming supplied millet and rice, while pigs, cattle, sheep and hunting also supported the settlement.'
+      },
+      {
+        title: 'Wealth, craft and hierarchy',
+        text: 'Elite tombs contained bronze, jade and turquoise objects, while ordinary dwellings lacked comparable goods. This contrast points to a sharply unequal society. Skilled craftspeople worked in specialized workshops, but archaeologists still debate how directly Erlitou’s rulers controlled their production.\n\nThe large compounds and rich burials show concentrated wealth and organized labour. Neither a written bureaucracy nor a standing army is securely documented, so the surviving evidence cannot tell us exactly how Erlitou’s leaders governed.'
+      },
+      {
+        title: 'Erlitou and the Xia question',
+        text: 'Erlitou’s location and broad dates overlap with later accounts of Xia. This overlap has led some archaeologists to identify it as a Xia capital or political centre, but the match is not proof. No inscription from Erlitou names Xia, Yu, Qi, Jie or any other king in the traditional sequence.\n\nThe earliest undisputed Chinese writing comes from Shang oracle-bone inscriptions (甲骨文 Jiǎgǔwén) around 1200 BCE, several centuries after the traditional founding of Xia. Erlitou therefore gives us direct evidence for an early urban and stratified society, while the name Xia and its royal genealogy come from texts written much later. The two kinds of evidence may be connected, but that connection has not been proven.'
+      },
+      {
+        title: 'Why the Xia story endured',
+        text: 'Later accounts say Xia fell because Jie neglected government and oppressed his people, allowing Tang to replace him. Writers associated with the later [[id:catalog-R_ZHOU|Zhou Dynasty]] (周朝 Zhōu Cháo) used stories of virtuous founders and corrupt final rulers to explain why political authority could pass from one house to another. This pattern became closely tied to the [[id:western-zhou|Mandate of Heaven]] (天命 Tiānmìng), the argument that a ruling house could lose Heaven’s support through misconduct.\n\nWhether or not Xia existed as later texts describe it, the sequence of Xia, Shang and Zhou became the Three Dynasties (三代 Sāndài), a framework through which later historians described the beginnings of political order and dynastic succession.'
+      }
+    ],
+    note: '2070–1600 BCE is a conventional, approximate chronology, not a securely documented sequence of reigns. Erlitou’s broader occupation, about 1900–1500 BCE, should not be collapsed into the traditional Xia date range, and Erlitou has not been proven to be Xia.'
+  };
   revisions.shang = {
     annotateNames: false,
     description: 'The Shang (商朝 Shāng Cháo) was a Bronze Age royal dynasty centred in the Yellow River (黄河 Huáng Hé) valley of northern China. Its conventional dates are about 1600–1046 BCE, though the evidence is strongest for its later centuries. At Anyang (安阳 Ānyáng), royal tombs, bronze workshops and inscribed bones show a court that tied warfare, farming, craft production and communication with ancestors into one system of power.',

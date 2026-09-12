@@ -5,7 +5,10 @@ const EARLY_RESEARCH = (() => {
   const wiki = title => ['https://en.wikipedia.org/wiki/' + title.replaceAll(' ', '_'), 'Wikipedia · ' + title.replaceAll('_', ' ') + ' (reference overview)'];
   const sep = (slug, title) => ['https://plato.stanford.edu/entries/' + slug + '/', 'Stanford Encyclopedia of Philosophy · ' + title];
   const refs = {
-    xia:['https://www.cambridge.org/core/journals/early-china/article/abs/erlitou-and-the-search-for-the-xia/56BB0C6F4CA7EE7F1FD3F67CA95895A9','Early China · Erlitou and the search for Xia'],
+    xia:['https://www.cambridge.org/core/journals/early-china/article/abs/erlitou-and-the-search-for-the-xia/56BB0C6F4CA7EE7F1FD3F67CA95895A9','Robert L. Thorp · Erlitou and the search for Xia'],
+    xiaTradition:['https://ctext.org/shiji/xia-ben-ji','Sima Qian · Annals of Xia (later tradition)'],
+    erlitouEconomy:['https://www.cambridge.org/core/elements/abs/shang-economy/6BF123B7BC3F1453C86172D7F529C0AE','Roderick Campbell · The Erlitou period'],
+    erlitouEnvironment:['https://www.cambridge.org/core/elements/environmental-foundations-to-the-rise-of-early-civilisations-in-china/652E01F16B8F3686B1757284A2BA42E5','Yijie Zhuang · Environmental foundations of early Chinese civilisation'],
     bronze:['https://www.metmuseum.org/essays/shang-and-zhou-dynasties-the-bronze-age-of-china','Metropolitan Museum of Art · Shang and Zhou bronze cultures'],
     anyang:['https://asia.si.edu/exhibition/anyang-chinas-ancient-city-of-kings/','Smithsonian National Museum of Asian Art · Anyang: China’s Ancient City of Kings'],
     yinxu:['https://whc.unesco.org/en/list/1114/','UNESCO World Heritage Centre · Yin Xu'],
@@ -63,7 +66,7 @@ const EARLY_RESEARCH = (() => {
       'Erlitou provides evidence of a major early Bronze Age centre: elite building, craft specialization and substantial concentrations of resources. Calling it Xia adds a historical identification to those archaeological observations. The association remains debated because resemblance in place and broad chronology cannot, by itself, identify the rulers of an excavated settlement. A political society can be real even when its ancient name is uncertain.',
       'Why the tradition mattered',
       'Later accounts made Xia the predecessor whose failure justified Shang’s succession, establishing a pattern that subsequent rulers could repeat. This is evidence about how antiquity was used to explain legitimate government. It is not a reason to discard the tradition, but a reason to ask separately what it remembers and what its later narrators needed it to mean.',
-      '2070–1600 BCE is retained as a conventional, approximate chronology, not a securely documented reign sequence. Erlitou is not labelled here as proven Xia.',[refs.xia,wiki('Xia_dynasty')],{approx:true}),
+      '2070–1600 BCE is retained as a conventional, approximate chronology, not a securely documented reign sequence. Erlitou is not labelled here as proven Xia.',[refs.xia,refs.xiaTradition,refs.erlitouEconomy,refs.erlitouEnvironment,wiki('Xia_dynasty')],{approx:true,related:['catalog-E_XIA_1','catalog-F_XIA_1','shang','western-zhou','sima-qian']}),
     shang:card(
       'Shang rule is securely visible in late second-millennium BCE inscriptions, royal tombs and settlements. At Anyang, bronze workshops and inscribed bones reveal a court whose warfare, farming, ancestors and ritual obligations belonged to one connected political world. Evidence is richest for the dynasty’s later centuries.',
       'Ritual concentrated power',
