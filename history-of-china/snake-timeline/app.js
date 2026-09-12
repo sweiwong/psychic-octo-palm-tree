@@ -333,8 +333,9 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       const year=activeSection==='all'?(item.kind==='event'?item.start:(item.start+Math.min(item.end,2026))/2):(Math.max(item.start,view.start)+Math.min(item.end,view.end))/2,p=g.point(year,item.offset||0),row=Math.max(0,Math.min(g.rows-1,Math.round((g.point(year).y-g.top)/(g.radius*2)))),baseline=g.top+row*g.radius*2;
       const shortDates=dates(item).replaceAll(' CE','').replace(' – ','–');
       const dateWidth=dateMeasure.measureText(shortDates).width+shortDates.length*.5+12;
-      const isPeriod=item.kind==='period',labelName=item.linkTitle||item.name,w=Math.min(g.width-26,Math.max(80,dateWidth,labelName.length*(isPeriod?10.2:5.5)+12)),h=isPeriod?37:29;
-      const offsets=isPeriod?[-55,45,-82,70]:item.kind==='event'?[42,-62,67,-87]:(p.y>baseline?[66,42,-77,-55]:[-77,-55,66,42]);let rect;
+      const isPeriod=item.kind==='period',compactLabel=!!item.compactLabel,labelName=item.linkTitle||item.name,w=Math.min(g.width-26,Math.max(80,dateWidth,labelName.length*(isPeriod?10.2:5.5)+12)),h=compactLabel?29:isPeriod?37:29;
+      const preferredBelow=item.labelPosition==='below';
+      const offsets=preferredBelow?[29,45,70]:isPeriod?[-55,45,-82,70]:item.kind==='event'?[42,-62,67,-87]:(p.y>baseline?[66,42,-77,-55]:[-77,-55,66,42]);let rect;
       const candidates=[];
       function consider(x,y){
         const r={x:Math.max(13,Math.min(g.width-w-13,x)),y,w,h};
@@ -353,7 +354,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       }
       for(const dy of offsets)for(const dx of [0,-24,24,-48,48,-80,80,-120,120,-180,180,-240,240])consider(p.x-w/2+dx,baseline+dy);
       if(!candidates.some(c=>c.clear)){
-        for(let y=baseline-90;y<=baseline+70;y+=8)for(let x=13;x<=g.width-w-13;x+=12)consider(x,y);
+        for(let y=preferredBelow?baseline+24:baseline-90;y<=baseline+70;y+=8)for(let x=13;x<=g.width-w-13;x+=12)consider(x,y);
       }
       // Give crowded main periods another label row rather than dropping their names.
       if(isPeriod&&!candidates.some(c=>c.clear)){
@@ -381,7 +382,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       const group=el('g');interactive(group,item);group.append(el('circle',{class:'marker',cx:p.x,cy:p.y,r:item.kind==='event'?4.5:2.7,fill:item.kind==='event'?'#f4f0e7':item.color,stroke:item.kind==='event'?'#292d29':'#f4f0e7','stroke-width':1.5}));
       group.append(el('rect',{class:'label-bg',x:rect.x,y:rect.y-3,width:rect.w,height:rect.h+5,rx:2,fill:'#f4f0e7'}));
       group.append(el('text',{class:'label-name',x,y,'text-anchor':'middle'},labelName));
-      group.append(el('text',{class:'label-date',x,y:y+(isPeriod?16:13),'text-anchor':'middle'},shortDates));labels.append(group);
+      group.append(el('text',{class:'label-date',x,y:y+(isPeriod&&!compactLabel?16:13),'text-anchor':'middle'},shortDates));labels.append(group);
     }
     const dotSegments=[],clusters=[];
     // Group overlapping pointer targets in path order; dates never move off the ribbon.
