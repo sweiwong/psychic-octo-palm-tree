@@ -3247,7 +3247,7 @@
     },
     {
       "id": "jin-early",
-      "name": "Jin Dynasty",
+      "name": "Jin",
       "han": "晋",
       "start": 266,
       "end": 420,
@@ -3340,15 +3340,14 @@
           "https://assets.cambridge.org/97811071/35840/frontmatter/9781107135840_frontmatter.pdf"
         ]
       },
-      "linkTitle": "Jin Dynasty",
+      "linkTitle": "Jin",
       "linkAliases": [
         "Jin",
         "晋朝"
       ],
       "annotateNames": false,
       "searchAliases": [
-        "Jin",
-        "Jin Dynasty"
+        "Jin"
       ],
       "pinyin": "jìn cháo",
       "image": {

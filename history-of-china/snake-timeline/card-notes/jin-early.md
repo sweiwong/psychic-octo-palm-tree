@@ -1,6 +1,6 @@
 ---
-title: Jin Dynasty
-link-title: Jin Dynasty
+title: Jin
+link-title: Jin
 aliases:
   - Jin
   - 晋朝
