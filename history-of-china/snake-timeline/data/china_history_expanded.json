@@ -14677,7 +14677,7 @@
       "start": 1592,
       "end": 1592,
       "parent": "ming",
-      "ribbon": false,
+      "ribbon": true,
       "description": "Journey to the West (西游记 Xīyóu jì) is a 100-chapter novel from the [[id:ming|Ming dynasty]] (明朝 Míngcháo). Its earliest surviving complete edition was printed in Nanjing (南京 Nánjīng) in 1592. Published anonymously, it is traditionally attributed to Wu Cheng'en (吴承恩 Wú Chéng'ēn), although modern scholars still debate the attribution. The novel turns a seventh-century Buddhist pilgrimage into a comic fantasy about discipline, rebellion and celestial bureaucracy.",
       "sections": [
         {
