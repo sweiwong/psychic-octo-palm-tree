@@ -615,11 +615,11 @@
       "start": -2070,
       "end": -1600,
       "color": "#b39c73",
-      "description": "Xia is the first dynasty in the traditional account of Chinese history. Later books name its kings, but no royal records from their own time have been securely identified. Its familiar dates are therefore much less certain than those of the later Shang.",
+      "description": "The Xia Dynasty (夏朝 Xià Cháo), traditionally dated to about 2070–1600 BCE, is the first dynasty in the traditional account of Chinese history. No contemporary written records securely identify a Xia ruler or state. Much later works, chiefly the [[id:sima-qian|Records of the Grand Historian]] (《史记》 Shǐjì) by Sima Qian (司马迁 Sīmǎ Qiān) and the Bamboo Annals (《竹书纪年》 Zhúshū Jìnián), name 17 kings over 14 generations and tell how Xia rose and fell. Archaeology reveals a large Bronze Age centre at Erlitou (二里头 Èrlǐtóu) during part of this period, but whether Erlitou was Xia remains debated.",
       "source": "https://en.wikipedia.org/wiki/Xia_dynasty",
       "kind": "period",
       "approx": true,
-      "note": "2070–1600 BCE is a conventional, approximate chronology, not a securely documented sequence of reigns. Erlitou has not been proven to be Xia.",
+      "note": "2070–1600 BCE is a conventional, approximate chronology, not a securely documented sequence of reigns. Erlitou’s broader occupation, about 1900–1500 BCE, should not be collapsed into the traditional Xia date range, and Erlitou has not been proven to be Xia.",
       "sourceIds": [
         "R_XIA"
       ],
@@ -628,7 +628,10 @@
         "https://english.chnmus.net/en/exhibitions/permanent/details.html?id=418144425005041137",
         "https://www.cambridge.org/core/journals/early-china/article/abs/sage-king-yu-and-the-bin-gong-xu/C9C992C3FB803232957A781EADF036D6",
         "https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/abs/myth-of-the-xia-dynasty/0A0E1FDE4C2DE407BB928745E54A25D0",
-        "https://www.cambridge.org/core/journals/early-china/article/abs/erlitou-and-the-search-for-the-xia/56BB0C6F4CA7EE7F1FD3F67CA95895A9"
+        "https://www.cambridge.org/core/journals/early-china/article/abs/erlitou-and-the-search-for-the-xia/56BB0C6F4CA7EE7F1FD3F67CA95895A9",
+        "https://ctext.org/shiji/xia-ben-ji",
+        "https://www.cambridge.org/core/elements/abs/shang-economy/6BF123B7BC3F1453C86172D7F529C0AE",
+        "https://www.cambridge.org/core/elements/environmental-foundations-to-the-rise-of-early-civilisations-in-china/652E01F16B8F3686B1757284A2BA42E5"
       ],
       "nameZh": "夏",
       "category": "dynasty",
@@ -638,18 +641,40 @@
       "originalType": "regime",
       "sections": [
         {
-          "title": "The evidence at Erlitou",
-          "text": "Excavations at Erlitou reveal a major early Bronze Age centre, with large buildings for powerful families and workshops requiring skilled workers. People there could gather considerable wealth and labour. Whether they called their kingdom Xia is another question. The place and broad dates fit some later accounts, but that alone cannot identify its rulers. The settlement is real; its connection with Xia remains debated."
+          "title": "Yu, succession and the fall of Xia",
+          "text": "Traditional accounts place Xia in the Yellow River valley (黄河流域 Huáng Hé liúyù) of north-central China. In these stories, [[id:catalog-F_XIA_1|Yu the Great]] (大禹 Dà Yǔ) earns authority by controlling catastrophic floods. He then passes power to his son Qi (启 Qǐ), beginning hereditary succession. The final king, Jie of Xia (夏桀 Xià Jié), rules as a tyrant until Tang of Shang (商汤 Shāng Tāng) defeats him and founds the [[id:shang|Shang Dynasty]] (商朝 Shāng Cháo).\n\nThese accounts were written long after the period they describe. They preserve a tradition about the origins of hereditary rule and the replacement of one ruling house by another. They are not a contemporary record of events around 2000 BCE."
         },
         {
-          "title": "Why later rulers told the story",
-          "text": "Later accounts describe Xia losing power because its rulers failed to govern well. Shang then takes its place. This gave later generations a way to explain why one ruling family could rightfully replace another. The tradition may preserve memories of an older world, while also expressing what later writers believed a ruler should do."
+          "title": "An early urban centre at Erlitou",
+          "text": "The Erlitou Culture (二里头文化 Èrlǐtóu wénhuà) is named after a site in Henan (河南 Hénán) that was occupied from roughly 1900 to 1500 BCE. At its largest, the settlement covered about 300 hectares, or 3 square kilometres. Large building compounds, workshops and burials show that Erlitou was a major centre whose leaders could organize substantial labour and resources.\n\nIts foundry produced bronze vessels and weapons, while a separate workshop made turquoise-inlaid objects. Erlitou was one of the earliest major bronze-casting centres in the Central Plain (中原 Zhōngyuán). Farming supplied millet and rice, while pigs, cattle, sheep and hunting also supported the settlement."
+        },
+        {
+          "title": "Wealth, craft and hierarchy",
+          "text": "Elite tombs contained bronze, jade and turquoise objects, while ordinary dwellings lacked comparable goods. This contrast points to a sharply unequal society. Skilled craftspeople worked in specialized workshops, but archaeologists still debate how directly Erlitou’s rulers controlled their production.\n\nThe large compounds and rich burials show concentrated wealth and organized labour. Neither a written bureaucracy nor a standing army is securely documented, so the surviving evidence cannot tell us exactly how Erlitou’s leaders governed."
+        },
+        {
+          "title": "Erlitou and the Xia question",
+          "text": "Erlitou’s location and broad dates overlap with later accounts of Xia. This overlap has led some archaeologists to identify it as a Xia capital or political centre, but the match is not proof. No inscription from Erlitou names Xia, Yu, Qi, Jie or any other king in the traditional sequence.\n\nThe earliest undisputed Chinese writing comes from Shang oracle-bone inscriptions (甲骨文 Jiǎgǔwén) around 1200 BCE, several centuries after the traditional founding of Xia. Erlitou therefore gives us direct evidence for an early urban and stratified society, while the name Xia and its royal genealogy come from texts written much later. The two kinds of evidence may be connected, but that connection has not been proven."
+        },
+        {
+          "title": "Why the Xia story endured",
+          "text": "Later accounts say Xia fell because Jie neglected government and oppressed his people, allowing Tang to replace him. Writers associated with the later [[id:catalog-R_ZHOU|Zhou Dynasty]] (周朝 Zhōu Cháo) used stories of virtuous founders and corrupt final rulers to explain why political authority could pass from one house to another. This pattern became closely tied to the [[id:western-zhou|Mandate of Heaven]] (天命 Tiānmìng), the argument that a ruling house could lose Heaven’s support through misconduct.\n\nWhether or not Xia existed as later texts describe it, the sequence of Xia, Shang and Zhou became the Three Dynasties (三代 Sāndài), a framework through which later historians described the beginnings of political order and dynastic succession."
         }
       ],
       "sourceLabels": {
-        "https://www.cambridge.org/core/journals/early-china/article/abs/erlitou-and-the-search-for-the-xia/56BB0C6F4CA7EE7F1FD3F67CA95895A9": "Early China · Erlitou and the search for Xia",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/erlitou-and-the-search-for-the-xia/56BB0C6F4CA7EE7F1FD3F67CA95895A9": "Robert L. Thorp · Erlitou and the search for Xia",
+        "https://ctext.org/shiji/xia-ben-ji": "Sima Qian · Annals of Xia (later tradition)",
+        "https://www.cambridge.org/core/elements/abs/shang-economy/6BF123B7BC3F1453C86172D7F529C0AE": "Roderick Campbell · The Erlitou period",
+        "https://www.cambridge.org/core/elements/environmental-foundations-to-the-rise-of-early-civilisations-in-china/652E01F16B8F3686B1757284A2BA42E5": "Yijie Zhuang · Environmental foundations of early Chinese civilisation",
         "https://en.wikipedia.org/wiki/Xia_dynasty": "Wikipedia · Xia dynasty (reference overview)"
       },
+      "related": [
+        "catalog-E_XIA_1",
+        "catalog-F_XIA_1",
+        "shang",
+        "western-zhou",
+        "sima-qian"
+      ],
       "dateReview": {
         "status": "disputed",
         "note": "2070–1600 BCE is one modern reconstructed chronology, not securely established exact dates. Xia's identification with excavated cultures and the historical status of its early rulers remain debated. Display as approximate/traditional. Existing UI already labels the date approximate; preserve its fuller description.",
@@ -660,24 +685,38 @@
         ]
       },
       "catalogDates": null,
-      "related": [
-        "catalog-E_XIA_1"
-      ],
+      "annotateNames": false,
       "searchAliases": [
         "Xia"
       ],
       "linkTitle": "Xia",
       "pinyin": "xià",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Xia_Dynasty_pottery_jue.jpg",
-        "width": 480,
-        "height": 640,
-        "credit": "Gary Lee Todd · Wikimedia Commons",
-        "source": "https://commons.wikimedia.org/wiki/File:Xia_Dynasty_pottery_jue.jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "alt": "A pottery vessel with a long spout and three pointed legs.",
-        "caption": "An Erlitou pottery jue in Luoyang Museum. Archaeological evidence for Erlitou does not by itself establish the names or reigns of the Xia kings."
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Jade_dragon_banner.jpg",
+        "width": 6000,
+        "height": 2041,
+        "credit": "Furius · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Jade_dragon_banner.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "A long turquoise dragon-shaped artifact displayed in earth, with a bronze bell near the middle and a broad head at the right.",
+        "caption": "A turquoise dragon-form artifact and bronze bell from Erlitou, displayed in their reconstructed burial arrangement. The object makes Erlitou’s elite ritual craft visible, but it does not identify the site as the Xia polity described in later texts.",
+        "fullSize": true,
+        "sectionImages": [
+          {
+            "section": "Erlitou and the Xia question",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Erlitou_sites_and_Xia_capitals.svg",
+            "width": 624,
+            "height": 557,
+            "alt": "Map of the middle Yellow River valley with black dots for Erlitou-culture sites and red circles for capitals named in traditional Xia accounts.",
+            "caption": "Modern map comparing Erlitou-culture sites with six Xia capitals identified in the received Bamboo Annals. The match is suggestive, but it does not prove that Erlitou was Xia.",
+            "credit": "Kanguole · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Erlitou_sites_and_Xia_capitals.svg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "fullSize": true
+          }
+        ]
       }
     },
     {
@@ -5037,7 +5076,7 @@
         }
       ],
       "sourceLabels": {
-        "https://www.cambridge.org/core/journals/early-china/article/abs/erlitou-and-the-search-for-the-xia/56BB0C6F4CA7EE7F1FD3F67CA95895A9": "Early China · Erlitou and the search for Xia",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/erlitou-and-the-search-for-the-xia/56BB0C6F4CA7EE7F1FD3F67CA95895A9": "Robert L. Thorp · Erlitou and the search for Xia",
         "https://en.wikipedia.org/wiki/Xia_dynasty": "Wikipedia · Xia dynasty (reference overview)"
       },
       "dateReview": {
