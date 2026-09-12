@@ -3297,8 +3297,22 @@ const CHART_RESEARCH=(()=>{
   "ming-journey-west": {
     "sources": [
       "https://www.jstor.org/stable/j.ctvct027d",
-      "https://uw.manifoldapp.org/read/72f173a7-0e3b-4728-953c-c40b6e8bb4bd/section/6f00de67-e843-43bc-9d9b-94ee1be9399d"
+      "https://uw.manifoldapp.org/read/72f173a7-0e3b-4728-953c-c40b6e8bb4bd/section/6f00de67-e843-43bc-9d9b-94ee1be9399d",
+      "https://www.cambridge.org/core/elements/early-globalism-and-chinese-literature/33C0D59D071F6B08EAB49C28800D69C8",
+      "https://academic.oup.com/dsh/article/39/1/308/7444779",
+      "https://iep.utm.edu/xuanzang/",
+      "https://afe.easia.columbia.edu/cosmos/main/using_monkey.pdf",
+      "https://press.uchicago.edu/ucp/books/book/chicago/J/bo12893528.html"
     ],
+    "sourceLabels": {
+      "https://www.jstor.org/stable/j.ctvct027d": "Hongmei Sun · Transforming Monkey",
+      "https://uw.manifoldapp.org/read/72f173a7-0e3b-4728-953c-c40b6e8bb4bd/section/6f00de67-e843-43bc-9d9b-94ee1be9399d": "University of Washington · Journey to the West teaching edition",
+      "https://www.cambridge.org/core/elements/early-globalism-and-chinese-literature/33C0D59D071F6B08EAB49C28800D69C8": "Cambridge University Press · Early Globalism and Chinese Literature",
+      "https://academic.oup.com/dsh/article/39/1/308/7444779": "Oxford Academic · Retranslated Chinese classical canon Journey to the West",
+      "https://iep.utm.edu/xuanzang/": "Internet Encyclopedia of Philosophy · Xuanzang",
+      "https://afe.easia.columbia.edu/cosmos/main/using_monkey.pdf": "Columbia University · Using Monkey in the Classroom",
+      "https://press.uchicago.edu/ucp/books/book/chicago/J/bo12893528.html": "University of Chicago Press · The Journey to the West"
+    },
     "dateReview": {
       "status": "confirmed",
       "note": "Scholarly studies identify the 1592 edition. The card correctly limits its claim to the surviving complete edition and qualifies author attribution.",
