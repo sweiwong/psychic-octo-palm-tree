@@ -380,7 +380,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
         leaders.append(el('path',{d:'M'+p.x+','+p.y+' L'+choice.end.x+','+choice.end.y,fill:'none',stroke:item.kind==='concurrent'?item.color:'#b6b2a5','stroke-width':.7}));
       }
       const group=el('g');interactive(group,item);group.append(el('circle',{class:'marker',cx:p.x,cy:p.y,r:item.kind==='event'?4.5:2.7,fill:item.kind==='event'?'#f4f0e7':item.color,stroke:item.kind==='event'?'#292d29':'#f4f0e7','stroke-width':1.5}));
-      group.append(el('rect',{class:'label-bg',x:rect.x,y:rect.y-3,width:rect.w,height:rect.h+5,rx:2,fill:'#f4f0e7'}));
+      group.append(el('rect',{class:'label-bg',x:rect.x,y:rect.y-3,width:rect.w,height:rect.h+5,rx:2,fill:'transparent'}));
       group.append(el('text',{class:'label-name',x,y,'text-anchor':'middle'},labelName));
       group.append(el('text',{class:'label-date',x,y:y+(isPeriod&&!compactLabel?16:13),'text-anchor':'middle'},shortDates));labels.append(group);
     }
