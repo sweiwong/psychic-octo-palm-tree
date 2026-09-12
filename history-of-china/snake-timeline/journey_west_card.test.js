@@ -19,7 +19,7 @@ test('Journey to the West is a sourced, linked, illustrated bilingual card', () 
   assert.equal(card.start, 1592);
   assert.equal(card.end, 1592);
   assert.equal(card.parent, 'ming');
-  assert.equal(card.ribbon, false);
+  assert.equal(card.ribbon, true);
   assert.deepEqual(card.related, ['xuanzang-return', 'ming', 'red-chamber']);
 
   const copy = [card.description, ...card.sections.map(section => section.text), card.note].join('\n');
