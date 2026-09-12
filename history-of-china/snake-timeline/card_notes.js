@@ -183,8 +183,8 @@ var CARD_NOTES = {
       "note": ""
     },
     "jin-early": {
-      "name": "Jin Dynasty",
-      "linkTitle": "Jin Dynasty",
+      "name": "Jin",
+      "linkTitle": "Jin",
       "linkAliases": [
         "Jin",
         "晋朝"
