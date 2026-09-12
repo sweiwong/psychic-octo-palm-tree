@@ -2485,12 +2485,12 @@ const HISTORY_IMAGES = {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/The_Journey_to_the_West,_Shidetang_Hall_of_Jinling_in_1592.jpg/960px-The_Journey_to_the_West,_Shidetang_Hall_of_Jinling_in_1592.jpg",
     "width": 1856,
     "height": 1637,
-    "credit": "Shidetang Hall of Jinling · National Library of China",
+    "credit": "Unidentified woodblock illustrator; Shidetang Hall of Jinling · National Palace Museum / Wikimedia Commons",
     "source": "https://commons.wikimedia.org/wiki/File:The_Journey_to_the_West,_Shidetang_Hall_of_Jinling_in_1592.jpg",
     "license": "Public domain",
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "alt": "Two facing pages of a woodblock-printed novel with illustrated scenes.",
-    "caption": "Pages from the 1592 Shidetang edition of Journey to the West, held by the National Library of China. The printed object makes the novel’s commercial and visual presentation visible."
+    "alt": "Two facing pages of a Ming woodblock print show Sun Wukong with his staff opposite Princess Iron Fan and attendants.",
+    "caption": "A two-page woodblock illustration of Sun Wukong’s first attempt to borrow the plantain fan from Princess Iron Fan, in the 1592 Shidetang edition printed at Jinling (Nanjing). This copy is held by the National Palace Museum."
   },
   "ming-li-shizhen": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/6/63/Compendium_of_Materia_Medica.png",

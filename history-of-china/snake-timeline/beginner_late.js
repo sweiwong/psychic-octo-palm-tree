@@ -244,12 +244,30 @@ const BEGINNER_LATE = (() => {
     'Debate within Confucian learning',
     'Wang questioned parts of Zhu Xi’s teaching while drawing on the same inherited texts and concerns. Their disagreements show how much argument existed within Confucian thought. Later followers took Wang’s ideas in different directions. The date 1508 comes from the traditional account of his experience at Longchang; his ideas developed further through teaching and debate.');
 
-  revise('ming-journey-west', 'Journey to the West',
-    'Journey to the West turns the pilgrimage of the Tang monk Xuanzang into an adventure filled with religious challenges, comedy and fantasy. Its earliest surviving complete, hundred-chapter edition was printed in Nanjing in 1592. The stories behind it had developed over centuries.',
-    'From storytelling to print',
-    'Oral tales, performances and earlier writings had already transformed the historical journey. The printed novel gathered this material into a long narrative that later readers could encounter in a durable form. Illustrations and chapter divisions helped shape that experience. The book is traditionally attributed to Wu Cheng’en, although its authorship remains debated.',
-    'Adventure with a satirical edge',
-    'The pilgrims meet powerful figures whose claims invite fear, laughter and criticism. Religious discipline appears alongside appetite and the Monkey King’s unruly energy. The novel offers a view of late Ming literary culture, rather than a factual record of Xuanzang’s travels or religious life in the Tang dynasty.');
+  revisions['ming-journey-west'] = {
+    name: 'Journey to the West',
+    annotateNames: false,
+    description: 'Journey to the West (西游记 Xīyóu jì) is a 100-chapter novel from the [[id:ming|Ming dynasty]] (明朝 Míngcháo). Its earliest surviving complete edition was printed in Nanjing (南京 Nánjīng) in 1592. Published anonymously, it is traditionally attributed to Wu Cheng\'en (吴承恩 Wú Chéng\'ēn), although modern scholars still debate the attribution. The novel turns a seventh-century Buddhist pilgrimage into a comic fantasy about discipline, rebellion and celestial bureaucracy.',
+    sections: [
+      {
+        title: 'From pilgrimage to novel',
+        text: 'The historical [[id:xuanzang-return|Xuanzang]] (玄奘 Xuánzàng) left China in 629 during the [[id:tang|Tang dynasty]] (唐朝 Tángcháo) and returned to [[id:chang-an|Chang\'an]] (长安 Cháng\'ān) in 645 after travelling through Central Asia and India. He brought back 657 Sanskrit works, directed a translation team and dictated the Great Tang Records on the Western Regions (大唐西域记 Dà Táng Xīyù Jì). Over the following centuries, storytellers, playwrights and artists transformed his journey. The anonymous compiler of the 1592 novel shaped these earlier versions into one long narrative.'
+      },
+      {
+        title: 'A monkey takes over the story',
+        text: 'The first seven chapters introduce Sun Wukong (孙悟空 Sūn Wùkōng), born from stone and armed with shapeshifting powers, a cloud somersault and an appetite for trouble. The next five chapters establish Xuanzang\'s mission. The pilgrimage occupies the rest of the novel, with Sun Wukong, Zhu Bajie (猪八戒 Zhū Bājiè) and Sha Wujing (沙悟净 Shā Wùjìng) protecting the monk through a sequence counted as eighty-one ordeals. They fight monsters, expose false holy men and repeatedly need help from the heavenly powers whose disorder caused some of their problems.'
+      },
+      {
+        title: 'Religion and bureaucracy',
+        text: 'The pilgrimage has a Buddhist destination, but the novel mixes Buddhist karma and enlightenment with Daoist immortality, alchemy, popular gods and Confucian ideas about family and government. Its heavenly courts resemble earthly administrations: officials assign posts, guard their rank and call in better-connected specialists when a crisis exceeds their authority. Bureaucracy is part of the joke, but the novel is not a simple coded attack on the Ming state. Adventure, religious allegory, moral instruction and satire operate together.'
+      },
+      {
+        title: 'A story still being retold',
+        text: 'Arthur Waley\'s Monkey introduced many English-language readers to the novel in 1942, but selected only thirty of its hundred chapters. Anthony C. Yu\'s four-volume translation, published from 1977 to 1983, was the first complete English version. The story has continued through theatre, painting, television, comics and games across East Asia and beyond. Modern works such as Black Myth: Wukong use the same characters to create new stories.'
+      }
+    ],
+    note: 'The date 1592 identifies the earliest surviving complete edition, not the beginning of the story cycle. Wu Cheng\'en is the traditional author attribution, but the edition appeared anonymously and the attribution remains debated.'
+  };
 
   revise('ming-li-shizhen', 'Li Shizhen’s Compendium of Materia Medica',
     'Li Shizhen’s Bencao gangmu, often called the Compendium of Materia Medica, brought together knowledge about medicinal substances. It appeared in print in 1596, after his death. Li compared inherited writings and tried to correct how substances were named, identified and classified.',

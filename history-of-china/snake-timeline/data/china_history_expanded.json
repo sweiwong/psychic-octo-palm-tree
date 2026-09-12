@@ -14632,32 +14632,52 @@
     {
       "id": "ming-journey-west",
       "name": "Journey to the West",
-      "nameZh": "西游记世德堂本",
+      "nameZh": "西游记",
       "han": "书",
-      "pinyin": "Xīyóujì Shìdétáng Běn",
+      "pinyin": "Xīyóu jì",
       "start": 1592,
       "end": 1592,
       "parent": "ming",
       "ribbon": false,
-      "description": "Journey to the West turns the pilgrimage of the Tang monk Xuanzang (玄奘) into an adventure filled with religious challenges, comedy and fantasy. Its earliest surviving complete, hundred-chapter edition was printed in Nanjing (南京) in 1592. The stories behind it had developed over centuries.",
+      "description": "Journey to the West (西游记 Xīyóu jì) is a 100-chapter novel from the [[id:ming|Ming dynasty]] (明朝 Míngcháo). Its earliest surviving complete edition was printed in Nanjing (南京 Nánjīng) in 1592. Published anonymously, it is traditionally attributed to Wu Cheng'en (吴承恩 Wú Chéng'ēn), although modern scholars still debate the attribution. The novel turns a seventh-century Buddhist pilgrimage into a comic fantasy about discipline, rebellion and celestial bureaucracy.",
       "sections": [
         {
-          "title": "From storytelling to print",
-          "text": "Oral tales, performances and earlier writings had already transformed the historical journey. The printed novel gathered this material into a long narrative that later readers could encounter in a durable form. Illustrations and chapter divisions helped shape that experience. The book is traditionally attributed to Wu Cheng’en (吴承恩), although its authorship remains debated."
+          "title": "From pilgrimage to novel",
+          "text": "The historical [[id:xuanzang-return|Xuanzang]] (玄奘 Xuánzàng) left China in 629 during the [[id:tang|Tang dynasty]] (唐朝 Tángcháo) and returned to [[id:chang-an|Chang'an]] (长安 Cháng'ān) in 645 after travelling through Central Asia and India. He brought back 657 Sanskrit works, directed a translation team and dictated the Great Tang Records on the Western Regions (大唐西域记 Dà Táng Xīyù Jì). Over the following centuries, storytellers, playwrights and artists transformed his journey. The anonymous compiler of the 1592 novel shaped these earlier versions into one long narrative."
         },
         {
-          "title": "Adventure with a satirical edge",
-          "text": "The pilgrims meet powerful figures whose claims invite fear, laughter and criticism. Religious discipline appears alongside appetite and the Monkey King’s unruly energy. The novel offers a view of late Ming literary culture, rather than a factual record of Xuanzang (玄奘)’s travels or religious life in the Tang dynasty."
+          "title": "A monkey takes over the story",
+          "text": "The first seven chapters introduce Sun Wukong (孙悟空 Sūn Wùkōng), born from stone and armed with shapeshifting powers, a cloud somersault and an appetite for trouble. The next five chapters establish Xuanzang's mission. The pilgrimage occupies the rest of the novel, with Sun Wukong, Zhu Bajie (猪八戒 Zhū Bājiè) and Sha Wujing (沙悟净 Shā Wùjìng) protecting the monk through a sequence counted as eighty-one ordeals. They fight monsters, expose false holy men and repeatedly need help from the heavenly powers whose disorder caused some of their problems."
+        },
+        {
+          "title": "Religion and bureaucracy",
+          "text": "The pilgrimage has a Buddhist destination, but the novel mixes Buddhist karma and enlightenment with Daoist immortality, alchemy, popular gods and Confucian ideas about family and government. Its heavenly courts resemble earthly administrations: officials assign posts, guard their rank and call in better-connected specialists when a crisis exceeds their authority. Bureaucracy is part of the joke, but the novel is not a simple coded attack on the Ming state. Adventure, religious allegory, moral instruction and satire operate together."
+        },
+        {
+          "title": "A story still being retold",
+          "text": "Arthur Waley's Monkey introduced many English-language readers to the novel in 1942, but selected only thirty of its hundred chapters. Anthony C. Yu's four-volume translation, published from 1977 to 1983, was the first complete English version. The story has continued through theatre, painting, television, comics and games across East Asia and beyond. Modern works such as Black Myth: Wukong use the same characters to create new stories."
         }
       ],
-      "note": "1592 identifies the earliest surviving complete edition. Attribution to Wu Cheng’en (吴承恩) is traditional and debated; the story cycle and other versions are earlier.",
+      "note": "The date 1592 identifies the earliest surviving complete edition, not the beginning of the story cycle. Wu Cheng'en is the traditional author attribution, but the edition appeared anonymously and the attribution remains debated.",
       "evidence": "Curated entry",
       "sources": [
-        "https://en.wikipedia.org/wiki/Journey_to_the_West",
+        "https://www.cambridge.org/core/elements/early-globalism-and-chinese-literature/33C0D59D071F6B08EAB49C28800D69C8",
+        "https://academic.oup.com/dsh/article/39/1/308/7444779",
+        "https://iep.utm.edu/xuanzang/",
+        "https://afe.easia.columbia.edu/cosmos/main/using_monkey.pdf",
+        "https://press.uchicago.edu/ucp/books/book/chicago/J/bo12893528.html",
         "https://www.jstor.org/stable/j.ctvct027d",
         "https://uw.manifoldapp.org/read/72f173a7-0e3b-4728-953c-c40b6e8bb4bd/section/6f00de67-e843-43bc-9d9b-94ee1be9399d"
       ],
-      "sourceLabels": {},
+      "sourceLabels": {
+        "https://www.jstor.org/stable/j.ctvct027d": "Hongmei Sun · Transforming Monkey",
+        "https://uw.manifoldapp.org/read/72f173a7-0e3b-4728-953c-c40b6e8bb4bd/section/6f00de67-e843-43bc-9d9b-94ee1be9399d": "University of Washington · Journey to the West teaching edition",
+        "https://www.cambridge.org/core/elements/early-globalism-and-chinese-literature/33C0D59D071F6B08EAB49C28800D69C8": "Cambridge University Press · Early Globalism and Chinese Literature",
+        "https://academic.oup.com/dsh/article/39/1/308/7444779": "Oxford Academic · Retranslated Chinese classical canon Journey to the West",
+        "https://iep.utm.edu/xuanzang/": "Internet Encyclopedia of Philosophy · Xuanzang",
+        "https://afe.easia.columbia.edu/cosmos/main/using_monkey.pdf": "Columbia University · Using Monkey in the Classroom",
+        "https://press.uchicago.edu/ucp/books/book/chicago/J/bo12893528.html": "University of Chicago Press · The Journey to the West"
+      },
       "related": [
         "xuanzang-return",
         "ming",
@@ -14665,7 +14685,7 @@
       ],
       "kind": "event",
       "category": "culture",
-      "source": "https://en.wikipedia.org/wiki/Journey_to_the_West",
+      "source": "https://www.cambridge.org/core/elements/early-globalism-and-chinese-literature/33C0D59D071F6B08EAB49C28800D69C8",
       "color": "#987950",
       "label": false,
       "markerOffset": 20,
@@ -14680,6 +14700,7 @@
           "https://uw.manifoldapp.org/read/72f173a7-0e3b-4728-953c-c40b6e8bb4bd/section/6f00de67-e843-43bc-9d9b-94ee1be9399d"
         ]
       },
+      "annotateNames": false,
       "searchAliases": [
         "Journey to the West reaches print",
         "Journey to the West"
@@ -14689,12 +14710,12 @@
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/The_Journey_to_the_West,_Shidetang_Hall_of_Jinling_in_1592.jpg/960px-The_Journey_to_the_West,_Shidetang_Hall_of_Jinling_in_1592.jpg",
         "width": 1856,
         "height": 1637,
-        "credit": "Shidetang Hall of Jinling · National Library of China",
+        "credit": "Unidentified woodblock illustrator; Shidetang Hall of Jinling · National Palace Museum / Wikimedia Commons",
         "source": "https://commons.wikimedia.org/wiki/File:The_Journey_to_the_West,_Shidetang_Hall_of_Jinling_in_1592.jpg",
         "license": "Public domain",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "alt": "Two facing pages of a woodblock-printed novel with illustrated scenes.",
-        "caption": "Pages from the 1592 Shidetang edition of Journey to the West, held by the National Library of China. The printed object makes the novel’s commercial and visual presentation visible."
+        "alt": "Two facing pages of a Ming woodblock print show Sun Wukong with his staff opposite Princess Iron Fan and attendants.",
+        "caption": "A two-page woodblock illustration of Sun Wukong’s first attempt to borrow the plantain fan from Princess Iron Fan, in the 1592 Shidetang edition printed at Jinling (Nanjing). This copy is held by the National Palace Museum."
       }
     },
     {
