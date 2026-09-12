@@ -1436,7 +1436,9 @@
       "description": "Wang Mang (王莽) replaced Han in 9 CE and founded the Xin dynasty. He tried to change landholding, slavery, currency and the government’s role in the economy, claiming to restore an ideal ancient order. Rebellion ended his reign in 23 CE. Further warfare followed before Han rule was restored.",
       "source": "https://en.wikipedia.org/wiki/Xin_dynasty",
       "kind": "period",
-      "label": false,
+      "label": true,
+      "labelPosition": "below",
+      "compactLabel": true,
       "sourceIds": [
         "R_XIN"
       ],
