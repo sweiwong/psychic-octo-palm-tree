@@ -183,15 +183,31 @@ const HISTORY_IMAGES = {
     "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
   },
   "xia": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Xia_Dynasty_pottery_jue.jpg",
-    "width": 480,
-    "height": 640,
-    "credit": "Gary Lee Todd · Wikimedia Commons",
-    "source": "https://commons.wikimedia.org/wiki/File:Xia_Dynasty_pottery_jue.jpg",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "alt": "A pottery vessel with a long spout and three pointed legs.",
-    "caption": "An Erlitou pottery jue in Luoyang Museum. Archaeological evidence for Erlitou does not by itself establish the names or reigns of the Xia kings."
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Jade_dragon_banner.jpg",
+    "width": 6000,
+    "height": 2041,
+    "credit": "Furius · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:Jade_dragon_banner.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "alt": "A long turquoise dragon-shaped artifact displayed in earth, with a bronze bell near the middle and a broad head at the right.",
+    "caption": "A turquoise dragon-form artifact and bronze bell from Erlitou, displayed in their reconstructed burial arrangement. The object makes Erlitou’s elite ritual craft visible, but it does not identify the site as the Xia polity described in later texts.",
+    "fullSize": true,
+    "sectionImages": [
+      {
+        "section": "Erlitou and the Xia question",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Erlitou_sites_and_Xia_capitals.svg",
+        "width": 624,
+        "height": 557,
+        "alt": "Map of the middle Yellow River valley with black dots for Erlitou-culture sites and red circles for capitals named in traditional Xia accounts.",
+        "caption": "Modern map comparing Erlitou-culture sites with six Xia capitals identified in the received Bamboo Annals. The match is suggestive, but it does not prove that Erlitou was Xia.",
+        "credit": "Kanguole · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Erlitou_sites_and_Xia_capitals.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fullSize": true
+      }
+    ]
   },
   "shang": {
     "src": "https://images.metmuseum.org/CRDImages/as/original/DP164965.jpg",
