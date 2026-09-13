@@ -1433,7 +1433,7 @@
       "start": 9,
       "end": 23,
       "color": "#665b70",
-      "description": "Wang Mang (王莽) replaced Han in 9 CE and founded the Xin dynasty. He tried to change landholding, slavery, currency and the government’s role in the economy, claiming to restore an ideal ancient order. Rebellion ended his reign in 23 CE. Further warfare followed before Han rule was restored.",
+      "description": "The Xin Dynasty (新朝 Xīn Cháo) was a short-lived imperial regime that lasted from 9 to 23 CE. Wang Mang (王莽 Wáng Mǎng) took the throne from the Liu imperial family and interrupted the [[id:han|Han Dynasty]], dividing it into the [[id:catalog-R_HAN_W|Western Han]] and [[id:catalog-R_HAN_E|Eastern Han]] periods. He tried to address landholding, debt and economic disorder through reforms based on classical models. Many of those reforms proved difficult to enforce, and the dynasty collapsed amid floods, famine and rebellion.",
       "source": "https://en.wikipedia.org/wiki/Xin_dynasty",
       "kind": "period",
       "label": true,
@@ -1444,45 +1444,78 @@
       ],
       "sources": [
         "https://en.wikipedia.org/wiki/Xin_dynasty",
-        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
-        "https://en.wikipedia.org/wiki/Wang_Mang",
-        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/wang-mang-the-restoration-of-the-han-dynasty-and-later-han/48EC19985183F5A65A477CB7133E8D80"
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/wang-mang-the-restoration-of-the-han-dynasty-and-later-han/48EC19985183F5A65A477CB7133E8D80",
+        "https://plato.stanford.edu/entries/han-dynasty/",
+        "https://www2.iath.virginia.edu/saxon/servlet/SaxonServlet?chunk.id=d2.60&doc.lang=english&source=xwomen%2Ftexts%2Fhanshu.xml&style=xwomen%2Fxsl%2Fdynaxml.xsl&toc.depth=1&toc.id=d2.1",
+        "https://www2.iath.virginia.edu/saxon/servlet/SaxonServlet?chunk.id=d2.55&doc.lang=english&source=xwomen%2Ftexts%2Fhanshu.xml&style=xwomen%2Fxsl%2Fdynaxml.xsl&toc.id=d2.55",
+        "https://www.chnmuseum.cn/zp/zpml/hb/202008/t20200824_247119.shtml",
+        "https://www.cambridge.org/core/journals/journal-of-economic-history/article/abs/industrial-slavery-in-china-during-the-former-han-dynasty-206-bcad-25/0B268B57193E3634DA61B8DEEBA38213"
       ],
-      "nameZh": "新",
+      "nameZh": "新朝",
       "category": "dynasty",
       "evidence": "Source-checked historical interpretation",
       "importance": 4,
-      "catalogNote": "9–23 CE follows the Met chronology for Wang Mang's dynasty.",
+      "catalogNote": "9–23 CE follows the Cambridge History of China chronology for Wang Mang's dynasty.",
       "originalType": "regime",
       "sections": [
         {
-          "title": "Old ideals, disruptive changes",
-          "text": "Invoking the past allowed Wang Mang (王莽) to argue for sweeping reforms. But his measures disturbed powerful interests and familiar ways of doing business. Repeated changes to money created a practical problem: issuing a new currency did not ensure that people could or would use it. Officials needed the ability to carry out reforms, and the public needed reasons to trust them."
+          "title": "The rise of Wang Mang",
+          "text": "By the late first century BCE, the Western Han court was weakened by factional struggles, while powerful landowners accumulated large estates. Many peasants lost their land and became tenants, labourers or migrants. The Wang family had become the most influential clan at court through Empress Dowager Wang Zhengjun (王政君 Wáng Zhèngjūn).\n\nHer nephew Wang Mang (45 BCE–23 CE) built a reputation for austerity and Confucian virtue. After the death of the 14-year-old Emperor Ping (汉平帝 Hàn Píngdì) in 6 CE, the court selected Liu Ying, a young child from the imperial family, as heir. Wang Mang governed in the child’s name and declared himself acting emperor. In 9 CE, he took the throne and proclaimed the Xin, or “New,” Dynasty."
         },
         {
-          "title": "A reign under pressure",
-          "text": "Floods drove people from their homes and deepened rural hardship. These disasters added to resistance and difficulties carrying out policy. The reforms’ failure had several causes. Calling Wang Mang (王莽) a modern socialist is also misleading: his model was an ancient society with fixed ranks. Later Han histories judged a ruler their own dynasty had replaced."
+          "title": "Radical reforms and their consequences",
+          "text": "Wang Mang sought to model government on institutions described in texts associated with the [[id:catalog-R_ZHOU|Zhou Dynasty]] (周朝 Zhōu Cháo). Under his “King’s Fields” policy (王田 wángtián), privately held land was renamed, transfers were restricted, and land beyond prescribed limits was supposed to be redistributed to households with too little. Powerful landholders resisted the policy, officials could not enforce it consistently, and Wang Mang later rescinded the measures.\n\nHe also prohibited the sale of enslaved people and retainers, expanded state control through policies later grouped as the “Six Controls” (六筦 liù guǎn), and repeatedly changed the currency. The new monetary system included coins of many shapes and values alongside units based on silver, gold, tortoise shell and cowries. New issues replaced or competed with familiar Han coins, making trade and tax payments harder. Many people continued to use the old wuzhu coins (五铢钱 wǔzhū qián) despite government prohibitions."
+        },
+        {
+          "title": "Catastrophe and collapse",
+          "text": "In 11 CE, the Yellow River (黄河 Huáng Hé) broke through its dikes and shifted course, flooding parts of the North China Plain. The disaster destroyed farmland, displaced communities, and worsened hunger and unrest. Rebellions grew in several regions, including movements later known as the Red Eyebrows (赤眉军 Chìméijūn) and Lulin (绿林军 Lùlínjūn).\n\nWang Mang’s armies failed to end the uprisings. In 23 CE, a coalition linked to the Lulin movement entered [[id:chang-an|Chang’an]] (长安 Cháng’ān) and killed Wang Mang. The Xin Dynasty collapsed. The Red Eyebrows remained a major force after his death and later took Chang’an during the struggle over the Han restoration."
+        },
+        {
+          "title": "Population records and their limits",
+          "text": "A census in 2 CE registered about 59.6 million people. In 57 CE, the Eastern Han government registered about 21 million. These figures were recorded 55 years apart under different political and administrative conditions. War, famine, migration, lost records and weakened government registration all contributed to the difference. The figures show severe disruption, but they cannot be used to calculate how many people died during the Xin period."
+        },
+        {
+          "title": "Legacy and assessment",
+          "text": "The Book of Han (《汉书》 Hànshū) shaped the traditional account of Wang Mang as a usurper. Ban Biao began the historical project, his son Ban Gu (班固 Bān Gù) developed it into a history of the Western Han, and Ban Gu’s sister [[id:ban-zhao|Ban Zhao]] (班昭 Bān Zhāo) completed unfinished portions after his death. Because the restored Eastern Han claimed continuity with the Liu imperial family, its official history treated the Xin as an interruption rather than a legitimate successor.\n\nLater historians have taken Wang Mang’s reform programme more seriously. Land concentration, debt and rural displacement were real problems. His policies attempted to address them through institutions drawn from classical texts, but resistance, weak implementation, repeated policy changes, natural disasters and rebellion overwhelmed the regime. Some of his most ambitious measures were withdrawn before the dynasty fell."
+        },
+        {
+          "title": "Did you know?",
+          "text": "Wang Mang introduced an unusually wide range of currencies. His systems assigned value to gold, silver, tortoise shell, cowries and copper coins in several shapes and denominations. Many people still preferred the familiar Han wuzhu coin, and the government repeatedly tried to stop its use."
         }
       ],
-      "note": "9–23 CE dates the Xin regime. The scale and implementation of individual reforms are debated; later Han histories were written within the dynasty that supplanted him.",
+      "note": "9–23 CE dates the Xin regime. The scale and implementation of individual reforms remain debated. The population figures are registration totals recorded in 2 and 57 CE, not a measured death toll for the Xin period. Later Han histories were written within the dynasty that supplanted Wang Mang.",
       "sourceLabels": {
-        "https://en.wikipedia.org/wiki/Wang_Mang": "Wikipedia · Wang Mang (reference overview)",
-        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/wang-mang-the-restoration-of-the-han-dynasty-and-later-han/48EC19985183F5A65A477CB7133E8D80": "Cambridge History of China · Wang Mang and Later Han"
+        "https://en.wikipedia.org/wiki/Xin_dynasty": "Wikipedia · Xin dynasty (reference overview)",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/wang-mang-the-restoration-of-the-han-dynasty-and-later-han/48EC19985183F5A65A477CB7133E8D80": "Cambridge History of China · Wang Mang and Later Han",
+        "https://plato.stanford.edu/entries/han-dynasty/": "Stanford Encyclopedia of Philosophy · Han philosophy and Ban Zhao",
+        "https://www2.iath.virginia.edu/saxon/servlet/SaxonServlet?chunk.id=d2.60&doc.lang=english&source=xwomen%2Ftexts%2Fhanshu.xml&style=xwomen%2Fxsl%2Fdynaxml.xsl&toc.depth=1&toc.id=d2.1": "University of Virginia · Dubs translation on Wang Mang’s economic policies",
+        "https://www2.iath.virginia.edu/saxon/servlet/SaxonServlet?chunk.id=d2.55&doc.lang=english&source=xwomen%2Ftexts%2Fhanshu.xml&style=xwomen%2Fxsl%2Fdynaxml.xsl&toc.id=d2.55": "University of Virginia · Dubs translation on flood and rebellion",
+        "https://www.chnmuseum.cn/zp/zpml/hb/202008/t20200824_247119.shtml": "National Museum of China · Wang Mang coinage",
+        "https://www.cambridge.org/core/journals/journal-of-economic-history/article/abs/industrial-slavery-in-china-during-the-former-han-dynasty-206-bcad-25/0B268B57193E3634DA61B8DEEBA38213": "Journal of Economic History · Former Han population records"
       },
+      "related": [
+        "han",
+        "catalog-R_HAN_W",
+        "catalog-R_HAN_E",
+        "catalog-R_ZHOU",
+        "chang-an",
+        "salt-iron-debate",
+        "ban-zhao"
+      ],
       "dateReview": {
         "status": "confirmed",
-        "note": "9–23 CE follows the Met chronology for Wang Mang's dynasty.",
+        "note": "9–23 CE follows the Cambridge History of China chronology for Wang Mang's dynasty.",
         "sources": [
-          "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+          "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/wang-mang-the-restoration-of-the-han-dynasty-and-later-han/48EC19985183F5A65A477CB7133E8D80"
         ]
       },
       "catalogDates": null,
-      "related": [],
+      "annotateNames": false,
       "searchAliases": [
         "Xin"
       ],
       "linkTitle": "Xin",
-      "pinyin": "xīn",
+      "pinyin": "xīn cháo",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/1/1f/S-119_Wang_Mang_knife_coin.jpg",
         "width": 640,
@@ -1491,8 +1524,23 @@
         "source": "https://commons.wikimedia.org/wiki/File:S-119_Wang_Mang_knife_coin.jpg",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "alt": "A bronze coin shaped like a knife with a round head.",
-        "caption": "Knife-shaped money associated with Wang Mang’s monetary reforms. Its deliberately archaic form makes the appeal to antiquity tangible."
+        "alt": "Front and reverse views of a metal knife-shaped coin with a round head.",
+        "caption": "Front and reverse views of a Wang Mang-era knife-shaped coin. Knife-shaped denominations were introduced in 7 CE, while Wang Mang was regent, and withdrawn in 9 CE when the Xin dynasty began; reviving an ancient form matched his broader appeal to antiquity.",
+        "sectionImages": [
+          {
+            "section": "Catastrophe and collapse",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Xin_Dynasty_Uprisings.png",
+            "width": 1272,
+            "height": 900,
+            "alt": "Map showing the routes and main areas of the Red Eyebrow and Lulin uprisings during and after the Xin dynasty.",
+            "caption": "Major uprisings during Xin’s collapse and the struggle to restore Han rule, c. 17–26 CE. Red Eyebrow forces emerged in Shandong and northern Jiangsu, while Lulin forces rose in northern Hubei and southern Henan. The campaigns continued after Xin fell in 23 CE.",
+            "credit": "SY · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:Xin_Dynasty_Uprisings.png",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "fullSize": true
+          }
+        ]
       }
     },
     {
