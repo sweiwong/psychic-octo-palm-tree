@@ -393,8 +393,23 @@ const HISTORY_IMAGES = {
     "source": "https://commons.wikimedia.org/wiki/File:S-119_Wang_Mang_knife_coin.jpg",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "alt": "A bronze coin shaped like a knife with a round head.",
-    "caption": "Knife-shaped money associated with Wang Mang’s monetary reforms. Its deliberately archaic form makes the appeal to antiquity tangible."
+    "alt": "Front and reverse views of a metal knife-shaped coin with a round head.",
+    "caption": "Front and reverse views of a Wang Mang-era knife-shaped coin. Knife-shaped denominations were introduced in 7 CE, while Wang Mang was regent, and withdrawn in 9 CE when the Xin dynasty began; reviving an ancient form matched his broader appeal to antiquity.",
+    "sectionImages": [
+      {
+        "section": "Catastrophe and collapse",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Xin_Dynasty_Uprisings.png",
+        "width": 1272,
+        "height": 900,
+        "alt": "Map showing the routes and main areas of the Red Eyebrow and Lulin uprisings during and after the Xin dynasty.",
+        "caption": "Major uprisings during Xin’s collapse and the struggle to restore Han rule, c. 17–26 CE. Red Eyebrow forces emerged in Shandong and northern Jiangsu, while Lulin forces rose in northern Hubei and southern Henan. The campaigns continued after Xin fell in 23 CE.",
+        "credit": "SY · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Xin_Dynasty_Uprisings.png",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fullSize": true
+      }
+    ]
   },
   "division": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Figure,_horse_(AM_8189-12).jpg/960px-Figure,_horse_(AM_8189-12).jpg",

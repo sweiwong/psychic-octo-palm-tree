@@ -142,12 +142,37 @@ var BEGINNER_EARLY = (() => {
     'A victory that was not guaranteed',
     'The other kingdoms defended their own rulers and formed alliances to survive. Qin’s eventual victory can make their defeat seem inevitable, but they had different possible futures in view. Conquest ended their independent courts. It did not immediately erase regional customs, languages or loyalties. The new empire had to govern people whose lives had developed under separate states.',
     '256–221 BCE covers the years after the Zhou royal house fell. The full Warring States period began earlier, and Qin’s conquests involved several campaigns.');
-  add('xin', null,
-    'Wang Mang replaced Han in 9 CE and founded the Xin dynasty. He tried to change landholding, slavery, currency and the government’s role in the economy, claiming to restore an ideal ancient order. Rebellion ended his reign in 23 CE. Further warfare followed before Han rule was restored.',
-    'Old ideals, disruptive changes',
-    'Invoking the past allowed Wang Mang to argue for sweeping reforms. But his measures disturbed powerful interests and familiar ways of doing business. Repeated changes to money created a practical problem: issuing a new currency did not ensure that people could or would use it. Officials needed the ability to carry out reforms, and the public needed reasons to trust them.',
-    'A reign under pressure',
-    'Floods drove people from their homes and deepened rural hardship. These disasters added to resistance and difficulties carrying out policy. The reforms’ failure had several causes. Calling Wang Mang a modern socialist is also misleading: his model was an ancient society with fixed ranks. Later Han histories judged a ruler their own dynasty had replaced.');
+  revisions.xin = {
+    annotateNames: false,
+    description: 'The Xin Dynasty (新朝 Xīn Cháo) was a short-lived imperial regime that lasted from 9 to 23 CE. Wang Mang (王莽 Wáng Mǎng) took the throne from the Liu imperial family and interrupted the [[id:han|Han Dynasty]], dividing it into the [[id:catalog-R_HAN_W|Western Han]] and [[id:catalog-R_HAN_E|Eastern Han]] periods. He tried to address landholding, debt and economic disorder through reforms based on classical models. Many of those reforms proved difficult to enforce, and the dynasty collapsed amid floods, famine and rebellion.',
+    sections: [
+      {
+        title: 'The rise of Wang Mang',
+        text: 'By the late first century BCE, the Western Han court was weakened by factional struggles, while powerful landowners accumulated large estates. Many peasants lost their land and became tenants, labourers or migrants. The Wang family had become the most influential clan at court through Empress Dowager Wang Zhengjun (王政君 Wáng Zhèngjūn).\n\nHer nephew Wang Mang (45 BCE–23 CE) built a reputation for austerity and Confucian virtue. After the death of the 14-year-old Emperor Ping (汉平帝 Hàn Píngdì) in 6 CE, the court selected Liu Ying, a young child from the imperial family, as heir. Wang Mang governed in the child’s name and declared himself acting emperor. In 9 CE, he took the throne and proclaimed the Xin, or “New,” Dynasty.'
+      },
+      {
+        title: 'Radical reforms and their consequences',
+        text: 'Wang Mang sought to model government on institutions described in texts associated with the [[id:catalog-R_ZHOU|Zhou Dynasty]] (周朝 Zhōu Cháo). Under his “King’s Fields” policy (王田 wángtián), privately held land was renamed, transfers were restricted, and land beyond prescribed limits was supposed to be redistributed to households with too little. Powerful landholders resisted the policy, officials could not enforce it consistently, and Wang Mang later rescinded the measures.\n\nHe also prohibited the sale of enslaved people and retainers, expanded state control through policies later grouped as the “Six Controls” (六筦 liù guǎn), and repeatedly changed the currency. The new monetary system included coins of many shapes and values alongside units based on silver, gold, tortoise shell and cowries. New issues replaced or competed with familiar Han coins, making trade and tax payments harder. Many people continued to use the old wuzhu coins (五铢钱 wǔzhū qián) despite government prohibitions.'
+      },
+      {
+        title: 'Catastrophe and collapse',
+        text: 'In 11 CE, the Yellow River (黄河 Huáng Hé) broke through its dikes and shifted course, flooding parts of the North China Plain. The disaster destroyed farmland, displaced communities, and worsened hunger and unrest. Rebellions grew in several regions, including movements later known as the Red Eyebrows (赤眉军 Chìméijūn) and Lulin (绿林军 Lùlínjūn).\n\nWang Mang’s armies failed to end the uprisings. In 23 CE, a coalition linked to the Lulin movement entered [[id:chang-an|Chang’an]] (长安 Cháng’ān) and killed Wang Mang. The Xin Dynasty collapsed. The Red Eyebrows remained a major force after his death and later took Chang’an during the struggle over the Han restoration.'
+      },
+      {
+        title: 'Population records and their limits',
+        text: 'A census in 2 CE registered about 59.6 million people. In 57 CE, the Eastern Han government registered about 21 million. These figures were recorded 55 years apart under different political and administrative conditions. War, famine, migration, lost records and weakened government registration all contributed to the difference. The figures show severe disruption, but they cannot be used to calculate how many people died during the Xin period.'
+      },
+      {
+        title: 'Legacy and assessment',
+        text: 'The Book of Han (《汉书》 Hànshū) shaped the traditional account of Wang Mang as a usurper. Ban Biao began the historical project, his son Ban Gu (班固 Bān Gù) developed it into a history of the Western Han, and Ban Gu’s sister [[id:ban-zhao|Ban Zhao]] (班昭 Bān Zhāo) completed unfinished portions after his death. Because the restored Eastern Han claimed continuity with the Liu imperial family, its official history treated the Xin as an interruption rather than a legitimate successor.\n\nLater historians have taken Wang Mang’s reform programme more seriously. Land concentration, debt and rural displacement were real problems. His policies attempted to address them through institutions drawn from classical texts, but resistance, weak implementation, repeated policy changes, natural disasters and rebellion overwhelmed the regime. Some of his most ambitious measures were withdrawn before the dynasty fell.'
+      },
+      {
+        title: 'Did you know?',
+        text: 'Wang Mang introduced an unusually wide range of currencies. His systems assigned value to gold, silver, tortoise shell, cowries and copper coins in several shapes and denominations. Many people still preferred the familiar Han wuzhu coin, and the government repeatedly tried to stop its use.'
+      }
+    ],
+    note: '9–23 CE dates the Xin regime. The scale and implementation of individual reforms remain debated. The population figures are registration totals recorded in 2 and 57 CE, not a measured death toll for the Xin period. Later Han histories were written within the dynasty that supplanted Wang Mang.'
+  };
   add('division', 'Age of Division',
     'Between Han and Sui, rival courts ruled different parts of China. Wars drove migration, while powerful families and religious communities carried practices and learning across borders. The Age of Division is a name for this period of several competing governments.',
     'Government continued across the divide',

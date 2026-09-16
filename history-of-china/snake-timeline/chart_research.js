@@ -726,17 +726,17 @@ const CHART_RESEARCH=(()=>{
   },
   "xin": {
     "sources": [
-      "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+      "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/wang-mang-the-restoration-of-the-han-dynasty-and-later-han/48EC19985183F5A65A477CB7133E8D80"
     ],
     "dateReview": {
       "status": "confirmed",
-      "note": "9–23 CE follows the Met chronology for Wang Mang's dynasty.",
+      "note": "9–23 CE follows the Cambridge History of China chronology for Wang Mang's dynasty.",
       "sources": [
-        "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf"
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/wang-mang-the-restoration-of-the-han-dynasty-and-later-han/48EC19985183F5A65A477CB7133E8D80"
       ]
     },
     "catalogDates": null,
-    "catalogNote": "9–23 CE follows the Met chronology for Wang Mang's dynasty."
+    "catalogNote": "9–23 CE follows the Cambridge History of China chronology for Wang Mang's dynasty."
   },
   "oracle": {
     "sources": [
