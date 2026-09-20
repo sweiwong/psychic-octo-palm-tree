@@ -241,13 +241,38 @@ var BEGINNER_EARLY = (() => {
     'As the king’s reach shrank, Zhou titles, ceremonies and ancestors still carried weight. Powerful regional rulers could seek recognition from a court that could no longer reliably command their armies. Respect for the royal house helped shape relationships even after much of its practical power had passed elsewhere.',
     'An example for later teachers',
     'Later thinkers described Zhou as a model of good government. They used its poems, rituals and stories to answer problems in their own time. Different teachers selected different lessons, so the Zhou past was continually interpreted. What later generations called the Zhou ideal was shaped by those arguments as well as by the institutions of the early dynasty.');
-  add('catalog-SR_SA', 'Spring and Autumn Period',
-    'During the Spring and Autumn period, strong regional rulers competed to lead alliances while still seeking recognition from the Zhou king. The Five Hegemons, or leading lords, traditionally include Duke Huan of Qi and Duke Wen of Jin. Lists differ over the other three.',
-    'Alliances and ceremonies',
-    'Marriages, visits and sworn agreements helped rulers establish rank and obligations. Ceremonies were part of political competition, even when participants broke their promises. A lord’s knowledge of the proper forms could give him influence. These leading lords headed competing states; they did not replace Zhou with a single new dynasty.',
-    'An uneven change',
-    'Fighting within noble families and wars between states gradually shifted power. Larger states developed more direct ways to govern their territories, alongside older family privileges. The transition to the Warring States period happened unevenly. The dates used to divide the periods help organize the history, but cannot mark one moment when every community’s government changed.',
-    '770–481 BCE is the dating used here. Other accounts use 476/475 BCE and other boundaries; 481 BCE does not mark a universal change in government.');
+  revisions['catalog-SR_SA'] = {
+    name: 'Spring and Autumn Period',
+    annotateNames: false,
+    description: 'The Spring and Autumn period (春秋时期 Chūnqiū Shíqī) was nearly three centuries of rivalry among states, dated here to 770–481 BCE. The Zhou king remained a source of titles and ritual prestige, but regional rulers controlled armies, revenue and diplomacy. Their competition reshaped government, warfare, trade and intellectual life before the [[id:catalog-SR_WS|Warring States period]].',
+    sections: [
+      {
+        title: 'The collapse of Western Zhou',
+        text: 'The crisis began in the final year of [[id:western-zhou|Western Zhou]] (\u897f\u5468 Xī Zhōu). In 771 BCE, a coalition that included the lord of Shen (\u7533\u4faf Shēn Hóu) and Quanrong forces (\u72ac\u620e Quǎnróng) [[id:zhou-capital-crisis|sacked Haojing]] (\u9550\u4eac Hàojīng) and killed King You of Zhou (\u5468\u5e7d\u738b Zhōu Yōuwáng). In 770 BCE, King Ping of Zhou (\u5468\u5e73\u738b Zhōu Píngwáng) moved the court east to Luoyang (\u6d1b\u9633 Luòyáng), beginning the [[id:eastern-zhou|Eastern Zhou dynasty]] (\u4e1c\u5468 Dōng Zhōu). The king retained ceremonial authority, but he could no longer command the strongest regional lords.\n\nThe [[id:catalog-R_ZHOU|Zhou political order]] had linked the royal house to hereditary lords through land, kinship, military service and ritual obligations. This system is often called fengjian (\u5c01\u5efa fēngjiàn) and compared with European feudalism, although the two were not identical. As family ties weakened and states pursued their own interests, competition increasingly centered on the stronger powers.'
+      },
+      {
+        title: 'Hegemons and great powers',
+        text: 'Without a strong king, leading rulers tried to organize interstate order as hegemons, or ba (\u9738 bà). A hegemon could convene meetings, lead coalitions and enforce agreements while claiming to act in the Zhou king’s name. The strongest states included Qi (\u9f50 Qí), Jin (\u664b Jìn), Chu (\u695a Chǔ), [[id:qin|Qin]] (\u79e6 Qín), and later Wu (\u5434 Wú) and Yue (\u8d8a Yuè).\n\nDuke Huan of Qi (\u9f50\u6853\u516c Qí Huángōng), who ruled from 685 to 643 BCE, became the first ruler widely remembered as a hegemon. His adviser Guan Zhong (\u7ba1\u4ef2 Guǎn Zhòng) helped strengthen Qi’s government and economy. At the Battle of Chengpu (\u57ce\u6fee\u4e4b\u6218 Chéngpú zhī Zhàn) in 632 BCE, Jin defeated Chu and its allies. Jin then dominated much of the Central Plains (\u4e2d\u539f Zhōngyuán), although no victory created a unified empire.'
+      },
+      {
+        title: 'Iron, farming and commerce',
+        text: 'Bronze remained important for weapons, vessels and ceremony, while iron appeared toward the end of the period. New tools could help farmers work more land, but their adoption differed by region and continued into the Warring States era. States that drew more grain, labour and soldiers from their territories gained an advantage over rivals.\n\nAccounts of reforms attributed to Guan Zhong describe efforts to increase agricultural production and commerce in Qi. These stories show how later writers connected wealth with state power, but they do not prove that markets or merchants first appeared at this moment. Transmitted accounts also say that Jin cast penal laws on a bronze vessel in 513 BCE. Making rules visible in metal challenged the idea that aristocrats alone should control knowledge of the law.'
+      },
+      {
+        title: 'Ideas in a divided world',
+        text: 'Political disorder created an audience for arguments about good government, ritual and war. [[id:confucius|Confucius]] (\u5b54\u5b50 Kǒngzǐ), who lived from 551 to 479 BCE, travelled between states and taught students. Later followers compiled conversations associated with him in the Analects (\u300a\u8bba\u8bed\u300b Lúnyǔ). Later tradition credited Confucius with 3,000 students. The figure conveys the scale of his later reputation and cannot be independently verified.\n\nThe Daodejing (\u300a\u9053\u5fb7\u7ecf\u300b Dàodéjīng), associated with [[id:laozi|Laozi]] (\u8001\u5b50 Lǎozǐ), explores the Dao (\u9053 Dào), restraint and change. Both the book’s formation and Laozi’s identity are debated. The Art of War (\u300a\u5b59\u5b50\u5175\u6cd5\u300b Sūnzǐ Bīngfǎ), attributed to [[id:catalog-F_SUN|Sun Tzu]] (\u5b59\u5b50 Sūnzǐ), organizes strategy around information, advantage and cost. Its thirteen chapters circulated early, but the traditional author and date remain uncertain.\n\nThe Zuo Zhuan (\u300a\u5de6\u4f20\u300b Zuǒzhuàn) is the fullest narrative source for the period. Its speeches reveal later historical and moral interpretation as well as remembered events. Poems collected in the Classic of Poetry (\u300a\u8bd7\u7ecf\u300b Shījīng) preserve voices from the wider Zhou world, although the collection reached its received form over time.'
+      },
+      {
+        title: 'A world in perspective',
+        text: 'The Greek city-states and early Roman Republic developed during the same broad centuries. Historians also compare the Spring and Autumn states with early modern Europe because both political worlds used warfare, alliances and shifting balances of power. The comparison can sharpen questions about competition between states. It does not imply direct contact or identical institutions.\n\nThe Chinese states shared Zhou ritual traditions and a related written culture even while they fought. Covenants, marriages, diplomatic visits and ceremonies established rank and obligations alongside warfare. The period therefore combined political fragmentation with cultural practices that crossed borders.'
+      },
+      {
+        title: 'Did you know?',
+        text: 'The Bai Hu Tong (\u300a\u767d\u864e\u901a\u300b Báihǔtōng), a Han ritual compendium, glosses the hegemon’s title ba with bo (\u4f2f bó). It describes a hegemon convening the regional lords while still paying homage to the Son of Heaven. This later explanation presents hegemony as powerful leadership exercised within the Zhou order.'
+      }
+    ],
+    note: 'This atlas uses 770–481 BCE, beginning with the Zhou court’s eastward move. Other chronologies begin in 771 BCE and end in 476 or 475 BCE. These boundaries organize a gradual transition; they do not mark one moment when every state changed. This card treats traditional student totals, speeches and author attributions as later claims when independent verification is unavailable.'
+  };
   revisions['catalog-SR_WS'] = {
     name: 'Warring States Period',
     annotateNames: false,

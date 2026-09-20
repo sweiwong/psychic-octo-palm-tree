@@ -3181,15 +3181,29 @@ Object.assign(HISTORY_IMAGES, {
     "caption": "A Western Zhou bronze basin bearing the Xiu inscription. It shows how elite memory and political relationships were recorded in bronze, but it does not directly document King Li’s expulsion or the Gonghe government."
   },
   "catalog-SR_SA": {
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg/960px-Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg",
-    "width": 4752,
-    "height": 3168,
-    "source": "https://commons.wikimedia.org/wiki/File:Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg",
-    "credit": "Gary Todd · Wikimedia Commons",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "alt": "An ornamented bronze chariot axle hub from the Spring and Autumn period.",
-    "caption": "A bronze chariot fitting from the Spring and Autumn period. Chariots belonged to elite warfare and display, although one surviving fitting cannot represent every state or campaign in the period."
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Chinese_plain_5c._BC-en.svg/1280px-Chinese_plain_5c._BC-en.svg.png",
+    "width": 1280,
+    "height": 865,
+    "source": "https://commons.wikimedia.org/wiki/File:Chinese_plain_5c._BC-en.svg",
+    "credit": "Hugo Lopez (Yug) · Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "alt": "English-labelled relief map of the Chinese plain in the fifth century BCE, marking Zhou-era states, major cities, and the Yellow and Yangzi river systems.",
+    "caption": "The Chinese plain in the fifth century BCE, at the end of the Spring and Autumn period and the beginning of the Warring States era. This modern reconstruction shows the multistate landscape before the partition of Jin; it represents the period’s closing phase rather than all three centuries.",
+    "sectionImages": [
+      {
+        "section": "Iron, farming and commerce",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Qingong_Bell%2C_Spring_and_Autumn_period%2C_Baoji_Bronze_Ware_Museum.jpg/1280px-Qingong_Bell%2C_Spring_and_Autumn_period%2C_Baoji_Bronze_Ware_Museum.jpg",
+        "width": 1280,
+        "height": 1707,
+        "source": "https://commons.wikimedia.org/wiki/File:Qingong_Bell,_Spring_and_Autumn_period,_Baoji_Bronze_Ware_Museum.jpg",
+        "credit": "Huangdan2060 · Baoji Bronze Ware Museum / Wikimedia Commons",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "alt": "Tall bronze Qingong bell with a looped suspension handle, raised bosses, and bands of cast ornament.",
+        "caption": "The Qingong Bell, a bronze musical instrument from the Spring and Autumn period (770–476 BCE). Excavated in 1978 at Taigongmiao village in Baoji, Shaanxi, it is preserved in the Baoji Bronze Ware Museum; the photograph was made at a Hunan Museum exhibition in 2018."
+      }
+    ]
   },
   "catalog-E_HAN_1": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Eastern_Han_Dynasty_Confucian_classics_carved_in_stone.JPG",
