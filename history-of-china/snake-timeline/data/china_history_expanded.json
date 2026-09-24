@@ -5376,13 +5376,20 @@
       "start": -770,
       "end": -481,
       "color": "#647c70",
-      "description": "During the Spring and Autumn period, strong regional rulers competed to lead alliances while still seeking recognition from the Zhou king. The Five Hegemons, or leading lords, traditionally include Duke Huan of Qi (齐桓公) and Duke Wen of Jin (晋文公). Lists differ over the other three.",
-      "note": "770–481 BCE is the dating used here. Other accounts use 476/475 BCE and other boundaries; 481 BCE does not mark a universal change in government.",
+      "description": "The Spring and Autumn period (春秋时期 Chūnqiū Shíqī) was nearly three centuries of rivalry among states, dated here to 770–481 BCE. The Zhou king remained a source of titles and ritual prestige, but regional rulers controlled armies, revenue and diplomacy. Their competition reshaped government, warfare, trade and intellectual life before the [[id:catalog-SR_WS|Warring States period]].",
+      "note": "This atlas uses 770–481 BCE, beginning with the Zhou court’s eastward move. Other chronologies begin in 771 BCE and end in 476 or 475 BCE. These boundaries organize a gradual transition; they do not mark one moment when every state changed. This card treats traditional student totals, speeches and author attributions as later claims when independent verification is unavailable.",
       "sources": [
         "https://resources.metmuseum.org/resources/metpublications/pdf/Cultural_Convergence_in_the_Northern_Qi_Period_A_Flamboyant_Chinese_Ceramic_Container_a_research.pdf",
         "https://www.cambridge.org/core/books/abs/cambridge-history-of-ancient-china/spring-and-autumn-period/41B49F658446B6CDC852639FFBD7892C",
-        "https://en.wikipedia.org/wiki/Spring_and_Autumn_period",
+        "https://www.metmuseum.org/toah/ht/04/eac.html",
+        "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/d8910f96-a4d0-4c6a-82df-c0fa3f1b2125/content",
         "https://www.cambridge.org/core/journals/early-china/article/abs/scribes-cooks-and-artisans-breaking-zhou-tradition/A16B318BE3C4E27FB3AA7F86D138A26A",
+        "https://www.tsinghuachinalawreview.law.tsinghua.edu.cn/UploadFiles/2022-11-17/tavsg1p3tqkwl3aj.pdf?VENMUl8wMjAyX0NoYW5nLnBkZg=%3D",
+        "https://plato.stanford.edu/entries/confucius/",
+        "https://wuecampus.uni-wuerzburg.de/moodle/pluginfile.php/4671983/mod_resource/content/1/2.%20The%20Formative%20Era.pdf",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/intellectual-change-in-the-chunqiu-period-the-reliability-of-the-speeches-in-the-zuo-zhuan-as-sources-of-chunqiu-intellectual-history/0F153ED3BAEF3469CAAA9070876E5F2B",
+        "https://ctext.org/bai-hu-tong/hao/ens",
+        "https://en.wikipedia.org/wiki/Spring_and_Autumn_period",
         "https://ctext.org/fengsutongyi/huang-ba/wu-bo/ens",
         "https://en.wikipedia.org/wiki/Five_Hegemons"
       ],
@@ -5401,17 +5408,40 @@
       "parent": "eastern-zhou",
       "sections": [
         {
-          "title": "Alliances and ceremonies",
-          "text": "Marriages, visits and sworn agreements helped rulers establish rank and obligations. Ceremonies were part of political competition, even when participants broke their promises. A lord’s knowledge of the proper forms could give him influence. These leading lords headed competing states; they did not replace Zhou with a single new dynasty."
+          "title": "The collapse of Western Zhou",
+          "text": "The crisis began in the final year of [[id:western-zhou|Western Zhou]] (西周 Xī Zhōu). In 771 BCE, a coalition that included the lord of Shen (申侯 Shēn Hóu) and Quanrong forces (犬戎 Quǎnróng) [[id:zhou-capital-crisis|sacked Haojing]] (镐京 Hàojīng) and killed King You of Zhou (周幽王 Zhōu Yōuwáng). In 770 BCE, King Ping of Zhou (周平王 Zhōu Píngwáng) moved the court east to Luoyang (洛阳 Luòyáng), beginning the [[id:eastern-zhou|Eastern Zhou dynasty]] (东周 Dōng Zhōu). The king retained ceremonial authority, but he could no longer command the strongest regional lords.\n\nThe [[id:catalog-R_ZHOU|Zhou political order]] had linked the royal house to hereditary lords through land, kinship, military service and ritual obligations. This system is often called fengjian (封建 fēngjiàn) and compared with European feudalism, although the two were not identical. As family ties weakened and states pursued their own interests, competition increasingly centered on the stronger powers."
         },
         {
-          "title": "An uneven change",
-          "text": "Fighting within noble families and wars between states gradually shifted power. Larger states developed more direct ways to govern their territories, alongside older family privileges. The transition to the Warring States period happened unevenly. The dates used to divide the periods help organize the history, but cannot mark one moment when every community’s government changed."
+          "title": "Hegemons and great powers",
+          "text": "Without a strong king, leading rulers tried to organize interstate order as hegemons, or ba (霸 bà). A hegemon could convene meetings, lead coalitions and enforce agreements while claiming to act in the Zhou king’s name. The strongest states included Qi (齐 Qí), Jin (晋 Jìn), Chu (楚 Chǔ), [[id:qin|Qin]] (秦 Qín), and later Wu (吴 Wú) and Yue (越 Yuè).\n\nDuke Huan of Qi (齐桓公 Qí Huángōng), who ruled from 685 to 643 BCE, became the first ruler widely remembered as a hegemon. His adviser Guan Zhong (管仲 Guǎn Zhòng) helped strengthen Qi’s government and economy. At the Battle of Chengpu (城濮之战 Chéngpú zhī Zhàn) in 632 BCE, Jin defeated Chu and its allies. Jin then dominated much of the Central Plains (中原 Zhōngyuán), although no victory created a unified empire."
+        },
+        {
+          "title": "Iron, farming and commerce",
+          "text": "Bronze remained important for weapons, vessels and ceremony, while iron appeared toward the end of the period. New tools could help farmers work more land, but their adoption differed by region and continued into the Warring States era. States that drew more grain, labour and soldiers from their territories gained an advantage over rivals.\n\nAccounts of reforms attributed to Guan Zhong describe efforts to increase agricultural production and commerce in Qi. These stories show how later writers connected wealth with state power, but they do not prove that markets or merchants first appeared at this moment. Transmitted accounts also say that Jin cast penal laws on a bronze vessel in 513 BCE. Making rules visible in metal challenged the idea that aristocrats alone should control knowledge of the law."
+        },
+        {
+          "title": "Ideas in a divided world",
+          "text": "Political disorder created an audience for arguments about good government, ritual and war. [[id:confucius|Confucius]] (孔子 Kǒngzǐ), who lived from 551 to 479 BCE, travelled between states and taught students. Later followers compiled conversations associated with him in the Analects (《论语》 Lúnyǔ). Later tradition credited Confucius with 3,000 students. The figure conveys the scale of his later reputation and cannot be independently verified.\n\nThe Daodejing (《道德经》 Dàodéjīng), associated with [[id:laozi|Laozi]] (老子 Lǎozǐ), explores the Dao (道 Dào), restraint and change. Both the book’s formation and Laozi’s identity are debated. The Art of War (《孙子兵法》 Sūnzǐ Bīngfǎ), attributed to [[id:catalog-F_SUN|Sun Tzu]] (孙子 Sūnzǐ), organizes strategy around information, advantage and cost. Its thirteen chapters circulated early, but the traditional author and date remain uncertain.\n\nThe Zuo Zhuan (《左传》 Zuǒzhuàn) is the fullest narrative source for the period. Its speeches reveal later historical and moral interpretation as well as remembered events. Poems collected in the Classic of Poetry (《诗经》 Shījīng) preserve voices from the wider Zhou world, although the collection reached its received form over time."
+        },
+        {
+          "title": "A world in perspective",
+          "text": "The Greek city-states and early Roman Republic developed during the same broad centuries. Historians also compare the Spring and Autumn states with early modern Europe because both political worlds used warfare, alliances and shifting balances of power. The comparison can sharpen questions about competition between states. It does not imply direct contact or identical institutions.\n\nThe Chinese states shared Zhou ritual traditions and a related written culture even while they fought. Covenants, marriages, diplomatic visits and ceremonies established rank and obligations alongside warfare. The period therefore combined political fragmentation with cultural practices that crossed borders."
+        },
+        {
+          "title": "Did you know?",
+          "text": "The Bai Hu Tong (《白虎通》 Báihǔtōng), a Han ritual compendium, glosses the hegemon’s title ba with bo (伯 bó). It describes a hegemon convening the regional lords while still paying homage to the Son of Heaven. This later explanation presents hegemony as powerful leadership exercised within the Zhou order."
         }
       ],
       "sourceLabels": {
-        "https://en.wikipedia.org/wiki/Spring_and_Autumn_period": "Wikipedia · Spring and Autumn period (reference overview)",
+        "https://www.metmuseum.org/toah/ht/04/eac.html": "Metropolitan Museum of Art · China, 1000 BCE–1 CE",
+        "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/d8910f96-a4d0-4c6a-82df-c0fa3f1b2125/content": "Indiana University · Spring and Autumn China (771–453 BCE)",
         "https://www.cambridge.org/core/journals/early-china/article/abs/scribes-cooks-and-artisans-breaking-zhou-tradition/A16B318BE3C4E27FB3AA7F86D138A26A": "Constance Cook · Scribes, cooks and artisans",
+        "https://www.tsinghuachinalawreview.law.tsinghua.edu.cn/UploadFiles/2022-11-17/tavsg1p3tqkwl3aj.pdf?VENMUl8wMjAyX0NoYW5nLnBkZg=%3D": "Tsinghua China Law Review · Classical Chinese jurisprudence",
+        "https://plato.stanford.edu/entries/confucius/": "Stanford Encyclopedia of Philosophy · Confucius",
+        "https://wuecampus.uni-wuerzburg.de/moodle/pluginfile.php/4671983/mod_resource/content/1/2.%20The%20Formative%20Era.pdf": "Charles Holcombe · The Formative Era in East Asia",
+        "https://www.cambridge.org/core/journals/early-china/article/abs/intellectual-change-in-the-chunqiu-period-the-reliability-of-the-speeches-in-the-zuo-zhuan-as-sources-of-chunqiu-intellectual-history/0F153ED3BAEF3469CAAA9070876E5F2B": "Yuri Pines · The reliability of Zuo Zhuan speeches",
+        "https://ctext.org/bai-hu-tong/hao/ens": "Chinese Text Project · Bai Hu Tong on the hegemon’s title",
+        "https://en.wikipedia.org/wiki/Spring_and_Autumn_period": "Wikipedia · Spring and Autumn period (reference overview)",
         "https://ctext.org/fengsutongyi/huang-ba/wu-bo/ens": "Chinese Text Project · Fengsu Tongyi on the Five Hegemons",
         "https://en.wikipedia.org/wiki/Five_Hegemons": "Wikipedia · Five Hegemons (reference overview)"
       },
@@ -5429,6 +5459,7 @@
         "confucianism-daoism",
         "catalog-F_SUN"
       ],
+      "annotateNames": false,
       "searchAliases": [
         "Spring and Autumn",
         "Spring and Autumn Period"
@@ -5436,15 +5467,29 @@
       "linkTitle": "Spring and Autumn Period",
       "pinyin": "chūn qiū",
       "image": {
-        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg/960px-Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg",
-        "width": 4752,
-        "height": 3168,
-        "source": "https://commons.wikimedia.org/wiki/File:Spring_and_Autumn_Bronze_Chariot_Axle_Hub_02.jpg",
-        "credit": "Gary Todd · Wikimedia Commons",
-        "license": "CC0 1.0",
-        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "alt": "An ornamented bronze chariot axle hub from the Spring and Autumn period.",
-        "caption": "A bronze chariot fitting from the Spring and Autumn period. Chariots belonged to elite warfare and display, although one surviving fitting cannot represent every state or campaign in the period."
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Chinese_plain_5c._BC-en.svg/1280px-Chinese_plain_5c._BC-en.svg.png",
+        "width": 1280,
+        "height": 865,
+        "source": "https://commons.wikimedia.org/wiki/File:Chinese_plain_5c._BC-en.svg",
+        "credit": "Hugo Lopez (Yug) · Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "alt": "English-labelled relief map of the Chinese plain in the fifth century BCE, marking Zhou-era states, major cities, and the Yellow and Yangzi river systems.",
+        "caption": "The Chinese plain in the fifth century BCE, at the end of the Spring and Autumn period and the beginning of the Warring States era. This modern reconstruction shows the multistate landscape before the partition of Jin; it represents the period’s closing phase rather than all three centuries.",
+        "sectionImages": [
+          {
+            "section": "Iron, farming and commerce",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Qingong_Bell%2C_Spring_and_Autumn_period%2C_Baoji_Bronze_Ware_Museum.jpg/1280px-Qingong_Bell%2C_Spring_and_Autumn_period%2C_Baoji_Bronze_Ware_Museum.jpg",
+            "width": 1280,
+            "height": 1707,
+            "source": "https://commons.wikimedia.org/wiki/File:Qingong_Bell,_Spring_and_Autumn_period,_Baoji_Bronze_Ware_Museum.jpg",
+            "credit": "Huangdan2060 · Baoji Bronze Ware Museum / Wikimedia Commons",
+            "license": "CC0 1.0",
+            "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "alt": "Tall bronze Qingong bell with a looped suspension handle, raised bosses, and bands of cast ornament.",
+            "caption": "The Qingong Bell, a bronze musical instrument from the Spring and Autumn period (770–476 BCE). Excavated in 1978 at Taigongmiao village in Baoji, Shaanxi, it is preserved in the Baoji Bronze Ware Museum; the photograph was made at a Hunan Museum exhibition in 2018."
+          }
+        ]
       }
     },
     {
