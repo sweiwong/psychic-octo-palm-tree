@@ -3851,7 +3851,7 @@
       "start": 1115,
       "end": 1234,
       "color": "#7c6778",
-      "description": "Aguda (阿骨打) founded the Jurchen Jin dynasty in 1115. Its armies defeated Liao and captured the Song capital in 1127. Jin then governed much of northern China while Southern Song continued beyond a contested frontier.",
+      "description": "The Jin dynasty (金朝 Jīn Cháo) was founded by Jurchen leaders in 1115 and ruled much of northern China until 1234. Its armies defeated the [[id:liao|Liao dynasty]] (辽 Liáo) and captured the [[id:catalog-R_NSONG|Northern Song]] (北宋 Běi Sòng) capital in 1127. Jin kept Jurchen military institutions while governing a large farming population through imperial offices. The [[id:catalog-R_SSONG|Southern Song]] (南宋 Nán Sòng) continued to rule south of a contested frontier.",
       "source": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115–1234)",
       "kind": "concurrent",
       "offset": -44,
@@ -3861,9 +3861,17 @@
       "sources": [
         "https://en.wikipedia.org/wiki/Jin_dynasty_(1115–1234)",
         "https://www.metmuseum.org/toah/ht/07/eac.html",
-        "https://82nd-and-fifth.metmuseum.org/toah/ht/07/eac.html"
+        "https://82nd-and-fifth.metmuseum.org/toah/ht/07/eac.html",
+        "https://history.yale.edu/sites/default/files/files/V%20Hansen%2C%20Kitan-Liao%20and%20Jurchen-Jin%20%202019.pdf",
+        "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2/%E5%8D%B747",
+        "https://sciup.org/an-early-jurchen-text-among-rock-representations-near-the-arkhara-river-in-the-145145451",
+        "https://www.metmuseum.org/art/collection/search/52031",
+        "https://digitalarchive.npm.gov.tw/Collection/Detail/32?dep=P",
+        "https://libraetd.lib.virginia.edu/downloads/h415pb10b?filename=1_Huang_Chih-Jung_2019_SJD.pdf",
+        "https://bibliotekanauki.pl/articles/700160.pdf",
+        "https://chinese.thu.edu.tw/upload/newspaper_upload/39/05-%E5%87%8C%E9%A0%8C%E6%A6%AE.pdf"
       ],
-      "nameZh": "金",
+      "nameZh": "金朝",
       "category": "dynasty",
       "evidence": "Sourced historical commentary",
       "importance": 5,
@@ -3871,18 +3879,42 @@
       "originalType": "regime",
       "sections": [
         {
-          "title": "From conquest to government",
-          "text": "Jin rulers kept Jurchen military and social institutions while using Chinese administrative practices to govern farming communities. Questions of land, service and official appointments shaped how these arrangements worked together. Adopting a form of government did not automatically erase differences between conquerors and conquered, or the privileges associated with them."
+          "title": "Rise of the Jurchen",
+          "text": "The Jurchen (女真 Nǚzhēn), a people from the northeast, had been subjects of the Khitan-led Liao. In 1115, the Wanyan (完颜 Wányán) leader Aguda (阿骨打 Āgǔdǎ) proclaimed the Great Jin (大金 Dà Jīn). Jin forces destroyed the Liao court in 1125. Song had joined them in hopes of recovering territory held by Liao, but the new ally soon became its enemy.\n\nJin armies [[id:jingkang|captured Bianliang, now Kaifeng, in 1127]] (汴梁 Biànliáng; 开封 Kāifēng). They took the reigning Song emperor and his father prisoner. The Song court re-formed in the south, leaving two powerful states facing one another across a changing border. Jin controlled the northern capital and its surrounding farmland, but conquest also meant finding ways to collect revenue and govern the people who remained there."
         },
         {
-          "title": "Life in the north",
-          "text": "People under Jin rule cultivated land, maintained towns and adapted to war and changes of government. Their history continued alongside the better-known cultural life of Southern Song. Mongol attacks brought another major upheaval, ending the dynasty in 1234. Song helped fight its northern rival, but Jin’s destruction left Song facing the expanding Mongol power."
+          "title": "Military and government",
+          "text": "The meng'an–mouke (猛安谋克 měng'ān móukè) system grouped Jurchen households for military service and local administration. A mouke was traditionally reckoned at 300 households, and ten mouke made a meng'an. These units helped the ruling group mobilize soldiers and preserve ties between military service, families and land. Their role changed as Jurchen settlers lived alongside the much larger population of northern China.\n\nJin rulers used Chinese-style offices and civil service examinations to govern farming districts, while retaining Jurchen institutions and privileges. The two approaches did not form a perfectly divided government: officials had to decide who held land, owed service and could enter office. The court first ruled from Huining (会宁 Huìníng) in the northeast, moved its main capital to Yanjing (燕京 Yānjīng), now Beijing (北京 Běijīng), in 1153, and later moved south to Bianjing (汴京 Biànjīng), another name for Kaifeng."
+        },
+        {
+          "title": "Society and economy",
+          "text": "Most people under Jin rule lived from farming. The government moved Jurchen households into conquered areas and assigned land to support their military service. One recorded allotment for Jurchen military households reckoned three plough oxen and 25 people as the basis for just over four qing (顷 qǐng) of land. This brought settlers into contact and sometimes competition with established farming communities. Northern towns, fields and markets continued to function under the new dynasty, while war and changes of government displaced others.\n\nJin also traded with the Southern Song, even as the courts fought over the frontier. Its registers counted about 53.5 million people in 1207. Such figures describe registered populations and administrative reach, not a precise count of everyone who lived within Jin territory."
+        },
+        {
+          "title": "Writing, belief and art",
+          "text": "The Jurchen developed scripts for their own language after the dynasty's founding, adapting ideas from Chinese and Khitan writing. A large script appeared around 1119, followed by a smaller script in 1138. The court used Jurchen writing for official work and supported schools and translations. Chinese remained important in government and literary culture. Keeping a Jurchen script gave the ruling group another way to conduct imperial business without giving up its own language.\n\nJin rulers supported Confucian learning, Buddhism and Daoism. Jurchen religious practices also continued. Court patronage and daily worship did not follow a single path for everyone in the empire. Artists worked within traditions inherited from Northern Song while producing new work under Jin rule. Wu Yuanzhi (武元直 Wǔ Yuánzhí) painted The Red Cliff, a handscroll inspired by Su Shi's poetry that survives in the National Palace Museum. Ding ware porcelain continued to be made in the north; the illustrated bowl belongs to that Jin-period craft tradition."
+        },
+        {
+          "title": "Fall of the dynasty",
+          "text": "Genghis Khan's Mongol armies attacked Jin from 1211. Military defeats, internal revolts and defections weakened the state over the next two decades. The Jin court moved south as Mongol forces took its northern centres. After Kaifeng fell, the last court held out at Caizhou (蔡州 Càizhōu).\n\nMongol forces and their Southern Song allies took Caizhou in 1234, ending the dynasty. Song had helped defeat its northern rival, but now faced the expanding Mongol power without Jin between them. Mongol rulers later founded the [[id:yuan|Yuan dynasty]] (元朝 Yuán Cháo), which finally conquered Southern Song in 1279."
+        },
+        {
+          "title": "Did you know?",
+          "text": "The Jurchen dynastic name is often rendered as alchun, meaning gold. The Chinese name Jin (金 Jīn) means gold or metal. It distinguishes this dynasty from the much earlier [[id:jin-early|Sima family's Jin]] (晋 Jìn), which ruled from 266 to 420."
         }
       ],
-      "note": "1115–1234. This is the Jurchen Jin, 金, distinct from the earlier Jin dynasty, 晋, of 266–420.",
+      "note": "The card's 1115–1234 dates mark the Jurchen Jin dynasty. The exact size and population of the empire changed over time, and historical registers are not modern censuses. Caizhou's fall in 1234 was a joint Mongol–Southern Song victory. The capital's name changed with its rulers: Bianliang and Bianjing both refer to Kaifeng.",
       "sourceLabels": {
         "https://en.wikipedia.org/wiki/Jin_dynasty_(1115–1234)": "Wikipedia · Jin dynasty (1115–1234)",
-        "https://82nd-and-fifth.metmuseum.org/toah/ht/07/eac.html": "Metropolitan Museum · China, 1000–1400"
+        "https://82nd-and-fifth.metmuseum.org/toah/ht/07/eac.html": "Metropolitan Museum of Art · China, 1000–1400",
+        "https://history.yale.edu/sites/default/files/files/V%20Hansen%2C%20Kitan-Liao%20and%20Jurchen-Jin%20%202019.pdf": "Valerie Hansen · Khitan Liao and Jurchen Jin",
+        "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2/%E5%8D%B747": "History of Jin · Volume 47, military household land",
+        "https://sciup.org/an-early-jurchen-text-among-rock-representations-near-the-arkhara-river-in-the-145145451": "Jurchen inscription study · Development of the scripts",
+        "https://www.metmuseum.org/art/collection/search/52031": "Metropolitan Museum of Art · Bowl with Peonies",
+        "https://digitalarchive.npm.gov.tw/Collection/Detail/32?dep=P": "National Palace Museum · Wu Yuanzhi, Red Cliff",
+        "https://libraetd.lib.virginia.edu/downloads/h415pb10b?filename=1_Huang_Chih-Jung_2019_SJD.pdf": "Chih-Jung Huang · Jin population registers",
+        "https://bibliotekanauki.pl/articles/700160.pdf": "Jurchen etymology study · Alchun and the Jin state name",
+        "https://chinese.thu.edu.tw/upload/newspaper_upload/39/05-%E5%87%8C%E9%A0%8C%E6%A6%AE.pdf": "Tunghai University · The fall of Jin at Caizhou"
       },
       "related": [
         "liao",
@@ -3898,11 +3930,16 @@
         ]
       },
       "catalogDates": null,
+      "linkTitle": "Jin (Jurchen)",
+      "linkAliases": [
+        "Jurchen Jin",
+        "金朝"
+      ],
+      "annotateNames": false,
       "searchAliases": [
         "Jin (Jurchen)"
       ],
-      "linkTitle": "Jin (Jurchen)",
-      "pinyin": "jīn",
+      "pinyin": "jīn cháo",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Zheng_Long_Yuan_Bao_(%E6%AD%A3%E9%9A%86%E5%85%83%E5%AF%B6)_-_1158-1161_Zheng_bottom_horizontal_does_not_protrude_variety_L._Yuan_cap_wavy_Bao_wide_(S1083_-_FD1637)_-_Scott_Semans_01.jpg/960px-Zheng_Long_Yuan_Bao_(%E6%AD%A3%E9%9A%86%E5%85%83%E5%AF%B6)_-_1158-1161_Zheng_bottom_horizontal_does_not_protrude_variety_L._Yuan_cap_wavy_Bao_wide_(S1083_-_FD1637)_-_Scott_Semans_01.jpg",
         "width": 2245,
@@ -3912,7 +3949,21 @@
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
         "alt": "Several bronze cash coins with square holes and Chinese inscriptions.",
-        "caption": "Zhenglong yuanbao coins of the Jurchen Jin, dated 1158–1161. Chinese-script cash belonged to the governing practices of a dynasty founded by Jurchen rulers."
+        "caption": "Zhenglong yuanbao coins of the Jurchen Jin, dated 1158–1161. Chinese-script cash belonged to the governing practices of a dynasty founded by Jurchen rulers.",
+        "sectionImages": [
+          {
+            "section": "Writing, belief and art",
+            "src": "https://images.metmuseum.org/CRDImages/as/original/DP342645.jpg",
+            "width": 3919,
+            "height": 2940,
+            "alt": "Ivory-glazed Ding porcelain bowl with molded peony decoration.",
+            "caption": "Bowl with Peonies, twelfth–thirteenth century. Ding ware made in northern China under Jurchen Jin rule.",
+            "credit": "Unknown maker · The Metropolitan Museum of Art, Bequest of Benjamin Altman, 1913 (14.40.155)",
+            "source": "https://www.metmuseum.org/art/collection/search/52031",
+            "license": "Public domain (CC0)",
+            "licenseUrl": "https://www.metmuseum.org/hubs/open-access"
+          }
+        ]
       }
     },
     {
