@@ -939,7 +939,7 @@ const HISTORY_IMAGES = {
     "caption": "Northern Wei funerary figures from the tomb of Sima Jinlong, dated 484. Their dress and organization offer evidence for elite military identity in the north."
   },
   "liao": {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Liao_Silver_Crown.jpg/960px-Liao_Silver_Crown.jpg",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Liao_Silver_Crown.jpg/960px-Liao_Silver_Crown.jpg",
     "width": 5184,
     "height": 3456,
     "credit": "Gary Todd · Wikimedia Commons",
