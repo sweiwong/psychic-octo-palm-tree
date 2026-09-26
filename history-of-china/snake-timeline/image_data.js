@@ -969,7 +969,21 @@ const HISTORY_IMAGES = {
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
     "alt": "Several bronze cash coins with square holes and Chinese inscriptions.",
-    "caption": "Zhenglong yuanbao coins of the Jurchen Jin, dated 1158–1161. Chinese-script cash belonged to the governing practices of a dynasty founded by Jurchen rulers."
+    "caption": "Zhenglong yuanbao coins of the Jurchen Jin, dated 1158–1161. Chinese-script cash belonged to the governing practices of a dynasty founded by Jurchen rulers.",
+    "sectionImages": [
+      {
+        "section": "Writing, belief and art",
+        "src": "https://images.metmuseum.org/CRDImages/as/original/DP342645.jpg",
+        "width": 3919,
+        "height": 2940,
+        "alt": "Ivory-glazed Ding porcelain bowl with molded peony decoration.",
+        "caption": "Bowl with Peonies, twelfth–thirteenth century. Ding ware made in northern China under Jurchen Jin rule.",
+        "credit": "Unknown maker · The Metropolitan Museum of Art, Bequest of Benjamin Altman, 1913 (14.40.155)",
+        "source": "https://www.metmuseum.org/art/collection/search/52031",
+        "license": "Public domain (CC0)",
+        "licenseUrl": "https://www.metmuseum.org/hubs/open-access"
+      }
+    ]
   },
   "early-yuan": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/YuanEmperorAlbumKhubilaiPortrait.jpg/960px-YuanEmperorAlbumKhubilaiPortrait.jpg",

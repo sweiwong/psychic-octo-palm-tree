@@ -232,6 +232,29 @@ const LATE_IMPERIAL_RESEARCH = (() => {
   revisions['catalog-E_QING_SSM'].approx=true;
   revisions['catalog-C_BEIJING_YUAN'].name='Dadu and the Yuan capital project';
   revisions['catalog-C_BEIJING_YUAN'].evidence='Sourced theme · foundation-year anchor';
+  revisions['jurchen-jin'].nameZh='金朝';
+  revisions['jurchen-jin'].sources=[
+    'https://82nd-and-fifth.metmuseum.org/toah/ht/07/eac.html',
+    'https://history.yale.edu/sites/default/files/files/V%20Hansen%2C%20Kitan-Liao%20and%20Jurchen-Jin%20%202019.pdf',
+    'https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2/%E5%8D%B747',
+    'https://sciup.org/an-early-jurchen-text-among-rock-representations-near-the-arkhara-river-in-the-145145451',
+    'https://www.metmuseum.org/art/collection/search/52031',
+    'https://digitalarchive.npm.gov.tw/Collection/Detail/32?dep=P',
+    'https://libraetd.lib.virginia.edu/downloads/h415pb10b?filename=1_Huang_Chih-Jung_2019_SJD.pdf',
+    'https://bibliotekanauki.pl/articles/700160.pdf',
+    'https://chinese.thu.edu.tw/upload/newspaper_upload/39/05-%E5%87%8C%E9%A0%8C%E6%A6%AE.pdf'
+  ];
+  Object.assign(revisions['jurchen-jin'].sourceLabels, {
+    'https://82nd-and-fifth.metmuseum.org/toah/ht/07/eac.html':'Metropolitan Museum of Art · China, 1000–1400',
+    'https://history.yale.edu/sites/default/files/files/V%20Hansen%2C%20Kitan-Liao%20and%20Jurchen-Jin%20%202019.pdf':'Valerie Hansen · Khitan Liao and Jurchen Jin',
+    'https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2/%E5%8D%B747':'History of Jin · Volume 47, military household land',
+    'https://sciup.org/an-early-jurchen-text-among-rock-representations-near-the-arkhara-river-in-the-145145451':'Jurchen inscription study · Development of the scripts',
+    'https://www.metmuseum.org/art/collection/search/52031':'Metropolitan Museum of Art · Bowl with Peonies',
+    'https://digitalarchive.npm.gov.tw/Collection/Detail/32?dep=P':'National Palace Museum · Wu Yuanzhi, Red Cliff',
+    'https://libraetd.lib.virginia.edu/downloads/h415pb10b?filename=1_Huang_Chih-Jung_2019_SJD.pdf':'Chih-Jung Huang · Jin population registers',
+    'https://bibliotekanauki.pl/articles/700160.pdf':'Jurchen etymology study · Alchun and the Jin state name',
+    'https://chinese.thu.edu.tw/upload/newspaper_upload/39/05-%E5%87%8C%E9%A0%8C%E6%A6%AE.pdf':'Tunghai University · The fall of Jin at Caizhou'
+  });
   const events=[
     {id:'song-paper-money',name:'The state issues paper money',nameZh:'官办交子',han:'钱',pinyin:'Guānbàn Jiāozǐ',start:1024,end:1024,parent:'song',ribbon:true,
       ...essay('In the 1020s the Song government took over the issuing of paper certificates in Sichuan. The jiaozi developed from merchant practices designed to ease transactions that were cumbersome when carried out with heavy strings of coins.',
