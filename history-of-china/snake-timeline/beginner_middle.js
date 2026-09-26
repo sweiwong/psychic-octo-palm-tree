@@ -7,11 +7,6 @@ var BEGINNER_MIDDLE = { revisions: {} };
     if (note !== undefined) revision.note = note;
     BEGINNER_MIDDLE.revisions[id] = revision;
   }
-  revise('liao', null,
-    'The Khitan-led Liao empire governed pastoral communities and farming regions north of Song. Its rulers claimed to be emperors in their own right. Liao helped shape the borders, diplomacy and trade of the region for more than two centuries.',
-    'Different ways of governing', 'The court used different arrangements for different populations and tasks. Mobile court practices existed alongside Chinese-style administration in farming regions. This allowed rulers to draw on several kinds of resources and expertise. It also meant managing competing powerful families and deciding who owed military service and who held office.',
-    'Peace with Song', 'The agreement of 1005 established mutual recognition and annual transfers from Song. Payments could be controversial, but they offered an alternative to the costs and destruction of repeated war. Jurchen forces conquered Liao’s heartland in 1125. Khitan survivors carried their power west, where Western Liao continued. The fall of the original court did not end Khitan political history.',
-    '916 marks the imperial proclamation. Some chronologies begin in 907, when Abaoji became leader. Western Liao continued after 1125.');
   revise('western-xia', null,
     'Li Yuanhao proclaimed Western Xia in 1038, building on an older Tangut power base in the northwest. Its territory connected farming districts, the steppe and the Hexi corridor. These routes made it a trading partner and military rival of neighbouring states.',
     'Books in Tangut', 'The Tangut script gave the government a written language for administration and supported a rich Buddhist culture. Translators, scribes and printers produced works that connected the court to wider religious traditions. Surviving books reveal an important centre of learning, although Buddhist and archaeological evidence tells us more about some parts of society than others.',
