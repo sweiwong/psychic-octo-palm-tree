@@ -3702,11 +3702,11 @@
       "start": 916,
       "end": 1125,
       "color": "#8d7359",
-      "description": "The Khitan-led Liao empire governed pastoral communities and farming regions north of Song. Its rulers claimed to be emperors in their own right. Liao helped shape the borders, diplomacy and trade of the region for more than two centuries.",
-      "source": "https://en.wikipedia.org/wiki/Liao_dynasty",
+      "description": "The Khitan Liao (辽 Liáo) was a dynasty that lasted from 916 to 1125 and fundamentally reshaped northern China by governing grassland communities and Chinese farming cities under one imperial throne. A dynasty is a ruling family and the state it governs. Liao's rulers were Khitans (契丹 Qìdān), a people from northeast Asia whose empire covered parts of today's northeast China, Mongolia and northern China.\n\nLiao shared the region with other states. The [[id:song|Song dynasty]] (宋 Sòng), founded in 960, ruled much of central and southern China. Their frontier was one of East Asia's central political questions for more than a century. Far beyond the region, the Khitan name eventually gave rise to Cathay, a historical name for China.",
+      "source": "https://resources.metmuseum.org/resources/metpublications/pdf/The_Arts_of_Korea_A_Resource_for_Educators.pdf",
       "kind": "concurrent",
       "offset": -28,
-      "note": "916 marks the imperial proclamation. Some chronologies begin in 907, when Abaoji (阿保机) became leader. Western Liao continued after 1125.",
+      "note": "916 marks Abaoji's imperial proclamation. Some histories start in 907, when he rose to Khitan leadership. Western Liao continued after the original Liao court fell in 1125. The population figures describe the acquisition of the Sixteen Prefectures, not the entire empire.",
       "sourceIds": [
         "R_LIAO"
       ],
@@ -3716,7 +3716,18 @@
         "https://www.metmuseum.org/toah/ht/06/eac.html",
         "https://assets.cambridge.org/97811071/35840/frontmatter/9781107135840_frontmatter.pdf",
         "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/fragility-of-peace-song-chinas-northwestern-frontier-and-erosion-of-the-chanyuan-paradigm-in-the-mideleventh-century/AF2F19A32A23ED0F304C3DE814851A3F",
-        "https://depts.washington.edu/silkroad/exhibit/khitans/essay.html"
+        "https://depts.washington.edu/silkroad/exhibit/khitans/essay.html",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/The_Arts_of_Korea_A_Resource_for_Educators.pdf",
+        "https://www.cambridge.org/core/journals/modern-asian-studies/article/what-keeps-the-kitans-enigmatic-roots-of-the-ethnic-narrative-in-liao-historiography/9F3D25689A854A6B965198FFCD009FDA",
+        "https://history.yale.edu/sites/default/files/files/V%20Hansen%2C%20Kitan-Liao%20and%20Jurchen-Jin%20%202019.pdf",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/liao/40E26AA348C389272574241A2092D79C",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-chinese-literature/north-and-south-the-twelfth-and-thirteenth-centuries/61601DC54708F14962001A8CCF558427",
+        "https://www.metmuseum.org/art/collection/search/44799",
+        "https://www.metmuseum.org/art/collection/search/61744",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Defining_Yongle_Imperial_Art_in_Early_Fifteenth_Century_China.pdf",
+        "https://whc.unesco.org/en/tentativelists/5803/",
+        "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-18/",
+        "https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/koktash-underground-mausoleum-in-northeastern-kyrgyzstan-the-firstever-identified-qara-khitai-elite-tomb/91F251DFB09E9FFFF230BDD774EC26A1"
       ],
       "nameZh": "辽",
       "category": "dynasty",
@@ -3731,17 +3742,44 @@
       },
       "sections": [
         {
-          "title": "Different ways of governing",
-          "text": "The court used different arrangements for different populations and tasks. Mobile court practices existed alongside Chinese-style administration in farming regions. This allowed rulers to draw on several kinds of resources and expertise. It also meant managing competing powerful families and deciding who owed military service and who held office."
+          "title": "How the empire began",
+          "text": "The [[id:tang|Tang dynasty]] (唐 Táng) had governed a large Chinese empire until its collapse in 907. Rival states then fought for territory. North of them, the Khitan leader Abaoji (阿保机 Ābǎojī) brought other groups under his authority and took the title of emperor in 916. Some historians date Liao from his earlier rise in 907; the dates here follow his imperial proclamation.\n\nLiao expanded into the northeast and, in the late 930s, acquired the Sixteen Prefectures (燕云十六州 Yānyún Shíliù Zhōu) from [[id:catalog-R_FIVE_LATER_JIN|Later Jin]] (后晋 Hòu Jìn). These districts stretched roughly from modern Beijing (北京 Běijīng) to Datong (大同 Dàtóng). They included cities, farmland and routes through the mountains toward the Chinese heartland. Song rulers later sought to recover them.\n\nOne scholarly estimate puts the Chinese-speaking population acquired with the prefectures at 2.5 to 3 million, while the number of Khitans at the time was probably well under one million. The new subjects alone may therefore have outnumbered the Khitans by roughly three to one or more. These are estimates for the period of expansion, rather than a census of Liao's entire population.\n\nThe acquisition changed Liao's resources as well as its borders. Farmers and towns supplied taxes, while the prefectures gave its rulers established offices and officials who knew how to administer them. Liao could now make decisions about northern China from inside its cities, rather than only from the grasslands beyond them."
         },
         {
-          "title": "Peace with Song",
-          "text": "The agreement of 1005 established mutual recognition and annual transfers from Song. Payments could be controversial, but they offered an alternative to the costs and destruction of repeated war. Jurchen forces conquered Liao’s heartland in 1125. Khitan survivors carried their power west, where Western Liao continued. The fall of the original court did not end Khitan political history."
+          "title": "One state, different ways of governing",
+          "text": "Liao's rulers governed people who lived in different ways. Some raised animals and moved between pastures; others farmed, worked in cities and paid taxes on land. The court developed two branches of administration. The northern branch dealt chiefly with the grassland zone and imperial household. The southern branch handled matters such as taxation and law in the Sixteen Prefectures.\n\nThis was a practical division of government. People and responsibilities crossed the boundary, and officials from different backgrounds worked within the same state. Liao also maintained five capitals, including a southern capital at modern Beijing. The imperial court travelled seasonally rather than remaining in a single city. Its movement helped rulers maintain ties with Khitan leaders while visiting the wider territories they governed.\n\nKhitan rulers adopted Chinese imperial practices, including reign titles and written records, while keeping their own language and customs. They developed two scripts for writing Khitan. Women could also exercise considerable authority. Empress Dowager Xiao Yanyan (萧燕燕 Xiāo Yànyàn, formally Xiao Chuo 萧绰 Xiāo Chuò) governed for her young son from 982 and directed civil and military affairs."
+        },
+        {
+          "title": "War, then a long settlement with Song",
+          "text": "Song armies failed to take the Sixteen Prefectures. In 1004, Liao forces advanced into Song territory, bringing the two courts to negotiations. The [[id:chanyuan|Treaty of Chanyuan]] (澶渊之盟 Chányuān zhī Méng) followed in 1005. It settled the frontier and required Song to send Liao 100,000 taels of silver and 200,000 bolts of silk each year. Both rulers were treated as emperors.\n\nThe settlement endured for more than a century. For a point of comparison, it was already about sixty years old when the Normans conquered England in 1066. The payments were substantial, but the agreement also gave both courts a more predictable border."
+        },
+        {
+          "title": "Art, belief and connections abroad",
+          "text": "Buddhism received Liao patronage. Surviving works include a life-size glazed ceramic figure of an arhat, a revered Buddhist practitioner, made around 1000. Painted tomb scenes show banquets and other aspects of elite life. Metal masks placed over the faces of the dead preserve a distinctive Khitan burial practice.\n\nObjects in Liao tombs also reveal long-distance exchange. The tomb of a Liao princess contained glass from the Islamic world and a basin probably made in Iran or Afghanistan. Such finds show how far goods could travel before reaching the Khitan court. The objects might have passed through several traders or diplomatic exchanges along the way; the tomb does not record their full journey.\n\nThe wooden pagoda at Yingxian (应县木塔 Yìngxiàn Mùtǎ), built in 1056, offers a different view of Liao culture. It rises about 67 metres and is among the most striking surviving buildings of the period."
+        },
+        {
+          "title": "Fall and continuation",
+          "text": "In 1114, the Jurchens (女真 Nǚzhēn), a people from the northeast who had been under Liao authority, rebelled. Their leaders founded the [[id:jurchen-jin|Jin dynasty]] (金 Jīn) in 1115. Song allied with Jin, hoping to regain northern territory, while Jin forces conquered the Liao heartland. Liao fell in 1125. Jin then attacked Song.\n\nThe Khitan political story continued west of Liao's former territory. Yelü Dashi (耶律大石 Yēlǜ Dàshí), a member of its ruling family, led followers into Central Asia and built the state known as Western Liao (西辽 Xī Liáo), or Qara Khitai."
+        },
+        {
+          "title": "Did you know?",
+          "text": "Scholars have only partly deciphered the two Khitan writing systems. Inscriptions survive on stone monuments and tomb objects, but many signs still cannot be read with confidence. Each new reading can change what historians know about Liao people in their own words."
         }
       ],
       "sourceLabels": {
         "https://en.wikipedia.org/wiki/Liao_dynasty": "Wikipedia · Liao dynasty",
-        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/fragility-of-peace-song-chinas-northwestern-frontier-and-erosion-of-the-chanyuan-paradigm-in-the-mideleventh-century/AF2F19A32A23ED0F304C3DE814851A3F": "Paul Jakov Smith · The fragility of the Chanyuan peace"
+        "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/fragility-of-peace-song-chinas-northwestern-frontier-and-erosion-of-the-chanyuan-paradigm-in-the-mideleventh-century/AF2F19A32A23ED0F304C3DE814851A3F": "Paul Jakov Smith · The fragility of the Chanyuan peace",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/The_Arts_of_Korea_A_Resource_for_Educators.pdf": "The Met · Arts of Korea and Liao chronology",
+        "https://www.cambridge.org/core/journals/modern-asian-studies/article/what-keeps-the-kitans-enigmatic-roots-of-the-ethnic-narrative-in-liao-historiography/9F3D25689A854A6B965198FFCD009FDA": "Pamela Crossley · Liao population and government",
+        "https://history.yale.edu/sites/default/files/files/V%20Hansen%2C%20Kitan-Liao%20and%20Jurchen-Jin%20%202019.pdf": "Valerie Hansen · Khitan Liao and Jurchen Jin",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/liao/40E26AA348C389272574241A2092D79C": "Cambridge History of China · The Liao",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-chinese-literature/north-and-south-the-twelfth-and-thirteenth-centuries/61601DC54708F14962001A8CCF558427": "Cambridge History of Chinese Literature · Jurchen conquest",
+        "https://www.metmuseum.org/art/collection/search/44799": "The Met · Liao ceramic arhat",
+        "https://www.metmuseum.org/art/collection/search/61744": "The Met · Liao funerary mask",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Defining_Yongle_Imperial_Art_in_Early_Fifteenth_Century_China.pdf": "The Met · Imported objects in a Liao tomb",
+        "https://whc.unesco.org/en/tentativelists/5803/": "UNESCO · Yingxian wooden pagoda",
+        "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-18/": "Unicode Consortium · Khitan scripts",
+        "https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/koktash-underground-mausoleum-in-northeastern-kyrgyzstan-the-firstever-identified-qara-khitai-elite-tomb/91F251DFB09E9FFFF230BDD774EC26A1": "Journal of the Royal Asiatic Society · Western Liao"
       },
       "related": [
         "song",
@@ -3756,10 +3794,16 @@
           "https://www.metmuseum.org/toah/ht/06/eac.html"
         ]
       },
+      "linkTitle": "Liao",
+      "linkAliases": [
+        "Khitan Liao",
+        "Liao dynasty",
+        "辽朝"
+      ],
+      "annotateNames": false,
       "searchAliases": [
         "Liao"
       ],
-      "linkTitle": "Liao",
       "pinyin": "liáo",
       "image": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Liao_Silver_Crown.jpg/960px-Liao_Silver_Crown.jpg",
@@ -3770,7 +3814,33 @@
         "license": "CC0 1.0",
         "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
         "alt": "An elaborate gold-coloured crown with pierced ornament.",
-        "caption": "A gilt-silver Khitan crown from the tomb of the Princess of Chen State and her husband, early eleventh century. The object makes Liao elite ceremonial culture visible."
+        "caption": "A gilt-silver Khitan crown from the tomb of the Princess of Chen State and her husband, early eleventh century. The tomb contained two crowns, so the photograph does not identify which person wore this one.",
+        "sectionImages": [
+          {
+            "section": "War, then a long settlement with Song",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Song-Liao-Xixia-1111.png",
+            "width": 556,
+            "height": 537,
+            "alt": "Modern map showing Liao north of Song and Western Xia to the northwest in 1111.",
+            "caption": "Modern reconstruction of Liao, Song and Western Xia in 1111. Its approximate borders show the later regional setting, not the exact line agreed in 1005.",
+            "credit": "Douglasfrankfort and Wikimedia Commons contributors",
+            "source": "https://commons.wikimedia.org/wiki/File:Song-Liao-Xixia-1111.png",
+            "license": "CC BY 3.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+          },
+          {
+            "section": "Art, belief and connections abroad",
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/20250604_Ying_Xian_Muta_%28081325%29.jpg/960px-20250604_Ying_Xian_Muta_%28081325%29.jpg",
+            "width": 960,
+            "height": 1280,
+            "alt": "Wooden pagoda of Fogong Temple at Yingxian, photographed from ground level.",
+            "caption": "The wooden pagoda at Yingxian was built under Liao in 1056. This photograph shows the surviving structure in 2025.",
+            "credit": "Yumeto · Wikimedia Commons",
+            "source": "https://commons.wikimedia.org/wiki/File:20250604_Ying_Xian_Muta_(081325).jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+          }
+        ]
       }
     },
     {
