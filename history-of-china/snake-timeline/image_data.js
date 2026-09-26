@@ -947,7 +947,33 @@ const HISTORY_IMAGES = {
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "alt": "An elaborate gold-coloured crown with pierced ornament.",
-    "caption": "A gilt-silver Khitan crown from the tomb of the Princess of Chen State and her husband, early eleventh century. The object makes Liao elite ceremonial culture visible."
+    "caption": "A gilt-silver Khitan crown from the tomb of the Princess of Chen State and her husband, early eleventh century. The tomb contained two crowns, so the photograph does not identify which person wore this one.",
+    "sectionImages": [
+      {
+        "section": "War, then a long settlement with Song",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Song-Liao-Xixia-1111.png",
+        "width": 556,
+        "height": 537,
+        "alt": "Modern map showing Liao north of Song and Western Xia to the northwest in 1111.",
+        "caption": "Modern reconstruction of Liao, Song and Western Xia in 1111. Its approximate borders show the later regional setting, not the exact line agreed in 1005.",
+        "credit": "Douglasfrankfort and Wikimedia Commons contributors",
+        "source": "https://commons.wikimedia.org/wiki/File:Song-Liao-Xixia-1111.png",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      {
+        "section": "Art, belief and connections abroad",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/20250604_Ying_Xian_Muta_%28081325%29.jpg/960px-20250604_Ying_Xian_Muta_%28081325%29.jpg",
+        "width": 960,
+        "height": 1280,
+        "alt": "Wooden pagoda of Fogong Temple at Yingxian, photographed from ground level.",
+        "caption": "The wooden pagoda at Yingxian was built under Liao in 1056. This photograph shows the surviving structure in 2025.",
+        "credit": "Yumeto · Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:20250604_Ying_Xian_Muta_(081325).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
   },
   "western-xia": {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Xixia_Painting_from_Hongfo_Pagoda_(28069106568).jpg/960px-Xixia_Painting_from_Hongfo_Pagoda_(28069106568).jpg",

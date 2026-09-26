@@ -128,6 +128,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     if (item.sections) {
       for (const section of item.sections) {
         const block = html('section', 'card-analysis');
+        if (section.title === 'Did you know?') block.classList.add('card-fact');
         block.append(richText('h4', '', section.title));
         for (const paragraph of section.text.split(/\n\s*\n/)) block.append(richText('p', '', paragraph));
         const sectionImages = (item.image?.sectionImages || []).filter(image => image.section === section.title);
