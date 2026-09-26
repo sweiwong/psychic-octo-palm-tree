@@ -951,9 +951,9 @@ const HISTORY_IMAGES = {
     "sectionImages": [
       {
         "section": "War, then a long settlement with Song",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Song-Liao-Xixia-1111.png",
-        "width": 556,
-        "height": 537,
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Song-Liao-Xixia-1111.png/500px-Song-Liao-Xixia-1111.png",
+        "width": 500,
+        "height": 483,
         "alt": "Modern map showing Liao north of Song and Western Xia to the northwest in 1111.",
         "caption": "Modern reconstruction of Liao, Song and Western Xia in 1111. Its approximate borders show the later regional setting, not the exact line agreed in 1005.",
         "credit": "Douglasfrankfort and Wikimedia Commons contributors",
