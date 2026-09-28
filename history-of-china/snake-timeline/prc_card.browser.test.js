@@ -12,7 +12,7 @@ for (const width of [1440, 390]) {
       // Layout checks stay deterministic; the release check loads the real remote images.
       await page.route('https://**/*', route => route.fulfill({ contentType: 'image/svg+xml', body: '<svg xmlns="http://www.w3.org/2000/svg" width="960" height="943"/>' }));
       await page.goto(pathToFileURL(__dirname + '/index.html').href + '?card=prc');
-      assert.equal(await page.locator('.card-date').innerText(), '1949 – present');
+      assert.equal(await page.locator('.card-date').innerText(), '1949–present');
       assert.equal(await page.locator('.card-analysis').count(), 7);
       assert.equal(await page.locator('.card-description a, .card-analysis a[data-card-id]').count(), 19);
       assert.equal(await page.locator('.card-photo').count(), 4);

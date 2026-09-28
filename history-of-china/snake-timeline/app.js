@@ -11,9 +11,9 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
   const chart=$('#chart'),detail=$('#detail'),tip=$('#tooltip');
   let selected=null,geometry,showEvents=true,showStates=true,lastTrigger=null,lastTriggerId=null;
   const sections=[
-    {id:'early',name:'Early China',start:-2070,end:-221,label:'c. 2070 BCE – 221 BCE',ids:['xia','shang','western-zhou','catalog-SR_SA','catalog-SR_WS']},
-    {id:'imperial',name:'Imperial China',start:-221,end:1912,label:'221 BCE – 1912',ids:['qin','han','three-kingdoms','jin-early','north-south','sui','tang','five-dynasties','song','yuan','ming','qing']},
-    {id:'modern',name:'Modern China',start:1912,end:2026,label:'1912 – present · shown through 2026',ids:['republic','prc','roc-taiwan']}
+    {id:'early',name:'Early China',start:-2070,end:-221,label:'c. 2070–221 BCE',ids:['xia','shang','western-zhou','catalog-SR_SA','catalog-SR_WS']},
+    {id:'imperial',name:'Imperial China',start:-221,end:1912,label:'221 BCE–1912 CE',ids:['qin','han','three-kingdoms','jin-early','north-south','sui','tang','five-dynasties','song','yuan','ming','qing']},
+    {id:'modern',name:'Modern China',start:1912,end:2026,label:'1912–present · shown through 2026',ids:['republic','prc','roc-taiwan']}
   ];
   let activeSection='all';
   let returnToCollection=false,storyDismissed=false;
@@ -30,7 +30,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
   }
   readingDialog.addEventListener('cancel',event=>{event.preventDefault();collapseStory();});
   readingDialog.addEventListener('click',event=>{if(event.target===readingDialog)collapseStory();});
-  const currentWindow=()=>sections.find(section=>section.id===activeSection)||{id:'all',name:'All history',start:-2070,end:2026,label:'c. 2070 BCE – 2026'};
+  const currentWindow=()=>sections.find(section=>section.id===activeSection)||{id:'all',name:'All history',start:-2070,end:2026,label:'c. 2070 BCE–2026 CE'};
   const inWindow=(year,view=currentWindow())=>year>=view.start&&(year<view.end||view.end===2026&&year===2026);
   const overlaps=(a,b,view=currentWindow())=>a===b?inWindow(a,view):b>view.start&&a<view.end;
   function sectionFor(item){return sections.find(section=>inWindow(item.start,section))?.id||'all';}
@@ -44,7 +44,15 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
   }
   const displayText=text=>String(text).replace(/\s+CE\b/g,'');
   const fmt=y=>`${Math.abs(y)}${y<0?' BCE':''}`;
-  const dates=item=>item.dateLabel?displayText(item.dateLabel):`${item.approx?'c. ':''}${fmt(item.start)}${item.end!==item.start?' – '+(item.end===2026?'present':fmt(item.end)):''}`;
+  function dates(item){
+    if(item.dateLabel)return item.dateLabel;
+    const prefix=item.approx?'c. ':'';
+    if(item.start===item.end)return prefix+fmt(item.start);
+    const start=item.start<0&&item.end<0?Math.abs(item.start):fmt(item.start);
+    const end=item.end===2026?'present':item.start<0&&item.end>0?`${item.end} CE`:fmt(item.end);
+    return `${prefix}${start}–${end}`;
+  }
+  const dateHtml=(tag,cls,item)=>{const node=html(tag,cls);node.textContent=dates(item);return node;};
   function el(tag,attrs={},text){const e=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));if(text!==undefined)e.textContent=displayText(text);return e;}
   function html(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=displayText(text);return e;}
   function richText(tag, className, value) {
@@ -123,7 +131,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     const expand=html('button','detail-expand','Open full card');expand.setAttribute('aria-label','Open full card');expand.onclick=expandStory;top.append(expand);
     const close=html('button','detail-close','×');close.setAttribute('aria-label','Close details');close.onclick=closeDetail;top.append(close);
     const art=html('div','card-art');art.setAttribute('aria-hidden','true');const character=html('span','card-character',item.han);character.lang='zh-Hans';const glyph=html('div','card-glyph'),glyphPinyin=html('span','glyph-pinyin',PINYIN[item.han]);glyphPinyin.lang='zh-Latn';glyph.append(character,glyphPinyin);art.append(glyph,html('span','card-era','Chinese history'));
-    const body=html('div','card-body');body.append(html('p','card-date',dates(item)),html('h3','',item.name));if(item.nameZh){const chinese=html('p','card-chinese-name',item.nameZh);chinese.lang='zh-Hans';const reading=html('p','card-pinyin',PINYIN[item.nameZh]);reading.lang='zh-Latn';body.append(chinese,reading);}body.append(richText('p','card-description',item.description));
+    const body=html('div','card-body');body.append(dateHtml('p','card-date',item),html('h3','',item.name));if(item.nameZh){const chinese=html('p','card-chinese-name',item.nameZh);chinese.lang='zh-Hans';const reading=html('p','card-pinyin',PINYIN[item.nameZh]);reading.lang='zh-Latn';body.append(chinese,reading);}body.append(richText('p','card-description',item.description));
     if (item.image) body.insertBefore(imageFigure(item.image), body.querySelector('.card-description'));
     if (item.sections) {
       for (const section of item.sections) {
@@ -183,7 +191,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
         const entry = html('li'), anchor = html('a', 'internal-link', source.name);
         anchor.href = cardHref(source.id);
         anchor.dataset.cardId = source.id;
-        entry.append(anchor, html('span', 'backlink-date', dates(source)));
+        entry.append(anchor, dateHtml('span', 'backlink-date', source));
         list.append(entry);
       }
       section.append(list);body.append(section);
@@ -279,7 +287,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     closeCard();
   }
   function select(id, scroll = false, trigger = null) { openCard(id, { scroll, trigger }); }
-  function tooltip(item,target){const bounds=target.getBoundingClientRect();tip.replaceChildren(html('strong','',item.name),html('span','',dates(item)),html('div','',InternalLinks.plainText(item.description)));tip.hidden=false;const box=tip.getBoundingClientRect();tip.style.left=Math.max(8,Math.min(innerWidth-box.width-8,bounds.x+bounds.width/2-box.width/2))+'px';tip.style.top=Math.max(8,Math.min(innerHeight-box.height-8,bounds.y-box.height-12))+'px';}
+  function tooltip(item,target){const bounds=target.getBoundingClientRect();tip.replaceChildren(html('strong','',item.name),dateHtml('span','',item),html('div','',InternalLinks.plainText(item.description)));tip.hidden=false;const box=tip.getBoundingClientRect();tip.style.left=Math.max(8,Math.min(innerWidth-box.width-8,bounds.x+bounds.width/2-box.width/2))+'px';tip.style.top=Math.max(8,Math.min(innerHeight-box.height-8,bounds.y-box.height-12))+'px';}
   function interactive(node,item){const card=EXHIBITION.all.find(entry=>entry.id===item.id)||item;node.dataset.item=item.id;node.setAttribute('role','button');node.setAttribute('tabindex','0');node.setAttribute('aria-label',`${card.name}, ${dates(card)}${card.id==='confucius'?', traditional date':''}. Open details.`);node.classList.add('timeline-item',item.kind);if(item.id===selected)node.classList.add('selected');node.addEventListener('click',()=>select(item.id,false,node));node.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(item.id,false,node);}});node.addEventListener('mouseenter',()=>tooltip(card,node));node.addEventListener('mouseleave',()=>tip.hidden=true);node.addEventListener('focus',()=>tooltip(card,node));node.addEventListener('blur',()=>tip.hidden=true);}
   function render(){
     const view=currentWindow();
@@ -331,7 +339,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     const dateMeasure=document.createElement('canvas').getContext('2d');dateMeasure.font='10px '+getComputedStyle(document.body).fontFamily;
     for(const item of items){
       const year=activeSection==='all'?(item.kind==='event'?item.start:(item.start+Math.min(item.end,2026))/2):(Math.max(item.start,view.start)+Math.min(item.end,view.end))/2,p=g.point(year,item.offset||0),row=Math.max(0,Math.min(g.rows-1,Math.round((g.point(year).y-g.top)/(g.radius*2)))),baseline=g.top+row*g.radius*2;
-      const shortDates=dates(item).replaceAll(' CE','').replace(' – ','–');
+      const shortDates=dates(item);
       const dateWidth=dateMeasure.measureText(shortDates).width+shortDates.length*.5+12;
       const isPeriod=item.kind==='period',compactLabel=!!item.compactLabel,labelName=item.linkTitle||item.name,w=Math.min(g.width-26,Math.max(80,dateWidth,labelName.length*(isPeriod?10.2:5.5)+12)),h=compactLabel?29:isPeriod?37:29;
       const preferredBelow=item.labelPosition==='below';
@@ -382,7 +390,8 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
       const group=el('g');interactive(group,item);group.append(el('circle',{class:'marker',cx:p.x,cy:p.y,r:item.kind==='event'?4.5:2.7,fill:item.kind==='event'?'#f4f0e7':item.color,stroke:item.kind==='event'?'#292d29':'#f4f0e7','stroke-width':1.5}));
       group.append(el('rect',{class:'label-bg',x:rect.x,y:rect.y-3,width:rect.w,height:rect.h+5,rx:2,fill:'transparent'}));
       group.append(el('text',{class:'label-name',x,y,'text-anchor':'middle'},labelName));
-      group.append(el('text',{class:'label-date',x,y:y+(isPeriod&&!compactLabel?16:13),'text-anchor':'middle'},shortDates));labels.append(group);
+      const labelDate=el('text',{class:'label-date',x,y:y+(isPeriod&&!compactLabel?16:13),'text-anchor':'middle'});
+      labelDate.textContent=shortDates;group.append(labelDate);labels.append(group);
     }
     const dotSegments=[],clusters=[];
     // Group overlapping pointer targets in path order; dates never move off the ribbon.
@@ -433,10 +442,10 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
     const heading=html('h2','',items.length+' events to explore');heading.id='cluster-title';
     clusterDialog.setAttribute('aria-labelledby',heading.id);
     const close=html('button','cluster-close','Close');close.setAttribute('aria-label','Close event list');close.onclick=()=>clusterDialog.close();
-    const range=html('p','cluster-date-range','Starting dates: '+fmt(cluster.start)+(cluster.latestStart!==cluster.start?' – '+fmt(cluster.latestStart):''));
+    const range=html('p','cluster-date-range');range.textContent='Starting dates: '+dates({start:cluster.start,end:cluster.latestStart});
     const intro=html('p','cluster-intro','These events sit close together at this scale. Choose one to open its card. Each card shows the date and any uncertainty.');
     const list=html('ol','cluster-events');
-    for(const item of items){const row=html('li'),button=html('button');button.dataset.record=item.id;button.append(html('span','cluster-event-date',dates(item)+(isUncertain(item)?item.id==='confucius'?' · traditional date':' · approximate date':'')),html('strong','',item.name));button.onclick=()=>{restoreClusterFocus=false;clusterDialog.close();select(item.id,false,trigger);};row.append(button);list.append(row);}
+    for(const item of items){const row=html('li'),button=html('button');button.dataset.record=item.id;const date=dateHtml('span','cluster-event-date',item);date.textContent+=isUncertain(item)?item.id==='confucius'?' · traditional date':' · approximate date':'';button.append(date,html('strong','',item.name));button.onclick=()=>{restoreClusterFocus=false;clusterDialog.close();select(item.id,false,trigger);};row.append(button);list.append(row);}
     if(cluster.approx)intro.append(html('span','cluster-uncertainty',' This group includes approximate or traditional dates, shown with broken marks.'));
     clusterDialog.append(close,heading,range,intro,list);clusterDialog.showModal();close.focus();
   }
@@ -468,7 +477,7 @@ for(const item of EXHIBITION.all)if(HISTORY_IMAGES[item.id])item.image=HISTORY_I
         const img=html('img','result-image');img.src=item.image.src;img.alt='';img.loading='lazy';img.decoding='async';img.width=320;img.height=160;
         img.addEventListener('error',()=>img.hidden=true,{once:true});b.append(img);
       }
-      const copy=html('span','result-copy');copy.append(html('small','',dates(item)),html('strong','result-title',item.name));
+      const copy=html('span','result-copy');copy.append(dateHtml('small','',item),html('strong','result-title',item.name));
       if(item.nameZh){const zh=html('span','result-chinese',item.nameZh);zh.lang='zh-Hans';const reading=html('span','result-pinyin',PINYIN[item.nameZh]);reading.lang='zh-Latn';copy.append(zh,reading);}
       copy.append(html('span','result-summary',InternalLinks.plainText(item.description)));
       copy.append(html('span','result-open','Read entry →'));

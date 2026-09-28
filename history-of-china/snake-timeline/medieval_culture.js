@@ -133,7 +133,7 @@ const MEDIEVAL_CULTURE = (() => {
       }
     ],
     "note": "The dates span successive imperial capital eras, from the Western Han foundation around 202 BCE to the Tang court’s transfer in 904. Chang’an was not continuously an imperial capital; later Xi’an continued as a regional centre.",
-    "dateLabel": "c. 202 BCE–904 · imperial capital eras",
+    "dateLabel": "c. 202 BCE–904 CE · imperial capital eras",
     "sources": [
       "https://history.stanford.edu/publications/early-chinese-empires-qin-and-han",
       "https://history.stanford.edu/publications/chinas-cosmopolitan-empire-tang-dynasty",
