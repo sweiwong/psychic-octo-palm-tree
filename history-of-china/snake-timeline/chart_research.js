@@ -1537,10 +1537,35 @@ const CHART_RESEARCH=(()=>{
     "catalogNote": "420–589 is a supported periodization; Northern Wei began earlier, in 386. Do not infer containment of all northern states."
   },
   "liao": {
+    "source": "https://resources.metmuseum.org/resources/metpublications/pdf/The_Arts_of_Korea_A_Resource_for_Educators.pdf",
     "sources": [
       "https://depts.washington.edu/silkroad/exhibit/khitans/essay.html",
-      "https://www.metmuseum.org/toah/ht/06/eac.html"
+      "https://www.metmuseum.org/toah/ht/06/eac.html",
+      "https://resources.metmuseum.org/resources/metpublications/pdf/The_Arts_of_Korea_A_Resource_for_Educators.pdf",
+      "https://www.cambridge.org/core/journals/modern-asian-studies/article/what-keeps-the-kitans-enigmatic-roots-of-the-ethnic-narrative-in-liao-historiography/9F3D25689A854A6B965198FFCD009FDA",
+      "https://history.yale.edu/sites/default/files/files/V%20Hansen%2C%20Kitan-Liao%20and%20Jurchen-Jin%20%202019.pdf",
+      "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/liao/40E26AA348C389272574241A2092D79C",
+      "https://www.cambridge.org/core/books/abs/cambridge-history-of-chinese-literature/north-and-south-the-twelfth-and-thirteenth-centuries/61601DC54708F14962001A8CCF558427",
+      "https://www.metmuseum.org/art/collection/search/44799",
+      "https://www.metmuseum.org/art/collection/search/61744",
+      "https://resources.metmuseum.org/resources/metpublications/pdf/Defining_Yongle_Imperial_Art_in_Early_Fifteenth_Century_China.pdf",
+      "https://whc.unesco.org/en/tentativelists/5803/",
+      "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-18/",
+      "https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/koktash-underground-mausoleum-in-northeastern-kyrgyzstan-the-firstever-identified-qara-khitai-elite-tomb/91F251DFB09E9FFFF230BDD774EC26A1"
     ],
+    "sourceLabels": {
+      "https://resources.metmuseum.org/resources/metpublications/pdf/The_Arts_of_Korea_A_Resource_for_Educators.pdf": "The Met · Arts of Korea and Liao chronology",
+      "https://www.cambridge.org/core/journals/modern-asian-studies/article/what-keeps-the-kitans-enigmatic-roots-of-the-ethnic-narrative-in-liao-historiography/9F3D25689A854A6B965198FFCD009FDA": "Pamela Crossley · Liao population and government",
+      "https://history.yale.edu/sites/default/files/files/V%20Hansen%2C%20Kitan-Liao%20and%20Jurchen-Jin%20%202019.pdf": "Valerie Hansen · Khitan Liao and Jurchen Jin",
+      "https://www.cambridge.org/core/books/abs/cambridge-history-of-china/liao/40E26AA348C389272574241A2092D79C": "Cambridge History of China · The Liao",
+      "https://www.cambridge.org/core/books/abs/cambridge-history-of-chinese-literature/north-and-south-the-twelfth-and-thirteenth-centuries/61601DC54708F14962001A8CCF558427": "Cambridge History of Chinese Literature · Jurchen conquest",
+      "https://www.metmuseum.org/art/collection/search/44799": "The Met · Liao ceramic arhat",
+      "https://www.metmuseum.org/art/collection/search/61744": "The Met · Liao funerary mask",
+      "https://resources.metmuseum.org/resources/metpublications/pdf/Defining_Yongle_Imperial_Art_in_Early_Fifteenth_Century_China.pdf": "The Met · Imported objects in a Liao tomb",
+      "https://whc.unesco.org/en/tentativelists/5803/": "UNESCO · Yingxian wooden pagoda",
+      "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-18/": "Unicode Consortium · Khitan scripts",
+      "https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/koktash-underground-mausoleum-in-northeastern-kyrgyzstan-the-firstever-identified-qara-khitai-elite-tomb/91F251DFB09E9FFFF230BDD774EC26A1": "Journal of the Royal Asiatic Society · Western Liao"
+    },
     "dateReview": {
       "status": "disputed",
       "note": "916 is the formal imperial-state milestone; 907 dates Abaoji’s earlier accession and is used by the source dataset. Retain 916 with this distinction.",
