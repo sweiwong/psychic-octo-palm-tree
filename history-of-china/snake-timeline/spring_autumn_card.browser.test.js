@@ -13,6 +13,23 @@ test.before(async () => {
 test.after(async () => { await browser?.close(); });
 
 for (const width of [1440, 390]) {
+  test(`date ranges keep the correct era labels at ${width}px`, async () => {
+    const page = await browser.newPage({ viewport: { width, height: 900 } });
+    try {
+      for (const [id, expected] of [
+        ['western-zhou', 'c. 1046–771 BCE'],
+        ['catalog-SR_SA', '770–481 BCE'],
+        ['catalog-S_QH', '221 BCE–220 CE'],
+      ]) {
+        await page.goto(pathToFileURL(__dirname + '/index.html').href + '?card=' + id, { waitUntil: 'domcontentloaded' });
+        assert.equal(await page.locator('#detail .card-date').innerText(), expected);
+        assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+      }
+    } finally {
+      await page.close();
+    }
+  });
+
   test(`Spring and Autumn card links, sources and media work at ${width}px`, async () => {
     const page = await browser.newPage({ viewport: { width, height: 900 } });
     try {
@@ -23,7 +40,7 @@ for (const width of [1440, 390]) {
       await page.goto(pathToFileURL(__dirname + '/index.html').href + '?card=catalog-SR_SA');
       const detail = page.locator('#detail');
 
-      assert.match(await detail.innerText(), /770 BCE – 481 BCE/);
+      assert.match(await detail.innerText(), /770–481 BCE/);
       assert.equal(await detail.locator('.card-analysis').count(), 6);
       assert.equal(await detail.locator('.card-photo').count(), 2);
       assert.equal(await detail.locator('.source-link').count(), 13);

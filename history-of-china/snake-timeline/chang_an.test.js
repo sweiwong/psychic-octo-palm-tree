@@ -40,7 +40,7 @@ test('Chang’an dates span successive imperial capital eras, with a reading-onl
   assert.equal(card.category, 'culture');
   assert.equal(card.ribbon, false);
   assert.equal(card.label, false);
-  assert.equal(card.dateLabel, 'c. 202 BCE–904 · imperial capital eras');
+  assert.equal(card.dateLabel, 'c. 202 BCE–904 CE · imperial capital eras');
   assert.equal(pinyin[card.nameZh], "Cháng'ān");
   assert.equal(pinyin[card.han], "Cháng'ān");
   metadata.sources.forEach((url, index) => {

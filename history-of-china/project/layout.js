@@ -80,7 +80,7 @@ window.LAYOUT = (function () {
     return y + " CE";
   }
   function fmtRange(a, b) {
-    return fmtYear(a) + " – " + fmtYear(b);
+    return (a < 0 && b < 0 ? Math.abs(a) : fmtYear(a)) + "–" + fmtYear(b);
   }
 
   return { ROW_BREAKS, rowsFor, locate, clipRange, ticksFor, fmtYear, fmtRange };

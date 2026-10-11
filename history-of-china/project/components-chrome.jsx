@@ -58,7 +58,7 @@ function TopBar({ zoom, onZoom, mode, onMode, onResetView }) {
         <div className="seal">中</div>
         <div className="title-block">
           <div className="title-main">Chinese History Map</div>
-          <div className="title-sub">A wrapped timeline atlas · 2070 BCE – 2026 CE</div>
+          <div className="title-sub">A wrapped timeline atlas · 2070 BCE–2026 CE</div>
         </div>
       </div>
       <div className="topbar-right">
